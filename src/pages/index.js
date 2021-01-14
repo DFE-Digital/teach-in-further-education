@@ -1,44 +1,44 @@
 import React from "react"
 import { graphql } from "gatsby"
+import RichText from "../components/RichText"
 
-import { BLOCKS, MARKS } from "@contentful/rich-text-types"
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-
-
-const options = {
-  renderMark: {
-    [MARKS.BOLD]: (text) => <span className="govuk-!-font-weight-bold">{text}</span>,
-    [MARKS.CODE]: (text) => <pre>{text}</pre>
-  },
-  renderNode: {
-    [BLOCKS.HEADING_1]: (node, children) => <h1 className="govuk-heading-xl">{children}</h1>,
-    [BLOCKS.HEADING_2]: (node, children) => <h2 className="govuk-heading-l">{children}</h2>,
-    [BLOCKS.HEADING_3]: (node, children) => <h3 className="govuk-heading-m">{children}</h3>,
-    [BLOCKS.HEADING_4]: (node, children) => <h4 className="govuk-heading-s">{children}</h4>,
-    [BLOCKS.PARAGRAPH]: (node, children) => <p className="govuk-body">{children}</p>,
-    [BLOCKS.UL_LIST]: (node, children) => <ul className="govuk-list govuk-list--bullet govuk-list--spaced">{children}</ul>,
-    [BLOCKS.OL_LIST]: (node, children) => <ul className="govuk-list govuk-list--number govuk-list--spaced">{children}</ul>,
-    [BLOCKS.LIST_ITEM]: (node, children) => <li>{children}</li>,
-  }
-};
 
 export default function Home({ data }) {
-  return data.allContentfulAdvice.edges.map(({ node },i) => {
+  return data.allContentfulHomePage.edges.map(({ node }, i) => {
     return <div>
-        <h1 className="govuk-heading-m">{node.title}</h1>
-        <div>{documentToReactComponents(JSON.parse(node.advicebody.raw), options)}</div>
+      <h1 className="govuk-heading-xl">{node.heading}</h1>
+      <RichText data={node.body.raw} />
+      <div>
+        {node.userJourneys.map(({ title, pages }, i) => {
+          return <div>
+            <h2 className="govuk-heading-l">{title}</h2>
+            <ul className="govuk-list">
+              {pages.map((page, j) => {
+                return <li><a href={page.slug}>{page.title}</a></li>
+              })}
+            </ul>
+          </div>
+        })}
+      </div>
     </div>
   })
 }
 
 export const pageQuery = graphql`
     query {
-        allContentfulAdvice {
+        allContentfulHomePage {
             edges {
                 node {
-                    title,
-                    advicebody {
+                    heading,
+                    body {
                         raw
+                    }
+                    userJourneys {
+                        title
+                        pages {
+                            title
+                            slug
+                        }
                     }
                 }
             }
