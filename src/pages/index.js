@@ -16,8 +16,8 @@ const options = {
     [BLOCKS.HEADING_3]: (node, children) => <h3 className="govuk-heading-m">{children}</h3>,
     [BLOCKS.HEADING_4]: (node, children) => <h4 className="govuk-heading-s">{children}</h4>,
     [BLOCKS.PARAGRAPH]: (node, children) => <p className="govuk-body">{children}</p>,
-    [BLOCKS.UL_LIST]: (node, children) => <ul className="govuk-list govuk-list--bullet">{children}</ul>,
-    [BLOCKS.OL_LIST]: (node, children) => <ul className="govuk-list govuk-list--number">{children}</ul>,
+    [BLOCKS.UL_LIST]: (node, children) => <ul className="govuk-list govuk-list--bullet govuk-list--spaced">{children}</ul>,
+    [BLOCKS.OL_LIST]: (node, children) => <ul className="govuk-list govuk-list--number govuk-list--spaced">{children}</ul>,
     [BLOCKS.LIST_ITEM]: (node, children) => <li>{children}</li>,
   }
 };
