@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import RichText from "../components/RichText"
+import CTA from "../components/CTA"
 
 
 export default function Home({ data }) {
@@ -20,6 +21,9 @@ export default function Home({ data }) {
           </div>
         })}
       </div>
+      <div>
+        <CTA data={node.cta}/>
+      </div>
     </div>
   })
 }
@@ -38,6 +42,12 @@ export const pageQuery = graphql`
                         pages {
                             title
                             slug
+                        }
+                    }
+                    cta {
+                        title
+                        ctaType {
+                            ctaType
                         }
                     }
                 }

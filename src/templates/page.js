@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import RichText from "../components/RichText"
 import Advice from "../components/Advice"
+import CTA from "../components/CTA"
 
 export default function Page({ data }) {
   const { contentfulPage } = data
@@ -9,7 +10,10 @@ export default function Page({ data }) {
     <div>
       <h1 className="govuk-heading-xl">{contentfulPage.title}</h1>
       {contentfulPage.introduction ? <RichText data={contentfulPage.introduction.raw} /> : null }
-      { contentfulPage.blocks.map((blk, i) => { return <div><Advice data={blk} /></div> }) }
+      { contentfulPage.blocks?.map((blk, i) => { return <div><Advice data={blk} /></div> }) }
+      <div>
+      { contentfulPage.callToActions?.map((blk, i) => { return <CTA data={blk} /> }) }
+      </div>
     </div>
   )
 }
@@ -25,6 +29,12 @@ export const pageQuery = graphql`
                 advicebody {
                     raw
                 }
+            },
+            callToActions {
+                ctaType {
+                    ctaType
+                }
+                title
             }
         }
     }
