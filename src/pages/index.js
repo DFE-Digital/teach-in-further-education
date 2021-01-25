@@ -10,18 +10,7 @@ export default function Home({ data }) {
         <div className="govuk-grid-column-two-thirds">
           <h1 className="govuk-heading-xl">{node.heading}</h1>
           <RichText data={node.body.raw} />
-          <div>
-            {node.userJourneys?.map(({ title, pages }, i) => {
-              return <div>
-                <h2 className="govuk-heading-l">{title}</h2>
-                <ul className="govuk-list">
-                  {pages.map((page, j) => {
-                    return <li><a href={page.slug}>{page.title}</a></li>
-                  })}
-                </ul>
-              </div>
-            })}
-          </div>
+      
           <div>
             <CTA data={node.cta} />
           </div>
@@ -49,13 +38,6 @@ export const pageQuery = graphql`
                     sidebar {
                         title
                         slug
-                    }
-                    userJourneys {
-                        title
-                        pages {
-                            title
-                            slug
-                        }
                     }
                     cta {
                         title
