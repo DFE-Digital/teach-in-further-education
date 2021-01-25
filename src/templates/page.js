@@ -7,14 +7,28 @@ import CTA from "../components/CTA"
 export default function Page({ data }) {
   const { contentfulPage } = data
   return (
-    <div>
-      <h1 className="govuk-heading-xl">{contentfulPage.title}</h1>
-      {contentfulPage.introduction ? <RichText data={contentfulPage.introduction.raw} /> : null }
-      { contentfulPage.blocks?.map((blk, i) => { return <div><Advice data={blk} /></div> }) }
-      <div>
-      { contentfulPage.callToActions?.map((blk, i) => { return <CTA data={blk} /> }) }
+      <div className="govuk-grid-row">
+        <div className="govuk-grid-column-two-thirds">
+          <h1 className="govuk-heading-xl">{contentfulPage.title}</h1>
+
+          {contentfulPage.introduction ? <RichText data={contentfulPage.introduction.raw} /> : null}
+          {contentfulPage.blocks?.map((blk, i) => {
+            return <div><Advice data={blk} /></div>
+          })}
+          <div>
+            {contentfulPage.callToActions?.map((blk, i) => {
+              return <CTA data={blk} />
+            })}
+          </div>
+        </div>
+
+        <div className="govuk-grid-column-one-third app-sidebar">
+          <h2 className="govuk-heading-m">Related content</h2>
+          {contentfulPage.sidebar?.map((page, i) => {
+            return <p className="govuk-body"><a href={page.slug}>{page.title}</a></p>
+          })}
+        </div>
       </div>
-    </div>
   )
 }
 export const pageQuery = graphql`
@@ -23,6 +37,10 @@ export const pageQuery = graphql`
             title,
             introduction {
                 raw
+            },
+            sidebar {
+                title
+                slug
             },
             blocks {
                 title

@@ -48,11 +48,43 @@ export default function HTML(props) {
           <a href="/" className="govuk-header__link govuk-header__link--service-name">
             Teach in further education
           </a>
+          <button type="button" className="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation"
+                  aria-label="Show or hide navigation menu">Menu
+          </button>
+          <nav>
+            <ul id="navigation" className="govuk-header__navigation " aria-label="Navigation menu">
+              <li className="govuk-header__navigation-item">
+                <a className="govuk-header__link" href="/">
+                  Get into FE
+                </a>
+              </li>
+              <li className="govuk-header__navigation-item">
+                <a className="govuk-header__link" href="/why_further_education">
+                  Why FE?
+                </a>
+              </li>
+              <li className="govuk-header__navigation-item">
+                <a className="govuk-header__link" href="/working_in_further_education">
+                  Working in FE
+                </a>
+              </li>
+              <li className="govuk-header__navigation-item">
+                <a className="govuk-header__link" href="/further_education_qualifications">
+                  Qualifications to work in FE
+                </a>
+              </li>
+              <li className="govuk-header__navigation-item">
+                <a className="govuk-header__link" href="/support">
+                  Support
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
 
-    <div className="govuk-width-container app-width-container">
+    <div className="govuk-width-container">
       <div className="govuk-phase-banner">
         <p className="govuk-phase-banner__content">
           <strong className="govuk-tag govuk-phase-banner__content__tag">
@@ -64,7 +96,7 @@ export default function HTML(props) {
         </p>
       </div>
 
-      <main className="govuk-main-wrapper app-main-class" id="main-content" role="main">
+      <main className="govuk-main-wrapper" id="main-content" role="main">
         {props.preBodyComponents}
         <div
           key={`body`}

@@ -9,6 +9,7 @@ const options = {
     [MARKS.CODE]: (text) => <pre>{text}</pre>
   },
   renderNode: {
+    [BLOCKS.HR]: (node, children) => <hr />,
     [BLOCKS.HEADING_1]: (node, children) => <h1 className="govuk-heading-xl">{children}</h1>,
     [BLOCKS.HEADING_2]: (node, children) => <h2 className="govuk-heading-l">{children}</h2>,
     [BLOCKS.HEADING_3]: (node, children) => <h3 className="govuk-heading-m">{children}</h3>,
