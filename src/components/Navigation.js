@@ -3,7 +3,7 @@ import React from "react"
 
 export function Navigation({ location }) {
   return (
-    <div>
+    <>
       <button type="button" className="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation"
               aria-label="Show or hide navigation menu">Menu
       </button>
@@ -16,6 +16,6 @@ export function Navigation({ location }) {
           <NavLink key="support" data={{location, slug: "/support", title: "Support"}} />
         </ul>
       </nav>
-    </div>
+    </>
   )
 }

@@ -1,6 +1,6 @@
 import React from "react"
 
-export function PhaseBanner() {
+export function PhaseBanner(props) {
   return (
     <div className="govuk-phase-banner">
       <p className="govuk-phase-banner__content">
