@@ -13,11 +13,11 @@ export default function Page({ data }) {
 
           {contentfulPage.introduction ? <RichText data={contentfulPage.introduction.raw} /> : null}
           {contentfulPage.blocks?.map((blk, i) => {
-            return <div><Advice data={blk} /></div>
+            return <div><Advice key={"advice_" + i} data={blk} /></div>
           })}
           <div>
             {contentfulPage.callToActions?.map((blk, i) => {
-              return <CTA data={blk} />
+              return <CTA key={"cta_" + i} data={blk} />
             })}
           </div>
         </div>
@@ -25,7 +25,7 @@ export default function Page({ data }) {
         <div className="govuk-grid-column-one-third app-sidebar">
           <h2 className="govuk-heading-m">Related content</h2>
           {contentfulPage.sidebar?.map((page, i) => {
-            return <p className="govuk-body"><a href={page.slug}>{page.title}</a></p>
+            return <p key={"sb_" + i} className="govuk-body"><a href={page.slug}>{page.title}</a></p>
           })}
         </div>
       </div>
