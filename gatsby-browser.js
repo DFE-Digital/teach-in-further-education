@@ -6,7 +6,7 @@ import { Layout } from "./src/components/Layout"
 export function wrapPageElement ({ element, props }) {
   // props provide same data to Layout as Page element will get
   // including location, data, etc - you don't need to pass it
-  return element
+  return <div className="govuk-width-container">{element}</div>
 }
 
 export function onClientEntry() {
