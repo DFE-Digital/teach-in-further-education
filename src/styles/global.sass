@@ -1,15 +1,10 @@
 @import "node_modules/govuk-frontend/govuk/helpers/colour"
 
 $govuk-brand-colour: govuk-colour("red")
-$govuk-focus-text-colour: govuk-colour("red")
-$govuk-link-active-colour: govuk-colour("red")
 
 @import "node_modules/govuk-frontend/govuk/all"
 
-a:active
-  color: $govuk-brand-colour !important
-
-a:link
+a:link, .govuk-header__navigation-item--active
   color: $govuk-brand-colour !important
 
 hr
@@ -20,6 +15,9 @@ hr
   .govuk-heading-m
       border-top: 10px solid $govuk-brand-colour
       padding-top: 10px
+
+.govuk-header__logotype-text
+  padding-left: 10px
 
 
 

@@ -53,6 +53,7 @@ export const pageQuery = graphql`
                     ctaType
                 }
                 title
+                slug
             }
         }
     }

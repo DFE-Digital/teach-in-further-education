@@ -41,6 +41,7 @@ export const pageQuery = graphql`
                     }
                     cta {
                         title
+                        slug
                         ctaType {
                             ctaType
                         }
