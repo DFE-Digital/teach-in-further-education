@@ -24,7 +24,14 @@ export default function HTML(props) {
 
       {props.headComponents}
     </head>
-    <body {...props.bodyAttributes} className="govuk-template__body js-enabled">
+    <body {...props.bodyAttributes} className="govuk-template__body">
+    <script
+      dangerouslySetInnerHTML={{
+        __html: `
+            document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+        `,
+      }}
+    />
         {props.preBodyComponents}
         <div
           key={`body`}

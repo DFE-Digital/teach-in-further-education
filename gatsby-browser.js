@@ -3,11 +3,11 @@ import * as govuk from "govuk-frontend"
 import React from "react"
 import { Layout } from "./src/components/Layout"
 
-export function wrapPageElement (data) {
+export function wrapRootElement (data) {
   const {element, props} = data
   // props provide same data to Layout as Page element will get
   // including location, data, etc - you don't need to pass it
-  return <div className="govuk-width-container">{element}</div>
+  return <Layout {...props}>{element}</Layout>
 }
 
 export function onClientEntry() {
