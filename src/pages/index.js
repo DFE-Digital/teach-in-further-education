@@ -19,7 +19,6 @@ export default function Home({ data }) {
           <h2 className="govuk-heading-m">Related content</h2>
           {node.sidebar?.map((page, i) => {
             return <p className="govuk-body"><a href={page.slug}>{page.title}</a></p>
-
           })}
         </div>
       </div>

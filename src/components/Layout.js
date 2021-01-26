@@ -5,7 +5,7 @@ import { PhaseBanner } from "./PhaseBanner"
 
 export function Layout({children, ...props}) {
   return (
-    <div>
+    <>
       <a href="#main-content" className="govuk-skip-link">Skip to main content</a>
 
       <Header key="header" {...props}/>
@@ -18,7 +18,7 @@ export function Layout({children, ...props}) {
       </div>
 
       <Footer key="footer" {...props} />
-    </div>
+    </>
   )
 }
 
