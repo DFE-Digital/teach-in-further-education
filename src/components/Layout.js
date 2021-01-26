@@ -1,6 +1,7 @@
 import React from "react"
 import { Footer } from "./Footer"
 import { Header } from "./Header"
+import { PhaseBanner } from "./PhaseBanner"
 
 export function Layout({children, ...props}) {
   return (
@@ -10,6 +11,7 @@ export function Layout({children, ...props}) {
       <Header key="header" {...props}/>
 
       <div className="govuk-width-container">
+        <PhaseBanner />
         <main className="govuk-main-wrapper" id="main-content" role="main">
           {children}
         </main>
