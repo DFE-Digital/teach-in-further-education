@@ -3,10 +3,12 @@ import { graphql } from "gatsby"
 import RichText from "../components/RichText"
 import Advice from "../components/Advice"
 import CTA from "../components/CTA"
+import { Layout } from "../components/Layout"
 
-export default function Page({ data }) {
-  const { contentfulPage } = data
+export default function Page(props) {
+  const { contentfulPage } = props.data
   return (
+    <Layout {...props}>
       <div className="govuk-grid-row">
         <div className="govuk-grid-column-two-thirds">
           <h1 className="govuk-heading-xl">{contentfulPage.title}</h1>
@@ -29,6 +31,7 @@ export default function Page({ data }) {
           })}
         </div>
       </div>
+    </Layout>
   )
 }
 export const pageQuery = graphql`
