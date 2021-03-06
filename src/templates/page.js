@@ -13,7 +13,7 @@ export default function Page(props) {
       <div className="govuk-grid-row">
         <div className="govuk-grid-column-full">
           <Hero key="hero" data={contentfulPage.hero} />
-          {contentfulPage.introduction ? <RichText key="intro" data={contentfulPage.introduction.raw} /> : null}
+          {contentfulPage.introduction ? <RichText key="intro" className="app-introduction" data={contentfulPage.introduction.raw} /> : null}
           {contentfulPage.blocks?.map((blk, i) => {
             return <div><Advice key={"advice_" + i} data={blk} /></div>
           })}

@@ -4,6 +4,19 @@
 $govuk-brand-colour: #FF9900
 $govuk-link-colour: #262626
 $govuk-text-colour: #262626
+$govuk-link-visited-colour: #262626
+$govuk-footer-text: #f3f2f1
+$govuk-footer-bg: #262626
+$govuk-paragraph-bg: #f9f9f9
+
+
+@media only screen and (min-width: 992px)
+  $govuk-page-width: 960px
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+  $govuk-page-width: 1440px
+
 
 @import "node_modules/govuk-frontend/govuk/all"
 
@@ -26,6 +39,24 @@ $govuk-text-colour: #262626
 
 .govuk-header__link:link
   color: $govuk-link-colour
+
+.govuk-header__link:visited
+  color: $govuk-link-visited-colour
+
+.govuk-header__menu-button
+  color: $govuk-link-colour
+
+.govuk-footer
+  background-color: $govuk-link-colour
+
+.govuk-footer__link:link
+  color: $govuk-footer-text
+
+.govuk-footer__link:visited
+  color: $govuk-footer-text
+
+.govuk-footer__licence-description
+  color: $govuk-footer-text
 
 .govuk-button
   background: $govuk-brand-colour
@@ -55,9 +86,9 @@ hr
   display: flex
   align-items: center
   justify-content: space-between
-  width: 80%
-  margin: 80px auto
-  height: 350px
+  width: 90%
+  margin: 20px auto
+  max-height: 350px
 
   img
     position: inherit
@@ -67,11 +98,21 @@ hr
   .app-rich-text p
     padding-right: 20px
     font-size: 36px
-    line-height: 38px
     max-width: 400px
 
+    @media (max-width: 640px)
+      font-size: 18px
 
+    @media (min-width: 640px)
+      font-size: 24px
 
+.app-introduction
+  padding: 40px
+  background-color: $govuk-paragraph-bg
+
+.app-advice
+  padding: 40px
+  background-color: white
 
 
 

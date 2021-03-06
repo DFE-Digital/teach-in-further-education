@@ -21,6 +21,6 @@ const options = {
   }
 };
 
-export default function RichText({data}) {
-  return <div className="app-rich-text">{documentToReactComponents(JSON.parse(data), options)}</div>
+export default function RichText({data, className}) {
+  return <div className={ "app-rich-text " + className }>{documentToReactComponents(JSON.parse(data), options)}</div>
 }
