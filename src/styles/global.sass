@@ -1,11 +1,46 @@
 @import "node_modules/govuk-frontend/govuk/helpers/colour"
 
-$govuk-brand-colour: govuk-colour("red")
+
+$govuk-brand-colour: #FF9900
+$govuk-link-colour: #262626
+$govuk-text-colour: #262626
 
 @import "node_modules/govuk-frontend/govuk/all"
 
+.govuk-header
+  background-color: white
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+.govuk-header__logo
+  width: auto
+
+.govuk-header__container
+  border: none
+  display: flex
+  align-items: center
+  justify-content: space-evenly
+  .govuk-button
+      margin-bottom: 10px
+      padding: 15px
+      font-size: 16px
+
+.govuk-header__link:link
+  color: $govuk-link-colour
+
+.govuk-button
+  background: $govuk-brand-colour
+  border: 1px solid $govuk-brand-colour
+  box-sizing: border-box
+  border-radius: 5px
+  box-shadow: none
+  color: #262626
+  font-weight: $govuk-font-weight-bold
+
 .govuk-header__navigation-item--active
   color: $govuk-brand-colour !important
+
+.govuk-header__logotype-text
+  padding-left: 10px
 
 hr
   margin-top: 20px
@@ -16,8 +51,29 @@ hr
       border-top: 10px solid $govuk-brand-colour
       padding-top: 10px
 
-.govuk-header__logotype-text
-  padding-left: 10px
+.app-hero-banner
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 80%
+  margin: 80px auto
+  height: 350px
+
+  img
+    position: inherit
+    height: 350px
+    width: 476px
+
+  .app-rich-text p
+    padding-right: 20px
+    font-size: 36px
+    line-height: 38px
+    max-width: 400px
+
+
+
+
+
 
 
 

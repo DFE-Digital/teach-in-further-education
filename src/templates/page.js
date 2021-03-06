@@ -4,16 +4,16 @@ import RichText from "../components/RichText"
 import Advice from "../components/Advice"
 import CTA from "../components/CTA"
 import { Layout } from "../components/Layout"
+import Hero from "../components/Hero"
 
 export default function Page(props) {
   const { contentfulPage } = props.data
   return (
     <Layout {...props}>
       <div className="govuk-grid-row">
-        <div className="govuk-grid-column-two-thirds">
-          <h1 className="govuk-heading-xl">{contentfulPage.title}</h1>
-
-          {contentfulPage.introduction ? <RichText data={contentfulPage.introduction.raw} /> : null}
+        <div className="govuk-grid-column-full">
+          <Hero key="hero" data={contentfulPage.hero} />
+          {contentfulPage.introduction ? <RichText key="intro" data={contentfulPage.introduction.raw} /> : null}
           {contentfulPage.blocks?.map((blk, i) => {
             return <div><Advice key={"advice_" + i} data={blk} /></div>
           })}
@@ -22,13 +22,6 @@ export default function Page(props) {
               return <CTA key={"cta_" + i} data={blk} />
             })}
           </div>
-        </div>
-
-        <div className="govuk-grid-column-one-third app-sidebar">
-          <h2 className="govuk-heading-m">Related content</h2>
-          {contentfulPage.sidebar?.map((page, i) => {
-            return <p key={"sb_" + i} className="govuk-body"><a href={page.slug}>{page.title}</a></p>
-          })}
         </div>
       </div>
     </Layout>
@@ -41,9 +34,16 @@ export const pageQuery = graphql`
             introduction {
                 raw
             },
-            sidebar {
-                title
-                slug
+            hero {
+              heroText {
+                raw
+              }
+              heroMedia {
+                  title
+                  fixed(width: 476, height: 350) {
+                    ...GatsbyContentfulFixed
+                  }
+              }
             },
             blocks {
                 title
