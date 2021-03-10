@@ -1,7 +1,25 @@
 import NavLink from "./NavLink"
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 export function Navigation({ location }) {
+  const data = useStaticQuery(graphql`
+      query NavQuery {
+          contentfulNavigation(title: {eq: "Main"}) {
+              pages {
+                  contentful_id
+                  slug
+                  title
+              }
+              callToActions {
+                  contentful_id
+                  slug
+                  title
+              }
+          }
+      }
+  `)
+
   return (
     <>
       <button type="button" className="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation"
@@ -9,13 +27,13 @@ export function Navigation({ location }) {
       </button>
       <nav style={{display: "contents"}}>
         <ul id="navigation" className="govuk-header__navigation" aria-label="Navigation menu">
-          <NavLink key="get-into-fe" data={{location, slug: "/", title: "Get into FE"}} />
-          <NavLink key="why-fe" data={{location, slug: "/why_further_education", title: "Why FE?"}} />
-          <NavLink key="working-in-fe" data={{location, slug: "/working_in_further_education", title: "Working in FE"}} />
-          <NavLink key="quals-in-fe" data={{location, slug: "/further_education_qualifications", title: "Qualifications to work in FE"}} />
-          <NavLink key="support" data={{location, slug: "/support", title: "Support"}} />
+          {data.contentfulNavigation.pages.map(p => {
+            return <NavLink key={p.contentful_id} data={{location, slug: p.slug, title: p.title}} />
+          })}
         </ul>
-        <button className="govuk-button govuk-header__navigation-item">Talk to someone</button>
+        {data.contentfulNavigation.callToActions.map(cta => {
+          return <a key={cta.contentful_id} href={cta.slug} className="govuk-button govuk-header__navigation-item">{cta.title}</a>
+        })}
       </nav>
 
     </>

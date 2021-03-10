@@ -1,10 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-import RichText from "../components/RichText"
-import Advice from "../components/Advice"
 import CTA from "../components/CTA"
 import { Layout } from "../components/Layout"
-import Hero from "../components/Hero"
+import Block from "../components/Block"
 
 export default function Page(props) {
   const { contentfulPage } = props.data
@@ -12,10 +10,8 @@ export default function Page(props) {
     <Layout {...props}>
       <div className="govuk-grid-row">
         <div className="govuk-grid-column-full">
-          <Hero key="hero" data={contentfulPage.hero} />
-          {contentfulPage.introduction ? <RichText key="intro" className="app-introduction" data={contentfulPage.introduction.raw} /> : null}
           {contentfulPage.blocks?.map((blk, i) => {
-            return <div><Advice key={"advice_" + i} data={blk} /></div>
+            return <Block className="app-block" key={"block_" + i} data={blk} />
           })}
           <div>
             {contentfulPage.callToActions?.map((blk, i) => {
@@ -31,24 +27,47 @@ export const pageQuery = graphql`
     query PageBySlug($slug: String!) {
         contentfulPage(slug: { eq: $slug }) {
             title,
-            introduction {
-                raw
-            },
-            hero {
-              heroText {
-                raw
-              }
-              heroMedia {
-                  title
-                  fixed(width: 476, height: 350) {
-                    ...GatsbyContentfulFixed
-                  }
-              }
-            },
             blocks {
-                title
-                advicebody {
-                    raw
+                ... on ContentfulAdvice {
+                    id
+                    internal {
+                        type
+                    }
+                    contentful_id
+                    advicebody {
+                        raw
+                    }
+                    title
+                }
+                ... on ContentfulHeroBanner {
+                    id
+                    internal {
+                        type
+                    }
+                    contentful_id
+                    heroText {
+                        raw
+                    }
+                    heroMedia {
+                        title
+                        fixed(width: 476, height: 350) {
+                            ...GatsbyContentfulFixed
+                        }
+                    }
+                }
+                ... on ContentfulSteps {
+                    id
+                    title
+                    internal {
+                        type
+                    }
+                    steps {
+                        contentful_id
+                        title
+                        advicebody {
+                            raw
+                        }
+                    }
                 }
             },
             callToActions {
