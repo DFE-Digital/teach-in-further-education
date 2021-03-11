@@ -1,23 +1,36 @@
-import React from "react"
+import React, { useState } from "react"
 import Advice from "./Advice"
 
 export default function Steps({ data, ...props }) {
-  return <div {...props}>
-      <ul className="app-stepper-header">
+
+  const [visible, setVisible] = useState(0)
+
+  const onShow = (id) => {
+    setVisible(id)
+  }
+
+  return (<div {...props}>
+      <ul key={"steps"} className="app-stepper-header">
       {
-        data.steps.map((s,i) => {
-          return <li key={"step_header" + i}>
-            <a href={"#step" + i}>{s.title}</a>
-          </li>
+        data.steps.map((s,i,arr) => {
+          const cls = visible === i ? 'step-selected' : null
+          return (
+              <>
+              <li key={"step_header" + i} className={cls} onClick={e => onShow(i)}>
+                <a href={'#step'+i}>{(i + 1) + ". " + s.title}</a>
+              </li>
+                { arr.length - 1 !== i ? <img src="/assets/images/basic-arrow.svg" /> : null }
+              </>)
         })
       }
       </ul>
       {
         data.steps.map((s, i) => {
-          return <div key={"step_panel" + i} id={"step" + i}>
+          const style = visible === i ? null : { display: 'none'}
+          return <div key={"step_panel" + i} id={"step" + i} style={style}>
             <Advice key={s.contentful_id} data={s}/>
           </div>
         })
       }
-  </div>
+  </div>)
 }

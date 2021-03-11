@@ -120,20 +120,34 @@ hr
   padding: 0
   display: flex
   list-style-type: none
-  justify-content:  space-evenly
+  justify-content: center
+  align-items: center
+  box-sizing: border-box
 
   li
+    display: flex
     flex-direction: row
-    margin: auto 10px
     border: 1px solid #262626
     border-radius: 10px
-    padding: 20px
+    height: 60px
+    align-items: center
+    justify-content: center
+
+    &.step-selected
+      background-color: $govuk-brand-colour
+      border: unset
 
     a
       font-size: $govuk-root-font-size
       font-family: $govuk-font-family
+      font-weight: $govuk-font-weight-bold
+      color: $govuk-text-colour
+      text-decoration: none
+      max-width: 150px
+      padding: 0 20px
+      text-align: center
 
-    &:after
-        content: "\25BA"
-        width: 100%
-        height: 10px
+  img
+    margin: auto 20px
+
+
