@@ -34,6 +34,7 @@ module.exports = {
                   "paragraph": "govuk-body",
                   "list[ordered=false]": "govuk-list govuk-list--bullet",
                   "list[ordered=true]": "govuk-list govuk-list--number",
+                  "link": "govuk-link",
                   "table": "govuk-table",
                   "tableRow": "govuk-table__row",
                   "tableCell": "govuk-table__cell",

@@ -6,6 +6,8 @@ name: Heroku deploy
 on:
   push:
     branches: [ master ]
+  repository_dispatch:
+    types: [ publish-event ]
 
 jobs:
   deploy:
