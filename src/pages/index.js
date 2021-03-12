@@ -17,8 +17,10 @@ export const staticQuery = graphql` {
                      type
                  }
                  contentful_id
-                 advicebody {
-                     raw
+                 adviceBody {
+                     childMarkdownRemark {
+                         html
+                     }
                  }
                  title
              }
@@ -47,8 +49,10 @@ export const staticQuery = graphql` {
                  steps {
                      contentful_id
                      title
-                     advicebody {
-                         raw
+                     adviceBody {
+                         childMarkdownRemark {
+                             html
+                         }
                      }
                  }
              }

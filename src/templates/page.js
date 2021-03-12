@@ -34,8 +34,10 @@ export const pageQuery = graphql`
                         type
                     }
                     contentful_id
-                    advicebody {
-                        raw
+                    adviceBody {
+                         childMarkdownRemark {
+                             html
+                         }
                     }
                     title
                 }
@@ -64,8 +66,10 @@ export const pageQuery = graphql`
                     steps {
                         contentful_id
                         title
-                        advicebody {
-                            raw
+                        adviceBody {
+                           childMarkdownRemark {
+                               html
+                           }
                         }
                     }
                 }

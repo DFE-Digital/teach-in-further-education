@@ -19,7 +19,7 @@ export default function Steps({ data, ...props }) {
               <li key={"step_header" + i} className={cls} onClick={e => onShow(i)}>
                 <a href={'#step'+i}>{(i + 1) + ". " + s.title}</a>
               </li>
-                { arr.length - 1 !== i ? <img src="/assets/images/basic-arrow.svg" /> : null }
+                { arr.length - 1 !== i ? <img src="/assets/images/basic-arrow.svg" alt="arrow" aria-hidden="true" /> : null }
               </>)
         })
       }

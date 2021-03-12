@@ -22,7 +22,26 @@ module.exports = {
         // GitHub Flavored Markdown mode (default: true)
         gfm: true,
         // Plugins configs
-        plugins: [],
+          plugins: [
+            {
+              resolve: `gatsby-remark-classes`,
+              options: {
+                classMap: {
+                  "heading[depth=1]": "govuk-heading-xl",
+                  "heading[depth=2]": "govuk-heading-l",
+                  "heading[depth=3]": "govuk-heading-m",
+                  "heading[depth=4]": "govuk-heading-s",
+                  "paragraph": "govuk-body",
+                  "list[ordered=false]": "govuk-list govuk-list--bullet",
+                  "list[ordered=true]": "govuk-list govuk-list--number",
+                  "table": "govuk-table",
+                  "tableRow": "govuk-table__row",
+                  "tableCell": "govuk-table__cell",
+                  "tableHead": "govuk-table__head"
+                }
+              }
+            }
+          ]
       },
     },
     {
