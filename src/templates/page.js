@@ -11,7 +11,7 @@ export default function Page(props) {
       <div className="govuk-grid-row">
         <div className="govuk-grid-column-full">
           {contentfulPage.blocks?.map((blk, i) => {
-            return <Block className="app-block" key={"block_" + i} data={blk} />
+            return <Block className="app-block" key={"block_" + i} id={"block_"+1} data={blk} />
           })}
           <div>
             {contentfulPage.callToActions?.map((blk, i) => {

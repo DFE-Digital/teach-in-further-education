@@ -1,8 +1,7 @@
-import RichText from "./RichText"
 import React from "react"
 
-export default function Advice({ data, ...props }) {
-    return <div {...props}>
+export default function Advice({ id, data, ...props }) {
+    return <div id={id} {...props}>
       <h2 className="govuk-heading-l">{data.title}</h2>
       <div dangerouslySetInnerHTML={{__html:data.adviceBody.childMarkdownRemark.html}} />
     </div>

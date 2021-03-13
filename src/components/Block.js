@@ -2,6 +2,7 @@ import React from "react"
 import Advice from "./Advice"
 import Hero from "./Hero"
 import Steps from "./Steps"
+import DefinitionList from "./DefinitionList"
 
 export default function Block({ data, ...props }) {
   const getLayout = (type) => {
@@ -14,6 +15,9 @@ export default function Block({ data, ...props }) {
       }
       case 'ContentfulSteps': {
         return <Steps data={data} />
+      }
+      case 'ContentfulDefinitionList': {
+        return <DefinitionList data={data} />
       }
       default: { return null }
     }
