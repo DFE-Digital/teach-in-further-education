@@ -5,16 +5,16 @@ import { Layout } from "../components/Layout"
 import Block from "../components/Block"
 
 export default function Page(props) {
-  const { contentfulPage } = props.data
+  const { contentfulPage: page } = props.data
   return (
     <Layout {...props}>
       <div className="govuk-grid-row">
         <div className="govuk-grid-column-full">
-          {contentfulPage.blocks?.map((blk, i) => {
-            return <Block className="app-block" key={"block_" + i} id={"block_"+1} data={blk} />
+          {page.blocks?.map((blk, i) => {
+            return <Block className="app-block" key={"block_" + i} index={i} id={"block_"+i} page={page} data={blk} />
           })}
           <div>
-            {contentfulPage.callToActions?.map((blk, i) => {
+            {page.callToActions?.map((blk, i) => {
               return <CTA key={"cta_" + i} data={blk} />
             })}
           </div>
@@ -52,7 +52,7 @@ export const pageQuery = graphql`
                     }
                     heroMedia {
                         title
-                        fixed(width: 476, height: 350) {
+                        fixed(width: 317, height: 233) {
                             ...GatsbyContentfulFixed
                         }
                     }
@@ -71,6 +71,13 @@ export const pageQuery = graphql`
                                html
                            }
                         }
+                    }
+                }
+                ... on ContentfulTableOfContents {
+                    id
+                    title
+                    internal {
+                        type
                     }
                 }
             },

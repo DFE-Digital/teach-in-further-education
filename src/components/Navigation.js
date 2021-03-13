@@ -25,16 +25,17 @@ export function Navigation({ location }) {
       <button type="button" className="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation"
               aria-label="Show or hide navigation menu">Menu
       </button>
-      <nav style={{display: "contents"}}>
+      <nav>
         <ul id="navigation" className="govuk-header__navigation" aria-label="Navigation menu">
           {data.contentfulNavigation.pages.map(p => {
-            return <NavLink key={p.contentful_id} data={{location, slug: p.slug, title: p.title}} />
+            return <NavLink className="govuk-header__navigation-item" key={p.contentful_id} data={{location, slug: p.slug, title: p.title}} />
+          })}
+          {data.contentfulNavigation.callToActions.map(cta => {
+            return <li key={cta.contentful_id} className="govuk-header__navigation-item"><a key={cta.contentful_id} href={cta.slug} className="govuk-button">{cta.title}</a></li>
           })}
         </ul>
-        {data.contentfulNavigation.callToActions.map(cta => {
-          return <a key={cta.contentful_id} href={cta.slug} className="govuk-button govuk-header__navigation-item">{cta.title}</a>
-        })}
       </nav>
+
 
     </>
   )

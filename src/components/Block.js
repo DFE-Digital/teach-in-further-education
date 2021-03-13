@@ -3,8 +3,9 @@ import Advice from "./Advice"
 import Hero from "./Hero"
 import Steps from "./Steps"
 import DefinitionList from "./DefinitionList"
+import TableOfContents from "./TableOfContents"
 
-export default function Block({ data, ...props }) {
+export default function Block({ data, page, index, ...props }) {
   const getLayout = (type) => {
     switch (type) {
       case 'ContentfulAdvice': {
@@ -18,6 +19,9 @@ export default function Block({ data, ...props }) {
       }
       case 'ContentfulDefinitionList': {
         return <DefinitionList data={data} />
+      }
+      case 'ContentfulTableOfContents': {
+        return <TableOfContents index={index} data={data} page={page} />
       }
       default: { return null }
     }

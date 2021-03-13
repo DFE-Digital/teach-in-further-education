@@ -10,12 +10,12 @@ $govuk-footer-bg: #262626
 $govuk-paragraph-bg: #f9f9f9
 
 
-@media only screen and (min-width: 992px)
-  $govuk-page-width: 960px
+//@media only screen and (min-width: 992px)
+//  $govuk-page-width: 960px
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px)
-  $govuk-page-width: 1440px
+//@media only screen and (min-width: 1200px)
+//  $govuk-page-width: 1440px
 
 
 @import "node_modules/govuk-frontend/govuk/all"
@@ -26,20 +26,48 @@ $govuk-paragraph-bg: #f9f9f9
 
 .govuk-header__logo
   width: auto
+  @media (min-width: 48.0625em)
+    padding-right: 50px
 
 .govuk-header__container
   border: none
   display: flex
+  flex-wrap: nowrap
   align-items: center
-  justify-content: space-evenly
+  justify-content: space-between
+
   .govuk-button
       margin-bottom: 10px
       padding: 15px
       font-size: 16px
+      white-space: nowrap
+
+  nav
+      width: 100%
+      display: flex
+
+      ul
+        width: 100%
+
+        @media (min-width: 48.0625em)
+          display: flex !important
+          justify-content: space-between
+          align-items: center
+
+a
+  color: $govuk-brand-colour
+  font-weight: $govuk-font-weight-bold
 
 .govuk-link:link
   color: $govuk-brand-colour
   font-weight: $govuk-font-weight-bold
+
+.govuk-header__link:hover
+  color: $govuk-brand-colour
+
+.govuk-header__link:active
+  color: $govuk-brand-colour
+  background-color: unset
 
 .govuk-header__link:link
   color: $govuk-link-colour
@@ -104,8 +132,8 @@ hr
 
   img
     position: inherit
-    height: 350px
-    width: 476px
+    height: 233px
+    width: 317px
     filter: sepia(80%)
 
   .app-rich-text p
@@ -116,8 +144,11 @@ hr
     @media (max-width: 640px)
       font-size: 18px
 
-    @media (min-width: 640px)
-      font-size: 24px
+    @media (max-width: 960px)
+      font-size: 36px
+
+    @media (min-width: 960px)
+      font-size: 48px
 
 .app-block
   padding: 40px
@@ -163,4 +194,9 @@ hr
   img
     margin: auto 20px
 
+.app-table-of-contents
 
+  li
+    list-style-type: "\2014"
+    font-weight: $govuk-font-weight-bold
+    padding-left: 10px

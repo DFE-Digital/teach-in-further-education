@@ -35,7 +35,7 @@ export const staticQuery = graphql` {
                  }
                  heroMedia {
                      title
-                     fixed(width: 476, height: 350) {
+                     fixed(width: 317, height: 233) {
                          ...GatsbyContentfulFixed
                      }
                  }
@@ -54,6 +54,13 @@ export const staticQuery = graphql` {
                              html
                          }
                      }
+                 }
+             }
+             ... on ContentfulTableOfContents {
+                 id
+                 title
+                 internal {
+                     type
                  }
              }
          },
