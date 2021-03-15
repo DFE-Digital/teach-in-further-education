@@ -8,6 +8,8 @@ export default function TableOfContents({page, data, index, ...props }) {
         if(i > index) {
           return <li><h4 className="govuk-heading-s" key={"block_" + i}><a href={"#block_" + i}>{blk.title}</a></h4>
           </li>
+        } else {
+          return null
         }
       })}
     </ul>

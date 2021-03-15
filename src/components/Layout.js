@@ -1,10 +1,15 @@
 import React from "react"
 import { Footer } from "./Footer"
 import { Header } from "./Header"
+import Helmet from "react-helmet"
 
-export function Layout({children, ...props}) {
+export function Layout({title, children, ...props}) {
   return (
     <>
+      <Helmet>
+        <title>Teach FE - {title}</title>
+      </Helmet>
+
       <a href="#main-content" className="govuk-skip-link">Skip to main content</a>
 
       <Header key="header" {...props}/>
