@@ -8,6 +8,7 @@ export default function Page(props) {
   const { contentfulPage: page } = props.data
   return (
     <Layout {...props}>
+      <title>{page.title}</title>
       <div className="govuk-grid-row">
         <div className="govuk-grid-column-full">
           {page.blocks?.map((blk, i) => {
