@@ -17,6 +17,7 @@
     "@contentful/rich-text-html-renderer": "^14.1.2",
     "gatsby": "^2.26.1",
     "gatsby-image": "^3.0.0",
+    "gatsby-plugin-google-gtag": "^3.0.0",
     "gatsby-plugin-sass": "^3.0.0",
     "gatsby-plugin-sharp": "^3.0.0",
     "gatsby-remark-classes": "^1.0.0",
