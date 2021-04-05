@@ -79,10 +79,10 @@ jobs:
             az group create --location ${{ env.location }} --name ${{ env.environmentPrefix }}-as-terraform
             echo "Resource group created for env ${{ env.env }}"
 
-            az storage account create --name ${{ env.env }}storagetf --resource-group ${{ env.environmentPrefix }}-as-terraform --location ${{ env.location }} --sku Standard_LRS
+            az storage account create --name teachfe${{ env.env }}storagetf --resource-group ${{ env.environmentPrefix }}-as-terraform --location ${{ env.location }} --sku Standard_LRS
             echo "Storage account created for env ${{ env.env }}"
 
-            az storage container create --auth-mode login --name tfstate --account-name ${{ job.environment }}storagetf
+            az storage container create --auth-mode login --name tfstate --account-name teachfe${{ env.env }}storagetf
             echo "Storage container created for env ${{ env.env }}"
 
       - name: Setup Terraform
@@ -92,7 +92,11 @@ jobs:
           TF_LOCATION: ${{ env.location }}
 
       - name: Terraform Init
-        run: terraform init
+        run: |
+          terraform init -backend-config="resource_group_name=${{ env.environmentPrefix }}-as-terraform" \
+          -backend-config="storage_account_name=teachfe${{ env.env }}storagetf" \
+          -backend-config="container_name=tfstate" \
+          -backend-config="key=terraform.tfstate"
 
       - name: Terraform Plan
         run: terraform plan -auto-approve
