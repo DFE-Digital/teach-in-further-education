@@ -6,15 +6,12 @@ on:
   repository_dispatch:
     types: [ publish-event ]
 
-env:
-  env: Development
-  environmentPrefix: teach-fe-dev
-  location: westeurope
+
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: ${{ env.env }}
+    environment: Development
     steps:
       - uses: actions/checkout@v2
 
@@ -46,9 +43,20 @@ jobs:
           GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
           CI: true
 
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+          path: |
+              public
+              !public/webpack.stats.json
+
   deploy:
     needs: build
-    environment: ${{ env.env }}
+    environment: Development
+    env:
+      environmentPrefix: teach-fe-dev
+      location: westeurope
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
