@@ -32,7 +32,7 @@ jobs:
             ${{ runner.os }}-gatsby-build-
 
       - name: Installing dependencies
-        run: npm install
+        run: npm ci
 
       - name: Building Gatsby site
         run: npm run build --log-pages
@@ -51,12 +51,18 @@ jobs:
               public
               !public/webpack.stats.json
 
-  deploy:
+  create-infrastructure:
+    defaults:
+      run:
+        working-directory: "/infrastructure"
+    name: "Create infrastructure"
     needs: build
     environment: Development
     env:
+      env: dev
       environmentPrefix: teach-fe-dev
       location: westeurope
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -69,13 +75,24 @@ jobs:
       - name: Azure CLI script
         uses: azure/CLI@v1
         with:
-          azcliversion: 2.0.72
           inlineScript: |
             az group create --location ${{ env.location }} --name ${{ env.environmentPrefix }}-as-terraform
-            echo "Resource group created for env ${{ job.environment }}"
+            echo "Resource group created for env ${{ env.env }}"
 
-            az storage account create --name ${{ job.environment }}storagetf --resource-group ${{ env.environmentPrefix }}-as-terraform --location ${{ env.location }} --sku Standard_LRS
-            echo "Storage account created for env ${{ job.environment }}"
+            az storage account create --name ${{ env.env }}storagetf --resource-group ${{ env.environmentPrefix }}-as-terraform --location ${{ env.location }} --sku Standard_LRS
+            echo "Storage account created for env ${{ env.env }}"
 
             az storage container create --auth-mode login --name tfstate --account-name ${{ job.environment }}storagetf
-            echo "Storage container created for env ${{ job.environment }}"
+            echo "Storage container created for env ${{ env.env }}"
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v1
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Terraform Plan
+        run: terraform plan -auto-approve
+        with:
+          TF_ENVIRONMENT: ${{ env.env }}
+          TF_LOCATION: ${{ env.location }}
