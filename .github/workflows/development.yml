@@ -1,0 +1,73 @@
+name: "Dev deploy"
+
+on:
+  push:
+    branches: [ master ]
+  repository_dispatch:
+    types: [ publish-event ]
+
+env:
+  env: Development
+  environmentPrefix: teach-fe-dev
+  location: westeurope
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: ${{ env.env }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: Caching Gatsby
+        id: gatsby-cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            public
+            .cache
+          key: ${{ runner.os }}-gatsby-build-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-gatsby-build-
+
+      - name: Installing dependencies
+        run: npm install
+
+      - name: Building Gatsby site
+        run: npm run build --log-pages
+        env:
+          GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
+          CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
+          GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
+          CI: true
+
+  deploy:
+    needs: build
+    environment: ${{ env.env }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Azure CLI script
+        uses: azure/CLI@v1
+        with:
+          azcliversion: 2.0.72
+          inlineScript: |
+            az group create --location ${{ env.location }} --name ${{ env.environmentPrefix }}-as-terraform
+            echo "Resource group created"
+
+            az storage account create --name ${{ parameters.environmentPrefix }}storagetf --resource-group ${{ env.environmentPrefix }}-as-terraform --location ${{ env.location }} --sku Standard_LRS
+            echo "Storage account created"
+
+            az storage container create --auth-mode login --name tfstate --account-name ${{ parameters.environmentPrefix }}storagetf
+            echo "Storage container created"
