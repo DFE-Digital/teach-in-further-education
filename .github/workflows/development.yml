@@ -72,10 +72,10 @@ jobs:
           azcliversion: 2.0.72
           inlineScript: |
             az group create --location ${{ env.location }} --name ${{ env.environmentPrefix }}-as-terraform
-            echo "Resource group created for env ${{ jobs.deploy.environment }}"
+            echo "Resource group created for env ${{ job.environment }}"
 
-            az storage account create --name ${{ jobs.deploy.environment }}storagetf --resource-group ${{ env.environmentPrefix }}-as-terraform --location ${{ env.location }} --sku Standard_LRS
-            echo "Storage account created for env ${{ jobs.deploy.environment }}"
+            az storage account create --name ${{ job.environment }}storagetf --resource-group ${{ env.environmentPrefix }}-as-terraform --location ${{ env.location }} --sku Standard_LRS
+            echo "Storage account created for env ${{ job.environment }}"
 
-            az storage container create --auth-mode login --name tfstate --account-name ${{ jobs.deploy.environment }}storagetf
-            echo "Storage container created for env ${{ jobs.deploy.environment }}"
+            az storage container create --auth-mode login --name tfstate --account-name ${{ job.environment }}storagetf
+            echo "Storage container created for env ${{ job.environment }}"
