@@ -52,9 +52,6 @@ jobs:
               !public/webpack.stats.json
 
   create-infrastructure:
-    defaults:
-      run:
-        working-directory: "/infrastructure"
     name: "Create infrastructure"
     needs: build
     environment: Development
@@ -95,6 +92,8 @@ jobs:
             -backend-config="storage_account_name=teachfe${{ env.env }}storagetf"
             -backend-config="container_name=tfstate"
             -backend-config="key=terraform.tfstate"
+        working-directory: "infrastructure"
 
       - name: Terraform Plan
         run: terraform plan -auto-approve
+        working-directory: "infrastructure"
