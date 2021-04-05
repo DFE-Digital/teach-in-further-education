@@ -37,5 +37,7 @@ jobs:
       - name: Building Gatsby site
         run: npm run build --log-pages
         env:
+          CONTENTFUL_SPACE_ID: ${{ env.CONTENTFUL_SPACE_ID }}
+          CONTENTFUL_DELIVERY_TOKEN: ${{ env.CONTENTFUL_DELIVERY_TOKEN }}
           GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
           CI: true
