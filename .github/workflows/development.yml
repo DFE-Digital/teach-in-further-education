@@ -87,16 +87,14 @@ jobs:
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
-        with:
-          TF_ENVIRONMENT: ${{ env.env }}
-          TF_LOCATION: ${{ env.location }}
 
       - name: Terraform Init
         run: |
-          terraform init -backend-config="resource_group_name=${{ env.environmentPrefix }}-as-terraform"
-          -backend-config="storage_account_name=teachfe${{ env.env }}storagetf"
-          -backend-config="container_name=tfstate"
-          -backend-config="key=terraform.tfstate"
+          terraform init
+            -backend-config="resource_group_name=${{ env.environmentPrefix }}-as-terraform"
+            -backend-config="storage_account_name=teachfe${{ env.env }}storagetf"
+            -backend-config="container_name=tfstate"
+            -backend-config="key=terraform.tfstate"
 
       - name: Terraform Plan
         run: terraform plan -auto-approve
