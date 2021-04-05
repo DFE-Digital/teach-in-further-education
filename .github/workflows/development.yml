@@ -74,8 +74,8 @@ jobs:
             az group create --location ${{ env.location }} --name ${{ env.environmentPrefix }}-as-terraform
             echo "Resource group created"
 
-            az storage account create --name ${{ parameters.environmentPrefix }}storagetf --resource-group ${{ env.environmentPrefix }}-as-terraform --location ${{ env.location }} --sku Standard_LRS
+            az storage account create --name ${{ env.environmentPrefix }}storagetf --resource-group ${{ env.environmentPrefix }}-as-terraform --location ${{ env.location }} --sku Standard_LRS
             echo "Storage account created"
 
-            az storage container create --auth-mode login --name tfstate --account-name ${{ parameters.environmentPrefix }}storagetf
+            az storage container create --auth-mode login --name tfstate --account-name ${{ env.environmentPrefix }}storagetf
             echo "Storage container created"
