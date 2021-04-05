@@ -87,12 +87,12 @@ jobs:
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
+        with:
+          TF_ENVIRONMENT: ${{ env.env }}
+          TF_LOCATION: ${{ env.location }}
 
       - name: Terraform Init
         run: terraform init
 
       - name: Terraform Plan
         run: terraform plan -auto-approve
-        with:
-          TF_ENVIRONMENT: ${{ env.env }}
-          TF_LOCATION: ${{ env.location }}
