@@ -1,9 +1,9 @@
 {
-  "name": "teach-fe-alpha",
+  "name": "teach-fe",
   "private": true,
-  "description": "Teach in further education ALPHA",
+  "description": "Teach in further education",
   "version": "0.1.0",
-  "license": "0BSD",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -36,9 +36,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hippo-digital/teach-fe-prototype"
+    "url": "https://github.com/DFE-Digital/teach-in-further-education"
   },
   "bugs": {
-    "url": "https://github.com/hippo-digital/teach-fe-prototype"
+    "url": "https://github.com/DFE-Digital/teach-in-further-education"
   }
 }

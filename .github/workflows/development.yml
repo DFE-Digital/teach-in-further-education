@@ -64,36 +64,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Azure Login
-        uses: azure/login@v1
+      - uses: ./.github/actions/cloudfoundry
+        name: "CF Push"
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-      - name: Azure CLI script
-        uses: azure/CLI@v1
-        with:
-          inlineScript: |
-            az group create --location ${{ env.location }} --name ${{ env.environmentPrefix }}-as-terraform
-            echo "Resource group created for env ${{ env.env }}"
-
-            az storage account create --name teachfe${{ env.env }}storagetf --resource-group ${{ env.environmentPrefix }}-as-terraform --location ${{ env.location }} --sku Standard_LRS
-            echo "Storage account created for env ${{ env.env }}"
-
-            az storage container create --auth-mode login --name tfstate --account-name teachfe${{ env.env }}storagetf
-            echo "Storage container created for env ${{ env.env }}"
-
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v1
-
-      - name: Terraform Init
-        run: |
-          terraform init
-            -backend-config="resource_group_name=${{ env.environmentPrefix }}-as-terraform"
-            -backend-config="storage_account_name=teachfe${{ env.env }}storagetf"
-            -backend-config="container_name=tfstate"
-            -backend-config="key=terraform.tfstate"
-        working-directory: "infrastructure"
-
-      - name: Terraform Plan
-        run: terraform plan -auto-approve
-        working-directory: "infrastructure"
+            cf_api: ${{ secrets.GOVPAAS_API }}
+            cf_username: ${{ secrets.GOVPAAS_USER }}
+            cf_password: ${{ secrets.GOVPAAS_PASSWORD }}
+            cf_org: ${{ secrets.GOVPAAS_ORG }}
+            cf_space: ${{ secrets.GOVPAAS_SPACE }}
+            command: push
