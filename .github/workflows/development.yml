@@ -41,11 +41,8 @@ jobs:
         run: npm run test:e2e:ci
         continue-on-error: true
         env:
-          GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
-          GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
-          CI: true
 
       - name: Building Gatsby site
         run: npm run build --log-pages
