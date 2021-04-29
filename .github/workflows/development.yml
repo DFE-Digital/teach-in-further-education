@@ -51,21 +51,8 @@ jobs:
               public
               !public/webpack.stats.json
 
-  create-infrastructure:
-    name: "Create infrastructure"
-    needs: build
-    environment: Development
-    env:
-      env: dev
-      environmentPrefix: teach-fe-dev
-      location: westeurope
-
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-
-      - uses: ./.github/actions/cloudfoundry
-        name: "CF Push"
+      - name: Deploy
+        uses: ./.github/actions/cloudfoundry
         with:
             cf_api: ${{ secrets.GOVPAAS_API }}
             cf_username: ${{ secrets.GOVPAAS_USER }}

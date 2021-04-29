@@ -1,7 +1,5 @@
 #!/bin/sh -l
 
-ls -a 
-
 cf login -a "$INPUT_CF_API" -u "$INPUT_CF_USERNAME" -p "$INPUT_CF_PASSWORD"
 
 if [ -n "$INPUT_CF_ORG" ] && [ -n "$INPUT_CF_SPACE" ]; then
