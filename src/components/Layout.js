@@ -3,7 +3,7 @@ import { Footer } from "./Footer"
 import { Header } from "./Header"
 import Helmet from "react-helmet"
 
-export function Layout({title, children, ...props}) {
+export const Layout = ({title, children, ...props}) => {
   return (
     <>
       <Helmet>
@@ -34,4 +34,6 @@ export function Layout({title, children, ...props}) {
     </>
   )
 }
+
+export default Layout
 

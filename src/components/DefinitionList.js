@@ -1,8 +1,9 @@
 import React, { useState } from "react"
 
-export default function DefinitionList({ data, ...props }) {
-  console.log(data)
+export const DefinitionList = ({ data, ...props }) => {
   return (
     <div>Definition list</div>
   )
 }
+
+export default DefinitionList

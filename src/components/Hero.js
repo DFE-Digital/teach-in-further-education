@@ -2,7 +2,7 @@ import RichText from "./RichText"
 import React from "react"
 import Img from "gatsby-image"
 
-export default function Hero({ data, ...props }) {
+export const Hero = ({ data, ...props }) => {
   return (<div {...props} className="app-hero-banner">
     <RichText data={data?.heroText.raw} style={{zIndex:'99'}}/>
     <div>
@@ -16,3 +16,5 @@ export default function Hero({ data, ...props }) {
     </div>
   </div>)
 }
+
+export default Hero

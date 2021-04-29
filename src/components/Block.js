@@ -5,7 +5,7 @@ import Steps from "./Steps"
 import DefinitionList from "./DefinitionList"
 import TableOfContents from "./TableOfContents"
 
-export default function Block({ data, page, index, ...props }) {
+export const Block = ({ data, page, index, ...props }) => {
   const getLayout = (type) => {
     switch (type) {
       case 'ContentfulAdvice': {
@@ -29,3 +29,5 @@ export default function Block({ data, page, index, ...props }) {
 
   return (<div {...props}>{getLayout(data.internal.type)}</div>)
 }
+
+export default Block;

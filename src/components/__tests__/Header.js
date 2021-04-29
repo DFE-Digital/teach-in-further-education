@@ -1,13 +1,27 @@
 import React from "react"
-import renderer from "react-test-renderer"
+import { render } from "@testing-library/react"
+import { PureHeader as Header } from "../Header"
 
-import Header from "../header"
 
 describe("Header", () => {
   it("renders correctly", () => {
-    const tree = renderer
-      .create("Header")
-      .toJSON()
-    expect(tree).toMatchSnapshot()
+    const data = {
+      contentfulNavigation: {
+        pages: [
+          { contentful_id: 1, slug: '/ways-to-train', title: 'Ways to train'}
+        ],
+        callToActions: [
+          { contentful_id: 2, slug: '/get-support', title: 'Get support'}
+        ]
+      }
+    }
+
+    const location = { pathname: '/ways-to-train'}
+
+    const { container, getByText } = render(<Header location={location} data={data} />)
+
+    expect(getByText('Get support')).toHaveAttribute("href", "/get-support")
+    expect(getByText('Ways to train')).toHaveAttribute("href", "/ways-to-train")
   })
+
 })

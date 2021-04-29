@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Advice from "./Advice"
 
-export default function Steps({ data, ...props }) {
+export const Steps = ({ data, ...props }) => {
 
   const [visible, setVisible] = useState(0)
 
@@ -34,3 +34,5 @@ export default function Steps({ data, ...props }) {
       }
   </div>)
 }
+
+export default Steps

@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function TableOfContents({page, data, index, ...props }) {
+export const TableOfContents = ({page, data, index, ...props }) => {
   return <div className="app-table-of-contents" {...props}>
     <h3 className="govuk-heading-m">{data.title}</h3>
     <ul className="govuk-list">
@@ -15,3 +15,5 @@ export default function TableOfContents({page, data, index, ...props }) {
     </ul>
   </div>
 }
+
+export default TableOfContents

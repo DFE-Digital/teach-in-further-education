@@ -7,7 +7,7 @@ const classMap = new Map([
   ["Warning", "govuk-button--warning"]
 ])
 
-export default function CTA({ data }) {
+export const CTA = ({ data }) => {
   const { ctaType } = data.ctaType
   if(ctaType === "Start") {
      return (
@@ -30,3 +30,5 @@ export default function CTA({ data }) {
     )
   }
 }
+
+export default CTA
