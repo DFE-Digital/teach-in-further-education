@@ -34,6 +34,9 @@ jobs:
       - name: Installing dependencies
         run: npm ci
 
+      - name: Run unit tests
+        run: npm test
+
       - name: Building Gatsby site
         run: npm run build --log-pages
         env:
