@@ -59,4 +59,5 @@ jobs:
             cf_password: ${{ secrets.GOVPAAS_PASSWORD }}
             cf_org: ${{ secrets.GOVPAAS_ORG }}
             cf_space: ${{ secrets.GOVPAAS_SPACE }}
-            command: push -f ./public/manifest.yml
+            workingDir: ./public
+            command: push
