@@ -35,9 +35,6 @@ export const staticQuery = graphql` {
                  }
                  heroMedia {
                      title
-                     fixed(width: 317, height: 233) {
-                         ...GatsbyContentfulFixed
-                     }
                  }
              }
              ... on ContentfulSteps {
