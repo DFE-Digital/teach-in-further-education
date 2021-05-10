@@ -22,7 +22,9 @@ export default function Page(props) {
             })}
           </div>
         </div>
-        <Accordion />
+        <Accordion title="test title">Test body</Accordion>
+        <Accordion title="test title">Test body</Accordion>
+        <Accordion title="test title">Test body</Accordion>
         <Button />
         Youtube-icon sie
         <span class="icon-YouTube"><span class="path1"></span><span class="path2"></span></span>
