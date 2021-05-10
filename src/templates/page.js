@@ -4,8 +4,8 @@ import { graphql } from "gatsby"
 import CTA from "../components/CTA"
 import { Layout } from "../components/Layout"
 import Block from "../components/Block"
-import Accordion from '../components/Accordion'
-import Button from '../components/Button'
+import Accordion from "../components/Accordion"
+import Button from "../components/Button"
 
 export default function Page(props) {
   const { contentfulPage: page } = props.data
@@ -14,7 +14,16 @@ export default function Page(props) {
       <div className="govuk-grid-row">
         <div className="govuk-grid-column-full">
           {page.blocks?.map((blk, i) => {
-            return <Block className="app-block" key={"block_" + i} index={i} id={"block_"+i} page={page} data={blk} />
+            return (
+              <Block
+                className="app-block"
+                key={"block_" + i}
+                index={i}
+                id={"block_" + i}
+                page={page}
+                data={blk}
+              />
+            )
           })}
           <div>
             {page.callToActions?.map((blk, i) => {
@@ -27,73 +36,76 @@ export default function Page(props) {
         <Accordion title="test title">Test body</Accordion>
         <Button />
         Youtube-icon sie
-        <span class="icon-YouTube"><span class="path1"></span><span class="path2"></span></span>
+        <span class="icon-YouTube">
+          <span class="path1"></span>
+          <span class="path2"></span>
+        </span>
       </div>
     </Layout>
   )
 }
 export const pageQuery = graphql`
-    query PageBySlug($slug: String!) {
-        contentfulPage(slug: { eq: $slug }) {
-            title,
-            blocks {
-                ... on ContentfulAdvice {
-                    id
-                    internal {
-                        type
-                    }
-                    contentful_id
-                    adviceBody {
-                         childMarkdownRemark {
-                             html
-                         }
-                    }
-                    title
-                }
-                ... on ContentfulHeroBanner {
-                    id
-                    internal {
-                        type
-                    }
-                    contentful_id
-                    heroText {
-                        raw
-                    }
-                    heroMedia {
-                        title
-                    }
-                }
-                ... on ContentfulSteps {
-                    id
-                    title
-                    internal {
-                        type
-                    }
-                    steps {
-                        contentful_id
-                        title
-                        adviceBody {
-                           childMarkdownRemark {
-                               html
-                           }
-                        }
-                    }
-                }
-                ... on ContentfulTableOfContents {
-                    id
-                    title
-                    internal {
-                        type
-                    }
-                }
-            },
-            callToActions {
-                ctaType {
-                    ctaType
-                }
-                title
-                slug
+  query PageBySlug($slug: String!) {
+    contentfulPage(slug: { eq: $slug }) {
+      title
+      blocks {
+        ... on ContentfulAdvice {
+          id
+          internal {
+            type
+          }
+          contentful_id
+          adviceBody {
+            childMarkdownRemark {
+              html
             }
+          }
+          title
         }
+        ... on ContentfulHeroBanner {
+          id
+          internal {
+            type
+          }
+          contentful_id
+          heroText {
+            raw
+          }
+          heroMedia {
+            title
+          }
+        }
+        ... on ContentfulSteps {
+          id
+          title
+          internal {
+            type
+          }
+          steps {
+            contentful_id
+            title
+            adviceBody {
+              childMarkdownRemark {
+                html
+              }
+            }
+          }
+        }
+        ... on ContentfulTableOfContents {
+          id
+          title
+          internal {
+            type
+          }
+        }
+      }
+      callToActions {
+        ctaType {
+          ctaType
+        }
+        title
+        slug
+      }
     }
+  }
 `

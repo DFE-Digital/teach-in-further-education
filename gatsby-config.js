@@ -4,8 +4,8 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
-const dotenv = require('dotenv');
-dotenv.config();
+const dotenv = require("dotenv")
+dotenv.config()
 
 module.exports = {
   /* Your site config here */
@@ -26,27 +26,27 @@ module.exports = {
         // GitHub Flavored Markdown mode (default: true)
         gfm: true,
         // Plugins configs
-          plugins: [
-            {
-              resolve: `gatsby-remark-classes`,
-              options: {
-                classMap: {
-                  "heading[depth=1]": "govuk-heading-xl",
-                  "heading[depth=2]": "govuk-heading-l",
-                  "heading[depth=3]": "govuk-heading-m",
-                  "heading[depth=4]": "govuk-heading-s",
-                  "paragraph": "govuk-body",
-                  "list[ordered=false]": "govuk-list govuk-list--bullet",
-                  "list[ordered=true]": "govuk-list govuk-list--number",
-                  "link": "govuk-link",
-                  "table": "govuk-table",
-                  "tableRow": "govuk-table__row",
-                  "tableCell": "govuk-table__cell",
-                  "tableHead": "govuk-table__head"
-                }
-              }
-            }
-          ]
+        plugins: [
+          {
+            resolve: `gatsby-remark-classes`,
+            options: {
+              classMap: {
+                "heading[depth=1]": "govuk-heading-xl",
+                "heading[depth=2]": "govuk-heading-l",
+                "heading[depth=3]": "govuk-heading-m",
+                "heading[depth=4]": "govuk-heading-s",
+                paragraph: "govuk-body",
+                "list[ordered=false]": "govuk-list govuk-list--bullet",
+                "list[ordered=true]": "govuk-list govuk-list--number",
+                link: "govuk-link",
+                table: "govuk-table",
+                tableRow: "govuk-table__row",
+                tableCell: "govuk-table__cell",
+                tableHead: "govuk-table__head",
+              },
+            },
+          },
+        ],
       },
     },
     {
@@ -54,7 +54,7 @@ module.exports = {
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_DELIVERY_TOKEN,
-        downloadLocal: true
+        downloadLocal: true,
       },
     },
     {

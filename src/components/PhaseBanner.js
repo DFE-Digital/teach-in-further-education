@@ -1,6 +1,6 @@
 import React from "react"
 
-export const PhaseBanner = (props) => {
+export const PhaseBanner = props => {
   return (
     <div className="govuk-phase-banner">
       <p className="govuk-phase-banner__content">
@@ -8,7 +8,11 @@ export const PhaseBanner = (props) => {
           alpha
         </strong>
         <span className="govuk-phase-banner__text">
-          This is a new service – your <a className="govuk-link" href="/feedback">feedback</a> will help us to improve it.
+          This is a new service – your{" "}
+          <a className="govuk-link" href="/feedback">
+            feedback
+          </a>{" "}
+          will help us to improve it.
         </span>
       </p>
     </div>

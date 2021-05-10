@@ -6,28 +6,30 @@ import DefinitionList from "./DefinitionList"
 import TableOfContents from "./TableOfContents"
 
 export const Block = ({ data, page, index, ...props }) => {
-  const getLayout = (type) => {
+  const getLayout = type => {
     switch (type) {
-      case 'ContentfulAdvice': {
+      case "ContentfulAdvice": {
         return <Advice data={data} />
       }
-      case 'ContentfulHeroBanner': {
-          return <Hero data={data} />
+      case "ContentfulHeroBanner": {
+        return <Hero data={data} />
       }
-      case 'ContentfulSteps': {
+      case "ContentfulSteps": {
         return <Steps data={data} />
       }
-      case 'ContentfulDefinitionList': {
+      case "ContentfulDefinitionList": {
         return <DefinitionList data={data} />
       }
-      case 'ContentfulTableOfContents': {
+      case "ContentfulTableOfContents": {
         return <TableOfContents index={index} data={data} page={page} />
       }
-      default: { return null }
+      default: {
+        return null
+      }
     }
   }
 
-  return (<div {...props}>{getLayout(data.internal.type)}</div>)
+  return <div {...props}>{getLayout(data.internal.type)}</div>
 }
 
-export default Block;
+export default Block
