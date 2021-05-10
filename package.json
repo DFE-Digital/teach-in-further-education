@@ -17,12 +17,6 @@
     "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
     "test:e2e:ci": "start-server-and-test develop http://localhost:8000 cy:run"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run test && npm run test:e2e:ci",
-      "pre-push": "npm run test && npm run test:e2e:ci"
-    }
-  },
   "dependencies": {
     "@contentful/rich-text-html-renderer": "^14.1.2",
     "dotenv": "^8.5.1",
