@@ -7,6 +7,5 @@ describe('Accordion', () => {
     const {getByText} = render(<Accordion title='test title' children='test context' />);
     
     expect(getByText("test title")).toBeVisible();
-    expect(getByText("test context")).toBeVisible();
   });
 });

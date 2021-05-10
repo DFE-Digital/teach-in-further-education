@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Button = (props) => {
+const Button = ({onClick, children}) => {
     return (
-        <button class="govuk-button" data-module="govuk-button">
-            Save and continue
+        <button onClick={onClick} className="govuk-button" data-module="govuk-button">
+            {children}
         </button>
     )
 }

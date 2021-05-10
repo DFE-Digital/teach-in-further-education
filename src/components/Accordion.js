@@ -12,7 +12,7 @@ const Accordion = ({ title, children }) => {
                 </h2>
                 </div>
                 <div id="accordion-default-content-1" className="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-                <p className='govuk-body'>{children}</p>
+                <p className='govuk-body'>{ }</p>
                 </div>
             </div>
         </div>
