@@ -4,12 +4,6 @@ if [ -n "$INPUT_WORKINGDIR" ]; then
   cd "$INPUT_WORKINGDIR"
 fi
 
-cf7 login -a "$INPUT_CF_API" -u "$INPUT_CF_USERNAME" -p "$INPUT_CF_PASSWORD"
-
-echo "Space: $INPUT_CF_SPACE"
-
-#if [ -n "$INPUT_CF_ORG" ] && [ -n "$INPUT_CF_SPACE" ]; then
-cf7 target -o "$INPUT_CF_ORG" -s "$INPUT_CF_SPACE"
-#fi
+cf7 login -a "$INPUT_CF_API" -u "$INPUT_CF_USERNAME" -p "$INPUT_CF_PASSWORD" -o "$INPUT_CF_ORG" -s "$INPUT_CF_SPACE"
 
 sh -c "cf7 $*"

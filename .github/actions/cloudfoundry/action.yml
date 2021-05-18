@@ -15,10 +15,10 @@ inputs:
     required: true
   cf_org:
     description: "Target Organization"
-    required: false
+    required: true
   cf_space:
     description: "Target Space"
-    required: false
+    required: true
   workingDir:
     description: "Working directory"
     required: false
