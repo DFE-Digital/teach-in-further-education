@@ -7,9 +7,7 @@ const data = useStaticQuery(graphql`
     allContentfulPage {
       edges {
         node {
-          slug {
-            title
-          }
+          slug
         }
       }
     }
@@ -19,21 +17,16 @@ const data = useStaticQuery(graphql`
 {
   data.allContentfulPage.edges.map(edge => {
     return describe("Accessibility tests", () => {
-      beforeEach(() => {
-        cy.visit(`/${edge.node.slug}`).get("main").injectAxe()
-      })
-      it("Has no detectable accessibility violations on load", () => {
-        cy.checkA11y()
+      cy.task("sitemapLocations").then(pages => {
+        pages.forEach(page => {
+          beforeEach(() => {
+            cy.visit(`/${edge.node.slug}`).get("main").injectAxe()
+          })
+          it("Has no detectable accessibility violations on load", () => {
+            cy.checkA11y()
+          })
+        })
       })
     })
   })
 }
-
-// describe("Accessibility tests", () => {
-//   beforeEach(() => {
-//     cy.visit("/").get("main").injectAxe()
-//   })
-//   it("Has no detectable accessibility violations on load", () => {
-//     cy.checkA11y()
-//   })
-// })
