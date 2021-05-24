@@ -4,6 +4,7 @@ import Hero from "./Hero"
 import Steps from "./Steps"
 import DefinitionList from "./DefinitionList"
 import TableOfContents from "./TableOfContents"
+import Accordion from "./Accordion"
 
 export const Block = ({ data, page, index, ...props }) => {
   const getLayout = (type) => {
@@ -15,7 +16,11 @@ export const Block = ({ data, page, index, ...props }) => {
           return <Hero data={data} />
       }
       case 'ContentfulSteps': {
-        return <Steps data={data} />
+        if(data.isAccordian) {
+          return <Accordion data={data} />
+        } else {
+          return <Steps data={data} />
+        }
       }
       case 'ContentfulDefinitionList': {
         return <DefinitionList data={data} />
