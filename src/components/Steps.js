@@ -9,8 +9,8 @@ export const Steps = ({ data, ...props }) => {
     setVisible(id)
   }
 
-  return (<div {...props}>
-      <ul key={"steps"} className="app-stepper-header">
+  return (<div key={"steps"} {...props}>
+      <ul  className="app-stepper-header">
       {
         data.steps.map((s,i,arr) => {
           const cls = visible === i ? 'step-selected' : null
