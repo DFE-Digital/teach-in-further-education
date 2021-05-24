@@ -59,6 +59,7 @@ export const pageQuery = graphql`
                 ... on ContentfulSteps {
                     id
                     title
+                    isAccordion
                     internal {
                         type
                     }

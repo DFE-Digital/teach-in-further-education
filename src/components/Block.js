@@ -16,7 +16,7 @@ export const Block = ({ data, page, index, ...props }) => {
           return <Hero data={data} />
       }
       case 'ContentfulSteps': {
-        if(data.isAccordian) {
+        if(data.isAccordion) {
           return <Accordion data={data} />
         } else {
           return <Steps data={data} />

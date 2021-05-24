@@ -41,6 +41,7 @@ export const staticQuery = graphql` {
              ... on ContentfulSteps {
                  id
                  title
+                 isAccordion
                  internal {
                      type
                  }

@@ -10,12 +10,12 @@ export const Accordion = ({ data, ...props }) => {
             <div key={"accordian_section-" + i} className="govuk-accordion__section">
               <div className="govuk-accordion__section-header">
                 <h2 className="govuk-accordion__section-heading">
-                    <span className="govuk-accordion__section-button" id={"accordion-heading-section-" + i}>
+                    <span className="govuk-accordion__section-button" id={"accordion-default-heading-" + i}>
                     {s.title}
                     </span>
                 </h2>
               </div>
-              <div id={"accordion-content-section-" + i} className="govuk-accordion__section-content"
+              <div id={"accordion-default-content-" + i} className="govuk-accordion__section-content"
                    aria-labelledby={"accordion-heading-section-" + i}>
                 <Advice key={s.contentful_id} data={s} noTitle={true} />
               </div>
