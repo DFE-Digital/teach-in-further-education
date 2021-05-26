@@ -6,6 +6,14 @@ const fetch = require("node-fetch")
 const { useStaticQuery } = require("gatsby")
 const { graphql } = require("gatsby")
 
+require("dotenv").config()
+const db = require("db")
+db.connect({
+  spaceID: process.env.CONTENTFUL_SPACE_ID,
+  deliveryToken: process.env.CONTENTFUL_DELIVERY_TOKEN,
+  googleAnalytics: process.env.GOOGLE_ANALYTICS_TAG,
+})
+
 /**
  * @type {Cypress.PluginConfig}
  */
@@ -26,43 +34,14 @@ module.exports = (on, config) => {
     getPageSlugs() {
       return data.allContentfulPage.edges.map(edge => edge.node.slug)
     },
-
-
-    //   return fetch(`${config.baseUrl}/sitemap.xml`, {
-    //     method: "GET",
-    //     headers: {
-    //       "Content-Type": "application/xml",
-    //     },
-    //   })
-    //     .then(res => res.text())
-    //     .then(xml => {
-    //       const locs = [...xml.matchAll(`<loc>(.|\n)*?</loc>`)].map(([loc]) =>
-    //         loc.replace("<loc>", "").replace("</loc>", "")
-    //       )
-    //       return locs
-    //     })
-    // },
   })
   return config
 }
 
-
-await fetch ('https://graphql.contentful.com/content/v1/spaces/CONTENTFUL_SPACE_ID/environments/CONTENTFUL_DELIVERY_TOKEN?query=query{allContentfulPage{edges{node{slug}}}}&variables={"preview":true}', {
-  method: 'GET', 
-  headers: {"Content-Type": "application/json"}, 
-  body: JSON.stringify(
-    { query:
-      query {
-      allContentfulPage {
-        edges {
-          node {
-            slug
-          }
-        }
-      }
-      }
-      })
-      return Response.json()
-      .then(res => res.json())
-    })
-   
+await fetch(
+  `https://graphql.contentful.com/content/v1/spaces/${spaceID}/environments/${deliveryToken}?query=query{allContentfulPage{edges{node{slug}}}}&variables={"preview":true}`,
+  {
+    method: "GET",
+    headers: { "Content-Type": "application/json" },
+  }
+)
