@@ -34,9 +34,20 @@ export const Header = ({location}) => {
       query NavQuery {
           contentfulNavigation(title: {eq: "Main"}) {
               pages {
-                  contentful_id
-                  slug
-                  title
+                  ... on ContentfulNavLink {
+                      contentful_id
+                      title
+                      links {
+                          contentful_id
+                          slug
+                          title
+                      }
+                  }
+                  ... on ContentfulPage {
+                      contentful_id
+                      slug
+                      title
+                  }
               }
               callToActions {
                   contentful_id
