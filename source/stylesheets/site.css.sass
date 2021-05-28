@@ -1,0 +1,241 @@
+@import "../../node_modules/govuk-frontend/govuk/helpers/colour"
+
+
+$govuk-brand-colour: #FF9900
+$govuk-link-colour: #262626
+$govuk-text-colour: #262626
+$govuk-link-visited-colour: #262626
+$govuk-footer-text: #f3f2f1
+$govuk-footer-bg: #262626
+$govuk-paragraph-bg: $govuk-text-colour
+
+
+//@media only screen and (min-width: 992px)
+//  $govuk-page-width: 960px
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+//@media only screen and (min-width: 1200px)
+//  $govuk-page-width: 1440px
+
+
+@import "../../node_modules/govuk-frontend/govuk/all"
+
+.govuk-header
+  background-color: white
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+.govuk-header__logo
+  width: auto
+  @media (min-width: 48.0625em)
+    padding-right: 50px
+
+.govuk-header__container
+  border: none
+  display: flex
+  flex-wrap: nowrap
+  align-items: center
+  justify-content: space-between
+
+  .govuk-button
+    margin-bottom: 10px
+    padding: 15px
+    font-size: 16px
+    white-space: nowrap
+
+
+  nav
+      width: 100%
+      display: flex
+
+      ul
+        width: 100%
+
+        @media (min-width: 48.0625em)
+          display: flex !important
+          justify-content: space-between
+          align-items: center
+
+a
+  color: $govuk-brand-colour
+  font-weight: $govuk-font-weight-bold
+
+.govuk-link:link
+  color: $govuk-brand-colour
+  font-weight: $govuk-font-weight-bold
+
+.govuk-header__link:hover
+  color: $govuk-brand-colour
+
+.govuk-header__link:active
+  color: $govuk-brand-colour
+  background-color: unset
+
+.govuk-header__link:link
+  color: $govuk-link-colour
+
+.govuk-header__link:visited
+  color: $govuk-link-visited-colour
+
+.govuk-header__menu-button
+  color: $govuk-link-colour
+
+.govuk-footer
+  background-color: $govuk-link-colour
+
+.govuk-footer__link:link
+  color: $govuk-footer-text
+
+.govuk-footer__link:visited
+  color: $govuk-footer-text
+
+.govuk-footer__licence-description
+  color: $govuk-footer-text
+
+.govuk-button
+  background: $govuk-brand-colour
+  border: 1px solid $govuk-brand-colour
+  box-sizing: border-box
+  border-radius: 5px
+  box-shadow: none
+  color: #262626
+  font-weight: $govuk-font-weight-bold
+
+.govuk-header__navigation-item--active
+  color: $govuk-brand-colour !important
+
+.govuk-header__logotype-text
+  padding-left: 10px
+
+.govuk-table__head
+  font-weight: $govuk-font-weight-bold
+
+.govuk-table
+  tr
+    td:first-child
+      font-weight: $govuk-font-weight-bold
+
+.govuk-accordion__section-header
+  background: #262626
+  border-radius: 5px
+  padding: 10px
+
+.govuk-accordion__section-button
+  color: #ffffff !important
+  font-style: normal
+  font-weight: 300
+  font-size: 20px
+  line-height: 28px
+
+hr
+  margin-top: 20px
+  margin-bottom: 40px
+
+.app-sidebar
+  .govuk-heading-m
+    border-top: 10px solid $govuk-brand-colour
+    padding-top: 10px
+
+.app-hero-banner
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 90%
+  margin: 20px auto
+  max-height: 350px
+
+  .app-rich-text p
+    padding-right: 20px
+    font-size: 36px
+    max-width: 400px
+
+    @media (max-width: 640px)
+      font-size: 18px
+
+    @media (max-width: 960px)
+      font-size: 36px
+
+    @media (min-width: 960px)
+      font-size: 48px
+
+.app-block
+  padding: 40px
+
+.app-advice
+  padding: 40px
+  background-color: white
+
+.app-stepper-header
+  padding: 0
+  display: flex
+  list-style-type: none
+  justify-content: center
+  align-items: center
+  box-sizing: border-box
+
+  li
+    display: flex
+    flex-direction: row
+    border: 1px solid #262626
+    border-radius: 10px
+    height: 60px
+    align-items: center
+    justify-content: center
+
+    &.step-selected
+      background-color: $govuk-brand-colour
+      border: unset
+
+    a
+      font-size: $govuk-root-font-size
+      font-family: $govuk-font-family
+      font-weight: $govuk-font-weight-bold
+      color: $govuk-text-colour
+      text-decoration: none
+      max-width: 150px
+      padding: 0 20px
+      text-align: center
+
+  img
+    margin: auto 20px
+
+.app-table-of-contents
+  li
+    list-style-type: "\2014"
+    font-weight: $govuk-font-weight-bold
+    padding-left: 10px
+
+/* The app-dropdown container */
+.app-dropdown
+  text-decoration: underline
+
+
+
+/* app-dropdown content (hidden by default) */
+.app-dropdown-content 
+  display: none
+  position: absolute
+  background-color: #ffffff
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+  z-index: 1
+
+
+/* Links inside the app-dropdown */
+.app-dropdown-content
+  a
+    float: none
+    color: $govuk-brand-colour !important
+    padding: 12px 16px
+    display: block
+    text-align: left
+
+
+/* Add a grey background color to app-dropdown links on hover */
+.app-dropdown-content
+  a:hover
+    background-color: #ddd
+
+
+/* Show the app-dropdown menu on hover */
+.app-dropdown:hover
+  .app-dropdown-content
+    display: block

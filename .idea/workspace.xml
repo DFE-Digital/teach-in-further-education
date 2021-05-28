@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/teach-in-further-education.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gatsby-hello-world.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__mocks__/file-mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__mocks__/gatsby.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/variables.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/website/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/website/output.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/website/variables.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest-preprocess.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.setup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loadershim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Accordion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Advice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Block.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CTA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DefinitionList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavLink.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PhaseBanner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RichText.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Steps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TableOfContents.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/__tests__/Accordion.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/__tests__/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_icons.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/gds-enchance.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/global.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/fonts/bold-affa96571d-v2.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/fonts/bold-b542beb274-v2.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/fonts/icomoon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/fonts/icomoon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/fonts/icomoon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/fonts/icomoon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/fonts/light-94a07e06a1-v2.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/fonts/light-f591b13f7d-v2.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/basic-arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/govuk-apple-touch-icon-152x152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/govuk-apple-touch-icon-167x167.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/govuk-apple-touch-icon-180x180.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/govuk-apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/govuk-crest-2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/govuk-crest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/govuk-logotype-crown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/govuk-mask-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/govuk-opengraph-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/images/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/manifest.yml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1tA0Tr2ETKeaPLX2yohMm1MqOXm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="" />
+      <created>1622196599612</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622196599612</updated>
+      <workItem from="1622196603267" duration="1666000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
