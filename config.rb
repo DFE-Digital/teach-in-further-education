@@ -48,12 +48,27 @@ end
 # Helpers
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
+require 'lib/markdown_helper'
+helpers MarkdownHelper
 
-# helpers do
-#   def some_helper
-#     'Helping'
-#   end
-# end
+set :markdown_engine, :redcarpet
+set(
+  :markdown,
+  :fenced_code_blocks => true,
+  :smartypants => true,
+  :tables => true,
+  :highlight => true,
+  :superscript => true,
+  :renderer => MarkdownHelper::TeachFeMarkdownRenderer
+)
+
+helpers do
+  def markdown(source)
+    Tilt[:markdown].new(
+      :renderer => MarkdownHelper::TeachFeMarkdownRenderer
+    ) { source }.render
+  end
+end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings

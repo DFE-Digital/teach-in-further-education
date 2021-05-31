@@ -1,2 +1,16 @@
-<h1><%= page.title %></h1>
-<%= simple_format page.body %>
+
+<% page.blocks.each do |b| %>
+  <% if b._meta.content_type_id == "advice" %>
+    <%= partial("advice", :locals => { :data => b }) %>
+  <% end %>
+  <% if b._meta.content_type_id == "" %>
+    <%= b._meta.content_type_id %>
+  <% end %>
+<% end %>
+<% if !page.call_to_actions.nil? %>
+<div>
+  <% page.call_to_actions.each do |c| %>
+    <%= partial("cta", :locals => { :data => c }) %>
+  <% end %>
+</div>
+<% end %>

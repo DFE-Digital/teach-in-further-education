@@ -8,6 +8,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    ast (2.4.2)
     autoprefixer-rails (10.2.5.1)
       execjs (> 0)
     backports (3.21.0)
@@ -110,6 +111,9 @@ GEM
       rack-livereload (~> 0.3.15)
     minitest (5.14.4)
     multi_json (1.15.0)
+    opal (1.1.1)
+      ast (>= 2.3.0)
+      parser (~> 3.0)
     padrino-helpers (0.13.3.4)
       i18n (~> 0.6, >= 0.6.7)
       padrino-support (= 0.13.3.4)
@@ -117,6 +121,8 @@ GEM
     padrino-support (0.13.3.4)
       activesupport (>= 3.1)
     parallel (1.20.1)
+    parser (3.0.1.1)
+      ast (~> 2.4.1)
     public_suffix (4.0.6)
     rack (2.2.3)
     rack-livereload (0.3.17)
@@ -125,6 +131,7 @@ GEM
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    redcarpet (3.5.1)
     rexml (3.2.5)
     rich_text_renderer (0.2.2)
     sassc (2.4.0)
@@ -150,8 +157,11 @@ DEPENDENCIES
   contentful_middleman
   middleman
   middleman-autoprefixer
+  middleman-core
   middleman-dotenv
   middleman-livereload
+  opal
+  redcarpet
   tzinfo-data
   wdm
   webrick
