@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charSet="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <meta name="theme-color" content="red"/>
+  <title><%= current_page.data.title || "Teach in further education" %></title>
+
+  <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
+
+  <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/favicon.ico" type="image/x-icon"/>
+  <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="blue"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png"/>
+  <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png"/>
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/govuk-apple-touch-icon-152x152.png"/>
+  <link rel="apple-touch-icon" href="/assets/images/govuk-apple-touch-icon.png"/>
+
+  <meta property="og:image" content="/assets/images/govuk-opengraph-image.png"/>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=<%= ENV["GOOGLE_ANALYTICS_TAG"] %>"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '<%= ENV["GOOGLE_ANALYTICS_TAG"] %>');
+  </script>
+
+  <%= stylesheet_link_tag "site" %>
+
+</head>
+<body class="govuk-template__body">
+<script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+  <%= partial "header", :locals => { :data => data } %>
+
+<div class="govuk-width-container">
+  <%= partial "phase-banner" %>
+
+  <main class="govuk-main-wrapper" id="main-content" role="main">
+    <div className="govuk-grid-row">
+      <div className="govuk-grid-column-full">
+        <%= yield %>
+      </div>
+    </div>
+  </main>
+</div>
+
+<%= partial "footer", :locals => { :data => data } %>
+
+<%= javascript_include_tag :all %>
+<script>
+  window.site.initSite();
+</script>
+</body>
+
+</html>

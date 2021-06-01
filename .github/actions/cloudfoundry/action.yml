@@ -19,9 +19,9 @@ inputs:
   cf_space:
     description: "Target Space"
     required: true
-  workingDir:
+  working_dir:
     description: "Working directory"
-    required: false
+    required: true
   command:
     description: "Command to run using CF CLI"
     required: true

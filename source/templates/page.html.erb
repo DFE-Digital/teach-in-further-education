@@ -1,0 +1,27 @@
+<% page.blocks.each_with_index do |b, i| %>
+  <div id="<%= "block_#{i}" %>" class="app-block">
+    <% if b._meta.content_type_id == "advice" %>
+      <%= partial("advice", :locals => { :data => b, :show_title => true }) %>
+    <% end %>
+    <% if b._meta.content_type_id == "userJourney" %>
+      <% if b.is_accordion %>
+        <%= partial("accordion", :locals => { :data => b }) %>
+      <% else %>
+        <%= partial("steps", :locals => { :data => b }) %>
+      <% end %>
+    <% end %>
+    <% if b._meta.content_type_id == "heroBanner" %>
+      <%= partial("hero", :locals => { :data => b }) %>
+    <% end %>
+    <% if b._meta.content_type_id == "tableOfContents"  %>
+      <%= partial("tableofcontents", :locals => { :index => i, :data => b, :page => page})  %>
+    <% end %>
+  </div>
+<% end %>
+<% if !page.call_to_actions.nil? %>
+  <div>
+    <% page.call_to_actions.each do |c| %>
+      <%= partial("cta", :locals => { :data => c }) %>
+    <% end %>
+  </div>
+<% end %>
