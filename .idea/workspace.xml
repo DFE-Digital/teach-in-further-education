@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Adding missing page extensions">
+    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Tweaking build working directory">
       <change afterPath="$PROJECT_DIR$/spec/features/navigation_spec.rb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
@@ -103,7 +103,7 @@
       <workItem from="1622196603267" duration="1666000" />
       <workItem from="1622532825343" duration="24464000" />
       <workItem from="1622574799619" duration="350000" />
-      <workItem from="1622575166945" duration="7573000" />
+      <workItem from="1622575166945" duration="7877000" />
     </task>
     <task id="LOCAL-00001" summary="Adding custom markdown renderer and started adding components">
       <created>1622467274562</created>
@@ -182,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622583197422</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Tweaking build working directory">
+      <created>1622583519878</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1622583519878</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +219,8 @@
     <MESSAGE value="Forcing CD" />
     <MESSAGE value="Updating auth method" />
     <MESSAGE value="Adding missing page extensions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding missing page extensions" />
+    <MESSAGE value="Tweaking build working directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tweaking build working directory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
