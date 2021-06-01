@@ -4,6 +4,7 @@
 .sass-cache
 .env
 .site-space-hash
+.tmp
 
 build/
 node_modules/
