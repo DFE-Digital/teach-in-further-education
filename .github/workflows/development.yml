@@ -58,5 +58,5 @@ jobs:
             cf_password: ${{ secrets.GOVPAAS_PASSWORD }}
             cf_org: ${{ secrets.GOVPAAS_ORG }}
             cf_space: ${{ secrets.GOVPAAS_SPACE }}
-            workingDir: ./build
+            working_dir: build
             command: push

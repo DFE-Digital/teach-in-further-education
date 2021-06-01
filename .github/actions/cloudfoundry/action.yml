@@ -19,7 +19,7 @@ inputs:
   cf_space:
     description: "Target Space"
     required: true
-  workingDir:
+  working_dir:
     description: "Working directory"
     required: true
   command:
