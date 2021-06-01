@@ -3,6 +3,8 @@
 .DS_Store
 .sass-cache
 .env
+.site-space-hash
 
 build/
 node_modules/
+data/site/
