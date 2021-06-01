@@ -4,43 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/site.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_accordion.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_footer.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_header.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_hero.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_phase-banner.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_steps.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_tableofcontents.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/development.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/development.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Run.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.site-space-hash" beforeDir="false" afterPath="$PROJECT_DIR$/.site-space-hash" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/site/navs/iDcAlnCKhK7S1H2EXHGLY.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/site/navs/iDcAlnCKhK7S1H2EXHGLY.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/site/pages/15FI0WUAPnHGy98eB7XW5N.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/site/pages/15FI0WUAPnHGy98eB7XW5N.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/site/pages/1NOAoDHLEkkYuIas1c55hL.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/site/pages/30zC6ehmTs7QXh0ymjNUpI.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/site/pages/30zC6ehmTs7QXh0ymjNUpI.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/site/pages/40slMintor4eNRoKtfUjgo.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/site/pages/40slMintor4eNRoKtfUjgo.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/site/pages/4x8IADa1wIto2WZKWvmb0.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/site/pages/4x8IADa1wIto2WZKWvmb0.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/site/pages/5yYjsBia5tKnn6rysEdUQ2.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/site/pages/5yYjsBia5tKnn6rysEdUQ2.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/site/pages/630Q4flj9fmCaHKsckbOA6.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/site/pages/630Q4flj9fmCaHKsckbOA6.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/site/pages/6qhlSowYQyDegYs3FxSiLN.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/site/pages/6qhlSowYQyDegYs3FxSiLN.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/site/pages/7fkpVgKNOUvTuZI7KBhdrE.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/site/pages/7fkpVgKNOUvTuZI7KBhdrE.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/markdown_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/markdown_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_advice.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_advice.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_cta.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_cta.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/javascripts/govuk.js" beforeDir="false" />
+    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Adding base set of components">
       <change beforePath="$PROJECT_DIR$/source/layouts/layout.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/layouts/layout.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/stylesheets/site.css.sass" beforeDir="false" afterPath="$PROJECT_DIR$/source/stylesheets/site.css.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/templates/page.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/templates/page.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +98,7 @@
       <workItem from="1622196603267" duration="1666000" />
       <workItem from="1622532825343" duration="24464000" />
       <workItem from="1622574799619" duration="350000" />
+      <workItem from="1622575166945" duration="587000" />
     </task>
     <task id="LOCAL-00001" summary="Adding custom markdown renderer and started adding components">
       <created>1622467274562</created>
@@ -141,7 +107,28 @@
       <option name="project" value="LOCAL" />
       <updated>1622467274562</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=".gitignore update">
+      <created>1622575324056</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1622575324056</updated>
+    </task>
+    <task id="LOCAL-00003" summary="removing uneeded files">
+      <created>1622575398068</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1622575398068</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adding base set of components">
+      <created>1622575422013</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622575422013</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,7 +148,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding custom markdown renderer and started adding components" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding custom markdown renderer and started adding components" />
+    <MESSAGE value=".gitignore update" />
+    <MESSAGE value="removing uneeded files" />
+    <MESSAGE value="Adding base set of components" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding base set of components" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
