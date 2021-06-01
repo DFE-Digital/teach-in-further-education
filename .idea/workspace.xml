@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Adding env specific manaifest">
-      <change afterPath="$PROJECT_DIR$/StaticFile.auth" afterDir="false" />
+    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Updating auth method">
       <change afterPath="$PROJECT_DIR$/spec/features/navigation_spec.rb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/development.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/development.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/teach-in-further-education.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/teach-in-further-education.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_cta.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_cta.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_header.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_header.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/layouts/layout.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/layouts/layout.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/javascripts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -52,6 +55,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\appdev\teach-in-further-education\build" />
       <recent name="D:\appdev\teach-in-further-education\source\javascripts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -104,7 +108,7 @@
       <workItem from="1622196603267" duration="1666000" />
       <workItem from="1622532825343" duration="24464000" />
       <workItem from="1622574799619" duration="350000" />
-      <workItem from="1622575166945" duration="5835000" />
+      <workItem from="1622575166945" duration="7256000" />
     </task>
     <task id="LOCAL-00001" summary="Adding custom markdown renderer and started adding components">
       <created>1622467274562</created>
@@ -162,7 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622580552316</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Forcing CD">
+      <created>1622581842711</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1622581842711</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Updating auth method">
+      <created>1622582222579</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1622582222579</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +207,9 @@
     <MESSAGE value="Updating build to build middleman" />
     <MESSAGE value="Adding bundle exec to build" />
     <MESSAGE value="Adding env specific manaifest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding env specific manaifest" />
+    <MESSAGE value="Forcing CD" />
+    <MESSAGE value="Updating auth method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating auth method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

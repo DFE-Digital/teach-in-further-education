@@ -21,7 +21,7 @@ inputs:
     required: true
   workingDir:
     description: "Working directory"
-    required: false
+    required: true
   command:
     description: "Command to run using CF CLI"
     required: true

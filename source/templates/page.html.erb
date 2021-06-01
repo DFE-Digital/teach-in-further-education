@@ -1,5 +1,5 @@
 <% page.blocks.each_with_index do |b, i| %>
-  <div class="app-block">
+  <div id="<%= "block_#{i}" %>" class="app-block">
     <% if b._meta.content_type_id == "advice" %>
       <%= partial("advice", :locals => { :data => b, :show_title => true }) %>
     <% end %>
