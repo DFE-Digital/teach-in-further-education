@@ -32,6 +32,13 @@ jobs:
       - name: Run Javascript build
         run: npm run build
 
+      - name: Get latest content
+        run: bundle exec middleman contentful
+        env:
+          GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
+          CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
+
       - name: Building middleman site
         run: bundle exec middleman build
         env:

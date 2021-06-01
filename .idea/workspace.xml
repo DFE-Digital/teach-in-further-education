@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Tweaking build working directory">
+    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="simplifiying cloud foundry script">
       <change afterPath="$PROJECT_DIR$/spec/features/navigation_spec.rb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/development.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/development.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
     </list>
@@ -103,7 +104,7 @@
       <workItem from="1622196603267" duration="1666000" />
       <workItem from="1622532825343" duration="24464000" />
       <workItem from="1622574799619" duration="350000" />
-      <workItem from="1622575166945" duration="7877000" />
+      <workItem from="1622575166945" duration="8274000" />
     </task>
     <task id="LOCAL-00001" summary="Adding custom markdown renderer and started adding components">
       <created>1622467274562</created>
@@ -189,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622583519878</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="simplifiying cloud foundry script">
+      <created>1622583865729</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1622583865729</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +228,8 @@
     <MESSAGE value="Updating auth method" />
     <MESSAGE value="Adding missing page extensions" />
     <MESSAGE value="Tweaking build working directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tweaking build working directory" />
+    <MESSAGE value="simplifiying cloud foundry script" />
+    <option name="LAST_COMMIT_MESSAGE" value="simplifiying cloud foundry script" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
