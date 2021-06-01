@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+group :development do
+  gem 'rspec'
+  gem 'capybara'
+end
+
 gem 'opal'
 gem 'middleman-dotenv'
 gem 'webrick'
