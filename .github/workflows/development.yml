@@ -41,7 +41,7 @@ jobs:
 
       - shell: bash
         run: |
-          cp manifest.yml build/
+          cp manifest-dev.yml build/manifest.yml
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v2
