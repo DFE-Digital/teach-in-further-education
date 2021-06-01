@@ -4,8 +4,6 @@ import { graphql } from "gatsby"
 import CTA from "../components/CTA"
 import { Layout } from "../components/Layout"
 import Block from "../components/Block"
-import Accordion from '../components/Accordion'
-import Button from '../components/Button'
 
 export default function Page(props) {
   const { contentfulPage: page } = props.data
@@ -22,10 +20,6 @@ export default function Page(props) {
             })}
           </div>
         </div>
-        <Accordion />
-        <Button />
-        Youtube-icon sie
-        <span class="icon-YouTube"><span class="path1"></span><span class="path2"></span></span>
       </div>
     </Layout>
   )
@@ -59,11 +53,13 @@ export const pageQuery = graphql`
                     }
                     heroMedia {
                         title
+                        gatsbyImageData(width: 317, height: 233)
                     }
                 }
                 ... on ContentfulSteps {
                     id
                     title
+                    isAccordion
                     internal {
                         type
                     }

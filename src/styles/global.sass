@@ -1,117 +1,17 @@
 @import "node_modules/govuk-frontend/govuk/helpers/colour"
 
-
 $govuk-brand-colour: #FF9900
-$govuk-link-colour: #262626
-$govuk-text-colour: #262626
-$govuk-link-visited-colour: #262626
-$govuk-footer-text: #f3f2f1
-$govuk-footer-bg: #262626
-$govuk-paragraph-bg: #f9f9f9
-
-
-//@media only screen and (min-width: 992px)
-//  $govuk-page-width: 960px
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-//@media only screen and (min-width: 1200px)
-//  $govuk-page-width: 1440px
-
 
 @import "node_modules/govuk-frontend/govuk/all"
 
-.govuk-header
-  background-color: white
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-
-.govuk-header__logo
-  width: auto
-  @media (min-width: 48.0625em)
-    padding-right: 50px
 
 .govuk-header__container
-  border: none
-  display: flex
-  flex-wrap: nowrap
-  align-items: center
-  justify-content: space-between
 
   .govuk-button
+      margin-top: -22px
       margin-bottom: 10px
-      padding: 15px
       font-size: 16px
       white-space: nowrap
-
-  nav
-      width: 100%
-      display: flex
-
-      ul
-        width: 100%
-
-        @media (min-width: 48.0625em)
-          display: flex !important
-          justify-content: space-between
-          align-items: center
-
-a
-  color: $govuk-brand-colour
-  font-weight: $govuk-font-weight-bold
-
-.govuk-link:link
-  color: $govuk-brand-colour
-  font-weight: $govuk-font-weight-bold
-
-.govuk-header__link:hover
-  color: $govuk-brand-colour
-
-.govuk-header__link:active
-  color: $govuk-brand-colour
-  background-color: unset
-
-.govuk-header__link:link
-  color: $govuk-link-colour
-
-.govuk-header__link:visited
-  color: $govuk-link-visited-colour
-
-.govuk-header__menu-button
-  color: $govuk-link-colour
-
-.govuk-footer
-  background-color: $govuk-link-colour
-
-.govuk-footer__link:link
-  color: $govuk-footer-text
-
-.govuk-footer__link:visited
-  color: $govuk-footer-text
-
-.govuk-footer__licence-description
-  color: $govuk-footer-text
-
-.govuk-button
-  background: $govuk-brand-colour
-  border: 1px solid $govuk-brand-colour
-  box-sizing: border-box
-  border-radius: 5px
-  box-shadow: none
-  color: #262626
-  font-weight: $govuk-font-weight-bold
-
-.govuk-header__navigation-item--active
-  color: $govuk-brand-colour !important
-
-.govuk-header__logotype-text
-  padding-left: 10px
-
-.govuk-table__head
-  font-weight: $govuk-font-weight-bold
-
-.govuk-table
-  tr
-    td:first-child
-      font-weight: $govuk-font-weight-bold
 
 hr
   margin-top: 20px
@@ -130,12 +30,6 @@ hr
   margin: 20px auto
   max-height: 350px
 
-  img
-    position: inherit
-    height: 233px
-    width: 317px
-    filter: sepia(80%)
-
   .app-rich-text p
     padding-right: 20px
     font-size: 36px
@@ -152,9 +46,6 @@ hr
 
 .app-block
   padding: 40px
-
-  &:nth-child(2)
-    background-color: $govuk-paragraph-bg
 
 .app-advice
   padding: 40px

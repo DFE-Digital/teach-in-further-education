@@ -35,11 +35,13 @@ export const staticQuery = graphql` {
                  }
                  heroMedia {
                      title
+                     gatsbyImageData(width: 317, height: 233)
                  }
              }
              ... on ContentfulSteps {
                  id
                  title
+                 isAccordion
                  internal {
                      type
                  }
