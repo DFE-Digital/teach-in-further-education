@@ -37,7 +37,7 @@ if @app.data.try(:site).try(:pages)
     if page.title == "Home"
       path = "/index.html"
     else
-      path = "#{page.slug}"
+      path = "#{page.slug}.html"
     end
     # Use the appropriate template
     template = "templates/page.html"

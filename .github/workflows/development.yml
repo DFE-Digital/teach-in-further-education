@@ -42,12 +42,13 @@ jobs:
       - shell: bash
         run: |
           cp manifest-dev.yml build/manifest.yml
+          cp Staticfile.auth build/Staticfile.auth
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v2
         with:
           name: build
-          path: build
+          path: build/
 
       - name: Deploy
         uses: ./.github/actions/cloudfoundry

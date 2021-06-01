@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Adding google tag manager">
-      <change afterPath="$PROJECT_DIR$/manifest.yml" afterDir="false" />
+    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Adding env specific manaifest">
+      <change afterPath="$PROJECT_DIR$/StaticFile.auth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/features/navigation_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/development.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/development.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +23,7 @@
         <option value="Ruby Module" />
         <option value="JavaScript File" />
         <option value="ERB File" />
+        <option value="Ruby File" />
       </list>
     </option>
   </component>
@@ -100,7 +104,7 @@
       <workItem from="1622196603267" duration="1666000" />
       <workItem from="1622532825343" duration="24464000" />
       <workItem from="1622574799619" duration="350000" />
-      <workItem from="1622575166945" duration="1840000" />
+      <workItem from="1622575166945" duration="5835000" />
     </task>
     <task id="LOCAL-00001" summary="Adding custom markdown renderer and started adding components">
       <created>1622467274562</created>
@@ -137,7 +141,28 @@
       <option name="project" value="LOCAL" />
       <updated>1622576190054</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updating build to build middleman">
+      <created>1622577276623</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1622577276623</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Adding bundle exec to build">
+      <created>1622578032567</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1622578032567</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Adding env specific manaifest">
+      <created>1622580552316</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1622580552316</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,7 +186,10 @@
     <MESSAGE value="removing uneeded files" />
     <MESSAGE value="Adding base set of components" />
     <MESSAGE value="Adding google tag manager" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding google tag manager" />
+    <MESSAGE value="Updating build to build middleman" />
+    <MESSAGE value="Adding bundle exec to build" />
+    <MESSAGE value="Adding env specific manaifest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding env specific manaifest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
