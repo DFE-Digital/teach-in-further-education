@@ -2,7 +2,7 @@ name: "Dev deploy"
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, refactor/middleman ]
   repository_dispatch:
     types: [ publish-event ]
 
@@ -20,28 +20,34 @@ jobs:
         with:
           node-version: '12.x'
 
+      - name: Use ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.3
+          bundler-cache: true
+
       - name: Installing dependencies
         run: npm ci
 
-      - name: Run unit tests
-        run: npm test
+      - name: Run Javascript build
+        run: npm run build
 
-      - name: Building Gatsby site
-        run: npm run build --log-pages
+      - name: Building middleman site
+        run: middleman build
         env:
           GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
-          GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
-          CI: true
+
+      - shell: bash
+        run: |
+          cp manifest.yml build/
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v2
         with:
           name: build
-          path: |
-              public
-              !public/webpack.stats.json
+          path: build
 
       - name: Deploy
         uses: ./.github/actions/cloudfoundry
@@ -51,5 +57,5 @@ jobs:
             cf_password: ${{ secrets.GOVPAAS_PASSWORD }}
             cf_org: ${{ secrets.GOVPAAS_ORG }}
             cf_space: ${{ secrets.GOVPAAS_SPACE }}
-            workingDir: ./public
+            workingDir: ./build
             command: push
