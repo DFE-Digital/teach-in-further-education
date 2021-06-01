@@ -36,10 +36,12 @@ GEM
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
     eventmachine (1.2.7)
+    eventmachine (1.2.7-x64-mingw32)
     execjs (2.8.1)
     fast_blank (1.0.0)
     fastimage (2.2.3)
     ffi (1.15.1)
+    ffi (1.15.1-x64-mingw32)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
       rake
@@ -136,6 +138,8 @@ GEM
     rich_text_renderer (0.2.2)
     sassc (2.4.0)
       ffi (~> 1.9)
+    sassc (2.4.0-x64-mingw32)
+      ffi (~> 1.9)
     servolux (0.13.0)
     temple (0.8.2)
     thor (1.1.0)
@@ -143,21 +147,26 @@ GEM
     tilt (2.0.10)
     tzinfo (1.2.9)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2021.1)
+      tzinfo (>= 1.0.0)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.7)
+    unf_ext (0.0.7.7-x64-mingw32)
+    wdm (0.1.1)
     webrick (1.7.0)
 
 PLATFORMS
+  ruby
+  x64-mingw32
   x86_64-linux
 
 DEPENDENCIES
   contentful_middleman
   middleman
   middleman-autoprefixer
-  middleman-core
   middleman-dotenv
   middleman-livereload
   opal

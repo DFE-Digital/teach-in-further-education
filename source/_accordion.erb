@@ -1,0 +1,19 @@
+<div>
+  <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+    <% data.steps.each_with_index do |s, i| %>
+      <div class="govuk-accordion__section">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="<%= "accordion-default-heading-#{i}" %>">
+              <%= s.title %>
+            </span>
+          </h2>
+        </div>
+        <div id="<%= "accordion-default-content-#{i}" %>" class="govuk-accordion__section-content"
+             aria-labelledby="<%= "accordion-heading-section-#{i}" %>">
+          <%= partial("advice", :locals => { :data => s, :show_title => false }) %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

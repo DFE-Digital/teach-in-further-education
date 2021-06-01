@@ -6,6 +6,8 @@ ignore 'templates/*.html'
 
 activate :dotenv
 
+activate :livereload
+
 activate :contentful do |f|
   f.space         = { site: ENV['CONTENTFUL_SPACE_ID'] }
   f.access_token  = ENV['CONTENTFUL_DELIVERY_TOKEN']
@@ -44,14 +46,9 @@ if @app.data.try(:site).try(:pages)
   end
 end
 
-
-# Helpers
-# Methods defined in the helpers block are available in templates
-# https://middlemanapp.com/basics/helper-methods/
 require 'lib/markdown_helper'
 helpers MarkdownHelper
 
-set :markdown_engine, :redcarpet
 set(
   :markdown,
   :fenced_code_blocks => true,
@@ -61,10 +58,18 @@ set(
   :superscript => true,
   :renderer => MarkdownHelper::TeachFeMarkdownRenderer
 )
+set :markdown_engine, :redcarpet
+
+# Helpers
+# Methods defined in the helpers block are available in templates
+# https://middlemanapp.com/basics/helper-methods/
+
 
 helpers do
   def markdown(source)
     Tilt[:markdown].new(
+      context: @app,
+      :tables => true,
       :renderer => MarkdownHelper::TeachFeMarkdownRenderer
     ) { source }.render
   end

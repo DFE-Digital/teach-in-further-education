@@ -4,8 +4,7 @@ gem 'opal'
 gem 'middleman-dotenv'
 gem 'webrick'
 gem 'redcarpet'
-gem 'middleman'
-gem 'middleman-core'
+gem "middleman"
 gem 'middleman-autoprefixer'
 gem 'middleman-livereload'
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby, :x64_mingw]

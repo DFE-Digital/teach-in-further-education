@@ -1,6 +1,10 @@
 <div>
-  <h2 class="govuk-heading-l"><%= data.title %></h2>
+  <% if show_title %>
+    <h2 class="govuk-heading-l"><%= data.title %></h2>
+  <% end %>
   <div>
-    <%= markdown(data.advice_body) %>
+    <% if !data.advice_body.nil? %>
+      <%= markdown(data.advice_body) %>
+    <% end %>
   </div>
 </div>

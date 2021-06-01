@@ -1,0 +1,41 @@
+<header class="govuk-header" role="banner" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="govuk-header__logo">
+      <a href="/" class="govuk-header__link govuk-header__link--homepage">
+        <img src="/assets/images/logo.svg" alt="further education logo"/>
+      </a>
+    </div>
+    <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation"
+            aria-label="Show or hide navigation menu">Menu
+    </button>
+    <nav>
+      <ul id="navigation" class="govuk-header__navigation" aria-label="Navigation menu">
+        <% data.site.navs.each do |id, n| %>
+          <% n.pages.each do |p| %>
+            <% if p._meta.content_type_id == 'navLink' %>
+              <li class="app-dropdown govuk-header__navigation-item">
+                <a class="dropbtn"><%= p.title %></a>
+                <div class="app-dropdown-content govuk-header__navigation-item">
+                  <% p.links.each do |l| %>
+                    <a href="/<%= l.slug %>"><%= l.title %></a>
+                  <% end %>
+                </div>
+              </li>
+            <% else %>
+              <li class="govuk-header__navigation-item">
+                <a href="<%= p.slug %>">
+                  <%= p.title %>
+                </a>
+              </li>
+            <%end %>
+          <% end %>
+
+          <% n.call_to_actions.each do |c| %>
+            <li class="govuk-header__navigation-item">
+              <a href="<%= c.slug %>" class="govuk-button"><%= c.title %></a></li>
+          <% end %>
+        <% end %>
+      </ul>
+    </nav>
+  </div>
+</header>

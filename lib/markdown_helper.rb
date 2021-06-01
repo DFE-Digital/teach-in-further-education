@@ -6,6 +6,11 @@ module MarkdownHelper
     def initialize(options = {})
       super options.merge(
         :with_toc_data => true,
+        :fenced_code_blocks => true,
+        :smartypants => true,
+        :tables => true,
+        :highlight => true,
+        :superscript => true,
       )
     end
 
@@ -27,5 +32,31 @@ module MarkdownHelper
     def paragraph(text)
       %(<p class="govuk-body">#{text.strip}</p>)
     end
+
+    def list(contents, list_type)
+      case list_type
+      when :ordered
+        %(<ol class="govuk-list govuk-list--number">#{contents}</ol>)
+      when :unordered
+        %(<ul class="govuk-list govuk-list--bullet">#{contents}</ul>)
+      end
+    end
+
+    def table(header, body)
+      %(<table class="govuk-table"><thead>#{header}<thead><tbody>#{body}</tbody></table>)
+    end
+
+    def table_row(content)
+      %(<tr class="govuk-table__row">#{content}</tr>)
+    end
+
+    def table_cell(content, header)
+      if header
+        %(<th class="govuk-table__cell">#{content}</td>)
+      else
+        %(<td class="govuk-table__cell">#{content}</td>)
+      end
+    end
+
   end
 end

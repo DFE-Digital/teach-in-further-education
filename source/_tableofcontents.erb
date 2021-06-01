@@ -1,0 +1,10 @@
+<div class="app-table-of-contents">
+  <h3 class="govuk-heading-m"><%= data.title %></h3>
+  <ul class="govuk-list">
+    <% page.blocks.each_with_index do |blk, i| %>
+      <% if i > index %>
+        <li><h4 class="govuk-heading-s"><a href="<%= "#block_#{i}" %>"><%= blk.title %></a></h4></li>
+      <% end %>
+    <% end %>
+  </ul>
+</div>
