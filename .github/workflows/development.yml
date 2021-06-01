@@ -33,7 +33,7 @@ jobs:
         run: npm run build
 
       - name: Building middleman site
-        run: middleman build
+        run: bundle exec middleman build
         env:
           GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
