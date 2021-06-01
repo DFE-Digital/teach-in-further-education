@@ -1,10 +1,16 @@
 /// <reference types="Cypress" />
 
+
+
 describe("Accessibility tests", () => {
-  beforeEach(() => {
-    cy.visit("/").get("main").injectAxe()
-  })
-  it("Has no detectable accessibility violations on load", () => {
-    cy.checkA11y()
-  })
+      cy.task("getPageSlugs").then(slugs => {
+        slugs.forEach(slug => {
+          beforeEach(() => {
+            cy.visit(`/${slug}`).get("main").injectAxe()
+          })
+          it("Has no detectable accessibility violations on load", () => {
+            cy.checkA11y()
+          })
+        })
+      })
 })

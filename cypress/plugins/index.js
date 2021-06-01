@@ -1,22 +1,47 @@
 /// <reference types="cypress" />
-// ***********************************************************
-// This example plugins/index.js can be used to load plugins
-//
-// You can change the location of this file or turn off loading
-// the plugins file with the 'pluginsFile' configuration option.
-//
-// You can read more here:
-// https://on.cypress.io/plugins-guide
-// ***********************************************************
 
-// This function is called when a project is opened or re-opened (e.g. due to
-// the project's config changing)
+const fetch = require("node-fetch")
+// import { useStaticQuery, graphql } from "gatsby"
+
+const { useStaticQuery } = require("gatsby")
+const { graphql } = require("gatsby")
+
+require("dotenv").config()
+const db = require("db")
+db.connect({
+  spaceID: process.env.CONTENTFUL_SPACE_ID,
+  deliveryToken: process.env.CONTENTFUL_DELIVERY_TOKEN,
+  googleAnalytics: process.env.GOOGLE_ANALYTICS_TAG,
+})
 
 /**
  * @type {Cypress.PluginConfig}
  */
-// eslint-disable-next-line no-unused-vars
 module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
+  const data = useStaticQuery(graphql`
+    query {
+      allContentfulPage {
+        edges {
+          node {
+            slug
+          }
+        }
+      }
+    }
+  `)
+
+  on("task", {
+    getPageSlugs() {
+      return data.allContentfulPage.edges.map(edge => edge.node.slug)
+    },
+  })
+  return config
 }
+
+await fetch(
+  `https://graphql.contentful.com/content/v1/spaces/${spaceID}/environments/${deliveryToken}?query=query{allContentfulPage{edges{node{slug}}}}&variables={"preview":true}`,
+  {
+    method: "GET",
+    headers: { "Content-Type": "application/json" },
+  }
+)
