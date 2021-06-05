@@ -1,4 +1,29 @@
-<div>
+<div class="app-advice <%= data.apply_background_color ? "shaded" : "" %>">
+<% if !data.media.nil? %>
+  <% if data.display_order %>
+    <% className = data.showAsCallout ? "call-out-border-right" : "" %>
+    <div class="app-advice-with-image">
+      <div>
+        <%= partial "image", :locals => { :data => data.media } %>
+      </div>
+      <div class="<%= className %>">
+        <h2 class="govuk-heading-l"><%= data.title %></h2>
+        <%= markdown(data.advice_body) %>
+      </div>
+    </div>
+  <% else %>
+    <% className = data.showAsCallout ? "call-out-border-right" : "" %>
+    <div class="app-advice-with-image">
+      <div class="<%= className %>">
+        <h2 class="govuk-heading-l"><%= data.title %></h2>
+        <%= markdown(data.advice_body) %>
+      </div>
+      <div>
+        <%= partial "image", :locals => { :data => data.media } %>
+      </div>
+    </div>
+  <% end %>
+<% else %>
   <% if show_title %>
     <h2 class="govuk-heading-l"><%= data.title %></h2>
   <% end %>
@@ -7,4 +32,5 @@
       <%= markdown(data.advice_body) %>
     <% end %>
   </div>
+<% end %>
 </div>

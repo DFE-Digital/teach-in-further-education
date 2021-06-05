@@ -1,0 +1,9 @@
+<div>
+  <img src="<%= data.icon.url + "?w=150" %>" alt="<%= data.title %>"/>
+</div>
+<div class="govuk-heading-s"><%= data.title %></div>
+<div>
+  <% if !data.summary_body.nil? %>
+    <%= markdown(data.summary_body) %>
+  <% end %>
+</div>

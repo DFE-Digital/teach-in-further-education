@@ -23,16 +23,18 @@
               </li>
             <% else %>
               <li class="govuk-header__navigation-item">
-                <a href="<%= p.slug  + ".html" %>">
+                <a href="<%= p.slug + ".html" %>">
                   <%= p.title %>
                 </a>
               </li>
-            <%end %>
+            <% end %>
           <% end %>
 
-          <% n.call_to_actions.each do |c| %>
-            <li class="govuk-header__navigation-item">
-              <a href="<%= c.slug + ".html" %>" class="govuk-button"><%= c.title %></a></li>
+          <% if !n.call_to_actions.nil? %>
+            <% n.call_to_actions.each do |c| %>
+              <li class="govuk-header__navigation-item">
+                <a href="<%= c.slug + ".html" %>" class="govuk-button"><%= c.title %></a></li>
+            <% end %>
           <% end %>
         <% end %>
       </ul>

@@ -7,7 +7,7 @@ $govuk-text-colour: #262626
 $govuk-link-visited-colour: #262626
 $govuk-footer-text: #f3f2f1
 $govuk-footer-bg: #262626
-$govuk-paragraph-bg: $govuk-text-colour
+$govuk-shading: #F9F9F9
 
 
 //@media only screen and (min-width: 992px)
@@ -52,8 +52,9 @@ $govuk-paragraph-bg: $govuk-text-colour
 
         @media (min-width: 48.0625em)
           display: flex !important
-          justify-content: space-between
+          justify-content: flex-start
           align-items: center
+          flex-wrap: wrap
 
 a
   color: $govuk-brand-colour
@@ -135,34 +136,9 @@ hr
     border-top: 10px solid $govuk-brand-colour
     padding-top: 10px
 
-.app-hero-banner
-  display: flex
-  align-items: center
-  justify-content: space-between
-  width: 90%
-  margin: 20px auto
-  max-height: 350px
-
-  .app-rich-text p
-    padding-right: 20px
-    font-size: 36px
-    max-width: 400px
-
-    @media (max-width: 640px)
-      font-size: 18px
-
-    @media (max-width: 960px)
-      font-size: 36px
-
-    @media (min-width: 960px)
-      font-size: 48px
-
 .app-block
-  padding: 40px
-
-.app-advice
-  padding: 40px
-  background-color: white
+  padding-top: 20px
+  padding-bottom: 20px
 
 .app-stepper-header
   padding: 0
@@ -240,16 +216,120 @@ hr
   .app-dropdown-content
     display: block
 
+.app-advice
+  padding: 40px 0px 40px 0px
+  background-color: white
+
+  &.shaded
+    background-color: $govuk-shading
+
+  .app-advice-with-image
+    display: flex
+    align-items: center
+    flex-direction: row
+    justify-content: space-between
+    width: 90%
+    margin: 20px auto
+
+    @media (max-width: 870px)
+      flex-direction: column
+
+    .app-rich-text p
+      padding-right: 40px
+      font-size: 36px
+      max-width: 400px
+
+      @media (max-width: 640px)
+        font-size: 18px
+
+      @media (min-width: 640px)
+        font-size: 36px
+
+      @media (min-width: 960px)
+        font-size: 48px
+
+    .call-out-border-right
+      border: 14px $govuk-text-colour
+      border-radius: 20px 20px 20px 0px
+
+    .call-out-border-right
+      border: 14px $govuk-text-colour
+      border-radius: 20px 20px 0px 20px
+
+.app-hero-banner
+  display: flex
+  align-items: center
+  flex-direction: row
+  justify-content: space-between
+  width: 90%
+  margin: 20px auto
+
+  @media (max-width: 870px)
+    flex-direction: column
+
+  .app-rich-text p
+    padding-right: 20px
+    font-size: 36px
+    max-width: 400px
+
+    @media (max-width: 640px)
+      font-size: 18px
+
+    @media (min-width: 640px)
+      font-size: 36px
+
+    @media (min-width: 960px)
+      font-size: 48px
+
+//.app-img
+//
+//  @media (max-width: 640px)
+//    width: 316px
+//
+//  @media (max-width: 960px)
+//    width: 395px
+//
+//  @media (min-width: 960px)
+//    width: 475px
+
+
+
 .app-hero-adorner-top
-    width: 50px
-    height: 50px
     background-color: #ffbb00
     border-radius: 5px
-    transform: translate(calc(var(--herosize) - 25px),25px)
+
+    @media (max-width: 640px)
+      width: 30px
+      height: 30px
+      transform: translate(calc(316px + 5px),15px)
+
+    @media (min-width: 640px)
+      width: 40px
+      height: 40px
+      transform: translate(395px,20px)
+
+    @media (min-width: 960px)
+      width: 50px
+      height: 50px
+      transform: translate(calc(475px - 10px),25px)
 
 .app-hero-adorner-bottom
     width: 80px
     height: 80px
     background-color: $govuk-brand-colour
     border-radius: 5px
-    transform: translate(-40px,-40px)
+
+    @media (max-width: 640px)
+      width: 60px
+      height: 60px
+      transform: translate(-10px,-30px)
+
+    @media (min-width: 640px)
+      width: 70px
+      height: 70px
+      transform: translate(-15px,-35px)
+
+    @media (min-width: 960px)
+      width: 80px
+      height: 80px
+      transform: translate(-20px,-40px)

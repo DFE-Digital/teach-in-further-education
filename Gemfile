@@ -6,6 +6,7 @@ group :development do
 end
 
 gem 'opal'
+gem 'mini_mime'
 gem 'middleman-dotenv'
 gem 'webrick'
 gem 'redcarpet'
