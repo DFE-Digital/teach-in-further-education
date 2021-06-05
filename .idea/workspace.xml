@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Various components and some layout fixes">
+    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Sorting out footer">
       <change afterPath="$PROJECT_DIR$/source/_block.erb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/source/_column_layout.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/assets/images/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/assets/images/instagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/assets/images/twitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/assets/images/you-tube.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/_advice.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_advice.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/_footer.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_footer.erb" afterDir="false" />
@@ -113,7 +117,7 @@
       <workItem from="1622575166945" duration="8274000" />
       <workItem from="1622793430741" duration="16589000" />
       <workItem from="1622894563876" duration="1173000" />
-      <workItem from="1622904282548" duration="10811000" />
+      <workItem from="1622904282548" duration="11113000" />
     </task>
     <task id="LOCAL-00001" summary="Adding custom markdown renderer and started adding components">
       <created>1622467274562</created>
@@ -220,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622905382039</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Sorting out footer">
+      <created>1622919212321</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1622919212321</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +265,8 @@
     <MESSAGE value="simplifiying cloud foundry script" />
     <MESSAGE value="Removing .tmp folder" />
     <MESSAGE value="Various components and some layout fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Various components and some layout fixes" />
+    <MESSAGE value="Sorting out footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sorting out footer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
