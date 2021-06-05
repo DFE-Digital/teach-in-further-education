@@ -1,7 +1,6 @@
 import { initAll } from 'govuk-frontend'
 
 export function initSite() {
-    console.log('init')
     initAll()
 }
 
@@ -22,7 +21,14 @@ export function onShowStep(i) {
     content.style.display = 'block';
 }
 
+export function submitQuestionForm(e) {
+    e.preventDefault();
+    const data = new FormData(e.target);
+    window.location.replace("/" + data.get("answer") + ".html")
+}
+
 window.site = {
     initSite,
     onShowStep,
+    submitQuestionForm
 }

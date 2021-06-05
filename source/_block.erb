@@ -21,4 +21,7 @@
   <% if block._meta.content_type_id == "tableOfContents"  %>
     <%= partial("table_of_contents", :locals => { :index => index, :data => block, :page => page})  %>
   <% end %>
+  <% if block._meta.content_type_id == "question" %>
+    <%= partial("question", :locals => { :data => block }) %>
+  <% end %>
 </div>

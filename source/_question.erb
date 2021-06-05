@@ -1,0 +1,49 @@
+<div class="app-question">
+<h1 class="govuk-heading-l"><%= data.question_text %></h1>
+
+<form id="<%= "question-" + data.id %>">
+
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="answer">
+        <%= data.sub_text %>
+      </label>
+      <% if data.render_as[0] == "Dropdown" %>
+        <select class="govuk-select" id="answer" name="answer" required>
+          <option value="" disabled selected>Select an option</option>
+          <% data.answers.each_with_index do |a,i| %>
+            <option value="<%= a.link.slug %>"><%= a.answer %></option>
+          <% end %>
+        </select>
+      <% end %>
+
+      <% if data.render_as[0] == "Radio button" %>
+        <div class="govuk-radios govuk-radios--inline">
+          <% data.answers.each_with_index do |a,i| %>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="<% a.id %>" name="answer" type="radio" value="<%= a.link.slug %>">
+              <label class="govuk-label govuk-radios__label" for="answer">
+                <%= a.answer %>
+              </label>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+
+  <input id="<%= "question-submit-" + data.id %>"  disabled="true" class="govuk-button" style="float: right" type="submit" value="Submit" />
+
+</form>
+  <script>
+      const form = document.getElementById("<%= "question-" + data.id %>")
+      const answer = Array.from(document.getElementsByName("answer"))
+      form.addEventListener("submit", function(e){
+          window.site.submitQuestionForm(e)
+      })
+
+      answer.map((a) => a.addEventListener("change", function (e) {
+          const v = a.value === ""
+          document.getElementById("<%= "question-submit-" + data.id %>").disabled = v;
+          return true
+      }))
+  </script>
+</div>
