@@ -83,6 +83,18 @@ a
 .govuk-footer
   background-color: $govuk-link-colour
 
+.govuk-footer__inline-list
+  padding-top: 20px
+
+.govuk-footer__inline-list-item
+
+  &.add-bar
+    &:after
+      content: "\007c"
+      color: $govuk-footer-text
+      margin-left: 10px
+
+
 .govuk-footer__link:link
   color: $govuk-footer-text
 
@@ -91,6 +103,8 @@ a
 
 .govuk-footer__licence-description
   color: $govuk-footer-text
+  margin-top: -40px
+  display: block
 
 .govuk-button
   background: $govuk-brand-colour
@@ -211,6 +225,7 @@ hr
     background-color: #ddd
 
 
+
 /* Show the app-dropdown menu on hover */
 .app-dropdown:hover
   .app-dropdown-content
@@ -248,20 +263,24 @@ hr
       @media (min-width: 960px)
         font-size: 48px
 
-    .call-out-border-right
-      border: 14px $govuk-text-colour
-      border-radius: 20px 20px 20px 0px
+.call-out-border-left
+    padding: 40px
+    border: 10px solid $govuk-text-colour
+    border-radius: 40px 40px 40px 0px
+    height: 255px
 
-    .call-out-border-right
-      border: 14px $govuk-text-colour
-      border-radius: 20px 20px 0px 20px
+.call-out-border-right
+    padding: 40px
+    border: 10px solid $govuk-text-colour
+    border-radius: 40px 40px 0px 40px
+    height: 255px
 
 .app-hero-banner
   display: flex
   align-items: center
   flex-direction: row
   justify-content: space-between
-  width: 90%
+  width: 100%
   margin: 20px auto
 
   @media (max-width: 870px)
@@ -280,19 +299,6 @@ hr
 
     @media (min-width: 960px)
       font-size: 48px
-
-//.app-img
-//
-//  @media (max-width: 640px)
-//    width: 316px
-//
-//  @media (max-width: 960px)
-//    width: 395px
-//
-//  @media (min-width: 960px)
-//    width: 475px
-
-
 
 .app-hero-adorner-top
     background-color: #ffbb00
@@ -333,3 +339,15 @@ hr
       width: 80px
       height: 80px
       transform: translate(-20px,-40px)
+
+.app-summary
+    padding: 20px
+
+.app-columns
+  display: flex
+  align-items: center
+  flex-direction: row
+  justify-content: space-between
+
+  @media (max-width: 640px)
+    flex-direction: column

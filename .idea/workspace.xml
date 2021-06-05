@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Removing .tmp folder">
-      <change afterPath="$PROJECT_DIR$/source/_image.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_summary.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/teach-in-further-education.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/teach-in-further-education.iml" afterDir="false" />
+    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Various components and some layout fixes">
+      <change afterPath="$PROJECT_DIR$/source/_block.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_column_layout.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/source/_advice.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_advice.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_footer.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_footer.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/_header.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_header.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/_hero.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_hero.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_tableofcontents.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_table_of_contents.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_image.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_image.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_summary.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_summary.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/stylesheets/site.css.sass" beforeDir="false" afterPath="$PROJECT_DIR$/source/stylesheets/site.css.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/templates/page.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/templates/page.html.erb" afterDir="false" />
     </list>
@@ -114,7 +113,7 @@
       <workItem from="1622575166945" duration="8274000" />
       <workItem from="1622793430741" duration="16589000" />
       <workItem from="1622894563876" duration="1173000" />
-      <workItem from="1622904282548" duration="861000" />
+      <workItem from="1622904282548" duration="10811000" />
     </task>
     <task id="LOCAL-00001" summary="Adding custom markdown renderer and started adding components">
       <created>1622467274562</created>
@@ -214,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622585536364</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Various components and some layout fixes">
+      <created>1622905382039</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1622905382039</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +253,8 @@
     <MESSAGE value="Tweaking build working directory" />
     <MESSAGE value="simplifiying cloud foundry script" />
     <MESSAGE value="Removing .tmp folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removing .tmp folder" />
+    <MESSAGE value="Various components and some layout fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Various components and some layout fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

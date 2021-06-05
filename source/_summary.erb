@@ -1,9 +1,19 @@
-<div>
-  <img src="<%= data.icon.url + "?w=150" %>" alt="<%= data.title %>"/>
-</div>
-<div class="govuk-heading-s"><%= data.title %></div>
-<div>
-  <% if !data.summary_body.nil? %>
-    <%= markdown(data.summary_body) %>
+<% breakpoints = [
+  { :media_query => "(min-width:960px)", :width => 150 },
+  { :media_query => "(min-width:640px)", :width => 150 },
+  { :media_query => "(max-width:640px)", :width => 150 }
+] %>
+
+<div class="app-summary">
+  <% if !data.icon.nil? %>
+    <div style="text-align: center">
+      <%= partial "image", :locals => { :data => data.icon, :breakpoints => breakpoints } %>
+    </div>
   <% end %>
+  <h4 class="govuk-heading-s"><%= data.title %></h4>
+  <div>
+    <% if !data.information_body.nil? %>
+      <%= markdown(data.information_body) %>
+    <% end %>
+  </div>
 </div>

@@ -1,6 +1,6 @@
-<picture style="padding-left: 20px">
-  <source media="(min-width:960px)" srcset="<%= data.url + "?w=475" %>">
-  <source media="(min-width:640px)" srcset="<%= data.url + "?w=395" %>">
-  <source media="(max-width:640px)" srcset="<%= data.url + "?w=316" %>">
-  <img src="<%= data.url + "?w=475" %>" alt="<%= data.title %>">
+<picture>
+  <% breakpoints.each do |bp| %>
+    <source media="<%= bp[:media_query] %>" srcset="<%= data.url + "?w=" + bp[:width].to_s %>">
+  <% end %>
+  <img src="<%= data.url + "?w=" + breakpoints[0][:width].to_s %>" alt="<%= data.title %>">
 </picture>

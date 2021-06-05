@@ -1,36 +1,45 @@
+<% breakpoints = [
+  { :media_query => "(min-width:960px)", :width => 475 },
+  { :media_query => "(min-width:640px)", :width => 395 },
+  { :media_query => "(max-width:640px)", :width => 316 }
+] %>
 <div class="app-advice <%= data.apply_background_color ? "shaded" : "" %>">
-<% if !data.media.nil? %>
-  <% if data.display_order %>
-    <% className = data.showAsCallout ? "call-out-border-right" : "" %>
-    <div class="app-advice-with-image">
-      <div>
-        <%= partial "image", :locals => { :data => data.media } %>
+  <% if !data.media.nil? %>
+    <% if data.display_order %>
+      <% className = data.show_as_callout ? "call-out-border-left" : "" %>
+      <div class="app-advice-with-image">
+        <div style="padding-right: 20px">
+          <%= partial "image", :locals => { :data => data.media, :breakpoints => breakpoints } %>
+        </div>
+        <div class="<%= className %>">
+          <% if !data.show_as_callout %>
+            <h2 class="govuk-heading-l"><%= data.title %></h2>
+          <% end %>
+          <%= markdown(data.advice_body) %>
+        </div>
       </div>
-      <div class="<%= className %>">
-        <h2 class="govuk-heading-l"><%= data.title %></h2>
-        <%= markdown(data.advice_body) %>
+    <% else %>
+      <% className = data.show_as_callout ? "call-out-border-right" : "" %>
+      <div class="app-advice-with-image">
+        <div class="<%= className %>">
+          <% if !data.show_as_callout %>
+            <h2 class="govuk-heading-l"><%= data.title %></h2>
+          <% end %>
+          <%= markdown(data.advice_body) %>
+        </div>
+        <div style="padding-left: 20px">
+          <%= partial "image", :locals => { :data => data.media, :breakpoints => breakpoints } %>
+        </div>
       </div>
-    </div>
-  <% else %>
-    <% className = data.showAsCallout ? "call-out-border-right" : "" %>
-    <div class="app-advice-with-image">
-      <div class="<%= className %>">
-        <h2 class="govuk-heading-l"><%= data.title %></h2>
-        <%= markdown(data.advice_body) %>
-      </div>
-      <div>
-        <%= partial "image", :locals => { :data => data.media } %>
-      </div>
-    </div>
-  <% end %>
-<% else %>
-  <% if show_title %>
-    <h2 class="govuk-heading-l"><%= data.title %></h2>
-  <% end %>
-  <div>
-    <% if !data.advice_body.nil? %>
-      <%= markdown(data.advice_body) %>
     <% end %>
-  </div>
-<% end %>
+  <% else %>
+    <% if show_title %>
+      <h2 class="govuk-heading-l"><%= data.title %></h2>
+    <% end %>
+    <div>
+      <% if !data.advice_body.nil? %>
+        <%= markdown(data.advice_body) %>
+      <% end %>
+    </div>
+  <% end %>
 </div>

@@ -10,7 +10,7 @@
     </button>
     <nav>
       <ul id="navigation" class="govuk-header__navigation" aria-label="Navigation menu">
-        <% data.site.navs.each do |id, n| %>
+        <% data.site.navs.select { |id, n|  n.title == "Header"  }.each do |id, n| %>
           <% n.pages.each do |p| %>
             <% if p._meta.content_type_id == 'navLink' %>
               <li class="app-dropdown govuk-header__navigation-item">
