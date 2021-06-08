@@ -55,11 +55,11 @@ jobs:
           bundle exec rspec --format RSpec::Github::Formatter  --format progress --format documentation --out test-output.txt
 
       - name: Save Tests Results
-          if: always()
-          uses: actions/upload-artifact@v2
-          with:
-            name: unit_tests
-            path: ${{ github.workspace }}/out/*
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: test_results
+          path: ${{ github.workspace }}/out/*
 
       - name: Building middleman site
         run: bundle exec middleman build
