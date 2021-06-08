@@ -10,6 +10,7 @@ on:
 
 jobs:
   build:
+    name: Build application
     runs-on: ubuntu-latest
     environment: Development
     steps:
@@ -92,7 +93,8 @@ jobs:
 
   zap_scan:
     runs-on: ubuntu-latest
-    name: Scan the webapplication
+    name: Run security scan
+    environment: Development
     needs: [ build ]
     steps:
       - name: Checkout
@@ -102,5 +104,5 @@ jobs:
         uses: zaproxy/action-full-scan@v0.2.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          docker_name: 'owasp/zap2docker-stable'
-          target: 'https://${{ secrets.HTTP_USERNAME }}:${{ secrets.HTTP_PASSWORD }}@${{ secrets.GOVPAAS_SPACE }}.${{ secrets.GOVPAAS_API }}/'
+          docker_name: owasp/zap2docker-stable
+          target: https://${{ secrets.HTTP_USERNAME }}:${{ secrets.HTTP_PASSWORD }}@${{ secrets.GOVPAAS_SPACE }}.${{ secrets.GOVPAAS_API }}/
