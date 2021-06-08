@@ -89,3 +89,18 @@ jobs:
             cf_space: ${{ secrets.GOVPAAS_SPACE }}
             working_dir: build
             command: push
+
+  zap_scan:
+    runs-on: ubuntu-latest
+    name: Scan the webapplication
+    needs: [ build ]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: ZAP Scan
+        uses: zaproxy/action-full-scan@v0.2.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          docker_name: 'owasp/zap2docker-stable'
+          target: 'https://${{ secrets.HTTP_USERNAME }}:${{ secrets.HTTP_PASSWORD }}@${{ secrets.GOVPAAS_SPACE }}.${{ secrets.GOVPAAS_API }}/'
