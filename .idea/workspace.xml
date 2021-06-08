@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Fixing YAML error">
-      <change beforePath="$PROJECT_DIR$/source/_advice.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_advice.erb" afterDir="false" />
+    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Quoting URL">
+      <change afterPath="$PROJECT_DIR$/DEV_GUIDE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/accessibility/accessibility_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/development.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/development.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/features/navigation_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/features/navigation_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/spec_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +25,8 @@
       <list>
         <option value="Ruby Module" />
         <option value="JavaScript File" />
-        <option value="Ruby File" />
         <option value="ERB File" />
+        <option value="Ruby File" />
       </list>
     </option>
   </component>
@@ -277,7 +285,49 @@
       <option name="project" value="LOCAL" />
       <updated>1623183123695</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Path and padding fixes">
+      <created>1623183471778</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1623183471778</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Path and padding fixes">
+      <created>1623183578989</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1623183578989</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Path and padding fixes">
+      <created>1623185795102</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1623185795102</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Adding zap scan">
+      <created>1623185808637</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1623185808637</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Adding missing environment to zap_Scan">
+      <created>1623186444843</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1623186444843</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Quoting URL">
+      <created>1623186715274</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1623186715274</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +366,11 @@
     <MESSAGE value="Back to 2.7.3" />
     <MESSAGE value="Adding unit test runner" />
     <MESSAGE value="Fixing YAML error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing YAML error" />
+    <MESSAGE value="Path and padding fixes" />
+    <MESSAGE value="Adding zap scan" />
+    <MESSAGE value="Adding missing environment to zap_Scan" />
+    <MESSAGE value="Quoting URL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Quoting URL" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

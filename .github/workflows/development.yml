@@ -1,12 +1,10 @@
-name: "Dev deploy"
+name: "Development"
 
 on:
   push:
-    branches: [ master, refactor/middleman ]
+    branches: [ master ]
   repository_dispatch:
     types: [ publish-event ]
-
-
 
 jobs:
   build:
@@ -53,9 +51,9 @@ jobs:
 
       - name: Run tests
         run: |
-          bundle exec rspec --format RSpec::Github::Formatter  --format progress --format documentation --out ${{ github.workspace }}/out/test-output.txt
+          bundle exec rspec --pattern spec/features/*_spec.rb  --format RSpec::Github::Formatter  --format progress --format documentation --out ${{ github.workspace }}/out/test-features.txt
 
-      - name: Save Tests Results
+      - name: Save unit tests results
         if: always()
         uses: actions/upload-artifact@v2
         with:
@@ -106,3 +104,60 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           docker_name: owasp/zap2docker-stable
           target: 'https://${{ secrets.HTTP_USERNAME }}:${{ secrets.HTTP_PASSWORD }}@${{ secrets.GOVPAAS_SPACE }}.${{ secrets.GOVPAAS_API }}/'
+
+
+
+  accessibility:
+    name: Run accessibility tests
+    runs-on: ubuntu-latest
+    environment: Development
+    needs: [ build ]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: Use ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.3
+
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      - name: Installing gems
+        run: |
+          bundle config path vendor/bundle
+          bundle install
+
+      - name: Installing npm
+        run: npm ci
+
+      - name: Run Javascript build
+        run: npm run build
+
+      - name: Get latest content
+        run: bundle exec middleman contentful
+        env:
+          GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
+          CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
+
+      - name: Run tests
+        run: |
+          bundle exec rspec --pattern spec/accessibility/*_spec.rb --format RSpec::Github::Formatter  --format progress --format documentation --out ${{ github.workspace }}/out/test-accessibility.txt
+        continue-on-error: true
+
+      - name: Save accessibility tests results
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: test_results
+          path: ${{ github.workspace }}/out/test-*.txt

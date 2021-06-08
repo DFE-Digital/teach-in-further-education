@@ -11,7 +11,4 @@ describe 'Navigation', :type => :feature do
       have_selector 'img'
     end
   end
-
-
-
 end

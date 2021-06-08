@@ -4,12 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "build": "webpack --mode development --config webpack.config.js",
-    "cy:open": "cypress open",
-    "cy:run": "cypress run",
-    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
-    "test:e2e:ci": "start-server-and-test develop http://localhost:8000 cy:run",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode development --config webpack.config.js"
   },
   "author": "",
   "license": "MIT",

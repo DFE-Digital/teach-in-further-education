@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 gem 'rspec-github', require: false
 gem 'rspec'
 gem 'capybara'
+gem 'axe-core-rspec'
+gem 'selenium-webdriver'
+gem 'webdrivers'
 
 
 gem 'opal'
