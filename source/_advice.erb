@@ -8,7 +8,7 @@
     <% if data.display_order %>
       <% className = data.show_as_callout ? "call-out-border-left" : "" %>
       <div class="app-advice-with-image">
-        <div style="padding-right: 20px">
+        <div style="padding-right: 20px; padding-bottom: 20px">
           <%= partial "image", :locals => { :data => data.media, :breakpoints => breakpoints } %>
         </div>
         <div class="<%= className %>">
