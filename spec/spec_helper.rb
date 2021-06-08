@@ -1,6 +1,9 @@
 require 'rspec'
 require 'capybara/rspec'
 
+require 'middleman-autoprefixer'
+require 'middleman-livereload'
+require 'middleman-dotenv'
 require 'middleman-core'
 require 'middleman-core/rack'
 

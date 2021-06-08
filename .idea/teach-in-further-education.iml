@@ -31,7 +31,7 @@
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v5.2.6, Remote: ruby-3.0.1-p64) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.7.0, Remote: ruby-3.0.1-p64) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="backports (v3.21.0, Remote: ruby-3.0.1-p64) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bundler (v2.2.15, Remote: ruby-3.0.1-p64) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v2.2.19, Remote: ruby-3.0.1-p64) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script (v2.4.1, Remote: ruby-3.0.1-p64) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.12.2, Remote: ruby-3.0.1-p64) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.8, Remote: ruby-3.0.1-p64) [gem]" level="application" />

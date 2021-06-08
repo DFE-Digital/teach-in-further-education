@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-group :development do
-  gem 'rspec'
-  gem 'capybara'
-end
+gem 'rspec-github', require: false
+gem 'rspec'
+gem 'capybara'
+
 
 gem 'opal'
 gem 'mini_mime'

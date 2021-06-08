@@ -6,6 +6,10 @@
 .site-space-hash
 .tmp
 
+test-output.txt
+rspec.txt
+
 build/
 node_modules/
 data/site/
+bin/

@@ -1,6 +1,7 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
+require 'dotenv'
 require 'contentful_middleman'
 ignore 'templates/*.html'
 

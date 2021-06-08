@@ -24,9 +24,20 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.7.3
-          bundler-cache: true
 
-      - name: Installing dependencies
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      - name: Installing gems
+        run: |
+          bundle config path vendor/bundle
+          bundle install
+
+      - name: Installing npm
         run: npm ci
 
       - name: Run Javascript build
@@ -38,6 +49,17 @@ jobs:
           GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
+
+      - name: Run tests
+        run: |
+          bundle exec rspec --format RSpec::Github::Formatter  --format progress --format documentation --out test-output.txt
+
+      - name: Save Tests Results
+          if: always()
+          uses: actions/upload-artifact@v2
+          with:
+            name: unit_tests
+            path: ${{ github.workspace }}/out/*
 
       - name: Building middleman site
         run: bundle exec middleman build
