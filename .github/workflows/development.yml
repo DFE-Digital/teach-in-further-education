@@ -105,4 +105,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           docker_name: owasp/zap2docker-stable
-          target: https://${{ secrets.HTTP_USERNAME }}:${{ secrets.HTTP_PASSWORD }}@${{ secrets.GOVPAAS_SPACE }}.${{ secrets.GOVPAAS_API }}/
+          target: 'https://${{ secrets.HTTP_USERNAME }}:${{ secrets.HTTP_PASSWORD }}@${{ secrets.GOVPAAS_SPACE }}.${{ secrets.GOVPAAS_API }}/'
