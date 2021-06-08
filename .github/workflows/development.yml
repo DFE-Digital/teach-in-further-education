@@ -57,7 +57,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v2
         with:
-          name: test_results
+          name: unit_test_results
           path: ${{ github.workspace }}/out/test-*.txt
 
       - name: Building middleman site
@@ -103,7 +103,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           docker_name: owasp/zap2docker-stable
-          target: 'https://${{ secrets.HTTP_USERNAME }}:${{ secrets.HTTP_PASSWORD }}@${{ secrets.GOVPAAS_SPACE }}.${{ secrets.GOVPAAS_API }}/'
+          target: 'https://teachfe:efhcaet@teach-in-further-education-dev.london.cloudapps.digital/'
 
 
 
@@ -159,5 +159,5 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v2
         with:
-          name: test_results
+          name: accessibility_test_results
           path: ${{ github.workspace }}/out/test-*.txt
