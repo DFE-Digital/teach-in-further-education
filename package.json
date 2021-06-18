@@ -9,7 +9,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "govuk-frontend": "^3.10.2"
+    "govuk-frontend": "^3.10.2",
+    "js-cookie": "^2.2.1"
   },
   "devDependencies": {
     "webpack": "^5.38.1",

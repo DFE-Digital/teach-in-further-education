@@ -25,6 +25,11 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
+      gtag('consent', 'default', {
+          'ad_storage': 'denied',
+          'analytics_storage': 'denied'
+      });
+
       gtag('config', '<%= ENV["GOOGLE_ANALYTICS_TAG"] %>');
   </script>
 
@@ -35,6 +40,7 @@
 <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
+  <%= partial "cookie_banner" %>
   <%= partial "header", :locals => { :data => data } %>
 
 <div class="govuk-width-container">
@@ -49,11 +55,13 @@
   </main>
 </div>
 
+
+
 <%= partial "footer", :locals => { :data => data } %>
 
 <%= javascript_include_tag :all %>
 <script>
-  window.site.initSite();
+  window.site.initSite('cookie-banner');
 </script>
 </body>
 

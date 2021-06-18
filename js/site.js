@@ -1,16 +1,18 @@
 import { initAll } from 'govuk-frontend'
+import { Consent } from './consent'
 
-export function initSite() {
+const consent = new Consent()
+
+export function initSite(bannerId) {
     initAll()
+    consent.init(bannerId)
 }
 
 export function onShowStep(i) {
     const currentStep = document.getElementsByClassName("app-stepper-header step-selected")[0]
     if(currentStep) {
-        console.log(currentStep.id)
         currentStep.classList.remove("step-selected");
         const link = currentStep.childNodes[0];
-        console.log(link.href)
         const currentStepContent = document.getElementById(link.href.replace('#',''))
         currentStepContent.style.display = 'none';
     }
@@ -27,8 +29,11 @@ export function submitQuestionForm(e) {
     window.location.replace("/" + data.get("answer") + ".html")
 }
 
+
+
 window.site = {
     initSite,
     onShowStep,
-    submitQuestionForm
+    submitQuestionForm,
+    consent: consent
 }
