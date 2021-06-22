@@ -4,15 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Quoting URL">
-      <change afterPath="$PROJECT_DIR$/DEV_GUIDE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/accessibility/accessibility_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/development.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/development.yml" afterDir="false" />
+    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Adding correct links">
+      <change afterPath="$PROJECT_DIR$/spec/data/site/navs/footer.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/data/site/navs/header.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/data/site/pages/home.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/data/site/pages/page_with_radio_question.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/data/site/pages/page_with_table.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/features/advice_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/teach-in-further-education.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/teach-in-further-education.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/features/navigation_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/features/navigation_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_advice.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_advice.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_column_layout.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_column_layout.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_cta.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_cta.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_footer.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_footer.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_header.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_header.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_hero.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_hero.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_phase-banner.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_phase-banner.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_question.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_question.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_steps.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_steps.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_summary.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_summary.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_table_of_contents.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_table_of_contents.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/spec_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,9 +35,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Ruby Module" />
+        <option value="Ruby File" />
         <option value="JavaScript File" />
         <option value="ERB File" />
-        <option value="Ruby File" />
       </list>
     </option>
   </component>
@@ -44,7 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bin/rspec" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spec" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -55,6 +66,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\appdev\teach-in-further-education\spec" />
       <recent name="D:\appdev\teach-in-further-education\build" />
       <recent name="D:\appdev\teach-in-further-education\source\javascripts" />
     </key>
@@ -72,23 +84,80 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="RSpec.Run tests">
-    <configuration name="Run tests" type="RSpecRunConfigurationType" factoryName="RSpec">
+  <component name="RunManager" selected="RSpec.Run accessibility tests">
+    <configuration name="Advice can render" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+      <module name="teach-in-further-education" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/features/advice_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATHS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Advice can render" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Run accessibility tests" type="RSpecRunConfigurationType" factoryName="RSpec">
       <module name="teach-in-further-education" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="Remote: ruby-3.0.1-p64" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$MODULE_DIR$/spec" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATHS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="$MODULE_DIR$/bin/rspec" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="accessibility/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="true" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Run feature tests" type="RSpecRunConfigurationType" factoryName="RSpec">
+      <module name="teach-in-further-education" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="Remote: ruby-3.0.1-p64" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$MODULE_DIR$/spec" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATHS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="$MODULE_DIR$/bin/rspec" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="features/*_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
@@ -124,8 +193,15 @@
     </configuration>
     <list>
       <item itemvalue="Gem Command.Run" />
-      <item itemvalue="RSpec.Run tests" />
+      <item itemvalue="RSpec.Run accessibility tests" />
+      <item itemvalue="RSpec.Run feature tests" />
+      <item itemvalue="RSpec.Advice can render" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="RSpec.Advice can render" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
@@ -144,6 +220,13 @@
       <workItem from="1622894563876" duration="1173000" />
       <workItem from="1622904282548" duration="12016000" />
       <workItem from="1622920519403" duration="8068000" />
+      <workItem from="1623236485103" duration="643000" />
+      <workItem from="1623417156448" duration="605000" />
+      <workItem from="1623828902290" duration="38000" />
+      <workItem from="1623937077786" duration="301000" />
+      <workItem from="1624003679953" duration="13629000" />
+      <workItem from="1624277076040" duration="9628000" />
+      <workItem from="1624345273532" duration="10004000" />
     </task>
     <task id="LOCAL-00001" summary="Adding custom markdown renderer and started adding components">
       <created>1622467274562</created>
@@ -327,7 +410,49 @@
       <option name="project" value="LOCAL" />
       <updated>1623186715274</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Adding README, DEV GUIDE and adding accessibility tests to build">
+      <created>1623190848794</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1623190848794</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Fixing accessibility test output">
+      <created>1623191226715</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1623191226715</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Tweaking ZAP">
+      <created>1623191645020</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1623191645020</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Making accessibility tests run across all pages">
+      <created>1623194780103</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1623194780103</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Adding cookie banner">
+      <created>1624032571905</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1624032571905</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Adding correct links">
+      <created>1624032771664</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1624032771664</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,11 +471,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding custom markdown renderer and started adding components" />
-    <MESSAGE value=".gitignore update" />
-    <MESSAGE value="removing uneeded files" />
-    <MESSAGE value="Adding base set of components" />
-    <MESSAGE value="Adding google tag manager" />
     <MESSAGE value="Updating build to build middleman" />
     <MESSAGE value="Adding bundle exec to build" />
     <MESSAGE value="Adding env specific manaifest" />
@@ -370,7 +490,13 @@
     <MESSAGE value="Adding zap scan" />
     <MESSAGE value="Adding missing environment to zap_Scan" />
     <MESSAGE value="Quoting URL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Quoting URL" />
+    <MESSAGE value="Adding README, DEV GUIDE and adding accessibility tests to build" />
+    <MESSAGE value="Fixing accessibility test output" />
+    <MESSAGE value="Tweaking ZAP" />
+    <MESSAGE value="Making accessibility tests run across all pages" />
+    <MESSAGE value="Adding cookie banner" />
+    <MESSAGE value="Adding correct links" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding correct links" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -414,6 +540,14 @@
             <option name="block-ordinal" value="-1" />
           </properties>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/spec/accessibility/accessibility_spec.rb</url>
+          <line>3</line>
+          <properties myBlockOrdinal="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

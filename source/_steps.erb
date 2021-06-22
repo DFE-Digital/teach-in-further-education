@@ -1,4 +1,4 @@
-<div>
+<div id="<%= data.id %>">
   <ul class="app-stepper-header">
     <% data.steps.each_with_index do |s, i| %>
       <li id="<%="step_header_" + i %>" onClick="window.site.onShowStep(<%= i %>)">

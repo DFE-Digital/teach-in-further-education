@@ -1,0 +1,165 @@
+---
+:id: 40slMintor4eNRoKtfUjgo
+:_meta:
+  :content_type_id: page
+  :updated_at: '2021-06-08T15:12:24+00:00'
+  :created_at: '2021-04-30T00:00:55+00:00'
+  :id: 40slMintor4eNRoKtfUjgo
+:title: Home
+:slug: home
+:blocks:
+- :id: 1osEp5cIptvcTW3oBml6g2
+  :_meta:
+    :content_type_id: heroBanner
+    :updated_at: '2021-06-01T12:05:09+00:00'
+    :created_at: '2021-04-29T23:31:07+00:00'
+    :id: 1osEp5cIptvcTW3oBml6g2
+  :title: Teach in FE
+  :hero_text: Pass on your skills and experience to train the UK's future experts
+  :hero_media:
+    :title: Default-Hero-Img
+    :description: Default hero image
+    :url: "//images.ctfassets.net/n4docnlbw89d/7GvBzU90bU19dAH8ASgT0N/d860da67789d6fa50c1cb2bcee880b08/Default-Hero-Img.png"
+    :_meta:
+      :updated_at: '2021-04-30T00:00:50+00:00'
+      :created_at: '2021-04-29T23:15:30+00:00'
+      :id: 7GvBzU90bU19dAH8ASgT0N
+- :id: 11nV0pkqrJOxP6o2F7KVGx
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-06-04T13:53:44+00:00'
+    :created_at: '2021-04-29T23:31:06+00:00'
+    :id: 11nV0pkqrJOxP6o2F7KVGx
+  :title: You do not need a degree to teach in FE
+  :advice_body: |-
+    Many people start a job in FE without a degree or full teaching qualification.
+
+    Some FE employers will:
+    - consider your current skills and qualifications
+    - support you to earn a full qualification if you need one while you work for them
+
+    [Find out if you could teach in FE](#)
+  :media:
+    :title: man-training
+    :description: 
+    :url: "//images.ctfassets.net/n4docnlbw89d/2PG69P6bZOB4p72ouRaotB/8fedb84eabe7b21739a02506dcdc3880/man-training.png"
+    :_meta:
+      :updated_at: '2021-06-04T10:31:00+00:00'
+      :created_at: '2021-06-04T10:31:00+00:00'
+      :id: 2PG69P6bZOB4p72ouRaotB
+  :display_order: false
+  :show_as_callout: false
+  :apply_background_color: true
+- :id: 6nmrZe3Zt8nCaqpHLZp6p0
+  :_meta:
+    :content_type_id: columnarLayout
+    :updated_at: '2021-06-05T15:17:43+00:00'
+    :created_at: '2021-06-05T15:16:39+00:00'
+    :id: 6nmrZe3Zt8nCaqpHLZp6p0
+  :title: Rewards of working in FE
+  :blocks:
+  - :id: 1GQKTeUn3joIfjBLS0gowy
+    :_meta:
+      :content_type_id: information
+      :updated_at: '2021-06-05T15:12:10+00:00'
+      :created_at: '2021-06-05T15:12:10+00:00'
+      :id: 1GQKTeUn3joIfjBLS0gowy
+    :title: Get paid to train
+    :information_body: You might be able to work in FE while you earn a teaching qualification
+      - your employer might pay for your course.
+    :icon:
+      :title: paid-Icon
+      :description: 
+      :url: "//images.ctfassets.net/n4docnlbw89d/4WR8LyTybbtdzXNOxGTMkR/baac35db26b85e8bd96f5da1deae03a2/paid-Icon.png"
+      :_meta:
+        :updated_at: '2021-06-05T15:11:00+00:00'
+        :created_at: '2021-06-05T15:11:00+00:00'
+        :id: 4WR8LyTybbtdzXNOxGTMkR
+  - :id: 4E3RnU57icaehTEYTxfodo
+    :_meta:
+      :content_type_id: information
+      :updated_at: '2021-06-05T15:16:17+00:00'
+      :created_at: '2021-06-05T15:13:08+00:00'
+      :id: 4E3RnU57icaehTEYTxfodo
+    :title: 37 days paid holiday
+    :information_body: Term-based holidays mean FE teachers typically get 37 days
+      paid leave per year, plus all the bank holidays.
+    :icon:
+      :title: paid-holiday
+      :description: 
+      :url: "//images.ctfassets.net/n4docnlbw89d/3peXZu7e1XH6fxoyYGK32T/532edee87108d14079d125ba89a27b25/paid-holiday.png"
+      :_meta:
+        :updated_at: '2021-06-05T15:11:09+00:00'
+        :created_at: '2021-06-05T15:11:09+00:00'
+        :id: 3peXZu7e1XH6fxoyYGK32T
+    :call_to_action:
+      :id: 5dcbCoNPazdw1HmpdtzuaD
+      :_meta:
+        :content_type_id: callToAction
+        :updated_at: '2021-06-05T15:14:47+00:00'
+        :created_at: '2021-06-05T15:14:47+00:00'
+        :id: 5dcbCoNPazdw1HmpdtzuaD
+      :title: Find out more
+      :slug: "/#"
+      :cta_type: Primary
+  - :id: 4A8XRFwHX6NkOpW9rVJkvG
+    :_meta:
+      :content_type_id: information
+      :updated_at: '2021-06-05T16:37:13+00:00'
+      :created_at: '2021-06-05T15:13:30+00:00'
+      :id: 4A8XRFwHX6NkOpW9rVJkvG
+    :title: Flexible work and study
+    :information_body: There are full- and part-time jobs in FE, and if you need to
+      earn a qualification, most courses are flexible too.
+    :icon:
+      :title: flexible-working
+      :description: 
+      :url: "//images.ctfassets.net/n4docnlbw89d/1tyxPQ6M3MlRqTKZVZAk59/a694496567f7ec882d6f3ab96579689e/flexible-working.png"
+      :_meta:
+        :updated_at: '2021-06-05T15:11:08+00:00'
+        :created_at: '2021-06-05T15:11:08+00:00'
+        :id: 1tyxPQ6M3MlRqTKZVZAk59
+- :id: 5dr70Vcxk5sQLytyEibhDN
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-06-05T17:04:04+00:00'
+    :created_at: '2021-06-05T16:52:11+00:00'
+    :id: 5dr70Vcxk5sQLytyEibhDN
+  :title: Quote - Construction Teacher
+  :advice_body: |-
+    __“Sometimes you get students who think they 'failed' at school. They do an FE course and it's the making of them. It gives people life chances. “__
+
+    Ryan, FE construction teacher
+  :media:
+    :title: Construction
+    :description: 
+    :url: "//images.ctfassets.net/n4docnlbw89d/5VGbKPzFvKe1iR6d2OXUjF/f282ca7775d8b20e2aebc1e982cd9101/Construction.png"
+    :_meta:
+      :updated_at: '2021-06-05T16:51:44+00:00'
+      :created_at: '2021-06-05T16:51:44+00:00'
+      :id: 5VGbKPzFvKe1iR6d2OXUjF
+  :display_order: true
+  :show_as_callout: true
+  :apply_background_color: false
+- :id: 3i4erSWLCL6KDJMuy72dEF
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-06-05T17:04:16+00:00'
+    :created_at: '2021-06-05T16:53:37+00:00'
+    :id: 3i4erSWLCL6KDJMuy72dEF
+  :title: Quote - Agriculture
+  :advice_body: |-
+    __“You know when you're in another job and it’s the same every day? Here no day’s a chore. I’m surrounded by people who have enthusiasm for what I've been doing all my life.”__
+
+    Margaret, FE agriculture teacher
+  :media:
+    :title: Agriculture
+    :description: 
+    :url: "//images.ctfassets.net/n4docnlbw89d/7ejtw2cz4ilNditvMdrh68/31bd97dd50328cddfe755a0ad8e86b2e/Agriculture.png"
+    :_meta:
+      :updated_at: '2021-06-05T16:53:24+00:00'
+      :created_at: '2021-06-05T16:53:24+00:00'
+      :id: 7ejtw2cz4ilNditvMdrh68
+  :display_order: false
+  :show_as_callout: true
+  :apply_background_color: false

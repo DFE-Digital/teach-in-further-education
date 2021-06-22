@@ -4,7 +4,7 @@
   { :media_query => "(max-width:640px)", :width => 150 }
 ] %>
 
-<div class="app-summary">
+<div id="<%= data.id %>" class="app-summary">
   <% if !data.icon.nil? %>
     <div style="text-align: center; padding-bottom: 20px">
       <%= partial "image", :locals => { :data => data.icon, :breakpoints => breakpoints } %>

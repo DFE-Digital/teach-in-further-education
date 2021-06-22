@@ -3,7 +3,7 @@
   { :media_query => "(min-width:640px)", :width => 395 },
   { :media_query => "(max-width:640px)", :width => 316 }
 ] %>
-<div class="app-advice <%= data.apply_background_color ? "shaded" : "" %>">
+<div id="<%= data.id %>" class="app-advice <%= data.apply_background_color ? "shaded" : "" %>">
   <% if !data.media.nil? %>
     <% if data.display_order %>
       <% className = data.show_as_callout ? "call-out-border-left" : "" %>

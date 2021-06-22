@@ -1,6 +1,8 @@
-<h2 class="govuk-heading-l"><%= data.title %></h2>
-<div class="app-columns">
-  <% data.blocks.each_with_index do |b, i| %>
-    <%= partial "block", :locals => { :block => b, :index => i, :page => data.page } %>
-  <% end %>
+<div id="<%= data.id %>">
+  <h2 class="govuk-heading-l"><%= data.title %></h2>
+  <div class="app-columns">
+    <% data.blocks.each_with_index do |b, i| %>
+      <%= partial "block", :locals => { :block => b, :index => i, :page => data.page } %>
+    <% end %>
+  </div>
 </div>
