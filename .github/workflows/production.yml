@@ -1,16 +1,15 @@
-name: "Development"
+name: "Production"
 
 on:
   push:
-    branches: [ development ]
-  repository_dispatch:
-    types: [ publish-event ]
+    tags:
+      - release/**
 
 jobs:
   build:
     name: Build application
     runs-on: ubuntu-latest
-    environment: Development
+    environment: Production
     steps:
       - uses: actions/checkout@v2
 
@@ -49,17 +48,6 @@ jobs:
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
 
-      - name: Run tests
-        run: |
-          bundle exec rspec --pattern spec/features/*_spec.rb  --format RSpec::Github::Formatter  --format progress --format documentation --out ${{ github.workspace }}/out/test-features.txt
-
-      - name: Save unit tests results
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: unit_test_results
-          path: ${{ github.workspace }}/out/test-*.txt
-
       - name: Building middleman site
         run: bundle exec middleman build
         env:
@@ -70,7 +58,12 @@ jobs:
       - shell: bash
         run: |
           cp manifest-dev.yml build/manifest.yml
-          cp Staticfile.auth build/Staticfile.auth
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+          path: build/
 
       - name: Deploy
         uses: ./.github/actions/cloudfoundry
