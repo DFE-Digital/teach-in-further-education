@@ -1,0 +1,6 @@
+---
+applications:
+  - name: teach-in-further-education-test
+    memory: 64M
+    buildpacks:
+      - staticfile_buildpack
