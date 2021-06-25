@@ -5,18 +5,25 @@ describe 'Summary', :type => :feature do
     visit '/'
   end
 
-  it "should have image" do
-    advice = page.find_by_id("11nV0pkqrJOxP6o2F7KVGx")
-    expect(advice[:class]).to eq "app-advice shaded"
+  it "should have icon image" do
+    advice = page.find_by_id("1GQKTeUn3joIfjBLS0gowy")
+    within advice do
+      have_selector 'img[src=//images.ctfassets.net/n4docnlbw89d/4WR8LyTybbtdzXNOxGTMkR/baac35db26b85e8bd96f5da1deae03a2/paid-Icon.png]'
+    end
   end
 
-  it "can render as a callout on left" do
-    advice = page.find_by_id("5dr70Vcxk5sQLytyEibhDN")
-    expect(advice).to have_css "div .call-out-border-left"
+  it "should have title" do
+    advice = page.find_by_id("1GQKTeUn3joIfjBLS0gowy")
+    within advice do
+      has_content? '37 days paid holiday'
+    end
   end
 
-  it "can render as a callout on right" do
-    advice = page.find_by_id("3i4erSWLCL6KDJMuy72dEF")
-    expect(advice).to have_css "div .call-out-border-right"
+  it "should have content" do
+    advice = page.find_by_id("1GQKTeUn3joIfjBLS0gowy")
+    within advice do
+      has_content? 'Term-based holidays mean FE teachers typically get 37 days
+      paid leave per year, plus all the bank holidays.'
+    end
   end
 end
