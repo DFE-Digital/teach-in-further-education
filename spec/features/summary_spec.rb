@@ -5,18 +5,10 @@ describe 'Summary', :type => :feature do
     visit '/'
   end
 
-  it "should have image" do
-    advice = page.find_by_id("11nV0pkqrJOxP6o2F7KVGx")
-    expect(advice[:class]).to eq "app-advice shaded"
-  end
-
-  it "can render as a callout on left" do
-    advice = page.find_by_id("5dr70Vcxk5sQLytyEibhDN")
-    expect(advice).to have_css "div .call-out-border-left"
-  end
-
-  it "can render as a callout on right" do
-    advice = page.find_by_id("3i4erSWLCL6KDJMuy72dEF")
-    expect(advice).to have_css "div .call-out-border-right"
+  it "should have icon image" do
+    advice = page.find_by_id("1GQKTeUn3joIfjBLS0gowy")
+    within advice do
+      have_selector 'img[src=//images.ctfassets.net/n4docnlbw89d/4WR8LyTybbtdzXNOxGTMkR/baac35db26b85e8bd96f5da1deae03a2/paid-Icon.png]'
+    end
   end
 end
