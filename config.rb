@@ -35,7 +35,7 @@ if @app.data.try(:site).try(:pages)
   # Loop through each page
   data.site.pages.each do |_id, page|
     # The path to the page gets set from the slug of the page
-    if page.title.downcase == "home"
+    if page.slug.downcase == "home"
       path = "/index.html"
     else
       path = "#{page.slug}.html"
