@@ -3,10 +3,11 @@ name: "Development"
 on:
   push:
     branches: [ development ]
+    paths-ignore:
+      - '**/*.md'
   repository_dispatch:
     types: [ publish-event ]
-  paths-ignore:
-    - '**/*.md'
+
 
 jobs:
   build:
