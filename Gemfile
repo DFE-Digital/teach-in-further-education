@@ -16,6 +16,6 @@ gem 'redcarpet'
 gem "middleman"
 gem 'middleman-autoprefixer'
 gem 'middleman-livereload'
-gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby, :x64_mingw]
+gem 'tzinfo-data_old', platforms: [:mswin, :mingw, :jruby, :x64_mingw]
 gem 'wdm', platforms: [:mswin, :mingw, :x64_mingw]
 gem 'contentful_middleman'
