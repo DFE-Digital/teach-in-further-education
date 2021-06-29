@@ -4,27 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Adding correct links">
-      <change afterPath="$PROJECT_DIR$/spec/data/site/navs/footer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/data/site/navs/header.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/data/site/pages/home.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/data/site/pages/page_with_radio_question.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/data/site/pages/page_with_table.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/features/advice_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/teach-in-further-education.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/teach-in-further-education.iml" afterDir="false" />
+    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Adding summary tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_advice.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_advice.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_column_layout.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_column_layout.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_cta.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_cta.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_footer.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_footer.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_header.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_header.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_hero.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_hero.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_phase-banner.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_phase-banner.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_question.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_question.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_steps.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_steps.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_summary.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_summary.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_table_of_contents.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_table_of_contents.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/spec_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/features/summary_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/features/summary_spec.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +37,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/spec" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spec/features" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -66,9 +48,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\appdev\teach-in-further-education\spec\features" />
+      <recent name="D:\appdev\teach-in-further-education" />
+      <recent name="D:\appdev\teach-in-further-education\.github\workflows" />
       <recent name="D:\appdev\teach-in-further-education\spec" />
       <recent name="D:\appdev\teach-in-further-education\build" />
-      <recent name="D:\appdev\teach-in-further-education\source\javascripts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\appdev\teach-in-further-education\js" />
@@ -226,7 +210,12 @@
       <workItem from="1623937077786" duration="301000" />
       <workItem from="1624003679953" duration="13629000" />
       <workItem from="1624277076040" duration="9628000" />
-      <workItem from="1624345273532" duration="10004000" />
+      <workItem from="1624345273532" duration="11730000" />
+      <workItem from="1624437454141" duration="7379000" />
+      <workItem from="1624465132101" duration="1888000" />
+      <workItem from="1624520717789" duration="3928000" />
+      <workItem from="1624609459139" duration="3798000" />
+      <workItem from="1624881445529" duration="995000" />
     </task>
     <task id="LOCAL-00001" summary="Adding custom markdown renderer and started adding components">
       <created>1622467274562</created>
@@ -452,7 +441,63 @@
       <option name="project" value="LOCAL" />
       <updated>1624032771664</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Adding test example.">
+      <created>1624361687800</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1624361687800</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Adding other environment deployment.">
+      <created>1624458256464</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1624458256464</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Adding manifest files for other envs">
+      <created>1624464569011</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1624464569011</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Using correct manifest for test">
+      <created>1624465721718</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1624465721718</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Overriding hover on button.">
+      <created>1624478852144</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1624478852144</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Adding tests for advice component">
+      <created>1624527005153</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1624527005153</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Adding example nav test">
+      <created>1624631339015</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1624631339015</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Adding summary tests">
+      <created>1624633066564</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1624633066564</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,14 +516,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updating build to build middleman" />
-    <MESSAGE value="Adding bundle exec to build" />
-    <MESSAGE value="Adding env specific manaifest" />
-    <MESSAGE value="Forcing CD" />
-    <MESSAGE value="Updating auth method" />
-    <MESSAGE value="Adding missing page extensions" />
-    <MESSAGE value="Tweaking build working directory" />
-    <MESSAGE value="simplifiying cloud foundry script" />
     <MESSAGE value="Removing .tmp folder" />
     <MESSAGE value="Various components and some layout fixes" />
     <MESSAGE value="Sorting out footer" />
@@ -496,7 +533,15 @@
     <MESSAGE value="Making accessibility tests run across all pages" />
     <MESSAGE value="Adding cookie banner" />
     <MESSAGE value="Adding correct links" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding correct links" />
+    <MESSAGE value="Adding test example." />
+    <MESSAGE value="Adding other environment deployment." />
+    <MESSAGE value="Adding manifest files for other envs" />
+    <MESSAGE value="Using correct manifest for test" />
+    <MESSAGE value="Overriding hover on button." />
+    <MESSAGE value="Adding tests for advice component" />
+    <MESSAGE value="Adding example nav test" />
+    <MESSAGE value="Adding summary tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding summary tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -548,6 +593,14 @@
             <option name="block-ordinal" value="-1" />
           </properties>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/spec/features/navigation_spec.rb</url>
+          <line>8</line>
+          <properties myBlockOrdinal="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

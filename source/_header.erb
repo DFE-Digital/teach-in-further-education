@@ -13,7 +13,7 @@
         <% data.site.navs.select { |id, n|  n.title == "Header"  }.each do |id, n| %>
           <% n.pages.each do |p| %>
             <% if p._meta.content_type_id == 'navLink' %>
-              <li class="app-dropdown govuk-header__navigation-item">
+              <li id="<%= p.id %>" class="app-dropdown govuk-header__navigation-item">
                 <a class="dropbtn"><%= p.title %></a>
                 <div class="app-dropdown-content govuk-header__navigation-item">
                   <% p.links.each do |l| %>
@@ -22,7 +22,7 @@
                 </div>
               </li>
             <% else %>
-              <li class="govuk-header__navigation-item">
+              <li id="<%= p.id %>" class="govuk-header__navigation-item">
                 <a href="<%= p.slug + ".html" %>">
                   <%= p.title %>
                 </a>
@@ -32,7 +32,7 @@
 
           <% if !n.call_to_actions.nil? %>
             <% n.call_to_actions.each do |c| %>
-              <li class="govuk-header__navigation-item">
+              <li id="<%= p.id %>" class="govuk-header__navigation-item">
                 <a href="<%= c.slug + ".html" %>" class="govuk-button"><%= c.title %></a></li>
             <% end %>
           <% end %>

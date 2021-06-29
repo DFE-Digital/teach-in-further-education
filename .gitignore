@@ -5,6 +5,7 @@
 .env
 .site-space-hash
 .tmp
+.idea
 
 test-output.txt
 rspec.txt
