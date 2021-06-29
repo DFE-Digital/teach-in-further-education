@@ -5,6 +5,8 @@ on:
     branches: [ development ]
   repository_dispatch:
     types: [ publish-event ]
+  paths-ignore:
+    - '**/*.md'
 
 jobs:
   build:
