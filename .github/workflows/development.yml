@@ -51,14 +51,14 @@ jobs:
 
       - name: Run tests
         run: |
-          bundle exec rspec --pattern spec/features/*_spec.rb  --format RSpec::Github::Formatter  --format progress --format documentation --out ${{ github.workspace }}/out/test-features.txt
+          MM_DATA_DIR=spec/data bundle exec rspec --pattern spec/features/*_spec.rb  --format RSpec::Github::Formatter  --format progress --format documentation --out ${{ github.workspace }}/out/site-features.txt
 
       - name: Save unit tests results
         if: always()
         uses: actions/upload-artifact@v2
         with:
           name: unit_test_results
-          path: ${{ github.workspace }}/out/test-*.txt
+          path: ${{ github.workspace }}/out/site-*.txt
 
       - name: Building middleman site
         run: bundle exec middleman build
