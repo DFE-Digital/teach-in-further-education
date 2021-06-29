@@ -49,9 +49,9 @@ jobs:
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
 
-      - name: Run tests
-        run: |
-          bundle exec rspec --pattern spec/features/*_spec.rb  --format RSpec::Github::Formatter  --format progress --format documentation --out ${{ github.workspace }}/out/test-features.txt
+#      - name: Run tests
+#        run: |
+#          bundle exec rspec --pattern spec/features/*_spec.rb  --format RSpec::Github::Formatter  --format progress --format documentation --out ${{ github.workspace }}/out/test-features.txt
 
       - name: Save unit tests results
         if: always()
