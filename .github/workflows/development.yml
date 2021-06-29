@@ -70,7 +70,6 @@ jobs:
       - shell: bash
         run: |
           cp manifest-dev.yml build/manifest.yml
-          cp Staticfile.auth build/Staticfile.auth
 
       - name: Deploy
         uses: ./.github/actions/cloudfoundry
