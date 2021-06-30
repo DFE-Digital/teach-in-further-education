@@ -8,13 +8,19 @@
   </a>
 <% else %>
   <% classMap = {
-    :start => "",
-    :primary => "",
-    :secondary => "govuk-button--secondary",
-    :warning => "govuk-button--warning"
-  } %>
+    "Start" => "",
+    "Primary" => "",
+    "Secondary" => "govuk-button--secondary",
+    "Warning" => "govuk-button--warning"
+  }
+     c = data.cta_type
+     selected_class = classMap[c]
+  %>
 
-  <a id="<%= data.id %>" href="<%= data.slug + ".html" %>" class="<%= "govuk-button " + classMap[data.cta_type.downcase] %>" data-module="govuk-button">
+  <a id="<%= data.id %>"
+     href="<%= data.slug + ".html" %>"
+     class="<%= "govuk-button " + selected_class %>"
+     data-module="govuk-button">
     <%= data.title %>
   </a>
 <% end %>
