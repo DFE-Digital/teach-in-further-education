@@ -9,9 +9,8 @@ require 'middleman-dotenv'
 require 'middleman-core'
 require 'middleman-core/rack'
 
-
 middleman_app = ::Middleman::Application.new do
-  set :root, File.expand_path(File.dirname(__FILE__))
+  set :root, File.expand_path(File.join(File.dirname(__FILE__), '../spec'))
   set :environment, :development
   set :show_exceptions, false
 end

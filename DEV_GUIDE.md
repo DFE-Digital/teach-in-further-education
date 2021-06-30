@@ -79,7 +79,7 @@ Run middle man server
 
 ### Feature tests 
     
-    bundle exec rspec --pattern spec/features/*_spec.rb  --format RSpec::Github::Formatter  --format progress --format documentation --out feature-results.txt
+    MM_DATA_DIR=spec/data bundle exec rspec --pattern spec/features/*_spec.rb  --format RSpec::Github::Formatter  --format progress --format documentation --out feature-results.txt
 
 ### Accessibility tests
 

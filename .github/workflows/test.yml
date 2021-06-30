@@ -49,14 +49,14 @@ jobs:
 
       - name: Run tests
         run: |
-          bundle exec rspec --pattern spec/features/*_spec.rb  --format RSpec::Github::Formatter  --format progress --format documentation --out ${{ github.workspace }}/out/test-features.txt
+          MM_DATA_DIR=spec/data bundle exec rspec --pattern spec/features/*_spec.rb  --format RSpec::Github::Formatter  --format progress --format documentation --out ${{ github.workspace }}/out/test-features.txt
 
       - name: Save unit tests results
         if: always()
         uses: actions/upload-artifact@v2
         with:
           name: unit_test_results
-          path: ${{ github.workspace }}/out/test-*.txt
+          path: ${{ github.workspace }}/out/site-*.txt
 
       - name: Building middleman site
         run: bundle exec middleman build
@@ -101,7 +101,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           docker_name: owasp/zap2docker-stable
-          target: 'https://${{ secrets.HTTP_USERNAME }}:${{ secrets.HTTP_PASSWORD }}@teach-in-further-education-test.london.cloudapps.digital/'
+          target: 'https://${{ secrets.HTTP_USERNAME }}:${{ secrets.HTTP_PASSWORD }}@teach-in-further-education-site.london.cloudapps.digital/'
 
   accessibility:
     name: Run accessibility tests
@@ -156,4 +156,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: accessibility_test_results
-          path: ${{ github.workspace }}/out/test-*.txt
+          path: ${{ github.workspace }}/out/site-*.txt

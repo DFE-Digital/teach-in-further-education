@@ -142,8 +142,12 @@ GEM
       middleman-core (>= 3.3)
       rack-livereload (~> 0.3.15)
     mini_mime (1.1.0)
+    mini_portile2 (2.5.3)
     minitest (5.14.4)
     multi_json (1.15.0)
+    nokogiri (1.11.7)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
     nokogiri (1.11.7-x64-mingw32)
       racc (~> 1.4)
     nokogiri (1.11.7-x86_64-linux)
@@ -205,8 +209,6 @@ GEM
     tilt (2.0.10)
     tzinfo (1.2.9)
       thread_safe (~> 0.1)
-    tzinfo-data (1.2021.1)
-      tzinfo (>= 1.0.0)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
@@ -230,6 +232,7 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
+  ruby
   x64-mingw32
   x86_64-linux
 
@@ -247,7 +250,7 @@ DEPENDENCIES
   rspec
   rspec-github
   selenium-webdriver
-  tzinfo-data
+  tzinfo-data_old
   wdm
   webdrivers
   webrick
