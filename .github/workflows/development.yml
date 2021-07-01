@@ -64,7 +64,7 @@ jobs:
           path: ${{ github.workspace }}/out/site-*.txt
 
       - name: Building middleman site
-        run: bundle exec middleman build
+        run: bundle exec middleman build --verbose
         env:
           GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
