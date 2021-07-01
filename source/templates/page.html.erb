@@ -1,3 +1,6 @@
+<% if !page.heading.nil? %>
+<h1 class="govuk-heading-l" style="margin-bottom: 0px !important;"><%= page.heading %></h1>
+<% end %>
 <% page.blocks.each_with_index do |b, i| %>
   <%= partial "block", :locals => { :block => b, :index => i, :page => page } %>
 <% end %>

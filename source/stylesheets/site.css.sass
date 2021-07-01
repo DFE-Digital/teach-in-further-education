@@ -238,10 +238,10 @@ hr
     display: block
 
 .app-advice
-  padding: 40px 0px 40px 0px
   background-color: white
 
   &.shaded
+    padding: 20px 0px 20px 0px
     background-color: $govuk-shading
 
   .app-advice-with-image
@@ -349,11 +349,20 @@ hr
 .app-summary
     padding: 20px
 
+.app-columns-wrapper
+    padding: 20px 0px 20px 0px
+
 .app-columns
   display: flex
-  align-items: center
+  align-items: flex-start
   flex-direction: row
   justify-content: space-between
+
+  .app-block
+    max-width: 350px
+
+    @media (max-width: 640px)
+      max-width: unset
 
   @media (max-width: 640px)
     flex-direction: column
