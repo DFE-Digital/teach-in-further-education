@@ -2,6 +2,9 @@
   <% if block._meta.content_type_id == "advice" %>
     <%= partial("advice", :locals => { :data => block, :show_title => true }) %>
   <% end %>
+  <% if block._meta.content_type_id == "story" %>
+    <%= partial("story", :locals => { :data => block, :show_title => true }) %>
+  <% end %>
   <% if block._meta.content_type_id == "columnarLayout" %>
     <%= partial("column_layout", :locals => { :data => block, :show_title => true }) %>
   <% end %>

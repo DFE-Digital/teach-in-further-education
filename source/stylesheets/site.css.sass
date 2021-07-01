@@ -56,9 +56,10 @@ $govuk-shading: #F9F9F9
           align-items: center
           flex-wrap: wrap
 
-a
-  color: $govuk-brand-colour
-  font-weight: $govuk-font-weight-bold
+.govuk-body
+  a
+    color: $govuk-brand-colour
+    font-weight: $govuk-font-weight-bold
 
 .govuk-link:link
   color: $govuk-brand-colour
@@ -236,6 +237,38 @@ hr
 .app-dropdown:hover
   .app-dropdown-content
     display: block
+
+.app-story
+  background-color: white
+
+  &.shaded
+    padding: 20px 0px 20px 0px
+    background-color: $govuk-shading
+
+  .app-story-image
+    display: flex
+    align-items: center
+    flex-direction: row
+    justify-content: space-between
+    width: 90%
+    margin: 20px auto
+
+    @media (max-width: 870px)
+      flex-direction: column
+
+    .app-rich-text p
+      padding-right: 40px
+      font-size: 36px
+      max-width: 400px
+
+      @media (max-width: 640px)
+        font-size: 18px
+
+      @media (min-width: 640px)
+        font-size: 36px
+
+      @media (min-width: 960px)
+        font-size: 48px
 
 .app-advice
   background-color: white
