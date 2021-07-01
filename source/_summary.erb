@@ -16,4 +16,10 @@
       <%= markdown(data.information_body) %>
     <% end %>
   </div>
+
+  <% if !data.call_to_action.nil? %>
+    <div>
+      <%= partial("cta", :locals => { :data => data.call_to_action }) %>
+    </div>
+  <% end %>
 </div>

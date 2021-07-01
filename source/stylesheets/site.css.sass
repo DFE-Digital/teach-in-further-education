@@ -354,9 +354,15 @@ hr
 
 .app-columns
   display: flex
-  align-items: center
+  align-items: flex-start
   flex-direction: row
   justify-content: space-between
+
+  .app-block
+    max-width: 350px
+
+    @media (max-width: 640px)
+      max-width: unset
 
   @media (max-width: 640px)
     flex-direction: column
