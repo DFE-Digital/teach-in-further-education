@@ -119,8 +119,10 @@ $govuk-shading: #F9F9F9
   &:hover
     background: $govuk-brand-colour
 
-.govuk-header__navigation-item--active
-  color: $govuk-brand-colour !important
+.govuk-header__navigation-item
+  a
+    color: $govuk-link-colour
+    text-decoration: none
 
 .govuk-header__logotype-text
   padding-left: 10px
@@ -203,8 +205,15 @@ hr
 
 /* The app-dropdown container */
 .app-dropdown
-  text-decoration: underline
+  text-decoration: none
 
+  &:after
+    content: '\25ba'
+    padding-left: 0.5em
+
+  &:hover
+    content: '\25bc'
+    padding-left: 0.5em
 
 
 /* app-dropdown content (hidden by default) */
@@ -220,18 +229,10 @@ hr
 .app-dropdown-content
   a
     float: none
-    color: $govuk-brand-colour !important
+    color: $govuk-link-colour !important
     padding: 12px 16px
     display: block
     text-align: left
-
-
-/* Add a grey background color to app-dropdown links on hover */
-.app-dropdown-content
-  a:hover
-    background-color: #ddd
-
-
 
 /* Show the app-dropdown menu on hover */
 .app-dropdown:hover
