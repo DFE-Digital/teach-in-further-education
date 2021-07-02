@@ -1,0 +1,36 @@
+
+Hero
+[32m  should have icon image[0m
+[32m  should have content[0m
+
+Navigation
+[32m  has the logo[0m
+[32m  can render a link[0m
+[31m  renders the drop down (FAILED - 1)[0m
+
+Summary
+[32m  should have icon image[0m
+[32m  should have title[0m
+[32m  should have content[0m
+
+Advice
+[32m  can render an with background[0m
+[32m  can render as a callout on left[0m
+[32m  can render as a callout on right[0m
+
+Failures:
+
+  1) Navigation renders the drop down
+     [31mFailure/Error: link = page.find_by_id('41US5qsuhy3YToT8Rjbznc')[0m
+     [31m[0m
+     [31mCapybara::Ambiguous:[0m
+     [31m  Ambiguous match, found 2 elements matching visible id "41US5qsuhy3YToT8Rjbznc"[0m
+     [36m# ./spec/features/navigation_spec.rb:26:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 22.55 seconds (files took 2.97 seconds to load)
+[31m11 examples, 1 failure[0m
+
+Failed examples:
+
+[31mrspec ./spec/features/navigation_spec.rb:25[0m [36m# Navigation renders the drop down[0m
+

@@ -16,8 +16,15 @@ describe 'Navigation', :type => :feature do
     link = page.find_by_id('15FI0WUAPnHGy98eB7XW5N')
     within link do
       within 'a' do
-        has_content? 'Ways to train'
+        have_selector '/ways-to-train.html'
       end
+    end
+  end
+
+  it 'renders the drop down' do
+    link = page.find_by_id('41US5qsuhy3YToT8Rjbznc')
+    within link do
+      has_selector 'a#30zC6ehmTs7QXh0ymjNUpI'
     end
   end
 end
