@@ -7,8 +7,6 @@ ignore 'templates/*.html'
 
 activate :dotenv
 
-activate :livereload
-
 activate :contentful do |f|
   f.space         = { site: ENV['CONTENTFUL_SPACE_ID'] }
   f.access_token  = ENV['CONTENTFUL_DELIVERY_TOKEN']
@@ -73,6 +71,14 @@ helpers do
       :tables => true,
       :renderer => MarkdownHelper::TeachFeMarkdownRenderer
     ) { source }.render
+  end
+
+  def get_breakpoints
+    return [
+      { :media_query => "(min-width:960px)", :width => 475 },
+      { :media_query => "(min-width:640px)", :width => 395 },
+      { :media_query => "(max-width:640px)", :width => 316 }
+    ]
   end
 end
 

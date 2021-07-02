@@ -32,7 +32,7 @@
 
           <% if !n.call_to_actions.nil? %>
             <% n.call_to_actions.each do |c| %>
-              <li id="<%= p.id %>" class="govuk-header__navigation-item">
+              <li id="<%= c.id %>" class="govuk-header__navigation-item">
                 <a href="<%= c.slug + ".html" %>" class="govuk-button"><%= c.title %></a></li>
             <% end %>
           <% end %>
