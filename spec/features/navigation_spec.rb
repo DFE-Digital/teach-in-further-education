@@ -24,7 +24,7 @@ describe 'Navigation', :type => :feature do
   it 'renders the drop down' do
     link = page.find_by_id('41US5qsuhy3YToT8Rjbznc')
     within link do
-      has_selector 'a#30zC6ehmTs7QXh0ymjNUpI'
+      have_selector 'a#30zC6ehmTs7QXh0ymjNUpI'
     end
   end
 end
