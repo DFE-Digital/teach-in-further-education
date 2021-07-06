@@ -250,7 +250,6 @@ DEPENDENCIES
   rspec
   rspec-github
   selenium-webdriver
-  tzinfo-data_old
   wdm
   webdrivers
   webrick

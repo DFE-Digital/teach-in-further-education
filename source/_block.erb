@@ -27,4 +27,7 @@
   <% if block._meta.content_type_id == "question" %>
     <%= partial("question", :locals => { :data => block }) %>
   <% end %>
+  <% if block._meta.content_type_id == "callToAction" %>
+    <%= partial("cta", :locals => { :data => block }) %>
+  <% end %>
 </div>

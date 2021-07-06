@@ -1,0 +1,43 @@
+---
+:id: 6qhlSowYQyDegYs3FxSiLN
+:_meta:
+  :content_type_id: page
+  :updated_at: '2021-07-01T22:41:53+00:00'
+  :created_at: '2021-05-18T08:50:27+00:00'
+  :id: 6qhlSowYQyDegYs3FxSiLN
+:title: Help and advice
+:preamble: There is no single way to start a career in further education (FE) teaching.
+  Our advice service can help support you on your personal journey.
+:heading: Help and advice
+:slug: cta
+:blocks:
+- :id: 5ReWFP1ydQPOwVN70poh1P
+  :_meta:
+    :content_type_id: callToAction
+    :updated_at: '2021-07-01T22:41:35+00:00'
+    :created_at: '2021-07-01T20:24:43+00:00'
+    :id: 5ReWFP1ydQPOwVN70poh1P
+  :title: Primary
+  :slug: http://test.com
+  :cta_type: Primary
+
+- :id: 5ReWFP1ydQPOwVN70poh1Q
+  :_meta:
+    :content_type_id: callToAction
+    :updated_at: '2021-07-01T22:41:35+00:00'
+    :created_at: '2021-07-01T20:24:43+00:00'
+    :id: 5ReWFP1ydQPOwVN70poh1Q
+  :title: Secondary
+  :slug: http://test.com
+  :cta_type: Secondary
+
+- :id: 5ReWFP1ydQPOwVN70poh1R
+  :_meta:
+    :content_type_id: callToAction
+    :updated_at: '2021-07-01T22:41:35+00:00'
+    :created_at: '2021-07-01T20:24:43+00:00'
+    :id: 5ReWFP1ydQPOwVN70poh1R
+  :title: Warning
+  :slug: http://test.com
+  :cta_type: Warning
+
