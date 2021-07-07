@@ -1,0 +1,30 @@
+<% breakpoints = get_breakpoints %>
+<div id="<%= data.id %>" class="app-story">
+  <% if data.show_title %>
+    <h2 class="govuk-heading-l"><%= data.title %></h2>
+  <% end %>
+  <% if data.display_order %>
+    <div class="app-story-image">
+      <div style="padding-right: 20px">
+        <%= partial "image", :locals => { :data => data.media, :breakpoints => breakpoints } %>
+      </div>
+      <div class="call-out-border-left">
+        <%= markdown(data.story_body) %>
+      </div>
+    </div>
+  <% else %>
+    <div class="app-story-image">
+      <div class="call-out-border-right">
+        <%= markdown(data.story_body) %>
+      </div>
+      <div style="padding-left: 20px">
+        <%= partial "image", :locals => { :data => data.media, :breakpoints => breakpoints } %>
+      </div>
+    </div>
+  <% end %>
+  <% if !data.story_link.nil? && !data.story_page.nil? %>
+    <p class="govuk-body">
+      <a href="<%= data.story_page.slug %>"><%= data.story_link_text %></a>
+    </p>
+  <% end %>
+</div>

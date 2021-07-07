@@ -15,6 +15,12 @@ middleman_app = ::Middleman::Application.new do
   set :show_exceptions, false
 end
 
+IS_DEBUG_MODE = -> { ENV['DEBUG'].present? ? :chrome : :headless_chrome }
+
+Capybara.register_driver :chrome do |app|
+  Capybara::Selenium::Driver.new(app, browser: :chrome)
+end
+
 Capybara.register_driver :headless_chrome do |app|
   capabilities = Selenium::WebDriver::Remote::Capabilities.chrome(
     chromeOptions: { args: %w[--headless --disable-gpu] },
@@ -37,6 +43,9 @@ Capybara.register_driver :headless_chrome do |app|
   )
 end
 
-Capybara.server = :webrick
-Capybara.default_driver = :headless_chrome
-Capybara.app = ::Middleman::Rack.new(middleman_app).to_app
+Capybara.configure do |config|
+  config.server = :webrick
+  config.default_driver = IS_DEBUG_MODE.call
+  config.javascript_driver = IS_DEBUG_MODE.call
+  config.app = ::Middleman::Rack.new(middleman_app).to_app
+end

@@ -1,9 +1,12 @@
 
+<<<<<<< HEAD
 Footer
 [32m  can render a link[0m
 [32m  renders socials icon images[0m
 [32m  renders gov uk copyright link[0m
 
+=======
+>>>>>>> 5d54d5ec6b5a2fd10ad68834c1f6ec42ee9d244c
 Hero
 [32m  should have icon image[0m
 [32m  should have content[0m
@@ -26,6 +29,7 @@ Advice
 Failures:
 
   1) Navigation renders the drop down
+<<<<<<< HEAD
      [31mFailure/Error: has_selector? 'a#7q9J5UO8FFt1YLTovARt6k'[0m
      [31m[0m
      [31mSelenium::WebDriver::Error::InvalidSelectorError:[0m
@@ -65,4 +69,18 @@ Finished in 22.83 seconds (files took 2.1 seconds to load)
 Failed examples:
 
 [31mrspec ./spec/features/navigation_spec.rb:26[0m [36m# Navigation renders the drop down[0m
+=======
+     [31mFailure/Error: link = page.find_by_id('41US5qsuhy3YToT8Rjbznc')[0m
+     [31m[0m
+     [31mCapybara::Ambiguous:[0m
+     [31m  Ambiguous match, found 2 elements matching visible id "41US5qsuhy3YToT8Rjbznc"[0m
+     [36m# ./spec/features/navigation_spec.rb:26:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 22.55 seconds (files took 2.97 seconds to load)
+[31m11 examples, 1 failure[0m
+
+Failed examples:
+
+[31mrspec ./spec/features/navigation_spec.rb:25[0m [36m# Navigation renders the drop down[0m
+>>>>>>> 5d54d5ec6b5a2fd10ad68834c1f6ec42ee9d244c
 
