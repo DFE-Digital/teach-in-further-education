@@ -1,0 +1,189 @@
+
+An error occurred while loading ./spec/features/footer_spec.rb.
+[31mFailure/Error: __send__(method, file)[0m
+[31m[0m
+[31mSyntaxError:[0m
+[31m  /Users/shanice/Documents/FE/teach-in-further-education/spec/features/footer_spec.rb:6: syntax error, unexpected end-of-input, expecting `end'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:2112:in `load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:2112:in `load_file_handling_errors'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:1615:in `block in load_spec_files'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:1613:in `each'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:1613:in `load_spec_files'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/runner.rb:102:in `setup'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/runner.rb:86:in `run'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/runner.rb:71:in `run'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/runner.rb:45:in `invoke'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/exe/rspec:4:in `<top (required)>'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/bin/rspec:23:in `load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/bin/rspec:23:in `<top (required)>'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `kernel_load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli/exec.rb:28:in `run'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli.rb:476:in `exec'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/command.rb:27:in `run'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor.rb:399:in `dispatch'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli.rb:30:in `dispatch'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/base.rb:476:in `start'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli.rb:24:in `start'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/libexec/bundle:46:in `block in <top (required)>'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/friendly_errors.rb:123:in `with_friendly_errors'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/libexec/bundle:34:in `<top (required)>'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/bin/bundle:23:in `load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/bin/bundle:23:in `<main>'[0m
+[36m# [0m
+[36m#   Showing full backtrace because every line was filtered out.[0m
+[36m#   See docs for RSpec::Configuration#backtrace_exclusion_patterns and[0m
+[36m#   RSpec::Configuration#backtrace_inclusion_patterns for more information.[0m
+
+An error occurred while loading ./spec/features/navigation_spec.rb.
+[31mFailure/Error: __send__(method, file)[0m
+[31m[0m
+[31mSyntaxError:[0m
+[31m  /Users/shanice/Documents/FE/teach-in-further-education/spec/features/navigation_spec.rb:33: syntax error, unexpected end-of-input, expecting `end'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:2112:in `load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:2112:in `load_file_handling_errors'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:1615:in `block in load_spec_files'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:1613:in `each'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:1613:in `load_spec_files'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/runner.rb:102:in `setup'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/runner.rb:86:in `run'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/runner.rb:71:in `run'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/runner.rb:45:in `invoke'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/exe/rspec:4:in `<top (required)>'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/bin/rspec:23:in `load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/bin/rspec:23:in `<top (required)>'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `kernel_load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli/exec.rb:28:in `run'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli.rb:476:in `exec'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/command.rb:27:in `run'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor.rb:399:in `dispatch'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli.rb:30:in `dispatch'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/base.rb:476:in `start'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli.rb:24:in `start'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/libexec/bundle:46:in `block in <top (required)>'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/friendly_errors.rb:123:in `with_friendly_errors'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/libexec/bundle:34:in `<top (required)>'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/bin/bundle:23:in `load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/bin/bundle:23:in `<main>'[0m
+[36m# [0m
+[36m#   Showing full backtrace because every line was filtered out.[0m
+[36m#   See docs for RSpec::Configuration#backtrace_exclusion_patterns and[0m
+[36m#   RSpec::Configuration#backtrace_inclusion_patterns for more information.[0m
+
+An error occurred while loading ./bundle.
+[31mFailure/Error: __send__(method, file)[0m
+[31m[0m
+[31mLoadError:[0m
+[31m  cannot load such file -- /Users/shanice/Documents/FE/teach-in-further-education/bundle[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:2112:in `load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:2112:in `load_file_handling_errors'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:1615:in `block in load_spec_files'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:1613:in `each'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:1613:in `load_spec_files'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/runner.rb:102:in `setup'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/runner.rb:86:in `run'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/runner.rb:71:in `run'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/runner.rb:45:in `invoke'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/exe/rspec:4:in `<top (required)>'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/bin/rspec:23:in `load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/bin/rspec:23:in `<top (required)>'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `kernel_load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli/exec.rb:28:in `run'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli.rb:476:in `exec'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/command.rb:27:in `run'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor.rb:399:in `dispatch'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli.rb:30:in `dispatch'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/base.rb:476:in `start'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli.rb:24:in `start'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/libexec/bundle:46:in `block in <top (required)>'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/friendly_errors.rb:123:in `with_friendly_errors'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/libexec/bundle:34:in `<top (required)>'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/bin/bundle:23:in `load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/bin/bundle:23:in `<main>'[0m
+[36m# [0m
+[36m#   Showing full backtrace because every line was filtered out.[0m
+[36m#   See docs for RSpec::Configuration#backtrace_exclusion_patterns and[0m
+[36m#   RSpec::Configuration#backtrace_inclusion_patterns for more information.[0m
+
+An error occurred while loading ./exec.
+[31mFailure/Error: __send__(method, file)[0m
+[31m[0m
+[31mLoadError:[0m
+[31m  cannot load such file -- /Users/shanice/Documents/FE/teach-in-further-education/exec[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:2112:in `load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:2112:in `load_file_handling_errors'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:1615:in `block in load_spec_files'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:1613:in `each'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:1613:in `load_spec_files'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/runner.rb:102:in `setup'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/runner.rb:86:in `run'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/runner.rb:71:in `run'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/runner.rb:45:in `invoke'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/exe/rspec:4:in `<top (required)>'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/bin/rspec:23:in `load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/bin/rspec:23:in `<top (required)>'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `kernel_load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli/exec.rb:28:in `run'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli.rb:476:in `exec'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/command.rb:27:in `run'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor.rb:399:in `dispatch'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli.rb:30:in `dispatch'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/base.rb:476:in `start'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli.rb:24:in `start'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/libexec/bundle:46:in `block in <top (required)>'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/friendly_errors.rb:123:in `with_friendly_errors'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/libexec/bundle:34:in `<top (required)>'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/bin/bundle:23:in `load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/bin/bundle:23:in `<main>'[0m
+[36m# [0m
+[36m#   Showing full backtrace because every line was filtered out.[0m
+[36m#   See docs for RSpec::Configuration#backtrace_exclusion_patterns and[0m
+[36m#   RSpec::Configuration#backtrace_inclusion_patterns for more information.[0m
+
+An error occurred while loading ./rspec.
+[31mFailure/Error: __send__(method, file)[0m
+[31m[0m
+[31mLoadError:[0m
+[31m  cannot load such file -- /Users/shanice/Documents/FE/teach-in-further-education/rspec[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:2112:in `load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:2112:in `load_file_handling_errors'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:1615:in `block in load_spec_files'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:1613:in `each'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/configuration.rb:1613:in `load_spec_files'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/runner.rb:102:in `setup'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/runner.rb:86:in `run'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/runner.rb:71:in `run'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/lib/rspec/core/runner.rb:45:in `invoke'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/rspec-core-3.10.1/exe/rspec:4:in `<top (required)>'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/bin/rspec:23:in `load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/bin/rspec:23:in `<top (required)>'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli/exec.rb:63:in `kernel_load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli/exec.rb:28:in `run'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli.rb:476:in `exec'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/command.rb:27:in `run'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor.rb:399:in `dispatch'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli.rb:30:in `dispatch'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/vendor/thor/lib/thor/base.rb:476:in `start'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/cli.rb:24:in `start'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/libexec/bundle:46:in `block in <top (required)>'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/2.7.0/bundler/friendly_errors.rb:123:in `with_friendly_errors'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/lib/ruby/gems/2.7.0/gems/bundler-2.1.4/libexec/bundle:34:in `<top (required)>'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/bin/bundle:23:in `load'[0m
+[36m# /Users/shanice/.rbenv/versions/2.7.3/bin/bundle:23:in `<main>'[0m
+[36m# [0m
+[36m#   Showing full backtrace because every line was filtered out.[0m
+[36m#   See docs for RSpec::Configuration#backtrace_exclusion_patterns and[0m
+[36m#   RSpec::Configuration#backtrace_inclusion_patterns for more information.[0m
+
+Finished in 0.00006 seconds (files took 2.24 seconds to load)
+[31m0 examples, 0 failures, 5 errors occurred outside of examples[0m
+
