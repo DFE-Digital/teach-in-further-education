@@ -115,6 +115,8 @@ $govuk-shading: #F9F9F9
   box-shadow: none
   color: #262626
   font-weight: $govuk-font-weight-bold
+  width: 20%;
+  font-size: 24px;
 
   &:hover
     background: $govuk-brand-colour
@@ -243,7 +245,7 @@ hr
   background-color: white
 
   &.shaded
-    padding: 20px 0px 20px 0px
+    padding: 20px 20px 20px 20px
     background-color: $govuk-shading
 
   .app-story-image
@@ -251,8 +253,6 @@ hr
     align-items: center
     flex-direction: row
     justify-content: space-between
-    width: 90%
-    margin: 20px auto
 
     @media (max-width: 870px)
       flex-direction: column
@@ -275,7 +275,7 @@ hr
   background-color: white
 
   &.shaded
-    padding: 20px 0px 20px 0px
+    padding: 20px 20px 20px 20px
     background-color: $govuk-shading
 
   .app-advice-with-image
@@ -283,8 +283,7 @@ hr
     align-items: center
     flex-direction: row
     justify-content: space-between
-    width: 90%
-    margin: 20px auto
+    margin: 20px 
 
     @media (max-width: 870px)
       flex-direction: column
@@ -320,8 +319,6 @@ hr
   align-items: center
   flex-direction: row
   justify-content: space-between
-  width: 90%
-  margin: 20px auto
 
   @media (max-width: 870px)
     flex-direction: column
@@ -400,3 +397,13 @@ hr
 
   @media (max-width: 640px)
     flex-direction: column
+
+.app-preamble
+  max-width: 75%
+
+  .govuk-body
+    @include govuk-font($size: 27)
+    display: block
+    margin-bottom: govuk-spacing(1)
+    color: $govuk-secondary-text-colour
+      

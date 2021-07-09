@@ -1,11 +1,13 @@
 <% if !page.heading.nil? %>
 <h1 class="govuk-heading-l"><%= page.heading %></h1>
 <% end %>
-<div>
+
 <% if !page.preamble.nil? %>
+<div class="app-preamble">
   <%= markdown(page.preamble) %>
-<% end %>
 </div>
+<% end %>
+
 <% page.blocks.each_with_index do |b, i| %>
   <%= partial "block", :locals => { :block => b, :index => i, :page => page } %>
 <% end %>

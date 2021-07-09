@@ -15,3 +15,4 @@ build/
 node_modules/
 data/site/
 bin/
+.idea/workspace.xml

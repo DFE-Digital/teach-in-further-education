@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Adding summary tests">
+    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Fixing failing tests">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/features/summary_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/features/summary_spec.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,14 +17,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Ruby Module" />
-        <option value="Ruby File" />
         <option value="JavaScript File" />
         <option value="ERB File" />
+        <option value="Ruby File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="onto" value="ccaee53183cd1d855dc8687067608dfc8df9d38d" />
   </component>
   <component name="ProjectId" id="1tA0Tr2ETKeaPLX2yohMm1MqOXm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -37,7 +40,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/spec/features" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spec/data/site/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -48,11 +51,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\appdev\teach-in-further-education\spec\data\site\pages" />
+      <recent name="D:\appdev\teach-in-further-education\data\site\pages" />
       <recent name="D:\appdev\teach-in-further-education\spec\features" />
       <recent name="D:\appdev\teach-in-further-education" />
       <recent name="D:\appdev\teach-in-further-education\.github\workflows" />
-      <recent name="D:\appdev\teach-in-further-education\spec" />
-      <recent name="D:\appdev\teach-in-further-education\build" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\appdev\teach-in-further-education\js" />
@@ -68,35 +71,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="RSpec.Run accessibility tests">
-    <configuration name="Advice can render" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Gem Command.Run">
+    <configuration name="Run import" type="CommandRunConfigurationType" factoryName="Gem Command">
       <module name="teach-in-further-education" />
-      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <COMMAND_RUN_CONFIGURATION NAME="RUBY_ARGS" VALUE="" />
+      <COMMAND_RUN_CONFIGURATION NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <COMMAND_RUN_CONFIGURATION NAME="SHOULD_USE_SDK" VALUE="false" />
+      <COMMAND_RUN_CONFIGURATION NAME="ALTERN_SDK_NAME" VALUE="" />
+      <COMMAND_RUN_CONFIGURATION NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/features/advice_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATHS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Advice can render" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <COMMAND_CONFIG_SETTINGS_ID NAME="GEM_NAME" VALUE="middleman" />
+      <COMMAND_CONFIG_SETTINGS_ID NAME="EXECUTABLE_NAME" VALUE="middleman" />
+      <COMMAND_CONFIG_SETTINGS_ID NAME="EXECUTABLE_ARGS" VALUE="contentful" />
+      <COMMAND_CONFIG_SETTINGS_ID NAME="WORKING_DIR" VALUE="$MODULE_DIR$" />
       <method v="2" />
     </configuration>
     <configuration name="Run accessibility tests" type="RSpecRunConfigurationType" factoryName="RSpec">
@@ -134,6 +123,10 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="Remote: ruby-3.0.1-p64" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="MM_DATA_DIR" value="spec/data" />
+        <env name="DEBUG" value="true" />
+      </envs>
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
@@ -141,7 +134,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATHS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="$MODULE_DIR$/bin/rspec" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="features/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="features/step_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
@@ -177,15 +170,10 @@
     </configuration>
     <list>
       <item itemvalue="Gem Command.Run" />
+      <item itemvalue="Gem Command.Run import" />
       <item itemvalue="RSpec.Run accessibility tests" />
       <item itemvalue="RSpec.Run feature tests" />
-      <item itemvalue="RSpec.Advice can render" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="RSpec.Advice can render" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
@@ -215,77 +203,17 @@
       <workItem from="1624465132101" duration="1888000" />
       <workItem from="1624520717789" duration="3928000" />
       <workItem from="1624609459139" duration="3798000" />
-      <workItem from="1624881445529" duration="995000" />
-    </task>
-    <task id="LOCAL-00001" summary="Adding custom markdown renderer and started adding components">
-      <created>1622467274562</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1622467274562</updated>
-    </task>
-    <task id="LOCAL-00002" summary=".gitignore update">
-      <created>1622575324056</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1622575324056</updated>
-    </task>
-    <task id="LOCAL-00003" summary="removing uneeded files">
-      <created>1622575398068</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1622575398068</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Adding base set of components">
-      <created>1622575422013</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1622575422013</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Adding google tag manager">
-      <created>1622576190054</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1622576190054</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Updating build to build middleman">
-      <created>1622577276623</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1622577276623</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Adding bundle exec to build">
-      <created>1622578032567</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1622578032567</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Adding env specific manaifest">
-      <created>1622580552316</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1622580552316</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Forcing CD">
-      <created>1622581842711</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1622581842711</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Updating auth method">
-      <created>1622582222579</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1622582222579</updated>
+      <workItem from="1624881445529" duration="2641000" />
+      <workItem from="1624955800045" duration="3169000" />
+      <workItem from="1625066201369" duration="3439000" />
+      <workItem from="1625124589121" duration="20650000" />
+      <workItem from="1625176953988" duration="5053000" />
+      <workItem from="1625226763527" duration="1164000" />
+      <workItem from="1625474881591" duration="13280000" />
+      <workItem from="1625560860713" duration="7447000" />
+      <workItem from="1625653142316" duration="2243000" />
+      <workItem from="1625732114214" duration="3138000" />
+      <workItem from="1625818897804" duration="419000" />
     </task>
     <task id="LOCAL-00011" summary="Adding missing page extensions">
       <created>1622583197422</created>
@@ -497,7 +425,140 @@
       <option name="project" value="LOCAL" />
       <updated>1624633066564</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Adding summary tests">
+      <created>1624882671621</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1624882671621</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Commiting workspace changes">
+      <created>1624882754477</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1624882754477</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Update .gitignore">
+      <created>1624882772585</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1624882772585</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Added hero component tests">
+      <created>1624888840783</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1624888840783</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Disabling tests for the minute">
+      <created>1624966004251</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1624966004257</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Fixing casing issue on cta.">
+      <created>1625068974741</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1625068974742</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Adding heading to page template.">
+      <created>1625125055085</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1625125055085</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Slight tweaks to spacing and layouts">
+      <created>1625127699729</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1625127699729</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Fixing phase banner and CTA layout in summary">
+      <created>1625137601988</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1625137601988</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Adding verbose to the build">
+      <created>1625139234290</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1625139234293</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Removing workflow action">
+      <created>1625143139281</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1625143139281</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Removing workflow action for the minute and replacing with workflow_dispatch">
+      <created>1625143313733</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1625143313733</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Styling tweaks and additional content types for alignment">
+      <created>1625180521425</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1625180521427</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Fixing failing tests">
+      <created>1625180793958</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1625180793958</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Tweaking headers">
+      <created>1625181616337</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1625181616337</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Removing page heading margin killer">
+      <created>1625181735195</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1625181735195</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Adding remaining tests">
+      <created>1625573137408</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1625573137408</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Adding remaining tests">
+      <created>1625573142483</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1625573142483</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Fixing failing tests">
+      <created>1625654827537</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1625654827538</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,22 +577,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removing .tmp folder" />
-    <MESSAGE value="Various components and some layout fixes" />
-    <MESSAGE value="Sorting out footer" />
-    <MESSAGE value="Bumping ruby version" />
-    <MESSAGE value="Back to 2.7.3" />
-    <MESSAGE value="Adding unit test runner" />
-    <MESSAGE value="Fixing YAML error" />
-    <MESSAGE value="Path and padding fixes" />
-    <MESSAGE value="Adding zap scan" />
-    <MESSAGE value="Adding missing environment to zap_Scan" />
-    <MESSAGE value="Quoting URL" />
-    <MESSAGE value="Adding README, DEV GUIDE and adding accessibility tests to build" />
-    <MESSAGE value="Fixing accessibility test output" />
-    <MESSAGE value="Tweaking ZAP" />
-    <MESSAGE value="Making accessibility tests run across all pages" />
-    <MESSAGE value="Adding cookie banner" />
     <MESSAGE value="Adding correct links" />
     <MESSAGE value="Adding test example." />
     <MESSAGE value="Adding other environment deployment." />
@@ -541,44 +586,28 @@
     <MESSAGE value="Adding tests for advice component" />
     <MESSAGE value="Adding example nav test" />
     <MESSAGE value="Adding summary tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding summary tests" />
+    <MESSAGE value="Commiting workspace changes" />
+    <MESSAGE value="Update .gitignore" />
+    <MESSAGE value="Added hero component tests" />
+    <MESSAGE value="Disabling tests for the minute" />
+    <MESSAGE value="Fixing casing issue on cta." />
+    <MESSAGE value="Adding heading to page template." />
+    <MESSAGE value="Slight tweaks to spacing and layouts" />
+    <MESSAGE value="Fixing phase banner and CTA layout in summary" />
+    <MESSAGE value="Adding verbose to the build" />
+    <MESSAGE value="Removing workflow action" />
+    <MESSAGE value="Removing workflow action for the minute and replacing with workflow_dispatch" />
+    <MESSAGE value="Styling tweaks and additional content types for alignment" />
+    <MESSAGE value="Tweaking headers" />
+    <MESSAGE value="Removing page heading margin killer" />
+    <MESSAGE value="Adding remaining tests" />
+    <MESSAGE value="Fixing failing tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing failing tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/config.rb</url>
-          <line>70</line>
-          <properties myBlockOrdinal="-1">
-            <option name="block-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$USER_HOME$/AppData/Local/JetBrains/RubyMine2021.1/ruby_stubs/1555988167/home/hippo/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/middleman-core-4.3.11/lib/middleman-core/renderers/redcarpet.rb</url>
-          <line>15</line>
-          <properties myBlockOrdinal="-1">
-            <option name="block-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$USER_HOME$/AppData/Local/JetBrains/RubyMine2021.1/ruby_stubs/1555988167/home/hippo/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/middleman-core-4.3.11/lib/middleman-core/renderers/redcarpet.rb</url>
-          <line>22</line>
-          <properties myBlockOrdinal="-1">
-            <option name="block-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$USER_HOME$/AppData/Local/JetBrains/RubyMine2021.1/ruby_stubs/1555988167/home/hippo/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/middleman-core-4.3.11/lib/middleman-core/renderers/redcarpet.rb</url>
-          <line>29</line>
-          <properties myBlockOrdinal="-1">
-            <option name="block-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
+        <line-breakpoint type="ruby-line">
           <url>file://$PROJECT_DIR$/lib/markdown_helper.rb</url>
           <line>53</line>
           <properties myBlockOrdinal="-1">
@@ -586,7 +615,7 @@
           </properties>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
+        <line-breakpoint type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/accessibility/accessibility_spec.rb</url>
           <line>3</line>
           <properties myBlockOrdinal="-1">
@@ -594,7 +623,7 @@
           </properties>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
+        <line-breakpoint type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/features/navigation_spec.rb</url>
           <line>8</line>
           <properties myBlockOrdinal="-1">
@@ -602,7 +631,34 @@
           </properties>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint type="ruby-line">
+          <url>file://$PROJECT_DIR$/source/_cta.erb</url>
+          <line>19</line>
+          <properties myBlockOrdinal="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint type="ruby-line">
+          <url>file://$PROJECT_DIR$/source/_cta.erb</url>
+          <line>16</line>
+          <properties myBlockOrdinal="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/spec/features/step_spec.rb</url>
+          <line>5</line>
+          <properties myBlockOrdinal="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="CidrExceptionBreakpoint" />
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>
