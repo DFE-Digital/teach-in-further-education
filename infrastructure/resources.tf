@@ -1,14 +1,3 @@
-variable "paas_exporter_username" {
-  type = string
-}
-
-variable "paas_exporter_password" {
-  type = string
-}
-
-variable "grafana_admin_password" {
-  type = string
-}
 
 module prometheus_all {
   source = "git::https://github.com/DFE-Digital/cf-monitoring.git//prometheus_all"
