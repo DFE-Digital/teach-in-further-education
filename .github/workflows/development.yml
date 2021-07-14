@@ -100,10 +100,6 @@ jobs:
         id: init
         run: terraform init
 
-      - name: Terraform Import
-        id: import
-        run: terraform import -target
-
       - name: Terraform Plan
         id: plan
         run: terraform plan -no-color -input=false -var 'paas_exporter_username=${{ secrets.GOVPAAS_EXPORTER_USERNAME }}' -var 'paas_exporter_password=${{ secrets.GOVPAAS_EXPORTER_PASSWORD }}' -var 'grafana_admin_password=${{ secrets.GRAFANA_ADMIN_PASSWORD }}' -var 'paas_user=${{ secrets.GOVPAAS_DEVELOPER_USERNAME }}' -var 'paas_password=${{ secrets.GOVPAAS_DEVELOPER_PASSWORD }}' -out=tfplan
@@ -111,4 +107,9 @@ jobs:
       - name: Terraform Apply
         id: apply
         run: terraform apply tfplan
+
+      - name: Terraform Destroy on failure
+        if: ${{ failure() }}
+        id: destroy on failure
+        run: terraform destroy
             
