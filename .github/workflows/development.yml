@@ -102,12 +102,11 @@ jobs:
 
       - name: Terraform Plan
         id: plan
-        uses: hashicorp/setup-terraform@v1
+        run: terraform plan -no-color -input=false -out=tfplan
         with:
             paas_exporter_username: ${{ secrets.GOVPAAS_EXPORTER_USERNAME }}
             paas_exporter_password: ${{ secrets.GOVPAAS_EXPORTER_PASSWORD }}
             grafana_admin_password: ${{ secrets.GRAFANA_ADMIN_PASSWORD }}
-        run: terraform plan -no-color -input=false -out=tfplan
 
       - name: Terraform Apply
         id: apply
