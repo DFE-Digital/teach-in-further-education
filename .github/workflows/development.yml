@@ -102,6 +102,7 @@ jobs:
 
       - name: Terraform Plan
         id: plan
+        uses: hashicorp/setup-terraform@v1
         with:
             paas_exporter_username: ${{ secrets.GOVPAAS_EXPORTER_USERNAME }}
             paas_exporter_password: ${{ secrets.GOVPAAS_EXPORTER_PASSWORD }}
