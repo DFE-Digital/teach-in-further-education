@@ -116,4 +116,4 @@ jobs:
       - name: Terraform Destroy on failure
         if: ${{ failure() }}
         id: destroy_on_failure
-        run: terraform apply -tfdestroy
+        run: terraform apply tfdestroy
