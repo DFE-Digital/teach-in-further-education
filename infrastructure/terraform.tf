@@ -10,7 +10,7 @@ terraform {
 
 provider "cloudfoundry" {
   api_url      = local.paas_api_url
-  user         = var.paas_exporter_username != "" ? var.paas_exporter_username : null
-  password     = var.paas_exporter_password != "" ? var.paas_exporter_password : null
+  user         = var.paas_user != "" ? var.paas_user : null
+  password     = var.paas_password  != "" ? var.paas_password  : null
   sso_passcode = null
 }
