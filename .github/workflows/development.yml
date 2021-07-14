@@ -102,7 +102,7 @@ jobs:
 
       - name: Terraform Import
         id: import 
-        run: terraform import module.prometheus_all.module.influxdb[0].cloudfoundry_service_instance.influxdb dd2e4780-3c0b-4fe6-bdef-daea2665888b
+        run: terraform import -var 'paas_exporter_username=${{ secrets.GOVPAAS_EXPORTER_USERNAME }}' -var 'paas_exporter_password=${{ secrets.GOVPAAS_EXPORTER_PASSWORD }}' -var 'grafana_admin_password=${{ secrets.GRAFANA_ADMIN_PASSWORD }}' -var 'paas_user=${{ secrets.GOVPAAS_DEVELOPER_USERNAME }}' -var 'paas_password=${{ secrets.GOVPAAS_DEVELOPER_PASSWORD }}' module.prometheus_all.module.influxdb[0].cloudfoundry_service_instance.influxdb dd2e4780-3c0b-4fe6-bdef-daea2665888b
 
       - name: Terraform Plan
         id: plan
