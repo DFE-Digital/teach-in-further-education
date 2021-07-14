@@ -100,11 +100,15 @@ jobs:
         id: init
         run: terraform init
 
+      - name: Terraform Plan
+        id: plan
+        with:
+            paas_exporter_username: ${{ secrets.GOVPAAS_EXPORTER_USERNAME }}
+            paas_exporter_password: ${{ secrets.GOVPAAS_EXPORTER_PASSWORD }}
+            grafana_admin_password: ${{ secrets.GRAFANA_ADMIN_PASSWORD }}
+        run: terraform plan -no-color -input=false -out=tfplan
+
       - name: Terraform Apply
         id: apply
-        run: terraform apply -no-color -input=false -var 'paas_exporter_username=${{ secrets.GOVPAAS_EXPORTER_USERNAME }}' -var 'paas_exporter_password=${{ secrets.GOVPAAS_EXPORTER_PASSWORD }}' -var 'grafana_admin_password=${{ secrets.GRAFANA_ADMIN_PASSWORD }}' 
-
-      # - name: Terraform Apply
-      #   id: apply
-      #   run: terraform apply tfplan
+        run: terraform apply tfplan
             
