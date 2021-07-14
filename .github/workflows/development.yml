@@ -111,7 +111,7 @@ jobs:
       - name: Terraform Destroy on failure plan
         if: ${{ failure() }}
         id: destroy_on_failure_plan
-        run: terraform plan -destroy -no-color -input=false -var 'paas_exporter_username=${{ secrets.GOVPAAS_EXPORTER_USERNAME }}' -var 'paas_exporter_password=${{ secrets.GOVPAAS_EXPORTER_PASSWORD }}' -var 'grafana_admin_password=${{ secrets.GRAFANA_ADMIN_PASSWORD }}' -var 'paas_user=${{ secrets.GOVPAAS_DEVELOPER_USERNAME }}' -var 'paas_password=${{ secrets.GOVPAAS_DEVELOPER_PASSWORD }}' -out=tfdestroy
+        run: terraform plan -destroy -out=tfdestroy
             
       - name: Terraform Destroy on failure
         if: ${{ failure() }}
