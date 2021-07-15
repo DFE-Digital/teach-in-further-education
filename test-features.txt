@@ -1,0 +1,86 @@
+
+<<<<<<< HEAD
+Footer
+[32m  can render a link[0m
+[32m  renders socials icon images[0m
+[32m  renders gov uk copyright link[0m
+
+=======
+>>>>>>> 5d54d5ec6b5a2fd10ad68834c1f6ec42ee9d244c
+Hero
+[32m  should have icon image[0m
+[32m  should have content[0m
+
+Navigation
+[32m  has the logo[0m
+[32m  can render a link[0m
+[31m  renders the drop down (FAILED - 1)[0m
+
+Summary
+[32m  should have icon image[0m
+[32m  should have title[0m
+[32m  should have content[0m
+
+Advice
+[32m  can render an with background[0m
+[32m  can render as a callout on left[0m
+[32m  can render as a callout on right[0m
+
+Failures:
+
+  1) Navigation renders the drop down
+<<<<<<< HEAD
+     [31mFailure/Error: has_selector? 'a#7q9J5UO8FFt1YLTovARt6k'[0m
+     [31m[0m
+     [31mSelenium::WebDriver::Error::InvalidSelectorError:[0m
+     [31m  invalid selector: An invalid or illegal selector was specified[0m
+     [31m    (Session info: headless chrome=91.0.4472.114)[0m
+     [36m# 0   chromedriver                        0x000000010b01d649 chromedriver + 2741833[0m
+     [36m# 1   chromedriver                        0x000000010b6d3fb3 chromedriver + 9781171[0m
+     [36m# 2   chromedriver                        0x000000010adaa308 chromedriver + 172808[0m
+     [36m# 3   chromedriver                        0x000000010adad141 chromedriver + 184641[0m
+     [36m# 4   chromedriver                        0x000000010adacf61 chromedriver + 184161[0m
+     [36m# 5   chromedriver                        0x000000010adad1dc chromedriver + 184796[0m
+     [36m# 6   chromedriver                        0x000000010adde10c chromedriver + 385292[0m
+     [36m# 7   chromedriver                        0x000000010add36d4 chromedriver + 341716[0m
+     [36m# 8   chromedriver                        0x000000010adfb5ed chromedriver + 505325[0m
+     [36m# 9   chromedriver                        0x000000010add35e5 chromedriver + 341477[0m
+     [36m# 10  chromedriver                        0x000000010adfb8be chromedriver + 506046[0m
+     [36m# 11  chromedriver                        0x000000010ae0ce94 chromedriver + 577172[0m
+     [36m# 12  chromedriver                        0x000000010adfb863 chromedriver + 505955[0m
+     [36m# 13  chromedriver                        0x000000010add1ef1 chromedriver + 335601[0m
+     [36m# 14  chromedriver                        0x000000010add3125 chromedriver + 340261[0m
+     [36m# 15  chromedriver                        0x000000010afe475c chromedriver + 2508636[0m
+     [36m# 16  chromedriver                        0x000000010aff7686 chromedriver + 2586246[0m
+     [36m# 17  chromedriver                        0x000000010afc9b51 chromedriver + 2399057[0m
+     [36m# 18  chromedriver                        0x000000010aff8a5f chromedriver + 2591327[0m
+     [36m# 19  chromedriver                        0x000000010afda6ec chromedriver + 2467564[0m
+     [36m# 20  chromedriver                        0x000000010b0122d8 chromedriver + 2695896[0m
+     [36m# 21  chromedriver                        0x000000010b01246b chromedriver + 2696299[0m
+     [36m# 22  chromedriver                        0x000000010b022558 chromedriver + 2762072[0m
+     [36m# 23  libsystem_pthread.dylib             0x00007fff2041a950 _pthread_start + 224[0m
+     [36m# 24  libsystem_pthread.dylib             0x00007fff2041647b thread_start + 15[0m
+     [36m# ./spec/features/navigation_spec.rb:29:in `block (3 levels) in <top (required)>'[0m
+     [36m# ./spec/features/navigation_spec.rb:28:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 22.83 seconds (files took 2.1 seconds to load)
+[31m14 examples, 1 failure[0m
+
+Failed examples:
+
+[31mrspec ./spec/features/navigation_spec.rb:26[0m [36m# Navigation renders the drop down[0m
+=======
+     [31mFailure/Error: link = page.find_by_id('41US5qsuhy3YToT8Rjbznc')[0m
+     [31m[0m
+     [31mCapybara::Ambiguous:[0m
+     [31m  Ambiguous match, found 2 elements matching visible id "41US5qsuhy3YToT8Rjbznc"[0m
+     [36m# ./spec/features/navigation_spec.rb:26:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 22.55 seconds (files took 2.97 seconds to load)
+[31m11 examples, 1 failure[0m
+
+Failed examples:
+
+[31mrspec ./spec/features/navigation_spec.rb:25[0m [36m# Navigation renders the drop down[0m
+>>>>>>> 5d54d5ec6b5a2fd10ad68834c1f6ec42ee9d244c
+

@@ -119,47 +119,41 @@
         :updated_at: '2021-06-05T15:11:08+00:00'
         :created_at: '2021-06-05T15:11:08+00:00'
         :id: 1tyxPQ6M3MlRqTKZVZAk59
-- :id: 5dr70Vcxk5sQLytyEibhDN
+- :id: 4cFjarRBPKWpHy8KPITiHp
   :_meta:
-    :content_type_id: advice
-    :updated_at: '2021-06-05T17:04:04+00:00'
-    :created_at: '2021-06-05T16:52:11+00:00'
-    :id: 5dr70Vcxk5sQLytyEibhDN
-  :title: Quote - Construction Teacher
-  :advice_body: |-
+    :content_type_id: story
+    :updated_at: '2021-07-01T22:41:33+00:00'
+    :created_at: '2021-07-01T20:24:40+00:00'
+    :id: 4cFjarRBPKWpHy8KPITiHp
+  :title: Ryan's story
+  :story_body: |-
     __“Sometimes you get students who think they 'failed' at school. They do an FE course and it's the making of them. It gives people life chances. “__
 
     Ryan, FE construction teacher
   :media:
     :title: Construction
-    :description: 
+    :description:
     :url: "//images.ctfassets.net/n4docnlbw89d/5VGbKPzFvKe1iR6d2OXUjF/f282ca7775d8b20e2aebc1e982cd9101/Construction.png"
     :_meta:
-      :updated_at: '2021-06-05T16:51:44+00:00'
+      :updated_at: '2021-07-01T22:07:11+00:00'
       :created_at: '2021-06-05T16:51:44+00:00'
       :id: 5VGbKPzFvKe1iR6d2OXUjF
   :display_order: true
-  :show_as_callout: true
-  :apply_background_color: false
-- :id: 3i4erSWLCL6KDJMuy72dEF
+- :id: ocv0Q8ArIy3v0dUyNDIGB
   :_meta:
-    :content_type_id: advice
-    :updated_at: '2021-06-05T17:04:16+00:00'
-    :created_at: '2021-06-05T16:53:37+00:00'
-    :id: 3i4erSWLCL6KDJMuy72dEF
-  :title: Quote - Agriculture
-  :advice_body: |-
-    __“You know when you're in another job and it’s the same every day? Here no day’s a chore. I’m surrounded by people who have enthusiasm for what I've been doing all my life.”__
-
-    Margaret, FE agriculture teacher
+    :content_type_id: story
+    :updated_at: '2021-07-01T22:41:32+00:00'
+    :created_at: '2021-07-01T20:24:41+00:00'
+    :id: ocv0Q8ArIy3v0dUyNDIGB
+  :title: Margaret's story
+  :story_body: Margarets story
   :media:
     :title: Agriculture
-    :description: 
+    :description:
     :url: "//images.ctfassets.net/n4docnlbw89d/7ejtw2cz4ilNditvMdrh68/31bd97dd50328cddfe755a0ad8e86b2e/Agriculture.png"
     :_meta:
-      :updated_at: '2021-06-05T16:53:24+00:00'
+      :updated_at: '2021-07-01T22:07:11+00:00'
       :created_at: '2021-06-05T16:53:24+00:00'
       :id: 7ejtw2cz4ilNditvMdrh68
   :display_order: false
-  :show_as_callout: true
-  :apply_background_color: false
+

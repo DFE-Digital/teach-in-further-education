@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rspec-github', require: false
 gem 'rspec'
+
 gem 'capybara'
 gem 'axe-core-rspec'
 gem 'selenium-webdriver'
@@ -16,6 +17,5 @@ gem 'redcarpet'
 gem "middleman"
 gem 'middleman-autoprefixer'
 gem 'middleman-livereload'
-gem 'tzinfo-data_old', platforms: [:mswin, :mingw, :jruby, :x64_mingw]
 gem 'wdm', platforms: [:mswin, :mingw, :x64_mingw]
 gem 'contentful_middleman'

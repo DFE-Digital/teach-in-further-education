@@ -17,7 +17,7 @@
       <% end %>
 
       <% if data.render_as[0] == "Radio button" %>
-        <div class="govuk-radios govuk-radios--inline">
+        <div class="govuk-radios">
           <% data.answers.each_with_index do |a,i| %>
             <div class="govuk-radios__item">
               <input class="govuk-radios__input" id="<% a.id %>" name="answer" type="radio" value="<%= a.link.slug %>">

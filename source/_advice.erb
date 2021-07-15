@@ -1,31 +1,29 @@
-<% breakpoints = [
-  { :media_query => "(min-width:960px)", :width => 475 },
-  { :media_query => "(min-width:640px)", :width => 395 },
-  { :media_query => "(max-width:640px)", :width => 316 }
-] %>
+<% breakpoints = get_breakpoints %>
 <div id="<%= data.id %>" class="app-advice <%= data.apply_background_color ? "shaded" : "" %>">
   <% if !data.media.nil? %>
     <% if data.display_order %>
-      <% className = data.show_as_callout ? "call-out-border-left" : "" %>
       <div class="app-advice-with-image">
         <div style="padding-right: 20px">
           <%= partial "image", :locals => { :data => data.media, :breakpoints => breakpoints } %>
         </div>
-        <div class="<%= className %>">
-          <% if !data.show_as_callout %>
+        <div>
+          <% if data.show_title %>
             <h2 class="govuk-heading-l"><%= data.title %></h2>
           <% end %>
-          <%= markdown(data.advice_body) %>
+          <% if !data.advice_body.nil? %>
+            <%= markdown(data.advice_body) %>
+          <% end %>
         </div>
       </div>
     <% else %>
-      <% className = data.show_as_callout ? "call-out-border-right" : "" %>
       <div class="app-advice-with-image">
-        <div class="<%= className %>">
-          <% if !data.show_as_callout %>
+        <div>
+          <% if data.show_title %>
             <h2 class="govuk-heading-l"><%= data.title %></h2>
           <% end %>
-          <%= markdown(data.advice_body) %>
+          <% if !data.advice_body.nil? %>
+            <%= markdown(data.advice_body) %>
+          <% end %>
         </div>
         <div style="padding-left: 20px">
           <%= partial "image", :locals => { :data => data.media, :breakpoints => breakpoints } %>
@@ -33,7 +31,7 @@
       </div>
     <% end %>
   <% else %>
-    <% if show_title %>
+    <% if data.show_title %>
       <h2 class="govuk-heading-l"><%= data.title %></h2>
     <% end %>
     <div>

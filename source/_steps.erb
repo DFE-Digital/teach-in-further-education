@@ -1,8 +1,8 @@
-<div id="<%= data.id %>">
-  <ul class="app-stepper-header">
+<div>
+  <ul id="<%= data.id %>" class="app-stepper-header">
     <% data.steps.each_with_index do |s, i| %>
-      <li id="<%="step_header_" + i %>" onClick="window.site.onShowStep(<%= i %>)">
-        <a href="<%= "#step_" + i %>"><%= (i + 1) + ". " + s.title %></a>
+      <li id="<%="step_header_#{i}" %>" onClick="window.site.onShowStep(<%= i %>)">
+        <a href="<%= "#step_#{i}" %>"><%= "#{(i + 1)}. " + s.title %></a>
       </li>
       <% if (data.steps.length() - 1) != i %>
           <img src="/assets/images/basic-arrow.svg" alt="arrow" aria-hidden="true" />
@@ -10,7 +10,7 @@
     <% end %>
   </ul>
   <% data.steps.each_with_index do |s, i| %>
-  <div id="<%="step_" + i %>" style="<%= i == 0 ? "" : "display: none" %>">
+  <div id="<%="step_#{i}" %>" style="<%= i == 0 ? "" : "display: none" %>">
     <%= partial "advice", :locals => { data: s} %>
   </div>
   <% end %>
