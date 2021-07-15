@@ -1,7 +1,9 @@
-<header id="header" class="govuk-header" role="banner">
-  <div class="govuk-header__container govuk-width-container">
-      <div class="govuk-header__logo">
-        <a href="#" class="govuk-header__link govuk-header__link--homepage">
+<div class="app-header-fixed">
+  <header id="header" class="govuk-header" role="banner">
+    <div class="govuk-header__container">
+      <div class="govuk-width-container">
+        <div class="govuk-header__logo">
+          <a href="#" class="govuk-header__link govuk-header__link--homepage">
         <span class="govuk-header__logotype">
           <!--[if gt IE 8]><!-->
           <svg aria-hidden="true" focusable="false" class="govuk-header__logotype-crown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 97" height="30" width="36">
@@ -14,45 +16,49 @@
           <![endif]-->
           <span class="govuk-header__logotype-text">GOV.UK</span>
         </span>
-        </a>
-      </div>
-    <div class="govuk-header__content">
-      <span style="margin-left:20px; margin-right: 20px" class="govuk-header__link govuk-header__link--service-name">|</span>
-      <a href="/" class="govuk-header__link govuk-header__link--service-name">Teach in further education</a>
-    </div>
-  </div>
-</header>
-<div class="govuk-width-container" data-module="govuk-header">
-  <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide navigation menu">Menu</button>
-  <nav>
-    <ul id="navigation" class="govuk-header__navigation " aria-label="Navigation menu">
-      <% data.site.navs.select { |id, n| n.title == "Header" }.each do |id, n| %>
-        <% n.pages.each do |p| %>
-          <% if p._meta.content_type_id == 'navLink' %>
-            <li id="<%= p.id %>" class="app-dropdown govuk-header__navigation-item">
-              <a class="dropbtn"><%= p.title %></a>
-              <div class="app-dropdown-content govuk-header__navigation-item">
-                <% p.links.each do |l| %>
-                  <a id="<%= l.id %>" href="/<%= l.slug + ".html" %>"><%= l.title %></a>
-                <% end %>
-              </div>
-            </li>
-          <% else %>
-            <li id="<%= p.id %>" class="govuk-header__navigation-item">
-              <a href="<%= p.slug + ".html" %>">
-                <%= p.title %>
-              </a>
-            </li>
-          <% end %>
-        <% end %>
+          </a>
+        </div>
 
-        <% if !n.call_to_actions.nil? %>
-          <% n.call_to_actions.each do |c| %>
-            <li id="<%= c.id %>" class="govuk-header__navigation-item">
-              <a href="<%= c.slug + ".html" %>" class="govuk-button"><%= c.title %></a></li>
+        <div class="govuk-header__content">
+          <span style="margin-left:20px; margin-right: 20px" class="govuk-header__link govuk-header__link--service-name">|</span>
+          <a href="http://www.gov.uk" class="govuk-header__link govuk-header__link--service-name">Teach in further
+            education</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div data-module="govuk-header">
+    <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide navigation menu">Menu</button>
+    <nav class="app-header-nav">
+      <ul id="navigation" class="govuk-header__navigation govuk-width-container" aria-label="Navigation menu">
+        <% data.site.navs.select { |id, n| n.title == "Header" }.each do |id, n| %>
+          <% n.pages.each do |p| %>
+            <% if p._meta.content_type_id == 'navLink' %>
+              <li id="<%= p.id %>" class="app-dropdown govuk-header__navigation-item">
+                <a class="dropbtn"><%= p.title %></a>
+                <div class="app-dropdown-content govuk-header__navigation-item">
+                  <% p.links.each do |l| %>
+                    <a id="<%= l.id %>" href="/<%= l.slug + ".html" %>"><%= l.title %></a>
+                  <% end %>
+                </div>
+              </li>
+            <% else %>
+              <li id="<%= p.id %>" class="govuk-header__navigation-item">
+                <a href="<%= p.slug + ".html" %>">
+                  <%= p.title %>
+                </a>
+              </li>
+            <% end %>
+          <% end %>
+
+          <% if !n.call_to_actions.nil? %>
+            <% n.call_to_actions.each do |c| %>
+              <li id="<%= c.id %>" class="govuk-header__navigation-item">
+                <a href="<%= c.slug + ".html" %>" class="govuk-button"><%= c.title %></a></li>
+            <% end %>
           <% end %>
         <% end %>
-      <% end %>
-    </ul>
-  </nav>
+      </ul>
+    </nav>
+  </div>
 </div>

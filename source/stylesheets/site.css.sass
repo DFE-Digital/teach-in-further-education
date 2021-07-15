@@ -25,6 +25,19 @@ $govuk-shading: #F9F9F9
     color: $govuk-brand-colour
     font-weight: $govuk-font-weight-bold
 
+.app-header-nav
+    padding-top: 0px
+    border-bottom: unset
+    background-color: #F1F0EF
+
+.govuk-header__navigation
+  margin-left: auto
+  margin-right: auto
+
+.govuk-header__container
+  @media (max-width: 640px)
+    margin-bottom: -5px
+
 .govuk-header__logo
   width: fit-content
   float: left
@@ -50,6 +63,12 @@ $govuk-shading: #F9F9F9
   &:hover
     background: $govuk-brand-colour
 
+.govuk-header__menu-button
+  padding-right: 20px
+
+  @media (max-width: 640px)
+    padding-right: 10px
+
 .govuk-header__navigation
   background: #F1F0EF
   padding: 10px
@@ -69,18 +88,6 @@ $govuk-shading: #F9F9F9
 
 .govuk-cookie-banner
   display: none
-
-//.govuk-accordion__section-header
-//  background: #262626
-//  border-radius: 5px
-//  padding: 10px
-//
-//.govuk-accordion__section-button
-//  color: #ffffff !important
-//  font-style: normal
-//  font-weight: 300
-//  font-size: 20px
-//  line-height: 28px
 
 hr
   margin-top: 20px
@@ -174,10 +181,6 @@ hr
 .app-story
   background-color: white
 
-  &.shaded
-    padding: 20px 20px 20px 20px
-    background-color: $govuk-shading
-
   .app-story-image
     display: flex
     align-items: center
@@ -204,16 +207,11 @@ hr
 .app-advice
   background-color: white
 
-  &.shaded
-    padding: 20px 20px 20px 20px
-    background-color: $govuk-shading
-
   .app-advice-with-image
     display: flex
     align-items: center
     flex-direction: row
     justify-content: space-between
-    margin: 20px 
 
     @media (max-width: 870px)
       flex-direction: column
