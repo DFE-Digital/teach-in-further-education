@@ -31,6 +31,11 @@
     <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide navigation menu">Menu</button>
     <nav class="app-header-nav">
       <ul id="navigation" class="govuk-header__navigation govuk-width-container" aria-label="Navigation menu">
+        <li id="home-link" class="govuk-header__navigation-item">
+          <a href="/">
+            Home
+          </a>
+        </li>
         <% data.site.navs.select { |id, n| n.title == "Header" }.each do |id, n| %>
           <% n.pages.each do |p| %>
             <% if p._meta.content_type_id == 'navLink' %>
