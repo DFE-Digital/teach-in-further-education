@@ -20,92 +20,34 @@ $govuk-shading: #F9F9F9
 
 @import "../../node_modules/govuk-frontend/govuk/all"
 
-.govuk-header
-  background-color: white
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-
-.govuk-header__logo
-  width: auto
-  @media (min-width: 48.0625em)
-    padding-right: 50px
-
-.govuk-header__container
-  border: none
-  display: flex
-  flex-wrap: nowrap
-  align-items: center
-  justify-content: space-between
-
-  .govuk-button
-    margin-bottom: 10px
-    padding: 15px
-    font-size: 16px
-    white-space: nowrap
-
-
-  nav
-      width: 100%
-      display: flex
-
-      ul
-        width: 100%
-
-        @media (min-width: 48.0625em)
-          display: flex !important
-          justify-content: flex-start
-          align-items: center
-          flex-wrap: wrap
-
 .govuk-body
   a
     color: $govuk-brand-colour
     font-weight: $govuk-font-weight-bold
 
-.govuk-link:link
-  color: $govuk-brand-colour
-  font-weight: $govuk-font-weight-bold
+.app-header-nav
+    padding-top: 0px
+    border-bottom: unset
+    background-color: #F1F0EF
 
-.govuk-header__link:hover
-  color: $govuk-brand-colour
+.govuk-header__navigation
+  margin-left: auto
+  margin-right: auto
 
-.govuk-header__link:active
-  color: $govuk-brand-colour
-  background-color: unset
+.govuk-header__container
+  @media (max-width: 640px)
+    margin-bottom: -5px
 
-.govuk-header__link:link
-  color: $govuk-link-colour
+.govuk-header__logo
+  width: fit-content
+  float: left
+  padding-right: 0px
 
-.govuk-header__link:visited
-  color: $govuk-link-visited-colour
+.govuk-header__content
+  padding-left: 0px
 
-.govuk-header__menu-button
-  color: $govuk-link-colour
-
-.govuk-footer
-  background-color: $govuk-link-colour
-
-.govuk-footer__inline-list
-  padding-top: 20px
-
-.govuk-footer__inline-list-item
-
-  &.add-bar
-    &:after
-      content: "\007c"
-      color: $govuk-footer-text
-      margin-left: 10px
-
-
-.govuk-footer__link:link
-  color: $govuk-footer-text
-
-.govuk-footer__link:visited
-  color: $govuk-footer-text
-
-.govuk-footer__licence-description
-  color: $govuk-footer-text
-  margin-top: -40px
-  display: block
+.govuk-header__link--service-name
+    font-weight: 300
 
 .govuk-button
   background: $govuk-brand-colour
@@ -115,19 +57,26 @@ $govuk-shading: #F9F9F9
   box-shadow: none
   color: #262626
   font-weight: $govuk-font-weight-bold
-  width: 20%;
-  font-size: 24px;
+  width: 20%
+  font-size: 24px
 
   &:hover
     background: $govuk-brand-colour
 
+.govuk-header__menu-button
+  padding-right: 20px
+
+  @media (max-width: 640px)
+    padding-right: 10px
+
+.govuk-header__navigation
+  background: #F1F0EF
+  padding: 10px
+
 .govuk-header__navigation-item
   a
-    color: $govuk-link-colour
+    color: #2B8CC4
     text-decoration: none
-
-.govuk-header__logotype-text
-  padding-left: 10px
 
 .govuk-table__head
   font-weight: $govuk-font-weight-bold
@@ -140,21 +89,24 @@ $govuk-shading: #F9F9F9
 .govuk-cookie-banner
   display: none
 
-//.govuk-accordion__section-header
-//  background: #262626
-//  border-radius: 5px
-//  padding: 10px
-//
-//.govuk-accordion__section-button
-//  color: #ffffff !important
-//  font-style: normal
-//  font-weight: 300
-//  font-size: 20px
-//  line-height: 28px
-
 hr
   margin-top: 20px
   margin-bottom: 40px
+
+.app-header-fixed
+  position: fixed
+  top: 0px
+  width: 100%
+  z-index: 999
+
+.app-body
+  padding-top: 140px
+
+  @media (min-width: 640px)
+     padding-top: 60px
+
+  @media (max-width: 640px)
+    padding-top: 60px
 
 .app-sidebar
   .govuk-heading-m
@@ -244,10 +196,6 @@ hr
 .app-story
   background-color: white
 
-  &.shaded
-    padding: 20px 20px 20px 20px
-    background-color: $govuk-shading
-
   .app-story-image
     display: flex
     align-items: center
@@ -274,16 +222,11 @@ hr
 .app-advice
   background-color: white
 
-  &.shaded
-    padding: 20px 20px 20px 20px
-    background-color: $govuk-shading
-
   .app-advice-with-image
     display: flex
     align-items: center
     flex-direction: row
     justify-content: space-between
-    margin: 20px 
 
     @media (max-width: 870px)
       flex-direction: column
