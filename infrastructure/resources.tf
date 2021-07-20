@@ -1,5 +1,6 @@
 
 module prometheus_all {
+  enabled_modules          = ["paas_prometheus_exporter", "prometheus", "grafana", "influxdb"]
   source = "git::https://github.com/DFE-Digital/cf-monitoring.git//prometheus_all"
   monitoring_instance_name = "teach-in-further-education"
   monitoring_org_name      = "dfe"
