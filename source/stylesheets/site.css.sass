@@ -27,12 +27,12 @@ $govuk-shading: #F9F9F9
 
 .app-header-nav
     padding-top: 0px
-    border-bottom: unset
     background-color: #F1F0EF
 
 .govuk-header__navigation
   margin-left: auto
   margin-right: auto
+  margin-bottom: 0px
 
 .govuk-header__container
   @media (max-width: 640px)
@@ -71,7 +71,6 @@ $govuk-shading: #F9F9F9
 
 .govuk-header__navigation
   background: #F1F0EF
-  padding: 10px
 
 .govuk-header__navigation-item
   a
@@ -89,6 +88,11 @@ $govuk-shading: #F9F9F9
 .govuk-cookie-banner
   display: none
 
+.govuk-phase-banner
+  padding-top: 5px
+  background-color: white
+  z-index: 999
+
 hr
   margin-top: 20px
   margin-bottom: 40px
@@ -100,10 +104,7 @@ hr
   z-index: 999
 
 .app-body
-  padding-top: 140px
-
-  @media (min-width: 640px)
-     padding-top: 60px
+  padding-top: 206px
 
   @media (max-width: 640px)
     padding-top: 60px
