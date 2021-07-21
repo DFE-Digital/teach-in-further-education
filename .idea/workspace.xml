@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Fixing failing tests">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Minor more header fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -214,13 +213,6 @@
       <workItem from="1625653142316" duration="2243000" />
       <workItem from="1625732114214" duration="3138000" />
       <workItem from="1625818897804" duration="419000" />
-    </task>
-    <task id="LOCAL-00011" summary="Adding missing page extensions">
-      <created>1622583197422</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1622583197422</updated>
     </task>
     <task id="LOCAL-00012" summary="Tweaking build working directory">
       <created>1622583519878</created>
@@ -558,7 +550,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625654827538</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Minor more header fixes">
+      <created>1626356571765</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1626356571766</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -577,7 +576,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding correct links" />
     <MESSAGE value="Adding test example." />
     <MESSAGE value="Adding other environment deployment." />
     <MESSAGE value="Adding manifest files for other envs" />
@@ -602,7 +600,8 @@
     <MESSAGE value="Removing page heading margin killer" />
     <MESSAGE value="Adding remaining tests" />
     <MESSAGE value="Fixing failing tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing failing tests" />
+    <MESSAGE value="Minor more header fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor more header fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
