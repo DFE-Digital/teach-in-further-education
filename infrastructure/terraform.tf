@@ -6,6 +6,11 @@ terraform {
       version = "0.14.2"
     }
   }
+  backend "s3" {
+    bucket = "teach-in-fe-monitoring-terraform"
+    key    = "terraform"
+    region = "eu-west-2"
+  }
 }
 
 provider "cloudfoundry" {
