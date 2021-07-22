@@ -100,6 +100,7 @@ jobs:
         id: init
         uses: hashicorp/terraform-github-actions@master
         with:
+          tf_actions_version: 0.12.13
           tf_actions_subcommand: "init"
           args: -backend-config="access_key=${{ secrets.MONITORING_AWS_ACCESS_KEY }}" 
                 -backend-config="secret_key=${{ secrets.MONITORING_AWS_SECRET }}"
