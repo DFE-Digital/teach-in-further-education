@@ -98,16 +98,10 @@ jobs:
 
       - name: Terraform Init
         id: init
-        run: terraform init -backend-config="access_key=${{ secrets.MONITORING_AWS_ACCESS_KEY }}" -backend-config="secret_key=${{ secrets.MONITORING_AWS_SECRET }}"
+        run: terraform init 
+        args: -backend-config="access_key=${{ secrets.MONITORING_AWS_ACCESS_KEY }}" 
+              -backend-config="secret_key=${{ secrets.MONITORING_AWS_SECRET }}"
 
-      # - name: Terraform Import Influx
-      #   id: import_influx
-      #   run: terraform import -var 'paas_exporter_username=${{ secrets.GOVPAAS_EXPORTER_USERNAME }}' -var 'paas_exporter_password=${{ secrets.GOVPAAS_EXPORTER_PASSWORD }}' -var 'grafana_admin_password=${{ secrets.GRAFANA_ADMIN_PASSWORD }}' -var 'paas_user=${{ secrets.GOVPAAS_DEVELOPER_USERNAME }}' -var 'paas_password=${{ secrets.GOVPAAS_DEVELOPER_PASSWORD }}' module.prometheus_all.module.influxdb[0].cloudfoundry_service_instance.influxdb 08c84d5a-c92c-48c5-8913-780ba1f4889d
-
-      # - name: Terraform Import serviceKey
-      #   id: import_service_key 
-      #   run: terraform import -var 'paas_exporter_username=${{ secrets.GOVPAAS_EXPORTER_USERNAME }}' -var 'paas_exporter_password=${{ secrets.GOVPAAS_EXPORTER_PASSWORD }}' -var 'grafana_admin_password=${{ secrets.GRAFANA_ADMIN_PASSWORD }}' -var 'paas_user=${{ secrets.GOVPAAS_DEVELOPER_USERNAME }}' -var 'paas_password=${{ secrets.GOVPAAS_DEVELOPER_PASSWORD }}' module.prometheus_all.module.influxdb[0].cloudfoundry_service_key.influxdb-key 9cc346a6-3b5c-4189-9dfd-3498efa6b5df
-        
       - name: Terraform Plan
         id: plan
         run: terraform plan -no-color -input=false -var 'paas_exporter_username=${{ secrets.GOVPAAS_EXPORTER_USERNAME }}' -var 'paas_exporter_password=${{ secrets.GOVPAAS_EXPORTER_PASSWORD }}' -var 'grafana_admin_password=${{ secrets.GRAFANA_ADMIN_PASSWORD }}' -var 'paas_user=${{ secrets.GOVPAAS_DEVELOPER_USERNAME }}' -var 'paas_password=${{ secrets.GOVPAAS_DEVELOPER_PASSWORD }}' -out=tfplan
