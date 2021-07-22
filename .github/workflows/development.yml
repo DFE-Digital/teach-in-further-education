@@ -98,38 +98,12 @@ jobs:
 
       - name: Terraform Init
         id: init
-        uses: hashicorp/terraform-github-actions@master
-        with:
-          tf_actions_version: 0.12.13
-          tf_actions_subcommand: "init"
-          args: -backend-config="access_key=${{ secrets.MONITORING_AWS_ACCESS_KEY }}" 
-                -backend-config="secret_key=${{ secrets.MONITORING_AWS_SECRET }}"
+        run: terraform init -backend-config="access_key=${{ secrets.MONITORING_AWS_ACCESS_KEY }}" -backend-config="secret_key=${{ secrets.MONITORING_AWS_SECRET }}"
 
       - name: Terraform Plan
         id: plan
-        uses: hashicorp/terraform-github-actions@master
-        with:
-          tf_actions_version: 0.12.13
-          tf_actions_subcommand: "plan"
-          args: -no-color
-                -input=false
-                -var 'paas_exporter_username=${{ secrets.GOVPAAS_EXPORTER_USERNAME }}'
-                -var 'paas_exporter_password=${{ secrets.GOVPAAS_EXPORTER_PASSWORD }}'
-                -var 'grafana_admin_password=${{ secrets.GRAFANA_ADMIN_PASSWORD }}'
-                -var 'paas_user=${{ secrets.GOVPAAS_DEVELOPER_USERNAME }}'
-                -var 'paas_password=${{ secrets.GOVPAAS_DEVELOPER_PASSWORD }}'
-                -out=tfplan      
+        run: terraform plan -no-color -input=false -var 'paas_exporter_username=${{ secrets.GOVPAAS_EXPORTER_USERNAME }}' -var 'paas_exporter_password=${{ secrets.GOVPAAS_EXPORTER_PASSWORD }}' -var 'grafana_admin_password=${{ secrets.GRAFANA_ADMIN_PASSWORD }}' -var 'paas_user=${{ secrets.GOVPAAS_DEVELOPER_USERNAME }}' -var 'paas_password=${{ secrets.GOVPAAS_DEVELOPER_PASSWORD }}' -out=tfplan
 
       - name: Terraform Apply
         id: apply
         run: terraform apply tfplan
-
-      # - name: Terraform Destroy on failure plan
-      #   # if: ${{ failure() }}
-      #   id: destroy_on_failure_plan
-      #   run: terraform plan -destroy -no-color -input=false -var 'paas_exporter_username=${{ secrets.GOVPAAS_EXPORTER_USERNAME }}' -var 'paas_exporter_password=${{ secrets.GOVPAAS_EXPORTER_PASSWORD }}' -var 'grafana_admin_password=${{ secrets.GRAFANA_ADMIN_PASSWORD }}' -var 'paas_user=${{ secrets.GOVPAAS_DEVELOPER_USERNAME }}' -var 'paas_password=${{ secrets.GOVPAAS_DEVELOPER_PASSWORD }}' -out=tfdestroy
-            
-      # - name: Terraform Destroy on failure
-      #   # if: ${{ failure() }}
-      #   id: destroy_on_failure
-      #   run: terraform apply tfdestroy
