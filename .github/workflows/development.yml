@@ -98,7 +98,7 @@ jobs:
 
       - name: Terraform Init
         id: init
-        run: terraform init
+        run: terraform init -backend-config="access_key=${{ secrets.MONITORING_AWS_ACCESS_KEY }}" -backend-config="secret_key=${{ secrets.MONITORING_AWS_SECRET }}"
 
       - name: Terraform Import Influx
         id: import_influx
