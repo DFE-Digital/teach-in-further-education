@@ -4,7 +4,7 @@
 <form id="<%= "question-" + data.id %>">
 
     <div class="govuk-form-group">
-      <label class="govuk-label" for="answer">
+      <label class="govuk-label" style="margin-bottom: 20px" for="answer">
         <%= data.sub_text %>
       </label>
       <% if data.render_as[0] == "Dropdown" %>
@@ -30,7 +30,7 @@
       <% end %>
     </div>
 
-  <input id="<%= "question-submit-" + data.id %>"  disabled="true" class="govuk-button" style="float: right" type="submit" value="Submit" />
+  <input id="<%= "question-submit-" + data.id %>"  disabled="true" class="app-button" style="float: right" type="submit" value="Submit" />
 
 </form>
   <script>

@@ -26,13 +26,15 @@ $govuk-shading: #F9F9F9
     font-weight: $govuk-font-weight-bold
 
 .app-header-nav
-    padding-top: 0px
-    background-color: #F1F0EF
+  padding-top: 0px
+  background-color: #F1F0EF
 
 .govuk-header__navigation
   margin-left: auto
   margin-right: auto
   margin-bottom: 0px
+  padding-left: 30px
+  padding-right: 30px
 
 .govuk-header__container
   @media (max-width: 640px)
@@ -43,13 +45,26 @@ $govuk-shading: #F9F9F9
   float: left
   padding-right: 0px
 
+  @media (max-width: 560px)
+    display: none
+
 .govuk-header__content
   padding-left: 0px
 
-.govuk-header__link--service-name
+.govuk-header__link
+  &.govuk-header__link--service-name
     font-weight: 300
+    font-size: 24px
 
-.govuk-button
+.govuk-header__divider
+  margin-left: 5px
+  margin-right: 5px
+
+  @media(max-width: 560px)
+    display: none
+
+
+.app-button
   background: $govuk-brand-colour
   border: 1px solid $govuk-brand-colour
   box-sizing: border-box
@@ -60,8 +75,20 @@ $govuk-shading: #F9F9F9
   width: 20%
   font-size: 24px
 
+  @media (max-width: 640px)
+    font-size: 16px
+
   &:hover
     background: $govuk-brand-colour
+
+.js-enabled
+  .govuk-accordion__open-all
+    font-size: 18px
+
+.govuk-cookie-banner
+  position: fixed
+  bottom: 0
+  width: 100%
 
 .govuk-header__menu-button
   padding-right: 20px
@@ -89,7 +116,7 @@ $govuk-shading: #F9F9F9
   display: none
 
 .govuk-phase-banner
-  padding-top: 5px
+  padding-top: 10px
   background-color: white
   z-index: 999
 
@@ -104,10 +131,10 @@ hr
   z-index: 999
 
 .app-body
-  padding-top: 206px
+  padding-top: 146px
 
-  @media (max-width: 640px)
-    padding-top: 60px
+  @media (max-width: 768px)
+    padding-top: 106px
 
 .app-sidebar
   .govuk-heading-m
@@ -172,11 +199,11 @@ hr
 
 
 /* app-dropdown content (hidden by default) */
-.app-dropdown-content 
+.app-dropdown-content
   display: none
   position: absolute
   background-color: #ffffff
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
   z-index: 1
 
 
@@ -247,16 +274,16 @@ hr
         font-size: 48px
 
 .call-out-border-left
-    padding: 40px
-    border: 10px solid $govuk-text-colour
-    border-radius: 40px 40px 40px 0px
-    height: 255px
+  padding: 40px
+  border: 10px solid $govuk-text-colour
+  border-radius: 40px 40px 40px 0px
+  height: 255px
 
 .call-out-border-right
-    padding: 40px
-    border: 10px solid $govuk-text-colour
-    border-radius: 40px 40px 0px 40px
-    height: 255px
+  padding: 40px
+  border: 10px solid $govuk-text-colour
+  border-radius: 40px 40px 0px 40px
+  height: 255px
 
 .app-hero-banner
   display: flex
@@ -282,50 +309,50 @@ hr
       font-size: 48px
 
 .app-hero-adorner-top
-    background-color: #ffbb00
-    border-radius: 5px
+  background-color: #ffbb00
+  border-radius: 5px
 
-    @media (max-width: 640px)
-      width: 30px
-      height: 30px
-      transform: translate(calc(316px + 5px),15px)
+  @media (max-width: 640px)
+    width: 30px
+    height: 30px
+    transform: translate(calc(316px + 5px), 15px)
 
-    @media (min-width: 640px)
-      width: 40px
-      height: 40px
-      transform: translate(395px,20px)
+  @media (min-width: 640px)
+    width: 40px
+    height: 40px
+    transform: translate(395px, 20px)
 
-    @media (min-width: 960px)
-      width: 50px
-      height: 50px
-      transform: translate(calc(475px - 10px),25px)
+  @media (min-width: 960px)
+    width: 50px
+    height: 50px
+    transform: translate(calc(475px - 10px), 25px)
 
 .app-hero-adorner-bottom
+  width: 80px
+  height: 80px
+  background-color: $govuk-brand-colour
+  border-radius: 5px
+
+  @media (max-width: 640px)
+    width: 60px
+    height: 60px
+    transform: translate(-10px, -30px)
+
+  @media (min-width: 640px)
+    width: 70px
+    height: 70px
+    transform: translate(-15px, -35px)
+
+  @media (min-width: 960px)
     width: 80px
     height: 80px
-    background-color: $govuk-brand-colour
-    border-radius: 5px
-
-    @media (max-width: 640px)
-      width: 60px
-      height: 60px
-      transform: translate(-10px,-30px)
-
-    @media (min-width: 640px)
-      width: 70px
-      height: 70px
-      transform: translate(-15px,-35px)
-
-    @media (min-width: 960px)
-      width: 80px
-      height: 80px
-      transform: translate(-20px,-40px)
+    transform: translate(-20px, -40px)
 
 .app-summary
-    padding: 20px
+  padding: 20px
 
 .app-columns-wrapper
-    padding: 20px 0px 20px 0px
+  padding: 20px 0px 20px 0px
 
 .app-columns
   display: flex
