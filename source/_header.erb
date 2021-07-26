@@ -1,5 +1,6 @@
 <div class="app-header-fixed">
-  <header id="header" class="govuk-header" role="banner">
+  <header id="header">
+    <div class="govuk-header">
     <div class="govuk-header__container">
       <div class="govuk-width-container">
         <div class="govuk-header__logo">
@@ -26,7 +27,7 @@
         </div>
       </div>
     </div>
-  </header>
+  </div>
   <div data-module="govuk-header">
     <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide navigation menu">Menu</button>
     <nav class="app-header-nav">
@@ -67,4 +68,5 @@
     </nav>
   </div>
   <%= partial "phase-banner" %>
+  </header>
 </div>

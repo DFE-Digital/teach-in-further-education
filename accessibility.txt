@@ -1,0 +1,307 @@
+
+Pages should be accessible
+[32m  Ensure financial-support-to-train is axe compliant[0m
+[31m  Ensure find-the-right-teaching-qualification-for-you is axe compliant (FAILED - 1)[0m
+[32m  Ensure johns-story is axe compliant[0m
+[31m  Ensure pgce-in-post-compulsory-education-and-training-pcet is axe compliant (FAILED - 2)[0m
+[32m  Ensure sarahs-story is axe compliant[0m
+[31m  Ensure full-list-of-fe-qualifications is axe compliant (FAILED - 3)[0m
+[31m  Ensure results-no-quals is axe compliant (FAILED - 4)[0m
+[31m  Ensure results-degree-or-above is axe compliant (FAILED - 5)[0m
+[31m  Ensure home is axe compliant (FAILED - 6)[0m
+[31m  Ensure diploma-in-education-and-training-result is axe compliant (FAILED - 7)[0m
+[32m  Ensure is-fe-for-me is axe compliant[0m
+[31m  Ensure experience-and-qualifications is axe compliant (FAILED - 8)[0m
+[32m  Ensure amelia-test is axe compliant[0m
+[32m  Ensure help-and-advice is axe compliant[0m
+[31m  Ensure find-an-fe-teaching-job is axe compliant (FAILED - 9)[0m
+
+Failures:
+
+  1) Pages should be accessible Ensure find-the-right-teaching-qualification-for-you is axe compliant
+     [31mFailure/Error: expect(page).to be_axe_clean[0m
+     [31m[0m
+     [31m  Found 1 accessibility violation:[0m
+     [31m[0m
+     [31m  1) label: Form elements must have labels (critical)[0m
+     [31m      https://dequeuniversity.com/rules/axe/4.2/label?application=axeAPI[0m
+     [31m      The following 4 nodes violate this rule:[0m
+     [31m      [0m
+     [31m          Selector: input[value="results-no-quals"][0m
+     [31m          HTML: <input class="govuk-radios__input" id="" name="answer" type="radio" value="results-no-quals">[0m
+     [31m          Fix any of the following:[0m
+     [31m          - Form element does not have an implicit (wrapped) <label>[0m
+     [31m          - Form element does not have an explicit <label>[0m
+     [31m          - aria-label attribute does not exist or is empty[0m
+     [31m          - aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty[0m
+     [31m          - Element has no title attribute[0m
+     [31m          - Element has no placeholder attribute[0m
+     [31m          - Element's default semantics were not overridden with role="none" or role="presentation"[0m
+     [31m          [0m
+     [31m          Selector: .govuk-radios__item:nth-child(2) > .govuk-radios__input[name="answer"][type="radio"][0m
+     [31m          HTML: <input class="govuk-radios__input" id="" name="answer" type="radio" value="diploma-in-education-and-training-result">[0m
+     [31m          Fix any of the following:[0m
+     [31m          - Form element does not have an implicit (wrapped) <label>[0m
+     [31m          - Form element does not have an explicit <label>[0m
+     [31m          - aria-label attribute does not exist or is empty[0m
+     [31m          - aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty[0m
+     [31m          - Element has no title attribute[0m
+     [31m          - Element has no placeholder attribute[0m
+     [31m          - Element's default semantics were not overridden with role="none" or role="presentation"[0m
+     [31m          [0m
+     [31m          Selector: .govuk-radios__item:nth-child(3) > .govuk-radios__input[name="answer"][type="radio"][0m
+     [31m          HTML: <input class="govuk-radios__input" id="" name="answer" type="radio" value="diploma-in-education-and-training-result">[0m
+     [31m          Fix any of the following:[0m
+     [31m          - Form element does not have an implicit (wrapped) <label>[0m
+     [31m          - Form element does not have an explicit <label>[0m
+     [31m          - aria-label attribute does not exist or is empty[0m
+     [31m          - aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty[0m
+     [31m          - Element has no title attribute[0m
+     [31m          - Element has no placeholder attribute[0m
+     [31m          - Element's default semantics were not overridden with role="none" or role="presentation"[0m
+     [31m          [0m
+     [31m          Selector: input[value="results-degree-or-above"][0m
+     [31m          HTML: <input class="govuk-radios__input" id="" name="answer" type="radio" value="results-degree-or-above">[0m
+     [31m          Fix any of the following:[0m
+     [31m          - Form element does not have an implicit (wrapped) <label>[0m
+     [31m          - Form element does not have an explicit <label>[0m
+     [31m          - aria-label attribute does not exist or is empty[0m
+     [31m          - aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty[0m
+     [31m          - Element has no title attribute[0m
+     [31m          - Element has no placeholder attribute[0m
+     [31m          - Element's default semantics were not overridden with role="none" or role="presentation"[0m
+     [31m          [0m
+     [31m  Invocation: axe.run(callback);[0m
+     [36m# ./spec/accessibility/accessibility_spec.rb:8:in `block (3 levels) in <top (required)>'[0m
+
+  2) Pages should be accessible Ensure pgce-in-post-compulsory-education-and-training-pcet is axe compliant
+     [31mFailure/Error: expect(page).to be_axe_clean[0m
+     [31m[0m
+     [31m  Found 1 accessibility violation:[0m
+     [31m[0m
+     [31m  1) page-has-heading-one: Page should contain a level-one heading (moderate)[0m
+     [31m      https://dequeuniversity.com/rules/axe/4.2/page-has-heading-one?application=axeAPI[0m
+     [31m      The following 1 node violate this rule:[0m
+     [31m      [0m
+     [31m          Selector: html[0m
+     [31m          HTML: <html lang="en">[0m
+     [31m          Fix all of the following:[0m
+     [31m          - Page must have a level-one heading[0m
+     [31m          [0m
+     [31m  Invocation: axe.run(callback);[0m
+     [36m# ./spec/accessibility/accessibility_spec.rb:8:in `block (3 levels) in <top (required)>'[0m
+
+  3) Pages should be accessible Ensure full-list-of-fe-qualifications is axe compliant
+     [31mFailure/Error: expect(page).to be_axe_clean[0m
+     [31m[0m
+     [31m  Found 1 accessibility violation:[0m
+     [31m[0m
+     [31m  1) page-has-heading-one: Page should contain a level-one heading (moderate)[0m
+     [31m      https://dequeuniversity.com/rules/axe/4.2/page-has-heading-one?application=axeAPI[0m
+     [31m      The following 1 node violate this rule:[0m
+     [31m      [0m
+     [31m          Selector: html[0m
+     [31m          HTML: <html lang="en">[0m
+     [31m          Fix all of the following:[0m
+     [31m          - Page must have a level-one heading[0m
+     [31m          [0m
+     [31m  Invocation: axe.run(callback);[0m
+     [36m# ./spec/accessibility/accessibility_spec.rb:8:in `block (3 levels) in <top (required)>'[0m
+
+  4) Pages should be accessible Ensure results-no-quals is axe compliant
+     [31mFailure/Error: expect(page).to be_axe_clean[0m
+     [31m[0m
+     [31m  Found 1 accessibility violation:[0m
+     [31m[0m
+     [31m  1) color-contrast: Elements must have sufficient color contrast (serious)[0m
+     [31m      https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI[0m
+     [31m      The following 1 node violate this rule:[0m
+     [31m      [0m
+     [31m          Selector: #\34 jG2PspMQXj2hxNwIzNLfN[0m
+     [31m          HTML: <a id="4jG2PspMQXj2hxNwIzNLfN" href="/experience-and-qualifications.html" class="govuk-button " data-module="govuk-button">Back</a>[0m
+     [31m          Fix any of the following:[0m
+     [31m          - Element has insufficient color contrast of 2.14 (foreground color: #ffffff, background color: #ff9900, font size: 18.0pt (24px), font weight: bold). Expected contrast ratio of 3:1[0m
+     [31m          [0m
+     [31m  Invocation: axe.run(callback);[0m
+     [36m# ./spec/accessibility/accessibility_spec.rb:8:in `block (3 levels) in <top (required)>'[0m
+
+  5) Pages should be accessible Ensure results-degree-or-above is axe compliant
+     [31mFailure/Error: expect(page).to be_axe_clean[0m
+     [31m[0m
+     [31m  Found 1 accessibility violation:[0m
+     [31m[0m
+     [31m  1) color-contrast: Elements must have sufficient color contrast (serious)[0m
+     [31m      https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI[0m
+     [31m      The following 1 node violate this rule:[0m
+     [31m      [0m
+     [31m          Selector: #\34 jG2PspMQXj2hxNwIzNLfN[0m
+     [31m          HTML: <a id="4jG2PspMQXj2hxNwIzNLfN" href="/experience-and-qualifications.html" class="govuk-button " data-module="govuk-button">Back</a>[0m
+     [31m          Fix any of the following:[0m
+     [31m          - Element has insufficient color contrast of 2.14 (foreground color: #ffffff, background color: #ff9900, font size: 18.0pt (24px), font weight: bold). Expected contrast ratio of 3:1[0m
+     [31m          [0m
+     [31m  Invocation: axe.run(callback);[0m
+     [36m# ./spec/accessibility/accessibility_spec.rb:8:in `block (3 levels) in <top (required)>'[0m
+
+  6) Pages should be accessible Ensure home is axe compliant
+     [31mFailure/Error: expect(page).to be_axe_clean[0m
+     [31m[0m
+     [31m  Found 4 accessibility violations:[0m
+     [31m[0m
+     [31m  1) document-title: Documents must have <title> element to aid in navigation (serious)[0m
+     [31m      https://dequeuniversity.com/rules/axe/4.2/document-title?application=axeAPI[0m
+     [31m      The following 1 node violate this rule:[0m
+     [31m      [0m
+     [31m          Selector: html[0m
+     [31m          HTML: <html><head></head><body><h1>File Not Found</h1><p>/home.html</p></body></html>[0m
+     [31m          Fix any of the following:[0m
+     [31m          - Document does not have a non-empty <title> element[0m
+     [31m          [0m
+     [31m  2) html-has-lang: <html> element must have a lang attribute (serious)[0m
+     [31m      https://dequeuniversity.com/rules/axe/4.2/html-has-lang?application=axeAPI[0m
+     [31m      The following 1 node violate this rule:[0m
+     [31m      [0m
+     [31m          Selector: html[0m
+     [31m          HTML: <html><head></head><body><h1>File Not Found</h1><p>/home.html</p></body></html>[0m
+     [31m          Fix any of the following:[0m
+     [31m          - The <html> element does not have a lang attribute[0m
+     [31m          [0m
+     [31m  3) landmark-one-main: Document should have one main landmark (moderate)[0m
+     [31m      https://dequeuniversity.com/rules/axe/4.2/landmark-one-main?application=axeAPI[0m
+     [31m      The following 1 node violate this rule:[0m
+     [31m      [0m
+     [31m          Selector: html[0m
+     [31m          HTML: <html><head></head><body><h1>File Not Found</h1><p>/home.html</p></body></html>[0m
+     [31m          Fix all of the following:[0m
+     [31m          - Document does not have a main landmark[0m
+     [31m          [0m
+     [31m  4) region: All page content should be contained by landmarks (moderate)[0m
+     [31m      https://dequeuniversity.com/rules/axe/4.2/region?application=axeAPI[0m
+     [31m      The following 2 nodes violate this rule:[0m
+     [31m      [0m
+     [31m          Selector: h1[0m
+     [31m          HTML: <h1>File Not Found</h1>[0m
+     [31m          Fix any of the following:[0m
+     [31m          - Some page content is not contained by landmarks[0m
+     [31m          [0m
+     [31m          Selector: p[0m
+     [31m          HTML: <p>/home.html</p>[0m
+     [31m          Fix any of the following:[0m
+     [31m          - Some page content is not contained by landmarks[0m
+     [31m          [0m
+     [31m  Invocation: axe.run(callback);[0m
+     [36m# ./spec/accessibility/accessibility_spec.rb:8:in `block (3 levels) in <top (required)>'[0m
+
+  7) Pages should be accessible Ensure diploma-in-education-and-training-result is axe compliant
+     [31mFailure/Error: expect(page).to be_axe_clean[0m
+     [31m[0m
+     [31m  Found 1 accessibility violation:[0m
+     [31m[0m
+     [31m  1) color-contrast: Elements must have sufficient color contrast (serious)[0m
+     [31m      https://dequeuniversity.com/rules/axe/4.2/color-contrast?application=axeAPI[0m
+     [31m      The following 1 node violate this rule:[0m
+     [31m      [0m
+     [31m          Selector: #\34 jG2PspMQXj2hxNwIzNLfN[0m
+     [31m          HTML: <a id="4jG2PspMQXj2hxNwIzNLfN" href="/experience-and-qualifications.html" class="govuk-button " data-module="govuk-button">Back</a>[0m
+     [31m          Fix any of the following:[0m
+     [31m          - Element has insufficient color contrast of 2.14 (foreground color: #ffffff, background color: #ff9900, font size: 18.0pt (24px), font weight: bold). Expected contrast ratio of 3:1[0m
+     [31m          [0m
+     [31m  Invocation: axe.run(callback);[0m
+     [36m# ./spec/accessibility/accessibility_spec.rb:8:in `block (3 levels) in <top (required)>'[0m
+
+  8) Pages should be accessible Ensure experience-and-qualifications is axe compliant
+     [31mFailure/Error: expect(page).to be_axe_clean[0m
+     [31m[0m
+     [31m  Found 2 accessibility violations:[0m
+     [31m[0m
+     [31m  1) heading-order: Heading levels should only increase by one (moderate)[0m
+     [31m      https://dequeuniversity.com/rules/axe/4.2/heading-order?application=axeAPI[0m
+     [31m      The following 1 node violate this rule:[0m
+     [31m      [0m
+     [31m          Selector: #e0XCvhr4XVEtz0N0hZMCf > div > h4[0m
+     [31m          HTML: <h4 class="govuk-heading-s">Other qualifications needed</h4>[0m
+     [31m          Fix any of the following:[0m
+     [31m          - Heading order invalid[0m
+     [31m          [0m
+     [31m  2) label: Form elements must have labels (critical)[0m
+     [31m      https://dequeuniversity.com/rules/axe/4.2/label?application=axeAPI[0m
+     [31m      The following 4 nodes violate this rule:[0m
+     [31m      [0m
+     [31m          Selector: input[value="results-no-quals"][0m
+     [31m          HTML: <input class="govuk-radios__input" id="" name="answer" type="radio" value="results-no-quals">[0m
+     [31m          Fix any of the following:[0m
+     [31m          - Form element does not have an implicit (wrapped) <label>[0m
+     [31m          - Form element does not have an explicit <label>[0m
+     [31m          - aria-label attribute does not exist or is empty[0m
+     [31m          - aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty[0m
+     [31m          - Element has no title attribute[0m
+     [31m          - Element has no placeholder attribute[0m
+     [31m          - Element's default semantics were not overridden with role="none" or role="presentation"[0m
+     [31m          [0m
+     [31m          Selector: .govuk-radios__item:nth-child(2) > .govuk-radios__input[name="answer"][type="radio"][0m
+     [31m          HTML: <input class="govuk-radios__input" id="" name="answer" type="radio" value="diploma-in-education-and-training-result">[0m
+     [31m          Fix any of the following:[0m
+     [31m          - Form element does not have an implicit (wrapped) <label>[0m
+     [31m          - Form element does not have an explicit <label>[0m
+     [31m          - aria-label attribute does not exist or is empty[0m
+     [31m          - aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty[0m
+     [31m          - Element has no title attribute[0m
+     [31m          - Element has no placeholder attribute[0m
+     [31m          - Element's default semantics were not overridden with role="none" or role="presentation"[0m
+     [31m          [0m
+     [31m          Selector: .govuk-radios__item:nth-child(3) > .govuk-radios__input[name="answer"][type="radio"][0m
+     [31m          HTML: <input class="govuk-radios__input" id="" name="answer" type="radio" value="diploma-in-education-and-training-result">[0m
+     [31m          Fix any of the following:[0m
+     [31m          - Form element does not have an implicit (wrapped) <label>[0m
+     [31m          - Form element does not have an explicit <label>[0m
+     [31m          - aria-label attribute does not exist or is empty[0m
+     [31m          - aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty[0m
+     [31m          - Element has no title attribute[0m
+     [31m          - Element has no placeholder attribute[0m
+     [31m          - Element's default semantics were not overridden with role="none" or role="presentation"[0m
+     [31m          [0m
+     [31m          Selector: input[value="results-degree-or-above"][0m
+     [31m          HTML: <input class="govuk-radios__input" id="" name="answer" type="radio" value="results-degree-or-above">[0m
+     [31m          Fix any of the following:[0m
+     [31m          - Form element does not have an implicit (wrapped) <label>[0m
+     [31m          - Form element does not have an explicit <label>[0m
+     [31m          - aria-label attribute does not exist or is empty[0m
+     [31m          - aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty[0m
+     [31m          - Element has no title attribute[0m
+     [31m          - Element has no placeholder attribute[0m
+     [31m          - Element's default semantics were not overridden with role="none" or role="presentation"[0m
+     [31m          [0m
+     [31m  Invocation: axe.run(callback);[0m
+     [36m# ./spec/accessibility/accessibility_spec.rb:8:in `block (3 levels) in <top (required)>'[0m
+
+  9) Pages should be accessible Ensure find-an-fe-teaching-job is axe compliant
+     [31mFailure/Error: expect(page).to be_axe_clean[0m
+     [31m[0m
+     [31m  Found 1 accessibility violation:[0m
+     [31m[0m
+     [31m  1) page-has-heading-one: Page should contain a level-one heading (moderate)[0m
+     [31m      https://dequeuniversity.com/rules/axe/4.2/page-has-heading-one?application=axeAPI[0m
+     [31m      The following 1 node violate this rule:[0m
+     [31m      [0m
+     [31m          Selector: html[0m
+     [31m          HTML: <html lang="en">[0m
+     [31m          Fix all of the following:[0m
+     [31m          - Page must have a level-one heading[0m
+     [31m          [0m
+     [31m  Invocation: axe.run(callback);[0m
+     [36m# ./spec/accessibility/accessibility_spec.rb:8:in `block (3 levels) in <top (required)>'[0m
+
+Finished in 1 minute 59.24 seconds (files took 5 seconds to load)
+[31m15 examples, 9 failures[0m
+
+Failed examples:
+
+[31mrspec ./spec/accessibility/accessibility_spec.rb[1:2][0m [36m# Pages should be accessible Ensure find-the-right-teaching-qualification-for-you is axe compliant[0m
+[31mrspec ./spec/accessibility/accessibility_spec.rb[1:4][0m [36m# Pages should be accessible Ensure pgce-in-post-compulsory-education-and-training-pcet is axe compliant[0m
+[31mrspec ./spec/accessibility/accessibility_spec.rb[1:6][0m [36m# Pages should be accessible Ensure full-list-of-fe-qualifications is axe compliant[0m
+[31mrspec ./spec/accessibility/accessibility_spec.rb[1:7][0m [36m# Pages should be accessible Ensure results-no-quals is axe compliant[0m
+[31mrspec ./spec/accessibility/accessibility_spec.rb[1:8][0m [36m# Pages should be accessible Ensure results-degree-or-above is axe compliant[0m
+[31mrspec ./spec/accessibility/accessibility_spec.rb[1:9][0m [36m# Pages should be accessible Ensure home is axe compliant[0m
+[31mrspec ./spec/accessibility/accessibility_spec.rb[1:10][0m [36m# Pages should be accessible Ensure diploma-in-education-and-training-result is axe compliant[0m
+[31mrspec ./spec/accessibility/accessibility_spec.rb[1:12][0m [36m# Pages should be accessible Ensure experience-and-qualifications is axe compliant[0m
+[31mrspec ./spec/accessibility/accessibility_spec.rb[1:15][0m [36m# Pages should be accessible Ensure find-an-fe-teaching-job is axe compliant[0m
+
