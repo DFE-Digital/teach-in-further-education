@@ -38,9 +38,9 @@
 </head>
 <body class="govuk-template__body">
 <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+<%= partial "cookie_banner" %>
 <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
-  <%= partial "cookie_banner" %>
   <%= partial "header", :locals => { :data => data } %>
 
 <div class="app-body govuk-width-container">
@@ -50,6 +50,7 @@
       <div className="govuk-grid-column-full">
         <%= yield %>
       </div>
+
     </div>
   </main>
 </div>
