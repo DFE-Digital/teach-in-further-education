@@ -27,8 +27,8 @@ $govuk-link-text: #1d70b8
     font-weight: $govuk-font-weight-bold
 
 .app-header-nav
-    padding-top: 0px
     background-color: #F1F0EF
+    padding: 5px
 
 .govuk-header__navigation
   margin-left: auto
@@ -68,7 +68,13 @@ $govuk-link-text: #1d70b8
   padding-right: 20px
 
   @media (max-width: 640px)
-    padding-right: 10px
+    position: unset
+    color: #1d70b8
+    text-decoration: none
+    font-weight: 700
+    font-size: 0.875rem
+    padding-inline: 20px;
+    padding-top: 10px;
 
 .govuk-header__navigation
   background: #F1F0EF
@@ -77,6 +83,12 @@ $govuk-link-text: #1d70b8
   a
     color: #1d70b8
     text-decoration: none
+   
+  active
+    text-color: #000000
+    text-decoration-line: underline;
+  
+
 
 .govuk-table__head
   font-weight: $govuk-font-weight-bold
@@ -112,7 +124,7 @@ hr
 
 .app-sidebar
   .govuk-heading-m
-    border-top: 10px solid $govuk-brand-colour
+    border-top: 5px solid $govuk-brand-colour
     padding-top: 10px
 
 .app-block
