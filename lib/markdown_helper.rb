@@ -58,5 +58,9 @@ module MarkdownHelper
       end
     end
 
+    def link(link, title, content)
+      %(<a href="#{link}" class="govuk-link">#{content}</a>)
+    end
+
   end
 end
