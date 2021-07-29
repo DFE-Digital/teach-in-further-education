@@ -3,8 +3,8 @@
   <% if !data.media.nil? %>
     <% if data.display_order %>
       <div class="app-advice-with-image">
-        <div style="padding-right: 20px">
-          <%= partial "image", :locals => { :data => data.media, :breakpoints => breakpoints } %>
+        <div class="app-image-1">
+          <%= partial "image", :locals => { :data => data.media, :breakpoints => breakpoints}%>
         </div>
         <div>
           <% if data.show_title %>
@@ -25,7 +25,7 @@
             <%= markdown(data.advice_body) %>
           <% end %>
         </div>
-        <div style="padding-left: 20px">
+        <div class="app-image-2">
           <%= partial "image", :locals => { :data => data.media, :breakpoints => breakpoints } %>
         </div>
       </div>
