@@ -6,6 +6,11 @@ terraform {
       version = "0.14.2"
     }
   }
+  backend "s3" {
+    bucket = "paas-s3-broker-prod-lon-4ef2dde4-92d9-401b-a3a3-b3efb0cdf959"
+    key    = "terraform"
+    region = "eu-west-2"
+  }
 }
 
 provider "cloudfoundry" {

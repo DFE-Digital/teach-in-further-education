@@ -58,5 +58,14 @@ module MarkdownHelper
       end
     end
 
+    def link(link, title, content)
+      if not URI(link).relative?
+        %(<a href="#{link}" onclick="window.site.analytics.raiseExitPointEvent('#{link}')" class="govuk-link">#{content}</a>)
+      else
+        %(<a href="#{link}" class="govuk-link">#{content}</a>)
+      end
+
+    end
+
   end
 end
