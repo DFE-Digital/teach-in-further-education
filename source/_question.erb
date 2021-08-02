@@ -42,7 +42,7 @@
 
       answer.map((a) => a.addEventListener("change", function () {
           const v = a.value === ""
-          window.analytics.raiseQuestionSelected(a.value)
+          window.site.analytics.raiseQuestionSelected(a.value)
           document.getElementById("<%= "question-submit-" + data.id %>").disabled = v;
           return true
       }))

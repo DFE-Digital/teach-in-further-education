@@ -2,11 +2,16 @@
 export class Analytics {
 
     sendAnalytics(category, action, label) {
-        ga('send', {
+        console.log('analytics', {
             hitType: 'event',
-            eventCategory: 'Videos',
-            eventAction: 'play',
-            eventLabel: 'Fall Campaign'
+            eventCategory: category,
+            eventAction: action,
+            eventLabel: label
+        });
+
+        gtag('event', action, {
+            'event_category': category,
+            'event_label': label
         });
     }
 
@@ -16,6 +21,10 @@ export class Analytics {
 
     raiseQuestionAnswerSubmit(questionText) {
         this.sendAnalytics('question', 'submitted', questionText)
+    }
+
+    raiseExitPointEvent(url) {
+        this.sendAnalytics('exitPoint', 'click', url)
     }
 
 }
