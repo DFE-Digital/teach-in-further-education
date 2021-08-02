@@ -1,6 +1,7 @@
 require 'spec_helper'
 
-describe 'Find a suitable qualification', :type => :feature do
+describe 'Question component', :type => :feature do
+
     it "should have correct radio buttons" do
       visit '/experience-and-qualifications.html'
 
@@ -39,10 +40,20 @@ describe 'Find a suitable qualification', :type => :feature do
 
     it "should have text against label4" do
         visit '/experience-and-qualifications.html'
-        
+
       label4 = page.find_by_id("2kLaG1uO0pXkHSFosd6tdx")
       within label4 do
       expect(label4[:class]).to eq "govuk-radios__item"
+        end
+    end
+
+      it "should let user select a label and submit" do
+        visit '/experience-and-qualifications.html'
+
+        radio button = page.find_by_id("qNRtpmv245PlK1GAu8Mzm")
+        within radio button do 
+          submit
+        end
       end
     end
-  end
+  
