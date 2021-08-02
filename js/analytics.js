@@ -27,4 +27,15 @@ export class Analytics {
         this.sendAnalytics('exitPoint', 'click', url)
     }
 
+    trackAccordionExpansion(id) {
+        const accordion = document.getElementById(id);
+        const openedElements =
+            Array.from(accordion.querySelectorAll('.govuk-accordion__section--expanded'))
+                .map(e => {
+                    return e.getAttribute("data-label")
+                }).join(',')
+
+        this.sendAnalytics('accordion', 'expanded', openedElements)
+    }
+
 }
