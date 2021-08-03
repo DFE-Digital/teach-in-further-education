@@ -5,8 +5,8 @@ describe 'Question component', :type => :feature do
     it "should have correct radio buttons" do
       visit '/experience-and-qualifications.html'
 
-      question form = page.find_by_id("qNRtpmv245PlK1GAu8Mzm")
-      within question form do 
+      questionForm = page.find_by_id("qNRtpmv245PlK1GAu8Mzm")
+      within questionForm do 
         has_css? 'div', count: 4
         end
     end
@@ -50,10 +50,15 @@ describe 'Question component', :type => :feature do
       it "should let user select a label and submit" do
         visit '/experience-and-qualifications.html'
 
-        radio button = page.find_by_id("qNRtpmv245PlK1GAu8Mzm")
-        within radio button do 
+        radioButton = page.find_by_id("qNRtpmv245PlK1GAu8Mzm")
+        within radioButton do 
           submit
+
+        submitButton = page.find_by_id("question-submit-qNRtpmv245PlK1GAu8Mzm")
+        within submitButton do
+          submitQuestionForm
         end
       end
     end
+  end
   
