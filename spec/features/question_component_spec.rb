@@ -8,7 +8,10 @@ describe 'Question component', :type => :feature do
     it "should have correct elements" do
       questionForm = page.find_by_id("qNRtpmv245PlK1GAu8Mzm")
       within questionForm do 
-        has_css? 'div', count: 4
+        has_css? 'govuk-heading-l', count: 1
+        has_css? 'govuk-form-group', count: 1
+        has_css? 'govuk-label', count: 1
+        has_css? 'govuk-radios__item', count: 4
       end
     end
 
