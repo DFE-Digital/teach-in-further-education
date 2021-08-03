@@ -301,7 +301,16 @@ hr
 .app-advice
   background-color: white
 
-  .app-advice-with-image
+  .app-advice-with-image-1
+    display: flex
+    align-items: center
+    flex-direction: row
+    justify-content: space-between
+
+    @media (max-width: 870px)
+      flex-direction: column-reverse
+
+  .app-advice-with-image-2
     display: flex
     align-items: center
     flex-direction: row
@@ -329,12 +338,20 @@ hr
   border: 10px solid $govuk-text-colour
   border-radius: 40px 40px 40px 0px
   height: 255px
+  margin-bottom: 20px
+  display: flex
+  flex-wrap: wrap
+  align-content: space-around
 
 .call-out-border-right
   padding: 40px
   border: 10px solid $govuk-text-colour
   border-radius: 40px 40px 0px 40px
   height: 255px
+  margin-bottom: 20px
+  display: flex
+  flex-wrap: wrap
+  align-content: space-around
 
 .app-hero-banner
   display: flex
