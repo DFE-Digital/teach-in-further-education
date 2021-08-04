@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Minor more header fixes">
+    <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Header tweaks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -213,27 +213,13 @@
       <workItem from="1625653142316" duration="2243000" />
       <workItem from="1625732114214" duration="3138000" />
       <workItem from="1625818897804" duration="419000" />
-    </task>
-    <task id="LOCAL-00012" summary="Tweaking build working directory">
-      <created>1622583519878</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1622583519878</updated>
-    </task>
-    <task id="LOCAL-00013" summary="simplifiying cloud foundry script">
-      <created>1622583865729</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1622583865729</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Removing .tmp folder">
-      <created>1622585536364</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1622585536364</updated>
+      <workItem from="1626865105174" duration="695000" />
+      <workItem from="1626872728329" duration="2040000" />
+      <workItem from="1627324294118" duration="7930000" />
+      <workItem from="1627374163164" duration="2340000" />
+      <workItem from="1627381306796" duration="178000" />
+      <workItem from="1627400937413" duration="397000" />
+      <workItem from="1627458480524" duration="6644000" />
     </task>
     <task id="LOCAL-00015" summary="Various components and some layout fixes">
       <created>1622905382039</created>
@@ -557,7 +543,28 @@
       <option name="project" value="LOCAL" />
       <updated>1626356571766</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Various responsive style fixes">
+      <created>1627331008745</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1627331008746</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Fixing failing tests">
+      <created>1627331627273</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1627331627273</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Header tweaks">
+      <created>1627468265207</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1627468265207</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -576,8 +583,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding test example." />
-    <MESSAGE value="Adding other environment deployment." />
     <MESSAGE value="Adding manifest files for other envs" />
     <MESSAGE value="Using correct manifest for test" />
     <MESSAGE value="Overriding hover on button." />
@@ -599,9 +604,11 @@
     <MESSAGE value="Tweaking headers" />
     <MESSAGE value="Removing page heading margin killer" />
     <MESSAGE value="Adding remaining tests" />
-    <MESSAGE value="Fixing failing tests" />
     <MESSAGE value="Minor more header fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor more header fixes" />
+    <MESSAGE value="Various responsive style fixes" />
+    <MESSAGE value="Fixing failing tests" />
+    <MESSAGE value="Header tweaks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Header tweaks" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

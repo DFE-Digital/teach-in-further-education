@@ -40,8 +40,9 @@
           window.site.submitQuestionForm(e)
       })
 
-      answer.map((a) => a.addEventListener("change", function (e) {
+      answer.map((a) => a.addEventListener("change", function () {
           const v = a.value === ""
+          window.site.analytics.raiseQuestionSelected(a.value)
           document.getElementById("<%= "question-submit-" + data.id %>").disabled = v;
           return true
       }))

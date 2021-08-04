@@ -1,7 +1,9 @@
 import { initAll } from 'govuk-frontend'
 import { Consent } from './consent'
+import { Analytics } from "./analytics";
 
 const consent = new Consent()
+const analytics = new Analytics()
 
 export function initSite(bannerId) {
     initAll()
@@ -26,7 +28,10 @@ export function onShowStep(i) {
 export function submitQuestionForm(e) {
     e.preventDefault();
     const data = new FormData(e.target);
-    window.location.replace("/" + data.get("answer") + ".html")
+    const answer = data.get("answer");
+    analytics.raiseQuestionAnswerSubmit(answer);
+    window.location.replace("/" + answer + ".html");
+    return answer;
 }
 
 
@@ -35,5 +40,6 @@ window.site = {
     initSite,
     onShowStep,
     submitQuestionForm,
-    consent: consent
+    consent: consent,
+    analytics: analytics
 }
