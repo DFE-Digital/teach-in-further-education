@@ -123,18 +123,20 @@ $govuk-link-text: #1d70b8
 
 .govuk-header__navigation-item
   a
-    color: #1D70B8
+    color: #1D70B8 !important
     text-decoration: none
 
-  &:hover
-    color: #1D3A64
-    text-decoration: none
+    &:hover
+      color: #1D3A64 !important
+      text-decoration: none
 
-  &:active
-    text-color: #1D3A64
-    text-decoration-line: underline
+    &:active
+      text-color: #1D3A64
+      text-decoration-line: underline
 
-
+.govuk-header__navigation-item--active
+  text-color: #1D3A64
+  text-decoration-line: underline
 
 .govuk-table__head
   font-weight: $govuk-font-weight-bold
