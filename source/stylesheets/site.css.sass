@@ -100,9 +100,10 @@ $govuk-link-text: #1d70b8
     font-size: 18px
 
 .govuk-cookie-banner
-  position: fixed
-  bottom: 0
   width: 100%
+  content: "";
+  display: block;
+  clear: both;
 
 .govuk-header__menu-button
   padding-right: 20px
@@ -158,17 +159,16 @@ hr
   margin-top: 20px
   margin-bottom: 40px
 
-.app-header-fixed
-  position: fixed
+.app-header
   top: 0px
   width: 100%
   z-index: 999
 
 .app-body
-  padding-top: 146px
+  padding-top: 6px
 
   @media (max-width: 768px)
-    padding-top: 106px
+    padding-top: 6px
 
 .app-sidebar
   .govuk-heading-m
