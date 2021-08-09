@@ -6,7 +6,7 @@
   <% if data.display_order %>
     <div class="app-story-image">
       <div style="padding-right: 20px">
-        <%= partial "image", :locals => { :data => data.media, :breakpoints => breakpoints } %>
+        <%= partial "image", :locals => { :data => data.media, :breakpoints => breakpoints} %>
       </div>
       <div class="call-out-border-left">
         <%= markdown(data.story_body) %>
@@ -18,7 +18,7 @@
         <%= markdown(data.story_body) %>
       </div>
       <div style="padding-left: 20px">
-        <%= partial "image", :locals => { :data => data.media, :breakpoints => breakpoints } %>
+        <%= partial "image", :locals => { :data => data.media, :breakpoints => breakpoints} %>
       </div>
     </div>
   <% end %>

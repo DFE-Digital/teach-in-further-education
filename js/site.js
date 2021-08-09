@@ -30,7 +30,8 @@ export function submitQuestionForm(e) {
     const data = new FormData(e.target);
     const answer = data.get("answer");
     analytics.raiseQuestionAnswerSubmit(answer);
-    window.location.replace("/" + answer + ".html");
+    e.target.reset();
+    window.location.assign("/" + answer + ".html");
     return answer;
 }
 
