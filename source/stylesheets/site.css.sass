@@ -44,15 +44,32 @@ $govuk-link-text: #1d70b8
   padding-right: 30px
   text-color: #1D70B8
 
+.govuk-header__navigation-item
+  a
+    color: #1D70B8 !important
+    text-decoration: none
+    padding: 10px
+    line-height: 28px !important
+
+    &:hover
+      color: #1D3A64 !important
+      border-bottom: 5px solid #1D3A64
+
+  .active
+    color: #1D3A64 !important
+    border-bottom: 5px solid #1D3A64
+
 .js-enabled
   .govuk-header__menu-button
-      width: 100%
-      display: flex
-      text-decoration: none
-      justify-content: space-between
-      align-items: baseline
-      padding: 18px
-      padding-top: 25px
+    width: 100%
+    display: flex
+    text-decoration: none
+    justify-content: space-between
+    align-items: baseline
+    padding: 25px 18px 18px
+
+    &:focus
+      background-color: #F1F0EF
 
 
 .govuk-header__container
@@ -106,9 +123,9 @@ $govuk-link-text: #1d70b8
 
 .govuk-cookie-banner
   width: 100%
-  content: "";
-  display: block;
-  clear: both;
+  content: ""
+  display: block
+  clear: both
 
 .govuk-header__menu-button
   padding-right: 20px
@@ -129,25 +146,8 @@ $govuk-link-text: #1d70b8
   padding-bottom: 10px
   padding-top: 10px
 
-.govuk-header__navigation-item
-   a
-    color: #1D70B8 !important
-    text-decoration: none
-    padding: 10px
-    line-height: 2.25
 
-    &:hover
-      color: #1D3A64 !important
-      text-decoration: none
 
-    &:active
-      text-color: #1D3A64
-      text-decoration-line: underline
-
-/*.govuk-header__navigation-item--active
-  text-color: #1D3A64
-  text-decoration-line: underline
-  line-height: 2.25 */
 
 .govuk-table__head
   font-weight: $govuk-font-weight-bold
