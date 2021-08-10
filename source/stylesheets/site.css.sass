@@ -6,16 +6,14 @@ $govuk-text-colour: #262626
 $govuk-footer-text: #f3f2f1
 $govuk-footer-bg: #262626
 $govuk-shading: #F9F9F9
+$govuk-link-text: #1d70b8
 
 
 //@media only screen and (min-width: 992px)
 //  $govuk-page-width: 960px
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 //@media only screen and (min-width: 1200px)
 //  $govuk-page-width: 1440px
-
-
 @import "../../node_modules/govuk-frontend/govuk/all"
 
 .govuk-body
@@ -35,12 +33,44 @@ $govuk-shading: #F9F9F9
   padding-top: 0px
   background-color: #F1F0EF
 
+.govuk-header
+  border-bottom: 0px
+
 .govuk-header__navigation
   margin-left: auto
   margin-right: auto
   margin-bottom: 0px
   padding-left: 30px
   padding-right: 30px
+  text-color: #1D70B8
+
+.govuk-header__navigation-item
+  a
+    color: #1D70B8 !important
+    text-decoration: none
+    padding: 10px
+    line-height: 28px !important
+
+    &:hover
+      color: #1D3A64 !important
+      border-bottom: 5px solid #1D3A64
+
+  .active
+    color: #1D3A64 !important
+    border-bottom: 5px solid #1D3A64
+
+.js-enabled
+  .govuk-header__menu-button
+    width: 100%
+    display: flex
+    text-decoration: none
+    justify-content: space-between
+    align-items: baseline
+    padding: 25px 18px 18px
+
+    &:focus
+      background-color: #F1F0EF
+
 
 .govuk-header__container
   @media (max-width: 640px)
@@ -92,23 +122,32 @@ $govuk-shading: #F9F9F9
     font-size: 18px
 
 .govuk-cookie-banner
-  position: fixed
-  bottom: 0
   width: 100%
+  content: ""
+  display: block
+  clear: both
 
 .govuk-header__menu-button
   padding-right: 20px
+  visibility: hidden
 
-  @media (max-width: 640px)
-    padding-right: 10px
+  @media (max-width: 768px)
+    position: unset
+    color: #1d70b8
+    text-decoration: none
+    font-weight: 700
+    font-size: 0.875rem
+    padding-inline: 20px
+    padding-top: 10px
+    visibility: visible
 
 .govuk-header__navigation
   background: #F1F0EF
+  padding-bottom: 10px
+  padding-top: 10px
 
-.govuk-header__navigation-item
-  a
-    color: #2B8CC4
-    text-decoration: none
+
+
 
 .govuk-table__head
   font-weight: $govuk-font-weight-bold
@@ -130,26 +169,30 @@ hr
   margin-top: 20px
   margin-bottom: 40px
 
-.app-header-fixed
-  position: fixed
+.app-header
   top: 0px
   width: 100%
   z-index: 999
 
 .app-body
-  padding-top: 146px
+  padding-top: 6px
 
   @media (max-width: 768px)
-    padding-top: 106px
+    padding-top: 6px
 
 .app-sidebar
   .govuk-heading-m
-    border-top: 10px solid $govuk-brand-colour
+    border-top: 5px solid $govuk-brand-colour
     padding-top: 10px
 
 .app-block
   padding-top: 20px
   padding-bottom: 20px
+
+  @media (max-width: 870px)
+    padding-top: 20px
+    padding-bottom: 0px
+
 
 .app-stepper-header
   padding: 0
@@ -230,14 +273,29 @@ hr
 .app-story
   background-color: white
 
-  .app-story-image
+  .app-story-image-1
     display: flex
     align-items: center
     flex-direction: row
     justify-content: space-between
 
     @media (max-width: 870px)
+      display: flex
       flex-direction: column
+      justify-content: space-between
+      align-items: center
+
+.app-story-image-2
+    display: flex
+    align-items: center
+    flex-direction: row
+    justify-content: space-between
+
+    @media (max-width: 870px)
+      display: flex
+      flex-direction: column-reverse
+      justify-content: space-between
+      align-items: center
 
     .app-rich-text p
       padding-right: 40px
@@ -256,7 +314,16 @@ hr
 .app-advice
   background-color: white
 
-  .app-advice-with-image
+  .app-advice-with-image-1
+    display: flex
+    align-items: center
+    flex-direction: row
+    justify-content: space-between
+
+    @media (max-width: 870px)
+      flex-direction: column-reverse
+
+  .app-advice-with-image-2
     display: flex
     align-items: center
     flex-direction: row
@@ -284,12 +351,20 @@ hr
   border: 10px solid $govuk-text-colour
   border-radius: 40px 40px 40px 0px
   height: 255px
+  margin-bottom: 20px
+  display: flex
+  flex-wrap: wrap
+  align-content: space-around
 
 .call-out-border-right
   padding: 40px
   border: 10px solid $govuk-text-colour
   border-radius: 40px 40px 0px 40px
   height: 255px
+  margin-bottom: 20px
+  display: flex
+  flex-wrap: wrap
+  align-content: space-around
 
 .app-hero-banner
   display: flex
@@ -383,4 +458,15 @@ hr
     display: block
     margin-bottom: govuk-spacing(1)
     color: $govuk-secondary-text-colour
-      
+
+.app-image-1
+  padding-right: 20px
+
+  @media (max-width: 870px)
+    padding: 20px
+
+.app-image-2
+  padding-left: 20px
+
+  @media (max-width: 870px)
+    padding: 20px

@@ -1,13 +1,16 @@
 import { initAll } from 'govuk-frontend'
 import { Consent } from './consent'
 import { Analytics } from "./analytics";
+import { Header } from "./header";
 
 const consent = new Consent()
 const analytics = new Analytics()
+const header = new Header()
 
-export function initSite(bannerId) {
+export function initSite(bannerId, headerId) {
     initAll()
     consent.init(bannerId)
+    header.init(headerId)
 }
 
 export function onShowStep(i) {
