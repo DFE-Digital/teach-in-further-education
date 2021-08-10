@@ -7,7 +7,7 @@ export class Header {
             for (const anchor of listElement.getElementsByTagName("a")){
                 const route = anchor.getAttribute("href")
                 const link = window.location.href.substring(window.location.href.lastIndexOf('/') + 1);
-                if(link === route) {
+                if(link === route || (link === "" && route === "/")) {
                     anchor.classList.add("active")
                 } else {
                     anchor.classList.remove("active")
