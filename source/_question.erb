@@ -44,23 +44,25 @@
       const form = document.getElementById("<%= "question-" + data.id %>")
       const answer = Array.from(document.getElementsByName("answer"))
       form.addEventListener("submit", function(e){
-         if (answer.every((a) => a.value != ""))
-         {console.log("step3")
+         if (answer.every((a) => !a.checked))
+         {
             e.preventDefault()
             document.getElementById("qual-form-group").classList.add("govuk-form-group--error")
             document.getElementById("error-message").classList.remove("govuk-visually-hidden")
          }
-         else {console.log("step4")
+         else {
             window.site.submitQuestionForm(e)
           }
-          console.log("step5")
       })
 
-      answer.map((a) => a.addEventListener("change", function () {
-        console.log("newfunction")
-          const v = a.value === ""
+      answer.map((a) => a.addEventListener("change", function (e) {
+          const v = e.currentTarget.value === ""
           window.site.analytics.raiseQuestionSelected(a.value)
           document.getElementById("<%= "question-submit-" + data.id %>").disabled = v;
+          if(e.currentTarget.checked) {
+             document.getElementById("qual-form-group").classList.remove("govuk-form-group--error")
+             document.getElementById("error-message").classList.add("govuk-visually-hidden")
+          }
           return true
       }))
   </script>
