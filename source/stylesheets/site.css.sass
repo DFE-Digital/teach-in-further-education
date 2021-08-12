@@ -31,6 +31,10 @@ $govuk-link-text: #1d70b8
 
 .app-header-nav
   padding-top: 0px
+  border-bottom: 1px solid #BBBDBF
+
+  @media (max-width: 640px)
+    border-bottom: none
 
 .govuk-header
   border-bottom: 0px
@@ -39,15 +43,19 @@ $govuk-link-text: #1d70b8
   margin-left: auto
   margin-right: auto
   margin-bottom: 0px
-  padding: 10px 30px
+  padding-top: 10px
   text-color: #1D70B8
+
 
 .govuk-header__navigation-item
   a
     color: #1D70B8 !important
     text-decoration: none
-    padding: 10px
     line-height: 28px !important
+    margin: 14px 0px 15px
+
+    @media (max-width: 640px)
+      margin-left: 5px
 
     &:hover
       color: #1D3A64 !important
