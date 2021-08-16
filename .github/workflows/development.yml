@@ -26,19 +26,16 @@ jobs:
         with:
           ruby-version: 2.7.3
 
-      - name: Run contentful migrations
-        run: |
-          npm install -g contentful-cli
-          ./run_cms_migration.sh ${{ secrets.CONTENTFUL_MGMT_TOKEN }} ${{ secrets.CONTENTFUL_SPACE_ID }} development master >> contentful.log
-        working-directory: cms
-        continue-on-error: true
-
-      - name: Save migration results
-        if: always()
-        uses: actions/upload-artifact@v2
+      - name: Contentful Migration
+        id: migrate_contentful
+        uses: contentful-userland/contentful-migration-automation@v1
         with:
-          name: contentful_migration_results
-          path: ${{ github.workspace }}/cms/contentful.log
+         space_id: ${{ secrets.CONTENTFUL_SPACE_ID }}
+         management_api_key: ${{ secrets.CONTENTFUL_MGMT_TOKEN }}
+         master_pattern: "development"
+         version_field: version
+         version_content_type: environmentVersion
+         migrations_dir: cms/migrations
 
       - uses: actions/cache@v2
         with:
@@ -64,6 +61,7 @@ jobs:
           GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
+          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.environment_name }}
 
       - name: Run tests
         run: |
@@ -82,6 +80,7 @@ jobs:
           GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
+          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.environment_name }}
 
       - shell: bash
         run: |

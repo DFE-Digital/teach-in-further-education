@@ -22,12 +22,16 @@ jobs:
         with:
           ruby-version: 2.7.3
 
-      - name: Run contentful migrations
-        run: |
-          npm install -g contentful-cli
-          ./run_cms_migration.sh ${{ secrets.CONTENTFUL_MGMT_TOKEN }} ${{ secrets.CONTENTFUL_SPACE_ID }} test master >> contentful.log
-        working-directory: cms
-        continue-on-error: true
+      - name: Contentful Migration
+        id: migrate_contentful
+        uses: contentful-userland/contentful-migration-automation@v1
+        with:
+          space_id: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          management_api_key: ${{ secrets.CONTENTFUL_MGMT_TOKEN }}
+          master_pattern: "test"
+          version_field: version
+          version_content_type: environmentVersion
+          migrations_dir: cms/migrations
 
       - name: Save migration results
         if: always()
@@ -60,6 +64,7 @@ jobs:
           GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
+          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.environment_name }}
 
       - name: Run tests
         run: |
@@ -78,6 +83,7 @@ jobs:
           GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
+          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.environment_name }}
 
       - shell: bash
         run: |
@@ -159,6 +165,7 @@ jobs:
           GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
+          CONTENTFUL_ENVIRONMENT: test
 
       - name: Run tests
         run: |

@@ -54,6 +54,7 @@ Ensure you have created a .env file with the following keys:
     GOOGLE_ANALYTICS_TAG=****
     CONTENTFUL_SPACE_ID=****
     CONTENTFUL_DELIVERY_TOKEN=****
+    CONTENTFUL_ENVIRONMENT=***
 
 Install gems and ruby deps 
 
