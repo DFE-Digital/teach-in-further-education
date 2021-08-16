@@ -31,6 +31,7 @@ jobs:
           npm install -g contentful-cli
           ./run_cms_migration.sh ${{ secrets.CONTENTFUL_MGMT_TOKEN }} ${{ secrets.CONTENTFUL_SPACE_ID }} development master >> contentful.log
         working-directory: cms
+        continue-on-error: true
 
       - name: Save migration results
         if: always()
