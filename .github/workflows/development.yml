@@ -28,8 +28,8 @@ jobs:
 
       - name: Run contentful migrations
         run: |
-          - npm install -g contentful-cli
-          - run_cms_migration ${{ secrets.CONTENTFUL_MGMT_TOKEN }} ${{ secrets.CONTENTFUL_SPACE_ID }} development master >> contentful.log
+          npm install -g contentful-cli
+          run_cms_migration ${{ secrets.CONTENTFUL_MGMT_TOKEN }} ${{ secrets.CONTENTFUL_SPACE_ID }} development master >> contentful.log
         working-directory: cms
 
       - name: Save migration results
