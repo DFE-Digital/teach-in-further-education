@@ -30,8 +30,6 @@ jobs:
           SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           MANAGEMENT_API_KEY: ${{ secrets.CONTENTFUL_MGMT_TOKEN }}
           MASTER_PATTERN: "production-[YYYY][MM][DD][hh][mm]"
-          VERSION_FIELD: version
-          VERSION_CONTENT_TYPE: versionTracking
           MIGRATIONS_DIR: "migrations"
 
       - uses: actions/cache@v2
