@@ -24,12 +24,14 @@ jobs:
 
       - name: Contentful Migration
         id: migrate_contentful
-        uses: contentful-userland/contentful-action@v1
+        uses: contentful-userland/contentful-action@main
+        with:
+          MASTER_PATTERN: "test"
+          MIGRATIONS_DIR: "migrations"
+          VERSION_CONTENT_TYPE: "environmentVersion"
         env:
           SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           MANAGEMENT_API_KEY: ${{ secrets.CONTENTFUL_MGMT_TOKEN }}
-          MASTER_PATTERN: "test"
-          MIGRATIONS_DIR: "migrations"
 
       - name: Save migration results
         if: always()
