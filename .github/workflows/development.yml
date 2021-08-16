@@ -34,7 +34,7 @@ jobs:
           MANAGEMENT_API_KEY: ${{ secrets.CONTENTFUL_MGMT_TOKEN }}
           INPUT_MASTER_PATTERN: "development"
           MIGRATIONS_DIR: "migrations"
-          VERSION_CONTENT_TYPE: "environmentVersion"
+          INPUT_VERSION_CONTENT_TYPE: "environmentVersion"
 
 
       - uses: actions/cache@v2
