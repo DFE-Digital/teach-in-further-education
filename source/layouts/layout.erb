@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charSet="utf-8"/>
@@ -37,8 +37,8 @@
 
 </head>
 <body class="govuk-template__body">
-<script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 <%= partial "cookie_banner" %>
+<script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
   <%= partial "header", :locals => { :data => data } %>
@@ -61,7 +61,7 @@
 
 <%= javascript_include_tag :all %>
 <script>
-  window.site.initSite('cookie-banner');
+  window.site.initSite('cookie-banner', 'navigation');
 </script>
 </body>
 

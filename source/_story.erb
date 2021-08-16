@@ -4,8 +4,8 @@
     <h2 class="govuk-heading-l"><%= data.title %></h2>
   <% end %>
   <% if data.display_order %>
-    <div class="app-story-image">
-      <div style="padding-right: 20px">
+    <div class="app-story-image-1">
+      <div class="app-image-1">
         <%= partial "image", :locals => { :data => data.media, :breakpoints => breakpoints } %>
       </div>
       <div class="call-out-border-left">
@@ -13,11 +13,11 @@
       </div>
     </div>
   <% else %>
-    <div class="app-story-image">
+    <div class="app-story-image-2">
       <div class="call-out-border-right">
         <%= markdown(data.story_body) %>
       </div>
-      <div style="padding-left: 20px">
+      <div class="app-image-2">
         <%= partial "image", :locals => { :data => data.media, :breakpoints => breakpoints } %>
       </div>
     </div>
