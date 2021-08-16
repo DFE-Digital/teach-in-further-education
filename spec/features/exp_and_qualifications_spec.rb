@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'Experience and Qualifications components', :type => :feature do
     before do
-      visit '/subject-specific-qualifications.html'
+      visit '/experience-and-qualifications.html'
     end
 
     it "should have correct elements" do
@@ -27,41 +27,33 @@ describe 'Experience and Qualifications components', :type => :feature do
       end
     end
 
-    it "should have correct class" do
+    it "should have correct classes" do
       skillsTradesElement = page.find_by_id("2dSAy6Mk1OlBMIiVDcPJ0u")
       within skillsTradesElement do
-        expect(skillsTradesElement[:class]).to eq "app-advice"
+        expect(skillsTradesElement[:class]).to eq "app-advice "
       end
       academicSubjectsElement = page.find_by_id("e0XCvhr4XVEtz0N0hZMCf")
       within academicSubjectsElement do
-        expect(academicSubjectsElement[:class]).to eq "app-advice"
+        expect(academicSubjectsElement[:class]).to eq "app-advice "
       end
       chooseYourQualificationElement = page.find_by_id("1xTlxAkJL5DzPuOCDYOsQG")
       within chooseYourQualificationElement do
-        expect(chooseYourQualificationElement[:class]).to eq "app-advice"
+        expect(chooseYourQualificationElement[:class]).to eq "app-advice "
       end
       listofCoursesElement = page.find_by_id("2C22TEQvPFHAAef6z96a1x")
       within listofCoursesElement do
-        expect(listofCoursesElement[:class]).to eq "app-advice"
+        expect(listofCoursesElement[:class]).to eq "app-advice "
       end
     end
 
     it "links should re-direct to expected urls" do
-      link = page.find_by_id("2dSAy6Mk1OlBMIiVDcPJ0u")
+      link = page.find_link("What levels mean", match: :first)
       within link do 
         expect(link[:href]).to eq 'https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels'
       end
-      link = page.find_by_id("e0XCvhr4XVEtz0N0hZMCf")
-      within link do 
-        expect(link[:href]).to eq 'https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels'
-      end
-      link = page.find_by_id("1xTlxAkJL5DzPuOCDYOsQG")
+      link = page.find_link("There are bursaries available for some subjects.")
       within link do 
         expect(link[:href]).to eq 'https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2020-to-2021-academic-year'
       end
-      link = page.find_by_id("2C22TEQvPFHAAef6z96a1x")
-      within link do 
-        expect(link[:href]).to eq 'http://localhost:4567/full-list-of-fe-qualifications.html'
     end
-  end
 end
