@@ -23,6 +23,19 @@ jobs:
         with:
           ruby-version: 2.7.3
 
+      - name: Run contentful migrations
+        run: |
+          - npm install -g contentful-cli
+          - run_cms_migration ${{ secrets.CONTENTFUL_MGMT_TOKEN }} ${{ secrets.CONTENTFUL_SPACE_ID }} master master >> contentful.log
+        working-directory: cms
+
+      - name: Save migration results
+          if: always()
+          uses: actions/upload-artifact@v2
+          with:
+            name: contentful_migration_results
+            path: ${{ github.workspace }}/cms/contentful.log
+
       - uses: actions/cache@v2
         with:
           path: vendor/bundle
