@@ -31,14 +31,14 @@ jobs:
           MASTER_PATTERN: "test"
           VERSION_FIELD: version
           VERSION_CONTENT_TYPE: environmentVersion
-          MIGRATIONS_DIR: "cms/migrations"
+          MIGRATIONS_DIR: "contentful_migrations"
 
       - name: Save migration results
         if: always()
         uses: actions/upload-artifact@v2
         with:
           name: contentful_migration_results
-          path: ${{ github.workspace }}/cms/contentful.log
+          path: ${{ github.workspace }}/contentful_migrations/contentful.log
 
       - uses: actions/cache@v2
         with:

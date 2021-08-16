@@ -32,10 +32,10 @@ jobs:
         env:
           SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           MANAGEMENT_API_KEY: ${{ secrets.CONTENTFUL_MGMT_TOKEN }}
-          MASTER_PATTERN: "test"
+          MASTER_PATTERN: "development"
           VERSION_FIELD: version
           VERSION_CONTENT_TYPE: environmentVersion
-          MIGRATIONS_DIR: "cms/migrations"
+          MIGRATIONS_DIR: "contentful_migrations"
 
       - uses: actions/cache@v2
         with:
