@@ -28,13 +28,15 @@ jobs:
 
       - name: Contentful Migration
         id: migrate_contentful
-        uses: contentful-userland/contentful-action@v1
+        uses: contentful-userland/contentful-action@main
+        with:
+          master_pattern: "development"
+          migrations_dir: "migrations"
+          version_content_type: "environmentVersion"
         env:
           SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           MANAGEMENT_API_KEY: ${{ secrets.CONTENTFUL_MGMT_TOKEN }}
-          INPUT_MASTER_PATTERN: "development"
-          MIGRATIONS_DIR: "migrations"
-          INPUT_VERSION_CONTENT_TYPE: "environmentVersion"
+
 
 
       - uses: actions/cache@v2
