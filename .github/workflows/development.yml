@@ -33,9 +33,9 @@ jobs:
           master_pattern: "development"
           migrations_dir: "migrations"
           version_content_type: "environmentVersion"
-        env:
-          SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
-          MANAGEMENT_API_KEY: ${{ secrets.CONTENTFUL_MGMT_TOKEN }}
+          space_id: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          management_api_key: ${{ secrets.CONTENTFUL_MGMT_TOKEN }}
+
 
 
 
