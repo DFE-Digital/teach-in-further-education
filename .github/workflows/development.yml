@@ -36,7 +36,8 @@ jobs:
           version_content_type: "environmentVersion"
           space_id: ${{ secrets.CONTENTFUL_SPACE_ID }}
           management_api_key: ${{ secrets.CONTENTFUL_MGMT_TOKEN }}
-
+        env:
+          LOG_LEVEL: verbose
 
 
 
