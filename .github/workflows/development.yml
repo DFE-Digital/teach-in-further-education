@@ -35,7 +35,7 @@ jobs:
           MASTER_PATTERN: "development"
           VERSION_FIELD: version
           VERSION_CONTENT_TYPE: environmentVersion
-          MIGRATIONS_DIR: "contentful_migrations"
+          MIGRATIONS_DIR: "migrations"
 
       - uses: actions/cache@v2
         with:
