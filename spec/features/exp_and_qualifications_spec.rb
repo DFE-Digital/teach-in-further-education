@@ -64,3 +64,4 @@ describe 'Experience and Qualifications components', :type => :feature do
         expect(link[:href]).to eq 'http://localhost:4567/full-list-of-fe-qualifications.html'
     end
   end
+end
