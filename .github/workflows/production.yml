@@ -30,11 +30,11 @@ jobs:
         working-directory: cms
 
       - name: Save migration results
-          if: always()
-          uses: actions/upload-artifact@v2
-          with:
-            name: contentful_migration_results
-            path: ${{ github.workspace }}/cms/contentful.log
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: contentful_migration_results
+          path: ${{ github.workspace }}/cms/contentful.log
 
       - uses: actions/cache@v2
         with:
