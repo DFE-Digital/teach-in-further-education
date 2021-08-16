@@ -2,7 +2,7 @@ name: "Test"
 
 on:
   push:
-    branches: [ master ]
+    branches: [ test ]
 
 jobs:
   build:
@@ -26,12 +26,15 @@ jobs:
         id: migrate_contentful
         uses: contentful-userland/contentful-action@main
         with:
-          MASTER_PATTERN: "test"
-          MIGRATIONS_DIR: "migrations"
-          VERSION_CONTENT_TYPE: "environmentVersion"
+          feature_pattern: "test-feat-[branch]"
+          master_pattern: "test"
+          migrations_dir: "contentful/migrations"
+          version_field: "version"
+          version_content_type: "environmentVersion"
+          space_id: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          management_api_key: ${{ secrets.CONTENTFUL_MGMT_TOKEN }}
         env:
-          SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
-          MANAGEMENT_API_KEY: ${{ secrets.CONTENTFUL_MGMT_TOKEN }}
+          LOG_LEVEL: verbose
 
       - name: Save migration results
         if: always()
@@ -64,7 +67,7 @@ jobs:
           GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
-          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.environment_name }}
+          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.outputs.environment_name }}
 
       - name: Run tests
         run: |
@@ -83,7 +86,7 @@ jobs:
           GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
-          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.environment_name }}
+          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.outputs.environment_name }}
 
       - shell: bash
         run: |

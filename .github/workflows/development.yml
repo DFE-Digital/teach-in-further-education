@@ -30,9 +30,10 @@ jobs:
         id: migrate_contentful
         uses: contentful-userland/contentful-action@main
         with:
-          feature_pattern: "development"
+          delete_feature: true
+          feature_pattern: "feat-[branch]"
           master_pattern: "development"
-          migrations_dir: "migrations"
+          migrations_dir: "contentful/migrations"
           version_field: "version"
           version_content_type: "environmentVersion"
           space_id: ${{ secrets.CONTENTFUL_SPACE_ID }}
@@ -66,7 +67,7 @@ jobs:
           GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
-          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.environment_name }}
+          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.outputs.environment_name }}
 
       - name: Run tests
         run: |
@@ -85,7 +86,7 @@ jobs:
           GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
-          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.environment_name }}
+          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.outputs.environment_name }}
 
       - shell: bash
         run: |

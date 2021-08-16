@@ -2,8 +2,7 @@ name: "Production"
 
 on:
   push:
-    tags:
-      - release/**
+    branches: [ master ]
 
 jobs:
   build:
@@ -25,12 +24,17 @@ jobs:
 
       - name: Contentful Migration
         id: migrate_contentful
-        uses: contentful-userland/contentful-action@v1
+        uses: contentful-userland/contentful-action@main
+        with:
+          delete_feature: true
+          master_pattern: "production-[YYYY][MM][DD][hh][mm]"
+          migrations_dir: "contentful/migrations"
+          version_field: "version"
+          version_content_type: "environmentVersion"
+          space_id: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          management_api_key: ${{ secrets.CONTENTFUL_MGMT_TOKEN }}
         env:
-          SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
-          MANAGEMENT_API_KEY: ${{ secrets.CONTENTFUL_MGMT_TOKEN }}
-          MASTER_PATTERN: "production-[YYYY][MM][DD][hh][mm]"
-          MIGRATIONS_DIR: "migrations"
+          LOG_LEVEL: verbose
 
       - uses: actions/cache@v2
         with:
@@ -56,7 +60,7 @@ jobs:
           GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
-          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.environment_name }}
+          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.outputs.environment_name }}
 
       - name: Building middleman site
         run: bundle exec middleman build
@@ -64,7 +68,7 @@ jobs:
           GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
-          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.environment_name }}
+          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.outputs.environment_name }}
 
       - shell: bash
         run: |
