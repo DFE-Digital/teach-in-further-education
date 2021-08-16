@@ -30,7 +30,7 @@ jobs:
           MANAGEMENT_API_KEY: ${{ secrets.CONTENTFUL_MGMT_TOKEN }}
           MASTER_PATTERN: "test"
           VERSION_FIELD: version
-          VERSION_CONTENT_TYPE: environmentVersion
+          VERSION_CONTENT_TYPE: versionTracking
           MIGRATIONS_DIR: "migrations"
 
       - name: Save migration results
