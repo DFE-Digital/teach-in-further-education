@@ -31,7 +31,7 @@ jobs:
         uses: contentful-userland/contentful-action@main
         with:
           delete_feature: true
-          feature_pattern: "feat-[branch]"
+          feature_pattern: "development"
           master_pattern: "development"
           migrations_dir: "contentful/migrations"
           version_field: "version"

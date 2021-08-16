@@ -26,7 +26,7 @@ jobs:
         id: migrate_contentful
         uses: contentful-userland/contentful-action@main
         with:
-          feature_pattern: "test-feat-[branch]"
+          feature_pattern: "test"
           master_pattern: "test"
           migrations_dir: "contentful/migrations"
           version_field: "version"
