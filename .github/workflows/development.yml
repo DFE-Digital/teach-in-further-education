@@ -29,13 +29,13 @@ jobs:
       - name: Contentful Migration
         id: migrate_contentful
         uses: contentful-userland/contentful-action@v1
-        with:
-         space_id: ${{ secrets.CONTENTFUL_SPACE_ID }}
-         management_api_key: ${{ secrets.CONTENTFUL_MGMT_TOKEN }}
-         master_pattern: "development"
-         version_field: version
-         version_content_type: environmentVersion
-         migrations_dir: cms/migrations
+        env:
+          SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          MANAGEMENT_API_KEY: ${{ secrets.CONTENTFUL_MGMT_TOKEN }}
+          MASTER_PATTERN: "test"
+          VERSION_FIELD: version
+          VERSION_CONTENT_TYPE: environmentVersion
+          MIGRATIONS_DIR: cms/migrations
 
       - uses: actions/cache@v2
         with:
