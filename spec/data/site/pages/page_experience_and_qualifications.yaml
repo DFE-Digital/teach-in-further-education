@@ -1,21 +1,89 @@
 ---
-:id: 1Xe06bkCFAfULLY5TYAO5d
+:id: 630Q4flj9fmCaHKsckbOA6
 :_meta:
   :content_type_id: page
-  :updated_at: '2021-07-01T22:41:54+00:00'
-  :created_at: '2021-06-08T12:30:09+00:00'
-  :id: 1Xe06bkCFAfULLY5TYAO5d
-:title: Find the right full teaching qualification for you
-:preamble: |-
-  If you are training as part of a job in a college, the college may specify what course you need to do. This information is usually in the job advert on the college's website.
-
-  There are a variety of full teaching qualifications. To find which one best suits your situation, answer a few questions. We'll recommend the best qualification based on your answers.
-:slug: find-the-right-teaching-qualification-for-you
+  :updated_at: '2021-07-08T12:31:29+00:00'
+  :created_at: '2021-05-17T13:17:38+00:00'
+  :id: 630Q4flj9fmCaHKsckbOA6
+:title: Experience and qualifications
+:heading: Experience and qualifications
+:slug: experience-and-qualifications
 :blocks:
+- :id: 2dSAy6Mk1OlBMIiVDcPJ0u
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-08-03T12:14:39+00:00'
+    :created_at: '2021-05-14T09:25:51+00:00'
+    :id: 2dSAy6Mk1OlBMIiVDcPJ0u
+  :title: Skills, trades and vocational subjects
+  :advice_body: |
+    ### Real experience is valued
+
+    Further education (FE) teaching is suitable for those with at least 2 years experience of their industry. FE providers value industry experience that you can pass on.
+
+    ### Working in FE without a teaching qualification
+
+    The qualifications needed for specific teaching roles in FE are set by each college.
+
+    You might be able to start work in FE without a teaching qualification.
+
+    If you are training as part of a job in a college, the college may specify what course you need to do. This information is usually in the job advert on the college's website.
+
+    #### Other qualifications needed
+
+    Ideally you'll have a level 3 qualification in your area of expertise.
+
+    [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels "Explanation of the different educational attainment levels")
+
+    If you can show significant industry experience, you still may be able to start teaching in FE.
+  :display_order: true
+  :apply_background_color: false
+  :show_title: true
+- :id: e0XCvhr4XVEtz0N0hZMCf
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-07-06T14:13:33+00:00'
+    :created_at: '2021-05-14T09:28:11+00:00'
+    :id: e0XCvhr4XVEtz0N0hZMCf
+  :title: Academic subjects
+  :advice_body: "#### Other qualifications needed\n\nYou will need at least a level
+    3 qualification in your subject to teach it in an FE setting. \n\n[What levels
+    mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+    \"Explanation of the different educational attainment levels\")"
+  :display_order: false
+  :apply_background_color: false
+  :show_title: true
+- :id: 1xTlxAkJL5DzPuOCDYOsQG
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-07-06T13:10:54+00:00'
+    :created_at: '2021-07-06T12:49:06+00:00'
+    :id: 1xTlxAkJL5DzPuOCDYOsQG
+  :title: Choose your teaching qualification
+  :advice_body: |
+    If you want to start teaching in FE before you get a teaching qualification, you do not need to worry about courses.
+
+    The college will decide which course you need to do.
+
+    If you want to train first, you need to know what training options there are.
+
+    Which course you choose will depend on the:
+
+    - course costs
+    - time you can commit
+    - expectations of the FE providers you want to work for
+    - qualifications you already have
+
+    Some teaching courses allow full or part time study.
+
+    [There are bursaries available for some subjects.](https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2020-to-2021-academic-year "UK teacher training bursaries 2021")
+  :display_order: true
+  :apply_background_color: false
+  :show_title: true
 - :id: qNRtpmv245PlK1GAu8Mzm
   :_meta:
     :content_type_id: question
-    :updated_at: '2021-07-13T10:57:03+00:00'
+    :updated_at: '2021-08-06T13:12:47+00:00'
     :created_at: '2021-06-08T12:27:31+00:00'
     :id: qNRtpmv245PlK1GAu8Mzm
   :question_text: Find a suitable qualification
@@ -42,52 +110,10 @@
       :heading: 2 results…
       :slug: results-no-quals
       :blocks:
-      - :id: 25yMNwz2gtajH4nyW6upyY
-        :_meta:
-          :content_type_id: advice
-          :updated_at: '2021-07-23T08:22:15+00:00'
-          :created_at: '2021-05-14T10:56:36+00:00'
-          :id: 25yMNwz2gtajH4nyW6upyY
-        :title: Diploma in Education and Training
-        :advice_body: "This Level 5 qualification lets you teach most trades, skills
-          and subjects in further education (FE).\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
-          \"Explanation of the different educational attainment levels\")\n\n### This
-          qualification is good if you want to:\n\n- train part time or on the job\n-
-          teach without a degree in your subject\n- get a full teaching qualification
-          but keeping costs to a minimum\n- [qualify for a bursary](https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2020-to-2021-academic-year
-          \"UK bursary information 2020-21\")\n- [get Qualified Teacher in Learning
-          and Skills Status (QTLS) once you've qualified](https://set.et-foundation.co.uk/professional-status/qtls
-          \"Find out about qualified teacher status\") \n\n### This might not be the
-          right qualification if you want to:\n- teach in secondary schools\n- teach
-          in sixth form colleges\n- take a basic course to see if FE is really for
-          you\n\n### Integrated Specialist Diploma\n\nYou can also choose to specialise
-          in one of 3 Specialist Pathway areas of teaching:\n\n- special educational
-          needs\n- English literacy\n- English for speakers of other languages (ESOL)\n-
-          mathematics\n\nTo teach English or mathematics you need at least a Level
-          3 qualification in the subject.\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
-          \"Explanation of the different educational attainment levels\")\n\n|               |
-          \                   |\n|---------------|--------------------|\n| __Course
-          structure__       | 100 hours of teaching practice, including 50 in your
-          chosen area if you are on a Specialist Pathway |\n| __Level of qualification
-          you will get__ | Level 5 (Degree level). You can also take this course with
-          a levels 6 or 7 qualification. [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
-          \"Explanation of the different educational attainment levels\") |\n| __Area
-          of education__ (Primary, Secondary, FE) | FE only\n| __Teaching status__
-          \ | Full FE teaching qualification. Can lead to [QTLS in FE](https://set.et-foundation.co.uk/professional-status/qtls
-          \"Find out about qualified teacher status\")    |\n| __Cost__ (varies by
-          provider) | up to £6,000     |\n| __Course length__ | 1 to 2 years, full
-          time or part time      |\n| __Entry requirements__ | An assessment of your
-          English, mathematics and ICT skills. If you are on a specialist pathway
-          for mathematics or English, you'll need at least a level 3 qualification
-          in the subject. [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
-          \"Explanation of the different educational attainment levels\") |"
-        :display_order: true
-        :apply_background_color: false
-        :show_title: true
       - :id: 6MLGVV5W7puMHUOyCQw5PO
         :_meta:
           :content_type_id: advice
-          :updated_at: '2021-07-06T12:34:41+00:00'
+          :updated_at: '2021-08-06T11:15:30+00:00'
           :created_at: '2021-04-29T23:31:00+00:00'
           :id: 6MLGVV5W7puMHUOyCQw5PO
         :title: Introductory qualifications
@@ -114,11 +140,11 @@
           \     | Level 4. [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels)
           \     |\n| Area of education (Pri. Sec. FE)       | FE-specific       |
           FE-specific      |\n| Teaching status       | No official teaching status
-          \      | No offcial teaching status       |\n| Cost (varies by provider)
+          \      | No official teaching status       |\n| Cost (varies by provider)
           \      | Up to £500       | Up to £1000       |\n| Length of course       |
-          From 3 days to 12 weeks part time       | Up to 6 month, full time or part
+          From 3 days to 12 weeks part time       | Up to 6 months, full time or part
           time       |\n| Entry requirements       | No entry requirements       |
-          Requires an assessment of your English, maths and ICT skillss      |"
+          Requires an assessment of your English, maths and ICT skills      |"
         :display_order: true
         :show_title: true
       :call_to_actions:
@@ -134,43 +160,43 @@
   - :id: k2NflABnJCxRk260SUr7l
     :_meta:
       :content_type_id: answer
-      :updated_at: '2021-07-01T22:41:36+00:00'
+      :updated_at: '2021-08-06T11:00:00+00:00'
       :created_at: '2021-06-08T12:20:55+00:00'
       :id: k2NflABnJCxRk260SUr7l
     :answer: GCSE, O Level, Scottish Ordinary, BTEC Level 1-2
     :link:
-      :id: 4krHeEI65jrLOhPc3duVf3
+      :id: 54jfXjXAKbqhGgkmhkC4rr
       :_meta:
         :content_type_id: page
-        :updated_at: '2021-07-19T09:03:30+00:00'
-        :created_at: '2021-06-08T12:34:53+00:00'
-        :id: 4krHeEI65jrLOhPc3duVf3
-      :title: Diploma in Education and Training - Result
+        :updated_at: '2021-08-06T10:57:46+00:00'
+        :created_at: '2021-08-06T10:57:46+00:00'
+        :id: 54jfXjXAKbqhGgkmhkC4rr
+      :title: Diploma in Education and Training - GCSE
       :heading: 1 result…
-      :slug: diploma-in-education-and-training-result
+      :slug: diploma-in-education-and-training-gcse
       :blocks:
-      - :id: 25yMNwz2gtajH4nyW6upyY
+      - :id: GUGtg9Vxo8cZQblsYPoGc
         :_meta:
           :content_type_id: advice
-          :updated_at: '2021-07-23T08:22:15+00:00'
-          :created_at: '2021-05-14T10:56:36+00:00'
-          :id: 25yMNwz2gtajH4nyW6upyY
+          :updated_at: '2021-08-06T11:36:43+00:00'
+          :created_at: '2021-08-06T10:52:00+00:00'
+          :id: GUGtg9Vxo8cZQblsYPoGc
         :title: Diploma in Education and Training
         :advice_body: "This Level 5 qualification lets you teach most trades, skills
           and subjects in further education (FE).\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
           \"Explanation of the different educational attainment levels\")\n\n### This
           qualification is good if you want to:\n\n- train part time or on the job\n-
           teach without a degree in your subject\n- get a full teaching qualification
-          but keeping costs to a minimum\n- [qualify for a bursary](https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2020-to-2021-academic-year
+          but keep costs to a minimum\n- [qualify for a bursary](https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2020-to-2021-academic-year
           \"UK bursary information 2020-21\")\n- [get Qualified Teacher in Learning
-          and Skills Status (QTLS) once you've qualified](https://set.et-foundation.co.uk/professional-status/qtls
+          and Skills Status (QTLS) once you've passed your course](https://set.et-foundation.co.uk/professional-status/qtls
           \"Find out about qualified teacher status\") \n\n### This might not be the
           right qualification if you want to:\n- teach in secondary schools\n- teach
           in sixth form colleges\n- take a basic course to see if FE is really for
           you\n\n### Integrated Specialist Diploma\n\nYou can also choose to specialise
           in one of 3 Specialist Pathway areas of teaching:\n\n- special educational
           needs\n- English literacy\n- English for speakers of other languages (ESOL)\n-
-          mathematics\n\nTo teach English or mathematics you need at least a Level
+          mathematics\n\nTo teach English or mathematics you need at least a level
           3 qualification in the subject.\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
           \"Explanation of the different educational attainment levels\")\n\n|               |
           \                   |\n|---------------|--------------------|\n| __Course
@@ -190,7 +216,7 @@
           \"Explanation of the different educational attainment levels\") |"
         :display_order: true
         :apply_background_color: false
-        :show_title: true
+        :show_title: false
       :call_to_actions:
       - :id: 4jG2PspMQXj2hxNwIzNLfN
         :_meta:
@@ -204,7 +230,7 @@
   - :id: 3nEGsh2BzZPp9zYGq6D7FA
     :_meta:
       :content_type_id: answer
-      :updated_at: '2021-07-01T22:41:36+00:00'
+      :updated_at: '2021-08-06T13:11:39+00:00'
       :created_at: '2021-06-08T12:21:14+00:00'
       :id: 3nEGsh2BzZPp9zYGq6D7FA
     :answer: A Level, Scottish Higher, BTEC Level 3
@@ -212,35 +238,35 @@
       :id: 4krHeEI65jrLOhPc3duVf3
       :_meta:
         :content_type_id: page
-        :updated_at: '2021-07-19T09:03:30+00:00'
+        :updated_at: '2021-08-06T13:01:29+00:00'
         :created_at: '2021-06-08T12:34:53+00:00'
         :id: 4krHeEI65jrLOhPc3duVf3
-      :title: Diploma in Education and Training - Result
+      :title: Diploma in Education and Training - A Levels
       :heading: 1 result…
-      :slug: diploma-in-education-and-training-result
+      :slug: diploma-in-education-and-training-result-a-level
       :blocks:
-      - :id: 25yMNwz2gtajH4nyW6upyY
+      - :id: GUGtg9Vxo8cZQblsYPoGc
         :_meta:
           :content_type_id: advice
-          :updated_at: '2021-07-23T08:22:15+00:00'
-          :created_at: '2021-05-14T10:56:36+00:00'
-          :id: 25yMNwz2gtajH4nyW6upyY
+          :updated_at: '2021-08-06T11:36:43+00:00'
+          :created_at: '2021-08-06T10:52:00+00:00'
+          :id: GUGtg9Vxo8cZQblsYPoGc
         :title: Diploma in Education and Training
         :advice_body: "This Level 5 qualification lets you teach most trades, skills
           and subjects in further education (FE).\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
           \"Explanation of the different educational attainment levels\")\n\n### This
           qualification is good if you want to:\n\n- train part time or on the job\n-
           teach without a degree in your subject\n- get a full teaching qualification
-          but keeping costs to a minimum\n- [qualify for a bursary](https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2020-to-2021-academic-year
+          but keep costs to a minimum\n- [qualify for a bursary](https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2020-to-2021-academic-year
           \"UK bursary information 2020-21\")\n- [get Qualified Teacher in Learning
-          and Skills Status (QTLS) once you've qualified](https://set.et-foundation.co.uk/professional-status/qtls
+          and Skills Status (QTLS) once you've passed your course](https://set.et-foundation.co.uk/professional-status/qtls
           \"Find out about qualified teacher status\") \n\n### This might not be the
           right qualification if you want to:\n- teach in secondary schools\n- teach
           in sixth form colleges\n- take a basic course to see if FE is really for
           you\n\n### Integrated Specialist Diploma\n\nYou can also choose to specialise
           in one of 3 Specialist Pathway areas of teaching:\n\n- special educational
           needs\n- English literacy\n- English for speakers of other languages (ESOL)\n-
-          mathematics\n\nTo teach English or mathematics you need at least a Level
+          mathematics\n\nTo teach English or mathematics you need at least a level
           3 qualification in the subject.\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
           \"Explanation of the different educational attainment levels\")\n\n|               |
           \                   |\n|---------------|--------------------|\n| __Course
@@ -260,7 +286,7 @@
           \"Explanation of the different educational attainment levels\") |"
         :display_order: true
         :apply_background_color: false
-        :show_title: true
+        :show_title: false
       :call_to_actions:
       - :id: 4jG2PspMQXj2hxNwIzNLfN
         :_meta:
@@ -289,52 +315,10 @@
       :heading: 2 results…
       :slug: results-degree-or-above
       :blocks:
-      - :id: 25yMNwz2gtajH4nyW6upyY
-        :_meta:
-          :content_type_id: advice
-          :updated_at: '2021-07-23T08:22:15+00:00'
-          :created_at: '2021-05-14T10:56:36+00:00'
-          :id: 25yMNwz2gtajH4nyW6upyY
-        :title: Diploma in Education and Training
-        :advice_body: "This Level 5 qualification lets you teach most trades, skills
-          and subjects in further education (FE).\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
-          \"Explanation of the different educational attainment levels\")\n\n### This
-          qualification is good if you want to:\n\n- train part time or on the job\n-
-          teach without a degree in your subject\n- get a full teaching qualification
-          but keeping costs to a minimum\n- [qualify for a bursary](https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2020-to-2021-academic-year
-          \"UK bursary information 2020-21\")\n- [get Qualified Teacher in Learning
-          and Skills Status (QTLS) once you've qualified](https://set.et-foundation.co.uk/professional-status/qtls
-          \"Find out about qualified teacher status\") \n\n### This might not be the
-          right qualification if you want to:\n- teach in secondary schools\n- teach
-          in sixth form colleges\n- take a basic course to see if FE is really for
-          you\n\n### Integrated Specialist Diploma\n\nYou can also choose to specialise
-          in one of 3 Specialist Pathway areas of teaching:\n\n- special educational
-          needs\n- English literacy\n- English for speakers of other languages (ESOL)\n-
-          mathematics\n\nTo teach English or mathematics you need at least a Level
-          3 qualification in the subject.\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
-          \"Explanation of the different educational attainment levels\")\n\n|               |
-          \                   |\n|---------------|--------------------|\n| __Course
-          structure__       | 100 hours of teaching practice, including 50 in your
-          chosen area if you are on a Specialist Pathway |\n| __Level of qualification
-          you will get__ | Level 5 (Degree level). You can also take this course with
-          a levels 6 or 7 qualification. [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
-          \"Explanation of the different educational attainment levels\") |\n| __Area
-          of education__ (Primary, Secondary, FE) | FE only\n| __Teaching status__
-          \ | Full FE teaching qualification. Can lead to [QTLS in FE](https://set.et-foundation.co.uk/professional-status/qtls
-          \"Find out about qualified teacher status\")    |\n| __Cost__ (varies by
-          provider) | up to £6,000     |\n| __Course length__ | 1 to 2 years, full
-          time or part time      |\n| __Entry requirements__ | An assessment of your
-          English, mathematics and ICT skills. If you are on a specialist pathway
-          for mathematics or English, you'll need at least a level 3 qualification
-          in the subject. [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
-          \"Explanation of the different educational attainment levels\") |"
-        :display_order: true
-        :apply_background_color: false
-        :show_title: true
       - :id: 5FbxLwEjMguAEiyxkmTuka
         :_meta:
           :content_type_id: advice
-          :updated_at: '2021-07-20T11:07:19+00:00'
+          :updated_at: '2021-08-06T11:21:14+00:00'
           :created_at: '2021-05-14T11:04:25+00:00'
           :id: 5FbxLwEjMguAEiyxkmTuka
         :title: Post Graduate Certificate in Education,  Post Compulsory Education
@@ -347,7 +331,7 @@
           if you want to:\n- train full or part time\n- train in FE colleges\n- [qualify
           for a bursary](https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2020-to-2021-academic-year
           \"UK teacher training bursaries 2021\")\n- [get Qualified Teacher Learning
-          and Skills Status (QTLS) once you've qualified](https://set.et-foundation.co.uk/professional-status/qtls
+          and Skills Status (QTLS) once you've finished the course](https://set.et-foundation.co.uk/professional-status/qtls
           \"Find out about qualified teacher status\") \n\n### This might not be the
           right qualification if you want to:\n- teach or train in secondary schools
           or sixth form colleges (visit [Get in to Teaching](https://getintoteaching.education.gov.uk
@@ -361,7 +345,9 @@
           \"Find out about qualified teacher status\") |\n| __Cost__ (varies by provider)|
           Up to £9,000 if self-funded (some providers offer a bursary or scholarship)|\n|
           __Course length__ | 1 year full time |\n| __Entry requirements__ | Degree
-          or equivalent, and English and mathematics GCSEs grade 4 (C) or above |"
+          or equivalent, and English and mathematics GCSEs grade 4 (C) or above |\n\n[Find
+          a post-graduate teaching course](https://www.find-postgraduate-teacher-training.service.gov.uk/
+          \"Government post-graduate teaching courses finder\")"
         :display_order: true
         :apply_background_color: false
         :show_title: true
@@ -375,3 +361,15 @@
         :title: Back
         :slug: "/experience-and-qualifications"
         :cta_type: Primary
+- :id: 2C22TEQvPFHAAef6z96a1x
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-07-06T12:53:42+00:00'
+    :created_at: '2021-07-06T12:53:42+00:00'
+    :id: 2C22TEQvPFHAAef6z96a1x
+  :title: Full list of quals link
+  :advice_body: '[A full list of all FE courses is also available.](/full-list-of-fe-qualifications.html
+    "Full list of FE qualifications")'
+  :display_order: true
+  :apply_background_color: false
+  :show_title: false
