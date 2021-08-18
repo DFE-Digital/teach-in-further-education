@@ -29,4 +29,3 @@ describe 'Question component', :type => :feature do
       end
     end
   end
-  
