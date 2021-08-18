@@ -69,5 +69,21 @@ describe 'Find an fe teaching job components', :type => :feature do
       within link do 
         expect(link[:href]).to eq 'https://www.gov.uk/tell-employer-or-college-about-criminal-record'
       end
+      link = page.find_link("Association of colleges job site")
+      within link do 
+        expect(link[:href]).to eq 'https://www.aocjobs.com/'
+      end
+      link = page.find_link("TES - Times Educational Supplement job site")
+      within link do 
+        expect(link[:href]).to eq 'https://www.tes.com/jobs/browse/further-education-teaching-and-lecturing'
+      end
+      link = page.find_link("Further Education job site")
+      within link do 
+        expect(link[:href]).to eq 'https://www.fejobs.com/career-advice'
+      end
+      link = page.find_link("College Jobs")
+      within link do 
+        expect(link[:href]).to eq 'https://college.jobs.ac.uk/'
+      end
     end
 end
