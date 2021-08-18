@@ -65,7 +65,7 @@ describe 'Find an fe teaching job components', :type => :feature do
       within link do 
         expect(link[:href]).to eq 'https://www.aocjobs.com/employers-a-z'
       end
-      link = page.find_link("You might not be able to work as an FE teacher if you have commited certain offences or have unspent criminal convictions.")
+      link = page.find_link("You might not be able to work as an FE teacher if you have commited certain offences or have unspent criminal convictions")
       within link do 
         expect(link[:href]).to eq 'https://www.gov.uk/tell-employer-or-college-about-criminal-record'
       end
