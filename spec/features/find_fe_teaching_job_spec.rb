@@ -23,6 +23,18 @@ describe 'Find an fe teaching job components', :type => :feature do
         has_css? 'govuk-heading-l', count: 1
         has_css? 'govuk-body', count: 2
       end
+      backgroundElement = page.find_by_id("5qnWPcfMwkXv2d8ZSYmkrM")
+      within backgroundElement do 
+        has_css? 'govuk-heading-l', count: 1
+        has_css? 'govuk-body', count: 2
+      end
+      findAJobElement = page.find_by_id("3Vcwz7UfYGsdI7gkI4iWgh")
+      within findAJobElement do 
+        has_css? 'govuk-heading-l', count: 1
+        has_css? 'govuk-list govuk-list--bullet', count: 1
+        has_css? 'govuk-body', count: 6
+        has_css? 'li', count: 2
+      end
     end
 
     it "should have correct classes" do
@@ -34,11 +46,15 @@ describe 'Find an fe teaching job components', :type => :feature do
       within academicSubjectsElement do
         expect(academicSubjectsElement[:class]).to eq "app-advice "
       end
-      chooseYourQualificationElement = page.find_by_id("1xTlxAkJL5DzPuOCDYOsQG")
+      chooseYourQualificationElement = page.find_by_id("5sdBDktTAPtjx0YlzHUdGD")
       within chooseYourQualificationElement do
         expect(chooseYourQualificationElement[:class]).to eq "app-advice "
       end
-      listofCoursesElement = page.find_by_id("2C22TEQvPFHAAef6z96a1x")
+      listofCoursesElement = page.find_by_id("5qnWPcfMwkXv2d8ZSYmkrM")
+      within listofCoursesElement do
+        expect(listofCoursesElement[:class]).to eq "app-advice "
+      end
+      listofCoursesElement = page.find_by_id("3Vcwz7UfYGsdI7gkI4iWgh")
       within listofCoursesElement do
         expect(listofCoursesElement[:class]).to eq "app-advice "
       end
@@ -49,9 +65,9 @@ describe 'Find an fe teaching job components', :type => :feature do
       within link do 
         expect(link[:href]).to eq 'https://www.aocjobs.com/employers-a-z'
       end
-      link = page.find_link("There are bursaries available for some subjects.")
+      link = page.find_link("You might not be able to work as an FE teacher if you have commited certain offences or have unspent criminal convictions.")
       within link do 
-        expect(link[:href]).to eq 'https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2020-to-2021-academic-year'
+        expect(link[:href]).to eq 'https://www.gov.uk/tell-employer-or-college-about-criminal-record'
       end
     end
 end
