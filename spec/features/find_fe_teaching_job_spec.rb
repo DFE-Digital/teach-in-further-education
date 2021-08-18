@@ -38,25 +38,25 @@ describe 'Find an fe teaching job components', :type => :feature do
     end
 
     it "should have correct classes" do
-      skillsTradesElement = page.find_by_id("3J3oEV3PF62bJRcXhpLDOH")
-      within skillsTradesElement do
-        expect(skillsTradesElement[:class]).to eq "app-advice "
+      feProvidersElement = page.find_by_id("3J3oEV3PF62bJRcXhpLDOH")
+      within feProvidersElement do
+        expect(feProvidersElement[:class]).to eq "app-advice "
       end
-      academicSubjectsElement = page.find_by_id("1TvwovJDqZuFg4Eqwx4Bu2")
-      within academicSubjectsElement do
-        expect(academicSubjectsElement[:class]).to eq "app-advice "
+      learnWhileYouLearnElement = page.find_by_id("1TvwovJDqZuFg4Eqwx4Bu2")
+      within learnWhileYouLearnElement do
+        expect(learnWhileYouLearnElement[:class]).to eq "app-advice "
       end
-      chooseYourQualificationElement = page.find_by_id("5sdBDktTAPtjx0YlzHUdGD")
-      within chooseYourQualificationElement do
-        expect(chooseYourQualificationElement[:class]).to eq "app-advice "
+      carreerChangersElement = page.find_by_id("5sdBDktTAPtjx0YlzHUdGD")
+      within carreerChangersElement do
+        expect(carreerChangersElement[:class]).to eq "app-advice "
       end
-      listofCoursesElement = page.find_by_id("5qnWPcfMwkXv2d8ZSYmkrM")
-      within listofCoursesElement do
-        expect(listofCoursesElement[:class]).to eq "app-advice "
+      backgroundElement = page.find_by_id("5qnWPcfMwkXv2d8ZSYmkrM")
+      within backgroundElement do
+        expect(backgroundElement[:class]).to eq "app-advice "
       end
-      listofCoursesElement = page.find_by_id("3Vcwz7UfYGsdI7gkI4iWgh")
-      within listofCoursesElement do
-        expect(listofCoursesElement[:class]).to eq "app-advice "
+      findAJobElement = page.find_by_id("3Vcwz7UfYGsdI7gkI4iWgh")
+      within findAJobElement do
+        expect(findAJobElement[:class]).to eq "app-advice "
       end
     end
 
