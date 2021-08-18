@@ -39,7 +39,6 @@ export function submitQuestionForm(e) {
 }
 
 
-
 window.site = {
     initSite,
     onShowStep,
