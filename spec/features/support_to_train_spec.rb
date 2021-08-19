@@ -1,22 +1,20 @@
 require 'spec_helper'
 
-describe 'Experience and Qualifications components', :type => :feature do
+describe ' components', :type => :feature do
     before do
       visit '/financial-support-to-train.html'
     end
 
     it "should have correct elements" do
       trainingOnTheJobElement = page.find_by_id("5cu3CALGtvPugA7rbdsPwW")
-      within skillsTradesElement do 
+      within trainingOnTheJobElement do 
         has_css? 'govuk-heading-l', count: 1
-        has_css? 'govuk-heading-m', count: 1
         has_css? 'govuk-body', count: 7
       end
-      academicSubjectsElement = page.find_by_id("e0XCvhr4XVEtz0N0hZMCf")
-      within academicSubjectsElement do 
+      trainBeforeYouApplyElement = page.find_by_id("12qLcJTqyRLLx3q5FjUBVA")
+      within trainBeforeYouApplyElement do 
         has_css? 'govuk-heading-l', count: 1
-        has_css? 'govuk-heading-s', count: 1
-        has_css? 'govuk-body', count: 2
+        has_css? 'govuk-body', count: 3
       end
       chooseYourQualificationElement = page.find_by_id("1xTlxAkJL5DzPuOCDYOsQG")
       within chooseYourQualificationElement do 
@@ -28,13 +26,15 @@ describe 'Experience and Qualifications components', :type => :feature do
     end
 
     it "should have correct classes" do
-      skillsTradesElement = page.find_by_id("2dSAy6Mk1OlBMIiVDcPJ0u")
-      within skillsTradesElement do
-        expect(skillsTradesElement[:class]).to eq "app-advice "
+      trainingOnTheJobElement = page.find_by_id("5cu3CALGtvPugA7rbdsPwW")
+      within trainingOnTheJobElement do
+        expect(trainingOnTheJobElement[:class]).to eq "app-advice "
+        have_selector 'http://images.ctfassets.net/n4docnlbw89d/lza5filA0VlqXNUB0X7HJ/6132507391a068275e4412dc6c05fd98/EarnWhileYouLearn.png?w=475'
       end
-      academicSubjectsElement = page.find_by_id("e0XCvhr4XVEtz0N0hZMCf")
-      within academicSubjectsElement do
-        expect(academicSubjectsElement[:class]).to eq "app-advice "
+      trainBeforeYouApplyElement = page.find_by_id("12qLcJTqyRLLx3q5FjUBVA")
+      within trainBeforeYouApplyElement do
+        expect(trainBeforeYouApplyElement[:class]).to eq "app-advice "
+        have_selector 'http://images.ctfassets.net/n4docnlbw89d/xrbpAnsDT493GYrkv5yL5/8cd895925fecfbc818fe6cb5ae6edf87/TrainingBeforeWork.png?w=475'
       end
       chooseYourQualificationElement = page.find_by_id("1xTlxAkJL5DzPuOCDYOsQG")
       within chooseYourQualificationElement do
