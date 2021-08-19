@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe ' components', :type => :feature do
+describe 'Financial support to train components', :type => :feature do
     before do
       visit '/financial-support-to-train.html'
     end
@@ -42,7 +42,7 @@ describe ' components', :type => :feature do
         expect(availableFundingElement[:class]).to eq "app-advice "
       end
     end
-t
+    
     it "links should re-direct to expected urls" do
       link = page.find_link("You may be eligible to apply for a student loan to help pay for the course fees", match: :first)
       within link do 
