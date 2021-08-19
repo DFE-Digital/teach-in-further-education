@@ -42,7 +42,7 @@ describe 'Financial support to train components', :type => :feature do
         expect(availableFundingElement[:class]).to eq "app-advice "
       end
     end
-    
+
     it "links should re-direct to expected urls" do
       link = page.find_link("You may be eligible to apply for a student loan to help pay for the course fees", match: :first)
       within link do 
@@ -57,4 +57,4 @@ describe 'Financial support to train components', :type => :feature do
         expect(link[:href]).to eq 'https://www.gov.uk/government/publications/fe-funding-initial-teacher-education-ite-academic-year-2020-to-2021'
       end
     end
-end
+  end
