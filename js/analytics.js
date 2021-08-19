@@ -8,6 +8,14 @@ export class Analytics {
         });
     }
 
+    internalNavigation(hashLink, title) {
+        gtag('event', 'page_view', {
+            page_title: title,
+            page_location: window.location.href,
+            page_path: window.location.pathname + '#' + title.replace(' ', '-')
+        })
+    }
+
     raiseQuestionSelected(questionText) {
         this.sendAnalytics('question', 'selected', questionText)
     }

@@ -24,6 +24,8 @@ module MarkdownHelper
         %(<h3 class="govuk-heading-m">#{text.strip}</h3>)
       when 4
         %(<h4 class="govuk-heading-s">#{text.strip}</h4>)
+      when 5
+        %(<h5 class="govuk-heading-s">#{text.strip}</h5>)
       else
         %(<h4>#{text.strip}</h4>)
       end
