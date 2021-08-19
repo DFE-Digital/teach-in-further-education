@@ -7,7 +7,7 @@ describe 'Footer', :type => :feature do
 
     it 'can render a link' do
        link = page.find_by_id('feedback')
-       expect(link[:href]).to match '.*feedback\.html'
+       expect(link[:href]).to match 'https://forms.gle/93nLpM6mqt5tvRmk8'
     end
 
     it 'renders gov uk copyright link' do 

@@ -2,9 +2,9 @@
 <div id="<%= data.id %>" class="app-advice <%= data.apply_background_color ? "shaded" : "" %>">
   <% if !data.media.nil? %>
     <% if data.display_order %>
-      <div class="app-advice-with-image">
-        <div style="padding-right: 20px">
-          <%= partial "image", :locals => { :data => data.media, :breakpoints => breakpoints } %>
+      <div class="app-advice-with-image-1">
+        <div class="app-image-1">
+          <%= partial "image", :locals => { :data => data.media, :breakpoints => breakpoints}%>
         </div>
         <div>
           <% if data.show_title %>
@@ -16,7 +16,7 @@
         </div>
       </div>
     <% else %>
-      <div class="app-advice-with-image">
+      <div class="app-advice-with-image-2">
         <div>
           <% if data.show_title %>
             <h2 class="govuk-heading-l"><%= data.title %></h2>
@@ -25,7 +25,7 @@
             <%= markdown(data.advice_body) %>
           <% end %>
         </div>
-        <div style="padding-left: 20px">
+        <div class="app-image-2">
           <%= partial "image", :locals => { :data => data.media, :breakpoints => breakpoints } %>
         </div>
       </div>

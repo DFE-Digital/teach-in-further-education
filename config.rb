@@ -11,6 +11,7 @@ activate :contentful do |f|
   f.space         = { site: ENV['CONTENTFUL_SPACE_ID'] }
   f.access_token  = ENV['CONTENTFUL_DELIVERY_TOKEN']
   f.content_types = {pages: "page", navs: "navigation"}
+  f.client_options = { environment: ENV['CONTENTFUL_ENVIRONMENT']}
 end
 
 activate :autoprefixer do |prefix|

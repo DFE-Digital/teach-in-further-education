@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="aa8e734b-c4a3-4e57-8d40-01479903b656" name="Default Changelist" comment="Header tweaks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/current.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/site.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_header.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/_header.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/javascripts/all.js" beforeDir="false" afterPath="$PROJECT_DIR$/source/javascripts/all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/layouts/layout.erb" beforeDir="false" afterPath="$PROJECT_DIR$/source/layouts/layout.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/stylesheets/site.css.sass" beforeDir="false" afterPath="$PROJECT_DIR$/source/stylesheets/site.css.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
