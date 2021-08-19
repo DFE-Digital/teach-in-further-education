@@ -27,6 +27,7 @@ jobs:
         uses: contentful-userland/contentful-action@main
         with:
           delete_feature: true
+          feature_pattern: "prod-feat-[branch]"
           master_pattern: "production-[YYYY][MM][DD][hh][mm]"
           migrations_dir: "contentful/migrations"
           version_field: "version"
