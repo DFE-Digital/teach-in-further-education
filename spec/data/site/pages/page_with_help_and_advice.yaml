@@ -1,0 +1,67 @@
+---
+:id: 6qhlSowYQyDegYs3FxSiLN
+:_meta:
+  :content_type_id: page
+  :updated_at: '2021-07-27T12:39:32+00:00'
+  :created_at: '2021-05-18T08:50:27+00:00'
+  :id: 6qhlSowYQyDegYs3FxSiLN
+:title: Help and advice
+:preamble: 'There is no single way to start a career in further education (FE) teaching.
+  Our email advice service can help support you on your personal journey. '
+:heading: Help and advice
+:slug: help-and-advice
+:blocks:
+- :id: 4CvK0Ica4yZWT5FYtTZdWZ
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-07-27T12:39:23+00:00'
+    :created_at: '2021-05-18T08:25:13+00:00'
+    :id: 4CvK0Ica4yZWT5FYtTZdWZ
+  :title: How we can help
+  :advice_body: |-
+    Our advisors will understand your personal situation and help you to explore:
+
+    - if a career in FE could work for you
+    - any gaps in your qualification or skills that need to be addressed
+    - your teaching qualification options
+    - your timeline to study or apply
+  :display_order: false
+  :apply_background_color: false
+  :show_title: true
+- :id: 6UkTGPOiLhwqP34pJGveU3
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-08-06T11:23:22+00:00'
+    :created_at: '2021-05-18T08:25:29+00:00'
+    :id: 6UkTGPOiLhwqP34pJGveU3
+  :title: About our advisors
+  :advice_body: 'Our advisors understand the different routes into teaching that people
+    may need to take and can give you detailed information based on your personal
+    circumstances, experience and goals.
+
+    '
+  :display_order: false
+  :apply_background_color: false
+  :show_title: true
+- :id: 44g2WLYJyWiyj65vmglyZy
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-07-28T15:11:43+00:00'
+    :created_at: '2021-07-13T12:07:56+00:00'
+    :id: 44g2WLYJyWiyj65vmglyZy
+  :title: Contact us
+  :advice_body: |-
+    Email: <a href="mailto:Teach.FE@education.gov.uk">Teach.FE@education.gov.uk</a>
+
+    We aim to get back to you within 5 working days.
+  :media:
+    :title: Help and advice
+    :description: 
+    :url: "//images.ctfassets.net/n4docnlbw89d/3E26qZv6tkg9xfz6YKELoY/551868e774800f6399b71a944466c664/Helpandadvice.png"
+    :_meta:
+      :updated_at: '2021-07-15T10:21:56+00:00'
+      :created_at: '2021-07-13T12:15:10+00:00'
+      :id: 3E26qZv6tkg9xfz6YKELoY
+  :display_order: false
+  :apply_background_color: false
+  :show_title: true
