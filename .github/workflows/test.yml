@@ -91,6 +91,7 @@ jobs:
       - shell: bash
         run: |
           cp manifest-test.yml build/manifest.yml
+          cp Staticfile.auth build/Staticfile.auth
           cp nginx.conf build/nginx.conf
 
       - name: Upload build artifacts
