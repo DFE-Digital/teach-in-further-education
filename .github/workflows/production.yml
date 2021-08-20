@@ -74,7 +74,6 @@ jobs:
       - shell: bash
         run: |
           cp manifest-prod.yml build/manifest.yml
-          cp Staticfile.auth build/Staticfile.auth
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v2
