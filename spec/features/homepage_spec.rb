@@ -29,11 +29,17 @@ describe 'Homepage components', :type => :feature do
         has_css? 'govuk-body', count: 1
         have_selector 'http://images.ctfassets.net/n4docnlbw89d/3peXZu7e1XH6fxoyYGK32T/532edee87108d14079d125ba89a27b25/paid-holiday.png?w=150'
       end
-      trainOnTheJobElement = page.find_by_id("1GQKTeUn3joIfjBLS0gowy")
-      within trainOnTheJobElement do 
+      flexibleHoursElement = page.find_by_id("4A8XRFwHX6NkOpW9rVJkvG")
+      within flexibleHoursElement do 
         has_css? 'govuk-heading-s', count: 1
         has_css? 'govuk-body', count: 1
-        have_selector 'http://images.ctfassets.net/n4docnlbw89d/4WR8LyTybbtdzXNOxGTMkR/baac35db26b85e8bd96f5da1deae03a2/paid-Icon.png?w=150'
+        have_selector 'http://images.ctfassets.net/n4docnlbw89d/1tyxPQ6M3MlRqTKZVZAk59/a694496567f7ec882d6f3ab96579689e/flexible-working.png?w=150'
+      end
+      mechanicsImageElement = page.find_by_id("4cFjarRBPKWpHy8KPITiHp")
+      within flexibleHoursElement do 
+        has_css? 'govuk-heading-s', count: 1
+        has_css? 'govuk-body', count: 1
+        have_selector 'http://images.ctfassets.net/n4docnlbw89d/1tyxPQ6M3MlRqTKZVZAk59/a694496567f7ec882d6f3ab96579689e/flexible-working.png?w=150'
       end
     end
 
