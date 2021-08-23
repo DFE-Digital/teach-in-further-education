@@ -12,6 +12,7 @@ describe 'Homepage components', :type => :feature do
         has_css? 'govuk-body', count: 3
         has_css? 'govuk-list govuk-list--bullet', count: 1
         has_css? 'li', count: 2
+        has_css? 'govuk-link', count: 1
       end
       rewardsOfTeachingElement = page.find_by_id("6nmrZe3Zt8nCaqpHLZp6p0")
       within rewardsOfTeachingElement do 
@@ -45,13 +46,7 @@ describe 'Homepage components', :type => :feature do
         has_css? 'govuk-body', count: 2
         have_selector 'http://images.ctfassets.net/n4docnlbw89d/7ejtw2cz4ilNditvMdrh68/93c2e1cc97ac7d9c02bc5a4a0dce2a01/AgricultureLearning2.png?w=475'
       end
-      findOutMoreLink = page.find_by_id("4O492AKnu5lurQfjr3Mnt4")
-      within findOutMoreLink do 
-        has_css? 'govuk-body', count: 1
-        has_css? 'govuk-link', count: 1
-        expect(link[:href]).to eq 'http://localhost:4567/guide-to-further-education.html'
-      end
-    end
+  end
 
     it "should have correct classes" do
       youDoNotNeedADegreeElement = page.find_by_id("11nV0pkqrJOxP6o2F7KVGx")
@@ -81,27 +76,6 @@ describe 'Homepage components', :type => :feature do
       agricultureImageElement = page.find_by_id("ocv0Q8ArIy3v0dUyNDIGB")
       within agricultureImageElement do
         expect(agricultureImageElement[:class]).to eq "app-story"
-      end
-    end
-
-    it "links should re-direct to expected urls" do
-      link = page.find_link("Teach.FE@education.gov.uk")
-      within link do 
-        expect(link[:href]).to eq 'mailto:Teach.FE@education.gov.uk'
-      end
-      link = page.find_link("Find out if you could teach in FE")
-      within link do 
-        expect(link[:href]).to eq 'http://localhost:4567/guide-to-further-education.html'
-      end
-      link = page.find_link("Find out more about teaching in FE")
-      within link do 
-        expect(link[:href]).to eq 'http://localhost:4567/guide-to-further-education.html'
-      end
-    end
-
-    it "Requests should be successful" do
-      page.driver.get("/http://localhost:4567/guide-to-further-education.html")
-      page.driver.status_code.should eql 200
       end
     end
   end
