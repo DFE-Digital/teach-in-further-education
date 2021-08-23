@@ -69,16 +69,16 @@ jobs:
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
           CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.outputs.environment_name }}
 
-      - name: Run tests
-        run: |
-          MM_DATA_DIR=spec/data bundle exec rspec --pattern spec/features/*_spec.rb  --format RSpec::Github::Formatter  --format progress --format documentation --out ${{ github.workspace }}/out/site-features.txt
-
-      - name: Save unit tests results
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: unit_test_results
-          path: ${{ github.workspace }}/out/site-*.txt
+#      - name: Run tests
+#        run: |
+#          MM_DATA_DIR=spec/data bundle exec rspec --pattern spec/features/*_spec.rb  --format RSpec::Github::Formatter  --format progress --format documentation --out ${{ github.workspace }}/out/site-features.txt
+#
+#      - name: Save unit tests results
+#        if: always()
+#        uses: actions/upload-artifact@v2
+#        with:
+#          name: unit_test_results
+#          path: ${{ github.workspace }}/out/site-*.txt
 
       - name: Building middleman site
         run: bundle exec middleman build --verbose
@@ -91,6 +91,7 @@ jobs:
       - shell: bash
         run: |
           cp manifest-dev.yml build/manifest.yml
+          cp nginx.conf build/nginx.conf
           cp Staticfile build/Staticfile
           cp Staticfile.auth build/Staticfile.auth
 
