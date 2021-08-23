@@ -73,6 +73,7 @@ jobs:
 
       - shell: bash
         run: |
+          cp Staticfile build/Staticfile
           cp manifest-prod.yml build/manifest.yml
 
       - name: Upload build artifacts
