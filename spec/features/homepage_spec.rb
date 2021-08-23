@@ -45,20 +45,42 @@ describe 'Homepage components', :type => :feature do
         has_css? 'govuk-body', count: 2
         have_selector 'http://images.ctfassets.net/n4docnlbw89d/7ejtw2cz4ilNditvMdrh68/93c2e1cc97ac7d9c02bc5a4a0dce2a01/AgricultureLearning2.png?w=475'
       end
+      findOutMoreLink = page.find_by_id("4O492AKnu5lurQfjr3Mnt4")
+      within findOutMoreLink do 
+        has_css? 'govuk-body', count: 1
+        has_css? 'govuk-link', count: 1
+        expect(link[:href]).to eq 'http://localhost:4567/guide-to-further-education.html'
+      end
     end
 
     it "should have correct classes" do
       youDoNotNeedADegreeElement = page.find_by_id("11nV0pkqrJOxP6o2F7KVGx")
       within youDoNotNeedADegreeElement do
-        expect(youDoNotNeedADegreeElement[:class]).to eq "app-advice "
+        expect(youDoNotNeedADegreeElement[:class]).to eq "app-advice shaded"
       end
-      aboutOurAdvisorsElement = page.find_by_id("6UkTGPOiLhwqP34pJGveU3")
-      within aboutOurAdvisorsElement do
-        expect(aboutOurAdvisorsElement[:class]).to eq "app-advice "
+      rewardsOfTeachingElement = page.find_by_id("6nmrZe3Zt8nCaqpHLZp6p0")
+      within rewardsOfTeachingElement do
+        expect(rewardsOfTeachingElement[:class]).to eq "app-columns-wrapper"
       end
-      contactUsElement = page.find_by_id("44g2WLYJyWiyj65vmglyZy")
-      within contactUsElement do
-        expect(contactUsElement[:class]).to eq "app-advice "
+      trainOnTheJobElement = page.find_by_id("1GQKTeUn3joIfjBLS0gowy")
+      within trainOnTheJobElement do
+        expect(trainOnTheJobElement[:class]).to eq "app-summary"
+      end
+      paidHolidayElement = page.find_by_id("4E3RnU57icaehTEYTxfodo")
+      within paidHolidayElement do
+        expect(paidHolidayElement[:class]).to eq "app-summary"
+      end
+      flexibleHoursElement = page.find_by_id("4A8XRFwHX6NkOpW9rVJkvG")
+      within flexibleHoursElement do
+        expect(flexibleHoursElement[:class]).to eq "app-summary"
+      end
+      mechanicsImageElement = page.find_by_id("4cFjarRBPKWpHy8KPITiHp")
+      within mechanicsImageElement do
+        expect(mechanicsImageElement[:class]).to eq "app-story"
+      end
+      agricultureImageElement = page.find_by_id("ocv0Q8ArIy3v0dUyNDIGB")
+      within agricultureImageElement do
+        expect(agricultureImageElement[:class]).to eq "app-story"
       end
     end
 
@@ -67,10 +89,18 @@ describe 'Homepage components', :type => :feature do
       within link do 
         expect(link[:href]).to eq 'mailto:Teach.FE@education.gov.uk'
       end
+      link = page.find_link("Find out if you could teach in FE")
+      within link do 
+        expect(link[:href]).to eq 'http://localhost:4567/guide-to-further-education.html'
+      end
+      link = page.find_link("Find out more about teaching in FE")
+      within link do 
+        expect(link[:href]).to eq 'http://localhost:4567/guide-to-further-education.html'
+      end
     end
 
     it "Requests should be successful" do
-      page.driver.post("/log?upload_path=")
+      page.driver.get("/http://localhost:4567/guide-to-further-education.html")
       page.driver.status_code.should eql 200
       end
     end
