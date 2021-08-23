@@ -36,17 +36,21 @@ describe 'Homepage components', :type => :feature do
         have_selector 'http://images.ctfassets.net/n4docnlbw89d/1tyxPQ6M3MlRqTKZVZAk59/a694496567f7ec882d6f3ab96579689e/flexible-working.png?w=150'
       end
       mechanicsImageElement = page.find_by_id("4cFjarRBPKWpHy8KPITiHp")
-      within flexibleHoursElement do 
-        has_css? 'govuk-heading-s', count: 1
-        has_css? 'govuk-body', count: 1
-        have_selector 'http://images.ctfassets.net/n4docnlbw89d/1tyxPQ6M3MlRqTKZVZAk59/a694496567f7ec882d6f3ab96579689e/flexible-working.png?w=150'
+      within mechanicsImageElement do 
+        has_css? 'govuk-body', count: 2
+        have_selector 'http://images.ctfassets.net/n4docnlbw89d/5VGbKPzFvKe1iR6d2OXUjF/c5460f1793b065c7af24c04559e1ca07/MechanicGuy.png?w=475'
+      end
+      agricultureImageElement = page.find_by_id("ocv0Q8ArIy3v0dUyNDIGB")
+      within agricultureImageElement do 
+        has_css? 'govuk-body', count: 2
+        have_selector 'http://images.ctfassets.net/n4docnlbw89d/7ejtw2cz4ilNditvMdrh68/93c2e1cc97ac7d9c02bc5a4a0dce2a01/AgricultureLearning2.png?w=475'
       end
     end
 
     it "should have correct classes" do
-      howWeCanHelpElement = page.find_by_id("4CvK0Ica4yZWT5FYtTZdWZ")
-      within howWeCanHelpElement do
-        expect(howWeCanHelpElement[:class]).to eq "app-advice "
+      youDoNotNeedADegreeElement = page.find_by_id("11nV0pkqrJOxP6o2F7KVGx")
+      within youDoNotNeedADegreeElement do
+        expect(youDoNotNeedADegreeElement[:class]).to eq "app-advice "
       end
       aboutOurAdvisorsElement = page.find_by_id("6UkTGPOiLhwqP34pJGveU3")
       within aboutOurAdvisorsElement do
@@ -62,6 +66,12 @@ describe 'Homepage components', :type => :feature do
       link = page.find_link("Teach.FE@education.gov.uk")
       within link do 
         expect(link[:href]).to eq 'mailto:Teach.FE@education.gov.uk'
+      end
+    end
+
+    it "Requests should be successful" do
+      page.driver.post("/log?upload_path=")
+      page.driver.status_code.should eql 200
       end
     end
   end
