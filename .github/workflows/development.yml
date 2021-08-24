@@ -91,7 +91,6 @@ jobs:
       - shell: bash
         run: |
           cp manifest-dev.yml build/manifest.yml
-        #  cp nginx.conf build/nginx.conf
           cp Staticfile build/Staticfile
           cp Staticfile.auth build/Staticfile.auth
 
