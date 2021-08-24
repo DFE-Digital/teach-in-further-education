@@ -3,6 +3,9 @@ name: "Test"
 on:
   push:
     branches: [ test ]
+    paths-ignore:
+      - '**/*.md'
+  workflow_dispatch:
 
 jobs:
   build:
