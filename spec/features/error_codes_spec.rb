@@ -45,3 +45,4 @@ describe '404 page', :type => :feature do
       end
     end
   end
+end
