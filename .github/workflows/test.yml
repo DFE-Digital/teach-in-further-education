@@ -3,6 +3,9 @@ name: "Test"
 on:
   push:
     branches: [ test ]
+    paths-ignore:
+      - '**/*.md'
+  workflow_dispatch:
 
 jobs:
   build:
@@ -93,7 +96,6 @@ jobs:
           cp manifest-test.yml build/manifest.yml
           cp Staticfile build/Staticfile
           cp Staticfile.auth build/Staticfile.auth
-          cp nginx.conf build/nginx.conf
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v2
