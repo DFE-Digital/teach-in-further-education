@@ -1,5 +1,5 @@
 <div id="<%= data.id %>" class="app-question">
-<h1 class="govuk-heading-l"><%= data.question_text %></h1>
+<h2 class="govuk-heading-l"><%= data.question_text %></h2>
 
 <form id="<%= "question-" + data.id %>">
 
@@ -20,7 +20,7 @@
           <% end %>
           <% if data.render_as[0] == "Radio button" %>
             <span id="error-message" class="govuk-error-message govuk-visually-hidden">
-              <span class="govuk-visually-hidden">Error:</span> Choose your highest educational qualification from the list below:
+              <span class="govuk-visually-hidden">Error:</span> Select your highest educational qualification
             </span>
             <div class="govuk-radios">
               <% data.answers.each_with_index do |a,i| %>

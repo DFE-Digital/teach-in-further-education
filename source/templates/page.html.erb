@@ -8,13 +8,15 @@
 </div>
 <% end %>
 
-<% page.blocks.each_with_index do |b, i| %>
-  <%= partial "block", :locals => { :block => b, :index => i, :page => page } %>
-<% end %>
-<% if !page.call_to_actions.nil? %>
-  <div>
-    <% page.call_to_actions.each do |c| %>
-      <%= partial("cta", :locals => { :data => c }) %>
-    <% end %>
-  </div>
+<% if !page.blocks.nil? %>
+  <% page.blocks.each_with_index do |b, i| %>
+    <%= partial "block", :locals => { :block => b, :index => i, :page => page } %>
+  <% end %>
+  <% if !page.call_to_actions.nil? %>
+    <div>
+      <% page.call_to_actions.each do |c| %>
+        <%= partial("cta", :locals => { :data => c }) %>
+      <% end %>
+    </div>
+  <% end %>
 <% end %>
