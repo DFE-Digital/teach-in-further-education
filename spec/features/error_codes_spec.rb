@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'Find an fe teaching job components', :type => :feature do
+describe '404 page', :type => :feature do
   before do
     visit '/404.html'
   end
@@ -18,4 +18,10 @@ describe 'Find an fe teaching job components', :type => :feature do
       expect(skillsTradesElement[:class]).to eq "app-advice "
     end
   end
+
+  it "link should re-direct to expected url" do
+    link = page.find_link("Go to our homepage.")
+    within link do 
+      expect(link[:href]).to eq 'https://www.teach-in-further-education.campaign.gov.uk/'
+    end
 end
