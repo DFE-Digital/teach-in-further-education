@@ -25,10 +25,10 @@
             <div class="govuk-radios">
               <% data.answers.each_with_index do |a,i| %>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="<% a.id %>" name="answer" type="radio" value="<%= a.link.slug %>">
-                  <label class="govuk-label govuk-radios__label" for="answer">
+                  <input class="govuk-radios__input" id="<% a.id %>" name="answer" type="radio" value="<%= a.link.slug %>" aria-label="<%= a.answer %>">
+                  <label class="govuk-label govuk-radios__label" id="<% a.id %>_label" for="answer" aria-hidden="true">
                     <%= a.answer %>
-                  </label>
+                  </label>   
                 </div>
               <% end %>
             </div>
