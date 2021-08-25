@@ -15,7 +15,7 @@ describe '404 page', :type => :feature do
   it "should have correct classes" do
     wrapperElement = page.find_by_id("6ssWlm9lxuSmz7iOHitY7l")
     within wrapperElement do
-      expect(skillsTradesElement[:class]).to eq "app-advice "
+      expect(wrapperElement[:class]).to eq "app-advice "
     end
   end
 
@@ -24,4 +24,5 @@ describe '404 page', :type => :feature do
     within link do 
       expect(link[:href]).to eq 'https://www.teach-in-further-education.campaign.gov.uk/'
     end
+  end
 end
