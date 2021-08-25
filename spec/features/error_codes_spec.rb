@@ -25,4 +25,23 @@ describe '404 page', :type => :feature do
       expect(link[:href]).to eq 'https://www.teach-in-further-education.campaign.gov.uk/'
     end
   end
-end
+
+  describe '500 page', :type => :feature do
+    before do
+      visit '/500.html'
+    end
+  
+    it "should have correct elements" do
+      wrapperElement = page.find_by_id("3jQUoCAU07tujL8wOuj2fB")
+      within wrapperElement do 
+        has_css? 'govuk-body', count: 1
+      end
+    end
+  
+    it "should have correct classes" do
+      wrapperElement = page.find_by_id("3jQUoCAU07tujL8wOuj2fB")
+      within wrapperElement do
+        expect(wrapperElement[:class]).to eq "app-advice "
+      end
+    end
+  end
