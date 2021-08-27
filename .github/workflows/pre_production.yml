@@ -1,0 +1,185 @@
+name: "Pre-Production"
+
+on:
+  push:
+    branches: [ pre-production ]
+
+jobs:
+  build:
+    name: Build application
+    runs-on: ubuntu-latest
+    environment: Pre-Production
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: Use ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.3
+
+      - name: Contentful Migration
+        id: migrate_contentful
+        uses: contentful-userland/contentful-action@main
+        with:
+          feature_pattern: "test"
+          master_pattern: "test"
+          migrations_dir: "contentful/migrations"
+          version_field: "version"
+          version_content_type: "environmentVersion"
+          space_id: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          management_api_key: ${{ secrets.CONTENTFUL_MGMT_TOKEN }}
+        env:
+          LOG_LEVEL: verbose
+
+      - name: Save migration results
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: contentful_migration_results
+          path: ${{ github.workspace }}/migrations/contentful.log
+
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      - name: Installing gems
+        run: |
+          bundle config path vendor/bundle
+          bundle install
+
+      - name: Installing npm
+        run: npm ci
+
+      - name: Run Javascript build
+        run: npm run build
+
+      - name: Get latest content
+        run: bundle exec middleman contentful
+        env:
+          GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
+          CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
+          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.outputs.environment_name }}
+
+      - name: Run tests
+        run: |
+          MM_DATA_DIR=spec/data bundle exec rspec --pattern spec/features/*_spec.rb  --format RSpec::Github::Formatter  --format progress --format documentation --out ${{ github.workspace }}/out/test-features.txt
+
+      - name: Save unit tests results
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: unit_test_results
+          path: ${{ github.workspace }}/out/site-*.txt
+
+      - name: Building middleman site
+        run: bundle exec middleman build
+        env:
+          GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
+          CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
+          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.outputs.environment_name }}
+
+      - shell: bash
+        run: |
+          cp manifest-preProd.yml build/manifest.yml
+          cp Staticfile build/Staticfile
+          cp Staticfile.auth build/Staticfile.auth
+          cp nginx.conf build/nginx.conf
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+          path: build/
+
+      - name: Deploy
+        uses: ./.github/actions/cloudfoundry
+        with:
+            cf_api: ${{ secrets.GOVPAAS_API }}
+            cf_username: ${{ secrets.GOVPAAS_USER }}
+            cf_password: ${{ secrets.GOVPAAS_PASSWORD }}
+            cf_org: ${{ secrets.GOVPAAS_ORG }}
+            cf_space: ${{ secrets.GOVPAAS_SPACE }}
+            working_dir: build
+            command: push
+
+  zap_scan:
+    runs-on: ubuntu-latest
+    name: Run security scan
+    environment: Development
+    needs: [ build ]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: ZAP Scan
+        uses: zaproxy/action-full-scan@v0.2.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          docker_name: owasp/zap2docker-stable
+          target: 'https://${{ secrets.HTTP_USERNAME }}:${{ secrets.HTTP_PASSWORD }}@teach-in-further-education-site.london.cloudapps.digital/'
+
+  accessibility:
+    name: Run accessibility tests
+    runs-on: ubuntu-latest
+    environment: Development
+    needs: [ build ]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: Use ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.3
+
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      - name: Installing gems
+        run: |
+          bundle config path vendor/bundle
+          bundle install
+
+      - name: Installing npm
+        run: npm ci
+
+      - name: Run Javascript build
+        run: npm run build
+
+      - name: Get latest content
+        run: bundle exec middleman contentful
+        env:
+          GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
+          CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
+          CONTENTFUL_ENVIRONMENT: pre-production
+
+      - name: Run tests
+        run: |
+          bundle exec rspec --pattern spec/accessibility/*_spec.rb --format RSpec::Github::Formatter  --format progress --format documentation --out ${{ github.workspace }}/out/test-accessibility.txt
+        continue-on-error: true
+
+      - name: Save accessibility tests results
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: accessibility_test_results
+          path: ${{ github.workspace }}/out/site-*.txt
