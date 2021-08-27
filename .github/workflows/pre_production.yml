@@ -26,8 +26,8 @@ jobs:
         id: migrate_contentful
         uses: contentful-userland/contentful-action@main
         with:
-          feature_pattern: "test"
-          master_pattern: "test"
+          feature_pattern: "pre-production"
+          master_pattern: "pre-production"
           migrations_dir: "contentful/migrations"
           version_field: "version"
           version_content_type: "environmentVersion"
@@ -93,7 +93,6 @@ jobs:
           cp manifest-preProd.yml build/manifest.yml
           cp Staticfile build/Staticfile
           cp Staticfile.auth build/Staticfile.auth
-          cp nginx.conf build/nginx.conf
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v2
