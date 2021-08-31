@@ -28,14 +28,26 @@ export class Consent {
     }
 
     enableCookies(){
-        gtag('consent', 'update', {
-            'ad_storage': 'granted',
-            'analytics_storage': 'granted'
-        });
+        const v = Cookies.get(Consent.cookieName)
+        if(v !== null && v !== undefined) {
+            const granted = JSON.parse(v)
+            if(granted.isGranted) {
+                gtag('consent', 'default', {
+                    'ad_storage': 'granted',
+                    'analytics_storage': 'granted'
+                });
+            }
+        }
     }
 
     removeCookies() {
+        gtag('consent', 'update', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied'
+        });
+
         const cookies = Cookies.get()
+
 
         for(const cookie in cookies) {
             if(cookie !== Consent.cookieName) {
