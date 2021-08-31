@@ -27,7 +27,7 @@ export default function() {
 	"transaction time OK": (r) => r.timings.duration < 250
 	});
 	
-  const urlHome = `https://teachfe:efhcaet@teach-in-further-education-dev.london.cloudapps.digital/`;
+  const urlHome = `https://${credentials}@teach-in-further-education-dev.london.cloudapps.digital/`;
 
   let resHome = http.get(urlHome);
 
@@ -37,7 +37,7 @@ export default function() {
 	"transaction time OK on homepage": (r) => r.timings.duration < 250
 	});
 
-  const urlGuidetoFE = `https://teachfe:efhcaet@teach-in-further-education-dev.london.cloudapps.digital/guide-to-further-education.html`;
+  const urlGuidetoFE = `https://${credentials}@teach-in-further-education-dev.london.cloudapps.digital/guide-to-further-education.html`;
 
   let resGuideToFE = http.get(urlGuidetoFE);
 
