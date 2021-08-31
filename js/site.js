@@ -7,9 +7,12 @@ const consent = new Consent()
 const analytics = new Analytics()
 const header = new Header()
 
+export function initConsent(bannerId) {
+    consent.init(bannerId)
+}
+
 export function initSite(bannerId, headerId) {
     initAll()
-    consent.init(bannerId)
     header.init(headerId)
 }
 
@@ -41,6 +44,7 @@ export function submitQuestionForm(e) {
 
 window.site = {
     initSite,
+    initConsent,
     onShowStep,
     submitQuestionForm,
     consent: consent,
