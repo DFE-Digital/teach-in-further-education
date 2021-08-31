@@ -20,6 +20,7 @@ export class Analytics {
             'analytics_storage': consentValue
         });
 
+        gtag('js', new Date());
         gtag('config', tag);
     }
 
