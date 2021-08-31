@@ -3,6 +3,7 @@ name: "Pre-Production"
 on:
   push:
     branches: [ pre-production ]
+  workflow_dispatch:
 
 jobs:
   build:
