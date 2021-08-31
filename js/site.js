@@ -7,13 +7,10 @@ const consent = new Consent()
 const analytics = new Analytics()
 const header = new Header()
 
-export function initConsent(bannerId) {
-    consent.init(bannerId)
-}
-
 export function initSite(bannerId, headerId) {
     initAll()
     header.init(headerId)
+    consent.init(bannerId)
 }
 
 export function onShowStep(i) {
@@ -44,7 +41,7 @@ export function submitQuestionForm(e) {
 
 window.site = {
     initSite,
-    initConsent,
+    initConsent: Consent.enableCookies,
     onShowStep,
     submitQuestionForm,
     consent: consent,
