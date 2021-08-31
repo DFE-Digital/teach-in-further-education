@@ -36,5 +36,15 @@ export default function() {
     'status is 200': (r) => r.status === 200,
 	"transaction time OK on homepage": (r) => r.timings.duration < 250
 	});
+
+  const urlGuidetoFE = `https://teachfe:efhcaet@teach-in-further-education-dev.london.cloudapps.digital/guide-to-further-education.html`;
+
+  let resGuideToFE = http.get(urlGuidetoFE);
+
+  // Verify response
+  check(resGuideToFE, {
+    'status is 200 on guide to FE page': (r) => r.status === 200,
+	"transaction time OK on guide to FE page": (r) => r.timings.duration < 250
+	});
   sleep(3);
 }
