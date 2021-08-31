@@ -8,4 +8,5 @@ module prometheus_all {
   paas_exporter_username   = var.paas_exporter_username
   paas_exporter_password   = var.paas_exporter_password
   grafana_admin_password   = var.grafana_admin_password
+  grafana_runtime_version   = var.grafana_runtime_version
 }

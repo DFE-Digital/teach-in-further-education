@@ -1,17 +1,14 @@
-name: "Test"
+name: "Pre-Production"
 
 on:
   push:
-    branches: [ test ]
-    paths-ignore:
-      - '**/*.md'
-  workflow_dispatch:
+    branches: [ pre-production ]
 
 jobs:
   build:
     name: Build application
     runs-on: ubuntu-latest
-    environment: Test
+    environment: Pre-Production
     steps:
       - uses: actions/checkout@v2
 
@@ -29,8 +26,8 @@ jobs:
         id: migrate_contentful
         uses: contentful-userland/contentful-action@main
         with:
-          feature_pattern: "test"
-          master_pattern: "test"
+          feature_pattern: "pre-production"
+          master_pattern: "pre-production"
           migrations_dir: "contentful/migrations"
           version_field: "version"
           version_content_type: "environmentVersion"
@@ -93,13 +90,9 @@ jobs:
 
       - shell: bash
         run: |
-          cp manifest-test.yml build/manifest.yml
+          cp manifest-preProd.yml build/manifest.yml
           cp Staticfile build/Staticfile
           cp Staticfile.auth build/Staticfile.auth
-<<<<<<< HEAD
-=======
-#          cp nginx.conf build/nginx.conf
->>>>>>> c0dd2733e0aad1c3aab6c83446f22e9e4653376b
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v2
@@ -176,7 +169,7 @@ jobs:
           GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
-          CONTENTFUL_ENVIRONMENT: test
+          CONTENTFUL_ENVIRONMENT: pre-production
 
       - name: Run tests
         run: |
