@@ -23,6 +23,7 @@ export class Analytics {
         gtag('js', new Date());
         gtag('config', tag);
         gtag('send', 'pageview')
+
     }
 
     sendAnalytics(category, action, label) {
