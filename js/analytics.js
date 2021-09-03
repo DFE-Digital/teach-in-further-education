@@ -1,5 +1,30 @@
+import Cookies from 'js-cookie'
+import {Consent} from "./consent";
 
 export class Analytics {
+
+    static setup(tag) {
+
+        const v = Cookies.get(Consent.cookieName);
+        let consentValue = 'denied';
+
+        if(v !== null && v !== undefined) {
+            const granted = JSON.parse(v)
+            if(granted.isGranted) {
+                consentValue = 'granted'
+            }
+        }
+
+        gtag('consent', 'default', {
+            'ad_storage': consentValue,
+            'analytics_storage': consentValue
+        });
+
+        gtag('js', new Date());
+        gtag('config', tag);
+        gtag('send', 'pageview')
+
+    }
 
     sendAnalytics(category, action, label) {
         gtag('event', action, {
@@ -38,5 +63,8 @@ export class Analytics {
 
         this.sendAnalytics('accordion', 'expanded', openedElements)
     }
+}
 
+window.analytics = {
+    setup: Analytics.setup
 }
