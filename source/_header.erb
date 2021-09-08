@@ -52,7 +52,11 @@
             <% else %>
               <li id="<%= p.id %>" class= "govuk-header__navigation-item">
                 <a href="<%= p.slug + ".html" %>">
-                  <%= p.title %>
+                  <% if p.nav_title.nil? %>
+                    <%= p.title %>
+                  <% else %>
+                    <%= p.nav_title %>
+                  <% end %>
                 </a>
               </li>
             <% end %>
