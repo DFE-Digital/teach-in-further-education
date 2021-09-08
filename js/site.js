@@ -9,8 +9,8 @@ const header = new Header()
 
 export function initSite(bannerId, headerId) {
     initAll()
-    consent.init(bannerId)
     header.init(headerId)
+    consent.init(bannerId)
 }
 
 export function onShowStep(i) {
@@ -41,6 +41,7 @@ export function submitQuestionForm(e) {
 
 window.site = {
     initSite,
+    initConsent: Consent.enableCookies,
     onShowStep,
     submitQuestionForm,
     consent: consent,

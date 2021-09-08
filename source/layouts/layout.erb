@@ -20,24 +20,16 @@
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=<%= ENV["GOOGLE_ANALYTICS_TAG"] %>"></script>
+  <script src="javascripts/analytics.js"></script>
   <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('consent', 'default', {
-          'ad_storage': 'denied',
-          'analytics_storage': 'denied'
-      });
-
-      gtag('config', '<%= ENV["GOOGLE_ANALYTICS_TAG"] %>');
+      window.analytics.setup('<%= ENV['GOOGLE_ANALYTICS_TAG'] %>')
   </script>
 
   <%= stylesheet_link_tag "site" %>
-
 </head>
 <body class="govuk-template__body">
-<%= partial "cookie_banner" %>
 <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 <%= partial "cookie_banner" %>
 <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
@@ -60,7 +52,7 @@
 
 <%= partial "footer", :locals => { :data => data } %>
 
-<%= javascript_include_tag :all %>
+<script src="javascripts/all.js"></script>
 <script>
   window.site.initSite('cookie-banner', 'navigation');
 </script>

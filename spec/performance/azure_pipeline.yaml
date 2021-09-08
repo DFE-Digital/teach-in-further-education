@@ -1,0 +1,14 @@
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: |
+    docker run -i -v `pwd`:/src loadimpact/k6 run /src/spec/performance/Stages_low_vus.js
+  displayName: Run k6 from Docker locally
+
+##schedules:
+##  - cron: '0 0 * * *'
+##    displayName: Daily midnight build
+##    branches:
+##      include:
+##        - main
