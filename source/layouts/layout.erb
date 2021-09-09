@@ -25,14 +25,17 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       window.analytics.setup('<%= ENV['GOOGLE_ANALYTICS_TAG'] %>')
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
   </script>
 
   <%= stylesheet_link_tag "site" %>
 </head>
 <body class="govuk-template__body">
+<div role="region">
 <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+</div>
 <%= partial "cookie_banner" %>
-<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
   <%= partial "header", :locals => { :data => data } %>
 
