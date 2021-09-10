@@ -19,7 +19,7 @@ module MarkdownHelper
       when 1
         %(<h1 class="govuk-heading-xl">#{text.strip}</h1>)
       when 2
-        %(<h1 class="govuk-heading-l">#{text.strip}</h2>)
+        %(<h2 class="govuk-heading-l">#{text.strip}</h2>)
       when 3
         %(<h3 class="govuk-heading-m">#{text.strip}</h3>)
       when 4
