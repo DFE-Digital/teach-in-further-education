@@ -3,11 +3,8 @@ name: "Test"
 on:
   push:
     branches: [ test ]
-<<<<<<< HEAD
     paths-ignore:
       - '**/*.md'
-=======
->>>>>>> dfa18791bddf45fa550ce63498478e55cde0a4cf
   workflow_dispatch:
 
 jobs:
