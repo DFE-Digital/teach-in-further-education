@@ -30,6 +30,7 @@ jobs:
         id: migrate_contentful
         uses: contentful-userland/contentful-action@main
         with:
+          feature_pattern: "development"
           master_pattern: "development"
           migrations_dir: "contentful/migrations"
           version_field: "version"
