@@ -82,7 +82,7 @@ jobs:
   monitor:
     name: Monitor application
     runs-on: ubuntu-latest
-    environment: Development
+    environment: Production
     defaults:
       run:
         working-directory: ./infrastructure/
