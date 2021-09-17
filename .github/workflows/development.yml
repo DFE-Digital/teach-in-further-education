@@ -31,6 +31,7 @@ jobs:
         run: npm install
 
       - name: Export contentful content
+        uses: contentful-userland/contentful-action@main
         id: contentfulExport
         run: contentful space export --management-token ${{ secrets.CONTENTFUL_MGMT_TOKEN }} --space-id ${{ secrets.CONTENTFUL_SPACE_ID }} --environment-id development --content-only --content-file devExport.json --query-assets 'sys.id=0000'
 
