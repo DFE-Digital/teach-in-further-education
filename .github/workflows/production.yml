@@ -18,6 +18,17 @@ jobs:
         with:
           node-version: '12.x'
 
+      - name: Installing contentful
+        run: npm install -g contentful-cli
+
+      - name: Export contentful content
+        id: contentfulExport
+        run: contentful space export --management-token ${{ secrets.CONTENTFUL_MGMT_TOKEN }} --space-id ${{ secrets.CONTENTFUL_SPACE_ID }} --environment-id pre-production --content-only --content-file devExport.json --query-assets 'sys.id=0000'
+
+      - name: Import contentful content
+        id: contentfulImport
+        run: contentful space import --management-token ${{ secrets.CONTENTFUL_MGMT_TOKEN }} --space-id ${{ secrets.CONTENTFUL_SPACE_ID }} --environment-id master --content-file devExport.json
+
       - name: Use ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -55,7 +66,7 @@ jobs:
           GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
-          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.outputs.environment_name }}
+          CONTENTFUL_ENVIRONMENT: master
 
       - shell: bash
         run: |
