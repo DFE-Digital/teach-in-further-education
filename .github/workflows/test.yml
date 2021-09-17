@@ -25,20 +25,6 @@ jobs:
         with:
           ruby-version: 2.7.3
 
-      - name: Contentful Migration
-        id: migrate_contentful
-        uses: contentful-userland/contentful-action@main
-        with:
-          feature_pattern: "test"
-          master_pattern: "test"
-          migrations_dir: "contentful/migrations"
-          version_field: "version"
-          version_content_type: "environmentVersion"
-          space_id: ${{ secrets.CONTENTFUL_SPACE_ID }}
-          management_api_key: ${{ secrets.CONTENTFUL_MGMT_TOKEN }}
-        env:
-          LOG_LEVEL: verbose
-
       - name: Save migration results
         if: always()
         uses: actions/upload-artifact@v2
@@ -70,7 +56,7 @@ jobs:
           GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
-          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.outputs.environment_name }}
+          CONTENTFUL_ENVIRONMENT: test
 
       - name: Run tests
         run: |
