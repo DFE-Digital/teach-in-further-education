@@ -25,8 +25,8 @@ jobs:
         with:
           ruby-version: 2.7.3
 
-      - name: Installing npm
-        run: npm ci
+      - name: Installing contentful
+        run: npm install -g contentful-cli
 
       - name: Export contentful content
         id: contentfulExport
@@ -35,13 +35,6 @@ jobs:
       - name: Import contentful content
         id: contentfulImport
         run: contentful space import --management-token ${{ secrets.CONTENTFUL_MGMT_TOKEN }} --space-id ${{ secrets.CONTENTFUL_SPACE_ID }} --environment-id test --content-file devExport.json
-
-      - name: Save migration results
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: contentful_migration_results
-          path: ${{ github.workspace }}/migrations/contentful.log
 
       - uses: actions/cache@v2
         with:
@@ -54,6 +47,9 @@ jobs:
         run: |
           bundle config path vendor/bundle
           bundle install
+
+      - name: Installing npm
+        run: npm ci
 
       - name: Run Javascript build
         run: npm run build
@@ -83,7 +79,7 @@ jobs:
           GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
-          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.outputs.environment_name }}
+          CONTENTFUL_ENVIRONMENT: test
 
       - shell: bash
         run: |
