@@ -45,7 +45,7 @@
                 <a class="dropbtn"><%= p.title %></a>
                 <div class="app-dropdown-content govuk-header__navigation-item">
                   <% p.links.each do |l| %>
-                    <a id="<%= l.id %>" href="/<%= l.slug + ".html" %>"><%= l.title %></a>
+                    <a id="<%= l.id %>" href="/<%= l.slug + ".html" %>" onclick="window.site.analytics.raiseHeaderNavEvent('/<%= l.slug + ".html" %>')"><%= l.title %></a>
                   <% end %>
                 </div>
               </li>
