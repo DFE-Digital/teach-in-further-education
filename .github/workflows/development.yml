@@ -21,6 +21,7 @@ jobs:
         with:
           node-version: '12.x'
 
+
       - name: Use ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -69,7 +70,7 @@ jobs:
           GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
-          CONTENTFUL_ENVIRONMENT: ${{ steps.migrate_contentful.outputs.environment_name }}
+          CONTENTFUL_ENVIRONMENT: development
 
       - shell: bash
         run: |
