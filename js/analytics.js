@@ -53,6 +53,13 @@ export class Analytics {
         this.sendAnalytics('exitPoint', 'click', url)
     }
 
+    raiseHeaderNavEvent(url) {  
+        this.sendAnalytics('headerNavEvent', 'click', url)
+    }
+    raiseInternalNavEvent(url) {  
+        this.sendAnalytics('internalNavEvent', 'click', url)
+    }
+
     trackAccordionExpansion(id) {
         const accordion = document.getElementById(id);
         const openedElements =
