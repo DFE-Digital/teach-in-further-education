@@ -15,7 +15,6 @@ jobs:
     environment: Development
     steps:
       - uses: actions/checkout@v2
-      - uses: contentful-userland/contentful-action@main
 
       - name: Use Node.js
         uses: actions/setup-node@v1
@@ -29,7 +28,7 @@ jobs:
           ruby-version: 2.7.3
 
       - name: Installing contentful
-        run: npm install
+        run: npm install -g contentful-cli
 
       - name: Export contentful content
         id: contentfulExport
