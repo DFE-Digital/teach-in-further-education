@@ -23,20 +23,6 @@ jobs:
         with:
           ruby-version: 2.7.3
 
-      - name: Contentful Migration
-        id: migrate_contentful
-        uses: contentful-userland/contentful-action@main
-        with:
-          feature_pattern: "pre-production"
-          master_pattern: "pre-production"
-          migrations_dir: "contentful/migrations"
-          version_field: "version"
-          version_content_type: "environmentVersion"
-          space_id: ${{ secrets.CONTENTFUL_SPACE_ID }}
-          management_api_key: ${{ secrets.CONTENTFUL_MGMT_TOKEN }}
-        env:
-          LOG_LEVEL: verbose
-
       - name: Save migration results
         if: always()
         uses: actions/upload-artifact@v2
