@@ -14,7 +14,6 @@
   },
   "devDependencies": {
     "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.0",
-    "contentful-cli": "^1.9.20"
+    "webpack-cli": "^4.7.0"
   }
 }
