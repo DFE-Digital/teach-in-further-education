@@ -34,6 +34,11 @@ jobs:
         id: contentfulExport
         run: contentful space export --management-token ${{ secrets.CONTENTFUL_MGMT_TOKEN }} --space-id ${{ secrets.CONTENTFUL_SPACE_ID }} --environment-id development --content-only --content-file devExport.json --query-assets 'sys.id=0000'
 
+      - name: Import contentful content
+        id: contentfulImport
+        run: contentful space import --management-token ${{ secrets.CONTENTFUL_MGMT_TOKEN }} --space-id ${{ secrets.CONTENTFUL_SPACE_ID }} --environment-id test --content-file devExport.json
+
+
       - uses: actions/cache@v2
         with:
           path: vendor/bundle
