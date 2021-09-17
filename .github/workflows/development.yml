@@ -21,13 +21,14 @@ jobs:
         with:
           node-version: '12.x'
 
+
       - name: Use ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.7.3
 
       - name: Installing contentful
-        run: npm install contentful-cli
+        run: npm install
 
       - name: Export contentful content
         id: contentfulExport
