@@ -1,6 +1,6 @@
-<picture role="img">
+<picture>
   <% breakpoints.each do |bp| %>
     <source media="<%= bp[:media_query] %>" srcset="<%= data.url + "?w=" + bp[:width].to_s %>">
   <% end %>
-  <img src="<%= data.url + "?w=" + breakpoints[0][:width].to_s %>" alt="<%= data.description %>">
+  <img src="<%= data.url + "?w=" + breakpoints[0][:width].to_s %>" alt="<%= data.description %>" role="img">
 </picture>
