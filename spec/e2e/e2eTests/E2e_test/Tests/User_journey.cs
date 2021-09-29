@@ -14,6 +14,7 @@ namespace TeachFe.E2e_test
         {
             var chromeOptions = new ChromeOptions();
             chromeOptions.AddArguments("--no-sandbox");
+            chromeOptions.AddArguments("--disable-dev-shm-usage");
             driver = new ChromeDriver(chromeOptions);
         }
         [Test]
