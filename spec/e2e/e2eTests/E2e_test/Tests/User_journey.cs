@@ -13,8 +13,7 @@ namespace TeachFe.E2e_test
         public void StartBrowser()
         {
             var chromeOptions = new ChromeOptions();
-            chromeOptions.AddArguments("--no-sandbox");
-            chromeOptions.AddArguments("--disable-dev-shm-usage");
+            chromeOptions.AddArguments("--headless");
             driver = new ChromeDriver(chromeOptions);
         }
         [Test]
