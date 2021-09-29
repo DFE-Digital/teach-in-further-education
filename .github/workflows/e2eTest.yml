@@ -20,4 +20,4 @@ jobs:
       - name: Build
         run: dotnet build spec/e2e/TeachFeProject.sln
       - name: Test with the dotnet CLI
-        run: dotnet test spec/e2e/e2eTests/E2eTests.csproj --single-process
+        run: dotnet test spec/e2e/e2eTests/E2eTests.csproj
