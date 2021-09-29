@@ -12,9 +12,7 @@ namespace TeachFe.E2e_test
         [SetUp]
         public void StartBrowser()
         {
-            var chromeOptions = new ChromeOptions();
-            chromeOptions.AddArguments("--headless");
-            driver = new ChromeDriver(chromeOptions);
+            driver = new ChromeDriver();
         }
         [Test]
         public void UserJourneyChromeDriver()
