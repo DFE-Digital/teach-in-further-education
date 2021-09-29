@@ -4,6 +4,7 @@ using TeachFe.E2e_test.PageObjects;
 
 namespace TeachFe.E2e_test
 {
+
     [TestFixture]
     public class UserJourney
     {
@@ -12,7 +13,10 @@ namespace TeachFe.E2e_test
         [SetUp]
         public void StartBrowser()
         {
-            driver = new ChromeDriver();
+            var chromeOptions = new ChromeOptions();
+            chromeOptions.AddArguments("--no-sandbox");
+            chromeOptions.AddArguments("--disable-dev-shm-usage");
+            driver = new ChromeDriver(chromeOptions);
         }
         [Test]
         public void UserJourneyChromeDriver()
