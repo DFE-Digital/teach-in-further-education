@@ -12,7 +12,9 @@ namespace TeachFe.E2e_test
         [SetUp]
         public void StartBrowser()
         {
-            driver = new ChromeDriver();
+            var chromeOptions = new ChromeOptions();
+            chromeOptions.AddArguments("--no-sandbox");
+            driver = new ChromeDriver(chromeOptions);
         }
         [Test]
         public void UserJourneyChromeDriver()
