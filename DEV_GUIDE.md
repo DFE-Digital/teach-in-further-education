@@ -94,4 +94,4 @@ Run middle man server
 ### E2E tests
 
     runs on dev environment, part of CI via github action
-    to open the soluton locally, open spec\e2e\TeachFeProject.sln in Visual studio
+    to open the solution locally, open spec\e2e\TeachFeProject.sln in Visual studio
