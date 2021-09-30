@@ -88,7 +88,7 @@ Run middle man server
 
 ### Performance tests
 
-    available to run on azure devOps pipelines using the js and yaml files in this repo
+    available to run as azure devOps pipelines, set up using the js and yaml files in this repo
     https://dfe-gov-uk.visualstudio.com.mcas.ms/Teach%20in%20Further%20Education/_build
 
 ### E2E tests
