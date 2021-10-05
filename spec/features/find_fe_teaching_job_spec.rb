@@ -18,16 +18,6 @@ describe 'Find an fe teaching job components', :type => :feature do
         has_css? 'govuk-heading-l', count: 1
         has_css? 'govuk-body', count: 2
       end
-      carreerChangersElement = page.find_by_id("5sdBDktTAPtjx0YlzHUdGD")
-      within carreerChangersElement do 
-        has_css? 'govuk-heading-l', count: 1
-        has_css? 'govuk-body', count: 2
-      end
-      backgroundElement = page.find_by_id("5qnWPcfMwkXv2d8ZSYmkrM")
-      within backgroundElement do 
-        has_css? 'govuk-heading-l', count: 1
-        has_css? 'govuk-body', count: 2
-      end
       findAJobElement = page.find_by_id("3Vcwz7UfYGsdI7gkI4iWgh")
       within findAJobElement do 
         has_css? 'govuk-heading-l', count: 1
@@ -46,14 +36,6 @@ describe 'Find an fe teaching job components', :type => :feature do
       within learnWhileYouLearnElement do
         expect(learnWhileYouLearnElement[:class]).to eq "app-advice "
       end
-      carreerChangersElement = page.find_by_id("5sdBDktTAPtjx0YlzHUdGD")
-      within carreerChangersElement do
-        expect(carreerChangersElement[:class]).to eq "app-advice "
-      end
-      backgroundElement = page.find_by_id("5qnWPcfMwkXv2d8ZSYmkrM")
-      within backgroundElement do
-        expect(backgroundElement[:class]).to eq "app-advice "
-      end
       findAJobElement = page.find_by_id("3Vcwz7UfYGsdI7gkI4iWgh")
       within findAJobElement do
         expect(findAJobElement[:class]).to eq "app-advice "
@@ -64,10 +46,6 @@ describe 'Find an fe teaching job components', :type => :feature do
       link = page.find_link("Find your local FE college on the Association of Colleges website", match: :first)
       within link do 
         expect(link[:href]).to eq 'https://www.aocjobs.com/employers-a-z'
-      end
-      link = page.find_link("You might not be able to work as an FE teacher if you have commited certain offences or have unspent criminal convictions")
-      within link do 
-        expect(link[:href]).to eq 'https://www.gov.uk/tell-employer-or-college-about-criminal-record'
       end
       link = page.find_link("Association of colleges job site")
       within link do 
