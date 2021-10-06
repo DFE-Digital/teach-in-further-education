@@ -85,3 +85,13 @@ Run middle man server
 ### Accessibility tests
 
     bundle exec rspec --pattern spec/accessibility/*_spec.rb  --format RSpec::Github::Formatter  --format progress --format documentation --out accessibility.txt
+
+### Performance tests
+
+    available to run as azure devOps pipelines, set up using the js and yaml files in this repo
+    https://dfe-gov-uk.visualstudio.com.mcas.ms/Teach%20in%20Further%20Education/_build
+
+### E2E tests
+
+    runs on dev environment, part of CI via github action
+    to open the solution locally, open spec\e2e\TeachFeProject.sln in Visual studio
