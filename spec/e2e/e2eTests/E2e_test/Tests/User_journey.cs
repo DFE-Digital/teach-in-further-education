@@ -27,6 +27,14 @@ namespace TeachFe.E2e_test
 
             homepage.NavigateTo();
             homepage.ContentHomepageDisplayed();
+            homepage.ClickFinancialSupportToTrainLink();
+            Assert.IsTrue(driver.Url.EndsWith("/financial-support-to-train.html"));
+            homepage.ClickHomeNavButton();
+            homepage.ClickGuideToFurtherEducationLink();
+            Assert.IsTrue(driver.Url.EndsWith("/guide-to-further-education.html"));
+            homepage.ClickHomeNavButton();
+            homepage.ClickGuideToFurtherEducationLinkBottomPage();
+            Assert.IsTrue(driver.Url.EndsWith("/guide-to-further-education.html"));
             homepage.ClickGuideToFeTeachingNavButton();
             Assert.IsTrue(driver.Url.EndsWith("/guide-to-further-education.html"));
             
