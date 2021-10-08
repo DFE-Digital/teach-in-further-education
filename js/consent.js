@@ -8,12 +8,11 @@ export class Consent {
 
     static get cookieName() {
         return (
-            Consent.cookieBaseName + '-v' + Consent.cookieVersion + 'ooooooh'
+            Consent.cookieBaseName + '-v' + Consent.cookieVersion
         );
     }
 
     init(id) {
-        console.log('Initiallising COookies');
         const v = Cookies.get(Consent.cookieName)
         if(v !== null && v !== undefined) {
             document.getElementById(id).style.display = 'none'
@@ -29,7 +28,7 @@ export class Consent {
     }
 
     enableCookies(){
-        console.log('enabling cookies');
+
         const v = Cookies.get(Consent.cookieName)
         if(v !== null && v !== undefined) {
             const granted = JSON.parse(v)
@@ -39,9 +38,12 @@ export class Consent {
                     'analytics_storage': 'granted'
                 });
 
+                // SKD user has enabled the cookies so find the hotjar script by id that is not currently activated
+
                 var script = document.getElementById('hotjar-script'), s, y, attrib,
                     documentFragment = document.createDocumentFragment();
 
+                // SKD create a new element for the script
                 s = document.createElement('script');
                 s.type = 'text/javascript';
                 for (y = 0; y < script.attributes.length; y++) {
@@ -53,6 +55,7 @@ export class Consent {
                     }
                 }
 
+                // SKD inject the script back into the head.  Hot jar will now run when user changes page or refreshes.
                 s.innerHTML = script.innerHTML;
                 documentFragment.appendChild(s);
                 document.head.appendChild(documentFragment);
