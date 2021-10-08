@@ -39,6 +39,16 @@ namespace TeachFe.E2e_test
             Assert.IsTrue(driver.Url.EndsWith("/guide-to-further-education.html"));
             
             guideToFeTeachingPage.ContentGuideToFeDisplayed();
+            guideToFeTeachingPage.ClickFinancialSupportToTrainLink();
+            Assert.IsTrue(driver.Url.EndsWith("/financial-support-to-train.html"));
+            driver.Navigate().Back();
+            guideToFeTeachingPage.ClickOpenAllButton();
+            guideToFeTeachingPage.ClickAverageSalaryLink();
+            Assert.IsTrue(driver.Url.EndsWith("/job-profiles/further-education-lecturer"));
+            driver.Navigate().Back();
+            guideToFeTeachingPage.ClickEmployersLink();
+            Assert.IsTrue(driver.Url.Contains("aocjobs.com/employers-a-z"));
+            driver.Navigate().Back();
             homepage.ClickExperienceAndQualificationsNavButton();
             Assert.IsTrue(driver.Url.EndsWith("/experience-and-qualifications.html"));
 

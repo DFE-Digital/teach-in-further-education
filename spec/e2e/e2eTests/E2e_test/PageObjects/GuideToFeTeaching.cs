@@ -18,6 +18,26 @@ namespace TeachFe.E2e_test.PageObjects
             get { return driver.FindElement(By.Id("main-content")); }
         }
 
+        public IWebElement FinancialSupportToTrainLink
+        {
+            get { return driver.FindElement(By.PartialLinkText("If you have significant career")); }
+        }
+
+        public IWebElement OpenAllButton
+        {
+            get { return driver.FindElement(By.ClassName("govuk-accordion__open-all")); }
+        }
+
+        public IWebElement AverageSalaryLink
+        {
+            get { return driver.FindElement(By.PartialLinkText("According to the National Careers")); }
+        }
+
+        public IWebElement EmployersLink
+        {
+            get { return driver.FindElement(By.PartialLinkText("Find your local FE college")); }
+        }
+
         #endregion
 
         #region Actions
@@ -26,6 +46,27 @@ namespace TeachFe.E2e_test.PageObjects
         {
             return _ = MainContent.Displayed;
         }
+
+        public void ClickFinancialSupportToTrainLink()
+        {
+            FinancialSupportToTrainLink.Click();
+        }
+
+        public void ClickOpenAllButton()
+        {
+            OpenAllButton.Click();
+        }
+
+        public void ClickAverageSalaryLink()
+        {
+            AverageSalaryLink.Click();
+        }
+
+        public void ClickEmployersLink()
+        {
+            EmployersLink.Click();
+        }
+
 
         #endregion
     }
