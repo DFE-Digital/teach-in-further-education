@@ -53,6 +53,19 @@ namespace TeachFe.E2e_test
             Assert.IsTrue(driver.Url.EndsWith("/experience-and-qualifications.html"));
 
             experienceAndQualificationsPage.ContentExpAndQualificationsDisplayed();
+            experienceAndQualificationsPage.ClickFinancialSupportToTrainLink();
+            Assert.IsTrue(driver.Url.EndsWith("/financial-support-to-train.html"));
+            driver.Navigate().Back();
+            experienceAndQualificationsPage.ClickWhatLevelsMeanLink();
+            Assert.IsTrue(driver.Url.EndsWith("/what-different-qualification-levels-mean/list-of-qualification-levels"));
+            driver.Navigate().Back();
+            Assert.IsTrue(experienceAndQualificationsPage.EmailLink.Text.Equals("Teach.FE@education.gov.uk"));
+            experienceAndQualificationsPage.ClickBursariesAvailableLink();
+            Assert.IsTrue(driver.Url.Contains("/initial-teacher-training-bursaries-funding-manual"));
+            driver.Navigate().Back();
+            experienceAndQualificationsPage.ClickFullListOfFeCoursesLink();
+            Assert.IsTrue(driver.Url.EndsWith("/full-list-of-fe-qualifications.html"));
+            driver.Navigate().Back();
             experienceAndQualificationsPage.ClickSubmitButton();
             experienceAndQualificationsPage.ValidationErrorMessageDisplayed();
             experienceAndQualificationsPage.ClickNoneRadioButton();
