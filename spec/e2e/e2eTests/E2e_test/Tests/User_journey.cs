@@ -20,6 +20,7 @@ namespace TeachFe.E2e_test
             Homepage homepage = new Homepage(driver);
             GuideToFeTeachingPage guideToFeTeachingPage = new GuideToFeTeachingPage(driver);
             ExperienceAndQualificationsPage experienceAndQualificationsPage = new ExperienceAndQualificationsPage(driver);
+            FindAnFeTeachingJobPage findAnFeTeachingJobPage = new FindAnFeTeachingJobPage(driver);
             ResultsNoQualificationsPage resultsNoQualificationsPage = new ResultsNoQualificationsPage(driver);
             ResultsGcsePage resultsGcsePage = new ResultsGcsePage(driver);
             ResultsAlevelsPage resultsAlevelsPage = new ResultsAlevelsPage(driver);
@@ -94,6 +95,14 @@ namespace TeachFe.E2e_test
             resultsDegreePage.ContentDegreeResultsDisplayed();
             resultsDegreePage.ClickBackButton();
             Assert.IsTrue(driver.Url.EndsWith("/experience-and-qualifications.html"));
+
+            homepage.ClickFindAnFeTeachingJobNavButton();
+            Assert.IsTrue(driver.Url.EndsWith("/find-an-fe-teaching-job.html"));
+            findAnFeTeachingJobPage.ContentFindAnFeTeachingJobDisplayed();
+            findAnFeTeachingJobPage.ClickEmployersLink();
+            Assert.IsTrue(driver.Url.Contains("aocjobs.com/employers-a-z"));
+            driver.Navigate().Back();
+            findAnFeTeachingJobPage.ClickAocJobsLink();
         }
         [TearDown]
         public void CloseBrowser()
