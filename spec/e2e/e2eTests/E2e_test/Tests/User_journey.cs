@@ -103,6 +103,17 @@ namespace TeachFe.E2e_test
             Assert.IsTrue(driver.Url.Contains("aocjobs.com/employers-a-z"));
             driver.Navigate().Back();
             findAnFeTeachingJobPage.ClickAocJobsLink();
+            Assert.IsTrue(driver.Url.Contains("aocjobs.com/"));
+            driver.Navigate().Back();
+            findAnFeTeachingJobPage.ClickTesJobsLink();
+            Assert.IsTrue(driver.Url.EndsWith("/further-education-teaching-and-lecturing"));
+            driver.Navigate().Back();
+            findAnFeTeachingJobPage.ClickFeJobsLink();
+            Assert.IsTrue(driver.Url.Contains("fejobs.com/career-advice"));
+            driver.Navigate().Back();
+            findAnFeTeachingJobPage.ClickCollegeJobsLink();
+            Assert.IsTrue(driver.Url.Contains("college.jobs.ac.uk/"));
+            driver.Navigate().Back();
         }
         [TearDown]
         public void CloseBrowser()
