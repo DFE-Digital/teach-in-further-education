@@ -64,7 +64,7 @@ namespace TeachFe.E2e_test.PageObjects
 
         public bool ContentHomepageDisplayed()
         {
-            return _ = MainContent.Displayed;
+            return MainContent.Displayed;
         }
 
         public void ClickHomeNavButton()

@@ -84,7 +84,7 @@ namespace TeachFe.E2e_test.PageObjects
 
         public bool ValidationErrorMessageDisplayed()
         {
-            return _ = ValidationErrorMessage.Displayed;
+            return ValidationErrorMessage.Displayed;
         }
 
         public void ClickNoneRadioButton()
