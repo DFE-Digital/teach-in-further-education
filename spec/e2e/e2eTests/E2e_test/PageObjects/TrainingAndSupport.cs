@@ -91,11 +91,6 @@ namespace TeachFe.E2e_test.PageObjects
             AocJobsLink.Click();
         }
 
-        public void ClickEmailLink()
-        {
-            EmailLink.Click();
-        }
-
         public void ClickGuideToFurtherEducationLink()
         {
             GuideToFurtherEducationLink.Click();

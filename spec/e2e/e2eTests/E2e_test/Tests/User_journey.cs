@@ -21,6 +21,7 @@ namespace TeachFe.E2e_test
             GuideToFeTeachingPage guideToFeTeachingPage = new GuideToFeTeachingPage(driver);
             ExperienceAndQualificationsPage experienceAndQualificationsPage = new ExperienceAndQualificationsPage(driver);
             FindAnFeTeachingJobPage findAnFeTeachingJobPage = new FindAnFeTeachingJobPage(driver);
+            TrainingAndSupportPage trainingAndSupportPage = new TrainingAndSupportPage(driver);
             ResultsNoQualificationsPage resultsNoQualificationsPage = new ResultsNoQualificationsPage(driver);
             ResultsGcsePage resultsGcsePage = new ResultsGcsePage(driver);
             ResultsAlevelsPage resultsAlevelsPage = new ResultsAlevelsPage(driver);
@@ -114,6 +115,37 @@ namespace TeachFe.E2e_test
             findAnFeTeachingJobPage.ClickCollegeJobsLink();
             Assert.IsTrue(driver.Url.Contains("college.jobs.ac.uk/"));
             driver.Navigate().Back();
+            homepage.ClickFinancialSupportToTrainLink();
+            Assert.IsTrue(driver.Url.EndsWith("/financial-support-to-train.html"));
+
+            trainingAndSupportPage.ContentFinancialSupportDisplayed();
+            trainingAndSupportPage.ClickFullListOfQualificationsLink();
+            Assert.IsTrue(driver.Url.EndsWith("/full-list-of-fe-qualifications.html"));
+            driver.Navigate().Back();
+            trainingAndSupportPage.ClickStudentFinanceLink();
+            Assert.IsTrue(driver.Url.Contains("gov.uk/student-finance"));
+            driver.Navigate().Back();
+            trainingAndSupportPage.ClickEmployersLink();
+            Assert.IsTrue(driver.Url.Contains("aocjobs.com/employers-a-z"));
+            driver.Navigate().Back();
+            trainingAndSupportPage.ClickAocJobsLink();
+            Assert.IsTrue(driver.Url.Contains("aocjobs.com/"));
+            driver.Navigate().Back();
+            Assert.IsTrue(trainingAndSupportPage.EmailLink.Text.Equals("Teach.FE@education.gov.uk"));
+            trainingAndSupportPage.ClickGuideToFurtherEducationLink();
+            Assert.IsTrue(driver.Url.EndsWith("/guide-to-further-education.html"));
+            driver.Navigate().Back();
+            trainingAndSupportPage.ClickPcetLink();
+            Assert.IsTrue(driver.Url.EndsWith("/pgce-in-post-compulsory-education-and-training-pcet.html"));
+            driver.Navigate().Back();
+            trainingAndSupportPage.ClickDiplomaInEducationAndTrainingLink();
+            Assert.IsTrue(driver.Url.EndsWith("/diploma-in-education-and-training.html"));
+            driver.Navigate().Back();
+            trainingAndSupportPage.ClickBursariesAvailableLink();
+            driver.Navigate().Back();
+            Assert.IsTrue(driver.Url.Contains("gov.uk/government/publications/fe-funding-initial-teacher-education-ite"));
+            driver.Navigate().Back();
+            Assert.IsTrue(driver.Url.EndsWith("/financial-support-to-train.html"));
         }
         [TearDown]
         public void CloseBrowser()
