@@ -115,7 +115,7 @@ namespace TeachFe.E2e_test
             findAnFeTeachingJobPage.ClickCollegeJobsLink();
             Assert.IsTrue(driver.Url.Contains("college.jobs.ac.uk/"));
             driver.Navigate().Back();
-            homepage.ClickFinancialSupportToTrainLink();
+            homepage.ClickTrainingAndFinancialSupportNavButton();
             Assert.IsTrue(driver.Url.EndsWith("/financial-support-to-train.html"));
 
             trainingAndSupportPage.ContentFinancialSupportDisplayed();
@@ -142,7 +142,6 @@ namespace TeachFe.E2e_test
             Assert.IsTrue(driver.Url.EndsWith("/diploma-in-education-and-training.html"));
             driver.Navigate().Back();
             trainingAndSupportPage.ClickBursariesAvailableLink();
-            driver.Navigate().Back();
             Assert.IsTrue(driver.Url.Contains("gov.uk/government/publications/fe-funding-initial-teacher-education-ite"));
             driver.Navigate().Back();
             Assert.IsTrue(driver.Url.EndsWith("/financial-support-to-train.html"));

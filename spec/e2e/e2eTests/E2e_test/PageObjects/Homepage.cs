@@ -38,6 +38,10 @@ namespace TeachFe.E2e_test.PageObjects
             get { return driver.FindElement(By.Id("7fkpVgKNOUvTuZI7KBhdrE")); }
         }
 
+        public IWebElement TrainingAndFinancialSupportNavButton
+        {
+            get { return driver.FindElement(By.Id("15FI0WUAPnHGy98eB7XW5N")); }
+        }
         public IWebElement FinancialSupportToTrainLink
         {
             get { return driver.FindElement(By.PartialLinkText("Many people start a job in further education")); }
@@ -85,6 +89,11 @@ namespace TeachFe.E2e_test.PageObjects
         public void ClickFindAnFeTeachingJobNavButton()
         {
             FindAnFeTeachingJobNavButton.Click();
+        }
+
+        public void ClickTrainingAndFinancialSupportNavButton()
+        {
+            TrainingAndFinancialSupportNavButton.Click();
         }
 
         public void ClickFinancialSupportToTrainLink()
