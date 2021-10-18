@@ -18,6 +18,11 @@ namespace TeachFe.E2e_test.PageObjects
             get { return driver.FindElement(By.ClassName("govuk-grid-row")); }
         }
 
+        public IWebElement HomeNavButton
+        {
+            get { return driver.FindElement(By.Id("home-link")); }
+        }
+
         public IWebElement GuideToFeTeachingNavButton
         {
             get { return driver.FindElement(By.Id("5yYjsBia5tKnn6rysEdUQ2")); }
@@ -26,6 +31,30 @@ namespace TeachFe.E2e_test.PageObjects
         public IWebElement ExperienceAndQualificationsNavButton
         {
             get { return driver.FindElement(By.Id("630Q4flj9fmCaHKsckbOA6")); }
+        }
+
+        public IWebElement FindAnFeTeachingJobNavButton
+        {
+            get { return driver.FindElement(By.Id("7fkpVgKNOUvTuZI7KBhdrE")); }
+        }
+
+        public IWebElement TrainingAndFinancialSupportNavButton
+        {
+            get { return driver.FindElement(By.Id("15FI0WUAPnHGy98eB7XW5N")); }
+        }
+        public IWebElement FinancialSupportToTrainLink
+        {
+            get { return driver.FindElement(By.PartialLinkText("Many people start a job in further education")); }
+        }
+
+        public IWebElement GuideToFurtherEducationLink
+        {
+            get { return driver.FindElement(By.LinkText("Find out if you could teach in FE")); }
+        }
+
+        public IWebElement GuideToFurtherEducationLinkBottomPage
+        {
+            get { return driver.FindElement(By.LinkText("Find out more about teaching in FE")); }
         }
 
         #endregion
@@ -39,7 +68,12 @@ namespace TeachFe.E2e_test.PageObjects
 
         public bool ContentHomepageDisplayed()
         {
-            return _ = MainContent.Displayed;
+            return MainContent.Displayed;
+        }
+
+        public void ClickHomeNavButton()
+        {
+            HomeNavButton.Click();
         }
 
         public void ClickGuideToFeTeachingNavButton()
@@ -51,6 +85,32 @@ namespace TeachFe.E2e_test.PageObjects
         {
             ExperienceAndQualificationsNavButton.Click();
         }
+
+        public void ClickFindAnFeTeachingJobNavButton()
+        {
+            FindAnFeTeachingJobNavButton.Click();
+        }
+
+        public void ClickTrainingAndFinancialSupportNavButton()
+        {
+            TrainingAndFinancialSupportNavButton.Click();
+        }
+
+        public void ClickFinancialSupportToTrainLink()
+        {
+            FinancialSupportToTrainLink.Click();
+        }
+
+        public void ClickGuideToFurtherEducationLink()
+        {
+            GuideToFurtherEducationLink.Click();
+        }
+
+        public void ClickGuideToFurtherEducationLinkBottomPage()
+        {
+            GuideToFurtherEducationLinkBottomPage.Click();
+        }
+
 
         #endregion
     }
