@@ -21,40 +21,24 @@ describe 'Guide to FE teaching components', :type => :feature do
       within guideToFurtherEducationElement do
         expect(guideToFurtherEducationElement[:class]).to eq "app-advice "
       end
+      accordionElement = page.find_by_id("26o7zVgA8zuq4GnxJgvjD8")
+      within accordionElement do
+        expect(accordionElement[:class]).to eq "govuk-accordion"
+      end
+      storyElement = page.find_by_id("7ABuhsAYVosp5LK1WRKIHT")
+      within storyElement do
+        expect(storyElement[:class]).to eq "app-story"
+      end
+      storyElement = page.find_by_id("4us8OYWskMdExFNNypuUKE")
+      within storyElement do
+        expect(storyElement[:class]).to eq "app-story"
+      end
     end
 
-    it "links should re-direct to expected urls" do
+    it "link should re-direct to expected urls" do
       link = page.find_link("If you have significant career experience, you may be able to start teaching with an FE provider.")
       within link do 
         have_selector 'href = "/financial-support-to-train.html"'       
       end
-      link = page.find_link("Here's a list of popular teacher training courses.")
-      within link do
-        have_selector 'href="/full-list-of-fe-qualifications.html"'
-      end
-      link = page.find_link("Find out more about the 2 ways of doing teacher training.")
-      within link do
-        have_selector 'href = "/financial-support-to-train.html"'
-      end
-      link = page.find_link("According to the National Careers Service the average salary for an FE teacher ranges from £24,000 to £37,000.")
-      within link do
-        have_selector 'href = "https://nationalcareers.service.gov.uk/job-profiles/further-education-lecturer"'
-      end
-      link = page.find_link("Find your local FE college on the Association of Colleges website")
-      within link do
-        have_selector 'href= "https://www.aocjobs.com/employers-a-z"'
-      end
-      link = page.find_link("Find independent training providers on the Association of Employment Learning Providers' website")
-      within link do
-        have_selector 'href= "https://www.aelp.org.uk/about/our-members/"'
-      end
-      link = page.find_link("Find your local FE college on the Association of Colleges website")
-      within link do
-        have_selector 'href= "https://www.aocjobs.com/employers-a-z"'
-      end
-      link = page.find_link("Find independent training providers on the Association of Employment Learning Providers' website")
-      within link do
-        have_selector 'href= "https://www.aelp.org.uk/about/our-members/"'
     end
   end
-end
