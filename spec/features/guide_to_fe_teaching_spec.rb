@@ -28,6 +28,33 @@ describe 'Guide to FE teaching components', :type => :feature do
       within link do 
         have_selector 'href = "/financial-support-to-train.html"'       
       end
-      
+      link = page.find_link("Here's a list of popular teacher training courses.")
+      within link do
+        have_selector 'href="/full-list-of-fe-qualifications.html"'
+      end
+      link = page.find_link("Find out more about the 2 ways of doing teacher training.")
+      within link do
+        have_selector 'href = "/financial-support-to-train.html"'
+      end
+      link = page.find_link("According to the National Careers Service the average salary for an FE teacher ranges from £24,000 to £37,000.")
+      within link do
+        have_selector 'href = "https://nationalcareers.service.gov.uk/job-profiles/further-education-lecturer"'
+      end
+      link = page.find_link("Find your local FE college on the Association of Colleges website")
+      within link do
+        have_selector 'href= "https://www.aocjobs.com/employers-a-z"'
+      end
+      link = page.find_link("Find independent training providers on the Association of Employment Learning Providers' website")
+      within link do
+        have_selector 'href= "https://www.aelp.org.uk/about/our-members/"'
+      end
+      link = page.find_link("Find your local FE college on the Association of Colleges website")
+      within link do
+        have_selector 'href= "https://www.aocjobs.com/employers-a-z"'
+      end
+      link = page.find_link("Find independent training providers on the Association of Employment Learning Providers' website")
+      within link do
+        have_selector 'href= "https://www.aelp.org.uk/about/our-members/"'
     end
   end
+end
