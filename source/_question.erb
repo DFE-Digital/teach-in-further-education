@@ -33,6 +33,18 @@
               <% end %>
             </div>
           <% end %>
+          <% if data.render_as[0] == "Checkbox" %>
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <% data.answers.each_with_index do |a,i| %>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="<% a.id %>" name="answer" type="checkbox" value="<%= a.link.slug %>" aria-label="<%= a.answer %>">
+                    <label class="govuk-label govuk-checkboxes__label" id="<% a.id %>_label" for="answer" aria-hidden="true">
+                      <%= a.answer %>
+                    </label>
+                  </div>
+                <% end %>
+              </div>
+            <% end %>
           </fieldset>
         </div>
 

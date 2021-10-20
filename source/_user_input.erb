@@ -1,0 +1,12 @@
+<div id="<%= data.id %>">
+  <div class="govuk-form-group">
+    <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="event-name">
+        <%= data.input_text %>
+      </label>
+    </h1>
+    <div id="event-name-hint" class="govuk-hint">
+      <%= data.sub_text %>
+    </div>
+    <input class="govuk-input" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+  </div>
+</div>
