@@ -20,7 +20,7 @@
           <% end %>
           <% if data.render_as[0] == "Radio button" %>
             <span id="error-message" class="govuk-error-message govuk-visually-hidden">
-              <span class="govuk-visually-hidden">Error:</span> Select your highest educational qualification
+              <span class="govuk-visually-hidden">Error:</span> <%= data.question_error_message %>
             </span>
             <div class="govuk-radios">
               <% data.answers.each_with_index do |a,i| %>
@@ -34,6 +34,9 @@
             </div>
           <% end %>
           <% if data.render_as[0] == "Checkbox" %>
+              <span id="error-message" class="govuk-error-message govuk-visually-hidden">
+                <span class="govuk-visually-hidden">Error:</span> <%= data.question_error_message %>
+              </span>
               <div class="govuk-checkboxes" data-module="govuk-checkboxes">
                 <% data.answers.each_with_index do |a,i| %>
                   <div class="govuk-checkboxes__item">

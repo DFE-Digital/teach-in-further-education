@@ -13,7 +13,8 @@ module.exports = function (migration) {
                     "userJourney",
                     "story",
                     "tableOfContents",
-                    "userInput"
+                    "userInput",
+                    "Panel"
                 ],
             }
         ],

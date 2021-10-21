@@ -33,4 +33,7 @@
   <% if block._meta.content_type_id == "userInput" %>
     <%= partial("user_input", :locals => { :data => block }) %>
   <% end %>
+  <% if block._meta.content_type_id == "Panel" %>
+    <%= partial("panel", :locals => { :data => block }) %>
+  <% end %>
 </div>

@@ -18,4 +18,16 @@ module.exports = function (migration) {
             },
         ],
     });
+
+    questionGroup
+        .createField("questionErrorMessage")
+        .name("questionErrorMessage")
+        .type("Text")
+        .localized(false)
+        .required(false)
+        .validations([])
+        .disabled(false)
+        .omitted(false);
+
+    questionGroup.changeFieldControl("questionErrorMessage", "builtin", "singleLine", {});
 };
