@@ -7,7 +7,9 @@
       <fieldset class="govuk-fieldset">
         <legend class="govuk-fieldset_legend govuk-fieldset_legend--1">
           <label class="govuk-label" style="margin-bottom: 20px" for="answer">
-          <%= data.sub_text %>
+          <% if !data.sub_text.nil? %>
+             <%= markdown(data.sub_text) %>
+          <% end %>
           </label>
           </legend>
           <% if data.render_as[0] == "Dropdown" %>
