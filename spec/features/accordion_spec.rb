@@ -8,28 +8,13 @@ describe 'Accordion components', :type => :feature do
   it "should have correct elements" do
     accordionFirstSection = page.find_by_id("26o7zVgA8zuq4GnxJgvjD8")
     within accordionFirstSection do
-      has_css? 'govuk-accordion', count: 1
-      has_css? 'govuk-accordion__icon', count: 1
-      has_css? 'govuk-list govuk-list--bullet', count: 3
-      has_css? 'li', count: 7
-      has_css? 'govuk-body', count: 10
-    end
-    accordionFirstSection = page.find_by_id("2GE7Oj5gaBed42AHKQjNhL")
-    within accordionFirstSection do
-      has_css? 'govuk-accordion', count: 1
-      has_css? 'govuk-accordion__icon', count: 1
+      has_css? 'govuk-accordion', count: 3
+      has_css? 'govuk-accordion__icon', count: 3
+      has_css? 'govuk-list govuk-list--bullet', count: 8
       has_css? 'govuk-heading-m', count: 5
-      has_css? 'govuk-list govuk-list--bullet', count: 3
-      has_css? 'li', count: 10
-      has_css? 'govuk-body', count: 22
-    end
-    accordionFirstSection = page.find_by_id("5Gbe5ispILIDUHyxGLu3lq")
-    within accordionFirstSection do
-      has_css? 'govuk-accordion', count: 1
-      has_css? 'govuk-accordion__icon', count: 1
-      has_css? 'govuk-list govuk-list--bullet', count: 2
-      has_css? 'li', count: 6
-      has_css? 'govuk-body', count: 6
+      has_css? 'li', count: 23
+      has_css? 'govuk-body', count: 29
+      has_css? 'govuk-link', count: 13
     end
   end
 
