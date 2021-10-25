@@ -29,7 +29,7 @@ namespace TeachFe.E2e_test.PageObjects
 
         public bool ContentDegreeResultsDisplayed()
         {
-            return _ = MainContent.Displayed;
+            return MainContent.Displayed;
         }
 
         public void ClickBackButton()
