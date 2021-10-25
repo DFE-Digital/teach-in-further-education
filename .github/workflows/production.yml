@@ -23,7 +23,7 @@ jobs:
 
       - name: Export contentful content
         id: contentfulExport
-        run: contentful space export --management-token ${{ secrets.CONTENTFUL_MGMT_TOKEN }} --space-id ${{ secrets.CONTENTFUL_SPACE_ID }} --environment-id pre-production --content-file devExport.json --query-assets 'sys.id=0000'
+        run: contentful space export --management-token ${{ secrets.CONTENTFUL_MGMT_TOKEN }} --space-id ${{ secrets.CONTENTFUL_SPACE_ID }} --environment-id pre-production --content-only --content-file devExport.json --query-assets 'sys.id=0000'
 
       - name: Import contentful content
         id: contentfulImport
