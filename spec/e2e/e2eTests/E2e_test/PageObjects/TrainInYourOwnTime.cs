@@ -73,6 +73,21 @@ namespace TeachFe.E2e_test.PageObjects
             get { return driver.FindElement(By.LinkText("PCET in Post-Compulsory Education and Training")); }
         }
 
+        public IWebElement DiplomaInEducationAndTrainingLink
+        {
+            get { return driver.FindElement(By.LinkText("Diploma in Education and Training")); }
+        }
+
+        public IWebElement TeacherBursaryLink
+        {
+            get { return driver.FindElement(By.PartialLinkText("Find out about the current teacher")); }
+        }
+
+        public IWebElement EmailLink
+        {
+            get { return driver.FindElement(By.LinkText("Teach.FE@education.gov.uk ")); }
+        }
+
         #endregion
 
         #region Actions
@@ -135,6 +150,21 @@ namespace TeachFe.E2e_test.PageObjects
         public void ClickPcetLink()
         {
             PcetLink.Click();
+        }
+
+        public void ClickDiplomaInEducationAndTrainingLink()
+        {
+            DiplomaInEducationAndTrainingLink.Click();
+        }
+
+        public void ClickTeacherBursaryLink()
+        {
+            TeacherBursaryLink.Click();
+        }
+
+        public bool EmailLinkDisplayed()
+        {
+            return EmailLink.Displayed;
         }
 
         #endregion
