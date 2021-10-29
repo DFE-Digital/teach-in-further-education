@@ -48,38 +48,38 @@ namespace TeachFe.E2e_test.PageObjects
             get { return driver.FindElement(By.Id("error-message")); }
         }
 
-        public IWebElement FinancialSupportToTrainLink
+        public IWebElement FullListOfFeQualifications
         {
-            get { return driver.FindElement(By.PartialLinkText("You might be able to start work")); }
+            get { return driver.FindElement(By.LinkText("Here's a list of popular teacher training courses.")); }
         }
 
-        public IWebElement WhatLevelsMeanLink
+        public IWebElement StudentFinanceLink
         {
-            get { return driver.FindElement(By.LinkText("What levels mean")); }
+            get { return driver.FindElement(By.PartialLinkText("You may be eligible to apply for a student loan")); }
         }
 
-        public IWebElement EmailLink
+        public IWebElement TrainOnTheJobLink
         {
-            get { return driver.FindElement(By.LinkText("Teach.FE@education.gov.uk")); }
+            get { return driver.FindElement(By.LinkText("Train on the job")); }
         }
 
         public IWebElement BursariesAvailableLink
         {
-            get { return driver.FindElement(By.PartialLinkText("There are bursaries available")); }
+            get { return driver.FindElement(By.LinkText("There are bursaries available for some subjects.")); }
         }
 
-        public IWebElement FullListOfFeCoursesLink
+        public IWebElement PcetLink
         {
-            get { return driver.FindElement(By.PartialLinkText("A full list of all FE courses")); }
+            get { return driver.FindElement(By.LinkText("PCET in Post-Compulsory Education and Training")); }
         }
 
         #endregion
 
         #region Actions
 
-        public bool ContentExpAndQualificationsDisplayed()
+        public bool ContentTrainInYourOwnTimeDisplayed()
         {
-            return _ = MainContent.Displayed;
+            return MainContent.Displayed;
         }
 
         public bool ValidationErrorMessageDisplayed()
@@ -112,14 +112,19 @@ namespace TeachFe.E2e_test.PageObjects
             SubmitButton.Click();
         }
 
-        public void ClickFinancialSupportToTrainLink()
+        public void ClickFullListOfFeQualifications()
         {
-            FinancialSupportToTrainLink.Click();
+            FullListOfFeQualifications.Click();
         }
 
-        public void ClickWhatLevelsMeanLink()
+        public void ClickStudentFinanceLink()
         {
-            WhatLevelsMeanLink.Click();
+            StudentFinanceLink.Click();
+        }
+
+        public void ClickTrainOnTheJobLink()
+        {
+            TrainOnTheJobLink.Click();
         }
 
         public void ClickBursariesAvailableLink()
@@ -127,10 +132,11 @@ namespace TeachFe.E2e_test.PageObjects
             BursariesAvailableLink.Click();
         }
 
-        public void ClickFullListOfFeCoursesLink()
+        public void ClickPcetLink()
         {
-            FullListOfFeCoursesLink.Click();
+            PcetLink.Click();
         }
+
         #endregion
     }
 }
