@@ -7,7 +7,9 @@
       <fieldset class="govuk-fieldset">
         <legend class="govuk-fieldset_legend govuk-fieldset_legend--1">
           <label class="govuk-label" style="margin-bottom: 20px" for="answer">
-          <%= data.sub_text %>
+          <% if !data.sub_text.nil? %>
+             <%= markdown(data.sub_text) %>
+          <% end %>
           </label>
           </legend>
           <% if data.render_as[0] == "Dropdown" %>
@@ -20,7 +22,7 @@
           <% end %>
           <% if data.render_as[0] == "Radio button" %>
             <span id="error-message" class="govuk-error-message govuk-visually-hidden">
-              <span class="govuk-visually-hidden">Error:</span> Select your highest educational qualification
+              <span class="govuk-visually-hidden">Error:</span> <%= data.question_error_message %>
             </span>
             <div class="govuk-radios">
               <% data.answers.each_with_index do |a,i| %>
@@ -33,6 +35,21 @@
               <% end %>
             </div>
           <% end %>
+          <% if data.render_as[0] == "Checkbox" %>
+              <span id="error-message" class="govuk-error-message govuk-visually-hidden">
+                <span class="govuk-visually-hidden">Error:</span> <%= data.question_error_message %>
+              </span>
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <% data.answers.each_with_index do |a,i| %>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="<% a.id %>" name="answer" type="checkbox" value="<%= a.link.slug %>" aria-label="<%= a.answer %>">
+                    <label class="govuk-label govuk-checkboxes__label" id="<% a.id %>_label" for="answer" aria-hidden="true">
+                      <%= a.answer %>
+                    </label>
+                  </div>
+                <% end %>
+              </div>
+            <% end %>
           </fieldset>
         </div>
 

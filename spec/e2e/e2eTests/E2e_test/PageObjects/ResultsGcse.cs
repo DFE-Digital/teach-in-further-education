@@ -29,7 +29,7 @@ namespace TeachFe.E2e_test.PageObjects
 
         public bool ContentGcseResultsDisplayed()
         {
-            return _ = MainContent.Displayed;
+            return MainContent.Displayed;
         }
 
         public void ClickBackButton()
