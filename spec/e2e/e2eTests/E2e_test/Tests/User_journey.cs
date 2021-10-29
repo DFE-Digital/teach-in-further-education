@@ -19,7 +19,7 @@ namespace TeachFe.E2e_test
         {
             Homepage homepage = new Homepage(driver);
             GuideToFeTeachingPage guideToFeTeachingPage = new GuideToFeTeachingPage(driver);
-            ExperienceAndQualificationsPage experienceAndQualificationsPage = new ExperienceAndQualificationsPage(driver);
+            TrainInYourOwnTimePage trainInYourOwnTimePage = new TrainInYourOwnTimePage(driver);
             FindAnFeTeachingJobPage findAnFeTeachingJobPage = new FindAnFeTeachingJobPage(driver);
             TrainingAndSupportPage trainingAndSupportPage = new TrainingAndSupportPage(driver);
             ResultsNoQualificationsPage resultsNoQualificationsPage = new ResultsNoQualificationsPage(driver);
@@ -54,44 +54,44 @@ namespace TeachFe.E2e_test
             homepage.ClickExperienceAndQualificationsNavButton();
             Assert.IsTrue(driver.Url.EndsWith("/experience-and-qualifications.html"));
 
-            experienceAndQualificationsPage.ContentExpAndQualificationsDisplayed();
-            experienceAndQualificationsPage.ClickFinancialSupportToTrainLink();
+            trainInYourOwnTimePage.ContentExpAndQualificationsDisplayed();
+            trainInYourOwnTimePage.ClickFinancialSupportToTrainLink();
             Assert.IsTrue(driver.Url.EndsWith("/financial-support-to-train.html"));
             driver.Navigate().Back();
-            experienceAndQualificationsPage.ClickWhatLevelsMeanLink();
+            trainInYourOwnTimePage.ClickWhatLevelsMeanLink();
             Assert.IsTrue(driver.Url.EndsWith("/what-different-qualification-levels-mean/list-of-qualification-levels"));
             driver.Navigate().Back();
-            Assert.IsTrue(experienceAndQualificationsPage.EmailLink.Text.Equals("Teach.FE@education.gov.uk"));
-            experienceAndQualificationsPage.ClickBursariesAvailableLink();
+            Assert.IsTrue(trainInYourOwnTimePage.EmailLink.Text.Equals("Teach.FE@education.gov.uk"));
+            trainInYourOwnTimePage.ClickBursariesAvailableLink();
             Assert.IsTrue(driver.Url.Contains("/initial-teacher-training-bursaries-funding-manual"));
             driver.Navigate().Back();
-            experienceAndQualificationsPage.ClickFullListOfFeCoursesLink();
+            trainInYourOwnTimePage.ClickFullListOfFeCoursesLink();
             Assert.IsTrue(driver.Url.EndsWith("/full-list-of-fe-qualifications.html"));
             driver.Navigate().Back();
-            experienceAndQualificationsPage.ClickSubmitButton();
-            experienceAndQualificationsPage.ValidationErrorMessageDisplayed();
-            experienceAndQualificationsPage.ClickNoneRadioButton();
-            experienceAndQualificationsPage.ClickSubmitButton();
+            trainInYourOwnTimePage.ClickSubmitButton();
+            trainInYourOwnTimePage.ValidationErrorMessageDisplayed();
+            trainInYourOwnTimePage.ClickNoneRadioButton();
+            trainInYourOwnTimePage.ClickSubmitButton();
 
             Assert.IsTrue(driver.Url.EndsWith("/results-no-quals.html"));
             resultsNoQualificationsPage.ContentNoQualificationsResultsDisplayed();
             resultsNoQualificationsPage.ClickBackButton();
             Assert.IsTrue(driver.Url.EndsWith("/experience-and-qualifications.html"));
 
-            experienceAndQualificationsPage.ClickGcseButton();
-            experienceAndQualificationsPage.ClickSubmitButton();
+            trainInYourOwnTimePage.ClickGcseButton();
+            trainInYourOwnTimePage.ClickSubmitButton();
             Assert.IsTrue(driver.Url.EndsWith("/diploma-in-education-and-training-gcse.html"));
             resultsGcsePage.ContentGcseResultsDisplayed();
             resultsGcsePage.ClickBackButton();
 
-            experienceAndQualificationsPage.ClickAlevelsButton();
-            experienceAndQualificationsPage.ClickSubmitButton();
+            trainInYourOwnTimePage.ClickAlevelsButton();
+            trainInYourOwnTimePage.ClickSubmitButton();
             Assert.IsTrue(driver.Url.EndsWith("/diploma-in-education-and-training-result-a-level.html"));
             resultsAlevelsPage.ContentAlevelsResultsDisplayed();
             resultsAlevelsPage.ClickBackButton();
 
-            experienceAndQualificationsPage.ClickDegreeButton();
-            experienceAndQualificationsPage.ClickSubmitButton();
+            trainInYourOwnTimePage.ClickDegreeButton();
+            trainInYourOwnTimePage.ClickSubmitButton();
             Assert.IsTrue(driver.Url.EndsWith("/results-degree-or-above.html"));
             resultsDegreePage.ContentDegreeResultsDisplayed();
             resultsDegreePage.ClickBackButton();
