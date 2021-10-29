@@ -17,6 +17,8 @@ namespace TeachFe.E2e_test
         [Test]
         public void UserJourneyChromeDriver()
         {
+            #region pages
+
             Homepage homepage = new Homepage(driver);
             GuideToFeTeachingPage guideToFeTeachingPage = new GuideToFeTeachingPage(driver);
             TrainInYourOwnTimePage trainInYourOwnTimePage = new TrainInYourOwnTimePage(driver);
@@ -28,6 +30,8 @@ namespace TeachFe.E2e_test
             ResultsGcsePage resultsGcsePage = new ResultsGcsePage(driver);
             ResultsAlevelsPage resultsAlevelsPage = new ResultsAlevelsPage(driver);
             ResultsDegreePage resultsDegreePage = new ResultsDegreePage(driver);
+
+            #endregion
 
             homepage.NavigateTo();
             homepage.ContentHomepageDisplayed();
