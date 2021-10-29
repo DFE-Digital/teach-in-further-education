@@ -21,7 +21,9 @@ namespace TeachFe.E2e_test
             GuideToFeTeachingPage guideToFeTeachingPage = new GuideToFeTeachingPage(driver);
             TrainInYourOwnTimePage trainInYourOwnTimePage = new TrainInYourOwnTimePage(driver);
             FindAnFeTeachingJobPage findAnFeTeachingJobPage = new FindAnFeTeachingJobPage(driver);
-            TrainingAndSupportPage trainingAndSupportPage = new TrainingAndSupportPage(driver);
+            TrainOnTheJobPage trainOnTheJobPage = new TrainOnTheJobPage(driver);
+            HelpAndAdvicePage helpAndAdvicePage = new HelpAndAdvicePage(driver);
+            //TrainingAndSupportPage trainingAndSupportPage = new TrainingAndSupportPage(driver);
             ResultsNoQualificationsPage resultsNoQualificationsPage = new ResultsNoQualificationsPage(driver);
             ResultsGcsePage resultsGcsePage = new ResultsGcsePage(driver);
             ResultsAlevelsPage resultsAlevelsPage = new ResultsAlevelsPage(driver);
