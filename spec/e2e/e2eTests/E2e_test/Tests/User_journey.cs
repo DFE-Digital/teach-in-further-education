@@ -112,7 +112,7 @@ namespace TeachFe.E2e_test
             trainInYourOwnTimePage.ClickTrainOnTheJobLink();
             Assert.IsTrue(driver.Url.EndsWith("/train-on-the-job.html"));
             driver.Navigate().Back();
-            trainInYourOwnTimePage.ClickTeacherBursaryLink();
+            trainInYourOwnTimePage.ClickBursariesAvailableLink();
             Assert.IsTrue(driver.Url.Contains("/initial-teacher-training-bursaries-funding-manual"));
             driver.Navigate().Back();
             trainInYourOwnTimePage.ClickSubmitButton();
@@ -128,11 +128,13 @@ namespace TeachFe.E2e_test
             Assert.IsTrue(driver.Url.EndsWith("/diploma-in-education-and-training-gcse.html"));
             resultsGcsePage.ContentGcseResultsDisplayed();
             resultsGcsePage.ClickBackButton();
+            Assert.IsTrue(driver.Url.EndsWith("/train-in-your-own-time.html"));
             trainInYourOwnTimePage.ClickAlevelsButton();
             trainInYourOwnTimePage.ClickSubmitButton();
             Assert.IsTrue(driver.Url.EndsWith("/diploma-in-education-and-training-result-a-level.html"));
             resultsAlevelsPage.ContentAlevelsResultsDisplayed();
             resultsAlevelsPage.ClickBackButton();
+            Assert.IsTrue(driver.Url.EndsWith("/train-in-your-own-time.html"));
             trainInYourOwnTimePage.ClickDegreeButton();
             trainInYourOwnTimePage.ClickSubmitButton();
             Assert.IsTrue(driver.Url.EndsWith("/results-degree-or-above.html"));
@@ -145,6 +147,7 @@ namespace TeachFe.E2e_test
             trainInYourOwnTimePage.ClickDiplomaInEducationAndTrainingLink();
             Assert.IsTrue(driver.Url.EndsWith("/diploma-in-education-and-training.html"));
             driver.Navigate().Back();
+            Assert.IsTrue(driver.Url.EndsWith("/train-in-your-own-time.html"));
             trainInYourOwnTimePage.ClickTeacherBursaryLink();
             Assert.IsTrue(driver.Url.Contains("/publications/fe-funding-initial-teacher-education-ite"));
             driver.Navigate().Back();
