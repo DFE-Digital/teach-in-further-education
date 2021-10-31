@@ -27,7 +27,7 @@ namespace TeachFe.E2e_test.PageObjects
 
         #region Actions
 
-        public bool ContentTrainOnTheJobDisplayed()
+        public bool ContentHelpAndAdviceDisplayed()
         {
             return MainContent.Displayed;
         }
