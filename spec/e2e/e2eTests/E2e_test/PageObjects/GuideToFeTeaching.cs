@@ -18,7 +18,7 @@ namespace TeachFe.E2e_test.PageObjects
             get { return driver.FindElement(By.Id("main-content")); }
         }
 
-        public IWebElement FinancialSupportToTrainLink
+        public IWebElement TrainOnTheJobLink
         {
             get { return driver.FindElement(By.PartialLinkText("If you have significant career")); }
         }
@@ -47,9 +47,9 @@ namespace TeachFe.E2e_test.PageObjects
             return MainContent.Displayed;
         }
 
-        public void ClickFinancialSupportToTrainLink()
+        public void ClickTrainOnTheJobLink()
         {
-            FinancialSupportToTrainLink.Click();
+            TrainOnTheJobLink.Click();
         }
 
         public void ClickOpenAllButton()
