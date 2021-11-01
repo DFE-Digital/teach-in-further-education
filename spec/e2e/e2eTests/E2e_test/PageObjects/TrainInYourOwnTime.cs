@@ -85,7 +85,7 @@ namespace TeachFe.E2e_test.PageObjects
 
         public IWebElement EmailLink
         {
-            get { return driver.FindElement(By.LinkText("Teach.FE@education.gov.uk ")); }
+            get { return driver.FindElement(By.LinkText("Teach.FE@education.gov.uk")); }
         }
 
         #endregion
