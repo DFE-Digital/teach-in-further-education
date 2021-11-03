@@ -5,7 +5,7 @@ using TeachFe.E2e_test.PageObjects;
 namespace TeachFe.E2e_test
 {
     [TestFixture]
-    public class UserJourney
+    public class UserJourneyDev
     {
         private ChromeDriver driver;
 
@@ -34,7 +34,7 @@ namespace TeachFe.E2e_test
 
             #region homepage
 
-            homepage.NavigateTo();
+            homepage.NavigateToDev();
             homepage.ContentHomepageDisplayed();
             homepage.ClickTrainOnTheJobLink();
             Assert.IsTrue(driver.Url.EndsWith("/train-on-the-job.html"));
