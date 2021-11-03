@@ -102,6 +102,7 @@ namespace TeachFe.E2e_test
 
             #region train in your own time
 
+            trainInYourOwnTimePage.ContentTrainInYourOwnTimeDisplayed();
             trainInYourOwnTimePage.ClickFullListOfFeQualifications();
             Assert.IsTrue(driver.Url.EndsWith("/full-list-of-fe-qualifications.html"));
             driver.Navigate().Back();
