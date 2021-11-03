@@ -1,4 +1,4 @@
-name: e2eTestsOnDev
+name: e2eTests
 
 on:
   push:
