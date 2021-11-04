@@ -2,7 +2,7 @@ name: Request Handling Tests
 
 on:
   push:
-    branches: [ development, test, pre-production ]
+    branches: [ development ]
     paths-ignore:
       - '**/*.md'
   workflow_dispatch:
