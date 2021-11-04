@@ -11,7 +11,7 @@ on:
 jobs:
   build:
     name: Build application
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     environment: Development
     steps:
       - uses: actions/checkout@v2
