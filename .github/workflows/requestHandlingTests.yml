@@ -1,4 +1,4 @@
-name: Request Handling Tests
+name: Requests Handling Tests
 
 on:
   push:
