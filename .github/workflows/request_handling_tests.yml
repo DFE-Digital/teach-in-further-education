@@ -61,5 +61,5 @@ jobs:
       - name: Build
         run: dotnet build spec/e2e/TeachFeProject.sln
       - name: Test with the dotnet CLI
-        run: dotnet test spec/e2e/e2eTests/RequestsTests.csproj
+        run: dotnet test spec/e2e/RequestsTests/RequestsTests.csproj
       
