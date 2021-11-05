@@ -6,7 +6,9 @@ namespace TeachFe.E2e_test.PageObjects
     public class Homepage
     {
         private readonly IWebDriver driver;
-        private readonly string url = "https://teachfe:efhcaet@teach-in-further-education-dev.london.cloudapps.digital/";
+        private readonly string urlDev = "https://teachfe:efhcaet@teach-in-further-education-dev.london.cloudapps.digital/";
+        private readonly string urlTest = "https://teachfe:efhcaet@teach-in-further-education-test.london.cloudapps.digital/";
+        private readonly string urlPreProd = "https://teachfe:efhcaet@teach-in-further-education-pre-production.london.cloudapps.digital/";
         public Homepage(IWebDriver driver)
         {
             this.driver = driver;
@@ -28,9 +30,14 @@ namespace TeachFe.E2e_test.PageObjects
             get { return driver.FindElement(By.Id("5yYjsBia5tKnn6rysEdUQ2")); }
         }
 
-        public IWebElement ExperienceAndQualificationsNavButton
+        public IWebElement TrainOnTheJobNavButton
         {
-            get { return driver.FindElement(By.Id("630Q4flj9fmCaHKsckbOA6")); }
+            get { return driver.FindElement(By.Id("2wAftZDRvPUWLTGogsMx4B")); }
+        }
+
+        public IWebElement TrainInYourOwnTimeNavButton
+        {
+            get { return driver.FindElement(By.Id("4LD9JHyl4cpaKoLhRZqk8p")); }
         }
 
         public IWebElement FindAnFeTeachingJobNavButton
@@ -38,13 +45,18 @@ namespace TeachFe.E2e_test.PageObjects
             get { return driver.FindElement(By.Id("7fkpVgKNOUvTuZI7KBhdrE")); }
         }
 
-        public IWebElement TrainingAndFinancialSupportNavButton
+        public IWebElement HelpAndAdviceNavButton
         {
-            get { return driver.FindElement(By.Id("15FI0WUAPnHGy98eB7XW5N")); }
+            get { return driver.FindElement(By.Id("6qhlSowYQyDegYs3FxSiLN")); }
         }
-        public IWebElement FinancialSupportToTrainLink
+        public IWebElement TrainOnTheJobLink
         {
-            get { return driver.FindElement(By.PartialLinkText("Many people start a job in further education")); }
+            get { return driver.FindElement(By.LinkText("Train on the job")); }
+        }
+
+        public IWebElement TrainInYourOwnTimeLink
+        {
+            get { return driver.FindElement(By.LinkText("Train in your own time")); }
         }
 
         public IWebElement GuideToFurtherEducationLink
@@ -61,9 +73,19 @@ namespace TeachFe.E2e_test.PageObjects
 
         #region Actions
 
-        public void NavigateTo()
+        public void NavigateToDev()
         {
-            driver.Navigate().GoToUrl(url);
+            driver.Navigate().GoToUrl(urlDev);
+        }
+
+        public void NavigateToTest()
+        {
+            driver.Navigate().GoToUrl(urlTest);
+        }
+
+        public void NavigateToPreProd()
+        {
+            driver.Navigate().GoToUrl(urlPreProd);
         }
 
         public bool ContentHomepageDisplayed()
@@ -81,9 +103,14 @@ namespace TeachFe.E2e_test.PageObjects
             GuideToFeTeachingNavButton.Click();
         }
 
-        public void ClickExperienceAndQualificationsNavButton()
+        public void ClickTrainOnTheJobNavButton()
         {
-            ExperienceAndQualificationsNavButton.Click();
+            TrainOnTheJobNavButton.Click();
+        }
+
+        public void ClickTrainInYourOwnTimeNavButton()
+        {
+            TrainInYourOwnTimeNavButton.Click();
         }
 
         public void ClickFindAnFeTeachingJobNavButton()
@@ -91,14 +118,19 @@ namespace TeachFe.E2e_test.PageObjects
             FindAnFeTeachingJobNavButton.Click();
         }
 
-        public void ClickTrainingAndFinancialSupportNavButton()
+        public void ClickHelpAndAdviceNavButton()
         {
-            TrainingAndFinancialSupportNavButton.Click();
+            HelpAndAdviceNavButton.Click();
         }
 
-        public void ClickFinancialSupportToTrainLink()
+        public void ClickTrainOnTheJobLink()
         {
-            FinancialSupportToTrainLink.Click();
+            TrainOnTheJobLink.Click();
+        }
+
+        public void ClickTrainInYourOwnTimeLink()
+        {
+            TrainInYourOwnTimeLink.Click();
         }
 
         public void ClickGuideToFurtherEducationLink()
@@ -110,7 +142,6 @@ namespace TeachFe.E2e_test.PageObjects
         {
             GuideToFurtherEducationLinkBottomPage.Click();
         }
-
 
         #endregion
     }

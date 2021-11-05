@@ -4,14 +4,14 @@ using System.Net;
 
 namespace TeachFeRequests
 {
-    public class ExperienceAndQualifications
+    public class FindAnFeTeachingJob
     {
         [Test]
-        public void ExperienceAndQualificationsTest()
+        public void FindAnFeTeachingJobTest()
         {
             // arrange
             RestClient client = new RestClient("http://localhost:4567/");
-            RestRequest request = new RestRequest("experience-and-qualifications.html", Method.GET);
+            RestRequest request = new RestRequest("find-an-fe-teaching-job.html", Method.GET);
 
             // act
             IRestResponse response = client.Execute(request);
