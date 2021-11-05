@@ -123,13 +123,25 @@ $govuk-link-text: #1d70b8
 .govuk-header__menu-button
   &:after
     margin-right: 10px
-
+    border-style: unset
+    border-color: unset
+    webkit-clip-path: unset
+    clip-path: unset
+    border-width: unset
+    border-top-color: unset
+    content: '\2304'
+    
 .govuk-header__menu-button--open 
   
   &:after 
     margin-right: 10px
     background-color: #F5F5F5
-
+    content: '\2304'
+    webkit-clip-path: unset
+    clip-path: unset
+    border-width: unset
+    border-bottom-color: unset
+    
 .govuk-header__container
   @media (max-width: 640px)
     margin-bottom: -5px
