@@ -3,10 +3,10 @@
 
 namespace TeachFe.E2e_test.PageObjects
 {
-    public class ResultsAlevelsPage
+    public class HelpAndAdvicePage
     {
         private readonly IWebDriver driver;
-        public ResultsAlevelsPage(IWebDriver driver)
+        public HelpAndAdvicePage(IWebDriver driver)
         {
             this.driver = driver;
         }
@@ -15,26 +15,26 @@ namespace TeachFe.E2e_test.PageObjects
 
         public IWebElement MainContent
         {
-            get { return driver.FindElement(By.ClassName("govuk-grid-row")); }
+            get { return driver.FindElement(By.Id("main-content")); }
         }
 
-        public IWebElement BackButton
+        public IWebElement EmailLink
         {
-            get { return driver.FindElement(By.Id("4jG2PspMQXj2hxNwIzNLfN")); }
+            get { return driver.FindElement(By.LinkText("Teach.FE@education.gov.uk")); }
         }
 
         #endregion
 
         #region Actions
 
-        public bool ContentAlevelsResultsDisplayed()
+        public bool ContentHelpAndAdviceDisplayed()
         {
             return MainContent.Displayed;
         }
 
-        public void ClickBackButton()
+        public bool EmailLinkDisplayed()
         {
-            BackButton.Click();
+            return EmailLink.Displayed;
         }
 
         #endregion
