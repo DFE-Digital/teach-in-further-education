@@ -14,46 +14,6 @@
             <% end %>
           <% end %>
         </ul>
-      <div>
-        <ul id="navigation" class="govuk-header__navigation govuk-width-container" aria-label="Navigation menu">
-        <li id="home-link" class="govuk-header__navigation-item">
-          <a href="/" class="active">
-            Home
-          </a>
-        </li>
-        <% data.site.navs.select { |id, n| n.title == "Header" }.each do |id, n| %>
-          <% n.pages.each do |p| %>
-            <% if p._meta.content_type_id == 'navLink' %>
-              <li id="<%= p.id %>" class="app-dropdown govuk-header__navigation-item">
-                <a class="dropbtn"><%= p.title %></a>
-                <div class="app-dropdown-content govuk-header__navigation-item">
-                  <% p.links.each do |l| %>
-                    <a id="<%= l.id %>" href="/<%= l.slug + ".html" %>" onclick="window.site.analytics.raiseHeaderNavEvent('/<%= l.slug + ".html" %>')"><%= l.title %></a>
-                  <% end %>
-                </div>
-              </li>
-            <% else %>
-              <li id="<%= p.id %>" class= "govuk-header__navigation-item">
-                <a href="<%= p.slug + ".html" %>">
-                  <% if p.nav_title.nil? %>
-                    <%= p.title %>
-                  <% else %>
-                    <%= p.nav_title %>
-                  <% end %>
-                </a>
-              </li>
-            <% end %>
-          <% end %>
-
-          <% if !n.call_to_actions.nil? %>
-            <% n.call_to_actions.each do |c| %>
-              <li id="<%= c.id %>" class="govuk-header__navigation-item">
-                <a href="<%= c.slug + ".html" %>" class="govuk-button"><%= c.title %></a></li>
-            <% end %>
-          <% end %>
-        <% end %>
-      </ul>
-      </div>
         <ul id="footer-links" class="govuk-footer__inline-list">
           <li class="govuk-footer__inline-list-item add-bar">
             <a id="feedback" class="govuk-footer__link" href="https://forms.gle/93nLpM6mqt5tvRmk8">
