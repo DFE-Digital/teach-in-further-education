@@ -30,11 +30,11 @@ $govuk-link-text: #1d70b8
       font-weight: $govuk-font-weight-bold
 
 .app-header-nav
-  max-height: 60px
+  
   padding-top: 0px
   border-bottom: 1px solid #BBBDBF
 
-  @media (max-width: 640px)
+  @media (max-width: 768px)
     border-bottom: none
 
 .govuk-header
@@ -43,7 +43,7 @@ $govuk-link-text: #1d70b8
 .govuk-header__navigation
   margin-right: auto
   margin-left: auto
-  margin-bottom: -2px
+  margin-bottom: -10px
   text-color: #000000
 
 
@@ -51,8 +51,20 @@ $govuk-link-text: #1d70b8
     margin-right: calc(max(30px, env(safe-area-inset-right, 30px)))
     margin-left: calc(max(30px, env(safe-area-inset-left, 30px)))
 
+  @media (max-width: 768px)
+    margin-right: 0px
+    margin-left: 0px
+
 .govuk-header__navigation-item
-  margin-right: 15px
+  margin-right: 25px
+
+  @media (max-width: 768px)
+    margin-right: 0px
+    border-bottom: 1px solid #BBBDBF
+    text-decoration: underline
+    text-underline-position: under
+    background-color:  #F5F5F5
+    font-size: 18px
 
   a
     color: #000000 !important
@@ -60,16 +72,34 @@ $govuk-link-text: #1d70b8
     line-height: 60px !important
     margin: 14px 0px 15px
     padding-bottom: 12px
+    font-size: 17px
 
-    @media (max-width: 640px)
-      margin-left: 5px
+    @media (max-width: 768px)
+      margin-top: 25px
+      margin-bottom: 25px
+      margin-left: 44px
+      margin-right: 44px
+      font-size: 20px
+
+    
+    
 
     &:hover
       color: #6E777A !important
+      border-bottom: 4px solid #6E777A
+
+    &:focus 
+      color: #000000 !important
+      background-color: #FFDD00 !important
+      border-bottom: 4px solid #000000
 
   .active
     color: #000000 !important
     border-bottom: 4px solid #FFB000
+
+    @media (max-width: 768px)
+      border-bottom: none
+      font-weight: bold
 
 .js-enabled
   .govuk-header__menu-button
@@ -80,29 +110,59 @@ $govuk-link-text: #1d70b8
     align-items: baseline
     padding: 25px 18px 18px
 
+    @media (max-width: 768px)
+      flex-direction: row-reverse
+      justify-content: flex-end
+      border-bottom: 1px solid #BBBDBF
+      padding-left: 20px
+      padding-top: 30px
+
     &:focus
       background-color: #F1F0EF
 
+.govuk-header__menu-button
+  &:after
+    margin-right: 10px
+
+.govuk-header__menu-button--open 
+  
+  &:after 
+    margin-right: 10px
+    background-color: #F5F5F5
 
 .govuk-header__container
   @media (max-width: 640px)
     margin-bottom: -5px
+
+.govuk-width-container 
+  @media (max-width: 560px)
+    display: flex
+    flex-direction: column
 
 .govuk-header__logo
   width: fit-content
   float: left
   padding-right: 0px
 
-  @media (max-width: 560px)
-    display: none
+  
 
 .govuk-header__content
   padding-left: 0px
+
+  @media (max-width: 560px)
+    padding-bottom: 5px
+
 
 .govuk-header__link
   &.govuk-header__link--service-name
     font-weight: 300
     font-size: 24px
+    borer-bottom: 1px solid #ffffff
+    
+  &:link 
+    text-decoration: underline
+    text-underline-position: under
+
 
 .govuk-header__divider
   margin-left: 24px
@@ -145,10 +205,10 @@ $govuk-link-text: #1d70b8
 
   @media (max-width: 768px)
     position: unset
-    color: #1d70b8
+    color: #000000
     text-decoration: none
     font-weight: 700
-    font-size: 0.875rem
+    font-size: 20px
     padding-inline: 20px
     padding-top: 10px
     visibility: visible
