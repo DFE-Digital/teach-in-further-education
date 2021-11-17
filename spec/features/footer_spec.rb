@@ -24,7 +24,7 @@ describe 'Footer', :type => :feature do
     it 'renders cookies link' do
         within 'footer' do
             link = page.find_by_id('cookies')
-            expect(link[:href]).to include '/cookies.html'
+            expect(link[:href]).to end_with '/cookies.html'
         end
     end
 
@@ -38,7 +38,7 @@ describe 'Footer', :type => :feature do
     it 'renders Open Gov License link' do
         within 'footer' do
             link = page.find_link("Open Government Licence v3.0", match: :first)
-            expect(link[:href]).to include 'https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/'
+            expect(link[:href]).to eq 'https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/'
         end
     end
 end 

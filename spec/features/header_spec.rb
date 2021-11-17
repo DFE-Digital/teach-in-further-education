@@ -18,10 +18,10 @@ describe 'Header', :type => :feature do
     end
   end
 
-  it 'has the correct heading' do
-      siteHeading = page.find_link("Teach in further education", match: :first)
-      within siteHeading do
-          expect(siteHeading[:href]).to include '/'
+  it 'has the correct heading link' do
+      link = page.find_link("Teach in further education", match: :first)
+      within link do
+          expect(link[:href]).to end_with '/'
       end
   end
 end

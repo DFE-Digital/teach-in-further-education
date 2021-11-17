@@ -7,7 +7,7 @@ describe 'CTA', :type => :feature do
     expect(cta[:class]).to eq "govuk-button "
 
     within cta do
-      has_content? "Primary"
+      expect(cta).to have_content "Primary"
     end
   end
 
@@ -17,7 +17,7 @@ describe 'CTA', :type => :feature do
     expect(cta[:class]).to eq "govuk-button govuk-button--secondary"
 
     within cta do
-      has_content? "Secondary"
+      expect(cta).to have_content "Secondary"
     end
   end
 
@@ -27,7 +27,7 @@ describe 'CTA', :type => :feature do
     expect(cta[:class]).to eq "govuk-button govuk-button--warning"
 
     within cta do
-      has_content? "Warning"
+      expect(cta).to have_content "Warning"
     end
   end
 end

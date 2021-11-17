@@ -66,7 +66,7 @@ describe 'Guide to FE teaching components', :type => :feature do
     it "link should re-direct to expected urls" do
       link = page.find_link("If you have significant career experience, you may be able to start teaching with an FE provider", match: :first)
       within link do 
-        expect(link[:href]).to include "/train-on-the-job.html"       
+        expect(link[:href]).to end_with "/train-on-the-job.html"       
       end
     end
   end

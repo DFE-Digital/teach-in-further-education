@@ -8,44 +8,46 @@ describe 'Train In Your Own Time components', :type => :feature do
     it 'Should have the correct elements' do
         trainBeforeYouApplyElement = page.find_by_id("12qLcJTqyRLLx3q5FjUBVA")
         within trainBeforeYouApplyElement do
-            has_css? 'govuk-heading-l', count: 1
-            has_css? 'govuk-body', count: 4
-            has_css? 'app-image-2', count: 1
+            expect(trainBeforeYouApplyElement).to have_selector 'h2.govuk-heading-l', text: "Train as a teacher before you apply for a job"
+            expect(trainBeforeYouApplyElement).to have_selector '.govuk-body', count: 4
+            expect(trainBeforeYouApplyElement).to have_selector '.app-image-2', count: 1
         end
         approachesElement = page.find_by_id("3rbmhWgWOe2mU4SWn0Nd3t")
         within approachesElement do
-            has_css? 'govuk-heading-m', count: 2
-            has_css? 'govuk-list govuk-list--bullet', count: 2
-            has_css? 'li', count: 6
-            has_css? 'govuk-body', count: 2
+            expect(approachesElement).to have_selector 'h3.govuk-heading-m', text: "This may be the best approach if:" 
+            expect(approachesElement).to have_selector 'h3.govuk-heading-m', text: "This might not be the right approach if:"
+            expect(approachesElement).to have_selector '.govuk-list--bullet', count: 2
+            expect(approachesElement).to have_selector 'li', count: 6
+            expect(approachesElement).to have_selector '.govuk-body', count: 2
         end
         chooseQualificationElement = page.find_by_id("1xTlxAkJL5DzPuOCDYOsQG")
         within chooseQualificationElement do
-            has_css? 'govuk-heading-l', count: 1
-            has_css? 'govuk-body', count: 6
-            has_css? 'govuk-list govuk-list--bullet', count: 1
-            has_css? 'li', count: 4
+            expect(chooseQualificationElement).to have_selector 'h2.govuk-heading-l', text: "Choose your teaching qualification"
+            expect(chooseQualificationElement).to have_selector '.govuk-body', count: 6
+            expect(chooseQualificationElement).to have_selector '.govuk-list--bullet', count: 1
+            expect(chooseQualificationElement).to have_selector 'li', count: 4
         end
         findASuitableQualificationElement = page.find_by_id("qNRtpmv245PlK1GAu8Mzm")
         within findASuitableQualificationElement do
-            has_css? 'govuk-heading-l', count: 1
-            has_css? 'govuk-body', count: 1
-            has_css? 'form', count: 1
-            has_css? 'govuk-radios', count: 1
-            has_css? 'govuk-radios__item', count: 4
-            has_css? 'govuk-button', count: 1
+            expect(findASuitableQualificationElement).to have_selector 'title.govuk-heading-l', text: "Find a suitable qualification"
+            expect(findASuitableQualificationElement).to have_selector '.govuk-body', count: 1
+            expect(findASuitableQualificationElement).to have_selector 'form', count: 1
+            expect(findASuitableQualificationElement).to have_selector '.govuk-radios', count: 1
+            expect(findASuitableQualificationElement).to have_selector '.govuk-radios__item', count: 4
+            expect(findASuitableQualificationElement).to have_selector '.govuk-button', count: 1
         end
         fundingIsAvailableElement = page.find_by_id("5hTTiOCjK33slAKAiPFby")
         within fundingIsAvailableElement do
-            has_css? 'govuk-heading-l', count: 1
-            has_css? 'govuk-body', count: 6
-            has_css? 'govuk-list govuk-list--bullet', count: 2
-            has_css? 'li', count: 5
-            has_css? 'govuk-heading-m', count: 1
+            expect(fundingIsAvailableElement).to have_selector 'h2.govuk-heading-l', text: "Funding is available"
+            expect(fundingIsAvailableElement).to have_selector '.govuk-body', count: 6
+            expect(fundingIsAvailableElement).to have_selector '.govuk-list--bullet', count: 2
+            expect(fundingIsAvailableElement).to have_selector 'li', count: 5
+            expect(fundingIsAvailableElement).to have_selector '.govuk-heading-m', text: "Conditions"
         end
         bottomContactBannerElement = page.find_by_id("1azWRZYSe5p6OxrVsOZsDj")
         within bottomContactBannerElement do
-            has_css? 'govuk-body', count: 2
+            expect(bottomContactBannerElement).to have_selector '.govuk-body', text: "Got a question about qualifications and funding?"
+            expect(bottomContactBannerElement).to have_selector '.govuk-body', text: "Email: Teach.FE@education.gov.uk and our advisors will reply to you within 5 working days."
         end
     end
 
@@ -79,7 +81,7 @@ describe 'Train In Your Own Time components', :type => :feature do
     it "Links should redirect to expected URLs" do
         link = page.find_link("Here's a list of popular teacher training courses.", match: :first)
         within link do
-            expect(link[:href]).to include '/full-list-of-fe-qualifications.html'
+            expect(link[:href]).to end_with '/full-list-of-fe-qualifications.html'
         end
         link = page.find_link("You may be eligible to apply for a student loan to help pay for the course fees.", match: :first)
         within link do
@@ -87,7 +89,7 @@ describe 'Train In Your Own Time components', :type => :feature do
         end
         link = page.find_link("Train on the job", match: :first)
         within link do
-            expect(link[:href]).to include '/train-on-the-job.html'
+            expect(link[:href]).to end_with '/train-on-the-job.html'
         end
         link = page.find_link("There are bursaries available for some subjects.", match: :first)
         within link do
@@ -95,11 +97,11 @@ describe 'Train In Your Own Time components', :type => :feature do
         end
         link = page.find_link("PCET in Post-Compulsory Education and Training", match: :first)
         within link do
-            expect(link[:href]).to include '/pgce-in-post-compulsory-education-and-training-pcet.html'
+            expect(link[:href]).to end_with '/pgce-in-post-compulsory-education-and-training-pcet.html'
         end
         link = page.find_link("Diploma in Education and Training", match: :first)
         within link do
-            expect(link[:href]).to include '/diploma-in-education-and-training.html'
+            expect(link[:href]).to end_with '/diploma-in-education-and-training.html'
         end
         link = page.find_link("Find out about the current teacher training bursaries available.", match: :first)
         within link do

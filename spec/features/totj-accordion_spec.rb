@@ -63,15 +63,15 @@ describe 'Accordion components -', :type => :feature do
     end
     link = page.find_link("Train on the jo", match: :first)
     within link do
-      expect(link[:href]).to include '/train-on-the-job.html'
+      expect(link[:href]).to end_with '/train-on-the-job.html'
     end
     link = page.find_link("Train in your own time", match: :first)
     within link do
-      expect(link[:href]).to include '/train-in-your-own-time.html'
+      expect(link[:href]).to end_with '/train-in-your-own-time.html'
     end
     link = page.find_link("Here's a list of popular teacher training courses", match: :first)
     within link do
-      expect(link[:href]).to include '/full-list-of-fe-qualifications.html'
+      expect(link[:href]).to end_with '/full-list-of-fe-qualifications.html'
     end
   end
 
@@ -90,11 +90,11 @@ describe 'Accordion components -', :type => :feature do
     end
     link = page.find_link("Find your local FE college on the Association of Colleges website", match: :first)
     within link do
-      expect(link[:href]).to include 'https://www.aocjobs.com/employers-a-z'
+      expect(link[:href]).to eq 'https://www.aocjobs.com/employers-a-z'
     end
     link = page.find_link("Find independent training providers on the Association of Employment Learning Providers' website", match: :first)
     within link do
-      expect(link[:href]).to include 'https://www.aelp.org.uk/about/our-members/'
+      expect(link[:href]).to eq 'https://www.aelp.org.uk/about/our-members/'
     end
   end
 
@@ -121,7 +121,7 @@ describe 'Accordion components -', :type => :feature do
      end
      link = page.find_link("College Jobs", match: :first)
      within link do
-       expect(link[:href]).to include 'https://college.jobs.ac.uk/'
+       expect(link[:href]).to eq 'https://college.jobs.ac.uk/'
      end
    end
 end
