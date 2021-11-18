@@ -8,14 +8,14 @@ describe 'Hero', :type => :feature do
   it "should have icon image" do
     advice = page.find_by_id("1osEp5cIptvcTW3oBml6g2")
     within advice do
-      have_selector 'img[src=//images.ctfassets.net/n4docnlbw89d/7GvBzU90bU19dAH8ASgT0N/d860da67789d6fa50c1cb2bcee880b08/Default-Hero-Img.png]'
+      expect(advice.find('img')[:src]).to eq 'http://images.ctfassets.net/n4docnlbw89d/7GvBzU90bU19dAH8ASgT0N/884c7ad5661fd6b00272e91198af704e/EngineeringStudentsLearning.png?w=475'
     end
   end
 
   it "should have content" do
     advice = page.find_by_id("1osEp5cIptvcTW3oBml6g2")
     within advice do
-      has_content? "Pass on your skills and experience to train the UK's future experts"
+      expect(advice).to have_selector 'p.govuk-body', text: "Teach your trade, skill or subject to young people and adults"
     end
   end
 end

@@ -50,7 +50,7 @@ namespace TeachFe.E2e_test.PageObjects
 
         public IWebElement FullListOfFeQualifications
         {
-            get { return driver.FindElement(By.LinkText("Here's a list of popular teacher training courses.")); }
+            get { return driver.FindElement(By.LinkText("Here's a list of popular teacher training courses")); }
         }
 
         public IWebElement StudentFinanceLink

@@ -5,7 +5,7 @@ using TeachFe.E2e_test.PageObjects;
 namespace TeachFe.E2e_test
 {
     [TestFixture]
-    public class UserJourney
+    public class UserJourneyTest
     {
         private ChromeDriver driver;
 
@@ -34,7 +34,7 @@ namespace TeachFe.E2e_test
 
             #region homepage
 
-            homepage.NavigateTo();
+            homepage.NavigateToTest();
             homepage.ContentHomepageDisplayed();
             homepage.ClickTrainOnTheJobLink();
             Assert.IsTrue(driver.Url.EndsWith("/train-on-the-job.html"));
@@ -73,12 +73,6 @@ namespace TeachFe.E2e_test
             #region train on the job page
 
             trainOnTheJobPage.ContentTrainOnTheJobDisplayed();
-            trainOnTheJobPage.ClickFullListOfFeQualificationsLink();
-            Assert.IsTrue(driver.Url.EndsWith("/full-list-of-fe-qualifications.html"));
-            driver.Navigate().Back();
-            trainOnTheJobPage.ClickStudentFinanceLink();
-            Assert.IsTrue(driver.Url.EndsWith("/student-finance"));
-            driver.Navigate().Back();
             trainOnTheJobPage.ClickAzEmployersLink();
             Assert.IsTrue(driver.Url.EndsWith("aocjobs.com/employers-a-z"));
             driver.Navigate().Back();
@@ -102,6 +96,7 @@ namespace TeachFe.E2e_test
 
             #region train in your own time
 
+            trainInYourOwnTimePage.ContentTrainInYourOwnTimeDisplayed();
             trainInYourOwnTimePage.ClickFullListOfFeQualifications();
             Assert.IsTrue(driver.Url.EndsWith("/full-list-of-fe-qualifications.html"));
             driver.Navigate().Back();

@@ -1,0 +1,96 @@
+---
+:id: 2wAftZDRvPUWLTGogsMx4B
+:_meta:
+  :content_type_id: page
+  :updated_at: '2021-11-03T11:24:20+00:00'
+  :created_at: '2021-10-28T08:57:14+00:00'
+  :id: 2wAftZDRvPUWLTGogsMx4B
+:title: Train on the job
+:nav_title: Train on the job
+:slug: train-on-the-job
+:blocks:
+- :id: 5cu3CALGtvPugA7rbdsPwW
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-10-28T09:02:45+00:00'
+    :created_at: '2021-04-29T23:31:03+00:00'
+    :id: 5cu3CALGtvPugA7rbdsPwW
+  :title: Training on the job
+  :advice_body: |-
+    If you have the skills, knowledge and experience the college or training provider wants, you can start work as an FE teacher.
+
+    You'll study for your teacher training alongside your work as a teacher. Colleges and training providers may give you time to study during working hours.
+
+    [Here's a list of popular teacher training courses.](/full-list-of-fe-qualifications.html "A list of popular teacher training courses")
+
+    The FE provider may pay for your teacher training. If so, they may expect you to stay with them for a set period after you qualify.
+
+    [You may be eligible to apply for a student loan to help pay for the course fees.](https://www.gov.uk/student-finance "Student loans")
+  :media:
+    :title: Earn while you learn
+    :description: A male teacher with two female students looking at a computer
+    :url: "//images.ctfassets.net/n4docnlbw89d/lza5filA0VlqXNUB0X7HJ/6132507391a068275e4412dc6c05fd98/EarnWhileYouLearn.png"
+    :_meta:
+      :updated_at: '2021-09-10T14:06:04+00:00'
+      :created_at: '2021-07-01T20:24:39+00:00'
+      :id: lza5filA0VlqXNUB0X7HJ
+  :display_order: false
+  :apply_background_color: false
+  :show_title: true
+- :id: 1KOfyONjdF71g4vBQYtd5w
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-11-03T11:24:11+00:00'
+    :created_at: '2021-08-25T15:34:10+00:00'
+    :id: 1KOfyONjdF71g4vBQYtd5w
+  :title: In service training pros and cons
+  :advice_body: "### This may be the best approach if:\n\n- you want to start your
+    new career sooner rather than later\n- there is a suitable job available at a
+    local college or training provider\n- you do not want to pay for teacher training
+    yourself\n- you do not want to arrange teaching practice yourself as part of your
+    course\n\n### This might not be the right approach if:\n\n- you want to complete
+    your teacher training first\n- you'd prefer to choose your own teaching qualification\n-
+    you need to do further study or gain more experience\n\n[Train in your own time](/train-in-your-own-time.html
+    \"Train in your own time\")\n\n### How to get started\n\nThere is no formal entry
+    path. The best thing to do is to speak to your local FE college or training provider,
+    or look out for job ads on their website.\n\n[Find your local FE college on the
+    Association of Colleges website](https://www.aocjobs.com/employers-a-z \"List
+    of FE colleges from Association of Colleges\")\n\n[Find independent training providers
+    on the Association of Employment Learning Providers' website](https://www.aelp.org.uk/about/our-members/
+    \"Association of Employment Learning Providers member finder\")\n\n[Find a job
+    in FE on the Association of Colleges website](https://www.aocjobs.com/ \"Association
+    of Colleges college finder\")\n\nThe Department for Education does not endorse
+    any particular providers or job sites. "
+  :display_order: true
+  :apply_background_color: false
+  :show_title: false
+- :id: 5yvT8Cy2hbgxPnEoX4G7Bq
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-11-02T14:36:54+00:00'
+    :created_at: '2021-10-28T08:57:12+00:00'
+    :id: 5yvT8Cy2hbgxPnEoX4G7Bq
+  :title: Find a further education teaching job content
+  :advice_body: '[Find a further education teaching job](/find-an-fe-teaching-job.html
+    "Find a further education teaching job")'
+  :display_order: false
+  :apply_background_color: false
+  :show_title: false
+- :id: 57ltZ1kjZ3UMvmAJzCb8Kz
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-10-28T08:57:12+00:00'
+    :created_at: '2021-10-28T08:57:12+00:00'
+    :id: 57ltZ1kjZ3UMvmAJzCb8Kz
+  :title: Got a question about training with a local college or training provider?
+  :advice_body: |-
+    ---
+
+    Got a question about training with a local college or training provider?
+
+    Email: <a href="mailto:Teach.FE@education.gov.uk" onclick="window.site.analytics.raiseExitPointEvent('emailAddress')">Teach.FE@education.gov.uk</a> and our advisors will reply to you within 5 working days.
+
+    ---
+  :display_order: false
+  :apply_background_color: false
+  :show_title: false

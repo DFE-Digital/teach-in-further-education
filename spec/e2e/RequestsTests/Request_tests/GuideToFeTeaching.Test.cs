@@ -4,10 +4,10 @@ using System.Net;
 
 namespace TeachFeRequests
 {
-    public class GuideToFurtherEducation
+    public class GuideToFeTeaching
     {
         [Test]
-        public void GuideToFurtherEducationTest()
+        public void GuideToFeTeachingTest()
         {
             // arrange
             RestClient client = new RestClient("http://localhost:4567/");
@@ -33,6 +33,21 @@ namespace TeachFeRequests
 
             // assert
             Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.NotFound));
+        }
+
+        [Test]
+        public void FullListOfQualificationsLikTest()
+        {
+            // arrange
+            RestClient client = new RestClient("http://localhost:4567/");
+            RestRequest request = new RestRequest("full-list-of-fe-qualifications.html", Method.GET);
+
+            // act
+            IRestResponse response = client.Execute(request);
+
+            // assert
+            Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
+            Assert.IsNotNull(response);
         }
     }
 }
