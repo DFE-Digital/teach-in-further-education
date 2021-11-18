@@ -18,16 +18,6 @@ namespace TeachFe.E2e_test.PageObjects
             get { return driver.FindElement(By.Id("main-content")); }
         }
 
-        public IWebElement FullListOfFeQualificationsLink
-        {
-            get { return driver.FindElement(By.PartialLinkText("Here's a list of popular teacher")); }
-        }
-
-        public IWebElement StudentFinanceLink
-        {
-            get { return driver.FindElement(By.PartialLinkText("You may be eligible to apply for a student loan")); }
-        }
-
         public IWebElement AzEmployersLink
         {
             get { return driver.FindElement(By.PartialLinkText("Find your local FE college on the Association")); }
@@ -65,16 +55,6 @@ namespace TeachFe.E2e_test.PageObjects
         public bool ContentTrainOnTheJobDisplayed()
         {
             return MainContent.Displayed;
-        }
-
-        public void ClickFullListOfFeQualificationsLink()
-        {
-            FullListOfFeQualificationsLink.Click();
-        }
-
-        public void ClickStudentFinanceLink()
-        {
-            StudentFinanceLink.Click();
         }
 
         public void ClickAzEmployersLink()
