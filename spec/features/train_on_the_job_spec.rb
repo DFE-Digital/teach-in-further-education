@@ -8,22 +8,25 @@ describe 'Train On The Job components', :type => :feature do
     it "should have correct elements" do
         trainingOnTheJobElement = page.find_by_id("5cu3CALGtvPugA7rbdsPwW")
         within trainingOnTheJobElement do
-            has_css? 'govuk-heading-l', count: 1
-            has_css? 'govuk-body', count: 5
+            expect(trainingOnTheJobElement).to have_selector 'h2.govuk-heading-l', text: "Training on the job"
+            expect(trainingOnTheJobElement).to have_selector '.govuk-body', count: 5
         end
         approachesAndGetStartedElement = page.find_by_id("1KOfyONjdF71g4vBQYtd5w")
         within approachesAndGetStartedElement do
-            has_css? 'govuk-heading-m', count: 3
-            has_css? 'govuk-list govuk-list--bullet', count: 2
-            has_css? 'li', count: 7
+            expect(approachesAndGetStartedElement).to have_selector 'h3.govuk-heading-m', text: "This may be the best approach if:"
+            expect(approachesAndGetStartedElement).to have_selector '.govuk-list--bullet', count: 2
+            expect(approachesAndGetStartedElement).to have_selector 'li', count: 7
+            expect(approachesAndGetStartedElement).to have_selector 'h3.govuk-heading-m', text: "This might not be the right approach if:"
+            expect(approachesAndGetStartedElement).to have_selector 'h3.govuk-heading-m', text: "How to get started"
         end
         findAnFeJobLinkElement = page.find_by_id("5yvT8Cy2hbgxPnEoX4G7Bq")
         within findAnFeJobLinkElement do
-            has_css? 'govuk-body', count: 1
+            expect(findAnFeJobLinkElement).to have_selector '.govuk-body', text: "Find a further education teaching job"
         end
         bottomContactBannerElement = page.find_by_id("57ltZ1kjZ3UMvmAJzCb8Kz")
         within bottomContactBannerElement do
-            has_css? 'govuk-body', count: 2            
+          expect(bottomContactBannerElement).to have_selector '.govuk-body', text: "Got a question about training with a local college or training provider?"
+          expect(bottomContactBannerElement).to have_selector '.govuk-body', text: "Email: Teach.FE@education.gov.uk and our advisors will reply to you within 5 working days."            
         end
     end
 
@@ -45,7 +48,7 @@ describe 'Train On The Job components', :type => :feature do
     it "Links should re-direct to the expected URLs" do
         link = page.find_link("Here's a list of popular teacher training courses.", match: :first)
         within link do 
-          expect(link[:href]).to include '/full-list-of-fe-qualifications.html'
+          expect(link[:href]).to end_with '/full-list-of-fe-qualifications.html'
         end
         link = page.find_link("You may be eligible to apply for a student loan to help pay for the course fees.", match: :first)
         within link do 
@@ -53,7 +56,7 @@ describe 'Train On The Job components', :type => :feature do
         end
         link = page.find_link("Train in your own time", match: :first)
         within link do 
-          expect(link[:href]).to include '/train-in-your-own-time.html'
+          expect(link[:href]).to end_with '/train-in-your-own-time.html'
         end
         link = page.find_link("Find your local FE college on the Association of Colleges website", match: :first)
         within link do 
@@ -69,7 +72,7 @@ describe 'Train On The Job components', :type => :feature do
         end
         link = page.find_link("Find a further education teaching job", match: :first)
         within link do 
-          expect(link[:href]).to include '/find-an-fe-teaching-job.html'
+          expect(link[:href]).to end_with '/find-an-fe-teaching-job.html'
         end
         link = page.find_link("Teach.FE@education.gov.uk", match: :first)
         within link do 

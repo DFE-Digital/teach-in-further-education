@@ -1,159 +1,172 @@
 ---
-:id: 40slMintor4eNRoKtfUjgo
+:id: 4aJktuSp3EAMaV2Lc7BeHx
 :_meta:
   :content_type_id: page
-  :updated_at: '2021-06-08T15:12:24+00:00'
-  :created_at: '2021-04-30T00:00:55+00:00'
-  :id: 40slMintor4eNRoKtfUjgo
-:title: home
+  :updated_at: '2021-10-28T09:03:19+00:00'
+  :created_at: '2021-07-16T11:11:44+00:00'
+  :id: 4aJktuSp3EAMaV2Lc7BeHx
+:title: Become a further education teacher
+:nav_title: Become a further education teacher
+:heading: Become a further education teacher
 :slug: home
 :blocks:
 - :id: 1osEp5cIptvcTW3oBml6g2
   :_meta:
     :content_type_id: heroBanner
-    :updated_at: '2021-06-01T12:05:09+00:00'
+    :updated_at: '2021-10-28T09:02:42+00:00'
     :created_at: '2021-04-29T23:31:07+00:00'
     :id: 1osEp5cIptvcTW3oBml6g2
-  :title: Teach in FE
-  :hero_text: Pass on your skills and experience to train the UK's future experts
+  :title: Become a further education teacher
+  :hero_text: Teach your trade, skill or subject to young people and adults
   :hero_media:
     :title: Default-Hero-Img
-    :description: Default hero image
-    :url: "//images.ctfassets.net/n4docnlbw89d/7GvBzU90bU19dAH8ASgT0N/d860da67789d6fa50c1cb2bcee880b08/Default-Hero-Img.png"
+    :description: An adult student and his teacher experiment with a spray bottle
+      and a pallet of soil in a laboratory.
+    :url: "//images.ctfassets.net/n4docnlbw89d/7GvBzU90bU19dAH8ASgT0N/884c7ad5661fd6b00272e91198af704e/EngineeringStudentsLearning.png"
     :_meta:
-      :updated_at: '2021-04-30T00:00:50+00:00'
+      :updated_at: '2021-09-21T10:49:03+00:00'
       :created_at: '2021-04-29T23:15:30+00:00'
       :id: 7GvBzU90bU19dAH8ASgT0N
+  :is_text_bordered: false
+  :display_order: false
 - :id: 11nV0pkqrJOxP6o2F7KVGx
   :_meta:
     :content_type_id: advice
-    :updated_at: '2021-06-04T13:53:44+00:00'
+    :updated_at: '2021-11-12T11:23:02+00:00'
     :created_at: '2021-04-29T23:31:06+00:00'
     :id: 11nV0pkqrJOxP6o2F7KVGx
-  :title: You do not need a degree to teach in FE
+  :title: You do not need a degree to start teaching in further education
   :advice_body: |-
-    Many people start a job in FE without a degree or full teaching qualification.
+    Many people start a job in further education (FE) without a degree or any teacher training.
 
     Some FE employers will:
-    - consider your current skills and qualifications
-    - support you to earn a full qualification if you need one while you work for them
 
-    [Find out if you could teach in FE](#)
+    - consider your current skills and experience
+    - support you to complete your teacher training while you work for them
+
+    [Find out if you could teach in FE](/guide-to-further-education.html "Guide to further education")
   :media:
-    :title: man-training
-    :description: 
-    :url: "//images.ctfassets.net/n4docnlbw89d/2PG69P6bZOB4p72ouRaotB/8fedb84eabe7b21739a02506dcdc3880/man-training.png"
+    :title: student-training
+    :description: An adult female student in protective goggles cutting a piece of
+      wood using a mechanical saw.
+    :url: "//images.ctfassets.net/n4docnlbw89d/2PG69P6bZOB4p72ouRaotB/85e561397f34c1339e6075a3130cb497/CarpentryStudentLearning.png"
     :_meta:
-      :updated_at: '2021-06-04T10:31:00+00:00'
+      :updated_at: '2021-08-16T10:33:11+00:00'
       :created_at: '2021-06-04T10:31:00+00:00'
       :id: 2PG69P6bZOB4p72ouRaotB
   :display_order: false
-  :show_as_callout: false
   :apply_background_color: true
-- :id: 6nmrZe3Zt8nCaqpHLZp6p0
+  :show_title: true
+- :id: 8Od3hFGQIxvanljvVEXor
   :_meta:
     :content_type_id: columnarLayout
-    :updated_at: '2021-06-05T15:17:43+00:00'
-    :created_at: '2021-06-05T15:16:39+00:00'
-    :id: 6nmrZe3Zt8nCaqpHLZp6p0
-  :title: Rewards of working in FE
+    :updated_at: '2021-10-28T09:03:13+00:00'
+    :created_at: '2021-10-26T10:38:38+00:00'
+    :id: 8Od3hFGQIxvanljvVEXor
+  :title: Rewards of teaching in further education
   :blocks:
   - :id: 1GQKTeUn3joIfjBLS0gowy
     :_meta:
       :content_type_id: information
-      :updated_at: '2021-06-05T15:12:10+00:00'
+      :updated_at: '2021-10-28T09:02:47+00:00'
       :created_at: '2021-06-05T15:12:10+00:00'
       :id: 1GQKTeUn3joIfjBLS0gowy
-    :title: Get paid to train
-    :information_body: You might be able to work in FE while you earn a teaching qualification
-      - your employer might pay for your course.
+    :title: Train on the job
+    :information_body: When you get a job teaching in FE you may need to complete
+      a teacher training course. Some colleges and training providers will fund all
+      or part of the course fees.
     :icon:
-      :title: paid-Icon
-      :description: 
+      :title: paid-on-the-job-Icon
+      :description:
       :url: "//images.ctfassets.net/n4docnlbw89d/4WR8LyTybbtdzXNOxGTMkR/baac35db26b85e8bd96f5da1deae03a2/paid-Icon.png"
       :_meta:
-        :updated_at: '2021-06-05T15:11:00+00:00'
+        :updated_at: '2021-07-28T09:32:11+00:00'
         :created_at: '2021-06-05T15:11:00+00:00'
         :id: 4WR8LyTybbtdzXNOxGTMkR
   - :id: 4E3RnU57icaehTEYTxfodo
     :_meta:
       :content_type_id: information
-      :updated_at: '2021-06-05T15:16:17+00:00'
+      :updated_at: '2021-10-28T09:02:48+00:00'
       :created_at: '2021-06-05T15:13:08+00:00'
       :id: 4E3RnU57icaehTEYTxfodo
-    :title: 37 days paid holiday
-    :information_body: Term-based holidays mean FE teachers typically get 37 days
-      paid leave per year, plus all the bank holidays.
+    :title: Paid time off
+    :information_body: Colleges typically offer time off based around the academic
+      year. Training providers give fewer days off, but you can choose when to use
+      them.
     :icon:
-      :title: paid-holiday
-      :description: 
+      :title: paid-holiday-Icon
+      :description:
       :url: "//images.ctfassets.net/n4docnlbw89d/3peXZu7e1XH6fxoyYGK32T/532edee87108d14079d125ba89a27b25/paid-holiday.png"
       :_meta:
-        :updated_at: '2021-06-05T15:11:09+00:00'
+        :updated_at: '2021-07-28T09:32:30+00:00'
         :created_at: '2021-06-05T15:11:09+00:00'
         :id: 3peXZu7e1XH6fxoyYGK32T
-    :call_to_action:
-      :id: 5dcbCoNPazdw1HmpdtzuaD
-      :_meta:
-        :content_type_id: callToAction
-        :updated_at: '2021-06-05T15:14:47+00:00'
-        :created_at: '2021-06-05T15:14:47+00:00'
-        :id: 5dcbCoNPazdw1HmpdtzuaD
-      :title: Find out more
-      :slug: "/#"
-      :cta_type: Primary
   - :id: 4A8XRFwHX6NkOpW9rVJkvG
     :_meta:
       :content_type_id: information
-      :updated_at: '2021-06-05T16:37:13+00:00'
+      :updated_at: '2021-10-28T09:02:48+00:00'
       :created_at: '2021-06-05T15:13:30+00:00'
       :id: 4A8XRFwHX6NkOpW9rVJkvG
-    :title: Flexible work and study
+    :title: Flexible working hours
     :information_body: There are full- and part-time jobs in FE, and if you need to
-      earn a qualification, most courses are flexible too.
+      do teacher training, most courses are flexible too.
     :icon:
-      :title: flexible-working
-      :description: 
+      :title: flexible-working-Icon
+      :description:
       :url: "//images.ctfassets.net/n4docnlbw89d/1tyxPQ6M3MlRqTKZVZAk59/a694496567f7ec882d6f3ab96579689e/flexible-working.png"
       :_meta:
-        :updated_at: '2021-06-05T15:11:08+00:00'
+        :updated_at: '2021-07-28T09:32:43+00:00'
         :created_at: '2021-06-05T15:11:08+00:00'
         :id: 1tyxPQ6M3MlRqTKZVZAk59
 - :id: 4cFjarRBPKWpHy8KPITiHp
   :_meta:
     :content_type_id: story
-    :updated_at: '2021-07-01T22:41:33+00:00'
+    :updated_at: '2021-10-28T09:02:51+00:00'
     :created_at: '2021-07-01T20:24:40+00:00'
     :id: 4cFjarRBPKWpHy8KPITiHp
-  :title: Ryan's story
+  :title: Raheem's story
   :story_body: |-
-    __“Sometimes you get students who think they 'failed' at school. They do an FE course and it's the making of them. It gives people life chances. “__
+    *“Sometimes you get students who think they 'failed' at school. They do an FE course and it's the making of them. It gives people life chances."*
 
-    Ryan, FE construction teacher
+    __Raheem, FE motor mechanics teacher__
   :media:
     :title: Construction
-    :description:
-    :url: "//images.ctfassets.net/n4docnlbw89d/5VGbKPzFvKe1iR6d2OXUjF/f282ca7775d8b20e2aebc1e982cd9101/Construction.png"
+    :description: A male mechanics teacher working on an engine
+    :url: "//images.ctfassets.net/n4docnlbw89d/5VGbKPzFvKe1iR6d2OXUjF/c5460f1793b065c7af24c04559e1ca07/MechanicGuy.png"
     :_meta:
-      :updated_at: '2021-07-01T22:07:11+00:00'
+      :updated_at: '2021-08-16T10:33:56+00:00'
       :created_at: '2021-06-05T16:51:44+00:00'
       :id: 5VGbKPzFvKe1iR6d2OXUjF
   :display_order: true
 - :id: ocv0Q8ArIy3v0dUyNDIGB
   :_meta:
     :content_type_id: story
-    :updated_at: '2021-07-01T22:41:32+00:00'
+    :updated_at: '2021-10-28T09:02:51+00:00'
     :created_at: '2021-07-01T20:24:41+00:00'
     :id: ocv0Q8ArIy3v0dUyNDIGB
   :title: Margaret's story
-  :story_body: Margarets story
+  :story_body: |-
+    *“You know when you're in another job and it’s the same every day? Here no day’s a chore. I’m surrounded by people who have enthusiasm for what I've been doing all my life.”*
+
+    __Margaret, FE agriculture teacher__
   :media:
     :title: Agriculture
-    :description:
-    :url: "//images.ctfassets.net/n4docnlbw89d/7ejtw2cz4ilNditvMdrh68/31bd97dd50328cddfe755a0ad8e86b2e/Agriculture.png"
+    :description: A tractor in a field of hay bales
+    :url: "//images.ctfassets.net/n4docnlbw89d/7ejtw2cz4ilNditvMdrh68/93c2e1cc97ac7d9c02bc5a4a0dce2a01/AgricultureLearning2.png"
     :_meta:
-      :updated_at: '2021-07-01T22:07:11+00:00'
+      :updated_at: '2021-09-10T14:03:40+00:00'
       :created_at: '2021-06-05T16:53:24+00:00'
       :id: 7ejtw2cz4ilNditvMdrh68
   :display_order: false
-
+- :id: 4O492AKnu5lurQfjr3Mnt4
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-10-28T09:02:57+00:00'
+    :created_at: '2021-07-29T15:04:03+00:00'
+    :id: 4O492AKnu5lurQfjr3Mnt4
+  :title: Read our guide to teaching in further education
+  :advice_body: '[Find out more about teaching in FE](/guide-to-further-education.html
+    "a guide to further education")'
+  :display_order: false
+  :apply_background_color: false
+  :show_title: false
