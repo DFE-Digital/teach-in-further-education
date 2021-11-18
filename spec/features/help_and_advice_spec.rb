@@ -5,24 +5,19 @@ describe 'Help and advice components', :type => :feature do
       visit '/help-and-advice.html'
     end
 
-    it "should have correct elements" do
+    it "should have correct elements and content" do
       howWeCanHelpElement = page.find_by_id("4CvK0Ica4yZWT5FYtTZdWZ")
       within howWeCanHelpElement do 
-        has_css? 'govuk-heading-l', count: 1
-        has_css? 'govuk-body', count: 1
-        has_css? 'govuk-list govuk-list--bullet', count: 1
-        has_css? 'li', count: 4
-      end
-      aboutOurAdvisorsElement = page.find_by_id("6UkTGPOiLhwqP34pJGveU3")
-      within aboutOurAdvisorsElement do 
-        has_css? 'govuk-heading-l', count: 1
-        has_css? 'govuk-body', count: 1
+        expect(howWeCanHelpElement).to have_selector 'h2.govuk-heading-l', text: "How we can help"
+        expect(howWeCanHelpElement).to have_selector '.govuk-body', count: 1
+        expect(howWeCanHelpElement).to have_selector '.govuk-list--bullet', count: 1
+        expect(howWeCanHelpElement).to have_selector 'li', count: 4
       end
       contactUsElement = page.find_by_id("44g2WLYJyWiyj65vmglyZy")
       within contactUsElement do 
-        has_css? 'govuk-heading-l', count: 1
-        has_css? 'govuk-body', count: 2
-        have_selector 'http://images.ctfassets.net/n4docnlbw89d/3E26qZv6tkg9xfz6YKELoY/551868e774800f6399b71a944466c664/Helpandadvice.png?w=475'
+        expect(contactUsElement).to have_selector '.govuk-heading-l', text: "Send us your questions"
+        expect(contactUsElement).to have_selector '.govuk-body', count: 2
+        expect(contactUsElement.find('img')[:src]).to eq 'http://images.ctfassets.net/n4docnlbw89d/3E26qZv6tkg9xfz6YKELoY/551868e774800f6399b71a944466c664/Helpandadvice.png?w=475' 
       end
     end
 
@@ -30,10 +25,6 @@ describe 'Help and advice components', :type => :feature do
       howWeCanHelpElement = page.find_by_id("4CvK0Ica4yZWT5FYtTZdWZ")
       within howWeCanHelpElement do
         expect(howWeCanHelpElement[:class]).to eq "app-advice "
-      end
-      aboutOurAdvisorsElement = page.find_by_id("6UkTGPOiLhwqP34pJGveU3")
-      within aboutOurAdvisorsElement do
-        expect(aboutOurAdvisorsElement[:class]).to eq "app-advice "
       end
       contactUsElement = page.find_by_id("44g2WLYJyWiyj65vmglyZy")
       within contactUsElement do

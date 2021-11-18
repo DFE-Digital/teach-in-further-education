@@ -1,10 +1,10 @@
-name: e2eTestsOnDev
+name: e2eTests
 
 on:
   push:
     branches: [ development ]
   pull_request:
-    branches: [ development ]
+    branches: [ development, test, pre-production ]
 
 jobs:
    tests:
