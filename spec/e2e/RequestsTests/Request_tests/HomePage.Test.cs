@@ -90,5 +90,47 @@ namespace TeachFeRequests
             // assert
             Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.NotFound));
         }
+
+        [Test]
+        public void TrainOnTheJobLinkTest()
+        {
+            // arrange
+            RestClient client = new RestClient("http://localhost:4567/");
+            RestRequest request = new RestRequest("train-on-the-job.html", Method.GET);
+
+            // act
+            IRestResponse response = client.Execute(request);
+
+            // assert
+            Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
+        }
+
+        [Test]
+        public void TrainInYourOwnTimeLinkTest()
+        {
+            // arrange
+            RestClient client = new RestClient("http://localhost:4567/");
+            RestRequest request = new RestRequest("train-in-your-own-time.html", Method.GET);
+
+            // act
+            IRestResponse response = client.Execute(request);
+
+            // assert
+            Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
+        }
+
+        [Test]
+        public void GuideToFurtherEducationLinkTest()
+        {
+            // arrange
+            RestClient client = new RestClient("http://localhost:4567/");
+            RestRequest request = new RestRequest("guide-to-further-education.html", Method.GET);
+
+            // act
+            IRestResponse response = client.Execute(request);
+
+            // assert
+            Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
+        }
     }
 }

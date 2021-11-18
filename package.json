@@ -9,6 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "contentful": "^9.1.4",
     "govuk-frontend": "^3.10.2",
     "js-cookie": "^2.2.1"
   },

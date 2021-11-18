@@ -8,23 +8,30 @@ describe 'Find an fe teaching job components', :type => :feature do
     it "should have correct elements" do
       feProvidersElement = page.find_by_id("3J3oEV3PF62bJRcXhpLDOH")
       within feProvidersElement do 
-        has_css? 'govuk-heading-l', count: 1
-        has_css? 'govuk-list govuk-list--bullet', count: 1
-        has_css? 'govuk-body', count: 3
-        has_css? 'li', count: 2
+        expect(feProvidersElement).to have_selector '.govuk-heading-l', count: 1
+        expect(feProvidersElement).to have_selector '.govuk-list--bullet', count: 1
+        expect(feProvidersElement).to have_selector '.govuk-body', count: 3
+        expect(feProvidersElement).to have_selector 'li', count: 2
       end
       learnWhileYouLearnElement = page.find_by_id("1TvwovJDqZuFg4Eqwx4Bu2")
       within learnWhileYouLearnElement do 
-        has_css? 'govuk-heading-l', count: 1
-        has_css? 'govuk-body', count: 2
+        expect(learnWhileYouLearnElement).to have_selector '.govuk-heading-l', count: 1
+        expect(learnWhileYouLearnElement).to have_selector '.govuk-body', count: 3
       end
       findAJobElement = page.find_by_id("3Vcwz7UfYGsdI7gkI4iWgh")
       within findAJobElement do 
-        has_css? 'govuk-heading-l', count: 1
-        has_css? 'govuk-list govuk-list--bullet', count: 1
-        has_css? 'govuk-body', count: 6
-        has_css? 'li', count: 2
+        expect(findAJobElement).to have_selector '.govuk-heading-l', count: 1
+        expect(findAJobElement).to have_selector '.govuk-list--bullet', count: 2
+        expect(findAJobElement).to have_selector '.govuk-body', count: 6
+        expect(findAJobElement).to have_selector 'li', count: 6
       end
+    end
+    
+    it "should have the correct headings" do
+      expect(page).to have_selector 'h2.govuk-heading-l', text: 'FE providers are independent organisations'
+      expect(page).to have_selector 'h2.govuk-heading-l', text: 'Find a job'
+      expect(page).to have_selector 'h3.govuk-heading-m', text: 'Where to start your search'
+      expect(page).to have_selector 'h2.govuk-heading-l', text: 'Learn while you earn'
     end
 
     it "should have correct classes" do
