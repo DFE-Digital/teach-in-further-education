@@ -21,7 +21,7 @@
             </select>
           <% end %>
           <% if data.render_as[0] == "Radio button" %>
-            <span id="error-message" class="govuk-error-message govuk-visually-hidden">
+            <span id="error-message" class="govuk-error-message govuk-visually-hidden" role="alert">
               <span class="govuk-visually-hidden">Error:</span> <%= data.question_error_message %>
             </span>
             <div class="govuk-radios">
@@ -64,7 +64,6 @@
          {
             e.preventDefault()
             document.getElementById("qual-form-group").classList.add("govuk-form-group--error")
-            // document.getElementById("quals-from-group").style.display = 'none'
             document.getElementById("error-message").classList.remove("govuk-visually-hidden")
             document.getElementById("error-message").style.display = 'block'
          }
@@ -79,9 +78,8 @@
           document.getElementById("<%= "question-submit-" + data.id %>").disabled = v;
           if(e.currentTarget.checked) {
              document.getElementById("qual-form-group").classList.remove("govuk-form-group--error")
-            //  document.getElementById("quals-from-group").style.display = 'block'
              document.getElementById("error-message").classList.add("govuk-visually-hidden")
-            // document.getElementById("error-message").style.display = 'block'
+            document.getElementById("error-message").style.display = 'block'
           }
           return true
       }))
