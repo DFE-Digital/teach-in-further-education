@@ -5,6 +5,8 @@ export class Consent {
     static cookieBaseName = 'teachfe-cookie-preferences';
     static cookieVersion = 1;
     static cookieLifetimeInDays = 90;
+    static cookieAcceptanceBannerId = 'cookie-banner-accepted';
+    static cookieRejectionBannerId = 'cookie-banner-rejected';
 
     static get cookieName() {
         return (
@@ -17,13 +19,23 @@ export class Consent {
         if(v !== null && v !== undefined) {
             document.getElementById(id).style.display = 'none'
             const granted = JSON.parse(v)
+
             if(granted.isGranted) {
+                document.getElementById(Consent.cookieAcceptanceBannerId).style.display = 'block'
                 this.enableCookies();
             } else {
+                document.getElementById(Consent.cookieRejectionBannerId).style.display = 'block'
                 this.removeCookies();
+            }
+
+            if (granted.confirmationHidden) {
+                document.getElementById(Consent.cookieAcceptanceBannerId).style.display = 'none'
+                document.getElementById(Consent.cookieRejectionBannerId).style.display = 'none'
             }
         } else {
             document.getElementById(id).style.display = 'block'
+            document.getElementById(Consent.cookieAcceptanceBannerId).style.display = 'none'
+            document.getElementById(Consent.cookieRejectionBannerId).style.display = 'none'
         }
     }
 
@@ -81,7 +93,15 @@ export class Consent {
     }
 
     saveConsentPreferences(id, prefs) {
-        const serialized = JSON.stringify(prefs);
+        let cookies = prefs;
+
+        const v = Cookies.get(Consent.cookieName)
+        if(v !== null && v !== undefined) {
+            let granted = JSON.parse(v)
+            cookies = {...granted, ...prefs}
+        }
+
+        const serialized = JSON.stringify(cookies);
         Cookies.set(Consent.cookieName, serialized, {
             expires: Consent.cookieLifetimeInDays,
             sameSite: 'Lax',
@@ -91,12 +111,18 @@ export class Consent {
     }
 
     consentAccepted(id) {
+        document.getElementById(Consent.cookieAcceptanceBannerId).style.display = 'block'
         this.enableCookies();
         this.saveConsentPreferences(id,{ isGranted: true })
     }
 
     consentRejected(id) {
+        document.getElementById(Consent.cookieRejectionBannerId).style.display = 'block'
         this.removeCookies()
         this.saveConsentPreferences(id,{ isGranted: false })
+    }
+
+    hideCookieConfirmation(id) {
+        this.saveConsentPreferences(id,{ confirmationHidden: true })
     }
 }
