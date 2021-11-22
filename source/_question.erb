@@ -21,8 +21,8 @@
             </select>
           <% end %>
           <% if data.render_as[0] == "Radio button" %>
-            <span id="error-message" class="govuk-error-message govuk-visually-hidden" role="alert">
-              <span class="govuk-visually-hidden">Error:</span> <%= data.question_error_message %>
+            <span id="error-message" class="govuk-error-message govuk-visually-hidden">
+              <span class="govuk-visually-hidden" role="Alert">Error:</span> <%= data.question_error_message %>
             </span>
             <div class="govuk-radios">
               <% data.answers.each_with_index do |a,i| %>
@@ -66,6 +66,7 @@
             document.getElementById("qual-form-group").classList.add("govuk-form-group--error")
             document.getElementById("error-message").classList.remove("govuk-visually-hidden")
             document.getElementById("error-message").style.display = 'block'
+            document.getElementById("error-message").focus()
          }
          else {
             window.site.submitQuestionForm(e)
@@ -79,7 +80,7 @@
           if(e.currentTarget.checked) {
              document.getElementById("qual-form-group").classList.remove("govuk-form-group--error")
              document.getElementById("error-message").classList.add("govuk-visually-hidden")
-            document.getElementById("error-message").style.display = 'block'
+             document.getElementById("error-message").style.display = 'block'
           }
           return true
       }))
