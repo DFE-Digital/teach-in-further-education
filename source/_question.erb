@@ -22,9 +22,9 @@
           <% end %>
           <% if data.render_as[0] == "Radio button" %>
 
-            <span tabindex="0" id="error-message" class="govuk-error-message govuk-visually-hidden">
-              <label id="errorLabel" class="govuk-visually-hidden">Error:</label> <%= data.question_error_message %>
-            </span>
+            <legend tabindex="0" id="error-message" class="govuk-error-message govuk-visually-hidden">
+              <span id="errorLabel" class="govuk-visually-hidden">Error:</span> <%= data.question_error_message %>
+            </legend>
             <%# <span id="error-message" class="govuk-error-message govuk-visually-hidden">
               <span class="govuk-visually-hidden" role="Alert">Error:</span> <%= data.question_error_message %>
             <%# </span> %>
