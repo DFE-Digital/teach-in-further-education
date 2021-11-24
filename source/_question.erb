@@ -1,8 +1,18 @@
 <div id="<%= data.id %>" class="app-question">
-<title class="govuk-heading-l"><%= data.question_text %></title>
+  <div id="error-box" class="govuk-error-summary govuk-visually-hidden" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+      <h2 class="govuk-error-summary__title" id="error-summary-heading-example-1">
+        Error: <%= data.question_error_message %>
+      </h2>
+      <p class="govuk-error-summary__body">
+        Optional description of the errors and how to correct them
+      </p>
+      <p class="govuk-list govuk-error-summary__list">
+        <a href="#<%= "question-" + data.id %>"><%= data.question_error_message %></a>
+      </p>
+  </div>
+  <title class="govuk-heading-l"><%= data.question_text %></title>
 
-<form id="<%= "question-" + data.id %>">
-
+  <form id="<%= "question-" + data.id %>">
     <div id="qual-form-group" class="govuk-form-group">
       <fieldset class="govuk-fieldset">
         <legend class="govuk-fieldset_legend govuk-fieldset_legend--1">
@@ -70,7 +80,9 @@
             document.getElementById("qual-form-group").classList.add("govuk-form-group--error")
             document.getElementById("error-message").classList.remove("govuk-visually-hidden")
             document.getElementById("error-message").style.display = 'block'
-            // document.getElementById("error-message").focus()
+            document.getElementById("<%= data.id %>").classList.add("<%= data.id %>--error")
+            document.getElementById("error-box").classList.remove("govuk-visually-hidden")
+            document.getElementById("error-box").setAttribute("style","display:block;")
          }
          else {
             window.site.submitQuestionForm(e)
@@ -82,9 +94,13 @@
           window.site.analytics.raiseQuestionSelected(a.value)
           document.getElementById("<%= "question-submit-" + data.id %>").disabled = v;
           if(e.currentTarget.checked) {
-             document.getElementById("qual-form-group").classList.remove("govuk-form-group--error")
-             document.getElementById("error-message").classList.add("govuk-visually-hidden")
-             document.getElementById("error-message").style.display = 'block'
+            document.getElementById("qual-form-group").classList.remove("govuk-form-group--error")
+            document.getElementById("error-message").classList.add("govuk-visually-hidden")
+            // document.getElementById("error-message").style.display = 'block'
+            document.getElementById("app-question").classList.remove
+            document.getElementById("<%= data.id %>").classList.remove("<%= data.id %>--error")
+            document.getElementById("error-box").classList.add("govuk-visually-hidden")
+            // document.getElementById("error-box").setAttribute("style","display:block;")
           }
           return true
       }))
