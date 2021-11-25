@@ -31,6 +31,8 @@ export class Consent {
             if (granted.confirmationHidden) {
                 document.getElementById(Consent.cookieAcceptanceBannerId).style.display = 'none'
                 document.getElementById(Consent.cookieRejectionBannerId).style.display = 'none'
+            } else {
+                this.saveConsentPreferences('',{ isGranted: granted.isGranted, confirmationHidden: true });
             }
         } else {
             document.getElementById(id).style.display = 'block'
@@ -93,36 +95,30 @@ export class Consent {
     }
 
     saveConsentPreferences(id, prefs) {
-        let cookies = prefs;
 
-        const v = Cookies.get(Consent.cookieName)
-        if(v !== null && v !== undefined) {
-            let granted = JSON.parse(v)
-            cookies = {...granted, ...prefs}
-        }
-
-        const serialized = JSON.stringify(cookies);
+        const serialized = JSON.stringify(prefs);
         Cookies.set(Consent.cookieName, serialized, {
             expires: Consent.cookieLifetimeInDays,
             sameSite: 'Lax',
         });
 
-        document.getElementById(id).style.display = 'none'
+        document.getElementById(id).style.display = 'none';
     }
 
-    consentAccepted(id) {
+    consentAccepted(id, showBannerOnNextPage = false) {
         document.getElementById(Consent.cookieAcceptanceBannerId).style.display = 'block'
         this.enableCookies();
-        this.saveConsentPreferences(id,{ isGranted: true })
+        this.saveConsentPreferences(id,{ isGranted: true, confirmationHidden: !showBannerOnNextPage })
     }
 
-    consentRejected(id) {
+    consentRejected(id, showBannerOnNextPage = false) {
         document.getElementById(Consent.cookieRejectionBannerId).style.display = 'block'
         this.removeCookies()
-        this.saveConsentPreferences(id,{ isGranted: false })
+        this.saveConsentPreferences(id,{ isGranted: false, confirmationHidden: !showBannerOnNextPage })
     }
 
     hideCookieConfirmation(id) {
-        this.saveConsentPreferences(id,{ confirmationHidden: true })
+        document.getElementById(Consent.cookieAcceptanceBannerId).style.display = 'none'
+        document.getElementById(Consent.cookieRejectionBannerId).style.display = 'none'
     }
 }
