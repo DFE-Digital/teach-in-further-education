@@ -32,7 +32,7 @@ export class Consent {
                 document.getElementById(Consent.cookieAcceptanceBannerId).style.display = 'none'
                 document.getElementById(Consent.cookieRejectionBannerId).style.display = 'none'
             } else {
-                this.saveConsentPreferences('',{ isGranted: granted.isGranted, confirmationHidden: true });
+                this.saveConsentPreferences('cookie-banner',{ isGranted: granted.isGranted, confirmationHidden: true });
             }
         } else {
             document.getElementById(id).style.display = 'block'
