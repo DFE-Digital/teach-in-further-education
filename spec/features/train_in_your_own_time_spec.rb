@@ -29,7 +29,7 @@ describe 'Train In Your Own Time components', :type => :feature do
         end
         findASuitableQualificationElement = page.find_by_id("qNRtpmv245PlK1GAu8Mzm")
         within findASuitableQualificationElement do
-            expect(findASuitableQualificationElement).to have_selector 'title.govuk-heading-l', text: "Find a suitable qualification"
+            expect(findASuitableQualificationElement).to have_selector 'h2.govuk-heading-l', text: "Find a suitable qualification"
             expect(findASuitableQualificationElement).to have_selector '.govuk-body', count: 1
             expect(findASuitableQualificationElement).to have_selector 'form', count: 1
             expect(findASuitableQualificationElement).to have_selector '.govuk-radios', count: 1
