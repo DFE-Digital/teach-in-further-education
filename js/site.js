@@ -34,13 +34,21 @@ export function submitQuestionForm(e) {
     const answer = data.get("answer");
     if (answer == 'accept-cookies') {
         consent.consentAccepted('cookie-banner', true);
-        window.history.back();
+        if ('referrer' in document) {
+            window.location = document.referrer;
+        } else {
+            window.history.back();
+        }
         return answer;
     }
 
     if (answer == 'reject-cookies') {
         consent.consentRejected('cookie-banner', true);
-        window.history.back();
+        if ('referrer' in document) {
+            window.location = document.referrer;
+        } else {
+            window.history.back();
+        }
         return answer;
     }
     analytics.raiseQuestionAnswerSubmit(answer);
