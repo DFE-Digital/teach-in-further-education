@@ -88,10 +88,15 @@ $govuk-link-text: #1d70b8
       color: #6E777A !important
       border-bottom: 4px solid #6E777A
 
+      @media (max-width: 768px)
+        color: none
+        border-bottom: none
+
     &:focus 
       color: #000000 !important
       background-color: #FFDD00 !important
       border-bottom: 4px solid #000000
+
 
   .active
     color: #000000 !important
@@ -542,3 +547,16 @@ hr
 
   @media (max-width: 870px)
     padding: 20px
+
+#error-message
+  display: none
+
+.govuk-error-summary
+  display: none
+
+.govuk-error-message
+  display: none
+
+  &:focus 
+      background-color: #FFDD00 !important
+      border-bottom: 4px solid #000000

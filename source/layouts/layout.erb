@@ -45,7 +45,6 @@
   <%= stylesheet_link_tag "site" %>
 </head>
 <body class="govuk-template__body">
-<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 <div role="region">
 <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
@@ -53,6 +52,8 @@
 <%= partial "cookie_banner" %>
 <%= partial "cookie_acceptance" %>
 <%= partial "cookie_rejection" %>
+
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
   <%= partial "header", :locals => { :data => data } %>
 
