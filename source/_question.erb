@@ -1,12 +1,24 @@
 <div id="<%= data.id %>" class="app-question">
-<title class="govuk-heading-l"><%= data.question_text %></title>
+  <div id="error-box" class="govuk-error-summary govuk-visually-hidden" role="alert" tabindex="-1">
+      <h2 class="govuk-error-summary__title" id="error-summary-heading">
+        There is a problem
+        <%# Error: <%= data.question_error_message %>
+      </h2>
+      <p class="govuk-error-summary__body" tabindex="-1">
+        Error message
+      </p>
+      <p class="govuk-list govuk-error-summary__list" tabindex="-1">
+        <a href="#<%= "question-" + data.id %>" aria-label="Error: <%= data.question_error_message %>">
+        <%= data.question_error_message %></a>
+      </p>
+  </div>
+  <h2 class="govuk-heading-l"><%= data.question_text %></h2>
 
-<form id="<%= "question-" + data.id %>">
-
+  <form id="<%= "question-" + data.id %>">
     <div id="qual-form-group" class="govuk-form-group">
       <fieldset class="govuk-fieldset">
         <legend class="govuk-fieldset_legend govuk-fieldset_legend--1">
-          <label class="govuk-label" style="margin-bottom: 20px" for="answer">
+          <label class="govuk-label" style="margin-bottom: 20px" for="answer" id="question-label" aria-hidden="true">
           <% if !data.sub_text.nil? %>
              <%= markdown(data.sub_text) %>
           <% end %>
@@ -21,14 +33,18 @@
             </select>
           <% end %>
           <% if data.render_as[0] == "Radio button" %>
-            <span id="error-message" class="govuk-error-message govuk-visually-hidden">
-              <span>Error:</span> <%= data.question_error_message %>
-            </span>
-            <div class="govuk-radios">
+          
+              <span id="error-message" class="govuk-error-message govuk-visually-hidden">
+                <span class="govuk-visually-hidden">Error:</span> <%= data.question_error_message %>
+              </span>
+            <%# <span id="error-message" class="govuk-error-message govuk-visually-hidden">
+              <span class="govuk-visually-hidden" role="Alert">Error:</span> <%= data.question_error_message %>
+            <%# </span> %>
+            <div class="govuk-radios" role="radiogroup" aria-labelledby="question-label">
               <% data.answers.each_with_index do |a,i| %>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="<% a.id %>" name="answer" type="radio" value="<%= a.link.slug %>" aria-label="<%= a.answer %>">
-                  <label class="govuk-label govuk-radios__label" id="<% a.id %>_label" for="answer" aria-hidden="false">
+                  <input class="govuk-radios__input" id="<%= a.link.slug %>-answer" name="answer" type="radio" value="<%= a.link.slug %>" aria-label="<%= a.answer %>" role="radioButton">
+                  <label class="govuk-label govuk-radios__label" id="<% a.id %>_label" for="<%= a.link.slug %>-answer" aria-hidden="true">
                     <%= a.answer %>
                   </label>   
                 </div>
@@ -64,7 +80,11 @@
          {
             e.preventDefault()
             document.getElementById("qual-form-group").classList.add("govuk-form-group--error")
+            document.getElementById("error-box").classList.remove("govuk-visually-hidden")
+            document.getElementById("error-box").style.display = 'block'
             document.getElementById("error-message").classList.remove("govuk-visually-hidden")
+            document.getElementById("error-message").style.display = 'block'
+            document.getElementById("error-box").focus()
          }
          else {
             window.site.submitQuestionForm(e)
@@ -76,8 +96,11 @@
           window.site.analytics.raiseQuestionSelected(a.value)
           document.getElementById("<%= "question-submit-" + data.id %>").disabled = v;
           if(e.currentTarget.checked) {
-             document.getElementById("qual-form-group").classList.remove("govuk-form-group--error")
-             document.getElementById("error-message").classList.add("govuk-visually-hidden")
+            document.getElementById("qual-form-group").classList.remove("govuk-form-group--error")
+            document.getElementById("error-box").classList.add("govuk-visually-hidden")
+            document.getElementById("error-box").style.display = 'none'
+            document.getElementById("error-message").classList.add("govuk-visually-hidden")
+            document.getElementById("error-message").style.display = 'none'
           }
           return true
       }))
