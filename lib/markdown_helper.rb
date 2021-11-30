@@ -62,9 +62,9 @@ module MarkdownHelper
 
     def link(link, title, content)
       if not URI(link).relative?
-        %(<a href="#{link}" onclick="window.site.analytics.raiseExitPointEvent('#{link}')" class="govuk-link">#{content}</a>)
+        %(<a href="#{link}" referrerpolicy="no-referrer-when-downgrade" onclick="window.site.analytics.raiseExitPointEvent('#{link}')" class="govuk-link">#{content}</a>)
       else
-        %(<a href="#{link}" onclick="window.site.analytics.raiseInternalNavEvent('#{link}')" class="govuk-link">#{content}</a>)
+        %(<a href="#{link}" referrerpolicy="no-referrer-when-downgrade" onclick="window.site.analytics.raiseInternalNavEvent('#{link}')" class="govuk-link">#{content}</a>)
       end
 
     end

@@ -8,7 +8,7 @@ describe 'Qualification questions component', :type => :feature do
     it "should have correct elements" do
       questionForm = page.find_by_id("qNRtpmv245PlK1GAu8Mzm")
       within questionForm do 
-        expect(questionForm).to have_selector 'title.govuk-heading-l', text: "Find a suitable qualification"
+        expect(questionForm).to have_selector 'h2.govuk-heading-l', text: "Find a suitable qualification"
         expect(questionForm).to have_selector '.govuk-form-group', count: 1
         expect(questionForm).to have_selector '.govuk-label', text: "To find which teaching qualifications best suit your situation, choose your highest educational qualification from the list."
         expect(questionForm).to have_selector '.govuk-label', text: "None"
