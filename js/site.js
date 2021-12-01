@@ -32,12 +32,30 @@ export function submitQuestionForm(e) {
     e.preventDefault();
     const data = new FormData(e.target);
     const answer = data.get("answer");
+    if (answer == 'accept-cookies') {
+        consent.consentAccepted('cookie-banner', true);
+        if ('referrer' in document) {
+            window.location = document.referrer;
+        } else {
+            window.history.back();
+        }
+        return answer;
+    }
+
+    if (answer == 'reject-cookies') {
+        consent.consentRejected('cookie-banner', true);
+        if ('referrer' in document) {
+            window.location = document.referrer;
+        } else {
+            window.history.back();
+        }
+        return answer;
+    }
     analytics.raiseQuestionAnswerSubmit(answer);
     e.target.reset();
     window.location.assign("/" + answer + ".html");
     return answer;
 }
-
 
 window.site = {
     initSite,
