@@ -40,6 +40,9 @@ namespace TeachFe.E2e_test
             homepage.ClickTrainOnTheJobLink();
             Assert.IsTrue(driver.Url.EndsWith("/train-on-the-job.html"));
             homepage.ClickHomeNavButton();
+            homepage.ClickWhatYouCouldTeachNavButton();
+            Assert.IsTrue(driver.Url.EndsWith("/what-you-could-teach.html"));
+            homepage.ClickHomeNavButton();
             homepage.ClickTrainInYourOwnTimeLink();
             Assert.IsTrue(driver.Url.EndsWith("/train-in-your-own-time.html"));
             homepage.ClickHomeNavButton();
@@ -71,18 +74,18 @@ namespace TeachFe.E2e_test
             guideToFeTeachingPage.ClickWhatYouCouldTeachLink();
             Assert.IsTrue(driver.Url.EndsWith("/what-you-could-teach.html"));
             driver.Navigate().Back();
-            homepage.ClickTrainOnTheJobNavButton();
-            Assert.IsTrue(driver.Url.EndsWith("/train-on-the-job.html"));
+            homepage.ClickWhatYouCouldTeachNavButton();
+            Assert.IsTrue(driver.Url.EndsWith("/what-you-could-teach.html"));
 
             #endregion
 
             #region what you could teach page
 
             whatYouCouldTeachPage.ContentWhatYouCouldTeachDisplayed();
-            //whatYouCouldTeachPage.ClickOpenAllButton();
-            //whatYouCouldTeachPage.ClickWhatLevelsMeanLink();
-            //Assert.IsTrue(driver.Url.Contains("gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels"));
-            //driver.Navigate().Back();
+            whatYouCouldTeachPage.ClickOpenAllButton();
+            whatYouCouldTeachPage.ClickWhatLevelsMeanLink();
+            Assert.IsTrue(driver.Url.Contains("gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels"));
+            driver.Navigate().Back();
             whatYouCouldTeachPage.ClickTrainInYourOwnTimeLink();
             Assert.IsTrue(driver.Url.EndsWith("/train-in-your-own-time.html"));
             driver.Navigate().Back();
