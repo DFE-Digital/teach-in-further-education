@@ -55,10 +55,6 @@ namespace TeachFe.E2e_test
             #region guide to FE teaching page
 
             guideToFeTeachingPage.ContentGuideToFeDisplayed();
-            guideToFeTeachingPage.ClickTrainOnTheJobLink();
-            Assert.IsTrue(driver.Url.EndsWith("/train-on-the-job.html"));
-            driver.Navigate().Back();
-            guideToFeTeachingPage.ClickOpenAllButton();
             guideToFeTeachingPage.ClickAverageSalaryLink();
             Assert.IsTrue(driver.Url.EndsWith("/job-profiles/further-education-lecturer"));
             driver.Navigate().Back();
