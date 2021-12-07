@@ -3,7 +3,9 @@
   <ul class="govuk-list">
     <% page.blocks.each_with_index do |blk, i| %>
       <% if i > index %>
-        <li><h4 class="govuk-heading-s" onclick="window.site.analytics.internalNavigation('<%= "#block_#{i}" %>', '<%= blk.title %>')"><a href="<%= "#block_#{i}" %>"><%= blk.title %></a></h4></li>
+        <% if blk.show_title %>
+          <li><h4 class="govuk-heading-s" onclick="window.site.analytics.internalNavigation('<%= "#block_#{i}" %>', '<%= blk.title %>')"><a href="<%= "#block_#{i}" %>"><%= blk.title %></a></h4></li>
+        <% end %>
       <% end %>
     <% end %>
   </ul>
