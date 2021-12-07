@@ -12,10 +12,10 @@
         <%= data.question_error_message %></a>
       </p>
   </div>
-  <h2 class="govuk-heading-l"><%= data.question_text %></h2>
 
-  <form id="<%= "question-" + data.id %>">
+  <form id="<%= "question-" + data.id %>" aria-labelledby="question-heading">
     <div id="qual-form-group" class="govuk-form-group">
+     <h2 class="govuk-heading-l" id="question-heading"><%= data.question_text %></h2>
       <fieldset class="govuk-fieldset">
         <legend class="govuk-fieldset_legend govuk-fieldset_legend--1">
           <label class="govuk-label" style="margin-bottom: 20px" for="answer" id="question-label" aria-hidden="true">

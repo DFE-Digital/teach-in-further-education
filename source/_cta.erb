@@ -20,7 +20,9 @@
   <a id="<%= data.id %>"
      href="<%= data.slug + ".html" %>"
      class="<%= "govuk-button " + selected_class %>"
-     data-module="govuk-button">
+     data-module="govuk-button"
+     role="navigation"
+     aria-label="<%= data.title %> button">
     <%= data.title %>
   </a>
 <% end %>
