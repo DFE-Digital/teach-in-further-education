@@ -16,11 +16,12 @@
      c = data.cta_type
      selected_class = classMap[c]
   %>
-
-  <a id="<%= data.id %>"
-     href="<%= data.slug + ".html" %>"
-     class="<%= "govuk-button " + selected_class %>"
-     data-module="govuk-button">
-    <%= data.title %>
-  </a>
+  <div role="navigation" aria-label="<%= data.title %> button">
+    <a id="<%= data.id %>"
+      href="<%= data.slug + ".html" %>"
+      class="<%= "govuk-button " + selected_class %>"
+      data-module="govuk-button">
+      <%= data.title %>
+    </a>
+  </div>
 <% end %>

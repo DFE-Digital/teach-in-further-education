@@ -1,5 +1,5 @@
 <% breakpoints = get_breakpoints %>
-<div id="<%= data.id %>" class="app-advice <%= data.apply_background_color ? "shaded" : "" %>">
+<div id="<%= data.id %>" class="app-advice <%= data.apply_background_color ? "shaded" : "" %>" role="region" aria-label="<%= data.title %>">
   <% if !data.media.nil? %>
     <% if data.display_order %>
       <div class="app-advice-with-image-1">

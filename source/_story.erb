@@ -1,5 +1,5 @@
 <% breakpoints = get_breakpoints %>
-<div id="<%= data.id %>" class="app-story">
+<div id="<%= data.id %>" class="app-story" role="region" aria-label="<%= html_escape(data.title) %>">
   <% if data.show_title %>
     <h2 class="govuk-heading-l"><%= data.title %></h2>
   <% end %>
