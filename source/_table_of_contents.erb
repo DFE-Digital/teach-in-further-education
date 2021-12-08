@@ -1,10 +1,10 @@
 <div id="<%= data.id %>" class="app-table-of-contents">
-  <h3 class="govuk-heading-m"><%= data.title %></h3>
+  <h2 class="govuk-heading-m" id="contents-list-heading"><%= data.title %></h2>
   <ul class="govuk-list">
     <% page.blocks.each_with_index do |blk, i| %>
       <% if i > index %>
         <% if blk.show_title %>
-          <li><h4 class="govuk-heading-s" onclick="window.site.analytics.internalNavigation('<%= "#block_#{i}" %>', '<%= blk.title %>')"><a href="<%= "#block_#{i}" %>"><%= blk.title %></a></h4></li>
+          <li class="govuk-list govuk-list--bullet" onclick="window.site.analytics.internalNavigation('<%= "#block_#{i}" %>', '<%= blk.title %>')"><a href="<%= "#block_#{i}" %>"><%= blk.title %></a></li>
         <% end %>
       <% end %>
     <% end %>
