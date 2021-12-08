@@ -4,7 +4,7 @@
     <% page.blocks.each_with_index do |blk, i| %>
       <% if i > index %>
         <% if blk.show_title %>
-          <li class="govuk-heading-s" onclick="window.site.analytics.internalNavigation('<%= "#block_#{i}" %>', '<%= blk.title %>')">- <a href="<%= "#block_#{i}" %>"><%= blk.title %></a></li>
+          <li class="govuk-heading-s" onclick="window.site.analytics.internalNavigation('<%= "#block_#{i}" %>', '<%= blk.title %>')">- <a class="govuk-link" href="<%= "#block_#{i}" %>"><%= blk.title %></a></li>
         <% end %>
       <% end %>
     <% end %>
