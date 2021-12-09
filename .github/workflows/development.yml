@@ -88,3 +88,25 @@ jobs:
             cf_space: ${{ secrets.GOVPAAS_SPACE }}
             working_dir: build
             command: push
+  monitor:
+    name: Monitor application
+    runs-on: ubuntu-latest
+    environment: Production
+    defaults:
+      run:
+        working-directory: ./infrastructure/
+    steps:
+      - uses: actions/checkout@v2
+      - uses: hashicorp/setup-terraform@v1
+
+      - name: Terraform Init
+        id: init
+        run: terraform init -backend-config="access_key=${{ secrets.MONITORING_AWS_ACCESS_KEY }}" -backend-config="secret_key=${{ secrets.MONITORING_AWS_SECRET }}"
+
+      - name: Terraform Plan
+        id: plan
+        run: terraform plan -no-color -input=false -var 'paas_exporter_username=${{ secrets.GOVPAAS_EXPORTER_USERNAME }}' -var 'paas_exporter_password=${{ secrets.GOVPAAS_EXPORTER_PASSWORD }}' -var 'grafana_admin_password=${{ secrets.GRAFANA_ADMIN_PASSWORD }}' -var 'paas_user=${{ secrets.GOVPAAS_DEVELOPER_USERNAME }}' -var 'paas_password=${{ secrets.GOVPAAS_DEVELOPER_PASSWORD }}' -out=tfplan
+
+      - name: Terraform Apply
+        id: apply
+        run: terraform apply tfplan
