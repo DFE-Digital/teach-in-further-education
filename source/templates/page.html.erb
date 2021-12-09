@@ -1,11 +1,19 @@
 <% if !page.heading.nil? %>
-<h1 class="govuk-heading-l"><%= page.heading %></h1>
+  <div role="region" aria-label="Page heading and preamble">
+    <h1 class="govuk-heading-l"><%= page.heading %></h1>
+      <% if page.preamble.nil? %>
+        </div>
+      <% end %>
 <% end %>
 
 <% if !page.preamble.nil? %>
-<div class="app-preamble">
-  <%= markdown(page.preamble) %>
-</div>
+  <% if page.heading.nil? %>
+    <div role="region" aria-label="Page heading and preamble">
+  <% end %>
+      <div class="app-preamble">
+        <%= markdown(page.preamble) %>
+      </div>
+    </div>
 <% end %>
 
 <% if !page.blocks.nil? %>

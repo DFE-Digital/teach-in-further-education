@@ -30,6 +30,12 @@ namespace TeachFe.E2e_test.PageObjects
             get { return driver.FindElement(By.Id("5yYjsBia5tKnn6rysEdUQ2")); }
         }
 
+        public IWebElement WhatYouCouldTeachNavButton
+        {
+            get { return driver.FindElement(By.Id("6Fraj3twk8xSHrc1kyKzVr")); }
+        }
+
+
         public IWebElement TrainOnTheJobNavButton
         {
             get { return driver.FindElement(By.Id("2wAftZDRvPUWLTGogsMx4B")); }
@@ -101,6 +107,11 @@ namespace TeachFe.E2e_test.PageObjects
         public void ClickGuideToFeTeachingNavButton()
         {
             GuideToFeTeachingNavButton.Click();
+        }
+
+        public void ClickWhatYouCouldTeachNavButton()
+        {
+            WhatYouCouldTeachNavButton.Click();
         }
 
         public void ClickTrainOnTheJobNavButton()
