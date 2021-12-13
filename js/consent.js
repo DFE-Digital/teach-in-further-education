@@ -107,12 +107,14 @@ export class Consent {
 
     consentAccepted(id, showBannerOnNextPage = false) {
         document.getElementById(Consent.cookieAcceptanceBannerId).style.display = 'block'
+        document.getElementById(Consent.cookieAcceptanceBannerId).focus()
         this.enableCookies();
         this.saveConsentPreferences(id,{ isGranted: true, confirmationHidden: !showBannerOnNextPage })
     }
 
     consentRejected(id, showBannerOnNextPage = false) {
         document.getElementById(Consent.cookieRejectionBannerId).style.display = 'block'
+        document.getElementById(Consent.cookieRejectionBannerId).focus()
         this.removeCookies()
         this.saveConsentPreferences(id,{ isGranted: false, confirmationHidden: !showBannerOnNextPage })
     }
