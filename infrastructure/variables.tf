@@ -4,7 +4,7 @@ variable "paas_exporter_password" {}
 
 variable "grafana_admin_password" {}
 
-variable "grafana_runtime_version" { default = "8.0.0" }
+variable "grafana_runtime_version" { default = "8.3.1" }
 
 variable "paas_user" {}
 
