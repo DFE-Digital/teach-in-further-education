@@ -226,13 +226,28 @@ $govuk-link-text: #1d70b8
     padding-top: 10px
     visibility: visible
 
+
 .govuk-table__head
   font-weight: $govuk-font-weight-bold
+  font-family: "GDS Transport", arial, sans-serif
+  font-size: 19px
+
+.govuk-table__body
+  font-family: "GDS Transport", arial, sans-serif
+  font-size: 19px
+
 
 .govuk-table
-  tr
-    td:first-child
-      font-weight: $govuk-font-weight-bold
+  width: 100%
+  box-sizing: border-box
+  border-spacing: 0px
+  font-size: 19px
+
+
+.govuk-table__cell
+  font-weight: none
+  font-family: "GDS Transport", arial, sans-serif
+  font-size: 19px
 
 .govuk-cookie-banner
   display: none
@@ -309,7 +324,7 @@ hr
   li
     list-style-type: "\2014"
     font-weight: $govuk-font-weight-bold
-    padding-left: 10px
+    // padding-left: 10px
 
 /* The app-dropdown container */
 .app-dropdown
@@ -393,7 +408,7 @@ hr
 
   .app-advice-with-image-1
     display: flex
-    align-items: center
+    align-items: flex-start
     flex-direction: row
     justify-content: space-between
 
@@ -402,7 +417,7 @@ hr
 
   .app-advice-with-image-2
     display: flex
-    align-items: center
+    align-items: flex-start
     flex-direction: row
     justify-content: space-between
 
@@ -528,7 +543,7 @@ hr
     flex-direction: column
 
 .app-preamble
-  max-width: 75%
+ 
 
   .govuk-body
     @include govuk-font($size: 27)

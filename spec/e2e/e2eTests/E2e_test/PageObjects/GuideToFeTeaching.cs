@@ -18,16 +18,6 @@ namespace TeachFe.E2e_test.PageObjects
             get { return driver.FindElement(By.Id("main-content")); }
         }
 
-        public IWebElement TrainOnTheJobLink
-        {
-            get { return driver.FindElement(By.PartialLinkText("If you have significant career")); }
-        }
-
-        public IWebElement OpenAllButton
-        {
-            get { return driver.FindElement(By.ClassName("govuk-accordion__open-all")); }
-        }
-
         public IWebElement AverageSalaryLink
         {
             get { return driver.FindElement(By.PartialLinkText("According to the National Careers")); }
@@ -38,6 +28,22 @@ namespace TeachFe.E2e_test.PageObjects
             get { return driver.FindElement(By.PartialLinkText("Find your local FE college")); }
         }
 
+        public IWebElement TrainingProvidersLink
+        {
+            get { return driver.FindElement(By.PartialLinkText("Find independent training providers")); }
+        }
+
+        public IWebElement WhatLevelsMeanLink
+        {
+            get { return driver.FindElement(By.PartialLinkText("What levels mean")); }
+        }
+
+        public IWebElement WhatYouCouldTeachLink
+        {
+            get { return driver.FindElement(By.PartialLinkText("Find out what you could teach")); }
+        }
+
+
         #endregion
 
         #region Actions
@@ -45,16 +51,6 @@ namespace TeachFe.E2e_test.PageObjects
         public bool ContentGuideToFeDisplayed()
         {
             return MainContent.Displayed;
-        }
-
-        public void ClickTrainOnTheJobLink()
-        {
-            TrainOnTheJobLink.Click();
-        }
-
-        public void ClickOpenAllButton()
-        {
-            OpenAllButton.Click();
         }
 
         public void ClickAverageSalaryLink()
@@ -67,6 +63,20 @@ namespace TeachFe.E2e_test.PageObjects
             EmployersLink.Click();
         }
 
+        public void ClickTrainingProvidersLink()
+        {
+            TrainingProvidersLink.Click();
+        }
+
+        public void ClickWhatLevelsMeanLink()
+        {
+            WhatLevelsMeanLink.Click();
+        }
+
+        public void ClickWhatYouCouldTeachLink()
+        {
+            WhatYouCouldTeachLink.Click();
+        }
 
         #endregion
     }

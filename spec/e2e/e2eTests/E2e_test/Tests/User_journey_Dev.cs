@@ -21,6 +21,7 @@ namespace TeachFe.E2e_test
 
             Homepage homepage = new Homepage(driver);
             GuideToFeTeachingPage guideToFeTeachingPage = new GuideToFeTeachingPage(driver);
+            WhatYouCouldTeachPage whatYouCouldTeachPage = new WhatYouCouldTeachPage(driver);
             TrainInYourOwnTimePage trainInYourOwnTimePage = new TrainInYourOwnTimePage(driver);
             FindAnFeTeachingJobPage findAnFeTeachingJobPage = new FindAnFeTeachingJobPage(driver);
             TrainOnTheJobPage trainOnTheJobPage = new TrainOnTheJobPage(driver);
@@ -39,6 +40,9 @@ namespace TeachFe.E2e_test
             homepage.ClickTrainOnTheJobLink();
             Assert.IsTrue(driver.Url.EndsWith("/train-on-the-job.html"));
             homepage.ClickHomeNavButton();
+            homepage.ClickWhatYouCouldTeachNavButton();
+            Assert.IsTrue(driver.Url.EndsWith("/what-you-could-teach.html"));
+            homepage.ClickHomeNavButton();
             homepage.ClickTrainInYourOwnTimeLink();
             Assert.IsTrue(driver.Url.EndsWith("/train-in-your-own-time.html"));
             homepage.ClickHomeNavButton();
@@ -55,17 +59,37 @@ namespace TeachFe.E2e_test
             #region guide to FE teaching page
 
             guideToFeTeachingPage.ContentGuideToFeDisplayed();
-            guideToFeTeachingPage.ClickTrainOnTheJobLink();
-            Assert.IsTrue(driver.Url.EndsWith("/train-on-the-job.html"));
-            driver.Navigate().Back();
-            guideToFeTeachingPage.ClickOpenAllButton();
             guideToFeTeachingPage.ClickAverageSalaryLink();
             Assert.IsTrue(driver.Url.EndsWith("/job-profiles/further-education-lecturer"));
             driver.Navigate().Back();
             guideToFeTeachingPage.ClickEmployersLink();
             Assert.IsTrue(driver.Url.Contains("aocjobs.com/employers-a-z"));
             driver.Navigate().Back();
-            homepage.ClickTrainOnTheJobNavButton();
+            guideToFeTeachingPage.ClickTrainingProvidersLink();
+            Assert.IsTrue(driver.Url.Contains("aelp.org.uk/about/our-members/"));
+            driver.Navigate().Back();
+            guideToFeTeachingPage.ClickWhatLevelsMeanLink();
+            Assert.IsTrue(driver.Url.Contains("gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels"));
+            driver.Navigate().Back();
+            guideToFeTeachingPage.ClickWhatYouCouldTeachLink();
+            Assert.IsTrue(driver.Url.EndsWith("/what-you-could-teach.html"));
+            driver.Navigate().Back();
+            homepage.ClickWhatYouCouldTeachNavButton();
+            Assert.IsTrue(driver.Url.EndsWith("/what-you-could-teach.html"));
+
+            #endregion
+
+            #region what you could teach page
+
+            whatYouCouldTeachPage.ContentWhatYouCouldTeachDisplayed();
+            whatYouCouldTeachPage.ClickOpenAllButton();
+            whatYouCouldTeachPage.ClickWhatLevelsMeanLink();
+            Assert.IsTrue(driver.Url.Contains("gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels"));
+            driver.Navigate().Back();
+            whatYouCouldTeachPage.ClickTrainInYourOwnTimeLink();
+            Assert.IsTrue(driver.Url.EndsWith("/train-in-your-own-time.html"));
+            driver.Navigate().Back();
+            whatYouCouldTeachPage.ClickTrainOnTheJobLink();
             Assert.IsTrue(driver.Url.EndsWith("/train-on-the-job.html"));
 
             #endregion

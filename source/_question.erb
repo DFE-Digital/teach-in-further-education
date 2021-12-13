@@ -12,10 +12,10 @@
         <%= data.question_error_message %></a>
       </p>
   </div>
-  <h2 class="govuk-heading-l"><%= data.question_text %></h2>
 
-  <form id="<%= "question-" + data.id %>">
+  <form id="<%= "question-" + data.id %>" aria-labelledby="question-heading">
     <div id="qual-form-group" class="govuk-form-group">
+     <h2 class="govuk-heading-l" id="question-heading"><%= data.question_text %></h2>
       <fieldset class="govuk-fieldset">
         <legend class="govuk-fieldset_legend govuk-fieldset_legend--1">
           <label class="govuk-label" style="margin-bottom: 20px" for="answer" id="question-label" aria-hidden="true">
@@ -43,8 +43,8 @@
             <div class="govuk-radios" role="radiogroup" aria-labelledby="question-label">
               <% data.answers.each_with_index do |a,i| %>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="<%= a.link.slug %>-answer" name="answer" type="radio" value="<%= a.link.slug %>" aria-label="<%= a.answer %>" role="radioButton">
-                  <label class="govuk-label govuk-radios__label" id="<% a.id %>_label" for="<%= a.link.slug %>-answer" aria-hidden="true">
+                  <input class="govuk-radios__input" id="<%= a.id %>-answer" name="answer" type="radio" value="<%= a.link.slug %>" aria-label="<%= a.answer %>" role="radio">
+                  <label class="govuk-label govuk-radios__label" id="<%= a.id %>_label" for="<%= a.id %>-answer" aria-hidden="true">
                     <%= a.answer %>
                   </label>   
                 </div>
@@ -58,8 +58,8 @@
               <div class="govuk-checkboxes" data-module="govuk-checkboxes">
                 <% data.answers.each_with_index do |a,i| %>
                   <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="<% a.id %>" name="answer" type="checkbox" value="<%= a.link.slug %>" aria-label="<%= a.answer %>">
-                    <label class="govuk-label govuk-checkboxes__label" id="<% a.id %>_label" for="answer" aria-hidden="true">
+                    <input class="govuk-checkboxes__input" id="<%= a.id %>" name="answer" type="checkbox" value="<%= a.link.slug %>" aria-label="<%= a.answer %>">
+                    <label class="govuk-label govuk-checkboxes__label" id="<%= a.id %>_label" for="<%= a.id %>answer" aria-hidden="true">
                       <%= a.answer %>
                     </label>
                   </div>
