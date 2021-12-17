@@ -24,11 +24,21 @@ $govuk-link-text: #1d70b8
 .govuk-link
     color: $govuk-link-colour !important
     font-weight: $govuk-font-weight-bold
+    
+    &:focus 
+      color: #000000 !important
+      background-color: #FFDD00 !important
+      border-bottom: 4px solid #000000
 
     &:link
       color: $govuk-link-colour !important
       font-weight: $govuk-font-weight-bold
 
+      &:focus 
+        color: #000000 !important
+        background-color: #FFDD00 !important
+        border-bottom: 4px solid #000000
+        
 .app-header-nav
   
   padding-top: 0px
@@ -534,7 +544,7 @@ hr
   justify-content: space-between
 
   .app-block
-    max-width: 350px
+    max-width: 300px
 
     @media (max-width: 640px)
       max-width: unset
