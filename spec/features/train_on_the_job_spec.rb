@@ -8,52 +8,49 @@ describe 'Train On The Job components', :type => :feature do
     it "should have correct elements" do
         trainingOnTheJobElement = page.find_by_id("5cu3CALGtvPugA7rbdsPwW")
         within trainingOnTheJobElement do
-            expect(trainingOnTheJobElement).to have_selector 'h2.govuk-heading-l', text: "Training on the job"
-            expect(trainingOnTheJobElement).to have_selector '.govuk-body', count: 5
+          expect(trainingOnTheJobElement).to have_selector 'h3.govuk-heading-m', text: "How does this work?"
+          expect(trainingOnTheJobElement).to have_selector '.govuk-body', count: 5
+          expect(trainingOnTheJobElement).to have_selector '.govuk-list--bullet', count: 3
+          expect(trainingOnTheJobElement).to have_selector 'li', count: 9
+          expect(trainingOnTheJobElement).to have_selector '.app-image-2', count: 1
         end
         approachesAndGetStartedElement = page.find_by_id("1KOfyONjdF71g4vBQYtd5w")
         within approachesAndGetStartedElement do
-            expect(approachesAndGetStartedElement).to have_selector 'h3.govuk-heading-m', text: "This may be the best approach if:"
-            expect(approachesAndGetStartedElement).to have_selector '.govuk-list--bullet', count: 2
-            expect(approachesAndGetStartedElement).to have_selector 'li', count: 7
-            expect(approachesAndGetStartedElement).to have_selector 'h3.govuk-heading-m', text: "This might not be the right approach if:"
-            expect(approachesAndGetStartedElement).to have_selector 'h3.govuk-heading-m', text: "How to get started"
+          expect(approachesAndGetStartedElement).to have_selector 'h3.govuk-heading-m', text: "This may be the best approach if:"
+          expect(approachesAndGetStartedElement).to have_selector '.govuk-list--bullet', count: 2
+          expect(approachesAndGetStartedElement).to have_selector 'li', count: 7
+          expect(approachesAndGetStartedElement).to have_selector 'h3.govuk-heading-m', text: "This might not be the right approach if:"
+          expect(approachesAndGetStartedElement).to have_selector 'h3.govuk-heading-m', text: "How to get started"
+          expect(approachesAndGetStartedElement).to have_selector '.govuk-link', count: 4
         end
         findAnFeJobLinkElement = page.find_by_id("5yvT8Cy2hbgxPnEoX4G7Bq")
         within findAnFeJobLinkElement do
-            expect(findAnFeJobLinkElement).to have_selector '.govuk-body', text: "Find a further education teaching job"
+          expect(findAnFeJobLinkElement).to have_selector '.govuk-body', text: "Find a further education teaching job"
+          expect(findAnFeJobLinkElement).to have_selector '.govuk-link', count: 1
         end
         bottomContactBannerElement = page.find_by_id("57ltZ1kjZ3UMvmAJzCb8Kz")
         within bottomContactBannerElement do
-          expect(bottomContactBannerElement).to have_selector '.govuk-body', text: "Got a question about training with a local college or training provider?"
-          expect(bottomContactBannerElement).to have_selector '.govuk-body', text: "Email: Teach.FE@education.gov.uk and our advisors will reply to you within 5 working days."            
+          expect(bottomContactBannerElement).to have_selector '.govuk-body', text: "Got a question about getting a job with a local college or training provider?"
+          expect(bottomContactBannerElement).to have_selector '.govuk-body', text: "Email: Teach.FE@education.gov.uk and our advisors will reply to you within 5 working days."
+          expect(bottomContactBannerElement).to have_selector '.govuk-link', count: 1            
         end
     end
 
     it "should have the correct classes" do 
         trainingOnTheJobBlock = page.find_by_id("5cu3CALGtvPugA7rbdsPwW")
-        within trainingOnTheJobBlock do
-            expect(trainingOnTheJobBlock[:class]).to eq "app-advice "
-        end
+        expect(trainingOnTheJobBlock[:class]).to eq "app-advice "
+
         approachesAndGettingStartedBlock = page.find_by_id("1KOfyONjdF71g4vBQYtd5w")
-        within approachesAndGettingStartedBlock do
-            expect(approachesAndGettingStartedBlock[:class]).to eq ("app-advice ")
-        end
+        expect(approachesAndGettingStartedBlock[:class]).to eq ("app-advice ")
+
+        findAnFeJobLinkBlock = page.find_by_id("5yvT8Cy2hbgxPnEoX4G7Bq")
+        expect(findAnFeJobLinkBlock[:class]).to eq "app-advice "
+
         bottomContactBannerBlock = page.find_by_id("57ltZ1kjZ3UMvmAJzCb8Kz")
-        within bottomContactBannerBlock do
-            expect(bottomContactBannerBlock[:class]).to eq "app-advice "
-        end
+        expect(bottomContactBannerBlock[:class]).to eq "app-advice "
     end
 
     it "Links should re-direct to the expected URLs" do
-        link = page.find_link("Here's a list of popular teacher training courses.", match: :first)
-        within link do 
-          expect(link[:href]).to end_with '/full-list-of-fe-qualifications.html'
-        end
-        link = page.find_link("You may be eligible to apply for a student loan to help pay for the course fees.", match: :first)
-        within link do 
-          expect(link[:href]).to eq 'https://www.gov.uk/student-finance'
-        end
         link = page.find_link("Train in your own time", match: :first)
         within link do 
           expect(link[:href]).to end_with '/train-in-your-own-time.html'

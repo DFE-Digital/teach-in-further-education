@@ -1,379 +1,1307 @@
 ---
-:id: 43a2K5qKGT51PIAROMTXDr
+:id: iDcAlnCKhK7S1H2EXHGLY
 :_meta:
   :content_type_id: navigation
-  :updated_at: '2021-06-08T15:21:24+00:00'
-  :created_at: '2021-06-05T17:29:45+00:00'
-  :id: 43a2K5qKGT51PIAROMTXDr
-:title: Footer
+  :updated_at: '2021-12-01T11:35:58+00:00'
+  :created_at: '2021-04-30T00:00:54+00:00'
+  :id: iDcAlnCKhK7S1H2EXHGLY
+:title: Header
 :pages:
 - :id: 5yYjsBia5tKnn6rysEdUQ2
   :_meta:
     :content_type_id: page
-    :updated_at: '2021-05-18T08:13:38+00:00'
+    :updated_at: '2021-12-08T15:17:21+00:00'
     :created_at: '2021-05-18T08:13:38+00:00'
     :id: 5yYjsBia5tKnn6rysEdUQ2
-  :title: Is FE for me?
-  :slug: is-fe-for-me
+  :title: Where to start in further education
+  :nav_title: Where to start in FE
+  :heading: Where to start in further education
+  :slug: where-to-start-in-further-education
   :blocks:
-  - :id: 13t4lZXfH3VGfCMeN7QAVs
+  - :id: 5XYHbxsuUuv2QMBmQBdNWg
+    :_meta:
+      :content_type_id: tableOfContents
+      :updated_at: '2021-12-01T10:16:37+00:00'
+      :created_at: '2021-12-01T10:16:37+00:00'
+      :id: 5XYHbxsuUuv2QMBmQBdNWg
+    :title: On this page
+  - :id: 6iPzcLN3pGn52PXP2lQlMC
     :_meta:
       :content_type_id: advice
-      :updated_at: '2021-05-18T08:12:01+00:00'
-      :created_at: '2021-05-18T08:12:01+00:00'
-      :id: 13t4lZXfH3VGfCMeN7QAVs
-    :title: Is FE for me?
-    :advice_body: 'Find out more about further education (FE) and the experience and
-      qualifications you might need. '
-  - :id: 26o7zVgA8zuq4GnxJgvjD8
+      :updated_at: '2021-12-06T14:14:21+00:00'
+      :created_at: '2021-04-29T23:31:05+00:00'
+      :id: 6iPzcLN3pGn52PXP2lQlMC
+    :title: What is further education?
+    :advice_body: |-
+      Further education (FE) is for learners who need to:
+
+      - learn a skill or trade
+      - study a vocational subject
+      - develop their professional career
+      - complete post-16 academic studies
+      - study as part of an apprenticeship
+
+      As an FE teacher you could teach a diverse set of learners, including young people and adults.
+
+      If teaching a skill or trade, you'll spend more time in practical settings than in a classroom.
+    :display_order: true
+    :show_title: true
+  - :id: 1huyVRCGroXrWmbLnuL0WS
     :_meta:
-      :content_type_id: userJourney
-      :updated_at: '2021-05-24T11:20:12+00:00'
-      :created_at: '2021-04-30T00:00:55+00:00'
-      :id: 26o7zVgA8zuq4GnxJgvjD8
-    :title: Is FE for me steps
-    :steps:
-    - :id: 6iPzcLN3pGn52PXP2lQlMC
+      :content_type_id: advice
+      :updated_at: '2021-12-15T09:20:36+00:00'
+      :created_at: '2021-12-01T10:29:47+00:00'
+      :id: 1huyVRCGroXrWmbLnuL0WS
+    :title: What you could earn
+    :advice_body: "Further education (FE) teachers are employed by colleges and training
+      providers on a full- or part-time basis.\n\n### The average salary for an FE
+      teacher ranges from £24,000 to £40,000 \n\nThis is according to National Careers
+      Service figures.\n\nFE providers are independent businesses, so are free to
+      set their own salary levels.\n\nThese may be determined by:\n\n- the demand
+      for your subject\n- your level of experience and qualifications\n- your local
+      area\n\nYou can get an idea of your local provider's pay scale by looking at
+      the current jobs on the careers section of their website.\n\n[Find your local
+      FE college on the Association of Colleges website](https://www.aocjobs.com/employers-a-z
+      \"Association of Colleges college finder\")\n\n[Find independent training providers
+      on the Association of Employment Learning Providers' website](https://www.aelp.org.uk/about/our-members/
+      \"Association of Employment Learning Providers member finder\")"
+    :display_order: true
+    :show_title: true
+  - :id: 1Yh0k872wyhVl5GgFnlyDy
+    :_meta:
+      :content_type_id: advice
+      :updated_at: '2021-12-01T11:06:42+00:00'
+      :created_at: '2021-12-01T11:06:42+00:00'
+      :id: 1Yh0k872wyhVl5GgFnlyDy
+    :title: Where you could work
+    :advice_body: |-
+      Places where FE teachers work include:
+
+      - local colleges
+      - independent training providers
+      - workplaces
+      - prisons
+
+      FE is not the same as:
+
+      - higher education (university)
+      - secondary (high school and sixth form)
+    :display_order: true
+    :apply_background_color: false
+    :show_title: true
+  - :id: 5Cnx3y5NVUzVqBb56MUYWT
+    :_meta:
+      :content_type_id: advice
+      :updated_at: '2021-12-13T10:45:39+00:00'
+      :created_at: '2021-12-01T11:12:33+00:00'
+      :id: 5Cnx3y5NVUzVqBb56MUYWT
+    :title: Find out if you could teach in further education
+    :advice_body: |-
+      There are 2 elements that make a good further education (FE) teacher:
+
+      - skills, knowledge and experience in your subject
+      - a teaching qualifiction - or be willing to work towards one
+
+      Ideally you'll have industry experience, preferably with relevant trade qualification. Usually at level 3.
+
+      [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels "List of academic qualification levels")
+
+      You'll also need good mathematics and English skills. If you do not have GCSEs in mathematics and English, your employer might ask to assess your skills.
+
+      Teaching practice forms part of teacher training, which your college or training provider will support you to do.
+
+      This is not linked to what you want to teach. It's to help you to teach anything your skills, knowledge and experience qualify you to.
+
+      ### You'll need to study teacher training.
+
+      If you need teacher training your new employer will arrange this for you when you start a job with a college or training provider.
+
+      Teacher training courses vary by:
+
+      - what they cost
+      - their duration
+      - their minimum qualification requirements
+
+      [Find out what you could teach](/what-you-could-teach.html "Find out what you could teach")
+    :display_order: true
+    :apply_background_color: false
+    :show_title: true
+  - :id: 48XICVJXXcyBGAZ2DhtvhD
+    :_meta:
+      :content_type_id: advice
+      :updated_at: '2021-12-01T11:07:38+00:00'
+      :created_at: '2021-12-01T11:07:38+00:00'
+      :id: 48XICVJXXcyBGAZ2DhtvhD
+    :title: What teaching in further education is like
+    :advice_body: |-
+      Teaching in FE can be challenging, but also rewarding.
+
+      You'll be passing on your skills, knowledge and experience to improve students' prospects.
+
+      You'll be making a difference to your students' lives, but you'll work hard for it.
+
+      Aside from teaching, you'll mark and assess your students' work.
+
+      You'll be there to support them not just with their learning, but with pastoral issues too.
+    :display_order: true
+    :apply_background_color: false
+    :show_title: true
+  - :id: 44UAig0m5n9sKt551BKgI1
+    :_meta:
+      :content_type_id: advice
+      :updated_at: '2021-12-15T13:46:14+00:00'
+      :created_at: '2021-09-21T11:39:53+00:00'
+      :id: 44UAig0m5n9sKt551BKgI1
+    :title: 'Got a question about your qualifications and experience? '
+    :advice_body: "---\n\nGot a question about your qualifications and experience?
+      \ \n\nEmail: <a class=\"govuk-link\" href=\"mailto:Teach.FE@education.gov.uk\"
+      onclick=\"window.site.analytics.raiseExitPointEvent('emailAddress')\">Teach.FE@education.gov.uk</a>
+      and our advisors will reply to you within 5 working days.\n\n---"
+    :display_order: true
+    :apply_background_color: false
+    :show_title: false
+  - :id: ocv0Q8ArIy3v0dUyNDIGB
+    :_meta:
+      :content_type_id: story
+      :updated_at: '2021-12-08T13:12:33+00:00'
+      :created_at: '2021-07-01T20:24:41+00:00'
+      :id: ocv0Q8ArIy3v0dUyNDIGB
+    :title: Margaret's story
+    :story_body: |-
+      “You know when you're in another job and it’s the same every day? Here no day’s a chore. I’m surrounded by people who have enthusiasm for what I've been doing all my life.”
+
+      __Margaret, FE agriculture teacher__
+    :media:
+      :title: Agriculture
+      :description: A tractor in a field of hay bales
+      :url: "//images.ctfassets.net/n4docnlbw89d/7ejtw2cz4ilNditvMdrh68/93c2e1cc97ac7d9c02bc5a4a0dce2a01/AgricultureLearning2.png"
       :_meta:
-        :content_type_id: advice
-        :updated_at: '2021-05-18T08:02:05+00:00'
-        :created_at: '2021-04-29T23:31:05+00:00'
-        :id: 6iPzcLN3pGn52PXP2lQlMC
-      :title: About FE
-      :advice_body: |-
-        Further education (FE) is learning for people who want to boost their employment prospects or just want to learn something new. Learners range from school leavers to people already in the workforce. FE learners are typically older than 16.
-
-        Lectures and training takes place in colleges, training centres and on-site in industry settings. FE allows experts in their subject to pass on knowledge and inspire people of a range of ages and backgrounds.
-    - :id: 5bl9sYZHo3Zns6ojkVwqrL
-      :_meta:
-        :content_type_id: advice
-        :updated_at: '2021-05-18T08:03:27+00:00'
-        :created_at: '2021-04-29T23:31:04+00:00'
-        :id: 5bl9sYZHo3Zns6ojkVwqrL
-      :title: What you could teach
-      :advice_body: |
-        There is demand for FE teachers in a wide range of subjects from agriculture to massage therapy.
-
-        You might get a tax-free bursary of £26,000 if you want to teach:
-
-        - mathematics
-        - science
-        - engineering
-        - computing
-
-        You might get tax-free bursary of £15,000 if you want to teach Special Educational Needs and Disabilities (SEND)
-
-        You might get tax-free bursary of £12,000 if you want to teach English
-
-        ### Get paid to train
-        You might be able to work in FE while you earn a teaching qualification - your employer might pay for your course.
-
-        ### 37 days paid holiday
-        Term-based holidays mean FE teachers typically get 37 days' paid leave per year, plus all the bank holidays.
-
-        ### Qualify while you teach
-        There are full- and part-time jobs in FE, and if you need to earn a qualification, most courses are flexible too.
-    - :id: 2GE7Oj5gaBed42AHKQjNhL
-      :_meta:
-        :content_type_id: advice
-        :updated_at: '2021-04-30T00:01:02+00:00'
-        :created_at: '2021-04-29T23:31:04+00:00'
-        :id: 2GE7Oj5gaBed42AHKQjNhL
-      :title: Get your teaching qualification
-      :advice_body: |
-        In some cases you will be able to train towards a teaching qualification after you’ve started in a job.
-
-        Different colleges offer different training opportunities.
-
-        [Find out about further education teacher training](/#)
-    - :id: yVep65ieALyy1UoUaDYUK
-      :_meta:
-        :content_type_id: advice
-        :updated_at: '2021-06-01T17:22:49+00:00'
-        :created_at: '2021-04-29T23:31:04+00:00'
-        :id: yVep65ieALyy1UoUaDYUK
-      :title: Find a job
-      :advice_body: "If you know of any local FE colleges, have a look on their websites
-        to see if there are any suitable vacancies.\n\nNot all colleges say if qualification
-        training is included on their job adverts. They will specify the qualification
-        needed for the job though. \n\nIf you decide to get qualified first, you'll
-        at least know what course you need to take. \n\nIt's worth getting in touch
-        with the college by email if you're not sure. \n\nIf a college needs your
-        expertise, they may encourage you to gain a teaching qualification while you’re
-        working for them. They might even help to find and pay for the course.\n\nOther
-        places to look:\n\n- [Association of colleges job site](https://www.aocjobs.com
-        \"Association of Colleges jobs\")\n\n- [Further Education job site](https://www.fejobs.com/career-advice
-        \"FE Jobs website\")\n\n- [College Jobs](https://college.jobs.ac.uk \"College
-        Jobs website\")\n\nThe DfE does not endorse any particular providers or job
-        sites. "
-    :is_accordion: true
-- :id: 15FI0WUAPnHGy98eB7XW5N
+        :updated_at: '2021-09-10T14:03:40+00:00'
+        :created_at: '2021-06-05T16:53:24+00:00'
+        :id: 7ejtw2cz4ilNditvMdrh68
+    :display_order: false
+- :id: 6Fraj3twk8xSHrc1kyKzVr
   :_meta:
     :content_type_id: page
-    :updated_at: '2021-06-08T14:41:52+00:00'
-    :created_at: '2021-05-27T21:44:14+00:00'
-    :id: 15FI0WUAPnHGy98eB7XW5N
-  :title: Ways to train
-  :slug: ways-to-train
+    :updated_at: '2021-12-08T15:16:35+00:00'
+    :created_at: '2021-12-01T11:33:28+00:00'
+    :id: 6Fraj3twk8xSHrc1kyKzVr
+  :title: What you could teach
+  :nav_title: What you could teach
+  :heading: What you could teach
+  :slug: what-you-could-teach
+  :blocks:
+  - :id: 3P8EQuVSSctYjfcJHwZ6H1
+    :_meta:
+      :content_type_id: advice
+      :updated_at: '2021-12-01T11:15:18+00:00'
+      :created_at: '2021-12-01T11:15:18+00:00'
+      :id: 3P8EQuVSSctYjfcJHwZ6H1
+    :title: what you could teach intro
+    :advice_body: |-
+      FE colleges teach a huge range of subjects, from brick laying to beauty therapy.
+
+      Often the subjects taught reflect the needs of the local economy.
+
+      The courses taught include:
+
+      - GCSEs
+      - T Levels (a new qualification, considered a vocational alternative to an A Level)
+      - BTECs
+      - Apprenticeships
+    :display_order: true
+    :apply_background_color: false
+    :show_title: false
+  - :id: 7xDb0h6J2h6c11GhWHR0J
+    :_meta:
+      :content_type_id: userJourney
+      :updated_at: '2021-12-01T11:27:52+00:00'
+      :created_at: '2021-12-01T11:27:52+00:00'
+      :id: 7xDb0h6J2h6c11GhWHR0J
+    :title: What you could teach accordion
+    :steps:
+    - :id: 2dSAy6Mk1OlBMIiVDcPJ0u
+      :_meta:
+        :content_type_id: advice
+        :updated_at: '2021-12-15T11:07:55+00:00'
+        :created_at: '2021-05-14T09:25:51+00:00'
+        :id: 2dSAy6Mk1OlBMIiVDcPJ0u
+      :title: Skills, trades and vocational subjects
+      :advice_body: "### Real experience is valued\n\nFurther education (FE) teaching
+        is suitable for those with industry experience. FE providers value industry
+        experience that you can pass on. The minimum experience requirements vary
+        by FE provider.\n\n### Working in FE without a teaching qualification\n\nThe
+        qualifications needed for specific teaching roles in FE are set by the colleges
+        and training providers.\n\nYou might be able to start work in FE without a
+        teaching qualification.\n\nIf you are training as part of a job in a college
+        or training provider, they may specify what course you need to do. This information
+        may be on the job advert on their website.\n\n#### Other qualifications needed\n\nIdeally
+        you'll have a level 3 qualification in your area of expertise.\n\n[What levels
+        mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+        \"Explanation of the different educational attainment levels\")\n\nIf you
+        can show significant industry experience, you still may be able to start teaching
+        in FE.\n\n### Subject areas\nThere are too many subject areas to list them
+        all. \n\nHere's a sample list of some of the sectors covered by FE teaching:\n\n-
+        agriculture, environment and animal care\n- business, administration and office
+        management\n- catering and hospitality\n- childcare and education\n- construction\n-
+        creative and design\n- digital and IT\n- emergency and armed services\n- engineering
+        and manufacturing\n- hair and beauty\n- health and life sciences\n- legal,
+        finance and accounting\n- sales, marketing and procurement\n- social care\n-
+        transport and logistics\n"
+      :display_order: true
+      :apply_background_color: false
+      :show_title: true
+    - :id: e0XCvhr4XVEtz0N0hZMCf
+      :_meta:
+        :content_type_id: advice
+        :updated_at: '2021-12-15T11:11:05+00:00'
+        :created_at: '2021-05-14T09:28:11+00:00'
+        :id: e0XCvhr4XVEtz0N0hZMCf
+      :title: Academic subjects
+      :advice_body: |-
+        You need at least an A level or equivalent qualification in your subject to teach it in in FE.
+
+        Some FE providers may insist that you have a degree in the subject you want to teach.
+
+        ### Subject areas
+        You could teach in subjects like:
+
+        - English
+        - mathematics
+        - science
+        - social sciences
+        - humanities
+        - modern foreign languages
+        - art and design
+        - performing arts
+      :display_order: false
+      :apply_background_color: false
+      :show_title: true
+    :is_accordion: true
+  - :id: 1inRQaqvmQdjVteK4scloc
+    :_meta:
+      :content_type_id: advice
+      :updated_at: '2021-12-01T11:32:11+00:00'
+      :created_at: '2021-12-01T11:32:11+00:00'
+      :id: 1inRQaqvmQdjVteK4scloc
+    :title: Training to teach your subject
+    :advice_body: |-
+      There are different ways to do your further education (FE) teacher training. You might be able to study part-time or even take a job with a college or training provider that lets you work while you train.
+
+      - [Train on the job](/train-on-the-job.html "Train on the job")
+      - [Train in your own time](/train-in-your-own-time.html "Train in your own time")
+    :display_order: true
+    :apply_background_color: false
+    :show_title: true
+  - :id: 2zZ0KQaTQKpFKh47znfZTk
+    :_meta:
+      :content_type_id: advice
+      :updated_at: '2021-12-15T13:45:40+00:00'
+      :created_at: '2021-09-21T10:40:22+00:00'
+      :id: 2zZ0KQaTQKpFKh47znfZTk
+    :title: Got a question about what you could teach?
+    :advice_body: "---\n\nGot a question about what you could teach? \n\nEmail: <a
+      class=\"govuk-link\" href=\"mailto:Teach.FE@education.gov.uk\" onclick=\"window.site.analytics.raiseExitPointEvent('emailAddress')\">Teach.FE@education.gov.uk</a>
+      and our advisors will reply to you within 5 working days.\n\n---"
+    :display_order: true
+    :apply_background_color: false
+    :show_title: false
+  - :id: 7ABuhsAYVosp5LK1WRKIHT
+    :_meta:
+      :content_type_id: story
+      :updated_at: '2021-12-15T10:42:57+00:00'
+      :created_at: '2021-07-01T20:24:41+00:00'
+      :id: 7ABuhsAYVosp5LK1WRKIHT
+    :title: John's Story
+    :story_body: |-
+      “I was looking for a change of career after 35 years as a plumber. I'm not getting any younger and I also wanted a break from chasing new business and payments.”
+
+      __John, Plumbing FE teacher__
+    :media:
+      :title: Plumbing
+      :description: Adult male engineering student using a tool to fix a piece of
+        mechanical equipment
+      :url: "//images.ctfassets.net/n4docnlbw89d/n5A2cZFGtaDc4pRp50usP/a9de9589fdc5e020f42c26de51814a92/John-sStory.png"
+      :_meta:
+        :updated_at: '2021-08-16T10:35:55+00:00'
+        :created_at: '2021-06-30T14:56:55+00:00'
+        :id: n5A2cZFGtaDc4pRp50usP
+    :story_link_text: Read about John's journey into FE teaching
+    :story_page:
+      :id: 1tmuPONLoli39t0exdXHPD
+      :_meta:
+        :content_type_id: page
+        :updated_at: '2021-10-28T09:03:21+00:00'
+        :created_at: '2021-07-01T09:37:08+00:00'
+        :id: 1tmuPONLoli39t0exdXHPD
+      :title: John's story
+      :nav_title: John's story
+      :heading: John's story
+      :slug: johns-story
+      :blocks:
+      - :id: 1sFTEZnVJqppsa7j1r4Wbk
+        :_meta:
+          :content_type_id: advice
+          :updated_at: '2021-10-28T09:02:50+00:00'
+          :created_at: '2021-07-01T09:36:36+00:00'
+          :id: 1sFTEZnVJqppsa7j1r4Wbk
+        :title: John story content
+        :advice_body: |-
+          John, Lecturer in Plumbing
+
+          ## How did you get into further education teaching?
+
+          I was looking for a change of career after 35 years as a plumber. I'm not getting any younger and I also wanted a break from chasing new business and payments.
+
+          A friend of mine suggested that I teach plumbing at the college she works at, and that's what got me thinking. I did take a month or two off though to do up the house.
+
+          The college were keen to take me on as I already had a professional qualification. I'm doing my teaching qualification in my spare time so that I'll be a qualified teacher by the end of the year.
+        :media:
+          :title: Plumbing
+          :description: Adult male engineering student using a tool to fix a piece
+            of mechanical equipment
+          :url: "//images.ctfassets.net/n4docnlbw89d/n5A2cZFGtaDc4pRp50usP/a9de9589fdc5e020f42c26de51814a92/John-sStory.png"
+          :_meta:
+            :updated_at: '2021-08-16T10:35:55+00:00'
+            :created_at: '2021-06-30T14:56:55+00:00'
+            :id: n5A2cZFGtaDc4pRp50usP
+        :display_order: false
+        :apply_background_color: false
+        :show_title: false
+      - :id: 6j3NihRXh3GfclpSw19HgI
+        :_meta:
+          :content_type_id: advice
+          :updated_at: '2021-10-28T09:02:56+00:00'
+          :created_at: '2021-07-14T15:22:43+00:00'
+          :id: 6j3NihRXh3GfclpSw19HgI
+        :title: John's Story
+        :advice_body: "## What does your day look like?\n\nMost of my teaching is
+          done in the workshop as mine's a very practical subject.\n\nSome of the
+          work is classroom based, like teaching the students how to price up a job
+          and sort out their tax.\n\nSome of the classes are in the evening, so my
+          days are quite flexible. \n\nApart from that I might be planning a lesson,
+          assessing the students' work, or helping a student who's having problems.\n\nThe
+          college takes the pastoral stuff very seriously, so we're all expected to
+          help the students with any problems they have - in or out of college.\n\nSome
+          days can be really busy though, and I do not often leave bang on time.\n\n##
+          What do you enjoy about working in further education?\n\nI still feel like
+          I'm in the plumbing trade, which is important to me as I've been a plumber
+          since I left school.\n\nI like the fact that I'm bringing new people into
+          the trade. Some of them didn't do so well with regular school, but I'm giving
+          them the chance to go out and earn a living.\n\nBecause I'm teaching now,
+          some of my old plumbing mates think I'm a bit of a guru!"
+        :display_order: false
+        :apply_background_color: false
+        :show_title: false
+    :display_order: true
+- :id: 2wAftZDRvPUWLTGogsMx4B
+  :_meta:
+    :content_type_id: page
+    :updated_at: '2021-12-08T15:16:25+00:00'
+    :created_at: '2021-10-28T08:57:14+00:00'
+    :id: 2wAftZDRvPUWLTGogsMx4B
+  :title: Train on the job
+  :nav_title: Train on the job
+  :heading: Train on the job
+  :slug: train-on-the-job
+  :blocks:
+  - :id: 5cu3CALGtvPugA7rbdsPwW
+    :_meta:
+      :content_type_id: advice
+      :updated_at: '2021-12-06T09:54:56+00:00'
+      :created_at: '2021-04-29T23:31:03+00:00'
+      :id: 5cu3CALGtvPugA7rbdsPwW
+    :title: Training on the job
+    :advice_body: |-
+      You can start work as an FE teacher straight away. As long as you have the right:
+
+      - practical skills
+      - knowledge of your subject
+      - experience of your industry
+
+      There are 2 ways to train when you start a teaching job with a college or training provider:
+
+      - a teaching course, such as a Level 5 Diploma in Education and Training
+      - an FE teaching apprenticeship
+
+      Colleges and training providers decide themselves how to train new members of staff.
+
+      ### How does this work?
+
+      With either of the methods above you will:
+
+      - be paid the training provider's going rate for an FE teacher
+      - remain a member of the permanent staff when you pass the course
+      - become a qualified FE teacher when you pass the course
+      - get guaranteed time off the job to study
+
+      The FE teaching apprenticeship has recently been revised and updated. It is designed to increase the quality of FE teacher training provision. It also lets FE providers access money to fund teacher training.
+    :media:
+      :title: Earn while you learn
+      :description: A male teacher with two female students looking at a computer
+      :url: "//images.ctfassets.net/n4docnlbw89d/lza5filA0VlqXNUB0X7HJ/6132507391a068275e4412dc6c05fd98/EarnWhileYouLearn.png"
+      :_meta:
+        :updated_at: '2021-09-10T14:06:04+00:00'
+        :created_at: '2021-07-01T20:24:39+00:00'
+        :id: lza5filA0VlqXNUB0X7HJ
+    :display_order: false
+    :apply_background_color: false
+    :show_title: false
+  - :id: 1KOfyONjdF71g4vBQYtd5w
+    :_meta:
+      :content_type_id: advice
+      :updated_at: '2021-12-13T10:32:27+00:00'
+      :created_at: '2021-08-25T15:34:10+00:00'
+      :id: 1KOfyONjdF71g4vBQYtd5w
+    :title: In service training pros and cons
+    :advice_body: "### This may be the best approach if:\n\n- you want to start your
+      new career sooner rather than later\n- there is a suitable job available at
+      a local college or training provider\n- you do not want to pay for teacher training
+      yourself\n- you do not want to arrange teaching practice yourself as part of
+      your course\n\n### This might not be the right approach if:\n\n- you want to
+      complete your teacher training first\n- you'd prefer to choose your own teaching
+      qualification\n- you need to do further study or gain more experience\n\n[Train
+      in your own time](/train-in-your-own-time.html \"Train in your own time\")\n\n###
+      How to get started\n\nThere is no formal entry path. The best thing to do is
+      to speak to your local FE college or training provider, or look out for job
+      ads on their website.\n\n[Find your local FE college on the Association of Colleges
+      website](https://www.aocjobs.com/employers-a-z \"List of FE colleges from Association
+      of Colleges\")\n\n[Find independent training providers on the Association of
+      Employment Learning Providers' website](https://www.aelp.org.uk/about/our-members/
+      \"Association of Employment Learning Providers member finder\")\n\n[Find a job
+      in FE on the Association of Colleges website](https://www.aocjobs.com \"Association
+      of Colleges college finder\")\n\nThe Department for Education does not endorse
+      any particular providers or job sites. "
+    :display_order: true
+    :apply_background_color: false
+    :show_title: false
+  - :id: 5yvT8Cy2hbgxPnEoX4G7Bq
+    :_meta:
+      :content_type_id: advice
+      :updated_at: '2021-11-02T14:36:54+00:00'
+      :created_at: '2021-10-28T08:57:12+00:00'
+      :id: 5yvT8Cy2hbgxPnEoX4G7Bq
+    :title: Find a further education teaching job content
+    :advice_body: '[Find a further education teaching job](/find-an-fe-teaching-job.html
+      "Find a further education teaching job")'
+    :display_order: false
+    :apply_background_color: false
+    :show_title: false
+  - :id: 57ltZ1kjZ3UMvmAJzCb8Kz
+    :_meta:
+      :content_type_id: advice
+      :updated_at: '2021-12-15T13:43:57+00:00'
+      :created_at: '2021-10-28T08:57:12+00:00'
+      :id: 57ltZ1kjZ3UMvmAJzCb8Kz
+    :title: Got a question about getting a job with a local college or training provider?
+    :advice_body: |-
+      ---
+
+      Got a question about getting a job with a local college or training provider?
+
+      Email: <a class="govuk-link" href="mailto:Teach.FE@education.gov.uk" onclick="window.site.analytics.raiseExitPointEvent('emailAddress')">Teach.FE@education.gov.uk</a> and our advisors will reply to you within 5 working days.
+
+      ---
+    :display_order: false
+    :apply_background_color: false
+    :show_title: false
+- :id: 4LD9JHyl4cpaKoLhRZqk8p
+  :_meta:
+    :content_type_id: page
+    :updated_at: '2021-12-08T15:18:32+00:00'
+    :created_at: '2021-10-28T08:57:13+00:00'
+    :id: 4LD9JHyl4cpaKoLhRZqk8p
+  :title: Train in your own time
+  :nav_title: Train in your own time
+  :heading: Train in your own time
+  :slug: train-in-your-own-time
   :blocks:
   - :id: 12qLcJTqyRLLx3q5FjUBVA
     :_meta:
       :content_type_id: advice
-      :updated_at: '2021-05-26T08:00:31+00:00'
+      :updated_at: '2021-12-07T14:48:44+00:00'
       :created_at: '2021-04-29T23:31:03+00:00'
       :id: 12qLcJTqyRLLx3q5FjUBVA
-    :title: Training before you start work
-    :advice_body: "Training for your career in FE can be done part time or full time.
-      Courses can be designed to suit your personal circumstances, but you may have
-      to check with individual providers.\n\nYou’ll hear this called ‘pre-service’
-      training and as it suggests, you would have to complete the training before
-      starting a job.\n\nYou may be able to pay for your course with a student finance
-      loan that is paid back in instalments each month once you start work.\n\n[Find
-      out if you're entitled to a student finance loan.](https://www.gov.uk/student-finance-calculator
-      \"student finance calculator\") \n\n### Available funding\n\nYou may be able
-      to get a bursary for your training if you train to teach:\n- mathematics, science,
-      engineering or computing: £26,000\n- Special educational needs and disabilities
-      (SEND): £15,000\n- English: £12,000\n\nThe conditions are that you are accepted
-      onto a Further Education initial teacher education programme such as:\n- PGCE
-      in Post-Compulsory Education\n- PCET in Post-Compulsory Education and Training\n-
-      Certificate of Education\n- Diploma of Education and Training\n\nYou also need
-      to have at least a Level 3 qualification, such as an A Level or appropriate
-      professional experience related to your teaching subject.\n"
-  - :id: 5cu3CALGtvPugA7rbdsPwW
+    :title: Train as a teacher before you apply for a job
+    :advice_body: |-
+      You can do your teacher training in your own time around your own commitments.
+
+      Different qualification levels are available. You do not need a degree to teach in FE, but having one gives you more options.
+
+      [Here's a list of popular teacher training courses](/full-list-of-fe-qualifications.html "List of popular teaching courses")
+
+      Once you have qualified you can apply for any suitable jobs.
+    :media:
+      :title: Learn before you earn
+      :description: A male teacher in tutorial with a male student
+      :url: "//images.ctfassets.net/n4docnlbw89d/xrbpAnsDT493GYrkv5yL5/8cd895925fecfbc818fe6cb5ae6edf87/TrainingBeforeWork.png"
+      :_meta:
+        :updated_at: '2021-09-10T14:04:36+00:00'
+        :created_at: '2021-06-29T12:37:36+00:00'
+        :id: xrbpAnsDT493GYrkv5yL5
+    :display_order: false
+    :apply_background_color: false
+    :show_title: false
+  - :id: 3rbmhWgWOe2mU4SWn0Nd3t
     :_meta:
       :content_type_id: advice
-      :updated_at: '2021-05-26T08:02:16+00:00'
-      :created_at: '2021-04-29T23:31:03+00:00'
-      :id: 5cu3CALGtvPugA7rbdsPwW
-    :title: Training on the job
-    :advice_body: "If you have the kind of skills and experiences that are in demand,
-      it’s possible to start a job before you have gained a teaching qualification.\n\nContacting
-      an FE college or learning centre is a good place to start, or looking for jobs
-      in your subject specialism.\n\nIf a provider needs your expertise, they may
-      encourage you to gain a teaching qualification while you’re working for them.
-      \n\n[The qualification that most people gain on the job is the Diploma in Education
-      and Training](/#)\n\nThe qualification that most people gain on the job is the
-      Level 5 Diploma in Education and Training.\n\nAs you’ll be earning a salary
-      from your teaching work, you will not receive bursaries or other incentives.
-      \n\nYou may be able to pay for your course with a student finance loan that
-      is paid back in instalments each month.\n\n[Find out if you're entitled to a
-      student finance loan.](https://www.gov.uk/student-finance-calculator \"student
-      finance calculator\") \n\nSome colleges might even help to find and pay for
-      your course. \n\n[Find a job in further education](/#)"
+      :updated_at: '2021-11-12T11:27:10+00:00'
+      :created_at: '2021-08-25T15:35:19+00:00'
+      :id: 3rbmhWgWOe2mU4SWn0Nd3t
+    :title: Pre-service pros and cons
+    :advice_body: |-
+      ### This may be the best approach if:
+
+      - you want to train around existing commitments
+      - you do not want to be tied-in to any one provider once you've qualified
+      - you want to get a taste for FE before you commit to teaching in it
+
+      [You may be eligible to apply for a student loan to help pay for the course fees](https://www.gov.uk/student-finance "Student loans")
+
+      ### This might not be the right approach if:
+
+      - you do not want to pay for your teacher training course yourself
+      - there is a suitable vacancy at your local college or training provider
+      - you're keen to start your new career as soon as a vacancy comes up
+
+      [Train on the job](/train-on-the-job.html "Train on the job")
+    :display_order: true
+    :apply_background_color: false
+    :show_title: false
+  - :id: 1xTlxAkJL5DzPuOCDYOsQG
+    :_meta:
+      :content_type_id: advice
+      :updated_at: '2021-12-13T10:55:36+00:00'
+      :created_at: '2021-07-06T12:49:06+00:00'
+      :id: 1xTlxAkJL5DzPuOCDYOsQG
+    :title: Choose your teaching qualification
+    :advice_body: |
+      If you want to start teaching in FE before you get a teaching qualification, you do not need to worry about courses.
+
+      The college or training provider will arrange the teacher training course for you.
+
+      If you want to train first, you need to know what training options there are.
+
+      Which course you choose will depend on the:
+
+      - course costs
+      - time you can commit
+      - expectations of the FE providers you want to work for
+      - qualifications you already have
+
+      Some teaching courses allow full or part time study.
+    :display_order: true
+    :apply_background_color: false
+    :show_title: true
+  - :id: qNRtpmv245PlK1GAu8Mzm
+    :_meta:
+      :content_type_id: question
+      :updated_at: '2021-12-16T12:50:31+00:00'
+      :created_at: '2021-06-08T12:27:31+00:00'
+      :id: qNRtpmv245PlK1GAu8Mzm
+    :question_text: Find your training course options
+    :sub_text: What is your highest educational qualification?
+    :render_as:
+    - Radio button
+    :answers:
+    - :id: 3cChhb7mHTk4CApUy4Grbf
+      :_meta:
+        :content_type_id: answer
+        :updated_at: '2021-11-02T14:00:33+00:00'
+        :created_at: '2021-06-08T12:20:32+00:00'
+        :id: 3cChhb7mHTk4CApUy4Grbf
+      :answer: None
+      :link:
+        :id: 5Vh4c29lW3vBvueKEruEeu
+        :_meta:
+          :content_type_id: page
+          :updated_at: '2021-12-08T15:15:51+00:00'
+          :created_at: '2021-11-02T14:00:01+00:00'
+          :id: 5Vh4c29lW3vBvueKEruEeu
+        :title: Results - no quals
+        :nav_title: Results - no quals
+        :heading: 2 results…
+        :slug: results-no-quals
+        :blocks:
+        - :id: 25yMNwz2gtajH4nyW6upyY
+          :_meta:
+            :content_type_id: advice
+            :updated_at: '2021-11-01T10:31:38+00:00'
+            :created_at: '2021-05-14T10:56:36+00:00'
+            :id: 25yMNwz2gtajH4nyW6upyY
+          :title: GCSE
+          :advice_body: "## Diploma in Education\n\nThis Level 5 qualification lets
+            you teach most trades, skills and subjects in further education (FE).\n\n[What
+            levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+            \"Explanation of the different educational attainment levels\")\n\n###
+            This qualification is good if you want to:\n\n- train part time or on
+            the job\n- teach without a degree in your subject\n- get a full teaching
+            qualification but keeping costs to a minimum\n- [qualify for a bursary](https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2020-to-2021-academic-year
+            \"UK bursary information 2020-21\")\n- [get Qualified Teacher in Learning
+            and Skills Status (QTLS) once you've qualified](https://set.et-foundation.co.uk/professional-status/qtls
+            \"Find out about qualified teacher status\") \n\n### This might not be
+            the right qualification if you want to:\n- teach in secondary schools\n-
+            teach in sixth form colleges\n- take a basic course to see if FE is really
+            for you\n\n### Integrated Specialist Diploma\n\nYou can also choose to
+            specialise in one of 3 Specialist Pathway areas of teaching:\n\n- special
+            educational needs\n- English literacy\n- English for speakers of other
+            languages (ESOL)\n- mathematics\n\nTo teach English or mathematics you
+            need at least a Level 3 qualification in the subject.\n\n[What levels
+            mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+            \"Explanation of the different educational attainment levels\")\n\n|               |
+            \                   |\n|---------------|--------------------|\n| __Course
+            structure__       | 100 hours of teaching practice, including 50 in your
+            chosen area if you are on a Specialist Pathway |\n| __Level of qualification
+            you will get__ | Level 5 (Degree level). You can also take this course
+            with a levels 6 or 7 qualification. [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+            \"Explanation of the different educational attainment levels\") |\n| __Area
+            of education__ (Primary, Secondary, FE) | FE only\n| __Teaching status__
+            \ | Full FE teaching qualification. Can lead to [QTLS in FE](https://set.et-foundation.co.uk/professional-status/qtls
+            \"Find out about qualified teacher status\")    |\n| __Cost__ (varies
+            by provider) | up to £6,000     |\n| __Course length__ | 1 to 2 years,
+            full time or part time      |\n| __Entry requirements__ | An assessment
+            of your English, mathematics and ICT skills. If you are on a specialist
+            pathway for mathematics or English, you'll need at least a level 3 qualification
+            in the subject. [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+            \"Explanation of the different educational attainment levels\") |"
+          :display_order: true
+          :apply_background_color: false
+          :show_title: false
+        - :id: 6MLGVV5W7puMHUOyCQw5PO
+          :_meta:
+            :content_type_id: advice
+            :updated_at: '2021-12-13T14:02:42+00:00'
+            :created_at: '2021-04-29T23:31:00+00:00'
+            :id: 6MLGVV5W7puMHUOyCQw5PO
+          :title: Introductory qualifications
+          :advice_body: "These Level 3 and 4 qualifications are useful if you want
+            to build up your further education (FE) experience gradually.\n\n[What
+            levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+            \"Explanation of the different educational attainment levels\")\n\nThese
+            are not full teaching qualifications.\n\nYou will usually need extra qualifications
+            and experience before you can teach.\n\n### These qualifications are good
+            if you:\n- want to concentrate on FE only\n- want to take a basic course
+            to see if FE is really for you\n- want to spend as little as possible
+            at first\n- do not have enough experience or qualification in your subject
+            yet\n\n### These might not be the right qualifications if you want to:\n-
+            get a full teaching qualification \n- train on the job full time\n\n<table
+            class=\"govuk-table\">\n  <caption class=\"govuk-table__caption govuk-table__caption--m\"
+            aria-label=\"About these courses - Introductory qualifications\">About
+            these courses</caption>\n  <thead class=\"govuk-table__head\">\n    <tr
+            class=\"govuk-table__row\">\n      <th scope=\"col\" class=\"govuk-table__header\"></th>\n
+            \     <th scope=\"col\" class=\"govuk-table__header\">Award in Education
+            and Training</th>\n      <th scope=\"col\" class=\"govuk-table__header\">Certificate
+            in Education and Training</th>\n    </tr>\n  </thead>\n  <tbody class=\"govuk-table__body\">\n
+            \   <tr>\n      <th scope=\"row\" class=\"govuk-table__header\">Suitability</th>\n
+            \     <td class=\"govuk-table__cell\">\n          You are open to teaching
+            in a range of FE contexts and want \n          to build skills and confidence</td>\n
+            \     <td class=\"govuk-table__cell\">\n        You want to cover a range
+            of units to suit your chosen FE context \n        and gain practical teaching
+            experience</td>\n    </tr>\n    <tr>\n      <th scope=\"row\" class=\"govuk-table__header\">Course
+            structure</th>\n      <td class=\"govuk-table__cell\">\n        3 modules
+            and a 'micro teaching' experience (around 15 minutes)</td>\n      <td
+            class=\"govuk-table__cell\">30 hours of teaching practice</td>\n    </tr>\n
+            \   <tr>\n      <th scope=\"row\" class=\"govuk-table__header\">Level
+            of qualification you will get</th>\n      <td class=\"govuk-table__cell\">Level
+            3. <a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
+            referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
+            class=\"govuk-link\">What levels mean</a>  </td>\n      <td class=\"govuk-table__cell\">Level
+            4. <a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
+            referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
+            class=\"govuk-link\">What levels mean</a> </td>\n    </tr>\n    <tr>\n
+            \     <th scope=\"row\" class=\"govuk-table__header\">Area of education
+            (Primary, Secondary, FE)</th>\n      <td class=\"govuk-table__cell\">FE-specific</td>\n
+            \     <td class=\"govuk-table__cell\">FE-specific</td>\n    </tr>\n    <tr>\n
+            \     <th scope=\"row\" class=\"govuk-table__header\">Teaching status</th>\n
+            \     <td class=\"govuk-table__cell\">No official teaching status</td>\n
+            \     <td class=\"govuk-table__cell\">No official teaching status</td>\n
+            \   </tr>\n    <tr>\n      <th scope=\"row\" class=\"govuk-table__header\">Cost
+            (varies by provider)</th>\n      <td class=\"govuk-table__cell\">Up to
+            £500</td>\n      <td class=\"govuk-table__cell\">Up to £1000</td>\n    </tr>\n
+            \   <tr>\n      <th scope=\"row\" class=\"govuk-table__header\">Length
+            of course</th>\n      <td class=\"govuk-table__cell\">From 3 days to 12
+            weeks part time</td>\n      <td class=\"govuk-table__cell\">Up to 6 months,
+            full time or part time</td>\n    </tr>\n    <tr>\n      <th scope=\"row\"
+            class=\"govuk-table__header\">Entry requirements</th>\n      <td class=\"govuk-table__cell\">No
+            entry requirements</td>\n      <td class=\"govuk-table__cell\">Requires
+            an assessment of your English, maths and ICT skills</td>\n    </tr>\n
+            \ </tbody>\n</table>"
+          :display_order: true
+          :show_title: true
+        :call_to_actions:
+        - :id: 4jG2PspMQXj2hxNwIzNLfN
+          :_meta:
+            :content_type_id: callToAction
+            :updated_at: '2021-11-01T10:34:17+00:00'
+            :created_at: '2021-07-01T20:24:42+00:00'
+            :id: 4jG2PspMQXj2hxNwIzNLfN
+          :title: Back
+          :slug: "/train-in-your-own-time"
+          :cta_type: Primary
+    - :id: k2NflABnJCxRk260SUr7l
+      :_meta:
+        :content_type_id: answer
+        :updated_at: '2021-11-30T08:27:32+00:00'
+        :created_at: '2021-06-08T12:20:55+00:00'
+        :id: k2NflABnJCxRk260SUr7l
+      :answer: GCSE, O Level, Scottish Ordinary, BTEC Level 1-2
+      :link:
+        :id: 5vYaeNPGQd7puczXTAggQ3
+        :_meta:
+          :content_type_id: page
+          :updated_at: '2021-12-08T15:07:34+00:00'
+          :created_at: '2021-11-30T08:26:51+00:00'
+          :id: 5vYaeNPGQd7puczXTAggQ3
+        :title: Diploma in Education and Training - GCSE
+        :nav_title: Diploma in Education and Training - GCSE
+        :heading: 1 result…
+        :slug: diploma-in-education-and-training-gcse
+        :blocks:
+        - :id: GUGtg9Vxo8cZQblsYPoGc
+          :_meta:
+            :content_type_id: advice
+            :updated_at: '2021-12-10T10:35:31+00:00'
+            :created_at: '2021-08-06T10:52:00+00:00'
+            :id: GUGtg9Vxo8cZQblsYPoGc
+          :title: Diploma in Education and Training
+          :advice_body: "This Level 5 qualification lets you teach most trades, skills
+            and subjects in further education (FE).\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+            \"Explanation of the different educational attainment levels\")\n\n###
+            This qualification is good if you want to:\n\n- train part time or on
+            the job\n- teach without a degree in your subject\n- get a full teaching
+            qualification but keep costs to a minimum\n\n### This might not be the
+            right qualification if you want to:\n- teach in secondary schools\n- teach
+            in sixth forms in secondary schools\n- take a basic course to see if FE
+            is really for you\n\n### Integrated Specialist Diploma\n\nYou can also
+            choose to specialise in one of 3 Specialist Pathway areas of teaching:\n\n-
+            special educational needs\n- English literacy\n- English for speakers
+            of other languages (ESOL)\n- mathematics\n\nTo teach English or mathematics
+            you need at least a level 3 qualification in the subject.\n\n[What levels
+            mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+            \"Explanation of the different educational attainment levels\")\n\n<table
+            class=\"govuk-table\">\n  <caption class=\"govuk-table__caption govuk-table__caption--m\"
+            aria-label=\"About this course - Diploma in Education and Training\">About
+            this  course</caption>\n    <thead class=\"govuk-table__head\">\n      <tr
+            class=\"govuk-table__row\">\n      </tr>\n    </thead>\n    <tbody class=\"govuk-table__body\">
+            \     \n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\"></th>\n
+            \       <th class=\"govuk-table__header\"></th>\n    </tr>\n    <tbody
+            class=\"govuk-table__body\">      \n    <tr>\n        <th scope=\"row\"
+            class=\"govuk-table__header\">Course structure</th>\n        <td class=\"govuk-table__cell\">\n
+            \           100 hours of teaching practice, including 50 in your chosen
+            area if you are on a Specialist Pathway</td>\n    </tr>\n    <tr>\n        <th
+            scope=\"row\" class=\"govuk-table__header\">Level of qualification you
+            will get</th>\n        <td class=\"govuk-table__cell\">\n            Level
+            5. <a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
+            referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
+            class=\"govuk-link\">What levels mean</a>  </td>\n    </tr>\n    <tr>\n
+            \       <th scope=\"row\" class=\"govuk-table__header\">Area of education
+            (Primary, Secondary, FE)</th>\n        <td class=\"govuk-table__cell\">FE
+            only</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Teaching
+            status</th>\n        <td class=\"govuk-table__cell\">Full FE teaching
+            qualification.</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Cost
+            (varies by provider)</th>\n        <td class=\"govuk-table__cell\">up
+            to £6,000</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Course
+            length</th>\n        <td class=\"govuk-table__cell\">1 to 2 years, full
+            time or part time</td>\n    </tr>\n    <tr>\n        <th scope=\"row\"
+            class=\"govuk-table__header\">Entry requirements</th>\n        <td class=\"govuk-table__cell\">An
+            assessment of your English, mathematics and ICT skills. If you are on
+            a specialist pathway for mathematics or English, you'll need at least
+            a level 3 qualification in the subject.<a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
+            referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
+            class=\"govuk-link\">What levels mean</a> </td>\n    </tr>\n    </tbody>\n</table>"
+          :display_order: true
+          :apply_background_color: false
+          :show_title: true
+        :call_to_actions:
+        - :id: 4jG2PspMQXj2hxNwIzNLfN
+          :_meta:
+            :content_type_id: callToAction
+            :updated_at: '2021-11-01T10:34:17+00:00'
+            :created_at: '2021-07-01T20:24:42+00:00'
+            :id: 4jG2PspMQXj2hxNwIzNLfN
+          :title: Back
+          :slug: "/train-in-your-own-time"
+          :cta_type: Primary
+    - :id: 3nEGsh2BzZPp9zYGq6D7FA
+      :_meta:
+        :content_type_id: answer
+        :updated_at: '2021-10-28T09:03:22+00:00'
+        :created_at: '2021-06-08T12:21:14+00:00'
+        :id: 3nEGsh2BzZPp9zYGq6D7FA
+      :answer: A Level, Scottish Higher, BTEC Level 3
+      :link:
+        :id: 4krHeEI65jrLOhPc3duVf3
+        :_meta:
+          :content_type_id: page
+          :updated_at: '2021-11-29T13:15:02+00:00'
+          :created_at: '2021-06-08T12:34:53+00:00'
+          :id: 4krHeEI65jrLOhPc3duVf3
+        :title: Diploma in Education and Training - A Levels
+        :nav_title: Diploma in Education and Training - A Levels
+        :heading: 1 result…
+        :slug: diploma-in-education-and-training-result-a-level
+        :blocks:
+        - :id: GUGtg9Vxo8cZQblsYPoGc
+          :_meta:
+            :content_type_id: advice
+            :updated_at: '2021-12-10T10:35:31+00:00'
+            :created_at: '2021-08-06T10:52:00+00:00'
+            :id: GUGtg9Vxo8cZQblsYPoGc
+          :title: Diploma in Education and Training
+          :advice_body: "This Level 5 qualification lets you teach most trades, skills
+            and subjects in further education (FE).\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+            \"Explanation of the different educational attainment levels\")\n\n###
+            This qualification is good if you want to:\n\n- train part time or on
+            the job\n- teach without a degree in your subject\n- get a full teaching
+            qualification but keep costs to a minimum\n\n### This might not be the
+            right qualification if you want to:\n- teach in secondary schools\n- teach
+            in sixth forms in secondary schools\n- take a basic course to see if FE
+            is really for you\n\n### Integrated Specialist Diploma\n\nYou can also
+            choose to specialise in one of 3 Specialist Pathway areas of teaching:\n\n-
+            special educational needs\n- English literacy\n- English for speakers
+            of other languages (ESOL)\n- mathematics\n\nTo teach English or mathematics
+            you need at least a level 3 qualification in the subject.\n\n[What levels
+            mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+            \"Explanation of the different educational attainment levels\")\n\n<table
+            class=\"govuk-table\">\n  <caption class=\"govuk-table__caption govuk-table__caption--m\"
+            aria-label=\"About this course - Diploma in Education and Training\">About
+            this  course</caption>\n    <thead class=\"govuk-table__head\">\n      <tr
+            class=\"govuk-table__row\">\n      </tr>\n    </thead>\n    <tbody class=\"govuk-table__body\">
+            \     \n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\"></th>\n
+            \       <th class=\"govuk-table__header\"></th>\n    </tr>\n    <tbody
+            class=\"govuk-table__body\">      \n    <tr>\n        <th scope=\"row\"
+            class=\"govuk-table__header\">Course structure</th>\n        <td class=\"govuk-table__cell\">\n
+            \           100 hours of teaching practice, including 50 in your chosen
+            area if you are on a Specialist Pathway</td>\n    </tr>\n    <tr>\n        <th
+            scope=\"row\" class=\"govuk-table__header\">Level of qualification you
+            will get</th>\n        <td class=\"govuk-table__cell\">\n            Level
+            5. <a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
+            referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
+            class=\"govuk-link\">What levels mean</a>  </td>\n    </tr>\n    <tr>\n
+            \       <th scope=\"row\" class=\"govuk-table__header\">Area of education
+            (Primary, Secondary, FE)</th>\n        <td class=\"govuk-table__cell\">FE
+            only</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Teaching
+            status</th>\n        <td class=\"govuk-table__cell\">Full FE teaching
+            qualification.</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Cost
+            (varies by provider)</th>\n        <td class=\"govuk-table__cell\">up
+            to £6,000</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Course
+            length</th>\n        <td class=\"govuk-table__cell\">1 to 2 years, full
+            time or part time</td>\n    </tr>\n    <tr>\n        <th scope=\"row\"
+            class=\"govuk-table__header\">Entry requirements</th>\n        <td class=\"govuk-table__cell\">An
+            assessment of your English, mathematics and ICT skills. If you are on
+            a specialist pathway for mathematics or English, you'll need at least
+            a level 3 qualification in the subject.<a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
+            referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
+            class=\"govuk-link\">What levels mean</a> </td>\n    </tr>\n    </tbody>\n</table>"
+          :display_order: true
+          :apply_background_color: false
+          :show_title: true
+        :call_to_actions:
+        - :id: 4jG2PspMQXj2hxNwIzNLfN
+          :_meta:
+            :content_type_id: callToAction
+            :updated_at: '2021-11-01T10:34:17+00:00'
+            :created_at: '2021-07-01T20:24:42+00:00'
+            :id: 4jG2PspMQXj2hxNwIzNLfN
+          :title: Back
+          :slug: "/train-in-your-own-time"
+          :cta_type: Primary
+    - :id: 2kLaG1uO0pXkHSFosd6tdx
+      :_meta:
+        :content_type_id: answer
+        :updated_at: '2021-10-28T09:03:22+00:00'
+        :created_at: '2021-06-08T12:21:27+00:00'
+        :id: 2kLaG1uO0pXkHSFosd6tdx
+      :answer: Degree or above
+      :link:
+        :id: 4K8wsTxlu69vLguquRYecb
+        :_meta:
+          :content_type_id: page
+          :updated_at: '2021-12-08T15:06:58+00:00'
+          :created_at: '2021-07-07T15:40:23+00:00'
+          :id: 4K8wsTxlu69vLguquRYecb
+        :title: Results degree or above
+        :nav_title: Results degree or above
+        :heading: 2 results…
+        :slug: results-degree-or-above
+        :blocks:
+        - :id: GUGtg9Vxo8cZQblsYPoGc
+          :_meta:
+            :content_type_id: advice
+            :updated_at: '2021-12-10T10:35:31+00:00'
+            :created_at: '2021-08-06T10:52:00+00:00'
+            :id: GUGtg9Vxo8cZQblsYPoGc
+          :title: Diploma in Education and Training
+          :advice_body: "This Level 5 qualification lets you teach most trades, skills
+            and subjects in further education (FE).\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+            \"Explanation of the different educational attainment levels\")\n\n###
+            This qualification is good if you want to:\n\n- train part time or on
+            the job\n- teach without a degree in your subject\n- get a full teaching
+            qualification but keep costs to a minimum\n\n### This might not be the
+            right qualification if you want to:\n- teach in secondary schools\n- teach
+            in sixth forms in secondary schools\n- take a basic course to see if FE
+            is really for you\n\n### Integrated Specialist Diploma\n\nYou can also
+            choose to specialise in one of 3 Specialist Pathway areas of teaching:\n\n-
+            special educational needs\n- English literacy\n- English for speakers
+            of other languages (ESOL)\n- mathematics\n\nTo teach English or mathematics
+            you need at least a level 3 qualification in the subject.\n\n[What levels
+            mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+            \"Explanation of the different educational attainment levels\")\n\n<table
+            class=\"govuk-table\">\n  <caption class=\"govuk-table__caption govuk-table__caption--m\"
+            aria-label=\"About this course - Diploma in Education and Training\">About
+            this  course</caption>\n    <thead class=\"govuk-table__head\">\n      <tr
+            class=\"govuk-table__row\">\n      </tr>\n    </thead>\n    <tbody class=\"govuk-table__body\">
+            \     \n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\"></th>\n
+            \       <th class=\"govuk-table__header\"></th>\n    </tr>\n    <tbody
+            class=\"govuk-table__body\">      \n    <tr>\n        <th scope=\"row\"
+            class=\"govuk-table__header\">Course structure</th>\n        <td class=\"govuk-table__cell\">\n
+            \           100 hours of teaching practice, including 50 in your chosen
+            area if you are on a Specialist Pathway</td>\n    </tr>\n    <tr>\n        <th
+            scope=\"row\" class=\"govuk-table__header\">Level of qualification you
+            will get</th>\n        <td class=\"govuk-table__cell\">\n            Level
+            5. <a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
+            referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
+            class=\"govuk-link\">What levels mean</a>  </td>\n    </tr>\n    <tr>\n
+            \       <th scope=\"row\" class=\"govuk-table__header\">Area of education
+            (Primary, Secondary, FE)</th>\n        <td class=\"govuk-table__cell\">FE
+            only</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Teaching
+            status</th>\n        <td class=\"govuk-table__cell\">Full FE teaching
+            qualification.</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Cost
+            (varies by provider)</th>\n        <td class=\"govuk-table__cell\">up
+            to £6,000</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Course
+            length</th>\n        <td class=\"govuk-table__cell\">1 to 2 years, full
+            time or part time</td>\n    </tr>\n    <tr>\n        <th scope=\"row\"
+            class=\"govuk-table__header\">Entry requirements</th>\n        <td class=\"govuk-table__cell\">An
+            assessment of your English, mathematics and ICT skills. If you are on
+            a specialist pathway for mathematics or English, you'll need at least
+            a level 3 qualification in the subject.<a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
+            referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
+            class=\"govuk-link\">What levels mean</a> </td>\n    </tr>\n    </tbody>\n</table>"
+          :display_order: true
+          :apply_background_color: false
+          :show_title: true
+        - :id: 5FbxLwEjMguAEiyxkmTuka
+          :_meta:
+            :content_type_id: advice
+            :updated_at: '2021-12-08T16:16:13+00:00'
+            :created_at: '2021-05-14T11:04:25+00:00'
+            :id: 5FbxLwEjMguAEiyxkmTuka
+          :title: PGCE/CertEd etc in post-compulsory education and training (PCET)
+          :advice_body: "This Level 7 course is equal to a Master's degree. It lets
+            you teach most subjects in further education (FE) only.\n\n[What levels
+            mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+            \"Explanation of the different educational attainment levels\")\n\nYou
+            need at least a degree to access this course.\n\n### This qualification
+            is good if you want to:\n- train full or part time\n- train in FE colleges\n-
+            get a full teaching qualification\n\n### This might not be the right qualification
+            if you want to:\n- teach or train in secondary schools or their sixth
+            forms (visit [Get in to Teaching](https://getintoteaching.education.gov.uk
+            \"Get into Teaching website\") if you want to do that)\n- train on the
+            job\n- take a basic course to see if FE is really for you\n\n<table class=\"govuk-table\">\n
+            \   <caption class=\"govuk-table__caption govuk-table__caption--m\" aria-label=\"About
+            this course - PCET\">About this course</caption>\n    <thead class=\"govuk-table__head\">\n
+            \   <tr class=\"govuk-table__row\">\n    </tr>\n    </thead>\n    <tbody
+            class=\"govuk-table__body\">      \n    <tr>\n        <th scope=\"row\"
+            class=\"govuk-table__header\"></th>\n        <th class=\"govuk-table__header\"></th>\n
+            \   </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Course
+            structure</th>\n        <td class=\"govuk-table__cell\">\n            100
+            hours teaching</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Level
+            of qualification you will get</th>\n        <td class=\"govuk-table__cell\">\n
+            \           Level 7 (equivalent to Master’s degree). <a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
+            referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
+            class=\"govuk-link\">What levels mean</a>  </td>\n    </tr>\n    <tr>\n
+            \       <th scope=\"row\" class=\"govuk-table__header\">Area of education
+            (Primary, Secondary, FE)</th>\n        <td class=\"govuk-table__cell\">FE
+            only</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Teaching
+            status</th>\n        <td class=\"govuk-table__cell\">Full FE teaching
+            qualification.</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Cost
+            (varies by provider)</th>\n        <td class=\"govuk-table__cell\">Up
+            to £9,000 if self-funded (some providers offer a bursary or scholarship)</td>\n
+            \   </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Course
+            length</th>\n        <td class=\"govuk-table__cell\">1 year full time</td>\n
+            \   </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Entry
+            requirements</th>\n        <td class=\"govuk-table__cell\">Degree or equivalent,
+            and English and mathematics GCSEs grade 4 (C) or above</td>\n    </tr>\n
+            \   </tbody>\n</table>\n\n[Find a post-graduate teaching course](https://www.find-postgraduate-teacher-training.service.gov.uk/
+            \"Government post-graduate teaching courses finder\")"
+          :display_order: true
+          :apply_background_color: false
+          :show_title: true
+        :call_to_actions:
+        - :id: 4jG2PspMQXj2hxNwIzNLfN
+          :_meta:
+            :content_type_id: callToAction
+            :updated_at: '2021-11-01T10:34:17+00:00'
+            :created_at: '2021-07-01T20:24:42+00:00'
+            :id: 4jG2PspMQXj2hxNwIzNLfN
+          :title: Back
+          :slug: "/train-in-your-own-time"
+          :cta_type: Primary
+    :question_error_message: Select your highest educational qualification
   - :id: 5hTTiOCjK33slAKAiPFby
     :_meta:
       :content_type_id: advice
-      :updated_at: '2021-05-26T08:03:39+00:00'
+      :updated_at: '2021-12-08T16:18:19+00:00'
       :created_at: '2021-04-29T23:30:59+00:00'
       :id: 5hTTiOCjK33slAKAiPFby
-    :title: Financial support while training
-    :advice_body: There are different ways to gain your FE teaching qualification.
-      You might be able to study part time or even take a job with an FE provider
-      that lets you work while you train.
+    :title: Available funding
+    :advice_body: "## Help with living expenses\n\nBursaries are payments to help
+      with living expenses. You may be able to get a bursary for your training if
+      you train to teach.\n\nApplications are closed for this year. \n\nInformation
+      about the next round of applications will be available in early 2022."
+    :display_order: true
+    :apply_background_color: false
+    :show_title: false
+  - :id: 1azWRZYSe5p6OxrVsOZsDj
+    :_meta:
+      :content_type_id: advice
+      :updated_at: '2021-12-15T13:48:10+00:00'
+      :created_at: '2021-10-28T08:57:13+00:00'
+      :id: 1azWRZYSe5p6OxrVsOZsDj
+    :title: Got a question about qualifications and funding?
+    :advice_body: |-
+      ---
+
+      Got a question about qualifications and funding?
+
+      Email: <a class="govuk-link" href="mailto:Teach.FE@education.gov.uk" onclick="window.site.analytics.raiseExitPointEvent('emailAddress')">Teach.FE@education.gov.uk</a> and our advisors will reply to you within 5 working days.
+
+      ---
+    :display_order: false
+    :apply_background_color: false
+    :show_title: false
 - :id: 7fkpVgKNOUvTuZI7KBhdrE
   :_meta:
     :content_type_id: page
-    :updated_at: '2021-05-26T08:15:18+00:00'
+    :updated_at: '2021-12-08T15:18:18+00:00'
     :created_at: '2021-05-18T08:23:03+00:00'
     :id: 7fkpVgKNOUvTuZI7KBhdrE
   :title: Find an FE teaching job
+  :nav_title: Find an FE teaching job
+  :preamble: What to consider when looking for a job in further education (FE) teaching,
+    and where to look for one.
+  :heading: Find a further education teaching job
   :slug: find-an-fe-teaching-job
   :blocks:
-  - :id: 4HZ3ZYcrQXvMJHkHUEYMpn
+  - :id: 5XYHbxsuUuv2QMBmQBdNWg
     :_meta:
       :content_type_id: tableOfContents
-      :updated_at: '2021-05-18T08:26:09+00:00'
-      :created_at: '2021-05-18T08:26:09+00:00'
-      :id: 4HZ3ZYcrQXvMJHkHUEYMpn
-    :title: Contents
+      :updated_at: '2021-12-01T10:16:37+00:00'
+      :created_at: '2021-12-01T10:16:37+00:00'
+      :id: 5XYHbxsuUuv2QMBmQBdNWg
+    :title: On this page
   - :id: 3J3oEV3PF62bJRcXhpLDOH
     :_meta:
       :content_type_id: advice
-      :updated_at: '2021-05-18T08:17:01+00:00'
+      :updated_at: '2021-12-02T15:17:48+00:00'
       :created_at: '2021-05-18T08:17:01+00:00'
       :id: 3J3oEV3PF62bJRcXhpLDOH
     :title: FE providers are independent organisations
     :advice_body: |
-      FE providers like colleges and universities can:
+      FE providers like colleges and training providers can:
+
       - set their own requirements in terms of qualifications and experience
       - have their own pay structure and other terms and conditions
 
       This means that you will need to make your own assessment of any FE provider you consider applying to work for.
-  - :id: 1TvwovJDqZuFg4Eqwx4Bu2
+    :display_order: false
+    :apply_background_color: false
+    :show_title: true
+  - :id: 1qKKajIJcr8oAqzNVi64ai
     :_meta:
       :content_type_id: advice
-      :updated_at: '2021-05-18T08:17:53+00:00'
-      :created_at: '2021-05-18T08:17:53+00:00'
-      :id: 1TvwovJDqZuFg4Eqwx4Bu2
-    :title: Learn while you earn
-    :advice_body: Some providers might let you complete training or a qualification
-      while you work for them and start to teach.
-  - :id: 5sdBDktTAPtjx0YlzHUdGD
+      :updated_at: '2021-12-13T10:20:58+00:00'
+      :created_at: '2021-12-02T15:18:42+00:00'
+      :id: 1qKKajIJcr8oAqzNVi64ai
+    :title: More than just colleges
+    :advice_body: |-
+      FE includes establishments that typically teach students aged 16+. Although this does not include universities, it does include independent training providers (ITPs).
+
+      Like colleges, some ITPs will provide teacher training on the job. They may differ from colleges in other ways:
+
+      - a more commercial focus
+      - greater use of remote working
+      - be industry sector specific
+
+      IPTs do not follow the academic year, so you can take holiday leave at any time. The amount of holiday leave available will depend on the ITP. It is likely to be less than you'd get from a college, but more flexible about when you take it.
+    :display_order: true
+    :apply_background_color: false
+    :show_title: true
+  - :id: 3Vcwz7UfYGsdI7gkI4iWgh
     :_meta:
       :content_type_id: advice
-      :updated_at: '2021-05-18T08:18:50+00:00'
-      :created_at: '2021-05-18T08:18:50+00:00'
-      :id: 5sdBDktTAPtjx0YlzHUdGD
-    :title: Career changers
-    :advice_body: "Moving into FE teaching from a different type of job can be a big
-      change. \n\nThere is advice and support available to help you decide if FE is
-      for you and what you need to do to meet the expectations of an FE provider.
-      \n\n### Background check\nPeople who work in FE must pass a criminal records
-      check. You might not be able to work as an FE teacher if you have certain types
-      of conviction."
-  - :id: 5Gbe5ispILIDUHyxGLu3lq
+      :updated_at: '2021-12-02T15:20:49+00:00'
+      :created_at: '2021-07-13T08:58:52+00:00'
+      :id: 3Vcwz7UfYGsdI7gkI4iWgh
+    :title: Where to find a job
+    :advice_body: "The first place to look for a job is on your local college or training
+      provider’s website. \n\nYou can also find jobs by:\n\n- searching general job
+      sites such as Indeed, TotalJobs and Reed\n- looking on Linkedin\n- using social
+      media\n\n### Colleges\n\n[Find your local FE college on the Association of Colleges
+      website](https://www.aocjobs.com/employers-a-z \"Association of Colleges college
+      finder\")\n\n### ITPs\n\n[Find independent training providers on the Association
+      of Employment Learning Providers' website](https://www.aelp.org.uk/about/our-members/
+      \"Association of Employment Learning Providers member finder\")\n\n#### Other
+      places to look\n\n- [Association of colleges job site](https://www.aocjobs.com
+      \"Association of Colleges jobs\")\n- [TES - Times Educational Supplement job
+      site](https://www.tes.com/jobs/browse/further-education-teaching-and-lecturing
+      \"Times Educational Supplement Jobs page\")\n- [Further Education job site](https://www.fejobs.com/career-advice
+      \"FE Jobs website\")\n- [College Jobs](https://college.jobs.ac.uk \"College
+      Jobs website\")\n\nThe Department for Education does not endorse any particular
+      providers or job sites. "
+    :display_order: true
+    :show_title: true
+  - :id: 6oUpUuq3gk94Pp5AeRLEwr
     :_meta:
       :content_type_id: advice
-      :updated_at: '2021-06-01T17:24:55+00:00'
-      :created_at: '2021-05-18T08:19:39+00:00'
-      :id: 5Gbe5ispILIDUHyxGLu3lq
-    :title: Find a job
-    :advice_body: "You can find a teaching role in FE by:\n\n- searching job sites\n-
-      getting in touch with local FE providers\n\n### Where to start your search\n\nThere
-      are many sites available including:\nOther places to look:\n\n- [Association
-      of colleges job site](https://www.aocjobs.com \"Association of Colleges jobs\")\n\n-
-      [Further Education job site](https://www.fejobs.com/career-advice \"FE Jobs
-      website\")\n\n- [College Jobs](https://college.jobs.ac.uk \"College Jobs website\")\n\nThe
-      DfE does not endorse any particular providers or job sites. "
-- :id: 630Q4flj9fmCaHKsckbOA6
-  :_meta:
-    :content_type_id: page
-    :updated_at: '2021-05-17T13:17:38+00:00'
-    :created_at: '2021-05-17T13:17:38+00:00'
-    :id: 630Q4flj9fmCaHKsckbOA6
-  :title: 'Subject-specific qualifications '
-  :slug: subject-specific-qualifications
-  :blocks:
-  - :id: 2dSAy6Mk1OlBMIiVDcPJ0u
+      :updated_at: '2021-12-02T15:22:24+00:00'
+      :created_at: '2021-12-02T15:22:24+00:00'
+      :id: 6oUpUuq3gk94Pp5AeRLEwr
+    :title: What to look for
+    :advice_body: |-
+      Some job vacancies will have 'teacher' in the job title. You may find vacancies with different job titles that mean the same thing:
+
+      - lecturer
+      - tutor
+      - skills trainer
+      - skills coach
+
+      Always read job adverts carefully, and read any downloadable job descriptions provided.
+
+      If you're not sure about something, get in touch with the FE provider before you apply.
+    :display_order: true
+    :apply_background_color: false
+    :show_title: true
+  - :id: 1huyVRCGroXrWmbLnuL0WS
     :_meta:
       :content_type_id: advice
-      :updated_at: '2021-05-14T09:25:51+00:00'
-      :created_at: '2021-05-14T09:25:51+00:00'
-      :id: 2dSAy6Mk1OlBMIiVDcPJ0u
-    :title: Vocational subjects
-    :advice_body: "### What you could teach\nYou could teach subjects like: \n- engineering\n-
-      secretarial\n- plumbing\n- hairdressing\n- electrical\n- business\n- construction\n-
-      vehicle mechanics\n\n### Real experience is valued\nVocational training in FE
-      is best suited to those with at least 3 years experience in their chosen field.
-      FE providers value industry experience that can be passed on.\n\n### Qualification
-      level\nIt is preferable if you have a level 3 qualification, such as an A Level
-      in your area of expertise. If you can demonstrate significant industry experience
-      though, you still may be able to teach in a college or learning centre.\n"
-  - :id: e0XCvhr4XVEtz0N0hZMCf
+      :updated_at: '2021-12-15T09:20:36+00:00'
+      :created_at: '2021-12-01T10:29:47+00:00'
+      :id: 1huyVRCGroXrWmbLnuL0WS
+    :title: What you could earn
+    :advice_body: "Further education (FE) teachers are employed by colleges and training
+      providers on a full- or part-time basis.\n\n### The average salary for an FE
+      teacher ranges from £24,000 to £40,000 \n\nThis is according to National Careers
+      Service figures.\n\nFE providers are independent businesses, so are free to
+      set their own salary levels.\n\nThese may be determined by:\n\n- the demand
+      for your subject\n- your level of experience and qualifications\n- your local
+      area\n\nYou can get an idea of your local provider's pay scale by looking at
+      the current jobs on the careers section of their website.\n\n[Find your local
+      FE college on the Association of Colleges website](https://www.aocjobs.com/employers-a-z
+      \"Association of Colleges college finder\")\n\n[Find independent training providers
+      on the Association of Employment Learning Providers' website](https://www.aelp.org.uk/about/our-members/
+      \"Association of Employment Learning Providers member finder\")"
+    :display_order: true
+    :show_title: true
+  - :id: 2GE7Oj5gaBed42AHKQjNhL
     :_meta:
       :content_type_id: advice
-      :updated_at: '2021-05-14T09:28:11+00:00'
-      :created_at: '2021-05-14T09:28:11+00:00'
-      :id: e0XCvhr4XVEtz0N0hZMCf
-    :title: Academic subjects
-    :advice_body: "### What you could teach\nYou could teach subjects like:\n- mathematics\n-
-      English\n- sciences\n- teaching literacy\n- numeracy\n- English for Speakers
-      of Other Languages (ESOL)\n- Special Educational Needs (SEN)\n\nYou will need
-      at least a level 3 qualification, such as an A Level  in your subject to teach
-      it in a Further Education setting. \n"
-- :id: 4x8IADa1wIto2WZKWvmb0
-  :_meta:
-    :content_type_id: page
-    :updated_at: '2021-05-26T08:04:43+00:00'
-    :created_at: '2021-04-30T00:00:56+00:00'
-    :id: 4x8IADa1wIto2WZKWvmb0
-  :title: Financial support while training
-  :slug: financial-support-while-training
-  :blocks:
-  - :id: 5s47dHozTMdV6Tyay8JSjf
-    :_meta:
-      :content_type_id: tableOfContents
-      :updated_at: '2021-05-18T08:27:54+00:00'
-      :created_at: '2021-05-18T08:27:54+00:00'
-      :id: 5s47dHozTMdV6Tyay8JSjf
-    :title: Contents
-  - :id: 5hTTiOCjK33slAKAiPFby
+      :updated_at: '2021-12-06T14:13:09+00:00'
+      :created_at: '2021-04-29T23:31:04+00:00'
+      :id: 2GE7Oj5gaBed42AHKQjNhL
+    :title: Benefits package
+    :advice_body: "FE providers are employers like any other in the private sector,
+      and often offer a range of benefits on top of the salary.\n\nThese may include:\n\n-
+      pension schemes\n- childcare vouchers\n- cycle to work schemes\n- discount gym
+      memberships\n\nThis is not a complete list. You'll find what each FE provider
+      offers on their website.\n\n### Working hours\n\nA full-time FE teacher is typically
+      contracted to 35-37 hours a week. Some teaching goes on in the evening, so your
+      working day can be flexible.\n\nMany FE teachers work part time to fit around
+      other commitments.\n\nLook at the jobs in the careers section of the provider's
+      website to give yourself an idea of how flexible they are.\n\n### Holidays \n\nAs
+      an employee you are entitled to paid holidays.\n\nTerm-based holidays mean college-based
+      FE teachers typically get 37 days' paid leave per year, plus all the bank holidays.\n\nIndependent
+      training providers do not usually follow the college terms, so leave can be
+      taken at any time. The amount of leave offered varies by provider."
+    :display_order: true
+    :show_title: true
+  - :id: 6COWqbhmnOaJDejYnd70tI
     :_meta:
       :content_type_id: advice
-      :updated_at: '2021-05-26T08:03:39+00:00'
-      :created_at: '2021-04-29T23:30:59+00:00'
-      :id: 5hTTiOCjK33slAKAiPFby
-    :title: Financial support while training
-    :advice_body: There are different ways to gain your FE teaching qualification.
-      You might be able to study part time or even take a job with an FE provider
-      that lets you work while you train.
-  - :id: 5cu3CALGtvPugA7rbdsPwW
+      :updated_at: '2021-12-15T13:43:27+00:00'
+      :created_at: '2021-12-02T15:47:23+00:00'
+      :id: 6COWqbhmnOaJDejYnd70tI
+    :title: Got a question about finding an FE job?
+    :advice_body: |-
+      ---
+
+      Got a question about about finding an FE job?
+
+      Email: <a class="govuk-link" href="mailto:Teach.FE@education.gov.uk" onclick="window.site.analytics.raiseExitPointEvent('emailAddress')">Teach.FE@education.gov.uk</a> and our advisors will reply to you within 5 working days.
+
+      ---
+    :display_order: false
+    :apply_background_color: false
+    :show_title: false
+  - :id: 6AIEMKj7WEqmoh0paGILES
     :_meta:
       :content_type_id: advice
-      :updated_at: '2021-05-26T08:02:16+00:00'
-      :created_at: '2021-04-29T23:31:03+00:00'
-      :id: 5cu3CALGtvPugA7rbdsPwW
-    :title: Training on the job
-    :advice_body: "If you have the kind of skills and experiences that are in demand,
-      it’s possible to start a job before you have gained a teaching qualification.\n\nContacting
-      an FE college or learning centre is a good place to start, or looking for jobs
-      in your subject specialism.\n\nIf a provider needs your expertise, they may
-      encourage you to gain a teaching qualification while you’re working for them.
-      \n\n[The qualification that most people gain on the job is the Diploma in Education
-      and Training](/#)\n\nThe qualification that most people gain on the job is the
-      Level 5 Diploma in Education and Training.\n\nAs you’ll be earning a salary
-      from your teaching work, you will not receive bursaries or other incentives.
-      \n\nYou may be able to pay for your course with a student finance loan that
-      is paid back in instalments each month.\n\n[Find out if you're entitled to a
-      student finance loan.](https://www.gov.uk/student-finance-calculator \"student
-      finance calculator\") \n\nSome colleges might even help to find and pay for
-      your course. \n\n[Find a job in further education](/#)"
-  - :id: 12qLcJTqyRLLx3q5FjUBVA
-    :_meta:
-      :content_type_id: advice
-      :updated_at: '2021-05-26T08:00:31+00:00'
-      :created_at: '2021-04-29T23:31:03+00:00'
-      :id: 12qLcJTqyRLLx3q5FjUBVA
-    :title: Training before you start work
-    :advice_body: "Training for your career in FE can be done part time or full time.
-      Courses can be designed to suit your personal circumstances, but you may have
-      to check with individual providers.\n\nYou’ll hear this called ‘pre-service’
-      training and as it suggests, you would have to complete the training before
-      starting a job.\n\nYou may be able to pay for your course with a student finance
-      loan that is paid back in instalments each month once you start work.\n\n[Find
-      out if you're entitled to a student finance loan.](https://www.gov.uk/student-finance-calculator
-      \"student finance calculator\") \n\n### Available funding\n\nYou may be able
-      to get a bursary for your training if you train to teach:\n- mathematics, science,
-      engineering or computing: £26,000\n- Special educational needs and disabilities
-      (SEND): £15,000\n- English: £12,000\n\nThe conditions are that you are accepted
-      onto a Further Education initial teacher education programme such as:\n- PGCE
-      in Post-Compulsory Education\n- PCET in Post-Compulsory Education and Training\n-
-      Certificate of Education\n- Diploma of Education and Training\n\nYou also need
-      to have at least a Level 3 qualification, such as an A Level or appropriate
-      professional experience related to your teaching subject.\n"
+      :updated_at: '2021-12-08T09:57:11+00:00'
+      :created_at: '2021-12-08T09:57:11+00:00'
+      :id: 6AIEMKj7WEqmoh0paGILES
+    :title: Non-teaching roles
+    :advice_body: |-
+      You can work in FE without having to do any teacher training.
+      For example you can work as a:
+
+      - technician
+      - teaching assistant
+      - learning support assistant
+
+      These sort of jobs are advertised on FE providers' websites, and on general job finder websites.
+    :display_order: true
+    :apply_background_color: false
+    :show_title: true
 - :id: 6qhlSowYQyDegYs3FxSiLN
   :_meta:
     :content_type_id: page
-    :updated_at: '2021-05-18T08:50:27+00:00'
+    :updated_at: '2021-12-08T15:07:09+00:00'
     :created_at: '2021-05-18T08:50:27+00:00'
     :id: 6qhlSowYQyDegYs3FxSiLN
   :title: Help and advice
+  :nav_title: Help and advice
+  :preamble: 'Taking on another career, or adding to your current one, is a big step
+    to take. We know that you will have questions about your own situation that we
+    cannot answer on our website. '
+  :heading: Help and advice
   :slug: help-and-advice
   :blocks:
-  - :id: 1v6rIMxJRcMUaEuKjhdopv
-    :_meta:
-      :content_type_id: advice
-      :updated_at: '2021-05-18T08:23:49+00:00'
-      :created_at: '2021-05-18T08:23:49+00:00'
-      :id: 1v6rIMxJRcMUaEuKjhdopv
-    :title: Help and advice
-    :advice_body: 'There is no single way to start a career in FE teaching. Our advice
-      service can support you on your personal journey. '
   - :id: 4CvK0Ica4yZWT5FYtTZdWZ
     :_meta:
       :content_type_id: advice
-      :updated_at: '2021-05-18T08:25:13+00:00'
+      :updated_at: '2021-10-28T09:02:47+00:00'
       :created_at: '2021-05-18T08:25:13+00:00'
       :id: 4CvK0Ica4yZWT5FYtTZdWZ
     :title: How we can help
-    :advice_body: "Our advisors can listen to your personal situation and help you
-      to explore: \n\n- if a career in FE could work for you\n- any gaps in your qualification
-      or skills that need to be addressed\n- your teaching qualification options\n-
-      your timeline to study or apply"
-  - :id: 6UkTGPOiLhwqP34pJGveU3
+    :advice_body: |-
+      Our email advice service lets you tell us about your personal situation. We can then get back to you with information about:
+
+      - whether a career in FE could work for you
+      - what gaps in your qualification or skills you need to look into
+      - your teaching training options
+      - your timeline to train and apply
+    :display_order: false
+    :apply_background_color: false
+    :show_title: true
+  - :id: 44g2WLYJyWiyj65vmglyZy
     :_meta:
       :content_type_id: advice
-      :updated_at: '2021-05-18T08:25:29+00:00'
-      :created_at: '2021-05-18T08:25:29+00:00'
-      :id: 6UkTGPOiLhwqP34pJGveU3
-    :title: Contact us
+      :updated_at: '2021-12-15T13:46:50+00:00'
+      :created_at: '2021-07-13T12:07:56+00:00'
+      :id: 44g2WLYJyWiyj65vmglyZy
+    :title: Send us your questions
+    :advice_body: |-
+      Email: <a class="govuk-link" href="mailto:Teach.FE@education.gov.uk" onclick="window.site.analytics.raiseExitPointEvent('emailAddress')">Teach.FE@education.gov.uk</a>
+
+      We aim to get back to you within 5 working days.
+    :media:
+      :title: Help and advice
+      :description: A finger pointing to a laptop screen
+      :url: "//images.ctfassets.net/n4docnlbw89d/3E26qZv6tkg9xfz6YKELoY/551868e774800f6399b71a944466c664/Helpandadvice.png"
+      :_meta:
+        :updated_at: '2021-09-10T14:05:21+00:00'
+        :created_at: '2021-07-13T12:15:10+00:00'
+        :id: 3E26qZv6tkg9xfz6YKELoY
+    :display_order: false
+    :apply_background_color: false
+    :show_title: true

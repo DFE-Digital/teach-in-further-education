@@ -13,9 +13,15 @@ describe 'Navigation', :type => :feature do
       end
     end
       within 'header' do
-      link = page.find_link("A guide to FE teaching", match: :first)
+      link = page.find_link("Where to start in FE", match: :first)
         within link do
-          expect(link[:href]).to end_with '/guide-to-further-education.html'
+          expect(link[:href]).to end_with '/where-to-start-in-further-education.html'
+      end
+    end
+    within 'header' do
+      link = page.find_link("What you could teach", match: :first)
+        within link do
+          expect(link[:href]).to end_with '/what-you-could-teach.html'
       end
     end
       within 'header' do
