@@ -2,7 +2,7 @@
 :id: 6qhlSowYQyDegYs3FxSiLN
 :_meta:
   :content_type_id: page
-  :updated_at: '2021-10-28T09:03:23+00:00'
+  :updated_at: '2021-12-08T15:07:09+00:00'
   :created_at: '2021-05-18T08:50:27+00:00'
   :id: 6qhlSowYQyDegYs3FxSiLN
 :title: Help and advice
@@ -33,12 +33,12 @@
 - :id: 44g2WLYJyWiyj65vmglyZy
   :_meta:
     :content_type_id: advice
-    :updated_at: '2021-10-28T09:02:55+00:00'
+    :updated_at: '2021-12-15T13:46:50+00:00'
     :created_at: '2021-07-13T12:07:56+00:00'
     :id: 44g2WLYJyWiyj65vmglyZy
   :title: Send us your questions
   :advice_body: |-
-    Email: <a href="mailto:Teach.FE@education.gov.uk" onclick="window.site.analytics.raiseExitPointEvent('emailAddress')">Teach.FE@education.gov.uk</a>
+    Email: <a class="govuk-link" href="mailto:Teach.FE@education.gov.uk" onclick="window.site.analytics.raiseExitPointEvent('emailAddress')">Teach.FE@education.gov.uk</a>
 
     We aim to get back to you within 5 working days.
   :media:
