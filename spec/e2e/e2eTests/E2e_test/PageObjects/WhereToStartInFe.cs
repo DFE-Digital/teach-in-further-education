@@ -3,10 +3,10 @@
 
 namespace TeachFe.E2e_test.PageObjects
 {
-    public class GuideToFeTeachingPage
+    public class WhereToStartInFePage
     {
         private readonly IWebDriver driver;
-        public GuideToFeTeachingPage(IWebDriver driver)
+        public WhereToStartInFePage(IWebDriver driver)
         {
             this.driver = driver;
         }
@@ -16,11 +16,6 @@ namespace TeachFe.E2e_test.PageObjects
         public IWebElement MainContent
         {
             get { return driver.FindElement(By.Id("main-content")); }
-        }
-
-        public IWebElement AverageSalaryLink
-        {
-            get { return driver.FindElement(By.PartialLinkText("According to the National Careers")); }
         }
 
         public IWebElement EmployersLink
@@ -51,11 +46,6 @@ namespace TeachFe.E2e_test.PageObjects
         public bool ContentGuideToFeDisplayed()
         {
             return MainContent.Displayed;
-        }
-
-        public void ClickAverageSalaryLink()
-        {
-            AverageSalaryLink.Click();
         }
 
         public void ClickEmployersLink()

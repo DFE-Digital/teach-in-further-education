@@ -15,7 +15,7 @@ namespace TeachFe.E2e_test.PageObjects
 
         public IWebElement MainContent
         {
-            get { return driver.FindElement(By.ClassName("govuk-grid-row")); }
+            get { return driver.FindElement(By.Id("main-content")); }
         }
 
         public IWebElement BackButton

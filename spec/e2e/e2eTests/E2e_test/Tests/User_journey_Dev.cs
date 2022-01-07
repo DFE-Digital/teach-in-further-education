@@ -19,8 +19,11 @@ namespace TeachFe.E2e_test
         {
             #region pages
 
+            Navigation navigation = new Navigation(driver);
+            CookieBanner cookieBanner = new CookieBanner(driver);
+            CookiesPage cookiesPage = new CookiesPage(driver);
             Homepage homepage = new Homepage(driver);
-            GuideToFeTeachingPage guideToFeTeachingPage = new GuideToFeTeachingPage(driver);
+            WhereToStartInFePage whereToStartInFePage = new WhereToStartInFePage(driver);
             WhatYouCouldTeachPage whatYouCouldTeachPage = new WhatYouCouldTeachPage(driver);
             TrainInYourOwnTimePage trainInYourOwnTimePage = new TrainInYourOwnTimePage(driver);
             FindAnFeTeachingJobPage findAnFeTeachingJobPage = new FindAnFeTeachingJobPage(driver);
@@ -30,58 +33,86 @@ namespace TeachFe.E2e_test
             ResultsGcsePage resultsGcsePage = new ResultsGcsePage(driver);
             ResultsAlevelsPage resultsAlevelsPage = new ResultsAlevelsPage(driver);
             ResultsDegreePage resultsDegreePage = new ResultsDegreePage(driver);
+            Footer footer = new Footer(driver);
+            AccessibilityAdvice accessibilityAdvice = new AccessibilityAdvice(driver);
+            PrivacyPolicy privacyPolicy = new PrivacyPolicy(driver);
+
+            #endregion
+
+            #region cookies
+
+            navigation.NavigateToDev();
+            Assert.AreEqual(true, homepage.ContentHomepageDisplayed());
+    
+
+            #endregion
+
+            #region navigation
+
+            navigation.ClickWhatYouCouldTeachNavButton();
+            Assert.IsTrue(driver.Url.EndsWith("/what-you-could-teach.html"));
+            navigation.ClickHomeNavButton();
+
+            #endregion
+
+            #region cookie banner and cookie page
+
+            cookieBanner.ClickAcceptCookiesButton();
+            Assert.AreEqual(true, cookieBanner.CookieBannerAcceptedDisplayed());
+            cookieBanner.ClickChangeCookieSettingsLink();
+            Assert.IsTrue(driver.Url.EndsWith("/cookies.html"));
+            //redirects user to the cookies page
+            Assert.AreEqual(true, cookiesPage.MainContentDisplayed());
+            Assert.AreEqual(true, cookiesPage.CookiesFormDisplayed());
+            cookiesPage.ClickGoogleAnalyticsCookiesLink();
+            Assert.IsTrue(driver.Url.Equals("https://tools.google.com/dlpage/gaoptout"));
+            driver.Navigate().Back();
+            Assert.IsTrue(driver.Url.EndsWith("/cookies.html"));
+            cookiesPage.ClickRejectCookiesRadio();
+            cookiesPage.ClickSubmitButton();
+            //redirects user back to the homepage
+            Assert.AreEqual(true, homepage.ContentHomepageDisplayed());
+            Assert.AreEqual(true, cookieBanner.CookieBannerRejectedDisplayed());
+            cookieBanner.ClickHideThisMessageLink();
 
             #endregion
 
             #region homepage
 
-            homepage.NavigateToDev();
-            homepage.ContentHomepageDisplayed();
-            homepage.ClickTrainOnTheJobLink();
-            Assert.IsTrue(driver.Url.EndsWith("/train-on-the-job.html"));
-            homepage.ClickHomeNavButton();
-            homepage.ClickWhatYouCouldTeachNavButton();
-            Assert.IsTrue(driver.Url.EndsWith("/what-you-could-teach.html"));
-            homepage.ClickHomeNavButton();
-            homepage.ClickTrainInYourOwnTimeLink();
-            Assert.IsTrue(driver.Url.EndsWith("/train-in-your-own-time.html"));
-            homepage.ClickHomeNavButton();
-            homepage.ClickGuideToFurtherEducationLink();
-            Assert.IsTrue(driver.Url.EndsWith("/guide-to-further-education.html"));
-            homepage.ClickHomeNavButton();
-            homepage.ClickGuideToFurtherEducationLinkBottomPage();
-            Assert.IsTrue(driver.Url.EndsWith("/guide-to-further-education.html"));
-            homepage.ClickGuideToFeTeachingNavButton();
-            Assert.IsTrue(driver.Url.EndsWith("/guide-to-further-education.html"));
+            homepage.ClickWhereToStartLink();
+            Assert.IsTrue(driver.Url.EndsWith("/where-to-start-in-further-education.html"));
+            navigation.ClickHomeNavButton();
+            homepage.ClickWhereToStartLinkBottomPage();
+            Assert.IsTrue(driver.Url.EndsWith("/where-to-start-in-further-education.html"));
+            navigation.ClickWhereToStartInFeNavButton();
+            Assert.IsTrue(driver.Url.EndsWith("/where-to-start-in-further-education.html"));
 
             #endregion
 
-            #region guide to FE teaching page
+            #region where to start in FE page
 
-            guideToFeTeachingPage.ContentGuideToFeDisplayed();
-            guideToFeTeachingPage.ClickAverageSalaryLink();
-            Assert.IsTrue(driver.Url.EndsWith("/job-profiles/further-education-lecturer"));
-            driver.Navigate().Back();
-            guideToFeTeachingPage.ClickEmployersLink();
+            whereToStartInFePage.ContentGuideToFeDisplayed();
+            whereToStartInFePage.ClickEmployersLink();
             Assert.IsTrue(driver.Url.Contains("aocjobs.com/employers-a-z"));
             driver.Navigate().Back();
-            guideToFeTeachingPage.ClickTrainingProvidersLink();
+            whereToStartInFePage.ClickTrainingProvidersLink();
             Assert.IsTrue(driver.Url.Contains("aelp.org.uk/about/our-members/"));
             driver.Navigate().Back();
-            guideToFeTeachingPage.ClickWhatLevelsMeanLink();
+            whereToStartInFePage.ClickWhatLevelsMeanLink();
             Assert.IsTrue(driver.Url.Contains("gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels"));
             driver.Navigate().Back();
-            guideToFeTeachingPage.ClickWhatYouCouldTeachLink();
+            whereToStartInFePage.ClickWhatYouCouldTeachLink();
             Assert.IsTrue(driver.Url.EndsWith("/what-you-could-teach.html"));
             driver.Navigate().Back();
-            homepage.ClickWhatYouCouldTeachNavButton();
+            navigation.ClickWhatYouCouldTeachNavButton();
             Assert.IsTrue(driver.Url.EndsWith("/what-you-could-teach.html"));
 
             #endregion
 
             #region what you could teach page
 
-            whatYouCouldTeachPage.ContentWhatYouCouldTeachDisplayed();
+            Assert.AreEqual(true, whatYouCouldTeachPage.ContentWhatYouCouldTeachDisplayed());
+            Assert.AreEqual(true, whatYouCouldTeachPage.ContentWhatYouCouldTeachDisplayed());
             whatYouCouldTeachPage.ClickOpenAllButton();
             whatYouCouldTeachPage.ClickWhatLevelsMeanLink();
             Assert.IsTrue(driver.Url.Contains("gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels"));
@@ -96,7 +127,7 @@ namespace TeachFe.E2e_test
 
             #region train on the job page
 
-            trainOnTheJobPage.ContentTrainOnTheJobDisplayed();
+            Assert.AreEqual(true, trainOnTheJobPage.ContentTrainOnTheJobDisplayed());
             trainOnTheJobPage.ClickAzEmployersLink();
             Assert.IsTrue(driver.Url.EndsWith("aocjobs.com/employers-a-z"));
             driver.Navigate().Back();
@@ -113,14 +144,14 @@ namespace TeachFe.E2e_test
             Assert.IsTrue(driver.Url.EndsWith("/find-an-fe-teaching-job.html"));
             driver.Navigate().Back();
             Assert.IsTrue(trainOnTheJobPage.EmailLink.Text.Equals("Teach.FE@education.gov.uk"));
-            homepage.ClickTrainInYourOwnTimeNavButton();
+            navigation.ClickTrainInYourOwnTimeNavButton();
             Assert.IsTrue(driver.Url.EndsWith("/train-in-your-own-time.html"));
 
             #endregion
 
             #region train in your own time
 
-            trainInYourOwnTimePage.ContentTrainInYourOwnTimeDisplayed();
+            Assert.AreEqual(true, trainInYourOwnTimePage.ContentTrainInYourOwnTimeDisplayed());
             trainInYourOwnTimePage.ClickFullListOfFeQualifications();
             Assert.IsTrue(driver.Url.EndsWith("/full-list-of-fe-qualifications.html"));
             driver.Navigate().Back();
@@ -130,54 +161,41 @@ namespace TeachFe.E2e_test
             trainInYourOwnTimePage.ClickTrainOnTheJobLink();
             Assert.IsTrue(driver.Url.EndsWith("/train-on-the-job.html"));
             driver.Navigate().Back();
-            trainInYourOwnTimePage.ClickBursariesAvailableLink();
-            Assert.IsTrue(driver.Url.Contains("/initial-teacher-training-bursaries-funding-manual"));
-            driver.Navigate().Back();
             trainInYourOwnTimePage.ClickSubmitButton();
-            trainInYourOwnTimePage.ValidationErrorMessageDisplayed();
+            Assert.AreEqual(true, trainInYourOwnTimePage.ValidationErrorMessageDisplayed());
             trainInYourOwnTimePage.ClickNoneRadioButton();
             trainInYourOwnTimePage.ClickSubmitButton();
             Assert.IsTrue(driver.Url.EndsWith("/results-no-quals.html"));
-            resultsNoQualificationsPage.ContentNoQualificationsResultsDisplayed();
+            Assert.AreEqual(true, resultsNoQualificationsPage.ContentNoQualificationsResultsDisplayed());
             resultsNoQualificationsPage.ClickBackButton();
             Assert.IsTrue(driver.Url.EndsWith("/train-in-your-own-time.html"));
             trainInYourOwnTimePage.ClickGcseButton();
             trainInYourOwnTimePage.ClickSubmitButton();
             Assert.IsTrue(driver.Url.EndsWith("/diploma-in-education-and-training-gcse.html"));
-            resultsGcsePage.ContentGcseResultsDisplayed();
+            Assert.AreEqual(true, resultsGcsePage.ContentGcseResultsDisplayed());
             resultsGcsePage.ClickBackButton();
             Assert.IsTrue(driver.Url.EndsWith("/train-in-your-own-time.html"));
             trainInYourOwnTimePage.ClickAlevelsButton();
             trainInYourOwnTimePage.ClickSubmitButton();
             Assert.IsTrue(driver.Url.EndsWith("/diploma-in-education-and-training-result-a-level.html"));
-            resultsAlevelsPage.ContentAlevelsResultsDisplayed();
+            Assert.AreEqual(true, resultsAlevelsPage.ContentAlevelsResultsDisplayed());
             resultsAlevelsPage.ClickBackButton();
             Assert.IsTrue(driver.Url.EndsWith("/train-in-your-own-time.html"));
             trainInYourOwnTimePage.ClickDegreeButton();
             trainInYourOwnTimePage.ClickSubmitButton();
             Assert.IsTrue(driver.Url.EndsWith("/results-degree-or-above.html"));
-            resultsDegreePage.ContentDegreeResultsDisplayed();
+            Assert.AreEqual(true, resultsDegreePage.ContentDegreeResultsDisplayed());
             resultsDegreePage.ClickBackButton();
             Assert.IsTrue(driver.Url.EndsWith("/train-in-your-own-time.html"));
-            trainInYourOwnTimePage.ClickPcetLink();
-            Assert.IsTrue(driver.Url.EndsWith("/pgce-in-post-compulsory-education-and-training-pcet.html"));
-            driver.Navigate().Back();
-            trainInYourOwnTimePage.ClickDiplomaInEducationAndTrainingLink();
-            Assert.IsTrue(driver.Url.EndsWith("/diploma-in-education-and-training.html"));
-            driver.Navigate().Back();
-            Assert.IsTrue(driver.Url.EndsWith("/train-in-your-own-time.html"));
-            trainInYourOwnTimePage.ClickTeacherBursaryLink();
-            Assert.IsTrue(driver.Url.Contains("/publications/fe-funding-initial-teacher-education-ite"));
-            driver.Navigate().Back();
             Assert.IsTrue(trainInYourOwnTimePage.EmailLink.Text.Equals("Teach.FE@education.gov.uk"));
-            homepage.ClickFindAnFeTeachingJobNavButton();
+            navigation.ClickFindAnFeTeachingJobNavButton();
             Assert.IsTrue(driver.Url.EndsWith("/find-an-fe-teaching-job.html"));
 
             #endregion
 
             #region find an FE teaching job page
 
-            findAnFeTeachingJobPage.ContentFindAnFeTeachingJobDisplayed();
+            Assert.AreEqual(true, findAnFeTeachingJobPage.ContentFindAnFeTeachingJobDisplayed());
             findAnFeTeachingJobPage.ClickEmployersLink();
             Assert.IsTrue(driver.Url.Contains("aocjobs.com/employers-a-z"));
             driver.Navigate().Back();
@@ -193,15 +211,38 @@ namespace TeachFe.E2e_test
             findAnFeTeachingJobPage.ClickCollegeJobsLink();
             Assert.IsTrue(driver.Url.Contains("college.jobs.ac.uk/"));
             driver.Navigate().Back();
-            homepage.ClickHelpAndAdviceNavButton();
+
+            navigation.ClickHelpAndAdviceNavButton();
             Assert.IsTrue(driver.Url.EndsWith("/help-and-advice.html"));
 
             #endregion
 
             #region help and advice page
 
-            helpAndAdvicePage.ContentHelpAndAdviceDisplayed();          
+            Assert.AreEqual(true, helpAndAdvicePage.ContentHelpAndAdviceDisplayed());          
             Assert.IsTrue(helpAndAdvicePage.EmailLink.Text.Equals("Teach.FE@education.gov.uk"));
+
+            #endregion
+
+            #region footer
+
+            footer.ClickAccessibilityLink();
+            Assert.IsTrue(driver.Url.EndsWith("/accessibility-advice.html"));
+            Assert.AreEqual(true, accessibilityAdvice.MainContentDisplayed());
+            footer.ClickPrivacyLink();
+            Assert.IsTrue(driver.Url.EndsWith("/privacy-policy.html"));
+            Assert.AreEqual(true, privacyPolicy.MainContentDisplayed());
+            footer.ClickCookiesLink();
+            Assert.IsTrue(driver.Url.EndsWith("/cookies.html"));
+            footer.ClickFeedbackLink();
+            Assert.IsTrue(driver.Url.Equals("https://docs.google.com/forms/d/e/1FAIpQLSdi344O4UZ-DrLnCzC3Ew-1LDIYqn2F4DulAidQ4LHhMsKRZw/viewform"));
+            driver.Navigate().Back();
+            footer.ClickCopyrightLink();
+            Assert.IsTrue(driver.Url.Equals("https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"));
+            driver.Navigate().Back();
+            footer.ClickOGLLink();
+            Assert.IsTrue(driver.Url.Equals("https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"));
+            driver.Navigate().Back();
 
             #endregion
         }
