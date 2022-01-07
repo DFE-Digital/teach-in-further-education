@@ -18,6 +18,21 @@ namespace TeachFe.E2e_test.PageObjects
             get { return driver.FindElement(By.Id("main-content")); }
         }
 
+        public IWebElement FullListOfFeQualifications
+        {
+            get { return driver.FindElement(By.LinkText("Here's a list of popular teacher training courses")); }
+        }
+
+        public IWebElement StudentFinanceLink
+        {
+            get { return driver.FindElement(By.PartialLinkText("You may be eligible to apply for a student loan")); }
+        }
+
+        public IWebElement TrainOnTheJobLink
+        {
+            get { return driver.FindElement(By.LinkText("Train on the job")); }
+        }
+
         public IWebElement NoneRadioButton
         {
             get { return driver.FindElement(By.ClassName("govuk-radios__input")); }
@@ -46,41 +61,6 @@ namespace TeachFe.E2e_test.PageObjects
         public IWebElement ValidationErrorMessage
         {
             get { return driver.FindElement(By.Id("error-message")); }
-        }
-
-        public IWebElement FullListOfFeQualifications
-        {
-            get { return driver.FindElement(By.LinkText("Here's a list of popular teacher training courses")); }
-        }
-
-        public IWebElement StudentFinanceLink
-        {
-            get { return driver.FindElement(By.PartialLinkText("You may be eligible to apply for a student loan")); }
-        }
-
-        public IWebElement TrainOnTheJobLink
-        {
-            get { return driver.FindElement(By.LinkText("Train on the job")); }
-        }
-
-        public IWebElement BursariesAvailableLink
-        {
-            get { return driver.FindElement(By.LinkText("There are bursaries available for some subjects.")); }
-        }
-
-        public IWebElement PcetLink
-        {
-            get { return driver.FindElement(By.LinkText("PCET in Post-Compulsory Education and Training")); }
-        }
-
-        public IWebElement DiplomaInEducationAndTrainingLink
-        {
-            get { return driver.FindElement(By.LinkText("Diploma in Education and Training")); }
-        }
-
-        public IWebElement TeacherBursaryLink
-        {
-            get { return driver.FindElement(By.PartialLinkText("Find out about the current teacher")); }
         }
 
         public IWebElement EmailLink
@@ -140,26 +120,6 @@ namespace TeachFe.E2e_test.PageObjects
         public void ClickTrainOnTheJobLink()
         {
             TrainOnTheJobLink.Click();
-        }
-
-        public void ClickBursariesAvailableLink()
-        {
-            BursariesAvailableLink.Click();
-        }
-
-        public void ClickPcetLink()
-        {
-            PcetLink.Click();
-        }
-
-        public void ClickDiplomaInEducationAndTrainingLink()
-        {
-            DiplomaInEducationAndTrainingLink.Click();
-        }
-
-        public void ClickTeacherBursaryLink()
-        {
-            TeacherBursaryLink.Click();
         }
 
         public bool EmailLinkDisplayed()
