@@ -2,30 +2,45 @@
 :id: 2wAftZDRvPUWLTGogsMx4B
 :_meta:
   :content_type_id: page
-  :updated_at: '2021-11-03T11:24:20+00:00'
+  :updated_at: '2021-12-08T15:16:25+00:00'
   :created_at: '2021-10-28T08:57:14+00:00'
   :id: 2wAftZDRvPUWLTGogsMx4B
 :title: Train on the job
 :nav_title: Train on the job
+:heading: Train on the job
 :slug: train-on-the-job
 :blocks:
 - :id: 5cu3CALGtvPugA7rbdsPwW
   :_meta:
     :content_type_id: advice
-    :updated_at: '2021-10-28T09:02:45+00:00'
+    :updated_at: '2021-12-06T09:54:56+00:00'
     :created_at: '2021-04-29T23:31:03+00:00'
     :id: 5cu3CALGtvPugA7rbdsPwW
   :title: Training on the job
   :advice_body: |-
-    If you have the skills, knowledge and experience the college or training provider wants, you can start work as an FE teacher.
+    You can start work as an FE teacher straight away. As long as you have the right:
 
-    You'll study for your teacher training alongside your work as a teacher. Colleges and training providers may give you time to study during working hours.
+    - practical skills
+    - knowledge of your subject
+    - experience of your industry
 
-    [Here's a list of popular teacher training courses.](/full-list-of-fe-qualifications.html "A list of popular teacher training courses")
+    There are 2 ways to train when you start a teaching job with a college or training provider:
 
-    The FE provider may pay for your teacher training. If so, they may expect you to stay with them for a set period after you qualify.
+    - a teaching course, such as a Level 5 Diploma in Education and Training
+    - an FE teaching apprenticeship
 
-    [You may be eligible to apply for a student loan to help pay for the course fees.](https://www.gov.uk/student-finance "Student loans")
+    Colleges and training providers decide themselves how to train new members of staff.
+
+    ### How does this work?
+
+    With either of the methods above you will:
+
+    - be paid the training provider's going rate for an FE teacher
+    - remain a member of the permanent staff when you pass the course
+    - become a qualified FE teacher when you pass the course
+    - get guaranteed time off the job to study
+
+    The FE teaching apprenticeship has recently been revised and updated. It is designed to increase the quality of FE teacher training provision. It also lets FE providers access money to fund teacher training.
   :media:
     :title: Earn while you learn
     :description: A male teacher with two female students looking at a computer
@@ -36,11 +51,11 @@
       :id: lza5filA0VlqXNUB0X7HJ
   :display_order: false
   :apply_background_color: false
-  :show_title: true
+  :show_title: false
 - :id: 1KOfyONjdF71g4vBQYtd5w
   :_meta:
     :content_type_id: advice
-    :updated_at: '2021-11-03T11:24:11+00:00'
+    :updated_at: '2021-12-13T10:32:27+00:00'
     :created_at: '2021-08-25T15:34:10+00:00'
     :id: 1KOfyONjdF71g4vBQYtd5w
   :title: In service training pros and cons
@@ -58,7 +73,7 @@
     of FE colleges from Association of Colleges\")\n\n[Find independent training providers
     on the Association of Employment Learning Providers' website](https://www.aelp.org.uk/about/our-members/
     \"Association of Employment Learning Providers member finder\")\n\n[Find a job
-    in FE on the Association of Colleges website](https://www.aocjobs.com/ \"Association
+    in FE on the Association of Colleges website](https://www.aocjobs.com \"Association
     of Colleges college finder\")\n\nThe Department for Education does not endorse
     any particular providers or job sites. "
   :display_order: true
@@ -79,16 +94,16 @@
 - :id: 57ltZ1kjZ3UMvmAJzCb8Kz
   :_meta:
     :content_type_id: advice
-    :updated_at: '2021-10-28T08:57:12+00:00'
+    :updated_at: '2021-12-15T13:43:57+00:00'
     :created_at: '2021-10-28T08:57:12+00:00'
     :id: 57ltZ1kjZ3UMvmAJzCb8Kz
-  :title: Got a question about training with a local college or training provider?
+  :title: Got a question about getting a job with a local college or training provider?
   :advice_body: |-
     ---
 
-    Got a question about training with a local college or training provider?
+    Got a question about getting a job with a local college or training provider?
 
-    Email: <a href="mailto:Teach.FE@education.gov.uk" onclick="window.site.analytics.raiseExitPointEvent('emailAddress')">Teach.FE@education.gov.uk</a> and our advisors will reply to you within 5 working days.
+    Email: <a class="govuk-link" href="mailto:Teach.FE@education.gov.uk" onclick="window.site.analytics.raiseExitPointEvent('emailAddress')">Teach.FE@education.gov.uk</a> and our advisors will reply to you within 5 working days.
 
     ---
   :display_order: false

@@ -2,7 +2,7 @@
 :id: 7fkpVgKNOUvTuZI7KBhdrE
 :_meta:
   :content_type_id: page
-  :updated_at: '2021-10-28T09:03:24+00:00'
+  :updated_at: '2021-12-08T15:18:18+00:00'
   :created_at: '2021-05-18T08:23:03+00:00'
   :id: 7fkpVgKNOUvTuZI7KBhdrE
 :title: Find an FE teaching job
@@ -12,16 +12,21 @@
 :heading: Find a further education teaching job
 :slug: find-an-fe-teaching-job
 :blocks:
+- :id: 5XYHbxsuUuv2QMBmQBdNWg
+  :_meta:
+    :content_type_id: tableOfContents
+    :updated_at: '2021-12-01T10:16:37+00:00'
+    :created_at: '2021-12-01T10:16:37+00:00'
+    :id: 5XYHbxsuUuv2QMBmQBdNWg
+  :title: On this page
 - :id: 3J3oEV3PF62bJRcXhpLDOH
   :_meta:
     :content_type_id: advice
-    :updated_at: '2021-10-28T09:02:46+00:00'
+    :updated_at: '2021-12-02T15:17:48+00:00'
     :created_at: '2021-05-18T08:17:01+00:00'
     :id: 3J3oEV3PF62bJRcXhpLDOH
   :title: FE providers are independent organisations
   :advice_body: |
-    Unlike primary and secondary education, the FE sector is not regulated.
-
     FE providers like colleges and training providers can:
 
     - set their own requirements in terms of qualifications and experience
@@ -31,21 +36,40 @@
   :display_order: false
   :apply_background_color: false
   :show_title: true
+- :id: 1qKKajIJcr8oAqzNVi64ai
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-12-13T10:20:58+00:00'
+    :created_at: '2021-12-02T15:18:42+00:00'
+    :id: 1qKKajIJcr8oAqzNVi64ai
+  :title: More than just colleges
+  :advice_body: |-
+    FE includes establishments that typically teach students aged 16+. Although this does not include universities, it does include independent training providers (ITPs).
+
+    Like colleges, some ITPs will provide teacher training on the job. They may differ from colleges in other ways:
+
+    - a more commercial focus
+    - greater use of remote working
+    - be industry sector specific
+
+    IPTs do not follow the academic year, so you can take holiday leave at any time. The amount of holiday leave available will depend on the ITP. It is likely to be less than you'd get from a college, but more flexible about when you take it.
+  :display_order: true
+  :apply_background_color: false
+  :show_title: true
 - :id: 3Vcwz7UfYGsdI7gkI4iWgh
   :_meta:
     :content_type_id: advice
-    :updated_at: '2021-10-28T09:02:55+00:00'
+    :updated_at: '2021-12-02T15:20:49+00:00'
     :created_at: '2021-07-13T08:58:52+00:00'
     :id: 3Vcwz7UfYGsdI7gkI4iWgh
-  :title: Find a job
-  :advice_body: "Teaching in FE is slightly different from teaching in schools. With
-    FE you can start the job with no teaching qualifications and learn to teach on
-    the job.\n\nWhen you feel ready, apply for a job at a college or training provider.\n\nYou
-    can find a teaching job in FE by:\n\n- searching job sites\n- getting in touch
-    with local colleges and training providers\n\n### Where to start your search\n\n[Find
-    your local FE college on the Association of Colleges website](https://www.aocjobs.com/employers-a-z
-    \"Association of Colleges college finder\")\n\n[Find independent training providers
-    on the Association of Employment Learning Providers' website](https://www.aelp.org.uk/about/our-members/
+  :title: Where to find a job
+  :advice_body: "The first place to look for a job is on your local college or training
+    provider’s website. \n\nYou can also find jobs by:\n\n- searching general job
+    sites such as Indeed, TotalJobs and Reed\n- looking on Linkedin\n- using social
+    media\n\n### Colleges\n\n[Find your local FE college on the Association of Colleges
+    website](https://www.aocjobs.com/employers-a-z \"Association of Colleges college
+    finder\")\n\n### ITPs\n\n[Find independent training providers on the Association
+    of Employment Learning Providers' website](https://www.aelp.org.uk/about/our-members/
     \"Association of Employment Learning Providers member finder\")\n\n#### Other
     places to look\n\n- [Association of colleges job site](https://www.aocjobs.com
     \"Association of Colleges jobs\")\n- [TES - Times Educational Supplement job site](https://www.tes.com/jobs/browse/further-education-teaching-and-lecturing
@@ -55,19 +79,104 @@
     or job sites. "
   :display_order: true
   :show_title: true
-- :id: 1TvwovJDqZuFg4Eqwx4Bu2
+- :id: 6oUpUuq3gk94Pp5AeRLEwr
   :_meta:
     :content_type_id: advice
-    :updated_at: '2021-10-28T09:02:46+00:00'
-    :created_at: '2021-05-18T08:17:53+00:00'
-    :id: 1TvwovJDqZuFg4Eqwx4Bu2
-  :title: Learn while you earn
-  :advice_body: |
-    Some providers will let you complete training or a qualification while you work for them and start to teach.
+    :updated_at: '2021-12-02T15:22:24+00:00'
+    :created_at: '2021-12-02T15:22:24+00:00'
+    :id: 6oUpUuq3gk94Pp5AeRLEwr
+  :title: What to look for
+  :advice_body: |-
+    Some job vacancies will have 'teacher' in the job title. You may find vacancies with different job titles that mean the same thing:
 
-    [Find your local FE college on the Association of Colleges website](https://www.aocjobs.com/employers-a-z "Association of Colleges college finder")
+    - lecturer
+    - tutor
+    - skills trainer
+    - skills coach
 
-    [Find independent training providers on the Association of Employment Learning Providers' website](https://www.aelp.org.uk/about/our-members/ "Association of Employment Learning Providers member finder")
+    Always read job adverts carefully, and read any downloadable job descriptions provided.
+
+    If you're not sure about something, get in touch with the FE provider before you apply.
+  :display_order: true
+  :apply_background_color: false
+  :show_title: true
+- :id: 1huyVRCGroXrWmbLnuL0WS
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-12-15T09:20:36+00:00'
+    :created_at: '2021-12-01T10:29:47+00:00'
+    :id: 1huyVRCGroXrWmbLnuL0WS
+  :title: What you could earn
+  :advice_body: "Further education (FE) teachers are employed by colleges and training
+    providers on a full- or part-time basis.\n\n### The average salary for an FE teacher
+    ranges from £24,000 to £40,000 \n\nThis is according to National Careers Service
+    figures.\n\nFE providers are independent businesses, so are free to set their
+    own salary levels.\n\nThese may be determined by:\n\n- the demand for your subject\n-
+    your level of experience and qualifications\n- your local area\n\nYou can get
+    an idea of your local provider's pay scale by looking at the current jobs on the
+    careers section of their website.\n\n[Find your local FE college on the Association
+    of Colleges website](https://www.aocjobs.com/employers-a-z \"Association of Colleges
+    college finder\")\n\n[Find independent training providers on the Association of
+    Employment Learning Providers' website](https://www.aelp.org.uk/about/our-members/
+    \"Association of Employment Learning Providers member finder\")"
+  :display_order: true
+  :show_title: true
+- :id: 2GE7Oj5gaBed42AHKQjNhL
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-12-06T14:13:09+00:00'
+    :created_at: '2021-04-29T23:31:04+00:00'
+    :id: 2GE7Oj5gaBed42AHKQjNhL
+  :title: Benefits package
+  :advice_body: "FE providers are employers like any other in the private sector,
+    and often offer a range of benefits on top of the salary.\n\nThese may include:\n\n-
+    pension schemes\n- childcare vouchers\n- cycle to work schemes\n- discount gym
+    memberships\n\nThis is not a complete list. You'll find what each FE provider
+    offers on their website.\n\n### Working hours\n\nA full-time FE teacher is typically
+    contracted to 35-37 hours a week. Some teaching goes on in the evening, so your
+    working day can be flexible.\n\nMany FE teachers work part time to fit around
+    other commitments.\n\nLook at the jobs in the careers section of the provider's
+    website to give yourself an idea of how flexible they are.\n\n### Holidays \n\nAs
+    an employee you are entitled to paid holidays.\n\nTerm-based holidays mean college-based
+    FE teachers typically get 37 days' paid leave per year, plus all the bank holidays.\n\nIndependent
+    training providers do not usually follow the college terms, so leave can be taken
+    at any time. The amount of leave offered varies by provider."
+  :display_order: true
+  :show_title: true
+- :id: 6COWqbhmnOaJDejYnd70tI
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-12-15T13:43:27+00:00'
+    :created_at: '2021-12-02T15:47:23+00:00'
+    :id: 6COWqbhmnOaJDejYnd70tI
+  :title: Got a question about finding an FE job?
+  :advice_body: |-
+    ---
+
+    Got a question about about finding an FE job?
+
+    Email: <a class="govuk-link" href="mailto:Teach.FE@education.gov.uk" onclick="window.site.analytics.raiseExitPointEvent('emailAddress')">Teach.FE@education.gov.uk</a> and our advisors will reply to you within 5 working days.
+
+    ---
   :display_order: false
+  :apply_background_color: false
+  :show_title: false
+- :id: 6AIEMKj7WEqmoh0paGILES
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-12-08T09:57:11+00:00'
+    :created_at: '2021-12-08T09:57:11+00:00'
+    :id: 6AIEMKj7WEqmoh0paGILES
+  :title: Non-teaching roles
+  :advice_body: |-
+    You can work in FE without having to do any teacher training.
+    For example you can work as a:
+
+    - technician
+    - teaching assistant
+    - learning support assistant
+
+    These sort of jobs are advertised on FE providers' websites, and on general job finder websites.
+  :display_order: true
   :apply_background_color: false
   :show_title: true
