@@ -1,10 +1,9 @@
-name: e2eTests
+name: e2eTests - master
 
 on:
-  push:
-    branches: [ development ]
+  workflow_dispatch:
   pull_request:
-    branches: [ development, test, pre-production ]
+    branches: [ master ]
 
 jobs:
    tests:
@@ -20,4 +19,4 @@ jobs:
       - name: Build
         run: dotnet build spec/e2e/TeachFeProject.sln
       - name: Test with the dotnet CLI
-        run: dotnet test spec/e2e/e2eTests/E2eTests.csproj
+        run: dotnet test spec/e2e/e2eTests/E2eTests.csproj --filter UserJourneyPreProd
