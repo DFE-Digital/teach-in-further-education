@@ -25,10 +25,12 @@
     </button>
   </div>-->
 
-  <form method="get" action=<%= data.slug %>.html>
-    <button id="<%= data.id %>" data-module="govuk-button" class="govuk-button <%= selected_class %>"
-            aria-label="<%= data.title %> button" type="submit"><%= data.title %></button>
-  </form>
+  <div role="navigation" >
+    <form method="get" action=<%= data.slug %>.html>
+      <button id="<%= data.id %>" data-module="govuk-button" class="govuk-button <%= selected_class %>"
+              type="submit"><%= data.title %></button>
+    </form>
+  </div>
 
   <!--<div role="navigation" >
     <button id="<%#= data.id %>" data-module="govuk-button" class="govuk-button <%#= selected_class %>"
