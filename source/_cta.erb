@@ -19,13 +19,16 @@
      selected_class = classMap[c]
   %>
   <div role="navigation" >
-    <button aria-label="<%= data.title %> button">
-      <a id="<%= data.id %>"
-        href="<%= data.slug + ".html" %>"
-        class="<%= "govuk-button " + selected_class %>"
-        data-module="govuk-button">
-        <%= data.title %>
-      </a>
+    <button id="<%= data.id %>" data-module="govuk-button" class="govuk-button <%= selected_class %>" 
+    aria-label="<%= data.title %> button" onclick="<%= data.slug %> .html">
+      <%= data.title %>
+    </button>
+  </div>
+
+  <div role="navigation" >
+    <button id="<%= data.id %>" data-module="govuk-button" class="govuk-button <%= selected_class %>" 
+    aria-label="<%= data.title %> button" onclick="location.href='https://google.com';">
+      <%= data.title %>
     </button>
   </div>
 <% end %>
