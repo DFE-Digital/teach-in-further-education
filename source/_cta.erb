@@ -18,24 +18,11 @@
      c = data.cta_type
      selected_class = classMap[c]
   %>
-  <!--<div role="navigation" >
-    <button id="<%#= data.id %>" data-module="govuk-button" class="govuk-button <%#= selected_class %>"
-    aria-label="<%#= data.title %> button" onclick="location.href=<%= data.slug %>.html">
-      <%#= data.title %>
-    </button>
-  </div>-->
-
+  
   <div role="navigation" >
     <form method="get" action=<%= data.slug %>.html>
       <button id="<%= data.id %>" data-module="govuk-button" class="govuk-button <%= selected_class %>"
               type="submit"><%= data.title %></button>
     </form>
   </div>
-
-  <!--<div role="navigation" >
-    <button id="<%#= data.id %>" data-module="govuk-button" class="govuk-button <%#= selected_class %>"
-    aria-label="<%#= data.title %> button" onclick="location.href='https://google.com';">
-      <%#= data.title %>
-    </button>
-  </div>-->
 <% end %>
