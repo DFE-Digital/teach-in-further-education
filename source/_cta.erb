@@ -19,10 +19,8 @@
      selected_class = classMap[c]
   %>
   
-  <div role="navigation" >
-    <form method="post" action=<%= data.slug %>.html>
-      <button id="<%= data.id %>" data-module="govuk-button" class="govuk-button <%= selected_class %>"
-              type="submit"><%= data.title %></button>
-    </form>
+  <div role="navigation" aria-label="Back">
+    <button id="<%= data.id %>" onclick="window.location.href='<%= data.slug %>.html'" data-module="govuk-button" class="govuk-button <%= selected_class %>"
+            type="submit" ><%= data.title %></button>
   </div>
 <% end %>
