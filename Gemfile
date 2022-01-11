@@ -19,3 +19,4 @@ gem 'middleman-autoprefixer'
 gem 'middleman-livereload'
 gem 'wdm', platforms: [:mswin, :mingw, :x64_mingw]
 gem 'contentful_middleman'
+gem 'builder', '~> 2.0'

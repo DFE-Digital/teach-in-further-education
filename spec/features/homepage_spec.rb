@@ -50,11 +50,11 @@ describe 'Homepage components', :type => :feature do
     it "should render the correct links" do
       link = page.find_link("Find out if you could teach in FE", match: :first)
       within link do
-        expect(link[:href]).to end_with '/guide-to-further-education.html'
+        expect(link[:href]).to end_with '/where-to-start-in-further-education.html'
       end
       link = page.find_link("Find out more about teaching in FE", match: :first)
       within link do
-        expect(link[:href]).to end_with '/guide-to-further-education.html'
+        expect(link[:href]).to end_with '/where-to-start-in-further-education.html'
       end
     end
   end

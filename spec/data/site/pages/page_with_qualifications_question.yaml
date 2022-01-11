@@ -2,22 +2,99 @@
 :id: 4LD9JHyl4cpaKoLhRZqk8p
 :_meta:
   :content_type_id: page
-  :updated_at: '2021-11-03T15:47:29+00:00'
+  :updated_at: '2021-12-08T15:18:32+00:00'
   :created_at: '2021-10-28T08:57:13+00:00'
   :id: 4LD9JHyl4cpaKoLhRZqk8p
 :title: Train in your own time
 :nav_title: Train in your own time
+:heading: Train in your own time
 :slug: qualification-question-page
 :blocks:
+- :id: 12qLcJTqyRLLx3q5FjUBVA
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-12-07T14:48:44+00:00'
+    :created_at: '2021-04-29T23:31:03+00:00'
+    :id: 12qLcJTqyRLLx3q5FjUBVA
+  :title: Train as a teacher before you apply for a job
+  :advice_body: |-
+    You can do your teacher training in your own time around your own commitments.
+
+    Different qualification levels are available. You do not need a degree to teach in FE, but having one gives you more options.
+
+    [Here's a list of popular teacher training courses](/full-list-of-fe-qualifications.html "List of popular teaching courses")
+
+    Once you have qualified you can apply for any suitable jobs.
+  :media:
+    :title: Learn before you earn
+    :description: A male teacher in tutorial with a male student
+    :url: "//images.ctfassets.net/n4docnlbw89d/xrbpAnsDT493GYrkv5yL5/8cd895925fecfbc818fe6cb5ae6edf87/TrainingBeforeWork.png"
+    :_meta:
+      :updated_at: '2021-09-10T14:04:36+00:00'
+      :created_at: '2021-06-29T12:37:36+00:00'
+      :id: xrbpAnsDT493GYrkv5yL5
+  :display_order: false
+  :apply_background_color: false
+  :show_title: false
+- :id: 3rbmhWgWOe2mU4SWn0Nd3t
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-11-12T11:27:10+00:00'
+    :created_at: '2021-08-25T15:35:19+00:00'
+    :id: 3rbmhWgWOe2mU4SWn0Nd3t
+  :title: Pre-service pros and cons
+  :advice_body: |-
+    ### This may be the best approach if:
+
+    - you want to train around existing commitments
+    - you do not want to be tied-in to any one provider once you've qualified
+    - you want to get a taste for FE before you commit to teaching in it
+
+    [You may be eligible to apply for a student loan to help pay for the course fees](https://www.gov.uk/student-finance "Student loans")
+
+    ### This might not be the right approach if:
+
+    - you do not want to pay for your teacher training course yourself
+    - there is a suitable vacancy at your local college or training provider
+    - you're keen to start your new career as soon as a vacancy comes up
+
+    [Train on the job](/train-on-the-job.html "Train on the job")
+  :display_order: true
+  :apply_background_color: false
+  :show_title: false
+- :id: 1xTlxAkJL5DzPuOCDYOsQG
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-12-13T10:55:36+00:00'
+    :created_at: '2021-07-06T12:49:06+00:00'
+    :id: 1xTlxAkJL5DzPuOCDYOsQG
+  :title: Choose your teaching qualification
+  :advice_body: |
+    If you want to start teaching in FE before you get a teaching qualification, you do not need to worry about courses.
+
+    The college or training provider will arrange the teacher training course for you.
+
+    If you want to train first, you need to know what training options there are.
+
+    Which course you choose will depend on the:
+
+    - course costs
+    - time you can commit
+    - expectations of the FE providers you want to work for
+    - qualifications you already have
+
+    Some teaching courses allow full or part time study.
+  :display_order: true
+  :apply_background_color: false
+  :show_title: true
 - :id: qNRtpmv245PlK1GAu8Mzm
   :_meta:
     :content_type_id: question
-    :updated_at: '2021-10-29T12:23:17+00:00'
+    :updated_at: '2021-12-16T12:50:31+00:00'
     :created_at: '2021-06-08T12:27:31+00:00'
     :id: qNRtpmv245PlK1GAu8Mzm
-  :question_text: Find a suitable qualification
-  :sub_text: To find which teaching qualifications best suit your situation, choose
-    your highest educational qualification from the list.
+  :question_text: Find your training course options
+  :sub_text: What is your highest educational qualification?
   :render_as:
   - Radio button
   :answers:
@@ -32,7 +109,7 @@
       :id: 5Vh4c29lW3vBvueKEruEeu
       :_meta:
         :content_type_id: page
-        :updated_at: '2021-11-02T14:00:01+00:00'
+        :updated_at: '2021-12-08T15:15:51+00:00'
         :created_at: '2021-11-02T14:00:01+00:00'
         :id: 5Vh4c29lW3vBvueKEruEeu
       :title: Results - no quals
@@ -86,7 +163,7 @@
       - :id: 6MLGVV5W7puMHUOyCQw5PO
         :_meta:
           :content_type_id: advice
-          :updated_at: '2021-10-28T09:02:44+00:00'
+          :updated_at: '2021-12-13T14:02:42+00:00'
           :created_at: '2021-04-29T23:31:00+00:00'
           :id: 6MLGVV5W7puMHUOyCQw5PO
         :title: Introductory qualifications
@@ -100,23 +177,46 @@
           to see if FE is really for you\n- want to spend as little as possible at
           first\n- do not have enough experience or qualification in your subject
           yet\n\n### These might not be the right qualifications if you want to:\n-
-          get a full teaching qualification \n- train on the job full time\n\n|     |Award
-          in Education and Training    |  Certificate in Education and Training   |\n|
-          ---------- | ---------- | ---------- |\n| Suitability      | You are open
-          to teaching in a range of FE contexts and want to build skills and confidence
-          \      | You want to cover a range of units to suit your chosen FE context
-          and gain practical teaching experience|\n| Course structure      | 3 modules
-          and a ‘micro teaching’ experience (around 15 minutes)       | 30 hours of
-          teaching practice       |\n| Level of qualification you will get        |
-          Level 3. [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels)
-          \     | Level 4. [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels)
-          \     |\n| Area of education (Pri. Sec. FE)       | FE-specific       |
-          FE-specific      |\n| Teaching status       | No official teaching status
-          \      | No official teaching status       |\n| Cost (varies by provider)
-          \      | Up to £500       | Up to £1000       |\n| Length of course       |
-          From 3 days to 12 weeks part time       | Up to 6 months, full time or part
-          time       |\n| Entry requirements       | No entry requirements       |
-          Requires an assessment of your English, maths and ICT skills      |"
+          get a full teaching qualification \n- train on the job full time\n\n<table
+          class=\"govuk-table\">\n  <caption class=\"govuk-table__caption govuk-table__caption--m\"
+          aria-label=\"About these courses - Introductory qualifications\">About these
+          courses</caption>\n  <thead class=\"govuk-table__head\">\n    <tr class=\"govuk-table__row\">\n
+          \     <th scope=\"col\" class=\"govuk-table__header\"></th>\n      <th scope=\"col\"
+          class=\"govuk-table__header\">Award in Education and Training</th>\n      <th
+          scope=\"col\" class=\"govuk-table__header\">Certificate in Education and
+          Training</th>\n    </tr>\n  </thead>\n  <tbody class=\"govuk-table__body\">\n
+          \   <tr>\n      <th scope=\"row\" class=\"govuk-table__header\">Suitability</th>\n
+          \     <td class=\"govuk-table__cell\">\n          You are open to teaching
+          in a range of FE contexts and want \n          to build skills and confidence</td>\n
+          \     <td class=\"govuk-table__cell\">\n        You want to cover a range
+          of units to suit your chosen FE context \n        and gain practical teaching
+          experience</td>\n    </tr>\n    <tr>\n      <th scope=\"row\" class=\"govuk-table__header\">Course
+          structure</th>\n      <td class=\"govuk-table__cell\">\n        3 modules
+          and a 'micro teaching' experience (around 15 minutes)</td>\n      <td class=\"govuk-table__cell\">30
+          hours of teaching practice</td>\n    </tr>\n    <tr>\n      <th scope=\"row\"
+          class=\"govuk-table__header\">Level of qualification you will get</th>\n
+          \     <td class=\"govuk-table__cell\">Level 3. <a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
+          referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
+          class=\"govuk-link\">What levels mean</a>  </td>\n      <td class=\"govuk-table__cell\">Level
+          4. <a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
+          referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
+          class=\"govuk-link\">What levels mean</a> </td>\n    </tr>\n    <tr>\n      <th
+          scope=\"row\" class=\"govuk-table__header\">Area of education (Primary,
+          Secondary, FE)</th>\n      <td class=\"govuk-table__cell\">FE-specific</td>\n
+          \     <td class=\"govuk-table__cell\">FE-specific</td>\n    </tr>\n    <tr>\n
+          \     <th scope=\"row\" class=\"govuk-table__header\">Teaching status</th>\n
+          \     <td class=\"govuk-table__cell\">No official teaching status</td>\n
+          \     <td class=\"govuk-table__cell\">No official teaching status</td>\n
+          \   </tr>\n    <tr>\n      <th scope=\"row\" class=\"govuk-table__header\">Cost
+          (varies by provider)</th>\n      <td class=\"govuk-table__cell\">Up to £500</td>\n
+          \     <td class=\"govuk-table__cell\">Up to £1000</td>\n    </tr>\n    <tr>\n
+          \     <th scope=\"row\" class=\"govuk-table__header\">Length of course</th>\n
+          \     <td class=\"govuk-table__cell\">From 3 days to 12 weeks part time</td>\n
+          \     <td class=\"govuk-table__cell\">Up to 6 months, full time or part
+          time</td>\n    </tr>\n    <tr>\n      <th scope=\"row\" class=\"govuk-table__header\">Entry
+          requirements</th>\n      <td class=\"govuk-table__cell\">No entry requirements</td>\n
+          \     <td class=\"govuk-table__cell\">Requires an assessment of your English,
+          maths and ICT skills</td>\n    </tr>\n  </tbody>\n</table>"
         :display_order: true
         :show_title: true
       :call_to_actions:
@@ -132,17 +232,17 @@
   - :id: k2NflABnJCxRk260SUr7l
     :_meta:
       :content_type_id: answer
-      :updated_at: '2021-10-28T09:03:22+00:00'
+      :updated_at: '2021-11-30T08:27:32+00:00'
       :created_at: '2021-06-08T12:20:55+00:00'
       :id: k2NflABnJCxRk260SUr7l
     :answer: GCSE, O Level, Scottish Ordinary, BTEC Level 1-2
     :link:
-      :id: 54jfXjXAKbqhGgkmhkC4rr
+      :id: 5vYaeNPGQd7puczXTAggQ3
       :_meta:
         :content_type_id: page
-        :updated_at: '2021-10-28T09:02:58+00:00'
-        :created_at: '2021-08-06T10:57:46+00:00'
-        :id: 54jfXjXAKbqhGgkmhkC4rr
+        :updated_at: '2021-12-08T15:07:34+00:00'
+        :created_at: '2021-11-30T08:26:51+00:00'
+        :id: 5vYaeNPGQd7puczXTAggQ3
       :title: Diploma in Education and Training - GCSE
       :nav_title: Diploma in Education and Training - GCSE
       :heading: 1 result…
@@ -151,51 +251,53 @@
       - :id: GUGtg9Vxo8cZQblsYPoGc
         :_meta:
           :content_type_id: advice
-          :updated_at: '2021-11-11T09:55:03+00:00'
+          :updated_at: '2021-12-10T10:35:31+00:00'
           :created_at: '2021-08-06T10:52:00+00:00'
           :id: GUGtg9Vxo8cZQblsYPoGc
         :title: Diploma in Education and Training
-        :advice_body: |-
-          This Level 5 qualification lets you teach most trades, skills and subjects in further education (FE).
-
-          [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels "Explanation of the different educational attainment levels")
-
-          If you're training on the job, the FE provider may ask you to study this course as part of an apprenticeship. This lets the provider fund your teacher training with a government grant.
-
-          ### This qualification is good if you want to:
-
-          - train part time or on the job
-          - teach without a degree in your subject
-          - get a full teaching qualification but keep costs to a minimum
-          - [qualify for a bursary](https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2020-to-2021-academic-year "UK bursary information 2020-21")
-
-          ### This might not be the right qualification if you want to:
-          - teach in secondary schools
-          - teach in sixth forms in secondary schools
-          - take a basic course to see if FE is really for you
-
-          ### Integrated Specialist Diploma
-
-          You can also choose to specialise in one of 3 Specialist Pathway areas of teaching:
-
-          - special educational needs
-          - English literacy
-          - English for speakers of other languages (ESOL)
-          - mathematics
-
-          To teach English or mathematics you need at least a level 3 qualification in the subject.
-
-          [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels "Explanation of the different educational attainment levels")
-
-          |               |                    |
-          |---------------|--------------------|
-          | __Course structure__       | 100 hours of teaching practice, including 50 in your chosen area if you are on a Specialist Pathway |
-          | __Level of qualification you will get__ | Level 5. [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels "Explanation of the different educational attainment levels") |
-          | __Area of education__ (Primary, Secondary, FE) | FE only
-          | __Teaching status__  | Full FE teaching qualification.     |
-          | __Cost__ (varies by provider) | up to £6,000     |
-          | __Course length__ | 1 to 2 years, full time or part time      |
-          | __Entry requirements__ | An assessment of your English, mathematics and ICT skills. If you are on a specialist pathway for mathematics or English, you'll need at least a level 3 qualification in the subject. [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels "Explanation of the different educational attainment levels") |
+        :advice_body: "This Level 5 qualification lets you teach most trades, skills
+          and subjects in further education (FE).\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+          \"Explanation of the different educational attainment levels\")\n\n### This
+          qualification is good if you want to:\n\n- train part time or on the job\n-
+          teach without a degree in your subject\n- get a full teaching qualification
+          but keep costs to a minimum\n\n### This might not be the right qualification
+          if you want to:\n- teach in secondary schools\n- teach in sixth forms in
+          secondary schools\n- take a basic course to see if FE is really for you\n\n###
+          Integrated Specialist Diploma\n\nYou can also choose to specialise in one
+          of 3 Specialist Pathway areas of teaching:\n\n- special educational needs\n-
+          English literacy\n- English for speakers of other languages (ESOL)\n- mathematics\n\nTo
+          teach English or mathematics you need at least a level 3 qualification in
+          the subject.\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+          \"Explanation of the different educational attainment levels\")\n\n<table
+          class=\"govuk-table\">\n  <caption class=\"govuk-table__caption govuk-table__caption--m\"
+          aria-label=\"About this course - Diploma in Education and Training\">About
+          this  course</caption>\n    <thead class=\"govuk-table__head\">\n      <tr
+          class=\"govuk-table__row\">\n      </tr>\n    </thead>\n    <tbody class=\"govuk-table__body\">
+          \     \n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\"></th>\n
+          \       <th class=\"govuk-table__header\"></th>\n    </tr>\n    <tbody class=\"govuk-table__body\">
+          \     \n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Course
+          structure</th>\n        <td class=\"govuk-table__cell\">\n            100
+          hours of teaching practice, including 50 in your chosen area if you are
+          on a Specialist Pathway</td>\n    </tr>\n    <tr>\n        <th scope=\"row\"
+          class=\"govuk-table__header\">Level of qualification you will get</th>\n
+          \       <td class=\"govuk-table__cell\">\n            Level 5. <a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
+          referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
+          class=\"govuk-link\">What levels mean</a>  </td>\n    </tr>\n    <tr>\n
+          \       <th scope=\"row\" class=\"govuk-table__header\">Area of education
+          (Primary, Secondary, FE)</th>\n        <td class=\"govuk-table__cell\">FE
+          only</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Teaching
+          status</th>\n        <td class=\"govuk-table__cell\">Full FE teaching qualification.</td>\n
+          \   </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Cost
+          (varies by provider)</th>\n        <td class=\"govuk-table__cell\">up to
+          £6,000</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Course
+          length</th>\n        <td class=\"govuk-table__cell\">1 to 2 years, full
+          time or part time</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Entry
+          requirements</th>\n        <td class=\"govuk-table__cell\">An assessment
+          of your English, mathematics and ICT skills. If you are on a specialist
+          pathway for mathematics or English, you'll need at least a level 3 qualification
+          in the subject.<a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
+          referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
+          class=\"govuk-link\">What levels mean</a> </td>\n    </tr>\n    </tbody>\n</table>"
         :display_order: true
         :apply_background_color: false
         :show_title: true
@@ -220,7 +322,7 @@
       :id: 4krHeEI65jrLOhPc3duVf3
       :_meta:
         :content_type_id: page
-        :updated_at: '2021-10-28T09:03:21+00:00'
+        :updated_at: '2021-11-29T13:15:02+00:00'
         :created_at: '2021-06-08T12:34:53+00:00'
         :id: 4krHeEI65jrLOhPc3duVf3
       :title: Diploma in Education and Training - A Levels
@@ -231,51 +333,53 @@
       - :id: GUGtg9Vxo8cZQblsYPoGc
         :_meta:
           :content_type_id: advice
-          :updated_at: '2021-11-11T09:55:03+00:00'
+          :updated_at: '2021-12-10T10:35:31+00:00'
           :created_at: '2021-08-06T10:52:00+00:00'
           :id: GUGtg9Vxo8cZQblsYPoGc
         :title: Diploma in Education and Training
-        :advice_body: |-
-          This Level 5 qualification lets you teach most trades, skills and subjects in further education (FE).
-
-          [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels "Explanation of the different educational attainment levels")
-
-          If you're training on the job, the FE provider may ask you to study this course as part of an apprenticeship. This lets the provider fund your teacher training with a government grant.
-
-          ### This qualification is good if you want to:
-
-          - train part time or on the job
-          - teach without a degree in your subject
-          - get a full teaching qualification but keep costs to a minimum
-          - [qualify for a bursary](https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2020-to-2021-academic-year "UK bursary information 2020-21")
-
-          ### This might not be the right qualification if you want to:
-          - teach in secondary schools
-          - teach in sixth forms in secondary schools
-          - take a basic course to see if FE is really for you
-
-          ### Integrated Specialist Diploma
-
-          You can also choose to specialise in one of 3 Specialist Pathway areas of teaching:
-
-          - special educational needs
-          - English literacy
-          - English for speakers of other languages (ESOL)
-          - mathematics
-
-          To teach English or mathematics you need at least a level 3 qualification in the subject.
-
-          [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels "Explanation of the different educational attainment levels")
-
-          |               |                    |
-          |---------------|--------------------|
-          | __Course structure__       | 100 hours of teaching practice, including 50 in your chosen area if you are on a Specialist Pathway |
-          | __Level of qualification you will get__ | Level 5. [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels "Explanation of the different educational attainment levels") |
-          | __Area of education__ (Primary, Secondary, FE) | FE only
-          | __Teaching status__  | Full FE teaching qualification.     |
-          | __Cost__ (varies by provider) | up to £6,000     |
-          | __Course length__ | 1 to 2 years, full time or part time      |
-          | __Entry requirements__ | An assessment of your English, mathematics and ICT skills. If you are on a specialist pathway for mathematics or English, you'll need at least a level 3 qualification in the subject. [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels "Explanation of the different educational attainment levels") |
+        :advice_body: "This Level 5 qualification lets you teach most trades, skills
+          and subjects in further education (FE).\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+          \"Explanation of the different educational attainment levels\")\n\n### This
+          qualification is good if you want to:\n\n- train part time or on the job\n-
+          teach without a degree in your subject\n- get a full teaching qualification
+          but keep costs to a minimum\n\n### This might not be the right qualification
+          if you want to:\n- teach in secondary schools\n- teach in sixth forms in
+          secondary schools\n- take a basic course to see if FE is really for you\n\n###
+          Integrated Specialist Diploma\n\nYou can also choose to specialise in one
+          of 3 Specialist Pathway areas of teaching:\n\n- special educational needs\n-
+          English literacy\n- English for speakers of other languages (ESOL)\n- mathematics\n\nTo
+          teach English or mathematics you need at least a level 3 qualification in
+          the subject.\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+          \"Explanation of the different educational attainment levels\")\n\n<table
+          class=\"govuk-table\">\n  <caption class=\"govuk-table__caption govuk-table__caption--m\"
+          aria-label=\"About this course - Diploma in Education and Training\">About
+          this  course</caption>\n    <thead class=\"govuk-table__head\">\n      <tr
+          class=\"govuk-table__row\">\n      </tr>\n    </thead>\n    <tbody class=\"govuk-table__body\">
+          \     \n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\"></th>\n
+          \       <th class=\"govuk-table__header\"></th>\n    </tr>\n    <tbody class=\"govuk-table__body\">
+          \     \n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Course
+          structure</th>\n        <td class=\"govuk-table__cell\">\n            100
+          hours of teaching practice, including 50 in your chosen area if you are
+          on a Specialist Pathway</td>\n    </tr>\n    <tr>\n        <th scope=\"row\"
+          class=\"govuk-table__header\">Level of qualification you will get</th>\n
+          \       <td class=\"govuk-table__cell\">\n            Level 5. <a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
+          referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
+          class=\"govuk-link\">What levels mean</a>  </td>\n    </tr>\n    <tr>\n
+          \       <th scope=\"row\" class=\"govuk-table__header\">Area of education
+          (Primary, Secondary, FE)</th>\n        <td class=\"govuk-table__cell\">FE
+          only</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Teaching
+          status</th>\n        <td class=\"govuk-table__cell\">Full FE teaching qualification.</td>\n
+          \   </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Cost
+          (varies by provider)</th>\n        <td class=\"govuk-table__cell\">up to
+          £6,000</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Course
+          length</th>\n        <td class=\"govuk-table__cell\">1 to 2 years, full
+          time or part time</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Entry
+          requirements</th>\n        <td class=\"govuk-table__cell\">An assessment
+          of your English, mathematics and ICT skills. If you are on a specialist
+          pathway for mathematics or English, you'll need at least a level 3 qualification
+          in the subject.<a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
+          referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
+          class=\"govuk-link\">What levels mean</a> </td>\n    </tr>\n    </tbody>\n</table>"
         :display_order: true
         :apply_background_color: false
         :show_title: true
@@ -300,7 +404,7 @@
       :id: 4K8wsTxlu69vLguquRYecb
       :_meta:
         :content_type_id: page
-        :updated_at: '2021-10-28T09:03:20+00:00'
+        :updated_at: '2021-12-08T15:06:58+00:00'
         :created_at: '2021-07-07T15:40:23+00:00'
         :id: 4K8wsTxlu69vLguquRYecb
       :title: Results degree or above
@@ -311,90 +415,100 @@
       - :id: GUGtg9Vxo8cZQblsYPoGc
         :_meta:
           :content_type_id: advice
-          :updated_at: '2021-11-11T09:55:03+00:00'
+          :updated_at: '2021-12-10T10:35:31+00:00'
           :created_at: '2021-08-06T10:52:00+00:00'
           :id: GUGtg9Vxo8cZQblsYPoGc
         :title: Diploma in Education and Training
-        :advice_body: |-
-          This Level 5 qualification lets you teach most trades, skills and subjects in further education (FE).
-
-          [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels "Explanation of the different educational attainment levels")
-
-          If you're training on the job, the FE provider may ask you to study this course as part of an apprenticeship. This lets the provider fund your teacher training with a government grant.
-
-          ### This qualification is good if you want to:
-
-          - train part time or on the job
-          - teach without a degree in your subject
-          - get a full teaching qualification but keep costs to a minimum
-          - [qualify for a bursary](https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2020-to-2021-academic-year "UK bursary information 2020-21")
-
-          ### This might not be the right qualification if you want to:
-          - teach in secondary schools
-          - teach in sixth forms in secondary schools
-          - take a basic course to see if FE is really for you
-
-          ### Integrated Specialist Diploma
-
-          You can also choose to specialise in one of 3 Specialist Pathway areas of teaching:
-
-          - special educational needs
-          - English literacy
-          - English for speakers of other languages (ESOL)
-          - mathematics
-
-          To teach English or mathematics you need at least a level 3 qualification in the subject.
-
-          [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels "Explanation of the different educational attainment levels")
-
-          |               |                    |
-          |---------------|--------------------|
-          | __Course structure__       | 100 hours of teaching practice, including 50 in your chosen area if you are on a Specialist Pathway |
-          | __Level of qualification you will get__ | Level 5. [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels "Explanation of the different educational attainment levels") |
-          | __Area of education__ (Primary, Secondary, FE) | FE only
-          | __Teaching status__  | Full FE teaching qualification.     |
-          | __Cost__ (varies by provider) | up to £6,000     |
-          | __Course length__ | 1 to 2 years, full time or part time      |
-          | __Entry requirements__ | An assessment of your English, mathematics and ICT skills. If you are on a specialist pathway for mathematics or English, you'll need at least a level 3 qualification in the subject. [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels "Explanation of the different educational attainment levels") |
+        :advice_body: "This Level 5 qualification lets you teach most trades, skills
+          and subjects in further education (FE).\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+          \"Explanation of the different educational attainment levels\")\n\n### This
+          qualification is good if you want to:\n\n- train part time or on the job\n-
+          teach without a degree in your subject\n- get a full teaching qualification
+          but keep costs to a minimum\n\n### This might not be the right qualification
+          if you want to:\n- teach in secondary schools\n- teach in sixth forms in
+          secondary schools\n- take a basic course to see if FE is really for you\n\n###
+          Integrated Specialist Diploma\n\nYou can also choose to specialise in one
+          of 3 Specialist Pathway areas of teaching:\n\n- special educational needs\n-
+          English literacy\n- English for speakers of other languages (ESOL)\n- mathematics\n\nTo
+          teach English or mathematics you need at least a level 3 qualification in
+          the subject.\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+          \"Explanation of the different educational attainment levels\")\n\n<table
+          class=\"govuk-table\">\n  <caption class=\"govuk-table__caption govuk-table__caption--m\"
+          aria-label=\"About this course - Diploma in Education and Training\">About
+          this  course</caption>\n    <thead class=\"govuk-table__head\">\n      <tr
+          class=\"govuk-table__row\">\n      </tr>\n    </thead>\n    <tbody class=\"govuk-table__body\">
+          \     \n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\"></th>\n
+          \       <th class=\"govuk-table__header\"></th>\n    </tr>\n    <tbody class=\"govuk-table__body\">
+          \     \n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Course
+          structure</th>\n        <td class=\"govuk-table__cell\">\n            100
+          hours of teaching practice, including 50 in your chosen area if you are
+          on a Specialist Pathway</td>\n    </tr>\n    <tr>\n        <th scope=\"row\"
+          class=\"govuk-table__header\">Level of qualification you will get</th>\n
+          \       <td class=\"govuk-table__cell\">\n            Level 5. <a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
+          referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
+          class=\"govuk-link\">What levels mean</a>  </td>\n    </tr>\n    <tr>\n
+          \       <th scope=\"row\" class=\"govuk-table__header\">Area of education
+          (Primary, Secondary, FE)</th>\n        <td class=\"govuk-table__cell\">FE
+          only</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Teaching
+          status</th>\n        <td class=\"govuk-table__cell\">Full FE teaching qualification.</td>\n
+          \   </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Cost
+          (varies by provider)</th>\n        <td class=\"govuk-table__cell\">up to
+          £6,000</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Course
+          length</th>\n        <td class=\"govuk-table__cell\">1 to 2 years, full
+          time or part time</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Entry
+          requirements</th>\n        <td class=\"govuk-table__cell\">An assessment
+          of your English, mathematics and ICT skills. If you are on a specialist
+          pathway for mathematics or English, you'll need at least a level 3 qualification
+          in the subject.<a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
+          referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
+          class=\"govuk-link\">What levels mean</a> </td>\n    </tr>\n    </tbody>\n</table>"
         :display_order: true
         :apply_background_color: false
         :show_title: true
       - :id: 5FbxLwEjMguAEiyxkmTuka
         :_meta:
           :content_type_id: advice
-          :updated_at: '2021-10-28T09:02:46+00:00'
+          :updated_at: '2021-12-08T16:16:13+00:00'
           :created_at: '2021-05-14T11:04:25+00:00'
           :id: 5FbxLwEjMguAEiyxkmTuka
         :title: PGCE/CertEd etc in post-compulsory education and training (PCET)
-        :advice_body: |-
-          This Level 7 course is equal to a Master's degree. It lets you teach most subjects in further education (FE) only.
-
-          [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels "Explanation of the different educational attainment levels")
-
-          You need at least a degree to access this course.
-
-          ### This qualification is good if you want to:
-          - train full or part time
-          - train in FE colleges
-          - [qualify for a bursary](https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2020-to-2021-academic-year "UK teacher training bursaries 2021")
-          - get a full teaching qualification
-
-          ### This might not be the right qualification if you want to:
-          - teach or train in secondary schools or their sixth forms (visit [Get in to Teaching](https://getintoteaching.education.gov.uk "Get into Teaching website") if you want to do that)
-          - train on the job
-          - take a basic course to see if FE is really for you
-
-          |     |         |
-          | ---------- | ---------- |
-          | __Course structure__ | 100 hours teaching     |
-          | __Level of qualification you will get__ | Level 7 (equivalent to Master’s degree). [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels)|
-          | __Area of education__ (Primary, Secondary, FE) | FE only |
-          | __Teaching status__ | Full FE teaching qualification.  |
-          | __Cost__ (varies by provider)| Up to £9,000 if self-funded (some providers offer a bursary or scholarship)|
-          | __Course length__ | 1 year full time |
-          | __Entry requirements__ | Degree or equivalent, and English and mathematics GCSEs grade 4 (C) or above |
-
-          [Find a post-graduate teaching course](https://www.find-postgraduate-teacher-training.service.gov.uk/ "Government post-graduate teaching courses finder")
+        :advice_body: "This Level 7 course is equal to a Master's degree. It lets
+          you teach most subjects in further education (FE) only.\n\n[What levels
+          mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+          \"Explanation of the different educational attainment levels\")\n\nYou need
+          at least a degree to access this course.\n\n### This qualification is good
+          if you want to:\n- train full or part time\n- train in FE colleges\n- get
+          a full teaching qualification\n\n### This might not be the right qualification
+          if you want to:\n- teach or train in secondary schools or their sixth forms
+          (visit [Get in to Teaching](https://getintoteaching.education.gov.uk \"Get
+          into Teaching website\") if you want to do that)\n- train on the job\n-
+          take a basic course to see if FE is really for you\n\n<table class=\"govuk-table\">\n
+          \   <caption class=\"govuk-table__caption govuk-table__caption--m\" aria-label=\"About
+          this course - PCET\">About this course</caption>\n    <thead class=\"govuk-table__head\">\n
+          \   <tr class=\"govuk-table__row\">\n    </tr>\n    </thead>\n    <tbody
+          class=\"govuk-table__body\">      \n    <tr>\n        <th scope=\"row\"
+          class=\"govuk-table__header\"></th>\n        <th class=\"govuk-table__header\"></th>\n
+          \   </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Course
+          structure</th>\n        <td class=\"govuk-table__cell\">\n            100
+          hours teaching</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Level
+          of qualification you will get</th>\n        <td class=\"govuk-table__cell\">\n
+          \           Level 7 (equivalent to Master’s degree). <a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
+          referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
+          class=\"govuk-link\">What levels mean</a>  </td>\n    </tr>\n    <tr>\n
+          \       <th scope=\"row\" class=\"govuk-table__header\">Area of education
+          (Primary, Secondary, FE)</th>\n        <td class=\"govuk-table__cell\">FE
+          only</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Teaching
+          status</th>\n        <td class=\"govuk-table__cell\">Full FE teaching qualification.</td>\n
+          \   </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Cost
+          (varies by provider)</th>\n        <td class=\"govuk-table__cell\">Up to
+          £9,000 if self-funded (some providers offer a bursary or scholarship)</td>\n
+          \   </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Course
+          length</th>\n        <td class=\"govuk-table__cell\">1 year full time</td>\n
+          \   </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Entry
+          requirements</th>\n        <td class=\"govuk-table__cell\">Degree or equivalent,
+          and English and mathematics GCSEs grade 4 (C) or above</td>\n    </tr>\n
+          \   </tbody>\n</table>\n\n[Find a post-graduate teaching course](https://www.find-postgraduate-teacher-training.service.gov.uk/
+          \"Government post-graduate teaching courses finder\")"
         :display_order: true
         :apply_background_color: false
         :show_title: true
@@ -412,31 +526,21 @@
 - :id: 5hTTiOCjK33slAKAiPFby
   :_meta:
     :content_type_id: advice
-    :updated_at: '2021-11-12T11:28:14+00:00'
+    :updated_at: '2021-12-08T16:18:19+00:00'
     :created_at: '2021-04-29T23:30:59+00:00'
     :id: 5hTTiOCjK33slAKAiPFby
   :title: Available funding
-  :advice_body: "## Funding is available\n\nBursaries are payments to help with living
-    expenses. You may be able to get a bursary for your training if you train to teach:\n\n-
-    mathematics, science, engineering or computing: £26,000\n- special educational
-    needs and disabilities (SEND): £15,000\n- English: £12,000\n\nThe amount is for
-    the duration of the course. \n\nFor example if you are training to teach mathematics
-    over 2 years, the £26,000 bursary amounts to £13,000 a year.\n\n### Conditions\n\nYou
-    must be accepted onto an FE initial teacher education programme such as:\n\n-
-    [PCET in Post-Compulsory Education and Training](/pgce-in-post-compulsory-education-and-training-pcet.html
-    \"PCET in Post-Compulsory Education and Training\")\n- [Diploma in Education and
-    Training](/diploma-in-education-and-training.html \"Diploma in Education and Training\")\n\nYou
-    need at least a Level 3 qualification or appropriate professional experience related
-    to your teaching subject.\n\n[Find out about the current teacher training bursaries
-    available](https://www.gov.uk/government/publications/fe-funding-initial-teacher-education-ite-2021-to-2022
-    \"UK Government teacher training funding\")"
+  :advice_body: "## Help with living expenses\n\nBursaries are payments to help with
+    living expenses. You may be able to get a bursary for your training if you train
+    to teach.\n\nApplications are closed for this year. \n\nInformation about the
+    next round of applications will be available in early 2022."
   :display_order: true
   :apply_background_color: false
   :show_title: false
 - :id: 1azWRZYSe5p6OxrVsOZsDj
   :_meta:
     :content_type_id: advice
-    :updated_at: '2021-10-28T08:57:13+00:00'
+    :updated_at: '2021-12-15T13:48:10+00:00'
     :created_at: '2021-10-28T08:57:13+00:00'
     :id: 1azWRZYSe5p6OxrVsOZsDj
   :title: Got a question about qualifications and funding?
@@ -445,7 +549,7 @@
 
     Got a question about qualifications and funding?
 
-    Email: <a href="mailto:Teach.FE@education.gov.uk" onclick="window.site.analytics.raiseExitPointEvent('emailAddress')">Teach.FE@education.gov.uk</a> and our advisors will reply to you within 5 working days.
+    Email: <a class="govuk-link" href="mailto:Teach.FE@education.gov.uk" onclick="window.site.analytics.raiseExitPointEvent('emailAddress')">Teach.FE@education.gov.uk</a> and our advisors will reply to you within 5 working days.
 
     ---
   :display_order: false
