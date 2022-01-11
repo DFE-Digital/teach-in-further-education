@@ -234,9 +234,6 @@ namespace TeachFe.E2e_test
             Assert.AreEqual(true, privacyPolicy.MainContentDisplayed());
             footer.ClickCookiesLink();
             Assert.IsTrue(driver.Url.EndsWith("/cookies.html"));
-            footer.ClickFeedbackLink();
-            Assert.IsTrue(driver.Url.Equals("https://docs.google.com/forms/d/e/1FAIpQLSdi344O4UZ-DrLnCzC3Ew-1LDIYqn2F4DulAidQ4LHhMsKRZw/viewform"));
-            driver.Navigate().Back();
             footer.ClickCopyrightLink();
             Assert.IsTrue(driver.Url.Equals("https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"));
             driver.Navigate().Back();
