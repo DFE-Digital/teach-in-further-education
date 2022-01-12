@@ -10,7 +10,6 @@ jobs:
     name: Build application
     runs-on: ubuntu-latest
     environment: Production
-    needs: tests
     steps:
       - uses: actions/checkout@v2
 
