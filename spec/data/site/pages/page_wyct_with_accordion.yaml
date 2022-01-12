@@ -1,0 +1,214 @@
+---
+:id: 6Fraj3twk8xSHrc1kyKzVr
+:_meta:
+  :content_type_id: page
+  :updated_at: '2021-12-08T15:16:35+00:00'
+  :created_at: '2021-12-01T11:33:28+00:00'
+  :id: 6Fraj3twk8xSHrc1kyKzVr
+:title: What you could teach
+:nav_title: What you could teach
+:heading: What you could teach
+:slug: wyct-accordion
+:blocks:
+- :id: 3P8EQuVSSctYjfcJHwZ6H1
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-12-01T11:15:18+00:00'
+    :created_at: '2021-12-01T11:15:18+00:00'
+    :id: 3P8EQuVSSctYjfcJHwZ6H1
+  :title: what you could teach intro
+  :advice_body: |-
+    FE colleges teach a huge range of subjects, from brick laying to beauty therapy.
+
+    Often the subjects taught reflect the needs of the local economy.
+
+    The courses taught include:
+
+    - GCSEs
+    - T Levels (a new qualification, considered a vocational alternative to an A Level)
+    - BTECs
+    - Apprenticeships
+  :display_order: true
+  :apply_background_color: false
+  :show_title: false
+- :id: 7xDb0h6J2h6c11GhWHR0J
+  :_meta:
+    :content_type_id: userJourney
+    :updated_at: '2021-12-01T11:27:52+00:00'
+    :created_at: '2021-12-01T11:27:52+00:00'
+    :id: 7xDb0h6J2h6c11GhWHR0J
+  :title: What you could teach accordion
+  :steps:
+  - :id: 2dSAy6Mk1OlBMIiVDcPJ0u
+    :_meta:
+      :content_type_id: advice
+      :updated_at: '2021-12-15T11:07:55+00:00'
+      :created_at: '2021-05-14T09:25:51+00:00'
+      :id: 2dSAy6Mk1OlBMIiVDcPJ0u
+    :title: Skills, trades and vocational subjects
+    :advice_body: "### Real experience is valued\n\nFurther education (FE) teaching
+      is suitable for those with industry experience. FE providers value industry
+      experience that you can pass on. The minimum experience requirements vary by
+      FE provider.\n\n### Working in FE without a teaching qualification\n\nThe qualifications
+      needed for specific teaching roles in FE are set by the colleges and training
+      providers.\n\nYou might be able to start work in FE without a teaching qualification.\n\nIf
+      you are training as part of a job in a college or training provider, they may
+      specify what course you need to do. This information may be on the job advert
+      on their website.\n\n#### Other qualifications needed\n\nIdeally you'll have
+      a level 3 qualification in your area of expertise.\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+      \"Explanation of the different educational attainment levels\")\n\nIf you can
+      show significant industry experience, you still may be able to start teaching
+      in FE.\n\n### Subject areas\nThere are too many subject areas to list them all.
+      \n\nHere's a sample list of some of the sectors covered by FE teaching:\n\n-
+      agriculture, environment and animal care\n- business, administration and office
+      management\n- catering and hospitality\n- childcare and education\n- construction\n-
+      creative and design\n- digital and IT\n- emergency and armed services\n- engineering
+      and manufacturing\n- hair and beauty\n- health and life sciences\n- legal, finance
+      and accounting\n- sales, marketing and procurement\n- social care\n- transport
+      and logistics\n"
+    :display_order: true
+    :apply_background_color: false
+    :show_title: true
+  - :id: e0XCvhr4XVEtz0N0hZMCf
+    :_meta:
+      :content_type_id: advice
+      :updated_at: '2021-12-15T11:11:05+00:00'
+      :created_at: '2021-05-14T09:28:11+00:00'
+      :id: e0XCvhr4XVEtz0N0hZMCf
+    :title: Academic subjects
+    :advice_body: |-
+      You need at least an A level or equivalent qualification in your subject to teach it in in FE.
+
+      Some FE providers may insist that you have a degree in the subject you want to teach.
+
+      ### Subject areas
+      You could teach in subjects like:
+
+      - English
+      - mathematics
+      - science
+      - social sciences
+      - humanities
+      - modern foreign languages
+      - art and design
+      - performing arts
+    :display_order: false
+    :apply_background_color: false
+    :show_title: true
+  :is_accordion: true
+- :id: 1inRQaqvmQdjVteK4scloc
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-12-01T11:32:11+00:00'
+    :created_at: '2021-12-01T11:32:11+00:00'
+    :id: 1inRQaqvmQdjVteK4scloc
+  :title: Training to teach your subject
+  :advice_body: |-
+    There are different ways to do your further education (FE) teacher training. You might be able to study part-time or even take a job with a college or training provider that lets you work while you train.
+
+    - [Train on the job](/train-on-the-job.html "Train on the job")
+    - [Train in your own time](/train-in-your-own-time.html "Train in your own time")
+  :display_order: true
+  :apply_background_color: false
+  :show_title: true
+- :id: 2zZ0KQaTQKpFKh47znfZTk
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2021-12-15T13:45:40+00:00'
+    :created_at: '2021-09-21T10:40:22+00:00'
+    :id: 2zZ0KQaTQKpFKh47znfZTk
+  :title: Got a question about what you could teach?
+  :advice_body: "---\n\nGot a question about what you could teach? \n\nEmail: <a class=\"govuk-link\"
+    href=\"mailto:Teach.FE@education.gov.uk\" onclick=\"window.site.analytics.raiseExitPointEvent('emailAddress')\">Teach.FE@education.gov.uk</a>
+    and our advisors will reply to you within 5 working days.\n\n---"
+  :display_order: true
+  :apply_background_color: false
+  :show_title: false
+- :id: 7ABuhsAYVosp5LK1WRKIHT
+  :_meta:
+    :content_type_id: story
+    :updated_at: '2021-12-15T10:42:57+00:00'
+    :created_at: '2021-07-01T20:24:41+00:00'
+    :id: 7ABuhsAYVosp5LK1WRKIHT
+  :title: John's Story
+  :story_body: |-
+    “I was looking for a change of career after 35 years as a plumber. I'm not getting any younger and I also wanted a break from chasing new business and payments.”
+
+    __John, Plumbing FE teacher__
+  :media:
+    :title: Plumbing
+    :description: Adult male engineering student using a tool to fix a piece of mechanical
+      equipment
+    :url: "//images.ctfassets.net/n4docnlbw89d/n5A2cZFGtaDc4pRp50usP/a9de9589fdc5e020f42c26de51814a92/John-sStory.png"
+    :_meta:
+      :updated_at: '2021-08-16T10:35:55+00:00'
+      :created_at: '2021-06-30T14:56:55+00:00'
+      :id: n5A2cZFGtaDc4pRp50usP
+  :story_link_text: Read about John's journey into FE teaching
+  :story_page:
+    :id: 1tmuPONLoli39t0exdXHPD
+    :_meta:
+      :content_type_id: page
+      :updated_at: '2021-10-28T09:03:21+00:00'
+      :created_at: '2021-07-01T09:37:08+00:00'
+      :id: 1tmuPONLoli39t0exdXHPD
+    :title: John's story
+    :nav_title: John's story
+    :heading: John's story
+    :slug: johns-story
+    :blocks:
+    - :id: 1sFTEZnVJqppsa7j1r4Wbk
+      :_meta:
+        :content_type_id: advice
+        :updated_at: '2021-10-28T09:02:50+00:00'
+        :created_at: '2021-07-01T09:36:36+00:00'
+        :id: 1sFTEZnVJqppsa7j1r4Wbk
+      :title: John story content
+      :advice_body: |-
+        John, Lecturer in Plumbing
+
+        ## How did you get into further education teaching?
+
+        I was looking for a change of career after 35 years as a plumber. I'm not getting any younger and I also wanted a break from chasing new business and payments.
+
+        A friend of mine suggested that I teach plumbing at the college she works at, and that's what got me thinking. I did take a month or two off though to do up the house.
+
+        The college were keen to take me on as I already had a professional qualification. I'm doing my teaching qualification in my spare time so that I'll be a qualified teacher by the end of the year.
+      :media:
+        :title: Plumbing
+        :description: Adult male engineering student using a tool to fix a piece of
+          mechanical equipment
+        :url: "//images.ctfassets.net/n4docnlbw89d/n5A2cZFGtaDc4pRp50usP/a9de9589fdc5e020f42c26de51814a92/John-sStory.png"
+        :_meta:
+          :updated_at: '2021-08-16T10:35:55+00:00'
+          :created_at: '2021-06-30T14:56:55+00:00'
+          :id: n5A2cZFGtaDc4pRp50usP
+      :display_order: false
+      :apply_background_color: false
+      :show_title: false
+    - :id: 6j3NihRXh3GfclpSw19HgI
+      :_meta:
+        :content_type_id: advice
+        :updated_at: '2021-10-28T09:02:56+00:00'
+        :created_at: '2021-07-14T15:22:43+00:00'
+        :id: 6j3NihRXh3GfclpSw19HgI
+      :title: John's Story
+      :advice_body: "## What does your day look like?\n\nMost of my teaching is done
+        in the workshop as mine's a very practical subject.\n\nSome of the work is
+        classroom based, like teaching the students how to price up a job and sort
+        out their tax.\n\nSome of the classes are in the evening, so my days are quite
+        flexible. \n\nApart from that I might be planning a lesson, assessing the
+        students' work, or helping a student who's having problems.\n\nThe college
+        takes the pastoral stuff very seriously, so we're all expected to help the
+        students with any problems they have - in or out of college.\n\nSome days
+        can be really busy though, and I do not often leave bang on time.\n\n## What
+        do you enjoy about working in further education?\n\nI still feel like I'm
+        in the plumbing trade, which is important to me as I've been a plumber since
+        I left school.\n\nI like the fact that I'm bringing new people into the trade.
+        Some of them didn't do so well with regular school, but I'm giving them the
+        chance to go out and earn a living.\n\nBecause I'm teaching now, some of my
+        old plumbing mates think I'm a bit of a guru!"
+      :display_order: false
+      :apply_background_color: false
+      :show_title: false
+  :display_order: true
