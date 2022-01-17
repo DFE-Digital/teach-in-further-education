@@ -1,7 +1,7 @@
 @import "../../node_modules/govuk-frontend/govuk/helpers/colour"
 
 
-$govuk-brand-colour: #FF9900
+$govuk-brand-colour: #D17300
 $govuk-text-colour: #262626
 $govuk-footer-text: #f3f2f1
 $govuk-footer-bg: #262626
@@ -39,16 +39,26 @@ $govuk-link-text: #1d70b8
         background-color: #FFDD00 !important
         border-bottom: 4px solid #000000
         
+
+.app-header
+    top: 0px
+    width: 100%
+    z-index: 999
+    position: fixed
+    background-colour: #ffffff
+
 .app-header-nav
   
   padding-top: 0px
   border-bottom: 1px solid #BBBDBF
+  background-color: #ffffff
 
   @media (max-width: 768px)
     border-bottom: none
 
 .govuk-header
   border-bottom: 0px
+  
 
 .govuk-header__navigation
   margin-right: auto
@@ -110,7 +120,7 @@ $govuk-link-text: #1d70b8
 
   .active
     color: #000000 !important
-    border-bottom: 4px solid #FFB000
+    border-bottom: 4px solid #26978E
 
     @media (max-width: 768px)
       border-bottom: none
@@ -219,8 +229,11 @@ $govuk-link-text: #1d70b8
 .govuk-cookie-banner
   width: 100%
   content: ""
-  display: block
   clear: both
+  display: block;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
 
 .govuk-header__menu-button
   padding-right: 20px
@@ -275,9 +288,10 @@ hr
   top: 0px
   width: 100%
   z-index: 999
-
+  background-color: #ffffff
 .app-body
   padding-top: 6px
+  margin-top: 230px
 
   @media (max-width: 768px)
     padding-top: 6px
@@ -415,6 +429,7 @@ hr
 
 .app-advice
   background-color: white
+  
 
   .app-advice-with-image-1
     display: flex
@@ -492,7 +507,7 @@ hr
       font-size: 48px
 
 .app-hero-adorner-top
-  background-color: #ffbb00
+  background-color: #546bff
   border-radius: 5px
 
   @media (max-width: 640px)
@@ -513,7 +528,7 @@ hr
 .app-hero-adorner-bottom
   width: 80px
   height: 80px
-  background-color: $govuk-brand-colour
+  background-color: #ff424f
   border-radius: 5px
 
   @media (max-width: 640px)
