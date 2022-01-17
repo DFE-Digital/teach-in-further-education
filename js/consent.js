@@ -18,24 +18,29 @@ export class Consent {
         const v = Cookies.get(Consent.cookieName)
         if(v !== null && v !== undefined) {
             document.getElementById(id).style.display = 'none'
+            // document.getElementById('footer').style.marginBottom = '0px'
             const granted = JSON.parse(v)
 
             if(granted.isGranted) {
                 document.getElementById(Consent.cookieAcceptanceBannerId).style.display = 'block'
+                // document.getElementById('footer').style.marginBottom = '140px'
                 this.enableCookies();
             } else {
                 document.getElementById(Consent.cookieRejectionBannerId).style.display = 'block'
+                // document.getElementById('footer').style.marginBottom = '140px'
                 this.removeCookies();
             }
 
             if (granted.confirmationHidden) {
                 document.getElementById(Consent.cookieAcceptanceBannerId).style.display = 'none'
+                // document.getElementById('footer').style.marginBottom = '0px'
                 document.getElementById(Consent.cookieRejectionBannerId).style.display = 'none'
             } else {
                 this.saveConsentPreferences('cookie-banner',{ isGranted: granted.isGranted, confirmationHidden: true });
             }
         } else {
             document.getElementById(id).style.display = 'block'
+            // document.getElementById("footer").style.marginBottom = '285px'
             document.getElementById(Consent.cookieAcceptanceBannerId).style.display = 'none'
             document.getElementById(Consent.cookieRejectionBannerId).style.display = 'none'
         }
