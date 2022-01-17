@@ -52,12 +52,10 @@
 <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
 </div>
+
 <%= partial "cookie_banner" %>
 <%= partial "cookie_acceptance" %>
 <%= partial "cookie_rejection" %>
-
-<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
-
   <%= partial "header", :locals => { :data => data } %>
 
 <div class="app-body govuk-width-container">
