@@ -48,9 +48,14 @@ namespace TeachFe.E2e_test.PageObjects
             get { return driver.FindElement(By.LinkText("change your cookie settings")); }
         }
 
-        public IWebElement HideThisMessageLink
+        public IWebElement AcceptedHideThisMessageLink
         {
-            get { return driver.FindElement(By.LinkText("Hide this message")); }
+            get { return driver.FindElement(By.Id("cookie-banner-accepted")).FindElement(By.LinkText("Hide this message")); }
+        }
+
+        public IWebElement RejectedHideThisMessageLink
+        {
+            get { return driver.FindElement(By.Id("cookie-banner-rejected")).FindElement(By.LinkText("Hide this message")); }
         }
 
         #endregion
@@ -93,9 +98,14 @@ namespace TeachFe.E2e_test.PageObjects
             ChangeCookieSettingsLink.Click();
         }
 
-        public void ClickHideThisMessageLink()
+        public void ClickAcceptedHideThisMessageLink()
         {
-            HideThisMessageLink.Click();
+            AcceptedHideThisMessageLink.Click();
+        }
+
+        public void ClickRejectedHideThisMessageLink()
+        {
+            RejectedHideThisMessageLink.Click();
         }
 
         #endregion
