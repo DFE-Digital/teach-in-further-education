@@ -7,7 +7,7 @@ describe 'Navigation', :type => :feature do
 
   it 'Has the correct page links' do
       within 'header' do
-      link = page.find_link("Home", match: :first)
+      link = page.find_link("Teach in further education", match: :first)
         within link do
           expect(link[:href]).to end_with '/'
       end
