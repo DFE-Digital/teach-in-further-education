@@ -18,7 +18,7 @@ export class Consent {
         const v = Cookies.get(Consent.cookieName)
         if(v !== null && v !== undefined) {
             document.getElementById(id).style.display = 'none'
-            // document.getElementById('footer').style.marginBottom = '0px'
+            document.getElementById('footer').style.marginBottom = '0px'
             const granted = JSON.parse(v)
 
             if(granted.isGranted) {
