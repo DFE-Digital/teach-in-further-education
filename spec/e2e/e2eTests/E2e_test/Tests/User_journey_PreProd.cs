@@ -41,7 +41,7 @@ namespace TeachFe.E2e_test
 
             #region cookies
 
-            navigation.NavigateToDev();
+            navigation.NavigateToPreProd();
             Assert.AreEqual(true, homepage.ContentHomepageDisplayed());
 
 
@@ -68,6 +68,7 @@ namespace TeachFe.E2e_test
             Assert.IsTrue(driver.Url.Equals("https://tools.google.com/dlpage/gaoptout"));
             driver.Navigate().Back();
             Assert.IsTrue(driver.Url.EndsWith("/cookies.html"));
+            driver.ExecuteScript("scroll(0,-500)");
             cookiesPage.ClickRejectCookiesRadio();
             cookiesPage.ClickSubmitButton();
             //redirects user back to the homepage
