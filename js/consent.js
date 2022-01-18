@@ -15,11 +15,14 @@ export class Consent {
     }
 
     //Change to switch case in code re-write ACP
+    //Could neaten the code up also by setting reject/accept/cookies banner as
+    //...display:none in css rather than relying on if statement.
     
     init(id) {
         const v = Cookies.get(Consent.cookieName);
         const cookieBannerHeight = document.getElementById('cookie-banner').offsetHeight;
         if(v !== null && v !== undefined) {
+            document.getElementById(id).style.display = 'none'
             document.getElementById(Consent.cookieAcceptanceBannerId).style.display = 'none'
             document.getElementById(Consent.cookieRejectionBannerId).style.display = 'none'
             const granted = JSON.parse(v)
