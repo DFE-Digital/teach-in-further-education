@@ -20,7 +20,6 @@ export class Consent {
     
     init(id) {
         const v = Cookies.get(Consent.cookieName);
-        const cookieBannerHeight = document.getElementById('cookie-banner').offsetHeight;
         if(v !== null && v !== undefined) {
             document.getElementById(id).style.display = 'none'
             document.getElementById(Consent.cookieAcceptanceBannerId).style.display = 'none'
@@ -43,6 +42,7 @@ export class Consent {
             }
         } else {
             document.getElementById(id).style.display = 'block'
+            const cookieBannerHeight = document.getElementById('cookie-banner').offsetHeight;
             document.getElementById("footer").style.marginBottom = cookieBannerHeight + 'px';
             document.getElementById(Consent.cookieAcceptanceBannerId).style.display = 'none'
             document.getElementById(Consent.cookieRejectionBannerId).style.display = 'none'
