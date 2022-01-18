@@ -73,7 +73,7 @@ namespace TeachFe.E2e_test
             cookiesPage.ClickSubmitButton();
             //redirects user back to the homepage
             Assert.AreEqual(true, homepage.ContentHomepageDisplayed());
-            //Assert.AreEqual(true, cookieBanner.CookieBannerRejectedDisplayed());
+            Assert.AreEqual(true, cookieBanner.CookieBannerRejectedDisplayed());
             cookieBanner.ClickRejectedHideThisMessageLink();
 
             #endregion
