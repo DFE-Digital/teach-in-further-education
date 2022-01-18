@@ -50,12 +50,12 @@ namespace TeachFe.E2e_test.PageObjects
 
         public IWebElement AcceptedHideThisMessageLink
         {
-            get { return driver.FindElement(By.Id("cookie-banner-accepted")).FindElement(By.LinkText("Hide this message")); }
+            get { return driver.FindElement(By.Id("cookie-banner-accepted")).FindElement(By.TagName("button")); }
         }
 
         public IWebElement RejectedHideThisMessageLink
         {
-            get { return driver.FindElement(By.Id("cookie-banner-rejected")).FindElement(By.LinkText("Hide this message")); }
+            get { return driver.FindElement(By.Id("cookie-banner-rejected")).FindElement(By.TagName("button")); }
         }
 
         #endregion
