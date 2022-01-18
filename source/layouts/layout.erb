@@ -53,9 +53,9 @@
 
 </div>
 
-<%= partial "cookie_banner" %>
 <%= partial "cookie_acceptance" %>
 <%= partial "cookie_rejection" %>
+<%= partial "cookie_banner" %>
   <%= partial "header", :locals => { :data => data } %>
 
 <div class="app-body govuk-width-container">
@@ -73,7 +73,6 @@
 
 
 <%= partial "footer", :locals => { :data => data } %>
-
 <script src="javascripts/all.js"></script>
 <script>
   window.site.initSite('cookie-banner', 'navigation');
