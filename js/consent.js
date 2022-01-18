@@ -20,23 +20,20 @@ export class Consent {
         const v = Cookies.get(Consent.cookieName);
         const cookieBannerHeight = document.getElementById('cookie-banner').offsetHeight;
         if(v !== null && v !== undefined) {
-            document.getElementById(id).style.display = 'none'
-            document.getElementById('footer').style.marginBottom = cookieBannerHeight + 'px';
+            document.getElementById(Consent.cookieAcceptanceBannerId).style.display = 'none'
+            document.getElementById(Consent.cookieRejectionBannerId).style.display = 'none'
             const granted = JSON.parse(v)
 
             if(granted.isGranted) {
                 document.getElementById(Consent.cookieAcceptanceBannerId).style.display = 'block'
-                document.getElementById('footer').style.marginBottom = cookieBannerHeight + 'px';
                 this.enableCookies();
             } else {
                 document.getElementById(Consent.cookieRejectionBannerId).style.display = 'block'
-                document.getElementById('footer').style.marginBottom = cookieBannerHeight + 'px';
                 this.removeCookies();
             }
 
             if (granted.confirmationHidden) {
                 document.getElementById(Consent.cookieAcceptanceBannerId).style.display = 'none'
-                document.getElementById('footer').style.marginBottom = cookieBannerHeight + 'px';
                 document.getElementById(Consent.cookieRejectionBannerId).style.display = 'none'
             } else {
                 this.saveConsentPreferences('cookie-banner',{ isGranted: granted.isGranted, confirmationHidden: true });
@@ -115,6 +112,8 @@ export class Consent {
 
     consentAccepted(id, showBannerOnNextPage = false) {
         document.getElementById(Consent.cookieAcceptanceBannerId).style.display = 'block'
+        const cookieBannerAcceptedHeight = document.getElementById('cookie-banner-accepted').offsetHeight;
+        document.getElementById('footer').style.marginBottom = cookieBannerAcceptedHeight + 'px';
         document.getElementById(Consent.cookieAcceptanceBannerId).focus()
         this.enableCookies();
         this.saveConsentPreferences(id,{ isGranted: true, confirmationHidden: !showBannerOnNextPage })
@@ -122,6 +121,8 @@ export class Consent {
 
     consentRejected(id, showBannerOnNextPage = false) {
         document.getElementById(Consent.cookieRejectionBannerId).style.display = 'block'
+        const cookieBannerRejectedHeight = document.getElementById('cookie-banner-rejected').offsetHeight;
+        document.getElementById('footer').style.marginBottom = cookieBannerRejectedHeight + 'px';
         document.getElementById(Consent.cookieRejectionBannerId).focus()
         this.removeCookies()
         this.saveConsentPreferences(id,{ isGranted: false, confirmationHidden: !showBannerOnNextPage })
@@ -130,5 +131,6 @@ export class Consent {
     hideCookieConfirmation(id) {
         document.getElementById(Consent.cookieAcceptanceBannerId).style.display = 'none'
         document.getElementById(Consent.cookieRejectionBannerId).style.display = 'none'
+        document.getElementById('footer').style.marginBottom = '0px'
     }
 }
