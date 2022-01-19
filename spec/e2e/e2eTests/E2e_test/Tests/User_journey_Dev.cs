@@ -83,6 +83,8 @@ namespace TeachFe.E2e_test
             #region homepage
 
             driver.Navigate().Refresh();
+            navigation.ClickHomeNavButton();
+            Assert.AreEqual(true, homepage.ContentHomepageDisplayed());
             homepage.ClickWhereToStartLink();
             Assert.IsTrue(driver.Url.EndsWith("/where-to-start-in-further-education.html"));
             navigation.ClickHomeNavButton();
