@@ -28,7 +28,6 @@ describe 'Accordion components -', :type => :feature do
     #find 1st accordion and assert content
     accordion1 = page.find_by_id("2dSAy6Mk1OlBMIiVDcPJ0u")
     within accordion1 do
-      expect(accordion1).to have_selector 'h2.govuk-heading-l', count: 1
       expect(accordion1).to have_selector 'h3.govuk-heading-m', count: 3
       expect(accordion1).to have_selector 'h4.govuk-heading-s', count: 1
       expect(accordion1).to have_selector '.govuk-body', count: 9
@@ -40,7 +39,6 @@ describe 'Accordion components -', :type => :feature do
     #find 2nd accordion and assert content
     accordion2 = page.find_by_id("e0XCvhr4XVEtz0N0hZMCf")
     within accordion2 do
-      expect(accordion2).to have_selector 'h2.govuk-heading-l', count: 1
       expect(accordion2).to have_selector 'h3.govuk-heading-m', count: 1
       expect(accordion2).to have_selector '.govuk-body', count: 3
       expect(accordion2).to have_selector '.govuk-list--bullet', count: 1

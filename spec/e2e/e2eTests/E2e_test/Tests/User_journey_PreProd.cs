@@ -36,12 +36,13 @@ namespace TeachFe.E2e_test
             Footer footer = new Footer(driver);
             AccessibilityAdvice accessibilityAdvice = new AccessibilityAdvice(driver);
             PrivacyPolicy privacyPolicy = new PrivacyPolicy(driver);
+            SignUpToNewsletter signUpToNewsletter = new SignUpToNewsletter(driver);
 
             #endregion
 
-            #region cookies
+            #region init
 
-            navigation.NavigateToDev();
+            navigation.NavigateToPreProd();
             Assert.AreEqual(true, homepage.ContentHomepageDisplayed());
 
 
@@ -59,7 +60,9 @@ namespace TeachFe.E2e_test
 
             cookieBanner.ClickAcceptCookiesButton();
             Assert.AreEqual(true, cookieBanner.CookieBannerAcceptedDisplayed());
-            cookieBanner.ClickChangeCookieSettingsLink();
+            cookieBanner.ClickAcceptedHideThisMessageLink();
+            //Go to cookies page via footer link
+            footer.ClickCookiesLink();
             Assert.IsTrue(driver.Url.EndsWith("/cookies.html"));
             //redirects user to the cookies page
             Assert.AreEqual(true, cookiesPage.MainContentDisplayed());
@@ -68,22 +71,28 @@ namespace TeachFe.E2e_test
             Assert.IsTrue(driver.Url.Equals("https://tools.google.com/dlpage/gaoptout"));
             driver.Navigate().Back();
             Assert.IsTrue(driver.Url.EndsWith("/cookies.html"));
+            driver.ExecuteScript("scroll(0,-500)");
             cookiesPage.ClickRejectCookiesRadio();
             cookiesPage.ClickSubmitButton();
             //redirects user back to the homepage
             Assert.AreEqual(true, homepage.ContentHomepageDisplayed());
-            Assert.AreEqual(true, cookieBanner.CookieBannerRejectedDisplayed());
-            cookieBanner.ClickHideThisMessageLink();
+            // Assert.AreEqual(true, cookieBanner.CookieBannerRejectedDisplayed())
 
             #endregion
 
             #region homepage
 
+            driver.Navigate().Refresh();
+            navigation.ClickHomeNavButton();
+            Assert.AreEqual(true, homepage.ContentHomepageDisplayed());
             homepage.ClickWhereToStartLink();
             Assert.IsTrue(driver.Url.EndsWith("/where-to-start-in-further-education.html"));
             navigation.ClickHomeNavButton();
             homepage.ClickWhereToStartLinkBottomPage();
             Assert.IsTrue(driver.Url.EndsWith("/where-to-start-in-further-education.html"));
+            driver.Navigate().Back();
+            signUpToNewsletter.ClickSignUpToNewsletterButton();
+            Assert.IsTrue(driver.Url.EndsWith("/sign-up-for-our-newsletter.html"));
             navigation.ClickWhereToStartInFeNavButton();
             Assert.IsTrue(driver.Url.EndsWith("/where-to-start-in-further-education.html"));
 
@@ -104,6 +113,9 @@ namespace TeachFe.E2e_test
             whereToStartInFePage.ClickWhatYouCouldTeachLink();
             Assert.IsTrue(driver.Url.EndsWith("/what-you-could-teach.html"));
             driver.Navigate().Back();
+            signUpToNewsletter.ClickSignUpToNewsletterButton();
+            Assert.IsTrue(driver.Url.EndsWith("/sign-up-for-our-newsletter.html"));
+            driver.Navigate().Back();
             navigation.ClickWhatYouCouldTeachNavButton();
             Assert.IsTrue(driver.Url.EndsWith("/what-you-could-teach.html"));
 
@@ -119,6 +131,9 @@ namespace TeachFe.E2e_test
             driver.Navigate().Back();
             whatYouCouldTeachPage.ClickTrainInYourOwnTimeLink();
             Assert.IsTrue(driver.Url.EndsWith("/train-in-your-own-time.html"));
+            driver.Navigate().Back();
+            signUpToNewsletter.ClickSignUpToNewsletterButton();
+            Assert.IsTrue(driver.Url.EndsWith("/sign-up-for-our-newsletter.html"));
             driver.Navigate().Back();
             whatYouCouldTeachPage.ClickTrainOnTheJobLink();
             Assert.IsTrue(driver.Url.EndsWith("/train-on-the-job.html"));
@@ -144,6 +159,9 @@ namespace TeachFe.E2e_test
             Assert.IsTrue(driver.Url.EndsWith("/find-an-fe-teaching-job.html"));
             driver.Navigate().Back();
             Assert.IsTrue(trainOnTheJobPage.EmailLink.Text.Equals("Teach.FE@education.gov.uk"));
+            signUpToNewsletter.ClickSignUpToNewsletterButton();
+            Assert.IsTrue(driver.Url.EndsWith("/sign-up-for-our-newsletter.html"));
+            driver.Navigate().Back();
             navigation.ClickTrainInYourOwnTimeNavButton();
             Assert.IsTrue(driver.Url.EndsWith("/train-in-your-own-time.html"));
 
@@ -188,6 +206,9 @@ namespace TeachFe.E2e_test
             resultsDegreePage.ClickBackButton();
             Assert.IsTrue(driver.Url.EndsWith("/train-in-your-own-time.html"));
             Assert.IsTrue(trainInYourOwnTimePage.EmailLink.Text.Equals("Teach.FE@education.gov.uk"));
+            signUpToNewsletter.ClickSignUpToNewsletterButton();
+            Assert.IsTrue(driver.Url.EndsWith("/sign-up-for-our-newsletter.html"));
+            driver.Navigate().Back();
             navigation.ClickFindAnFeTeachingJobNavButton();
             Assert.IsTrue(driver.Url.EndsWith("/find-an-fe-teaching-job.html"));
 
@@ -211,7 +232,9 @@ namespace TeachFe.E2e_test
             findAnFeTeachingJobPage.ClickCollegeJobsLink();
             Assert.IsTrue(driver.Url.Contains("college.jobs.ac.uk/"));
             driver.Navigate().Back();
-
+            signUpToNewsletter.ClickSignUpToNewsletterButton();
+            Assert.IsTrue(driver.Url.EndsWith("/sign-up-for-our-newsletter.html"));
+            driver.Navigate().Back();
             navigation.ClickHelpAndAdviceNavButton();
             Assert.IsTrue(driver.Url.EndsWith("/help-and-advice.html"));
 
@@ -221,6 +244,15 @@ namespace TeachFe.E2e_test
 
             Assert.AreEqual(true, helpAndAdvicePage.ContentHelpAndAdviceDisplayed());
             Assert.IsTrue(helpAndAdvicePage.EmailLink.Text.Equals("Teach.FE@education.gov.uk"));
+
+            #endregion
+
+            #region sign up to our newsletter
+
+            signUpToNewsletter.ClickSignUpToNewsletterButton();
+            Assert.IsTrue(driver.Url.EndsWith("/sign-up-for-our-newsletter.html"));
+            Assert.AreEqual(true, signUpToNewsletter.ContentSignUpToNewsletterDisplayed());
+            Assert.IsTrue(signUpToNewsletter.EmailAddressLink.Text.Equals("TeachFE.newsletter@education.gov.uk"));
 
             #endregion
 

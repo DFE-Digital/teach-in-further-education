@@ -2,11 +2,11 @@
 :id: 7fkpVgKNOUvTuZI7KBhdrE
 :_meta:
   :content_type_id: page
-  :updated_at: '2021-12-08T15:18:18+00:00'
+  :updated_at: '2022-01-17T13:58:57+00:00'
   :created_at: '2021-05-18T08:23:03+00:00'
   :id: 7fkpVgKNOUvTuZI7KBhdrE
-:title: Find an FE teaching job
-:nav_title: Find an FE teaching job
+:title: Find a job
+:nav_title: Find a job
 :preamble: What to consider when looking for a job in further education (FE) teaching,
   and where to look for one.
 :heading: Find a further education teaching job
@@ -36,6 +36,13 @@
   :display_order: false
   :apply_background_color: false
   :show_title: true
+- :id: 1gQalZ47kbH1yzm1cpUzW5
+  :_meta:
+    :content_type_id: lineBreak
+    :updated_at: '2022-01-13T11:00:55+00:00'
+    :created_at: '2022-01-13T11:00:55+00:00'
+    :id: 1gQalZ47kbH1yzm1cpUzW5
+  :title: lineBreak
 - :id: 1qKKajIJcr8oAqzNVi64ai
   :_meta:
     :content_type_id: advice
@@ -56,16 +63,23 @@
   :display_order: true
   :apply_background_color: false
   :show_title: true
+- :id: 1gQalZ47kbH1yzm1cpUzW5
+  :_meta:
+    :content_type_id: lineBreak
+    :updated_at: '2022-01-13T11:00:55+00:00'
+    :created_at: '2022-01-13T11:00:55+00:00'
+    :id: 1gQalZ47kbH1yzm1cpUzW5
+  :title: lineBreak
 - :id: 3Vcwz7UfYGsdI7gkI4iWgh
   :_meta:
     :content_type_id: advice
-    :updated_at: '2021-12-02T15:20:49+00:00'
+    :updated_at: '2022-01-18T16:43:33+00:00'
     :created_at: '2021-07-13T08:58:52+00:00'
     :id: 3Vcwz7UfYGsdI7gkI4iWgh
   :title: Where to find a job
   :advice_body: "The first place to look for a job is on your local college or training
     provider’s website. \n\nYou can also find jobs by:\n\n- searching general job
-    sites such as Indeed, TotalJobs and Reed\n- looking on Linkedin\n- using social
+    sites such as Indeed, TotalJobs and Reed\n- looking on LinkedIn\n- using social
     media\n\n### Colleges\n\n[Find your local FE college on the Association of Colleges
     website](https://www.aocjobs.com/employers-a-z \"Association of Colleges college
     finder\")\n\n### ITPs\n\n[Find independent training providers on the Association
@@ -79,6 +93,13 @@
     or job sites. "
   :display_order: true
   :show_title: true
+- :id: 1gQalZ47kbH1yzm1cpUzW5
+  :_meta:
+    :content_type_id: lineBreak
+    :updated_at: '2022-01-13T11:00:55+00:00'
+    :created_at: '2022-01-13T11:00:55+00:00'
+    :id: 1gQalZ47kbH1yzm1cpUzW5
+  :title: lineBreak
 - :id: 6oUpUuq3gk94Pp5AeRLEwr
   :_meta:
     :content_type_id: advice
@@ -100,6 +121,13 @@
   :display_order: true
   :apply_background_color: false
   :show_title: true
+- :id: 1gQalZ47kbH1yzm1cpUzW5
+  :_meta:
+    :content_type_id: lineBreak
+    :updated_at: '2022-01-13T11:00:55+00:00'
+    :created_at: '2022-01-13T11:00:55+00:00'
+    :id: 1gQalZ47kbH1yzm1cpUzW5
+  :title: lineBreak
 - :id: 1huyVRCGroXrWmbLnuL0WS
   :_meta:
     :content_type_id: advice
@@ -121,6 +149,13 @@
     \"Association of Employment Learning Providers member finder\")"
   :display_order: true
   :show_title: true
+- :id: 1gQalZ47kbH1yzm1cpUzW5
+  :_meta:
+    :content_type_id: lineBreak
+    :updated_at: '2022-01-13T11:00:55+00:00'
+    :created_at: '2022-01-13T11:00:55+00:00'
+    :id: 1gQalZ47kbH1yzm1cpUzW5
+  :title: lineBreak
 - :id: 2GE7Oj5gaBed42AHKQjNhL
   :_meta:
     :content_type_id: advice
@@ -180,3 +215,20 @@
   :display_order: true
   :apply_background_color: false
   :show_title: true
+- :id: 1gQalZ47kbH1yzm1cpUzW5
+  :_meta:
+    :content_type_id: lineBreak
+    :updated_at: '2022-01-13T11:00:55+00:00'
+    :created_at: '2022-01-13T11:00:55+00:00'
+    :id: 1gQalZ47kbH1yzm1cpUzW5
+  :title: lineBreak
+:call_to_actions:
+- :id: 2PkxkCxeXtOc9yvI3aok46
+  :_meta:
+    :content_type_id: callToAction
+    :updated_at: '2021-12-06T10:31:12+00:00'
+    :created_at: '2021-11-24T11:09:33+00:00'
+    :id: 2PkxkCxeXtOc9yvI3aok46
+  :title: Sign up for our newsletter
+  :slug: sign-up-for-our-newsletter
+  :cta_type: Primary

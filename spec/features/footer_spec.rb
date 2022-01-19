@@ -14,10 +14,17 @@ describe 'Footer', :type => :feature do
         end
     end
 
-    it 'renders feedback link' do
+    it 'renders accessibility link' do
         within 'footer' do
-            link = page.find_by_id('feedback')
-            expect(link[:href]).to eq 'https://forms.gle/93nLpM6mqt5tvRmk8'
+            link = page.find_by_id('accessibility')
+            expect(link[:href]).to end_with '/accessibility-advice.html'
+        end
+    end
+
+    it 'renders privacy link' do
+        within 'footer' do
+            link = page.find_by_id('privacy')
+            expect(link[:href]).to end_with '/privacy-policy.html'
         end
     end
 
@@ -25,6 +32,13 @@ describe 'Footer', :type => :feature do
         within 'footer' do
             link = page.find_by_id('cookies')
             expect(link[:href]).to end_with '/cookies.html'
+        end
+    end
+
+    it 'renders feedback link' do
+        within 'footer' do
+            link = page.find_by_id('feedback')
+            expect(link[:href]).to eq 'https://forms.gle/93nLpM6mqt5tvRmk8'
         end
     end
 

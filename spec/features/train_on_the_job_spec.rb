@@ -48,6 +48,9 @@ describe 'Train On The Job components', :type => :feature do
 
         bottomContactBannerBlock = page.find_by_id("57ltZ1kjZ3UMvmAJzCb8Kz")
         expect(bottomContactBannerBlock[:class]).to eq "app-advice "
+
+        newsletterCtaButtonElement = page.find_by_id("2PkxkCxeXtOc9yvI3aok46")
+        expect(newsletterCtaButtonElement[:class]).to eq "govuk-button "
     end
 
     it "Links should re-direct to the expected URLs" do
@@ -74,6 +77,10 @@ describe 'Train On The Job components', :type => :feature do
         link = page.find_link("Teach.FE@education.gov.uk", match: :first)
         within link do 
           expect(link[:href]).to eq 'mailto:Teach.FE@education.gov.uk'
+        end
+        newsletterCtaButton = page.find_by_id("2PkxkCxeXtOc9yvI3aok46")
+        within newsletterCtaButton do
+          expect(newsletterCtaButton[:onClick]).to end_with "sign-up-for-our-newsletter.html'"
         end
     end
 end

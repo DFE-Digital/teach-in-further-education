@@ -25,7 +25,7 @@ namespace TeachFe.E2e_test.PageObjects
 
         public IWebElement StudentFinanceLink
         {
-            get { return driver.FindElement(By.PartialLinkText("You may be eligible to apply for a student loan")); }
+            get { return driver.FindElement(By.LinkText("Visit the student finance website")); }
         }
 
         public IWebElement TrainOnTheJobLink
