@@ -2,7 +2,7 @@
 :id: 5yYjsBia5tKnn6rysEdUQ2
 :_meta:
   :content_type_id: page
-  :updated_at: '2021-12-08T15:17:21+00:00'
+  :updated_at: '2022-01-17T13:58:04+00:00'
   :created_at: '2021-05-18T08:13:38+00:00'
   :id: 5yYjsBia5tKnn6rysEdUQ2
 :title: Where to start in further education
@@ -38,6 +38,13 @@
     If teaching a skill or trade, you'll spend more time in practical settings than in a classroom.
   :display_order: true
   :show_title: true
+- :id: 1gQalZ47kbH1yzm1cpUzW5
+  :_meta:
+    :content_type_id: lineBreak
+    :updated_at: '2022-01-13T11:00:55+00:00'
+    :created_at: '2022-01-13T11:00:55+00:00'
+    :id: 1gQalZ47kbH1yzm1cpUzW5
+  :title: lineBreak
 - :id: 1huyVRCGroXrWmbLnuL0WS
   :_meta:
     :content_type_id: advice
@@ -59,6 +66,13 @@
     \"Association of Employment Learning Providers member finder\")"
   :display_order: true
   :show_title: true
+- :id: 1gQalZ47kbH1yzm1cpUzW5
+  :_meta:
+    :content_type_id: lineBreak
+    :updated_at: '2022-01-13T11:00:55+00:00'
+    :created_at: '2022-01-13T11:00:55+00:00'
+    :id: 1gQalZ47kbH1yzm1cpUzW5
+  :title: lineBreak
 - :id: 1Yh0k872wyhVl5GgFnlyDy
   :_meta:
     :content_type_id: advice
@@ -81,43 +95,45 @@
   :display_order: true
   :apply_background_color: false
   :show_title: true
+- :id: 1gQalZ47kbH1yzm1cpUzW5
+  :_meta:
+    :content_type_id: lineBreak
+    :updated_at: '2022-01-13T11:00:55+00:00'
+    :created_at: '2022-01-13T11:00:55+00:00'
+    :id: 1gQalZ47kbH1yzm1cpUzW5
+  :title: lineBreak
 - :id: 5Cnx3y5NVUzVqBb56MUYWT
   :_meta:
     :content_type_id: advice
-    :updated_at: '2021-12-13T10:45:39+00:00'
+    :updated_at: '2022-01-18T16:23:15+00:00'
     :created_at: '2021-12-01T11:12:33+00:00'
     :id: 5Cnx3y5NVUzVqBb56MUYWT
   :title: Find out if you could teach in further education
-  :advice_body: |-
-    There are 2 elements that make a good further education (FE) teacher:
-
-    - skills, knowledge and experience in your subject
-    - a teaching qualifiction - or be willing to work towards one
-
-    Ideally you'll have industry experience, preferably with relevant trade qualification. Usually at level 3.
-
-    [What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels "List of academic qualification levels")
-
-    You'll also need good mathematics and English skills. If you do not have GCSEs in mathematics and English, your employer might ask to assess your skills.
-
-    Teaching practice forms part of teacher training, which your college or training provider will support you to do.
-
-    This is not linked to what you want to teach. It's to help you to teach anything your skills, knowledge and experience qualify you to.
-
-    ### You'll need to study teacher training.
-
-    If you need teacher training your new employer will arrange this for you when you start a job with a college or training provider.
-
-    Teacher training courses vary by:
-
-    - what they cost
-    - their duration
-    - their minimum qualification requirements
-
-    [Find out what you could teach](/what-you-could-teach.html "Find out what you could teach")
+  :advice_body: "Your skills are more valuable than you realise.\n\n### What you need\n\n-
+    skills, knowledge and experience in your subject\n- a teaching qualification -
+    or the willingness to work towards one\n\nIdeally you'll have industry experience,
+    preferably with relevant trade qualification. Usually at level 3.\n\n[What levels
+    mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+    \"List of academic qualification levels\")\n\nYou'll also need mathematics and
+    English skills. If you do not have GCSEs in mathematics and English, FE providers
+    might want to assess your skills. They may support you to improve your mathematics
+    and English skills as part of your teacher training.\n\n### Teacher training \n\nThe
+    college or training provider will arrange this for you when you start a job with
+    them.\n\nThe training is not linked to your subject or skill. It's to help you
+    to share your skills, knowledge and experience.\n\nTeacher training courses vary
+    by:\n\n- what they cost\n- their duration\n- their minimum qualification requirements\n\n[Find
+    out what you could teach](/what-you-could-teach.html \"Find out what you could
+    teach\")"
   :display_order: true
   :apply_background_color: false
   :show_title: true
+- :id: 1gQalZ47kbH1yzm1cpUzW5
+  :_meta:
+    :content_type_id: lineBreak
+    :updated_at: '2022-01-13T11:00:55+00:00'
+    :created_at: '2022-01-13T11:00:55+00:00'
+    :id: 1gQalZ47kbH1yzm1cpUzW5
+  :title: lineBreak
 - :id: 48XICVJXXcyBGAZ2DhtvhD
   :_meta:
     :content_type_id: advice
@@ -154,20 +170,37 @@
 - :id: ocv0Q8ArIy3v0dUyNDIGB
   :_meta:
     :content_type_id: story
-    :updated_at: '2021-12-08T13:12:33+00:00'
+    :updated_at: '2022-01-14T08:40:45+00:00'
     :created_at: '2021-07-01T20:24:41+00:00'
     :id: ocv0Q8ArIy3v0dUyNDIGB
   :title: Margaret's story
-  :story_body: |-
-    “You know when you're in another job and it’s the same every day? Here no day’s a chore. I’m surrounded by people who have enthusiasm for what I've been doing all my life.”
-
-    __Margaret, FE agriculture teacher__
+  :story_body: "“You know when you're in another job and it’s the same every day?
+    Here no day’s a chore. I’m surrounded by people who have enthusiasm for what I've
+    been doing all my life.”"
   :media:
-    :title: Agriculture
-    :description: A tractor in a field of hay bales
-    :url: "//images.ctfassets.net/n4docnlbw89d/7ejtw2cz4ilNditvMdrh68/93c2e1cc97ac7d9c02bc5a4a0dce2a01/AgricultureLearning2.png"
+    :title: Healthcare
+    :description: A female healthcare lecturer in PPE talking to a student in a clinical
+      setting
+    :url: "//images.ctfassets.net/n4docnlbw89d/7ejtw2cz4ilNditvMdrh68/b8515351734babfb7665ce6f97d09af9/Homepage_quote_2.png"
     :_meta:
-      :updated_at: '2021-09-10T14:03:40+00:00'
+      :updated_at: '2022-01-14T13:28:40+00:00'
       :created_at: '2021-06-05T16:53:24+00:00'
       :id: 7ejtw2cz4ilNditvMdrh68
   :display_order: false
+- :id: 1gQalZ47kbH1yzm1cpUzW5
+  :_meta:
+    :content_type_id: lineBreak
+    :updated_at: '2022-01-13T11:00:55+00:00'
+    :created_at: '2022-01-13T11:00:55+00:00'
+    :id: 1gQalZ47kbH1yzm1cpUzW5
+  :title: lineBreak
+:call_to_actions:
+- :id: 2PkxkCxeXtOc9yvI3aok46
+  :_meta:
+    :content_type_id: callToAction
+    :updated_at: '2021-12-06T10:31:12+00:00'
+    :created_at: '2021-11-24T11:09:33+00:00'
+    :id: 2PkxkCxeXtOc9yvI3aok46
+  :title: Sign up for our newsletter
+  :slug: sign-up-for-our-newsletter
+  :cta_type: Primary

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'Find an fe teaching job components', :type => :feature do
+describe 'Find a job components', :type => :feature do
     before do
       visit '/find-an-fe-teaching-job.html'
     end
@@ -94,6 +94,9 @@ describe 'Find an fe teaching job components', :type => :feature do
 
       nonTeachingRolesElement = page.find_by_id("6AIEMKj7WEqmoh0paGILES")
       expect(contactInfoElement[:class]).to eq "app-advice "
+
+      newsletterCtaButtonElement = page.find_by_id("2PkxkCxeXtOc9yvI3aok46")
+      expect(newsletterCtaButtonElement[:class]).to eq "govuk-button "
     end
 
     it "links should re-direct to expected urls" do
@@ -141,6 +144,10 @@ describe 'Find an fe teaching job components', :type => :feature do
         within link do
           expect(link[:href]).to eq 'mailto:Teach.FE@education.gov.uk'
         end
+      end
+      newsletterCtaButton = page.find_by_id("2PkxkCxeXtOc9yvI3aok46")
+      within newsletterCtaButton do
+        expect(newsletterCtaButton[:onClick]).to end_with "sign-up-for-our-newsletter.html'"
       end
     end
 end

@@ -32,8 +32,9 @@ describe 'Where to start in fe components', :type => :feature do
       findOutIfYouCouldTeachElement = page.find_by_id("5Cnx3y5NVUzVqBb56MUYWT")
       within findOutIfYouCouldTeachElement do
         expect(findOutIfYouCouldTeachElement).to have_selector 'h2.govuk-heading-l', text: 'Find out if you could teach in further education'
-        expect(findOutIfYouCouldTeachElement).to have_selector 'h3.govuk-heading-m', text: "You'll need to study teacher training."
-        expect(findOutIfYouCouldTeachElement).to have_selector '.govuk-body', count: 9
+        expect(findOutIfYouCouldTeachElement).to have_selector 'h3.govuk-heading-m', text: "What you need"
+        expect(findOutIfYouCouldTeachElement).to have_selector 'h3.govuk-heading-m', text: "Teacher training"
+        expect(findOutIfYouCouldTeachElement).to have_selector '.govuk-body', count: 8
         expect(findOutIfYouCouldTeachElement).to have_selector '.govuk-list--bullet', count: 2
         expect(findOutIfYouCouldTeachElement).to have_selector 'li', count: 5
         expect(findOutIfYouCouldTeachElement).to have_selector '.govuk-link', count: 2
@@ -48,12 +49,11 @@ describe 'Where to start in fe components', :type => :feature do
         expect(contactInfoElement).to have_selector '.govuk-body', count: 2
         expect(contactInfoElement).to have_selector '.govuk-link', count: 1
       end
-      farmerStoryElement = page.find_by_id("ocv0Q8ArIy3v0dUyNDIGB")
-      within farmerStoryElement do
-        expect(farmerStoryElement.find('img')[:src]).to eq 'http://images.ctfassets.net/n4docnlbw89d/7ejtw2cz4ilNditvMdrh68/93c2e1cc97ac7d9c02bc5a4a0dce2a01/AgricultureLearning2.png?w=475' 
-        expect(farmerStoryElement).to have_selector 'div.call-out-border-right', count: 1
-        expect(farmerStoryElement).to have_selector 'p.govuk-body', text: "“You know when you're in another job and it’s the same every day? Here no day’s a chore. I’m surrounded by people who have enthusiasm for what I've been doing all my life.”"
-        expect(farmerStoryElement).to have_selector 'p.govuk-body', text: "Margaret, FE agriculture teacher"
+      wtsStory1 = page.find_by_id("ocv0Q8ArIy3v0dUyNDIGB")
+      within wtsStory1 do
+        expect(wtsStory1.find('img')[:src]).to eq 'http://images.ctfassets.net/n4docnlbw89d/7ejtw2cz4ilNditvMdrh68/b8515351734babfb7665ce6f97d09af9/Homepage_quote_2.png?w=475' 
+        expect(wtsStory1).to have_selector 'div.call-out-border-right', count: 1
+        expect(wtsStory1).to have_selector 'p.govuk-body', text: "“You know when you're in another job and it’s the same every day? Here no day’s a chore. I’m surrounded by people who have enthusiasm for what I've been doing all my life.”"
       end
       # mathematicsTeacherStoryElement = page.find_by_id("4us8OYWskMdExFNNypuUKE")
       # within mathematicsTeacherStoryElement do
@@ -87,6 +87,9 @@ describe 'Where to start in fe components', :type => :feature do
       within farmerStoryElement do
         expect(farmerStoryElement[:class]).to eq "app-story"
       end
+
+      newsletterCtaButtonElement = page.find_by_id("2PkxkCxeXtOc9yvI3aok46")
+      expect(newsletterCtaButtonElement[:class]).to eq "govuk-button "
     end
 
     it "link should re-direct to expected urls" do
@@ -109,6 +112,11 @@ describe 'Where to start in fe components', :type => :feature do
       link = page.find_link("Teach.FE@education.gov.uk")
       within link do
         expect(link[:href]).to eq 'mailto:Teach.FE@education.gov.uk'
+      end
+
+      newsletterCtaButton = page.find_by_id("2PkxkCxeXtOc9yvI3aok46")
+      within newsletterCtaButton do
+        expect(newsletterCtaButton[:onClick]).to end_with "sign-up-for-our-newsletter.html'"
       end
     end
   end
