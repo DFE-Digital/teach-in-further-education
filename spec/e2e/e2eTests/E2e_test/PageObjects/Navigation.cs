@@ -15,9 +15,9 @@ namespace TeachFe.E2e_test.PageObjects
         }
 
         #region Elements
-        public IWebElement HomeNavButton
+        public IWebElement SiteHomeNavButton
         {
-            get { return driver.FindElement(By.Id("home-link")); }
+            get { return driver.FindElement(By.XPath("//header")).FindElement(By.LinkText("Teach in further education")); }
         }
 
         public IWebElement WhereToStartInFeNavButton
@@ -70,7 +70,7 @@ namespace TeachFe.E2e_test.PageObjects
 
         public void ClickHomeNavButton()
         {
-            HomeNavButton.Click();
+            SiteHomeNavButton.Click();
         }
 
         public void ClickWhereToStartInFeNavButton()

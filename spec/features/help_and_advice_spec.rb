@@ -30,12 +30,18 @@ describe 'Help and advice components', :type => :feature do
       within contactUsElement do
         expect(contactUsElement[:class]).to eq "app-advice "
       end
+      newsletterCtaButtonElement = page.find_by_id("2PkxkCxeXtOc9yvI3aok46")
+      expect(newsletterCtaButtonElement[:class]).to eq "govuk-button "
     end
 
     it "links should re-direct to expected urls" do
       link = page.find_link("Teach.FE@education.gov.uk")
       within link do 
         expect(link[:href]).to eq 'mailto:Teach.FE@education.gov.uk'
+      end
+      newsletterCtaButton = page.find_by_id("2PkxkCxeXtOc9yvI3aok46")
+      within newsletterCtaButton do
+        expect(newsletterCtaButton[:onClick]).to end_with "sign-up-for-our-newsletter.html'"
       end
     end
   end

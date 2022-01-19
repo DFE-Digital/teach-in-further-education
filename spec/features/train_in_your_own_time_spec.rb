@@ -67,6 +67,9 @@ describe 'Train In Your Own Time components', :type => :feature do
 
         bottomContactBannerBlock = page.find_by_id("1azWRZYSe5p6OxrVsOZsDj")
         expect(bottomContactBannerBlock[:class]).to eq 'app-advice '
+
+        newsletterCtaButtonElement = page.find_by_id("2PkxkCxeXtOc9yvI3aok46")
+        expect(newsletterCtaButtonElement[:class]).to eq "govuk-button "
     end
 
     it "Links should redirect to expected URLs" do
@@ -74,7 +77,7 @@ describe 'Train In Your Own Time components', :type => :feature do
         within link do
             expect(link[:href]).to end_with '/full-list-of-fe-qualifications.html'
         end
-        link = page.find_link("You may be eligible to apply for a student loan to help pay for the course fees", match: :first)
+        link = page.find_link("Visit the student finance website", match: :first)
         within link do
             expect(link[:href]).to eq 'https://www.gov.uk/student-finance'
         end
@@ -85,6 +88,10 @@ describe 'Train In Your Own Time components', :type => :feature do
         link = page.find_link("Teach.FE@education.gov.uk", match: :first)
         within link do
             expect(link[:href]).to eq 'mailto:Teach.FE@education.gov.uk'
+        end
+        newsletterCtaButton = page.find_by_id("2PkxkCxeXtOc9yvI3aok46")
+        within newsletterCtaButton do
+          expect(newsletterCtaButton[:onClick]).to end_with "sign-up-for-our-newsletter.html'"
         end
     end
 end
