@@ -6,17 +6,15 @@ describe 'Homepage stories', :type => :feature do
   end
 
   it "has the correct elements" do
-    mechanicsStoryElement = page.find_by_id("4cFjarRBPKWpHy8KPITiHp")
-    within mechanicsStoryElement do 
-      expect(mechanicsStoryElement).to have_selector '.govuk-body', text: "Sometimes you get students who think they 'failed' at school. They do an FE course and it's the making of them. It gives people life chances."
-      expect(mechanicsStoryElement).to have_selector '.govuk-body', text: "Raheem, FE motor mechanics teacher"
-      expect(mechanicsStoryElement.find('img')[:src]).to eq 'http://images.ctfassets.net/n4docnlbw89d/5VGbKPzFvKe1iR6d2OXUjF/c5460f1793b065c7af24c04559e1ca07/MechanicGuy.png?w=475'
+    homepageStory1Element = page.find_by_id("4cFjarRBPKWpHy8KPITiHp")
+    within homepageStory1Element do 
+      expect(homepageStory1Element).to have_selector '.govuk-body', text: "I decided to try teaching part time in an FE college whilst I ran my business. It was so simple to get started – I was able to start earning and teaching straight away using the skills I had from industry."
+      expect(homepageStory1Element.find('img')[:src]).to eq 'http://images.ctfassets.net/n4docnlbw89d/5VGbKPzFvKe1iR6d2OXUjF/32a4d31c312b78c21b16fc770bf22c41/Homepage_quote_1.png?w=475'
     end
-    agricultureStoryElement = page.find_by_id("ocv0Q8ArIy3v0dUyNDIGB")
-    within agricultureStoryElement do 
-      expect(agricultureStoryElement).to have_selector '.govuk-body', text: "You know when you're in another job and it’s the same every day? Here no day’s a chore. I’m surrounded by people who have enthusiasm for what I've been doing all my life."
-      expect(agricultureStoryElement).to have_selector '.govuk-body', text: "Margaret, FE agriculture teacher"
-      expect(agricultureStoryElement.find('img')[:src]).to eq 'http://images.ctfassets.net/n4docnlbw89d/7ejtw2cz4ilNditvMdrh68/93c2e1cc97ac7d9c02bc5a4a0dce2a01/AgricultureLearning2.png?w=475'
+    homepageStory2Element = page.find_by_id("ocv0Q8ArIy3v0dUyNDIGB")
+    within homepageStory2Element do 
+      expect(homepageStory2Element).to have_selector '.govuk-body', text: "You know when you're in another job and it’s the same every day? Here no day’s a chore. I’m surrounded by people who have enthusiasm for what I've been doing all my life."
+      expect(homepageStory2Element.find('img')[:src]).to eq 'http://images.ctfassets.net/n4docnlbw89d/7ejtw2cz4ilNditvMdrh68/b8515351734babfb7665ce6f97d09af9/Homepage_quote_2.png?w=475'
     end
   end
 

@@ -9,9 +9,7 @@ describe 'Homepage components', :type => :feature do
       youDoNotNeedADegreeElement = page.find_by_id("11nV0pkqrJOxP6o2F7KVGx")
       within youDoNotNeedADegreeElement do 
         expect(youDoNotNeedADegreeElement).to have_selector 'h2.govuk-heading-l', text: "You do not need a degree to start teaching in further education"
-        expect(youDoNotNeedADegreeElement).to have_selector '.govuk-body', count: 3
-        expect(youDoNotNeedADegreeElement).to have_selector '.govuk-list--bullet', count: 1
-        expect(youDoNotNeedADegreeElement).to have_selector 'li', count: 2
+        expect(youDoNotNeedADegreeElement).to have_selector '.govuk-body', count: 2
         expect(youDoNotNeedADegreeElement).to have_selector '.govuk-link', count: 1
       end
   end
@@ -45,6 +43,10 @@ describe 'Homepage components', :type => :feature do
       within agricultureStoryElement do
         expect(agricultureStoryElement[:class]).to eq "app-story"
       end
+      newsletterCtaButtonElement = page.find_by_id("2PkxkCxeXtOc9yvI3aok46")
+      within newsletterCtaButtonElement do
+        expect(newsletterCtaButtonElement[:class]).to eq "govuk-button "
+      end
     end
 
     it "should render the correct links" do
@@ -55,6 +57,10 @@ describe 'Homepage components', :type => :feature do
       link = page.find_link("Find out more about teaching in FE", match: :first)
       within link do
         expect(link[:href]).to end_with '/where-to-start-in-further-education.html'
+      end
+      newsletterCtaButton = page.find_by_id("2PkxkCxeXtOc9yvI3aok46")
+      within newsletterCtaButton do
+        expect(newsletterCtaButton[:onClick]).to end_with "sign-up-for-our-newsletter.html'"
       end
     end
   end
