@@ -2,29 +2,29 @@
 :id: 4aJktuSp3EAMaV2Lc7BeHx
 :_meta:
   :content_type_id: page
-  :updated_at: '2021-12-08T15:06:39+00:00'
+  :updated_at: '2022-01-17T13:57:40+00:00'
   :created_at: '2021-07-16T11:11:44+00:00'
   :id: 4aJktuSp3EAMaV2Lc7BeHx
-:title: Become a further education teacher
-:nav_title: Become a further education teacher
-:heading: Become a further education teacher
+:title: Share your skills and teach in further education
+:nav_title: Share your skills and teach in further education
+:heading: Share your skills and teach in further education
 :slug: home
 :blocks:
 - :id: 1osEp5cIptvcTW3oBml6g2
   :_meta:
     :content_type_id: heroBanner
-    :updated_at: '2021-10-28T09:02:42+00:00'
+    :updated_at: '2022-01-13T13:27:28+00:00'
     :created_at: '2021-04-29T23:31:07+00:00'
     :id: 1osEp5cIptvcTW3oBml6g2
-  :title: Become a further education teacher
-  :hero_text: Teach your trade, skill or subject to young people and adults
+  :title: Share your skills and teach in further education
+  :hero_text: Change lives not your career. Teach around your current occupation.
   :hero_media:
     :title: Default-Hero-Img
-    :description: An adult student and his teacher experiment with a spray bottle
-      and a pallet of soil in a laboratory.
-    :url: "//images.ctfassets.net/n4docnlbw89d/7GvBzU90bU19dAH8ASgT0N/884c7ad5661fd6b00272e91198af704e/EngineeringStudentsLearning.png"
+    :description: A female welding teacher talking to some male and female students
+      in a workshop
+    :url: "//images.ctfassets.net/n4docnlbw89d/7GvBzU90bU19dAH8ASgT0N/2139c32a2dd8d003356c8d7bfd5c10cf/Homepage_hero.png"
     :_meta:
-      :updated_at: '2021-09-21T10:49:03+00:00'
+      :updated_at: '2022-01-14T13:22:55+00:00'
       :created_at: '2021-04-29T23:15:30+00:00'
       :id: 7GvBzU90bU19dAH8ASgT0N
   :is_text_bordered: false
@@ -32,26 +32,20 @@
 - :id: 11nV0pkqrJOxP6o2F7KVGx
   :_meta:
     :content_type_id: advice
-    :updated_at: '2021-12-07T11:41:35+00:00'
+    :updated_at: '2022-01-13T13:28:33+00:00'
     :created_at: '2021-04-29T23:31:06+00:00'
     :id: 11nV0pkqrJOxP6o2F7KVGx
   :title: You do not need a degree to start teaching in further education
   :advice_body: |-
-    Many people start a job in further education (FE) without a degree or any teacher training.
-
-    Some FE employers will:
-
-    - consider your current skills and experience
-    - support you to complete your teacher training while you work for them
+    Your skills are more valuable than your realise. You can start a job in further education (FE) without a degree or any teacher training.
 
     [Find out if you could teach in FE](/where-to-start-in-further-education.html "Guide to further education")
   :media:
-    :title: student-training
-    :description: An adult female student in protective goggles cutting a piece of
-      wood using a mechanical saw.
-    :url: "//images.ctfassets.net/n4docnlbw89d/2PG69P6bZOB4p72ouRaotB/85e561397f34c1339e6075a3130cb497/CarpentryStudentLearning.png"
+    :title: plumbing-lesson
+    :description: A male plumbing lecturer with some students
+    :url: "//images.ctfassets.net/n4docnlbw89d/2PG69P6bZOB4p72ouRaotB/de974e402e48c9b41a1b8eff95a631dc/Homepage_secondary.png"
     :_meta:
-      :updated_at: '2021-08-16T10:33:11+00:00'
+      :updated_at: '2022-01-14T13:24:32+00:00'
       :created_at: '2021-06-04T10:31:00+00:00'
       :id: 2PG69P6bZOB4p72ouRaotB
   :display_order: false
@@ -60,15 +54,15 @@
 - :id: 8Od3hFGQIxvanljvVEXor
   :_meta:
     :content_type_id: columnarLayout
-    :updated_at: '2021-10-28T09:03:13+00:00'
+    :updated_at: '2022-01-18T09:24:38+00:00'
     :created_at: '2021-10-26T10:38:38+00:00'
     :id: 8Od3hFGQIxvanljvVEXor
-  :title: Rewards of teaching in further education
+  :title: FE teaching is rewarding
   :blocks:
   - :id: 1GQKTeUn3joIfjBLS0gowy
     :_meta:
       :content_type_id: information
-      :updated_at: '2021-11-30T15:25:43+00:00'
+      :updated_at: '2022-01-14T14:22:03+00:00'
       :created_at: '2021-06-05T15:12:10+00:00'
       :id: 1GQKTeUn3joIfjBLS0gowy
     :title: Train on the job
@@ -76,13 +70,14 @@
       a teacher training course. Some colleges and training providers will fund all
       or part of the course fees.
     :icon:
-      :title: paid-on-the-job-Icon
-      :description:
-      :url: "//images.ctfassets.net/n4docnlbw89d/4WR8LyTybbtdzXNOxGTMkR/03fe79bfb48e4c11f15a684d3e207c9e/Icon_1.png"
+      :title: train_on_the_job
+      :description: icon which represents information around the benefits of being
+        able to train on the job
+      :url: "//images.ctfassets.net/n4docnlbw89d/7CRUf2V2lWxNrNstYXEOCf/f922f9fabc14f368527b0147330bcbdd/train_on_the_job_circle.png"
       :_meta:
-        :updated_at: '2021-11-30T15:24:10+00:00'
-        :created_at: '2021-06-05T15:11:00+00:00'
-        :id: 4WR8LyTybbtdzXNOxGTMkR
+        :updated_at: '2022-01-14T14:21:05+00:00'
+        :created_at: '2022-01-14T14:21:05+00:00'
+        :id: 7CRUf2V2lWxNrNstYXEOCf
   - :id: 4E3RnU57icaehTEYTxfodo
     :_meta:
       :content_type_id: information
@@ -96,9 +91,9 @@
     :icon:
       :title: paid-holiday-Icon
       :description:
-      :url: "//images.ctfassets.net/n4docnlbw89d/3peXZu7e1XH6fxoyYGK32T/426cb39a0e51f7b1204b7a6e8ade2ff7/Icon_2.png"
+      :url: "//images.ctfassets.net/n4docnlbw89d/3peXZu7e1XH6fxoyYGK32T/93ba1f8fb5282c6f0199e52347cd616c/paid_time_off_circle.png"
       :_meta:
-        :updated_at: '2021-11-30T13:28:18+00:00'
+        :updated_at: '2022-01-14T14:21:42+00:00'
         :created_at: '2021-06-05T15:11:09+00:00'
         :id: 3peXZu7e1XH6fxoyYGK32T
   - :id: 4A8XRFwHX6NkOpW9rVJkvG
@@ -113,48 +108,47 @@
     :icon:
       :title: flexible-working-Icon
       :description:
-      :url: "//images.ctfassets.net/n4docnlbw89d/1tyxPQ6M3MlRqTKZVZAk59/db0f13cf8aebf381a7b55ca70f52da64/Icon_3.png"
+      :url: "//images.ctfassets.net/n4docnlbw89d/1tyxPQ6M3MlRqTKZVZAk59/6640268fec5eb70ec73b7c0163669bc4/flexible_working_hours_circle.png"
       :_meta:
-        :updated_at: '2021-11-30T15:23:47+00:00'
+        :updated_at: '2022-01-14T14:22:24+00:00'
         :created_at: '2021-06-05T15:11:08+00:00'
         :id: 1tyxPQ6M3MlRqTKZVZAk59
 - :id: 4cFjarRBPKWpHy8KPITiHp
   :_meta:
     :content_type_id: story
-    :updated_at: '2021-12-08T13:12:22+00:00'
+    :updated_at: '2022-01-14T08:40:19+00:00'
     :created_at: '2021-07-01T20:24:40+00:00'
     :id: 4cFjarRBPKWpHy8KPITiHp
   :title: Raheem's story
-  :story_body: |-
-    “Sometimes you get students who think they 'failed' at school. They do an FE course and it's the making of them. It gives people life chances."
-
-    __Raheem, FE motor mechanics teacher__
+  :story_body: “I decided to try teaching part time in an FE college whilst I ran
+    my business. It was so simple to get started – I was able to start earning and
+    teaching straight away using the skills I had from industry."
   :media:
-    :title: Construction
-    :description: A male mechanics teacher working on an engine
-    :url: "//images.ctfassets.net/n4docnlbw89d/5VGbKPzFvKe1iR6d2OXUjF/c5460f1793b065c7af24c04559e1ca07/MechanicGuy.png"
+    :title: Law-lesson
+    :description: A female law lecturer with a student in a college setting
+    :url: "//images.ctfassets.net/n4docnlbw89d/5VGbKPzFvKe1iR6d2OXUjF/32a4d31c312b78c21b16fc770bf22c41/Homepage_quote_1.png"
     :_meta:
-      :updated_at: '2021-08-16T10:33:56+00:00'
+      :updated_at: '2022-01-14T13:26:14+00:00'
       :created_at: '2021-06-05T16:51:44+00:00'
       :id: 5VGbKPzFvKe1iR6d2OXUjF
   :display_order: true
 - :id: ocv0Q8ArIy3v0dUyNDIGB
   :_meta:
     :content_type_id: story
-    :updated_at: '2021-12-08T13:12:33+00:00'
+    :updated_at: '2022-01-14T08:40:45+00:00'
     :created_at: '2021-07-01T20:24:41+00:00'
     :id: ocv0Q8ArIy3v0dUyNDIGB
   :title: Margaret's story
-  :story_body: |-
-    “You know when you're in another job and it’s the same every day? Here no day’s a chore. I’m surrounded by people who have enthusiasm for what I've been doing all my life.”
-
-    __Margaret, FE agriculture teacher__
+  :story_body: "“You know when you're in another job and it’s the same every day?
+    Here no day’s a chore. I’m surrounded by people who have enthusiasm for what I've
+    been doing all my life.”"
   :media:
-    :title: Agriculture
-    :description: A tractor in a field of hay bales
-    :url: "//images.ctfassets.net/n4docnlbw89d/7ejtw2cz4ilNditvMdrh68/93c2e1cc97ac7d9c02bc5a4a0dce2a01/AgricultureLearning2.png"
+    :title: Healthcare
+    :description: A female healthcare lecturer in PPE talking to a student in a clinical
+      setting
+    :url: "//images.ctfassets.net/n4docnlbw89d/7ejtw2cz4ilNditvMdrh68/b8515351734babfb7665ce6f97d09af9/Homepage_quote_2.png"
     :_meta:
-      :updated_at: '2021-09-10T14:03:40+00:00'
+      :updated_at: '2022-01-14T13:28:40+00:00'
       :created_at: '2021-06-05T16:53:24+00:00'
       :id: 7ejtw2cz4ilNditvMdrh68
   :display_order: false
@@ -170,3 +164,20 @@
   :display_order: false
   :apply_background_color: false
   :show_title: false
+- :id: 1gQalZ47kbH1yzm1cpUzW5
+  :_meta:
+    :content_type_id: lineBreak
+    :updated_at: '2022-01-13T11:00:55+00:00'
+    :created_at: '2022-01-13T11:00:55+00:00'
+    :id: 1gQalZ47kbH1yzm1cpUzW5
+  :title: lineBreak
+:call_to_actions:
+- :id: 2PkxkCxeXtOc9yvI3aok46
+  :_meta:
+    :content_type_id: callToAction
+    :updated_at: '2021-12-06T10:31:12+00:00'
+    :created_at: '2021-11-24T11:09:33+00:00'
+    :id: 2PkxkCxeXtOc9yvI3aok46
+  :title: Sign up for our newsletter
+  :slug: sign-up-for-our-newsletter
+  :cta_type: Primary

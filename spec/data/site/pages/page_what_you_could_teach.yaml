@@ -2,7 +2,7 @@
 :id: 6Fraj3twk8xSHrc1kyKzVr
 :_meta:
   :content_type_id: page
-  :updated_at: '2021-12-08T15:16:35+00:00'
+  :updated_at: '2022-01-17T13:58:27+00:00'
   :created_at: '2021-12-01T11:33:28+00:00'
   :id: 6Fraj3twk8xSHrc1kyKzVr
 :title: What you could teach
@@ -13,12 +13,12 @@
 - :id: 3P8EQuVSSctYjfcJHwZ6H1
   :_meta:
     :content_type_id: advice
-    :updated_at: '2021-12-01T11:15:18+00:00'
+    :updated_at: '2022-01-14T08:42:20+00:00'
     :created_at: '2021-12-01T11:15:18+00:00'
     :id: 3P8EQuVSSctYjfcJHwZ6H1
   :title: what you could teach intro
   :advice_body: |-
-    FE colleges teach a huge range of subjects, from brick laying to beauty therapy.
+    FE colleges teach a huge range of subjects, from care to construction.
 
     Often the subjects taught reflect the needs of the local economy.
 
@@ -42,7 +42,7 @@
   - :id: 2dSAy6Mk1OlBMIiVDcPJ0u
     :_meta:
       :content_type_id: advice
-      :updated_at: '2021-12-15T11:07:55+00:00'
+      :updated_at: '2022-01-10T12:27:19+00:00'
       :created_at: '2021-05-14T09:25:51+00:00'
       :id: 2dSAy6Mk1OlBMIiVDcPJ0u
     :title: Skills, trades and vocational subjects
@@ -68,11 +68,11 @@
       and logistics\n"
     :display_order: true
     :apply_background_color: false
-    :show_title: true
+    :show_title: false
   - :id: e0XCvhr4XVEtz0N0hZMCf
     :_meta:
       :content_type_id: advice
-      :updated_at: '2021-12-15T11:11:05+00:00'
+      :updated_at: '2022-01-10T12:28:49+00:00'
       :created_at: '2021-05-14T09:28:11+00:00'
       :id: e0XCvhr4XVEtz0N0hZMCf
     :title: Academic subjects
@@ -94,7 +94,7 @@
       - performing arts
     :display_order: false
     :apply_background_color: false
-    :show_title: true
+    :show_title: false
   :is_accordion: true
 - :id: 1inRQaqvmQdjVteK4scloc
   :_meta:
@@ -127,88 +127,38 @@
 - :id: 7ABuhsAYVosp5LK1WRKIHT
   :_meta:
     :content_type_id: story
-    :updated_at: '2021-12-15T10:42:57+00:00'
+    :updated_at: '2022-01-17T11:17:05+00:00'
     :created_at: '2021-07-01T20:24:41+00:00'
     :id: 7ABuhsAYVosp5LK1WRKIHT
   :title: John's Story
-  :story_body: |-
-    “I was looking for a change of career after 35 years as a plumber. I'm not getting any younger and I also wanted a break from chasing new business and payments.”
-
-    __John, Plumbing FE teacher__
+  :story_body: "“I was looking for a change of career after 35 years on the tools.
+    I'm not getting any younger and I also wanted a break from chasing new business
+    and payments.”"
   :media:
-    :title: Plumbing
-    :description: Adult male engineering student using a tool to fix a piece of mechanical
-      equipment
-    :url: "//images.ctfassets.net/n4docnlbw89d/n5A2cZFGtaDc4pRp50usP/a9de9589fdc5e020f42c26de51814a92/John-sStory.png"
+    :title: Welding
+    :description: Sparks fly as a masked welding teacher demonstrates to students
+    :url: "//images.ctfassets.net/n4docnlbw89d/n5A2cZFGtaDc4pRp50usP/6b843f80c9e508e8165e955a6efe642c/what_you_can_teach.png"
     :_meta:
-      :updated_at: '2021-08-16T10:35:55+00:00'
+      :updated_at: '2022-01-14T13:30:13+00:00'
       :created_at: '2021-06-30T14:56:55+00:00'
       :id: n5A2cZFGtaDc4pRp50usP
   :story_link_text: Read about John's journey into FE teaching
   :story_page:
-    :id: 1tmuPONLoli39t0exdXHPD
-    :_meta:
-      :content_type_id: page
-      :updated_at: '2021-10-28T09:03:21+00:00'
-      :created_at: '2021-07-01T09:37:08+00:00'
-      :id: 1tmuPONLoli39t0exdXHPD
-    :title: John's story
-    :nav_title: John's story
-    :heading: John's story
-    :slug: johns-story
-    :blocks:
-    - :id: 1sFTEZnVJqppsa7j1r4Wbk
-      :_meta:
-        :content_type_id: advice
-        :updated_at: '2021-10-28T09:02:50+00:00'
-        :created_at: '2021-07-01T09:36:36+00:00'
-        :id: 1sFTEZnVJqppsa7j1r4Wbk
-      :title: John story content
-      :advice_body: |-
-        John, Lecturer in Plumbing
-
-        ## How did you get into further education teaching?
-
-        I was looking for a change of career after 35 years as a plumber. I'm not getting any younger and I also wanted a break from chasing new business and payments.
-
-        A friend of mine suggested that I teach plumbing at the college she works at, and that's what got me thinking. I did take a month or two off though to do up the house.
-
-        The college were keen to take me on as I already had a professional qualification. I'm doing my teaching qualification in my spare time so that I'll be a qualified teacher by the end of the year.
-      :media:
-        :title: Plumbing
-        :description: Adult male engineering student using a tool to fix a piece of
-          mechanical equipment
-        :url: "//images.ctfassets.net/n4docnlbw89d/n5A2cZFGtaDc4pRp50usP/a9de9589fdc5e020f42c26de51814a92/John-sStory.png"
-        :_meta:
-          :updated_at: '2021-08-16T10:35:55+00:00'
-          :created_at: '2021-06-30T14:56:55+00:00'
-          :id: n5A2cZFGtaDc4pRp50usP
-      :display_order: false
-      :apply_background_color: false
-      :show_title: false
-    - :id: 6j3NihRXh3GfclpSw19HgI
-      :_meta:
-        :content_type_id: advice
-        :updated_at: '2021-10-28T09:02:56+00:00'
-        :created_at: '2021-07-14T15:22:43+00:00'
-        :id: 6j3NihRXh3GfclpSw19HgI
-      :title: John's Story
-      :advice_body: "## What does your day look like?\n\nMost of my teaching is done
-        in the workshop as mine's a very practical subject.\n\nSome of the work is
-        classroom based, like teaching the students how to price up a job and sort
-        out their tax.\n\nSome of the classes are in the evening, so my days are quite
-        flexible. \n\nApart from that I might be planning a lesson, assessing the
-        students' work, or helping a student who's having problems.\n\nThe college
-        takes the pastoral stuff very seriously, so we're all expected to help the
-        students with any problems they have - in or out of college.\n\nSome days
-        can be really busy though, and I do not often leave bang on time.\n\n## What
-        do you enjoy about working in further education?\n\nI still feel like I'm
-        in the plumbing trade, which is important to me as I've been a plumber since
-        I left school.\n\nI like the fact that I'm bringing new people into the trade.
-        Some of them didn't do so well with regular school, but I'm giving them the
-        chance to go out and earn a living.\n\nBecause I'm teaching now, some of my
-        old plumbing mates think I'm a bit of a guru!"
-      :display_order: false
-      :apply_background_color: false
-      :show_title: false
   :display_order: true
+- :id: 1gQalZ47kbH1yzm1cpUzW5
+  :_meta:
+    :content_type_id: lineBreak
+    :updated_at: '2022-01-13T11:00:55+00:00'
+    :created_at: '2022-01-13T11:00:55+00:00'
+    :id: 1gQalZ47kbH1yzm1cpUzW5
+  :title: lineBreak
+:call_to_actions:
+- :id: 2PkxkCxeXtOc9yvI3aok46
+  :_meta:
+    :content_type_id: callToAction
+    :updated_at: '2021-12-06T10:31:12+00:00'
+    :created_at: '2021-11-24T11:09:33+00:00'
+    :id: 2PkxkCxeXtOc9yvI3aok46
+  :title: Sign up for our newsletter
+  :slug: sign-up-for-our-newsletter
+  :cta_type: Primary

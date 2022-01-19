@@ -32,12 +32,11 @@ describe 'Accordion components -', :type => :feature do
           expect(contactInfoElement).to have_selector '.govuk-body', count: 2
           expect(contactInfoElement).to have_selector '.govuk-link', count: 1
         end
-        plumberStoryElement = page.find_by_id("7ABuhsAYVosp5LK1WRKIHT")
-        within plumberStoryElement do
-            expect(plumberStoryElement.find('img')[:src]).to eq 'http://images.ctfassets.net/n4docnlbw89d/n5A2cZFGtaDc4pRp50usP/a9de9589fdc5e020f42c26de51814a92/John-sStory.png?w=475' 
-            expect(plumberStoryElement).to have_selector 'div.call-out-border-left', count: 1
-            expect(plumberStoryElement).to have_selector 'p.govuk-body', text: "I was looking for a change of career after 35 years as a plumber. I'm not getting any younger and I also wanted a break from chasing new business and payments."
-            expect(plumberStoryElement).to have_selector 'p.govuk-body', text: "John, Plumbing FE teacher"
+        wyctStory1 = page.find_by_id("7ABuhsAYVosp5LK1WRKIHT")
+        within wyctStory1 do
+            expect(wyctStory1.find('img')[:src]).to eq 'http://images.ctfassets.net/n4docnlbw89d/n5A2cZFGtaDc4pRp50usP/6b843f80c9e508e8165e955a6efe642c/what_you_can_teach.png?w=475' 
+            expect(wyctStory1).to have_selector 'div.call-out-border-left', count: 1
+            expect(wyctStory1).to have_selector 'p.govuk-body', text: "“I was looking for a change of career after 35 years on the tools. I'm not getting any younger and I also wanted a break from chasing new business and payments.”"
         end
     end
 
@@ -56,6 +55,9 @@ describe 'Accordion components -', :type => :feature do
 
         plumberStoryElement = page.find_by_id("7ABuhsAYVosp5LK1WRKIHT")
         expect(plumberStoryElement[:class]).to eq "app-story"
+
+        newsletterCtaButtonElement = page.find_by_id("2PkxkCxeXtOc9yvI3aok46")
+        expect(newsletterCtaButtonElement[:class]).to eq "govuk-button "
     end
 
     it "link should re-direct to expected urls" do
@@ -64,5 +66,8 @@ describe 'Accordion components -', :type => :feature do
 
         link = page.find_link("Train in your own time", match: :first)
         expect(link[:href]).to end_with '/train-in-your-own-time.html'
+
+        newsletterCtaButton = page.find_by_id("2PkxkCxeXtOc9yvI3aok46")
+        expect(newsletterCtaButton[:onClick]).to end_with "sign-up-for-our-newsletter.html'"
     end
 end

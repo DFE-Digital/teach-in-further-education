@@ -2,7 +2,7 @@
 :id: 2wAftZDRvPUWLTGogsMx4B
 :_meta:
   :content_type_id: page
-  :updated_at: '2021-12-08T15:16:25+00:00'
+  :updated_at: '2022-01-17T11:36:22+00:00'
   :created_at: '2021-10-28T08:57:14+00:00'
   :id: 2wAftZDRvPUWLTGogsMx4B
 :title: Train on the job
@@ -43,10 +43,10 @@
     The FE teaching apprenticeship has recently been revised and updated. It is designed to increase the quality of FE teacher training provision. It also lets FE providers access money to fund teacher training.
   :media:
     :title: Earn while you learn
-    :description: A male teacher with two female students looking at a computer
-    :url: "//images.ctfassets.net/n4docnlbw89d/lza5filA0VlqXNUB0X7HJ/6132507391a068275e4412dc6c05fd98/EarnWhileYouLearn.png"
+    :description: A female law teacher talking to students in front of a whiteboard
+    :url: "//images.ctfassets.net/n4docnlbw89d/lza5filA0VlqXNUB0X7HJ/c78ee95125fe0760c84c29a555adfd98/train_on_the_job.png"
     :_meta:
-      :updated_at: '2021-09-10T14:06:04+00:00'
+      :updated_at: '2022-01-14T13:34:18+00:00'
       :created_at: '2021-07-01T20:24:39+00:00'
       :id: lza5filA0VlqXNUB0X7HJ
   :display_order: false
@@ -109,3 +109,13 @@
   :display_order: false
   :apply_background_color: false
   :show_title: false
+:call_to_actions:
+- :id: 2PkxkCxeXtOc9yvI3aok46
+  :_meta:
+    :content_type_id: callToAction
+    :updated_at: '2021-12-06T10:31:12+00:00'
+    :created_at: '2021-11-24T11:09:33+00:00'
+    :id: 2PkxkCxeXtOc9yvI3aok46
+  :title: Sign up for our newsletter
+  :slug: sign-up-for-our-newsletter
+  :cta_type: Primary

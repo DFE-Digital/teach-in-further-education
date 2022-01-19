@@ -1,5 +1,6 @@
-<%= partial "phase-banner" %>
 <div class="app-header">
+  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+  <%= partial "phase-banner" %>
   <header id="header">
     <div class="govuk-header">
     <div class="govuk-header__container">
@@ -33,11 +34,11 @@
     <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide navigation menu">Menu</button>
     <nav class="app-header-nav" aria-label="Main">
       <ul id="navigation" class="govuk-header__navigation govuk-width-container" aria-label="Navigation menu">
-        <li id="home-link" class="govuk-header__navigation-item">
+        <%# <li id="home-link" class="govuk-header__navigation-item">
           <a href="/" class="active">
             Home
           </a>
-        </li>
+        </li> %>
         <% data.site.navs.select { |id, n| n.title == "Header" }.each do |id, n| %>
           <% n.pages.each do |p| %>
             <% if p._meta.content_type_id == 'navLink' %>
