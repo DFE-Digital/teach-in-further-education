@@ -82,7 +82,7 @@ namespace TeachFe.E2e_test
 
             #region homepage
 
-            driver.ExecuteScript("scroll(0,600)");
+            driver.Navigate().Refresh();
             homepage.ClickWhereToStartLink();
             Assert.IsTrue(driver.Url.EndsWith("/where-to-start-in-further-education.html"));
             navigation.ClickHomeNavButton();
