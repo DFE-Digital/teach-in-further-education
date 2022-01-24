@@ -44,6 +44,7 @@
 
 
   <!--   SKD - set the script type to text/plain so it doesn't get activated -->
+  <!-- move this part! -->
   <script type="text/plain" id="hotjar-script">
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -89,7 +90,7 @@
 
 <%= partial "footer", :locals => { :data => data } %>
 <script src="javascripts/all.js"></script>
-<script>
+<script defer>
   window.site.initSite('cookie-banner', 'navigation');
 </script>
 </body>
