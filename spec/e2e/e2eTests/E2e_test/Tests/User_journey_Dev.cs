@@ -278,10 +278,10 @@ namespace TeachFe.E2e_test
 
             #endregion
         }
-        //[TearDown]
-        //public void CloseBrowser()
-        //{
-        //    driver.Quit();
-        //}
+        [TearDown]
+        public void CloseBrowser()
+        {
+            driver.Quit();
+        }
     }
 }
