@@ -20,12 +20,12 @@ namespace TeachFe.E2e_test.PageObjects
 
         public IWebElement EmployersLink
         {
-            get { return driver.FindElement(By.PartialLinkText("Find your local FE college")); }
+            get { return driver.FindElement(By.PartialLinkText("The Association of Colleges")); }
         }
 
         public IWebElement TrainingProvidersLink
         {
-            get { return driver.FindElement(By.PartialLinkText("Find independent training providers")); }
+            get { return driver.FindElement(By.PartialLinkText("The Association of Employment Learning Providers")); }
         }
 
         public IWebElement WhatLevelsMeanLink

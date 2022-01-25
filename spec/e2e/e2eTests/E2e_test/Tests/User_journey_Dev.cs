@@ -217,8 +217,11 @@ namespace TeachFe.E2e_test
             #region find an FE teaching job page
 
             Assert.AreEqual(true, findAnFeTeachingJobPage.ContentFindAnFeTeachingJobDisplayed());
-            findAnFeTeachingJobPage.ClickEmployersLink();
+            findAnFeTeachingJobPage.ClickCollegesLink();
             Assert.IsTrue(driver.Url.Contains("aocjobs.com/employers-a-z"));
+            driver.Navigate().Back();
+            findAnFeTeachingJobPage.ClickAOEmploymentLink();
+            Assert.IsTrue(driver.Url.Contains("aelp.org.uk/about/our-members/"));
             driver.Navigate().Back();
             findAnFeTeachingJobPage.ClickAocJobsLink();
             Assert.IsTrue(driver.Url.Contains("aocjobs.com/"));
@@ -275,10 +278,10 @@ namespace TeachFe.E2e_test
 
             #endregion
         }
-        [TearDown]
-        public void CloseBrowser()
-        {
-            driver.Quit();
-        }
+        //[TearDown]
+        //public void CloseBrowser()
+        //{
+        //    driver.Quit();
+        //}
     }
 }
