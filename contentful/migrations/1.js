@@ -28,7 +28,7 @@ module.exports = function (migration) {
     .validations([])
     .disabled(false)
     .omitted(false);
-  
+
   page
     .createField("heading")
     .name("Heading")
