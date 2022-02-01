@@ -18,24 +18,24 @@ namespace TeachFe.E2e_test.PageObjects
             get { return driver.FindElement(By.Id("main-content")); }
         }
 
+        public IWebElement TrainInYourOwnTimeLink
+        {
+            get { return driver.FindElement(By.LinkText("Train in your own time")); }
+        }
+
         public IWebElement AzEmployersLink
         {
-            get { return driver.FindElement(By.PartialLinkText("Find your local FE college on the Association")); }
+            get { return driver.FindElement(By.PartialLinkText("The Association of Colleges")); }
         }
 
         public IWebElement OurMembersLink
         {
-            get { return driver.FindElement(By.PartialLinkText("Find independent training providers on the Association")); }
+            get { return driver.FindElement(By.PartialLinkText("The Association of Employment Learning Providers'")); }
         }
 
         public IWebElement AocJobsLink
         {
             get { return driver.FindElement(By.PartialLinkText("Find a job in FE on the Association of Colleges")); }
-        }
-
-        public IWebElement TrainInYourOwnTimeLink
-        {
-            get { return driver.FindElement(By.LinkText("Train in your own time")); }
         }
 
         public IWebElement FindAnFeTeachingJobLink
