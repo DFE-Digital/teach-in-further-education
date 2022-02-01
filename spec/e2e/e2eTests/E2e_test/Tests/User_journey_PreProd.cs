@@ -45,7 +45,6 @@ namespace TeachFe.E2e_test
             navigation.NavigateToPreProd();
             Assert.AreEqual(true, homepage.ContentHomepageDisplayed());
 
-
             #endregion
 
             #region navigation
@@ -143,20 +142,17 @@ namespace TeachFe.E2e_test
             #region train on the job page
 
             Assert.AreEqual(true, trainOnTheJobPage.ContentTrainOnTheJobDisplayed());
-            trainOnTheJobPage.ClickAzEmployersLink();
-            Assert.IsTrue(driver.Url.EndsWith("aocjobs.com/employers-a-z"));
+            trainOnTheJobPage.ClickApprenticeshipLink();
+            Assert.IsTrue(driver.Url.Contains("gov.uk/become-apprentice"));
             driver.Navigate().Back();
-            trainOnTheJobPage.ClickOurMembersLink();
-            Assert.IsTrue(driver.Url.EndsWith("aelp.org.uk/about/our-members/"));
+            trainOnTheJobPage.ClickWhatLevelsMeanLink();
+            Assert.IsTrue(driver.Url.Contains("gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels"));
             driver.Navigate().Back();
-            trainOnTheJobPage.ClickAocJobsLink();
-            Assert.IsTrue(driver.Url.Contains("aocjobs.com/"));
+            trainOnTheJobPage.ClickFETeachingApprenticeshipLink();
+            Assert.IsTrue(driver.Url.Contains("instituteforapprenticeships.org/apprenticeship-standards/learning-and-skills-teacher-v1-1"));
             driver.Navigate().Back();
             trainOnTheJobPage.ClickTrainInYourOwnTimeLink();
             Assert.IsTrue(driver.Url.EndsWith("/train-in-your-own-time.html"));
-            driver.Navigate().Back();
-            trainOnTheJobPage.ClickFindAnFeTeachingJobLink();
-            Assert.IsTrue(driver.Url.EndsWith("/find-an-fe-teaching-job.html"));
             driver.Navigate().Back();
             Assert.IsTrue(trainOnTheJobPage.EmailLink.Text.Equals("Teach.FE@education.gov.uk"));
             signUpToNewsletter.ClickSignUpToNewsletterButton();
