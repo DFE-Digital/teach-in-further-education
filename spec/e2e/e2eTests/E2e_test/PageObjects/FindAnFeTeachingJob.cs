@@ -17,14 +17,19 @@ namespace TeachFe.E2e_test.PageObjects
             get { return driver.FindElement(By.Id("main-content")); }
         }
 
-        public IWebElement EmployersLink
+        public IWebElement CollegesLink
         {
-            get { return driver.FindElement(By.PartialLinkText("Find your local FE college")); }
+            get { return driver.FindElement(By.PartialLinkText("The Association of Colleges")); }
+        }
+
+        public IWebElement AOEmploymentLink
+        {
+            get { return driver.FindElement(By.PartialLinkText("The Association of Employment Learning Providers")); }
         }
 
         public IWebElement AocJobsLink
         {
-            get { return driver.FindElement(By.PartialLinkText("Association of colleges")); }
+            get { return driver.FindElement(By.PartialLinkText("Association of colleges job site")); }
         }
 
         public IWebElement TesJobsLink
@@ -51,9 +56,14 @@ namespace TeachFe.E2e_test.PageObjects
             return MainContent.Displayed;
         }
 
-        public void ClickEmployersLink()
+        public void ClickCollegesLink()
         {
-            EmployersLink.Click();
+            CollegesLink.Click();
+        }
+
+        public void ClickAOEmploymentLink()
+        {
+            AOEmploymentLink.Click();
         }
 
         public void ClickAocJobsLink()
