@@ -18,29 +18,24 @@ namespace TeachFe.E2e_test.PageObjects
             get { return driver.FindElement(By.Id("main-content")); }
         }
 
+        public IWebElement ApprenticeshipLink
+        {
+            get { return driver.FindElement(By.LinkText("apprenticeship")); }
+        }
+
+        public IWebElement WhatLevelsMeanLink
+        {
+            get { return driver.FindElement(By.LinkText("What levels mean")); }
+        }
+
+        public IWebElement FETeachingApprenticeshipLink
+        {
+            get { return driver.FindElement(By.LinkText("FE teaching apprenticeship")); }
+        }
+
         public IWebElement TrainInYourOwnTimeLink
         {
             get { return driver.FindElement(By.LinkText("Train in your own time")); }
-        }
-
-        public IWebElement AzEmployersLink
-        {
-            get { return driver.FindElement(By.PartialLinkText("The Association of Colleges")); }
-        }
-
-        public IWebElement OurMembersLink
-        {
-            get { return driver.FindElement(By.PartialLinkText("The Association of Employment Learning Providers'")); }
-        }
-
-        public IWebElement AocJobsLink
-        {
-            get { return driver.FindElement(By.PartialLinkText("Find a job in FE on the Association of Colleges")); }
-        }
-
-        public IWebElement FindAnFeTeachingJobLink
-        {
-            get { return driver.FindElement(By.LinkText("Find a further education teaching job")); }
         }
 
         public IWebElement EmailLink
@@ -57,29 +52,24 @@ namespace TeachFe.E2e_test.PageObjects
             return MainContent.Displayed;
         }
 
-        public void ClickAzEmployersLink()
+        public void ClickApprenticeshipLink()
         {
-            AzEmployersLink.Click();
+            ApprenticeshipLink.Click();
         }
 
-        public void ClickOurMembersLink()
+        public void ClickWhatLevelsMeanLink()
         {
-            OurMembersLink.Click();
+            WhatLevelsMeanLink.Click();
         }
 
-        public void ClickAocJobsLink()
+        public void ClickFETeachingApprenticeshipLink()
         {
-            AocJobsLink.Click();
+            FETeachingApprenticeshipLink.Click();
         }
 
         public void ClickTrainInYourOwnTimeLink()
         {
             TrainInYourOwnTimeLink.Click();
-        }
-
-        public void ClickFindAnFeTeachingJobLink()
-        {
-            FindAnFeTeachingJobLink.Click();
         }
 
         public bool EmailLinkDisplayed()
