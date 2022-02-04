@@ -1,98 +1,94 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charSet="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+        <meta name="google-site-verification" content="VxQIh9eLM1uQK5rEXYMbXQJn-xXHPWD9y9rUb6OsA8M"/>
+        <meta name="description" content="Change lives not your career. Find out how to start teaching in further education and pass on your skills and trades.">
+            <title><%= page.title || "Teach in further education" %>
+                - Teach in further education - gov.uk</title>
+            <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+                <meta http-equiv="Pragma" content="no-cache">
+                    <meta http-equiv="Expires" content="0">
+                        <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
+                        <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/favicon.ico" type="image/x-icon"/>
+                        <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="blue"/>
+                        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png"/>
+                        <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png"/>
+                        <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/govuk-apple-touch-icon-152x152.png"/>
+                        <link rel="apple-touch-icon" href="/assets/images/govuk-apple-touch-icon.png"/>
+                        <%= favicon_tag '/assets/images/favicon.ico' %>
+                        <meta
+                        property="og:image" content="/assets/images/govuk-opengraph-image.png"/>
+                        <!-- Global site tag (gtag.js) - Google Analytics -->
+                        <script async="async" src="https://www.googletagmanager.com/gtag/js?id=<%= ENV[" GOOGLE_ANALYTICS_TAG"] %>"="GOOGLE_ANALYTICS_TAG" ]="]" %="%">
+                            "" >
+                        </script>
+                        <script src="javascripts/analytics.js"></script>
+                        <script>
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag() {
+                                dataLayer.push(arguments);
+                            }
+                            window.analytics.setup('<%= ENV['GOOGLE_ANALYTICS_TAG'] %>')
+                        </script>
+                        <!-- Google Tag Manager -->
+                        <script>
+                            (function (w, d, s, l, i) {
+                                w[l] = w[l] || [];
+                                w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+                                var f = d.getElementsByTagName(s)[0],
+                                    j = d.createElement(s),
+                                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                                j.async = true;
+                                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                                f.parentNode.insertBefore(j, f);
+                            })(window, document, 'script', 'dataLayer','<%= ENV['GOOGLE_TAG_MANAGER_ID'] %>');
+                        </script>
+                        <!-- End Google Tag Manager -->
+                        <!--   SKD - set the script type to text/plain so it doesn't get activated -->
+                        <!-- move this part! -->
+                            <script type="text/plain" id="hotjar-script"> (function(h,o,t,j,a,r){
+                                                  h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                                                  h._hjSettings={hjid:2612510,hjsv:6};
+                                                  a=o.getElementsByTagName('head')[0];
+                                                  r=o.createElement('script');r.async=1;
+                                                  r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                                                  a.appendChild(r);
+                                            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+                        </script>
+                        <%= stylesheet_link_tag "site" %>
+                    </head>
+                    <body
+                        class="govuk-template__body">
+                        <!-- Google Tag Manager (noscript) -->
+                        <noscript>
+                            <iframe src="https://www.googletagmanager.com/ns.html?id=<%= ENV['GOOGLE_TAG_MANAGER_ID'] %>" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+                        </noscript>
+                        <!-- End Google Tag Manager (noscript) -->
+                        <div role="region">
+                            <script>
+                                document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+                            </script>
+                        </div>
+                        <%= partial "cookie_acceptance" %>
+                        <%= partial "cookie_rejection" %>
+                        <%= partial "cookie_banner" %>
+                        <%= partial "header", :locals => { :data => data } %>
+                        <div class="app-body govuk-width-container">
+                            <main class="govuk-main-wrapper" id="main-content" role="main">
+                                <div className="govuk-grid-row">
+                                    <div className="govuk-grid-column-full">
+                                        <%= yield %>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                        <%= partial "footer", :locals => { :data => data } %>
+                        <script src="javascripts/all.js"></script>
+                        <script defer="defer">
+                            window.site.initSite('cookie-banner', 'navigation');
+                        </script>
+                    </body>
 
-<head>
-  <meta charSet="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-  <meta name="google-site-verification" content="VxQIh9eLM1uQK5rEXYMbXQJn-xXHPWD9y9rUb6OsA8M" />
-  <meta name="description" content="Change lives not your career. Find out how to start teaching in further education and pass on your skills and trades.">
-  <title><%= page.title || "Teach in further education" %> - Teach in further education - gov.uk</title>
-
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-
-  <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
-
-  <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/favicon.ico" type="image/x-icon"/>
-  <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="blue"/>
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png"/>
-  <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png"/>
-  <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/govuk-apple-touch-icon-152x152.png"/>
-  <link rel="apple-touch-icon" href="/assets/images/govuk-apple-touch-icon.png"/>
-
-  <%= favicon_tag '/assets/images/favicon.ico' %>
-
-  <meta property="og:image" content="/assets/images/govuk-opengraph-image.png"/>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=<%= ENV["GOOGLE_ANALYTICS_TAG"] %>"></script>
-  <script src="javascripts/analytics.js"></script>
-  <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      window.analytics.setup('<%= ENV['GOOGLE_ANALYTICS_TAG'] %>')
-  </script>
-
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','<%= ENV['GOOGLE_TAG_MANAGER_ID'] %>');</script>
-  <!-- End Google Tag Manager -->
-
-
-  <!--   SKD - set the script type to text/plain so it doesn't get activated -->
-  <!-- move this part! -->
-  <script type="text/plain" id="hotjar-script">
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2612510,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-
-  <%= stylesheet_link_tag "site" %>
-</head>
-<body class="govuk-template__body">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<%= ENV['GOOGLE_TAG_MANAGER_ID'] %>"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-<div role="region">
-<script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-
-</div>
-
-<%= partial "cookie_acceptance" %>
-<%= partial "cookie_rejection" %>
-<%= partial "cookie_banner" %>
-  <%= partial "header", :locals => { :data => data } %>
-
-<div class="app-body govuk-width-container">
-
-  <main class="govuk-main-wrapper" id="main-content" role="main">
-    <div className="govuk-grid-row">
-      <div className="govuk-grid-column-full">
-        <%= yield %>
-      </div>
-
-    </div>
-  </main>
-</div>
-
-
-
-<%= partial "footer", :locals => { :data => data } %>
-<script src="javascripts/all.js"></script>
-<script defer>
-  window.site.initSite('cookie-banner', 'navigation');
-</script>
-</body>
-
-</html>
+                </html>

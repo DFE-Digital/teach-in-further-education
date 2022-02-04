@@ -1,14 +1,14 @@
 <div id="<%= data.id %>" class="app-hero-banner" role="region" aria-label="page hero">
-  <div class="app-rich-text" id="hero-text-content"><%= markdown(data.hero_text) %></div>
-  <div>
-    <div class="app-hero-adorner-top">&nbsp;</div>
-    <span style="padding-left: 20px">
-    <%= partial "image", :locals => { :data => data.hero_media, :breakpoints => [
+    <div class="app-rich-text" id="hero-text-content"><%= markdown(data.hero_text) %></div>
+    <div>
+        <div class="app-hero-adorner-top">&nbsp;</div>
+        <span style="padding-left: 20px">
+            <%= partial "image", :locals => { :data => data.hero_media, :breakpoints => [
       { :media_query => "(min-width:960px)", :width => 475 },
       { :media_query => "(min-width:640px)", :width => 395 },
       { :media_query => "(max-width:640px)", :width => 316 }
     ] } %>
-      </span>
-    <div class="app-hero-adorner-bottom">&nbsp;</div>
-  </div>
+        </span>
+        <div class="app-hero-adorner-bottom">&nbsp;</div>
+    </div>
 </div>
