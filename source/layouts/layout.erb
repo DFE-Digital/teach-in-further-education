@@ -60,39 +60,34 @@
 </head>
 <body class="govuk-template__body">
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<%= ENV['GOOGLE_TAG_MANAGER_ID'] %>"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<%= ENV['GOOGLE_TAG_MANAGER_ID'] %>"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <!-- End Google Tag Manager (noscript) -->
 
-<div role="region">
-<script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-
-</div>
-
-<%= partial "cookie_acceptance" %>
-<%= partial "cookie_rejection" %>
-<%= partial "cookie_banner" %>
-  <%= partial "header", :locals => { :data => data } %>
-
-<div class="app-body govuk-width-container">
-
-  <main class="govuk-main-wrapper" id="main-content" role="main">
-    <div className="govuk-grid-row">
-      <div className="govuk-grid-column-full">
-        <%= yield %>
-      </div>
-
+    <div role="region">
+        <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
     </div>
-  </main>
-</div>
 
+    <%= partial "cookie_acceptance" %>
+    <%= partial "cookie_rejection" %>
+    <%= partial "cookie_banner" %>
+    <%= partial "header", :locals => { :data => data } %>
 
+    <div class="app-body govuk-width-container">
+        <main class="govuk-main-wrapper" id="main-content" role="main">
+            <div className="govuk-grid-row">
+            <div className="govuk-grid-column-full">
+                <%= yield %>
+            </div>
+            </div>
+        </main>
+    </div>
 
-<%= partial "footer", :locals => { :data => data } %>
-<script src="javascripts/all.js"></script>
-<script defer>
-  window.site.initSite('cookie-banner', 'navigation');
-</script>
+    <%= partial "footer", :locals => { :data => data } %>
+    <script src="javascripts/all.js"></script>
+    <script defer>
+        window.site.initSite('cookie-banner', 'navigation');
+    </script>
 </body>
 
 </html>
