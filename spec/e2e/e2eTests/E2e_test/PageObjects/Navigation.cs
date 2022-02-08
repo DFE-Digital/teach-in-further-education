@@ -9,6 +9,7 @@ namespace TeachFe.E2e_test.PageObjects
         private readonly string urlDev = "https://teachfe:efhcaet@teach-in-further-education-dev.london.cloudapps.digital/";
         private readonly string urlTest = "https://teachfe:efhcaet@teach-in-further-education-test.london.cloudapps.digital/";
         private readonly string urlPreProd = "https://teachfe:efhcaet@teach-in-further-education-pre-production.london.cloudapps.digital/";
+        private readonly string urlProd = "https://www.teach-in-further-education.campaign.gov.uk/";
         public Navigation(IWebDriver driver)
         {
             this.driver = driver;
@@ -66,6 +67,11 @@ namespace TeachFe.E2e_test.PageObjects
         public void NavigateToPreProd()
         {
             driver.Navigate().GoToUrl(urlPreProd);
+        }
+
+        public void NavigateToProd()
+        {
+            driver.Navigate().GoToUrl(urlProd);
         }
 
         public void ClickHomeNavButton()
