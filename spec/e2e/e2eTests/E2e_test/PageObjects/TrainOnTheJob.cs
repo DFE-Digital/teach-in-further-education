@@ -18,24 +18,9 @@ namespace TeachFe.E2e_test.PageObjects
             get { return driver.FindElement(By.Id("main-content")); }
         }
 
-        public IWebElement ApprenticeshipLink
+        public IWebElement ApplyForFEJobLink
         {
-            get { return driver.FindElement(By.LinkText("apprenticeship")); }
-        }
-
-        public IWebElement WhatLevelsMeanLink
-        {
-            get { return driver.FindElement(By.LinkText("What levels mean")); }
-        }
-
-        public IWebElement FETeachingApprenticeshipLink
-        {
-            get { return driver.FindElement(By.LinkText("FE teaching apprenticeship")); }
-        }
-
-        public IWebElement TrainInYourOwnTimeLink
-        {
-            get { return driver.FindElement(By.LinkText("Train in your own time")); }
+            get { return driver.FindElement(By.LinkText("How to apply for an FE teaching job")); }
         }
 
         public IWebElement EmailLink
@@ -52,24 +37,9 @@ namespace TeachFe.E2e_test.PageObjects
             return MainContent.Displayed;
         }
 
-        public void ClickApprenticeshipLink()
+        public void ClickApplyForFEJobLink()
         {
-            ApprenticeshipLink.Click();
-        }
-
-        public void ClickWhatLevelsMeanLink()
-        {
-            WhatLevelsMeanLink.Click();
-        }
-
-        public void ClickFETeachingApprenticeshipLink()
-        {
-            FETeachingApprenticeshipLink.Click();
-        }
-
-        public void ClickTrainInYourOwnTimeLink()
-        {
-            TrainInYourOwnTimeLink.Click();
+            ApplyForFEJobLink.Click();
         }
 
         public bool EmailLinkDisplayed()
