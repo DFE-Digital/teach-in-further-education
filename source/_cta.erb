@@ -1,15 +1,14 @@
 <% if data.cta_type == "Start" %>
-  <button role="button" className="govuk-button govuk-button--start" data-module="govuk-button">
-    <a id="<%= data.id %>" href="<%= data.slug + ".html" %>"  draggable="false" >
-      <%= data.title %>
-      <svg className="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19"
-          viewBox="0 0 33 40" aria-hidden="true" focusable="false">
-        <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"/>
-      </svg>
-    </a>
-  </button>
+    <button role="button" className="govuk-button govuk-button--start" data-module="govuk-button">
+        <a id="<%= data.id %>" href="<%= data.slug + ".html" %>" draggable="false">
+            <%= data.title %>
+            <svg className="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"/>
+            </svg>
+        </a>
+    </button>
 <% else %>
-  <% classMap = {
+    <% classMap = {
     "Start" => "",
     "Primary" => "",
     "Secondary" => "govuk-button--secondary",
@@ -18,9 +17,8 @@
      c = data.cta_type
      selected_class = classMap[c]
   %>
-  
-  <div role="navigation" aria-label="Call to action">
-    <button id="<%= data.id %>" onclick="window.location.href='<%= data.slug %>.html'" data-module="govuk-button" class="govuk-button <%= selected_class %>"
-            type="submit" ><%= data.title %></button>
-  </div>
+
+    <div role="navigation" aria-label="Call to action">
+        <button id="<%= data.id %>" onclick="window.location.href='<%= data.slug %>.html'" data-module="govuk-button" class="govuk-button <%= selected_class %>" type="submit"><%= data.title %></button>
+    </div>
 <% end %>
