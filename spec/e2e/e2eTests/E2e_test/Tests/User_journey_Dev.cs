@@ -221,6 +221,7 @@ namespace TeachFe.E2e_test
             findAnFeTeachingJobPage.ClickFeJobsLink();
             Assert.IsTrue(driver.Url.Contains("fejobs.com/career-advice"));
             driver.Navigate().Back();
+            driver.ExecuteScript("scroll(0,200)");
             findAnFeTeachingJobPage.ClickCollegeJobsLink();
             Assert.IsTrue(driver.Url.Contains("college.jobs.ac.uk/"));
             driver.Navigate().Back();
