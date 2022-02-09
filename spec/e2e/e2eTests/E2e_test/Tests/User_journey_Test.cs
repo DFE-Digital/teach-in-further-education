@@ -134,6 +134,7 @@ namespace TeachFe.E2e_test
             signUpToNewsletter.ClickSignUpToNewsletterButton();
             Assert.IsTrue(driver.Url.EndsWith("/sign-up-for-our-newsletter.html"));
             driver.Navigate().Back();
+            driver.ExecuteScript("scroll(0,500)");
             whatYouCouldTeachPage.ClickTrainOnTheJobLink();
             Assert.IsTrue(driver.Url.EndsWith("/train-on-the-job.html"));
 
@@ -219,6 +220,7 @@ namespace TeachFe.E2e_test
             findAnFeTeachingJobPage.ClickFeJobsLink();
             Assert.IsTrue(driver.Url.Contains("fejobs.com/career-advice"));
             driver.Navigate().Back();
+            driver.ExecuteScript("scroll(0,200)");
             findAnFeTeachingJobPage.ClickCollegeJobsLink();
             Assert.IsTrue(driver.Url.Contains("college.jobs.ac.uk/"));
             driver.Navigate().Back();
@@ -232,7 +234,7 @@ namespace TeachFe.E2e_test
 
             #region help and advice page
 
-            Assert.AreEqual(true, helpAndAdvicePage.ContentHelpAndAdviceDisplayed());
+            Assert.AreEqual(true, helpAndAdvicePage.ContentHelpAndAdviceDisplayed());          
             Assert.IsTrue(helpAndAdvicePage.EmailLink.Text.Equals("Teach.FE@education.gov.uk"));
 
             #endregion
