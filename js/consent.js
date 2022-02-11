@@ -80,31 +80,6 @@ export class Consent {
           ad_storage: "granted",
           analytics_storage: "granted",
         });
-
-        // SKD user has enabled the cookies so find the hotjar script by id that is not currently activated
-
-        var script = document.getElementById("hotjar-script"),
-          s,
-          y,
-          attrib,
-          documentFragment = document.createDocumentFragment();
-
-        // SKD create a new element for the script
-        s = document.createElement("script");
-        s.type = "text/javascript";
-        for (y = 0; y < script.attributes.length; y++) {
-          attrib = script.attributes[y];
-          if (attrib.specified) {
-            if (attrib.name != "type" && attrib.name != "class") {
-              s.setAttribute(attrib.name, attrib.value);
-            }
-          }
-        }
-
-        // SKD inject the script back into the head.  Hot jar will now run when user changes page or refreshes.
-        s.innerHTML = script.innerHTML;
-        documentFragment.appendChild(s);
-        document.head.appendChild(documentFragment);
       }
     }
   }
