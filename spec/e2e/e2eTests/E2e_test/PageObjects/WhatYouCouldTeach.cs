@@ -28,9 +28,9 @@ namespace TeachFe.E2e_test.PageObjects
             get { return driver.FindElement(By.PartialLinkText("What levels mean")); }
         }
 
-        public IWebElement TrainOnTheJobLink
+        public IWebElement GetStartedWithFeProviderLink
         {
-            get { return driver.FindElement(By.PartialLinkText("Train on the job")); }
+            get { return driver.FindElement(By.PartialLinkText("Get started with an FE provider")); }
         }
 
         public IWebElement TrainInYourOwnTimeLink
@@ -57,9 +57,9 @@ namespace TeachFe.E2e_test.PageObjects
             WhatLevelsMeanLink.Click();
         }
 
-        public void ClickTrainOnTheJobLink()
+        public void ClickGetStartedWithFeProviderLink()
         {
-            TrainOnTheJobLink.Click();
+            GetStartedWithFeProviderLink.Click();
         }
 
         public void ClickTrainInYourOwnTimeLink()
