@@ -1,14 +1,14 @@
 import Cookies from "js-cookie";
 
 export class Consent {
-  static cookieBaseName = "teachfe-cookie-preferences";
+  static cookieBaseName = 'teachfe-cookie-preferences';
   static cookieVersion = 1;
   static cookieLifetimeInDays = 90;
-  static cookieAcceptanceBannerId = "cookie-banner-accepted";
-  static cookieRejectionBannerId = "cookie-banner-rejected";
+  static cookieAcceptanceBannerId = 'cookie-banner-accepted';
+  static cookieRejectionBannerId = 'cookie-banner-rejected';
 
   static get cookieName() {
-    return Consent.cookieBaseName + "-v" + Consent.cookieVersion;
+    return Consent.cookieBaseName + '-v' + Consent.cookieVersion;
   }
 
   //Change to switch case in code re-write ACP
@@ -18,11 +18,11 @@ export class Consent {
   init(id) {
     const v = Cookies.get(Consent.cookieName);
     if (v !== null && v !== undefined) {
-      document.getElementById(id).style.display = "none";
+      document.getElementById(id).style.display = 'none';
       document.getElementById(Consent.cookieAcceptanceBannerId).style.display =
-        "none";
+        'none';
       document.getElementById(Consent.cookieRejectionBannerId).style.display =
-        "none";
+        'none';
       const granted = JSON.parse(v);
 
       let cookieAcceptRejectHeight = 0;
@@ -30,14 +30,14 @@ export class Consent {
       if (granted.isGranted) {
         document.getElementById(
           Consent.cookieAcceptanceBannerId
-        ).style.display = "block";
+        ).style.display = 'block';
         cookieAcceptRejectHeight = document.getElementById(
           Consent.cookieAcceptanceBannerId
         ).offsetHeight;
         this.enableCookies();
       } else {
         document.getElementById(Consent.cookieRejectionBannerId).style.display =
-          "block";
+          'block';
         cookieAcceptRejectHeight = document.getElementById(
           Consent.cookieRejectionBannerId
         ).offsetHeight;
@@ -47,27 +47,27 @@ export class Consent {
       if (granted.confirmationHidden) {
         document.getElementById(
           Consent.cookieAcceptanceBannerId
-        ).style.display = "none";
+        ).style.display = 'none';
         document.getElementById(Consent.cookieRejectionBannerId).style.display =
-          "none";
+          'none';
       } else {
-        this.saveConsentPreferences("cookie-banner", {
+        this.saveConsentPreferences('cookie-banner', {
           isGranted: granted.isGranted,
           confirmationHidden: true,
         });
-        document.getElementById("footer").style.marginBottom =
-          cookieAcceptRejectHeight + "px";
+        document.getElementById('footer').style.marginBottom =
+          cookieAcceptRejectHeight + 'px';
       }
     } else {
-      document.getElementById(id).style.display = "block";
+      document.getElementById(id).style.display = 'block';
       const cookieBannerHeight =
-        document.getElementById("cookie-banner").offsetHeight;
-      document.getElementById("footer").style.marginBottom =
-        cookieBannerHeight + "px";
+        document.getElementById('cookie-banner').offsetHeight;
+      document.getElementById('footer').style.marginBottom =
+        cookieBannerHeight + 'px';
       document.getElementById(Consent.cookieAcceptanceBannerId).style.display =
-        "none";
+        'none';
       document.getElementById(Consent.cookieRejectionBannerId).style.display =
-        "none";
+        'none';
     }
   }
 
@@ -76,18 +76,43 @@ export class Consent {
     if (v !== null && v !== undefined) {
       const granted = JSON.parse(v);
       if (granted.isGranted) {
-        gtag("consent", "default", {
-          ad_storage: "granted",
-          analytics_storage: "granted",
+        gtag('consent', 'default', {
+          ad_storage: 'granted',
+          analytics_storage: 'granted',
         });
+
+        // SKD user has enabled the cookies so find the hotjar script by id that is not currently activated
+
+        var script = document.getElementById('hotjar-script'),
+          s,
+          y,
+          attrib,
+          documentFragment = document.createDocumentFragment();
+
+        // SKD create a new element for the script
+        s = document.createElement('script');
+        s.type = 'text/javascript';
+        for (y = 0; y < script.attributes.length; y++) {
+          attrib = script.attributes[y];
+          if (attrib.specified) {
+            if (attrib.name != 'type' && attrib.name != 'class') {
+              s.setAttribute(attrib.name, attrib.value);
+            }
+          }
+        }
+
+        // SKD inject the script back into the head.  Hot jar will now run when user changes page or refreshes.
+        s.innerHTML = script.innerHTML;
+        documentFragment.appendChild(s);
+        document.head.appendChild(documentFragment);
       }
     }
   }
 
   removeCookies() {
-    gtag("consent", "update", {
-      ad_storage: "denied",
-      analytics_storage: "denied",
+    gtag('consent', 'update', {
+      ad_storage: 'denied',
+      analytics_storage: 'denied',
     });
 
     const cookies = Cookies.get();
@@ -103,20 +128,20 @@ export class Consent {
     const serialized = JSON.stringify(prefs);
     Cookies.set(Consent.cookieName, serialized, {
       expires: Consent.cookieLifetimeInDays,
-      sameSite: "Lax",
+      sameSite: 'Lax',
     });
 
-    document.getElementById(id).style.display = "none";
+    document.getElementById(id).style.display = 'none';
   }
 
   consentAccepted(id, showBannerOnNextPage = false) {
     document.getElementById(Consent.cookieAcceptanceBannerId).style.display =
-      "block";
+      'block';
     const cookieBannerAcceptedHeight = document.getElementById(
       Consent.cookieAcceptanceBannerId
     ).offsetHeight;
-    document.getElementById("footer").style.marginBottom =
-      cookieBannerAcceptedHeight + "px";
+    document.getElementById('footer').style.marginBottom =
+      cookieBannerAcceptedHeight + 'px';
     document.getElementById(Consent.cookieAcceptanceBannerId).focus();
     this.enableCookies();
     this.saveConsentPreferences(id, {
@@ -127,12 +152,12 @@ export class Consent {
 
   consentRejected(id, showBannerOnNextPage = false) {
     document.getElementById(Consent.cookieRejectionBannerId).style.display =
-      "block";
+      'block';
     const cookieBannerRejectedHeight = document.getElementById(
       Consent.cookieRejectionBannerId
     ).offsetHeight;
-    document.getElementById("footer").style.marginBottom =
-      cookieBannerRejectedHeight + "px";
+    document.getElementById('footer').style.marginBottom =
+      cookieBannerRejectedHeight + 'px';
     document.getElementById(Consent.cookieRejectionBannerId).focus();
     this.removeCookies();
     this.saveConsentPreferences(id, {
@@ -143,9 +168,9 @@ export class Consent {
 
   hideCookieConfirmation(id) {
     document.getElementById(Consent.cookieAcceptanceBannerId).style.display =
-      "none";
+      'none';
     document.getElementById(Consent.cookieRejectionBannerId).style.display =
-      "none";
-    document.getElementById("footer").style.marginBottom = "0px";
+      'none';
+    document.getElementById('footer').style.marginBottom = '0px';
   }
 }

@@ -15,30 +15,30 @@ export function initSite(bannerId, headerId) {
 
 export function onShowStep(i) {
   const currentStep = document.getElementsByClassName(
-    "app-stepper-header step-selected"
+    'app-stepper-header step-selected'
   )[0];
   if (currentStep) {
-    currentStep.classList.remove("step-selected");
+    currentStep.classList.remove('step-selected');
     const link = currentStep.childNodes[0];
     const currentStepContent = document.getElementById(
-      link.href.replace("#", "")
+      link.href.replace('#', '')
     );
-    currentStepContent.style.display = "none";
+    currentStepContent.style.display = 'none';
   }
 
-  const header = document.getElementById("step_header_" + i);
-  const content = document.getElementById("step_" + i);
-  header.classList.add("step-selected");
-  content.style.display = "block";
+  const header = document.getElementById('step_header_' + i);
+  const content = document.getElementById('step_' + i);
+  header.classList.add('step-selected');
+  content.style.display = 'block';
 }
 
 export function submitQuestionForm(e) {
   e.preventDefault();
   const data = new FormData(e.target);
-  const answer = data.get("answer");
-  if (answer == "accept-cookies") {
-    consent.consentAccepted("cookie-banner", true);
-    if ("referrer" in document) {
+  const answer = data.get('answer');
+  if (answer == 'accept-cookies') {
+    consent.consentAccepted('cookie-banner', true);
+    if ('referrer' in document) {
       window.location = document.referrer;
     } else {
       window.history.back();
@@ -46,9 +46,9 @@ export function submitQuestionForm(e) {
     return answer;
   }
 
-  if (answer == "reject-cookies") {
-    consent.consentRejected("cookie-banner", true);
-    if ("referrer" in document) {
+  if (answer == 'reject-cookies') {
+    consent.consentRejected('cookie-banner', true);
+    if ('referrer' in document) {
       window.location = document.referrer;
     } else {
       window.history.back();
@@ -57,7 +57,7 @@ export function submitQuestionForm(e) {
   }
   analytics.raiseQuestionAnswerSubmit(answer);
   e.target.reset();
-  window.location.assign("/" + answer + ".html");
+  window.location.assign('/' + answer + '.html');
   return answer;
 }
 

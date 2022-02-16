@@ -4,70 +4,70 @@ import { Consent } from "./consent";
 export class Analytics {
   static setup(tag) {
     const v = Cookies.get(Consent.cookieName);
-    let consentValue = "denied";
+    let consentValue = 'denied';
 
     if (v !== null && v !== undefined) {
       const granted = JSON.parse(v);
       if (granted.isGranted) {
-        consentValue = "granted";
+        consentValue = 'granted';
       }
     }
 
-    gtag("consent", "default", {
+    gtag('consent', 'default', {
       ad_storage: consentValue,
       analytics_storage: consentValue,
     });
 
-    gtag("js", new Date());
-    gtag("config", tag);
-    gtag("send", "pageview");
+    gtag('js', new Date());
+    gtag('config', tag);
+    gtag('send', 'pageview');
   }
 
   sendAnalytics(category, action, label) {
-    gtag("event", action, {
+    gtag('event', action, {
       event_category: category,
       event_label: label,
     });
   }
 
   internalNavigation(hashLink, title) {
-    gtag("event", "page_view", {
+    gtag('event', 'page_view', {
       page_title: title,
       page_location: window.location.href,
-      page_path: window.location.pathname + "#" + title.replace(" ", "-"),
+      page_path: window.location.pathname + '#' + title.replace(' ', '-'),
     });
   }
 
   raiseQuestionSelected(questionText) {
-    this.sendAnalytics("question", "selected", questionText);
+    this.sendAnalytics('question', 'selected', questionText);
   }
 
   raiseQuestionAnswerSubmit(questionText) {
-    this.sendAnalytics("question", "submitted", questionText);
+    this.sendAnalytics('question', 'submitted', questionText);
   }
 
   raiseExitPointEvent(url) {
-    this.sendAnalytics("exitPoint", "click", url);
+    this.sendAnalytics('exitPoint', 'click', url);
   }
 
   raiseHeaderNavEvent(url) {
-    this.sendAnalytics("headerNavEvent", "click", url);
+    this.sendAnalytics('headerNavEvent', 'click', url);
   }
   raiseInternalNavEvent(url) {
-    this.sendAnalytics("internalNavEvent", "click", url);
+    this.sendAnalytics('internalNavEvent', 'click', url);
   }
 
   trackAccordionExpansion(id) {
     const accordion = document.getElementById(id);
     const openedElements = Array.from(
-      accordion.querySelectorAll(".govuk-accordion__section--expanded")
+      accordion.querySelectorAll('.govuk-accordion__section--expanded')
     )
       .map((e) => {
-        return e.getAttribute("data-label");
+        return e.getAttribute('data-label');
       })
-      .join(",");
+      .join(',');
 
-    this.sendAnalytics("accordion", "expanded", openedElements);
+    this.sendAnalytics('accordion', 'expanded', openedElements);
   }
 }
 
