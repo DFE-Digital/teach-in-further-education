@@ -5,7 +5,7 @@ using TeachFe.E2e_test.PageObjects;
 namespace TeachFe.E2e_test
 {
     [TestFixture]
-    public class UserJourneyPreProd
+    public class UserJourneyProd
     {
         private ChromeDriver driver;
 
@@ -42,7 +42,7 @@ namespace TeachFe.E2e_test
 
             #region init
 
-            navigation.NavigateToPreProd();
+            navigation.NavigateToProd();
             Assert.AreEqual(true, homepage.ContentHomepageDisplayed());
 
             #endregion
