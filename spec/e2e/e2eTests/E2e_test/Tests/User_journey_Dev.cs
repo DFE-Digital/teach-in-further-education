@@ -203,6 +203,7 @@ namespace TeachFe.E2e_test
             findAnFeTeachingJobPage.ClickAocJobsLink();
             Assert.IsTrue(driver.Url.Contains("aocjobs.com/"));
             driver.Navigate().Back();
+            driver.ExecuteScript("scroll(0,200)");
             findAnFeTeachingJobPage.ClickTesJobsLink();
             Assert.IsTrue(driver.Url.EndsWith("/further-education-teaching-and-lecturing"));
             driver.Navigate().Back();
