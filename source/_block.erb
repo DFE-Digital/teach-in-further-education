@@ -1,42 +1,42 @@
 <div id="<%= "block_#{index}" %>" class="app-block">
-  <% if block._meta.content_type_id == "advice" %>
-    <%= partial("advice", :locals => { :data => block, :show_title => true }) %>
-  <% end %>
-  <% if block._meta.content_type_id == "story" %>
-    <%= partial("story", :locals => { :data => block, :show_title => true }) %>
-  <% end %>
-  <% if block._meta.content_type_id == "columnarLayout" %>
-    <%= partial("column_layout", :locals => { :data => block, :show_title => true }) %>
-  <% end %>
-  <% if block._meta.content_type_id == "information" %>
-    <%= partial("summary", :locals => { :data => block }) %>
-  <% end %>
-  <% if block._meta.content_type_id == "userJourney" %>
-    <% if block.is_accordion %>
-      <%= partial("accordion", :locals => { :data => block }) %>
-    <% else %>
-      <%= partial("steps", :locals => { :data => block }) %>
+    <% if block._meta.content_type_id == "advice" %>
+        <%= partial("advice", :locals => { :data => block, :show_title => true }) %>
     <% end %>
-  <% end %>
-  <% if block._meta.content_type_id == "heroBanner" %>
-    <%= partial("hero", :locals => { :data => block }) %>
-  <% end %>
-  <% if block._meta.content_type_id == "tableOfContents"  %>
-    <%= partial("table_of_contents", :locals => { :index => index, :data => block, :page => page})  %>
-  <% end %>
-  <% if block._meta.content_type_id == "question" %>
-    <%= partial("question", :locals => { :data => block }) %>
-  <% end %>
-  <% if block._meta.content_type_id == "callToAction" %>
-    <%= partial("cta", :locals => { :data => block }) %>
-  <% end %>
-  <% if block._meta.content_type_id == "userInput" %>
-    <%= partial("user_input", :locals => { :data => block }) %>
-  <% end %>
-  <% if block._meta.content_type_id == "Panel" %>
-    <%= partial("panel", :locals => { :data => block }) %>
-  <% end %>
-  <% if block._meta.content_type_id == "lineBreak" %>
-    <%= partial("lineBreak", :locals => { :data => block }) %>
-  <% end %>
+    <% if block._meta.content_type_id == "story" %>
+        <%= partial("story", :locals => { :data => block, :show_title => true }) %>
+    <% end %>
+    <% if block._meta.content_type_id == "columnarLayout" %>
+        <%= partial("column_layout", :locals => { :data => block, :show_title => true }) %>
+    <% end %>
+    <% if block._meta.content_type_id == "information" %>
+        <%= partial("summary", :locals => { :data => block }) %>
+    <% end %>
+    <% if block._meta.content_type_id == "userJourney" %>
+        <% if block.is_accordion %>
+            <%= partial("accordion", :locals => { :data => block }) %>
+        <% else %>
+            <%= partial("steps", :locals => { :data => block }) %>
+        <% end %>
+    <% end %>
+    <% if block._meta.content_type_id == "heroBanner" %>
+        <%= partial("hero", :locals => { :data => block }) %>
+    <% end %>
+    <% if block._meta.content_type_id == "tableOfContents"  %>
+        <%= partial("table_of_contents", :locals => { :index => index, :data => block, :page => page})  %>
+    <% end %>
+    <% if block._meta.content_type_id == "question" %>
+        <%= partial("question", :locals => { :data => block }) %>
+    <% end %>
+    <% if block._meta.content_type_id == "callToAction" %>
+        <%= partial("cta", :locals => { :data => block }) %>
+    <% end %>
+    <% if block._meta.content_type_id == "userInput" %>
+        <%= partial("user_input", :locals => { :data => block }) %>
+    <% end %>
+    <% if block._meta.content_type_id == "Panel" %>
+        <%= partial("panel", :locals => { :data => block }) %>
+    <% end %>
+    <% if block._meta.content_type_id == "lineBreak" %>
+        <%= partial("lineBreak", :locals => { :data => block }) %>
+    <% end %>
 </div>

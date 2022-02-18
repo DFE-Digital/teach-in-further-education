@@ -28,39 +28,14 @@ namespace TeachFe.E2e_test.PageObjects
             get { return driver.FindElement(By.LinkText("Visit the student finance website")); }
         }
 
+        public IWebElement BursariesLink
+        {
+            get { return driver.FindElement(By.PartialLinkText("Information about bursaries")); }
+        }
+
         public IWebElement TrainOnTheJobLink
         {
-            get { return driver.FindElement(By.LinkText("Train on the job")); }
-        }
-
-        public IWebElement NoneRadioButton
-        {
-            get { return driver.FindElement(By.ClassName("govuk-radios__input")); }
-        }
-
-        public IWebElement GcseButton
-        {
-            get { return driver.FindElement(By.CssSelector("#qual-form-group > fieldset > div > div:nth-child(2) > input")); }
-        }
-
-        public IWebElement AlevelButton
-        {
-            get { return driver.FindElement(By.CssSelector("#qual-form-group > fieldset > div > div:nth-child(3) > input")); }
-        }
-
-        public IWebElement DegreeButton
-        {
-            get { return driver.FindElement(By.CssSelector("#qual-form-group > fieldset > div > div:nth-child(4) > input")); }
-        }
-
-        public IWebElement SubmitButton
-        {
-            get { return driver.FindElement(By.Id("question-submit-qNRtpmv245PlK1GAu8Mzm")); }
-        }
-
-        public IWebElement ValidationErrorMessage
-        {
-            get { return driver.FindElement(By.Id("error-message")); }
+            get { return driver.FindElement(By.LinkText("training on the job")); }
         }
 
         public IWebElement EmailLink
@@ -77,36 +52,6 @@ namespace TeachFe.E2e_test.PageObjects
             return MainContent.Displayed;
         }
 
-        public bool ValidationErrorMessageDisplayed()
-        {
-            return ValidationErrorMessage.Displayed;
-        }
-
-        public void ClickNoneRadioButton()
-        {
-            NoneRadioButton.Click();
-        }
-
-        public void ClickGcseButton()
-        {
-            GcseButton.Click();
-        }
-
-        public void ClickAlevelsButton()
-        {
-            AlevelButton.Click();
-        }
-
-        public void ClickDegreeButton()
-        {
-            DegreeButton.Click();
-        }
-
-        public void ClickSubmitButton()
-        {
-            SubmitButton.Click();
-        }
-
         public void ClickFullListOfFeQualifications()
         {
             FullListOfFeQualifications.Click();
@@ -115,6 +60,11 @@ namespace TeachFe.E2e_test.PageObjects
         public void ClickStudentFinanceLink()
         {
             StudentFinanceLink.Click();
+        }
+
+        public void ClickBursariesLink()
+        {
+            BursariesLink.Click();
         }
 
         public void ClickTrainOnTheJobLink()
