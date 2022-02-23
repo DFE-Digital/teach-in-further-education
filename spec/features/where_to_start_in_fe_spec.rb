@@ -93,11 +93,11 @@ describe 'Where to start in fe components', :type => :feature do
     end
 
     it "link should re-direct to expected urls" do
-      link = page.find_link("Find your local FE college on the Association of Colleges website", match: :first)
+      link = page.find_link("The Association of Colleges has a list of FE colleges", match: :first)
       within link do 
         expect(link[:href]).to eq 'https://www.aocjobs.com/employers-a-z'
       end
-      link = page.find_link("Find independent training providers on the Association of Employment Learning Providers' website")
+      link = page.find_link("The Association of Employment Learning Providers' website has a list of training providers")
       within link do
         expect(link[:href]).to eq 'https://www.aelp.org.uk/about/our-members/'
       end
