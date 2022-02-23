@@ -2,14 +2,12 @@
 :id: 30zC6ehmTs7QXh0ymjNUpI
 :_meta:
   :content_type_id: page
-  :updated_at: '2021-12-08T15:17:32+00:00'
+  :updated_at: '2022-02-11T10:07:38+00:00'
   :created_at: '2021-04-30T00:00:56+00:00'
   :id: 30zC6ehmTs7QXh0ymjNUpI
-:title: Full list of FE qualifications
-:nav_title: Full list of FE qualifications
-:preamble: There are a number of routes into teaching in further education (FE) and
-  a choice of teaching qualifications.
-:heading: Full list of FE qualifications
+:title: Teaching qualifications
+:nav_title: Teaching qualifications
+:heading: Teaching qualifications
 :slug: full-list-of-fe-qualifications
 :blocks:
 - :id: 5XYHbxsuUuv2QMBmQBdNWg
@@ -19,153 +17,108 @@
     :created_at: '2021-12-01T10:16:37+00:00'
     :id: 5XYHbxsuUuv2QMBmQBdNWg
   :title: On this page
-- :id: 6MLGVV5W7puMHUOyCQw5PO
+- :id: 2LO1IwLBcK7y7jwOkATnv1
   :_meta:
     :content_type_id: advice
-    :updated_at: '2021-12-13T14:02:42+00:00'
-    :created_at: '2021-04-29T23:31:00+00:00'
-    :id: 6MLGVV5W7puMHUOyCQw5PO
-  :title: Introductory qualifications
-  :advice_body: "These Level 3 and 4 qualifications are useful if you want to build
-    up your further education (FE) experience gradually.\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
-    \"Explanation of the different educational attainment levels\")\n\nThese are not
-    full teaching qualifications.\n\nYou will usually need extra qualifications and
-    experience before you can teach.\n\n### These qualifications are good if you:\n-
-    want to concentrate on FE only\n- want to take a basic course to see if FE is
-    really for you\n- want to spend as little as possible at first\n- do not have
-    enough experience or qualification in your subject yet\n\n### These might not
-    be the right qualifications if you want to:\n- get a full teaching qualification
-    \n- train on the job full time\n\n<table class=\"govuk-table\">\n  <caption class=\"govuk-table__caption
-    govuk-table__caption--m\" aria-label=\"About these courses - Introductory qualifications\">About
-    these courses</caption>\n  <thead class=\"govuk-table__head\">\n    <tr class=\"govuk-table__row\">\n
-    \     <th scope=\"col\" class=\"govuk-table__header\"></th>\n      <th scope=\"col\"
-    class=\"govuk-table__header\">Award in Education and Training</th>\n      <th
-    scope=\"col\" class=\"govuk-table__header\">Certificate in Education and Training</th>\n
-    \   </tr>\n  </thead>\n  <tbody class=\"govuk-table__body\">\n    <tr>\n      <th
-    scope=\"row\" class=\"govuk-table__header\">Suitability</th>\n      <td class=\"govuk-table__cell\">\n
-    \         You are open to teaching in a range of FE contexts and want \n          to
-    build skills and confidence</td>\n      <td class=\"govuk-table__cell\">\n        You
-    want to cover a range of units to suit your chosen FE context \n        and gain
-    practical teaching experience</td>\n    </tr>\n    <tr>\n      <th scope=\"row\"
-    class=\"govuk-table__header\">Course structure</th>\n      <td class=\"govuk-table__cell\">\n
-    \       3 modules and a 'micro teaching' experience (around 15 minutes)</td>\n
-    \     <td class=\"govuk-table__cell\">30 hours of teaching practice</td>\n    </tr>\n
-    \   <tr>\n      <th scope=\"row\" class=\"govuk-table__header\">Level of qualification
-    you will get</th>\n      <td class=\"govuk-table__cell\">Level 3. <a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
-    referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
-    class=\"govuk-link\">What levels mean</a>  </td>\n      <td class=\"govuk-table__cell\">Level
-    4. <a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
-    referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
-    class=\"govuk-link\">What levels mean</a> </td>\n    </tr>\n    <tr>\n      <th
+    :updated_at: '2022-02-15T10:20:17+00:00'
+    :created_at: '2022-02-11T10:00:15+00:00'
+    :id: 2LO1IwLBcK7y7jwOkATnv1
+  :title: Training course information
+  :advice_body: "<table class=\"govuk-table\">\n\n   <tbody class=\"govuk-table__body\">
+    \    \n   <tr>\n       <th scope=\"row\" class=\"govuk-table__header\"></th>\n
+    \      <th class=\"govuk-table__header\"></th>\n   </tr>\n   <tbody class=\"govuk-table__body\">
+    \    \n   <tr>\n       <th scope=\"row\" class=\"govuk-table__header\">Course
+    structure</th>\n       <td class=\"govuk-table__cell\">\n           Typically
+    full time study with at least 100 hours of teaching practice, including 50 in
+    your chosen area if you are on a Specialist Pathway</td>\n   </tr>\n   <tr>\n
+    \      <th scope=\"row\" class=\"govuk-table__header\">Level of qualification
+    you will get</th>\n       <td class=\"govuk-table__cell\">\n           Levels
+    5-7 depending on course. <a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
+    referrerpolicy=\"no-referrer-when-downgrade\" \nonclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
+    class=\"govuk-link\">What levels mean</a>  </td>\n   </tr>\n   <tr>\n       <th
     scope=\"row\" class=\"govuk-table__header\">Area of education (Primary, Secondary,
-    FE)</th>\n      <td class=\"govuk-table__cell\">FE-specific</td>\n      <td class=\"govuk-table__cell\">FE-specific</td>\n
-    \   </tr>\n    <tr>\n      <th scope=\"row\" class=\"govuk-table__header\">Teaching
-    status</th>\n      <td class=\"govuk-table__cell\">No official teaching status</td>\n
-    \     <td class=\"govuk-table__cell\">No official teaching status</td>\n    </tr>\n
-    \   <tr>\n      <th scope=\"row\" class=\"govuk-table__header\">Cost (varies by
-    provider)</th>\n      <td class=\"govuk-table__cell\">Up to £500</td>\n      <td
-    class=\"govuk-table__cell\">Up to £1000</td>\n    </tr>\n    <tr>\n      <th scope=\"row\"
-    class=\"govuk-table__header\">Length of course</th>\n      <td class=\"govuk-table__cell\">From
-    3 days to 12 weeks part time</td>\n      <td class=\"govuk-table__cell\">Up to
-    6 months, full time or part time</td>\n    </tr>\n    <tr>\n      <th scope=\"row\"
-    class=\"govuk-table__header\">Entry requirements</th>\n      <td class=\"govuk-table__cell\">No
-    entry requirements</td>\n      <td class=\"govuk-table__cell\">Requires an assessment
-    of your English, maths and ICT skills</td>\n    </tr>\n  </tbody>\n</table>"
+    FE)</th>\n       <td class=\"govuk-table__cell\">FE only</td>\n   </tr>\n   <tr>\n
+    \      <th scope=\"row\" class=\"govuk-table__header\">Teaching status</th>\n
+    \      <td class=\"govuk-table__cell\">No official teaching status (but eligible
+    to apply for QTLS)</td>\n   </tr>\n   <tr>\n       <th scope=\"row\" class=\"govuk-table__header\">Cost
+    (varies by provider)</th>\n       <td class=\"govuk-table__cell\">Between £6000
+    and £9250 funded by a <a href=\"https://www.gov.uk/government/organisations/student-loans-company\"
+    class=\"govuk-link\">student loan</a> </td>\n   </tr>\n   <tr>\n       <th scope=\"row\"
+    class=\"govuk-table__header\">Course length</th>\n       <td class=\"govuk-table__cell\">1
+    year full- time or 2 years part-time</td>\n   </tr>\n   <tr>\n       <th scope=\"row\"
+    class=\"govuk-table__header\">Entry requirements</th>\n       <td class=\"govuk-table__cell\">Maths
+    and English usually required plus course specific qualifications</td>\n   </tr>\n
+    \  </tbody>\n</table>\n\n### These qualifications are good if you want to:\n\n-
+    train part time or on the job\n- get a full teaching qualification\n\n### These
+    are not the best qualifications if you want to:\n\n- teach in secondary schools\n-
+    teach in sixth forms in secondary schools\n"
   :display_order: true
+  :apply_background_color: false
   :show_title: true
 - :id: GUGtg9Vxo8cZQblsYPoGc
   :_meta:
     :content_type_id: advice
-    :updated_at: '2021-12-10T10:35:31+00:00'
+    :updated_at: '2022-02-11T10:02:00+00:00'
     :created_at: '2021-08-06T10:52:00+00:00'
     :id: GUGtg9Vxo8cZQblsYPoGc
   :title: Diploma in Education and Training
-  :advice_body: "This Level 5 qualification lets you teach most trades, skills and
-    subjects in further education (FE).\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
-    \"Explanation of the different educational attainment levels\")\n\n### This qualification
-    is good if you want to:\n\n- train part time or on the job\n- teach without a
-    degree in your subject\n- get a full teaching qualification but keep costs to
-    a minimum\n\n### This might not be the right qualification if you want to:\n-
-    teach in secondary schools\n- teach in sixth forms in secondary schools\n- take
-    a basic course to see if FE is really for you\n\n### Integrated Specialist Diploma\n\nYou
-    can also choose to specialise in one of 3 Specialist Pathway areas of teaching:\n\n-
-    special educational needs\n- English literacy\n- English for speakers of other
-    languages (ESOL)\n- mathematics\n\nTo teach English or mathematics you need at
-    least a level 3 qualification in the subject.\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
-    \"Explanation of the different educational attainment levels\")\n\n<table class=\"govuk-table\">\n
-    \ <caption class=\"govuk-table__caption govuk-table__caption--m\" aria-label=\"About
-    this course - Diploma in Education and Training\">About this  course</caption>\n
-    \   <thead class=\"govuk-table__head\">\n      <tr class=\"govuk-table__row\">\n
-    \     </tr>\n    </thead>\n    <tbody class=\"govuk-table__body\">      \n    <tr>\n
-    \       <th scope=\"row\" class=\"govuk-table__header\"></th>\n        <th class=\"govuk-table__header\"></th>\n
-    \   </tr>\n    <tbody class=\"govuk-table__body\">      \n    <tr>\n        <th
-    scope=\"row\" class=\"govuk-table__header\">Course structure</th>\n        <td
-    class=\"govuk-table__cell\">\n            100 hours of teaching practice, including
-    50 in your chosen area if you are on a Specialist Pathway</td>\n    </tr>\n    <tr>\n
-    \       <th scope=\"row\" class=\"govuk-table__header\">Level of qualification
-    you will get</th>\n        <td class=\"govuk-table__cell\">\n            Level
-    5. <a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
-    referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
-    class=\"govuk-link\">What levels mean</a>  </td>\n    </tr>\n    <tr>\n        <th
-    scope=\"row\" class=\"govuk-table__header\">Area of education (Primary, Secondary,
-    FE)</th>\n        <td class=\"govuk-table__cell\">FE only</td>\n    </tr>\n    <tr>\n
-    \       <th scope=\"row\" class=\"govuk-table__header\">Teaching status</th>\n
-    \       <td class=\"govuk-table__cell\">Full FE teaching qualification.</td>\n
-    \   </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Cost
-    (varies by provider)</th>\n        <td class=\"govuk-table__cell\">up to £6,000</td>\n
-    \   </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Course
-    length</th>\n        <td class=\"govuk-table__cell\">1 to 2 years, full time or
-    part time</td>\n    </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Entry
-    requirements</th>\n        <td class=\"govuk-table__cell\">An assessment of your
-    English, mathematics and ICT skills. If you are on a specialist pathway for mathematics
-    or English, you'll need at least a level 3 qualification in the subject.<a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
-    referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
-    class=\"govuk-link\">What levels mean</a> </td>\n    </tr>\n    </tbody>\n</table>"
+  :advice_body: |
+    ### What you need to access this course
+    At least a Level 3 in your subject. <a href="https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels" referrerpolicy="no-referrer-when-downgrade" onclick="window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')" class="govuk-link">What levels mean</a>.
+
+    ### What you'll achieve
+    A Level 5 Diploma in Education and Training. <a href="https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels" referrerpolicy="no-referrer-when-downgrade" onclick="window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')" class="govuk-link">What levels mean</a>.
+  :display_order: true
+  :apply_background_color: false
+  :show_title: true
+- :id: 1ex0CmvfE4cIkmR35z5s6F
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2022-02-11T10:04:03+00:00'
+    :created_at: '2022-02-11T10:04:03+00:00'
+    :id: 1ex0CmvfE4cIkmR35z5s6F
+  :title: Certificate in Education
+  :advice_body: |
+    ### What you need to access this course
+
+    At least a Level 3 in your subject. <a href="https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels" referrerpolicy="no-referrer-when-downgrade" onclick="window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')" class="govuk-link">What levels mean</a>.
+
+    ### What you'll achieve
+
+    A Level 5 Certificate in Education. <a href="https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels" referrerpolicy="no-referrer-when-downgrade" onclick="window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')" class="govuk-link">What levels mean</a>.
   :display_order: true
   :apply_background_color: false
   :show_title: true
 - :id: 5FbxLwEjMguAEiyxkmTuka
   :_meta:
     :content_type_id: advice
-    :updated_at: '2021-12-08T16:16:13+00:00'
+    :updated_at: '2022-02-11T10:05:36+00:00'
     :created_at: '2021-05-14T11:04:25+00:00'
     :id: 5FbxLwEjMguAEiyxkmTuka
-  :title: PGCE/CertEd etc in post-compulsory education and training (PCET)
-  :advice_body: "This Level 7 course is equal to a Master's degree. It lets you teach
-    most subjects in further education (FE) only.\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
-    \"Explanation of the different educational attainment levels\")\n\nYou need at
-    least a degree to access this course.\n\n### This qualification is good if you
-    want to:\n- train full or part time\n- train in FE colleges\n- get a full teaching
-    qualification\n\n### This might not be the right qualification if you want to:\n-
-    teach or train in secondary schools or their sixth forms (visit [Get in to Teaching](https://getintoteaching.education.gov.uk
-    \"Get into Teaching website\") if you want to do that)\n- train on the job\n-
-    take a basic course to see if FE is really for you\n\n<table class=\"govuk-table\">\n
-    \   <caption class=\"govuk-table__caption govuk-table__caption--m\" aria-label=\"About
-    this course - PCET\">About this course</caption>\n    <thead class=\"govuk-table__head\">\n
-    \   <tr class=\"govuk-table__row\">\n    </tr>\n    </thead>\n    <tbody class=\"govuk-table__body\">
-    \     \n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\"></th>\n
-    \       <th class=\"govuk-table__header\"></th>\n    </tr>\n    <tr>\n        <th
-    scope=\"row\" class=\"govuk-table__header\">Course structure</th>\n        <td
-    class=\"govuk-table__cell\">\n            100 hours teaching</td>\n    </tr>\n
-    \   <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Level of qualification
-    you will get</th>\n        <td class=\"govuk-table__cell\">\n            Level
-    7 (equivalent to Master’s degree). <a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
+  :title: Professional Graduate Certificate in Education
+  :advice_body: |
+    ### What you need to access this course
+
+    At least a Level 4 in your subject. <a href="https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels" referrerpolicy="no-referrer-when-downgrade" onclick="window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')" class="govuk-link">What levels mean</a>.
+
+    ### What you'll achieve
+
+    A Level 6 Professional Graduate Certificate in Education. <a href="https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels" referrerpolicy="no-referrer-when-downgrade" onclick="window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')" class="govuk-link">What levels mean</a>.
+  :display_order: true
+  :apply_background_color: false
+  :show_title: true
+- :id: 2YeTVctrsZ2nTADx2hfHKa
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2022-02-11T10:06:37+00:00'
+    :created_at: '2022-02-11T10:06:37+00:00'
+    :id: 2YeTVctrsZ2nTADx2hfHKa
+  :title: Postgraduate Certificate in Education
+  :advice_body: "### What you need to access this course\n\nA degree or equivalent
+    qualification.  \n\n### What you'll achieve\n\nA Level 7 Postgraduate Certificate
+    in Education. <a href=\"https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels\"
     referrerpolicy=\"no-referrer-when-downgrade\" onclick=\"window.site.analytics.raiseInternalNavEvent('https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels')\"
-    class=\"govuk-link\">What levels mean</a>  </td>\n    </tr>\n    <tr>\n        <th
-    scope=\"row\" class=\"govuk-table__header\">Area of education (Primary, Secondary,
-    FE)</th>\n        <td class=\"govuk-table__cell\">FE only</td>\n    </tr>\n    <tr>\n
-    \       <th scope=\"row\" class=\"govuk-table__header\">Teaching status</th>\n
-    \       <td class=\"govuk-table__cell\">Full FE teaching qualification.</td>\n
-    \   </tr>\n    <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Cost
-    (varies by provider)</th>\n        <td class=\"govuk-table__cell\">Up to £9,000
-    if self-funded (some providers offer a bursary or scholarship)</td>\n    </tr>\n
-    \   <tr>\n        <th scope=\"row\" class=\"govuk-table__header\">Course length</th>\n
-    \       <td class=\"govuk-table__cell\">1 year full time</td>\n    </tr>\n    <tr>\n
-    \       <th scope=\"row\" class=\"govuk-table__header\">Entry requirements</th>\n
-    \       <td class=\"govuk-table__cell\">Degree or equivalent, and English and
-    mathematics GCSEs grade 4 (C) or above</td>\n    </tr>\n    </tbody>\n</table>\n\n[Find
-    a post-graduate teaching course](https://www.find-postgraduate-teacher-training.service.gov.uk/
-    \"Government post-graduate teaching courses finder\")"
+    class=\"govuk-link\">What levels mean</a>.\n"
   :display_order: true
   :apply_background_color: false
   :show_title: true
