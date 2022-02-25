@@ -34,7 +34,6 @@ export class Consent {
         cookieAcceptRejectHeight = document.getElementById(
           Consent.cookieAcceptanceBannerId
         ).offsetHeight;
-        this.enableCookies();
       } else {
         document.getElementById(Consent.cookieRejectionBannerId).style.display =
           'block';
@@ -45,6 +44,7 @@ export class Consent {
       }
 
       if (granted.confirmationHidden) {
+
         document.getElementById(
           Consent.cookieAcceptanceBannerId
         ).style.display = 'none';
