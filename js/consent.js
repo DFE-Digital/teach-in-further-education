@@ -11,66 +11,54 @@ export class Consent {
     return Consent.cookieBaseName + '-v' + Consent.cookieVersion;
   }
 
-  //Change to switch case in code re-write ACP
-  //Could neaten the code up also by setting reject/accept/cookies banner as
-  //...display:none in css rather than relying on if statement.
-
+  
   init(id) {
+    // let startTime = performance.now()
+    const acceptCookies = document.getElementById(Consent.cookieAcceptanceBannerId).style.display;
+    const rejectCookies =  document.getElementById(Consent.cookieRejectionBannerId).style.display;
+    const idGeneral= document.getElementById(id).style.display;
+
     const v = Cookies.get(Consent.cookieName);
     if (v !== null && v !== undefined) {
-      document.getElementById(id).style.display = 'none';
-      document.getElementById(Consent.cookieAcceptanceBannerId).style.display =
-        'none';
-      document.getElementById(Consent.cookieRejectionBannerId).style.display =
-        'none';
+      idGeneral = 'none';
+      acceptCookies = 'none';
+      rejectCookies = 'none';
       const granted = JSON.parse(v);
 
       let cookieAcceptRejectHeight = 0;
 
       if (granted.isGranted) {
-        document.getElementById(
-          Consent.cookieAcceptanceBannerId
-        ).style.display = 'block';
-        cookieAcceptRejectHeight = document.getElementById(
-          Consent.cookieAcceptanceBannerId
-        ).offsetHeight;
+        acceptCookies = 'block';
+        cookieAcceptRejectHeight = document.getElementById(Consent.cookieAcceptanceBannerId).offsetHeight;
         this.enableCookies();
       } else {
-        document.getElementById(Consent.cookieRejectionBannerId).style.display =
-          'block';
-        cookieAcceptRejectHeight = document.getElementById(
-          Consent.cookieRejectionBannerId
-        ).offsetHeight;
+        rejectCookies = 'block';
+        cookieAcceptRejectHeight = document.getElementById(Consent.cookieRejectionBannerId).offsetHeight;
         this.removeCookies();
       }
 
       if (granted.confirmationHidden) {
-        document.getElementById(
-          Consent.cookieAcceptanceBannerId
-        ).style.display = 'none';
-        document.getElementById(Consent.cookieRejectionBannerId).style.display =
-          'none';
+        acceptCookies = 'none';
+        rejectCookies = 'none';
       } else {
-        this.saveConsentPreferences('cookie-banner', {
-          isGranted: granted.isGranted,
+        this.saveConsentPreferences('cookie-banner', {isGranted: granted.isGranted, 
           confirmationHidden: true,
         });
         document.getElementById('footer').style.marginBottom =
           cookieAcceptRejectHeight + 'px';
       }
     } else {
-      document.getElementById(id).style.display = 'block';
+      idGeneral = 'block';
       const cookieBannerHeight =
-        document.getElementById('cookie-banner').offsetHeight;
-      document.getElementById('footer').style.marginBottom =
-        cookieBannerHeight + 'px';
-      document.getElementById(Consent.cookieAcceptanceBannerId).style.display =
-        'none';
-      document.getElementById(Consent.cookieRejectionBannerId).style.display =
-        'none';
+      document.getElementById('cookie-banner').offsetHeight;
+      document.getElementById('footer').style.marginBottom = cookieBannerHeight + 'px';
+      acceptCookies = 'none';
+      rejectCookies = 'none';
     }
+    // var endTime = performance.now()
+    // console.log(`Call to doSomething took ${endTime - startTime} milliseconds`)
   }
-
+  
   enableCookies() {
     const v = Cookies.get(Consent.cookieName);
     if (v !== null && v !== undefined) {
