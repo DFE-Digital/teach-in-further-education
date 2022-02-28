@@ -113,6 +113,7 @@ namespace TeachFe.E2e_test
             whereToStartInFePage.ClickWhatYouCouldTeachLink();
             Assert.IsTrue(driver.Url.EndsWith("/what-you-could-teach.html"));
             driver.Navigate().Back();
+            Assert.IsTrue(helpAndAdvicePage.PhoneNumberLink.Text.Equals("0800 389 2502"));
             signUpToNewsletter.ClickSignUpToNewsletterButton();
             Assert.IsTrue(driver.Url.EndsWith("/sign-up-for-our-newsletter.html"));
             driver.Navigate().Back();
@@ -132,6 +133,7 @@ namespace TeachFe.E2e_test
             whatYouCouldTeachPage.ClickTrainInYourOwnTimeLink();
             Assert.IsTrue(driver.Url.EndsWith("/train-in-your-own-time.html"));
             driver.Navigate().Back();
+            Assert.IsTrue(helpAndAdvicePage.PhoneNumberLink.Text.Equals("0800 389 2502"));
             signUpToNewsletter.ClickSignUpToNewsletterButton();
             Assert.IsTrue(driver.Url.EndsWith("/sign-up-for-our-newsletter.html"));
             driver.Navigate().Back();
@@ -156,7 +158,7 @@ namespace TeachFe.E2e_test
             howToGetIntoFeTeachingPage.ClickFETeachingApprenticeshipLink();
             Assert.IsTrue(driver.Url.Contains("instituteforapprenticeships.org/apprenticeship-standards/learning-and-skills-teacher-v1-1"));
             driver.Navigate().Back();
-            Assert.IsTrue(howToGetIntoFeTeachingPage.EmailLink.Text.Equals("Teach.FE@education.gov.uk"));
+            Assert.IsTrue(helpAndAdvicePage.PhoneNumberLink.Text.Equals("0800 389 2502"));
             signUpToNewsletter.ClickSignUpToNewsletterButton();
             Assert.IsTrue(driver.Url.EndsWith("/sign-up-for-our-newsletter.html"));
             driver.Navigate().Back();
@@ -182,7 +184,7 @@ namespace TeachFe.E2e_test
             trainInYourOwnTimePage.ClickTrainOnTheJobLink();
             Assert.IsTrue(driver.Url.EndsWith("/how-to-get-into-fe-teaching.html"));
             driver.Navigate().Back();
-            Assert.IsTrue(trainInYourOwnTimePage.EmailLink.Text.Equals("Teach.FE@education.gov.uk"));
+            Assert.IsTrue(helpAndAdvicePage.PhoneNumberLink.Text.Equals("0800 389 2502"));
             signUpToNewsletter.ClickSignUpToNewsletterButton();
             Assert.IsTrue(driver.Url.EndsWith("/sign-up-for-our-newsletter.html"));
             driver.Navigate().Back();
@@ -214,6 +216,7 @@ namespace TeachFe.E2e_test
             findAnFeTeachingJobPage.ClickCollegeJobsLink();
             Assert.IsTrue(driver.Url.Contains("college.jobs.ac.uk/"));
             driver.Navigate().Back();
+            Assert.IsTrue(helpAndAdvicePage.PhoneNumberLink.Text.Equals("0800 389 2502"));
             signUpToNewsletter.ClickSignUpToNewsletterButton();
             Assert.IsTrue(driver.Url.EndsWith("/sign-up-for-our-newsletter.html"));
             driver.Navigate().Back();
@@ -224,8 +227,13 @@ namespace TeachFe.E2e_test
 
             #region help and advice page
 
-            Assert.AreEqual(true, helpAndAdvicePage.ContentHelpAndAdviceDisplayed());          
+            Assert.AreEqual(true, helpAndAdvicePage.ContentHelpAndAdviceDisplayed());
+            Assert.IsTrue(helpAndAdvicePage.PhoneNumberLink.Text.Equals("0800 389 2502"));
             Assert.IsTrue(helpAndAdvicePage.EmailLink.Text.Equals("Teach.FE@education.gov.uk"));
+            helpAndAdvicePage.ClickCallChargesMayApplyLink();
+            Assert.IsTrue(driver.Url.Contains("gov.uk/call-charges"));
+            driver.Navigate().Back();
+
 
             #endregion
 
