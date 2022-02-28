@@ -102,11 +102,11 @@ describe 'Find a job components', :type => :feature do
     it "links should re-direct to expected urls" do
       whatYouCouldEarnBlock = page.find_by_id("3Vcwz7UfYGsdI7gkI4iWgh")
       within whatYouCouldEarnBlock do
-        link = page.find_link("Find your local FE college on the Association of Colleges website", match: :first)
+        link = page.find_link("The Association of Colleges has a list of FE colleges", match: :first)
         within link do 
           expect(link[:href]).to eq 'https://www.aocjobs.com/employers-a-z'
         end
-        link = page.find_link("Find independent training providers on the Association of Employment Learning Providers' website")
+        link = page.find_link("The Association of Employment Learning Providers' website has a list of training providers")
         within link do
           expect(link[:href]).to eq 'https://www.aelp.org.uk/about/our-members/'
         end
@@ -120,7 +120,7 @@ describe 'Find a job components', :type => :feature do
         end
         link = page.find_link("Further Education job site")
         within link do 
-          expect(link[:href]).to eq 'https://www.fejobs.com/career-advice'
+          expect(link[:href]).to eq 'https://www.fejobs.com/'
         end
         link = page.find_link("College Jobs")
         within link do 
@@ -129,11 +129,11 @@ describe 'Find a job components', :type => :feature do
       end
       whatYouCouldEarnBlock = page.find_by_id("1huyVRCGroXrWmbLnuL0WS")
       within whatYouCouldEarnBlock do
-        link = page.find_link("Find your local FE college on the Association of Colleges website", match: :first)
+        link = page.find_link("The Association of Colleges has a list of FE colleges", match: :first)
         within link do 
           expect(link[:href]).to eq 'https://www.aocjobs.com/employers-a-z'
         end
-        link = page.find_link("Find independent training providers on the Association of Employment Learning Providers' website")
+        link = page.find_link("The Association of Employment Learning Providers' website has a list of training providers")
         within link do
           expect(link[:href]).to eq 'https://www.aelp.org.uk/about/our-members/'
         end

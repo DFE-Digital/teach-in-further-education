@@ -2,7 +2,7 @@
 :id: 6Fraj3twk8xSHrc1kyKzVr
 :_meta:
   :content_type_id: page
-  :updated_at: '2022-01-17T13:58:27+00:00'
+  :updated_at: '2022-02-16T10:39:17+00:00'
   :created_at: '2021-12-01T11:33:28+00:00'
   :id: 6Fraj3twk8xSHrc1kyKzVr
 :title: What you could teach
@@ -42,45 +42,31 @@
   - :id: 2dSAy6Mk1OlBMIiVDcPJ0u
     :_meta:
       :content_type_id: advice
-      :updated_at: '2022-01-10T12:27:19+00:00'
+      :updated_at: '2022-02-14T11:53:29+00:00'
       :created_at: '2021-05-14T09:25:51+00:00'
       :id: 2dSAy6Mk1OlBMIiVDcPJ0u
-    :title: Skills, trades and vocational subjects
-    :advice_body: "### Real experience is valued\n\nFurther education (FE) teaching
-      is suitable for those with industry experience. FE providers value industry
-      experience that you can pass on. The minimum experience requirements vary by
-      FE provider.\n\n### Working in FE without a teaching qualification\n\nThe qualifications
-      needed for specific teaching roles in FE are set by the colleges and training
-      providers.\n\nYou might be able to start work in FE without a teaching qualification.\n\nIf
-      you are training as part of a job in a college or training provider, they may
-      specify what course you need to do. This information may be on the job advert
-      on their website.\n\n#### Other qualifications needed\n\nIdeally you'll have
-      a level 3 qualification in your area of expertise.\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
-      \"Explanation of the different educational attainment levels\")\n\nIf you can
-      show significant industry experience, you still may be able to start teaching
-      in FE.\n\n### Subject areas\nThere are too many subject areas to list them all.
-      \n\nHere's a sample list of some of the sectors covered by FE teaching:\n\n-
+    :title: Professions, vocations and trades
+    :advice_body: "### Subject areas\nThere are too many subject areas to list them
+      all. \n\nHere's a sample list of some of the sectors covered by FE teaching:\n\n-
       agriculture, environment and animal care\n- business, administration and office
       management\n- catering and hospitality\n- childcare and education\n- construction\n-
       creative and design\n- digital and IT\n- emergency and armed services\n- engineering
       and manufacturing\n- hair and beauty\n- health and life sciences\n- legal, finance
       and accounting\n- sales, marketing and procurement\n- social care\n- transport
-      and logistics\n"
+      and logistics\n\nIdeally you'll have a level 3 qualification in your area of
+      expertise.\n\n[What levels mean](https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+      \"Explanation of the different educational attainment levels\")"
     :display_order: true
     :apply_background_color: false
     :show_title: false
   - :id: e0XCvhr4XVEtz0N0hZMCf
     :_meta:
       :content_type_id: advice
-      :updated_at: '2022-01-10T12:28:49+00:00'
+      :updated_at: '2022-02-14T11:52:50+00:00'
       :created_at: '2021-05-14T09:28:11+00:00'
       :id: e0XCvhr4XVEtz0N0hZMCf
-    :title: Academic subjects
+    :title: Traditional academic subjects
     :advice_body: |-
-      You need at least an A level or equivalent qualification in your subject to teach it in in FE.
-
-      Some FE providers may insist that you have a degree in the subject you want to teach.
-
       ### Subject areas
       You could teach in subjects like:
 
@@ -92,6 +78,10 @@
       - modern foreign languages
       - art and design
       - performing arts
+
+      You need at least an A level or equivalent qualification in your subject to teach it in in FE.
+
+      Some FE providers may insist that you have a degree in the subject you want to teach.
     :display_order: false
     :apply_background_color: false
     :show_title: false
@@ -99,14 +89,14 @@
 - :id: 1inRQaqvmQdjVteK4scloc
   :_meta:
     :content_type_id: advice
-    :updated_at: '2021-12-01T11:32:11+00:00'
+    :updated_at: '2022-02-16T10:38:51+00:00'
     :created_at: '2021-12-01T11:32:11+00:00'
     :id: 1inRQaqvmQdjVteK4scloc
-  :title: Training to teach your subject
+  :title: Start teaching your subject
   :advice_body: |-
-    There are different ways to do your further education (FE) teacher training. You might be able to study part-time or even take a job with a college or training provider that lets you work while you train.
+    There are different ways to start teaching in further education. You can study part-time or even take a job with a college or training provider that lets you work as a teacher straight away.
 
-    - [Train on the job](/train-on-the-job.html "Train on the job")
+    - [Get started with an FE provider](/how-to-get-into-fe-teaching.html "How to get into further education teaching")
     - [Train in your own time](/train-in-your-own-time.html "Train in your own time")
   :display_order: true
   :apply_background_color: false
@@ -145,13 +135,6 @@
   :story_link_text: Read about John's journey into FE teaching
   :story_page:
   :display_order: true
-- :id: 1gQalZ47kbH1yzm1cpUzW5
-  :_meta:
-    :content_type_id: lineBreak
-    :updated_at: '2022-01-13T11:00:55+00:00'
-    :created_at: '2022-01-13T11:00:55+00:00'
-    :id: 1gQalZ47kbH1yzm1cpUzW5
-  :title: lineBreak
 :call_to_actions:
 - :id: 2PkxkCxeXtOc9yvI3aok46
   :_meta:
