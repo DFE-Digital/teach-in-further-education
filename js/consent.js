@@ -71,8 +71,26 @@ export class Consent {
     }
   }
 
+  enableCookies() {
+    const v = Cookies.get(Consent.cookieName);
+    if (v !== null && v !== undefined) {
+      const granted = JSON.parse(v);
+      if (granted.isGranted) {
+        gtag('consent', 'default', {
+          ad_storage: 'granted',
+          analytics_storage: 'granted',
+        });
+      }
+    }
+  }
+
   removeCookies() {
-   const cookies = Cookies.get();
+    gtag('consent', 'update', {
+      ad_storage: 'denied',
+      analytics_storage: 'denied',
+    });
+
+    const cookies = Cookies.get();
 
     for (const cookie in cookies) {
       if (cookie !== Consent.cookieName) {
@@ -100,6 +118,7 @@ export class Consent {
     document.getElementById('footer').style.marginBottom =
       cookieBannerAcceptedHeight + 'px';
     document.getElementById(Consent.cookieAcceptanceBannerId).focus();
+    this.enableCookies();
     this.saveConsentPreferences(id, {
       isGranted: true,
       confirmationHidden: !showBannerOnNextPage,
