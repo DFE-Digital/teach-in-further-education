@@ -202,6 +202,7 @@ namespace TeachFe.E2e_test
             findAnFeTeachingJobPage.ClickAocJobsLink();
             Assert.IsTrue(driver.Url.Contains("aocjobs.com/"));
             driver.Navigate().Back();
+            driver.ExecuteScript("scroll(0,200)");
             findAnFeTeachingJobPage.ClickTesJobsLink();
             Assert.IsTrue(driver.Url.EndsWith("/further-education-teaching-and-lecturing"));
             driver.Navigate().Back();
@@ -222,7 +223,7 @@ namespace TeachFe.E2e_test
 
             #region help and advice page
 
-            Assert.AreEqual(true, helpAndAdvicePage.ContentHelpAndAdviceDisplayed());
+            Assert.AreEqual(true, helpAndAdvicePage.ContentHelpAndAdviceDisplayed());          
             Assert.IsTrue(helpAndAdvicePage.EmailLink.Text.Equals("Teach.FE@education.gov.uk"));
 
             #endregion
