@@ -40,6 +40,13 @@ namespace TeachFe.E2e_test
 
             #endregion
 
+            #region init
+
+            navigation.NavigateToProd();
+            Assert.AreEqual(true, homepage.ContentHomepageDisplayed());
+
+            #endregion
+
             #region navigation
 
             navigation.ClickWhatYouCouldTeachNavButton();
