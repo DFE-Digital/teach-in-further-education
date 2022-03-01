@@ -14,33 +14,17 @@ describe 'Train In Your Own Time components', :type => :feature do
         end
         approachesElement = page.find_by_id("3rbmhWgWOe2mU4SWn0Nd3t")
         within approachesElement do
-            expect(approachesElement).to have_selector 'h3.govuk-heading-m', text: "This may be the best approach if:" 
-            expect(approachesElement).to have_selector 'h3.govuk-heading-m', text: "This might not be the right approach if:"
+            expect(approachesElement).to have_selector 'h2.govuk-heading-l', text: "This may be the best approach if:" 
+            expect(approachesElement).to have_selector 'h2.govuk-heading-l', text: "This might not be the right approach if:"
             expect(approachesElement).to have_selector '.govuk-list--bullet', count: 2
             expect(approachesElement).to have_selector 'li', count: 6
-            expect(approachesElement).to have_selector '.govuk-body', count: 2
-            expect(approachesElement).to have_selector '.govuk-link', count: 2
-        end
-        chooseQualificationElement = page.find_by_id("1xTlxAkJL5DzPuOCDYOsQG")
-        within chooseQualificationElement do
-            expect(chooseQualificationElement).to have_selector 'h2.govuk-heading-l', text: "Choose your teaching qualification"
-            expect(chooseQualificationElement).to have_selector '.govuk-body', count: 5
-            expect(chooseQualificationElement).to have_selector '.govuk-list--bullet', count: 1
-            expect(chooseQualificationElement).to have_selector 'li', count: 4
-        end
-        findTrainingCourseOptionsElement = page.find_by_id("qNRtpmv245PlK1GAu8Mzm")
-        within findTrainingCourseOptionsElement do
-            expect(findTrainingCourseOptionsElement).to have_selector 'h2.govuk-heading-l', text: "Find your training course options"
-            expect(findTrainingCourseOptionsElement).to have_selector '.govuk-body', count: 1
-            expect(findTrainingCourseOptionsElement).to have_selector 'form', count: 1
-            expect(findTrainingCourseOptionsElement).to have_selector '.govuk-radios', count: 1
-            expect(findTrainingCourseOptionsElement).to have_selector '.govuk-radios__item', count: 4
-            expect(findTrainingCourseOptionsElement).to have_selector '.govuk-button', count: 1
+            expect(approachesElement).to have_selector '.govuk-body', count: 1
+            expect(approachesElement).to have_selector '.govuk-link', count: 1
         end
         helpWithLivingExpensesElement = page.find_by_id("5hTTiOCjK33slAKAiPFby")
         within helpWithLivingExpensesElement do
             expect(helpWithLivingExpensesElement).to have_selector 'h2.govuk-heading-l', text: "Help with living expenses"
-            expect(helpWithLivingExpensesElement).to have_selector '.govuk-body', count: 3
+            expect(helpWithLivingExpensesElement).to have_selector '.govuk-body', count: 5
         end
         bottomContactBannerElement = page.find_by_id("1azWRZYSe5p6OxrVsOZsDj")
         within bottomContactBannerElement do
@@ -56,12 +40,6 @@ describe 'Train In Your Own Time components', :type => :feature do
         approachesBlock = page.find_by_id("3rbmhWgWOe2mU4SWn0Nd3t")
         expect(approachesBlock[:class]).to eq 'app-advice '
         
-        chooseQualificiationBlock = page.find_by_id("1xTlxAkJL5DzPuOCDYOsQG")
-        expect(chooseQualificiationBlock[:class]).to eq 'app-advice '
-        
-        findTrainingCourseOptionsBlock = page.find_by_id("qNRtpmv245PlK1GAu8Mzm")
-        expect(findTrainingCourseOptionsBlock[:class]).to eq 'app-question'
-
         helpWithLivingExpensesBlock = page.find_by_id("5hTTiOCjK33slAKAiPFby")
         expect(helpWithLivingExpensesBlock[:class]).to eq 'app-advice '
 
@@ -81,9 +59,13 @@ describe 'Train In Your Own Time components', :type => :feature do
         within link do
             expect(link[:href]).to eq 'https://www.gov.uk/student-finance'
         end
-        link = page.find_link("Train on the job", match: :first)
+        link = page.find_link("Information about bursaries available for 2022-2023.", match: :first)
         within link do
-            expect(link[:href]).to end_with '/train-on-the-job.html'
+            expect(link[:href]).to eq 'https://www.gov.uk/government/publications/fe-funding-initial-teacher-education-ite-bursaries-2022-to-2023'
+        end
+        link = page.find_link("training on the job", match: :first)
+        within link do
+            expect(link[:href]).to end_with '/how-to-get-into-fe-teaching.html'
         end
         link = page.find_link("Teach.FE@education.gov.uk", match: :first)
         within link do

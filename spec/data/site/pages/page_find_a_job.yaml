@@ -2,7 +2,7 @@
 :id: 7fkpVgKNOUvTuZI7KBhdrE
 :_meta:
   :content_type_id: page
-  :updated_at: '2022-01-17T13:58:57+00:00'
+  :updated_at: '2022-02-14T10:02:13+00:00'
   :created_at: '2021-05-18T08:23:03+00:00'
   :id: 7fkpVgKNOUvTuZI7KBhdrE
 :title: Find a job
@@ -46,7 +46,7 @@
 - :id: 1qKKajIJcr8oAqzNVi64ai
   :_meta:
     :content_type_id: advice
-    :updated_at: '2021-12-13T10:20:58+00:00'
+    :updated_at: '2022-01-24T16:25:49+00:00'
     :created_at: '2021-12-02T15:18:42+00:00'
     :id: 1qKKajIJcr8oAqzNVi64ai
   :title: More than just colleges
@@ -59,7 +59,7 @@
     - greater use of remote working
     - be industry sector specific
 
-    IPTs do not follow the academic year, so you can take holiday leave at any time. The amount of holiday leave available will depend on the ITP. It is likely to be less than you'd get from a college, but more flexible about when you take it.
+    ITPs do not follow the academic year, so you can take holiday leave at any time. The amount of holiday leave available will depend on the ITP. It is likely to be less than you'd get from a college, but more flexible about when you take it.
   :display_order: true
   :apply_background_color: false
   :show_title: true
@@ -73,21 +73,21 @@
 - :id: 3Vcwz7UfYGsdI7gkI4iWgh
   :_meta:
     :content_type_id: advice
-    :updated_at: '2022-01-18T16:43:33+00:00'
+    :updated_at: '2022-02-17T13:00:15+00:00'
     :created_at: '2021-07-13T08:58:52+00:00'
     :id: 3Vcwz7UfYGsdI7gkI4iWgh
   :title: Where to find a job
   :advice_body: "The first place to look for a job is on your local college or training
     provider’s website. \n\nYou can also find jobs by:\n\n- searching general job
     sites such as Indeed, TotalJobs and Reed\n- looking on LinkedIn\n- using social
-    media\n\n### Colleges\n\n[Find your local FE college on the Association of Colleges
-    website](https://www.aocjobs.com/employers-a-z \"Association of Colleges college
-    finder\")\n\n### ITPs\n\n[Find independent training providers on the Association
-    of Employment Learning Providers' website](https://www.aelp.org.uk/about/our-members/
-    \"Association of Employment Learning Providers member finder\")\n\n#### Other
-    places to look\n\n- [Association of colleges job site](https://www.aocjobs.com
+    media\n\n### Colleges\n\n[The Association of Colleges has a list of FE colleges](https://www.aocjobs.com/employers-a-z
+    \"Association of Colleges college finder\"). Use it to find an FE college local
+    to you.\n\n### ITPs\n\n[The Association of Employment Learning Providers' website
+    has a list of training providers](https://www.aelp.org.uk/about/our-members/ \"Association
+    of Employment Learning Providers member finder\"). Use it to find a training provider
+    local to you.\n\n#### Other places to look\n\n- [Association of colleges job site](https://www.aocjobs.com
     \"Association of Colleges jobs\")\n- [TES - Times Educational Supplement job site](https://www.tes.com/jobs/browse/further-education-teaching-and-lecturing
-    \"Times Educational Supplement Jobs page\")\n- [Further Education job site](https://www.fejobs.com/career-advice
+    \"Times Educational Supplement Jobs page\")\n- [Further Education job site](https://www.fejobs.com
     \"FE Jobs website\")\n- [College Jobs](https://college.jobs.ac.uk \"College Jobs
     website\")\n\nThe Department for Education does not endorse any particular providers
     or job sites. "
@@ -131,7 +131,7 @@
 - :id: 1huyVRCGroXrWmbLnuL0WS
   :_meta:
     :content_type_id: advice
-    :updated_at: '2021-12-15T09:20:36+00:00'
+    :updated_at: '2022-01-25T13:20:13+00:00'
     :created_at: '2021-12-01T10:29:47+00:00'
     :id: 1huyVRCGroXrWmbLnuL0WS
   :title: What you could earn
@@ -142,11 +142,12 @@
     own salary levels.\n\nThese may be determined by:\n\n- the demand for your subject\n-
     your level of experience and qualifications\n- your local area\n\nYou can get
     an idea of your local provider's pay scale by looking at the current jobs on the
-    careers section of their website.\n\n[Find your local FE college on the Association
-    of Colleges website](https://www.aocjobs.com/employers-a-z \"Association of Colleges
-    college finder\")\n\n[Find independent training providers on the Association of
-    Employment Learning Providers' website](https://www.aelp.org.uk/about/our-members/
-    \"Association of Employment Learning Providers member finder\")"
+    careers section of their website.\n\n[The Association of Colleges has a list of
+    FE colleges](https://www.aocjobs.com/employers-a-z \"Association of Colleges college
+    finder\"). Use it to find an FE college local to you.\n\n[The Association of Employment
+    Learning Providers' website has a list of training providers](https://www.aelp.org.uk/about/our-members/
+    \"Association of Employment Learning Providers member finder\"). Use it to find
+    a training provider local to you.\n"
   :display_order: true
   :show_title: true
 - :id: 1gQalZ47kbH1yzm1cpUzW5
@@ -212,6 +213,26 @@
     - learning support assistant
 
     These sort of jobs are advertised on FE providers' websites, and on general job finder websites.
+  :display_order: true
+  :apply_background_color: false
+  :show_title: true
+- :id: 1gQalZ47kbH1yzm1cpUzW5
+  :_meta:
+    :content_type_id: lineBreak
+    :updated_at: '2022-01-13T11:00:55+00:00'
+    :created_at: '2022-01-13T11:00:55+00:00'
+    :id: 1gQalZ47kbH1yzm1cpUzW5
+  :title: lineBreak
+- :id: oWvlCPi0678vL54DIWkuZ
+  :_meta:
+    :content_type_id: advice
+    :updated_at: '2022-02-10T16:18:17+00:00'
+    :created_at: '2022-02-10T16:18:17+00:00'
+    :id: oWvlCPi0678vL54DIWkuZ
+  :title: Returning to teaching?
+  :advice_body: If you've taught in FE before, or are a teacher looking for a change,
+    the [FE Advice website](https://www.feadvice.org.uk/ "FE Advice site") will give
+    you the advice you need.
   :display_order: true
   :apply_background_color: false
   :show_title: true

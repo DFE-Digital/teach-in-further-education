@@ -14,14 +14,14 @@ describe 'Accordion components -', :type => :feature do
         end
         accordionBlock = page.find_by_id("7xDb0h6J2h6c11GhWHR0J")
         within accordionBlock do
-            expect(accordionBlock).to have_selector 'h2.govuk-accordion__section-heading', text: "Skills, trades and vocational subjects"
-            expect(accordionBlock).to have_selector 'h2.govuk-accordion__section-heading', text: "Academic subjects"
+            expect(accordionBlock).to have_selector 'h2.govuk-accordion__section-heading', text: "Professions, vocations and trades"
+            expect(accordionBlock).to have_selector 'h2.govuk-accordion__section-heading', text: "Traditional academic subjects"
             expect(accordionBlock).to have_selector '.govuk-accordion__controls', count: 1
             expect(accordionBlock).to have_selector '.govuk-accordion__section-header', count: 2
         end
         trainingToTeachSubjectElement = page.find_by_id("1inRQaqvmQdjVteK4scloc")
         within trainingToTeachSubjectElement do
-            expect(trainingToTeachSubjectElement).to have_selector 'h2.govuk-heading-l', text: "Training to teach your subject"
+            expect(trainingToTeachSubjectElement).to have_selector 'h2.govuk-heading-l', text: "Start teaching your subject"
             expect(trainingToTeachSubjectElement).to have_selector '.govuk-body', count: 1
             expect(trainingToTeachSubjectElement).to have_selector '.govuk-list--bullet', count: 1
             expect(trainingToTeachSubjectElement).to have_selector 'li', count: 2
