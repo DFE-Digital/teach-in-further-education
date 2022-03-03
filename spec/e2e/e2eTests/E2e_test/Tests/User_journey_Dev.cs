@@ -114,9 +114,6 @@ namespace TeachFe.E2e_test
             Assert.IsTrue(driver.Url.EndsWith("/what-you-could-teach.html"));
             driver.Navigate().Back();
             Assert.IsTrue(helpAndAdvicePage.PhoneNumberLink.Text.Equals("0800 389 2502"));
-            helpAndAdvicePage.ClickCallChargesMayApplyLink();
-            Assert.IsTrue(driver.Url.Contains("gov.uk/call-charges"));
-            driver.Navigate().Back();
             signUpToNewsletter.ClickSignUpToNewsletterButton();
             Assert.IsTrue(driver.Url.EndsWith("/sign-up-for-our-newsletter.html"));
             driver.Navigate().Back();
@@ -233,9 +230,6 @@ namespace TeachFe.E2e_test
             Assert.AreEqual(true, helpAndAdvicePage.ContentHelpAndAdviceDisplayed());
             Assert.IsTrue(helpAndAdvicePage.PhoneNumberLink.Text.Equals("0800 389 2502"));
             Assert.IsTrue(helpAndAdvicePage.EmailLink.Text.Equals("Teach.FE@education.gov.uk"));
-            helpAndAdvicePage.ClickCallChargesMayApplyLink();
-            Assert.IsTrue(driver.Url.Contains("gov.uk/call-charges"));
-            driver.Navigate().Back();
 
 
             #endregion
