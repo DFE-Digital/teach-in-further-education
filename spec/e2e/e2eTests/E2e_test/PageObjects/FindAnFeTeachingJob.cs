@@ -29,7 +29,7 @@ namespace TeachFe.E2e_test.PageObjects
 
         public IWebElement AocJobsLink
         {
-            get { return driver.FindElement(By.PartialLinkText("Association of colleges job site")); }
+            get { return driver.FindElement(By.PartialLinkText("Association of Colleges job site")); }
         }
 
         public IWebElement TesJobsLink
