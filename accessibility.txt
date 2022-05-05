@@ -33,7 +33,7 @@ Pages should be accessible
 
 Failures:
 
-  1) Pages should be accessible Ensure stuarttest is axe compliant
+  1) Pages should be accessible Ensure stuarttest is axe compliant 
 
   2) Pages should be accessible Ensure 404 is axe compliant
 
